@@ -1,0 +1,23 @@
+{
+  "name": "phretor-skills",
+  "owner": {
+    "name": "Federico Maggi",
+    "email": "fede@maggi.cc"
+  },
+  "metadata": {
+    "description": "Public skills for security research, conference intelligence, and productivity",
+    "version": "1.0.0",
+    "homepage": "https://github.com/phretor/skills"
+  },
+  "plugins": [
+    {
+      "name": "phretor-skills",
+      "description": "Skills for security research, conference intelligence (academic and industry), and productivity",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/con"
+      ]
+    }
+  ]
+}
