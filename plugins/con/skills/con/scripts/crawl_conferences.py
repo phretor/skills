@@ -51,15 +51,70 @@ def _usenix(year: int) -> str:
 
 
 def _ndss(year: int) -> str:
-    return f"https://www.ndss-symposium.org/{year}-programme/"
+    return f"https://www.ndss-symposium.org/ndss{year}/accepted-papers/"
 
 
 def _ccs(year: int) -> str:
-    return f"https://dl.acm.org/conference/ccs/proceedings-{year}"
+    return f"https://www.sigsac.org/ccs/CCS{year}/accepted-papers.html"
 
 
-def _asiaccs(year: int) -> str:
-    return f"https://dl.acm.org/conference/asiaccs/proceedings-{year}"
+def _asiaccs_dblp_url(year: int) -> str:
+    # DBLP moved AsiaCCS from conf/ccs/ to conf/asiaccs/ after 2020
+    if year >= 2021:
+        return f"https://dblp.org/db/conf/asiaccs/asiaccs{year}.html"
+    return f"https://dblp.org/db/conf/ccs/asiaccs{year}.html"
+
+
+def _asiaccs_resolve(year: int) -> str | None:
+    """Discover AsiaCCS proceedings URL via a multi-step pipeline.
+
+    1. Fetch DBLP year page → extract top-level proceedings DOI (shortest 10.1145/N)
+    2. Try ACM DL frontmatter PDF via curl_cffi → extract text with pdftotext
+       (ACM DL blocks most programmatic access; this step is best-effort)
+    3. Return the canonical ACM proceedings URL regardless of step 2 outcome.
+
+    DBLP is the authoritative, open source. ACM DL blocks curl_cffi as of 2025,
+    so the frontmatter PDF step will typically fail gracefully.
+    """
+    import subprocess
+    import tempfile
+
+    from curl_cffi import requests as cf
+
+    dblp_url = _asiaccs_dblp_url(year)
+    r = httpx.get(dblp_url, headers={"User-Agent": "Mozilla/5.0"},
+                  timeout=10, follow_redirects=True)
+    if r.status_code >= 400:
+        return None
+
+    # Extract all 10.1145/NNNNNNN DOIs; the proceedings DOI is the shortest
+    # (paper DOIs append a suffix: 10.1145/NNNNNNN.MMMMMMM)
+    dois = re.findall(r'https://doi\.org/(10\.1145/\d+)', r.text)
+    if not dois:
+        return None
+    procs_doi = min(set(dois), key=len)
+    procs_url = f"https://dl.acm.org/doi/proceedings/{procs_doi}"
+
+    # Step 2: attempt frontmatter PDF (best-effort — ACM DL blocks most bots)
+    fm_url = f"https://dl.acm.org/action/showFmPdf?doi={procs_doi.replace('/', '%2F')}"
+    try:
+        session = cf.Session(impersonate="chrome124")
+        session.get("https://dl.acm.org/", timeout=10)
+        pdf_resp = session.get(fm_url, timeout=20)
+        ct = pdf_resp.headers.get("content-type", "")
+        if pdf_resp.status_code == 200 and "pdf" in ct.lower():
+            with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
+                f.write(pdf_resp.content)
+                pdf_path = f.name
+            result = subprocess.run(
+                ["pdftotext", pdf_path, "-"], capture_output=True, text=True, timeout=30
+            )
+            if result.returncode == 0:
+                print(f"    [asiaccs {year}] extracted {len(result.stdout):,} chars from frontmatter")
+    except Exception:
+        pass  # ACM DL access silently skipped
+
+    return procs_url
 
 
 def _acsac(year: int) -> str:
@@ -156,7 +211,7 @@ ACADEMIC_CONFS: list[Conf] = [
     Conf("USENIX Security", "usenix-security", _usenix),
     Conf("NDSS", "ndss", _ndss),
     Conf("CCS", "ccs", _ccs),
-    Conf("ASIACCS", "asiaccs", _asiaccs),
+    Conf("ASIACCS", "asiaccs", _asiaccs_resolve, resolver=_asiaccs_resolve),
     Conf("ACSAC", "acsac", _acsac),
     Conf("IACR Crypto", "iacr-crypto", _iacr_crypto),
     Conf("IACR Eurocrypt", "iacr-eurocrypt", _iacr_eurocrypt),

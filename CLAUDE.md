@@ -149,4 +149,5 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 - **Behavioral guidance over reference dumps**: explain _why_ and _when_, not just _what_
 - **No hardcoded absolute paths**: use `{baseDir}` or relative paths
 - **Python scripts**: use PEP 723 inline dependency headers and `uv run`
+- **System dependencies**: declare in SKILL.md `compatibility` field with install commands for both macOS (`brew`) and Linux (`apt-get`); repeat in `README.md` under a `## Requirements` section
 - **SKILL.md under 500 lines**: split overflow into `references/` or `workflows/`

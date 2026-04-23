@@ -2,6 +2,7 @@
 name: con
 description: "Looks up academic and industry security conferences: rankings, papers, authors, live CFP deadlines, and talk/paper evaluation. Use when the user asks about conference prestige or acceptance rates, wants to find papers at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke as /con [academic|industry] <question> or /con [academic|industry] now."
 allowed-tools: WebFetch WebSearch Bash
+compatibility: Requires internet access. System dependency: pdftotext (poppler) for extracting text from downloaded papers and frontmatter PDFs — install with `brew install poppler` (macOS) or `apt-get install poppler-utils` (Linux). Run scripts/crawl_conferences.py annually to refresh year-specific URL lists.
 ---
 
 # con — Conference Intelligence
@@ -261,6 +262,29 @@ Search the DEF CON and Black Hat archives by keyword. Also check:
 - Papers mentioned in talk abstracts → follow to academic venues
 
 When a talk has a companion paper (common at Black Hat), cross-reference it via the academic rubric.
+
+---
+
+## PDF Extraction
+
+When a paper or proceedings frontmatter is available as a PDF, extract text with `pdftotext` (poppler):
+
+```bash
+# From a URL — download then extract
+curl -sL <pdf-url> -o paper.pdf && pdftotext paper.pdf -
+
+# Direct pipe
+curl -sL <pdf-url> | pdftotext - -
+```
+
+Open-access sources where full-text PDFs are available without auth:
+- USENIX Security and SOUPS: linked from the technical sessions page
+- NDSS: linked from the programme page
+- IACR ePrint: `https://eprint.iacr.org/{YYYY}/{NNN}.pdf`
+- arXiv cs.CR: `https://arxiv.org/pdf/{id}`
+- DEF CON presentations: `media.defcon.org/DEF%20CON%20{N}/...presentations/`
+
+ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstracts via Semantic Scholar and look for preprints on arXiv or author homepages instead.
 
 ---
 

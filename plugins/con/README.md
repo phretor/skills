@@ -31,6 +31,14 @@ Conference intelligence for security researchers — academic and industry venue
 Rankings derived from CORE 2023 and Guofei Gu's security conference statistics.
 Live data: [confsearch.ethz.ch](https://confsearch.ethz.ch) (academic) · [cfptime.org](https://www.cfptime.org) (industry).
 
+## Requirements
+
+- **pdftotext** (poppler) — for extracting text from downloaded papers and ACM DL frontmatter PDFs:
+  ```bash
+  brew install poppler        # macOS
+  apt-get install poppler-utils  # Debian/Ubuntu
+  ```
+
 ## Installation
 
 ```
