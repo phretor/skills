@@ -1,6 +1,6 @@
 # Contributing Skills
 
-This repo follows the Trail of Bits plugin layout. Every plugin must conform to the structure below before being added to the root `marketplace.json`.
+This repo follows the [Trail of Bits plugin layout](https://github.com/trailofbits/skills). Every plugin must conform to the structure below before being added to the root `marketplace.json`.
 
 ## Plugin Structure
 
@@ -9,19 +9,21 @@ Every plugin lives under `plugins/<plugin-name>/` and must contain:
 ```
 plugins/<plugin-name>/
 ├── .claude-plugin/
-│   └── plugin.json         # Plugin metadata
+│   └── plugin.json             # Plugin metadata
 ├── commands/
-│   └── <command-name>.md   # Slash command (required; default name matches plugin)
+│   └── <command-name>.md       # Slash command (required)
 ├── skills/
 │   └── <skill-name>/
-│       └── SKILL.md        # Skill entry point (required)
-├── README.md               # Human-facing documentation (required)
-└── references/             # Optional: detailed docs loaded on demand
-    scripts/                # Optional: utility scripts (PEP 723 headers, uv run)
-    workflows/              # Optional: step-by-step guides
+│       ├── SKILL.md            # Skill entry point (required)
+│       ├── references/         # Optional: detailed docs loaded on demand
+│       ├── scripts/            # Optional: utility scripts
+│       │   ├── <script>.py     #   PEP 723 inline deps + uv run
+│       │   └── pyproject.toml  #   per-skill dep declaration + ruff config
+│       └── workflows/          # Optional: step-by-step guides
+└── README.md                   # Human-facing documentation (required)
 ```
 
-Only `plugin.json` belongs in `.claude-plugin/`. Component directories (`skills/`, `commands/`, `references/`, `scripts/`) go at the plugin root or inside `skills/<name>/`.
+Only `plugin.json` belongs in `.claude-plugin/`. Scripts and their `pyproject.toml` live inside `skills/<name>/scripts/`, not at the plugin root.
 
 ## Required Files
 
@@ -43,7 +45,7 @@ Only `plugin.json` belongs in `.claude-plugin/`. Component directories (`skills/
 
 The command is a **thin shim** — it parses `$ARGUMENTS` and delegates to the skill. No logic lives here.
 
-Command names must use the `phretor:` namespace prefix to avoid autocomplete collisions (e.g. `phretor:con`, not `con`). The part after the colon should match the plugin name by default; a shorter alias is fine if it reads more naturally.
+Command names must use the `ph:` namespace prefix to avoid autocomplete collisions (e.g. `ph:con`, not `con`). The part after the colon should match the plugin name by default; a shorter alias is fine if it reads more naturally.
 
 ```markdown
 ---
@@ -60,6 +62,7 @@ allowed-tools:
 **Arguments:** $ARGUMENTS
 
 Parse arguments:
+
 1. **<arg>** (required): ...
 2. **<arg>** (optional): ...
 
@@ -74,7 +77,7 @@ Frontmatter must contain only `name`, `description`, and (optionally) `allowed-t
 ---
 name: <skill-name>
 description: "Third-person. What it does and when to use it. Include specific trigger phrases."
-allowed-tools: Read Bash WebFetch   # optional; space-separated
+allowed-tools: Read Bash WebFetch # optional; space-separated
 ---
 ```
 
@@ -82,9 +85,11 @@ allowed-tools: Read Bash WebFetch   # optional; space-separated
 
 ```markdown
 ## When to Use
+
 [Specific scenarios — concrete, not vague]
 
 ## When NOT to Use
+
 [Adjacent tasks better served by something else]
 ```
 
@@ -102,15 +107,19 @@ One-sentence summary.
 **Author:** Name
 
 ## When to Use
+
 ...
 
 ## When NOT to Use
+
 ...
 
 ## What It Does
+
 ...
 
 ## Installation
+
 /plugin install phretor/skills/plugins/<plugin-name>
 ```
 
@@ -137,7 +146,7 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 ## Quality Standards
 
 - **Description triggers**: third-person voice, specific verbs, concrete trigger phrases — not "helps with X"
-- **Behavioral guidance over reference dumps**: explain *why* and *when*, not just *what*
+- **Behavioral guidance over reference dumps**: explain _why_ and _when_, not just _what_
 - **No hardcoded absolute paths**: use `{baseDir}` or relative paths
 - **Python scripts**: use PEP 723 inline dependency headers and `uv run`
 - **SKILL.md under 500 lines**: split overflow into `references/` or `workflows/`
