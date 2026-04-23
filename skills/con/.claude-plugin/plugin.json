@@ -1,0 +1,9 @@
+{
+  "name": "con",
+  "description": "Conference intelligence for security researchers — academic and industry venues",
+  "author": {
+    "name": "Federico Maggi",
+    "email": "fede@maggi.cc",
+    "url": "https://github.com/phretor"
+  }
+}
