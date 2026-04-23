@@ -1,11 +1,6 @@
 ---
 name: con
-description: "Conference intelligence for security researchers — academic and industry venues. Invoke as `/con [academic|industry] <question>` or `/con [academic|industry] now` for upcoming conferences and live CFP deadlines. Academic mode uses an aggregate ranking derived from CORE 2023 (portal.core.edu.au) and Guofei Gu's security conference statistics (engr.tamu.edu), covering IEEE S&P, CCS, USENIX Security, NDSS, Crypto, Eurocrypt, ESORICS, RAID, ACSAC, PETS, EuroS&P, CHES, TCC, and more; uses confsearch.ethz.ch for live dates. Industry mode covers DEF CON, Black Hat, RSA, CanSecWest, REcon, Troopers, hardwear.io, Infiltrate, HITB, OffensiveCon, and more; uses cfptime.org for live CFP deadlines. Fetches conference programs and papers from open-access sources (USENIX, NDSS, IACR ePrint, arXiv, DEF CON media archive). Searches by author via DBLP and Semantic Scholar. Evaluates specific papers or talks on a standard rubric — TL;DR, tool/artifact release, reproducibility, CVEs, industry impact, academic impact, and known counterpart work. Use whenever the user mentions conference names, asks about paper rankings, acceptance rates, upcoming deadlines, or ongoing conferences; wants to find or evaluate a specific paper or talk; needs an author's publication record; or wants a cross-conference topic survey."
-metadata:
-  author: phretor
-  version: "1.2"
-  preferred-model: haiku
-compatibility: Requires internet access. Run scripts/crawl_conferences.py annually to refresh year-specific URL lists in references/.
+description: "Looks up academic and industry security conferences: rankings, papers, authors, live CFP deadlines, and talk/paper evaluation. Use when the user asks about conference prestige or acceptance rates, wants to find papers at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke as /con [academic|industry] <question> or /con [academic|industry] now."
 allowed-tools: WebFetch WebSearch Bash
 ---
 
@@ -22,6 +17,23 @@ The second argument can be **`now`** to trigger a live calendar query instead of
 - `/con academic now` → upcoming and ongoing academic security conferences, sorted by date
 - `/con industry now` → upcoming industry conferences with open CFPs, sorted by conference date
 - `/con academic now <acronym>` → dates and deadlines for a specific conference (e.g., `/con academic now S&P`)
+
+---
+
+## When to Use
+
+- Looking up the prestige or acceptance rate of a security conference
+- Finding papers published at a specific venue and year
+- Evaluating a specific paper or talk (methodology, artifacts, CVEs, impact)
+- Searching an author's publication record across top-tier security venues
+- Surveying what's been published on a topic across multiple conferences
+- Checking upcoming conference dates or open CFP deadlines
+
+## When NOT to Use
+
+- General web search for security news or vulnerability disclosures — use a search tool directly
+- Finding CVE details or patch information — use a CVE database
+- Broad programming or software engineering questions unrelated to academic/industry security research
 
 ---
 
