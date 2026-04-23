@@ -34,8 +34,9 @@ _BH_SLUGS = {"usa": "us", "europe": "eu", "asia": "asia"}
 class Conf:
     name: str
     abbrev: str
-    url_fn: object       # (year: int) -> str  — human-facing URL stored in references
-    bh_slug: str = ""   # non-empty for Black Hat conferences; triggers curl_cffi check
+    url_fn: object    # (year: int) -> str  — human-facing URL stored in references
+    bh_slug: str = ""    # non-empty → validate via sessions.json with curl_cffi (Black Hat)
+    use_curl: bool = False  # True → HEAD check via curl_cffi instead of httpx
 
 
 # --- Academic URL generators ---
@@ -99,6 +100,8 @@ def _euros_p(year: int) -> str:
 
 def _defcon(year: int) -> str:
     n = year - 1993 + 1  # DEF CON 1 = 1993
+    # Root URL is reliable across all editions; DC28 (2020) used "Safe Mode" branding
+    # so its presentations subdir has a non-standard name.
     return f"https://media.defcon.org/DEF%20CON%20{n}/"
 
 
@@ -144,10 +147,15 @@ ACADEMIC_CONFS: list[Conf] = [
 ]
 
 INDUSTRY_CONFS: list[Conf] = [
-    Conf("DEF CON", "defcon", _defcon),
-    Conf("Black Hat USA",  "blackhat-usa",  lambda y: _blackhat("usa",    y), bh_slug="us"),
-    Conf("Black Hat EU",   "blackhat-eu",   lambda y: _blackhat("europe", y), bh_slug="eu"),
-    Conf("Black Hat Asia", "blackhat-asia", lambda y: _blackhat("asia",   y), bh_slug="asia"),
+    Conf("DEF CON", "defcon", _defcon, use_curl=True),
+    Conf("Black Hat USA", "blackhat-usa", lambda y: _blackhat("usa", y), bh_slug="us"),
+    Conf("Black Hat EU", "blackhat-eu", lambda y: _blackhat("europe", y), bh_slug="eu"),
+    Conf(
+        "Black Hat Asia",
+        "blackhat-asia",
+        lambda y: _blackhat("asia", y),
+        bh_slug="asia",
+    ),
     Conf("REcon", "recon", _recon),
     Conf("Troopers", "troopers", _troopers),
     Conf("hardwear.io", "hardwear", _hardwear),
@@ -158,6 +166,21 @@ INDUSTRY_CONFS: list[Conf] = [
 async def _is_live(client: httpx.AsyncClient, url: str) -> bool:
     try:
         r = await client.head(url, follow_redirects=True, timeout=10.0)
+        return r.status_code < 400
+    except Exception:
+        return False
+
+
+def _is_live_curl(url: str) -> bool:
+    """HEAD check via curl_cffi for servers incompatible with Python's ssl stack.
+
+    media.defcon.org uses a HARICA-issued TLS cert that httpx cannot negotiate;
+    curl_cffi's libcurl-backed TLS stack handles it correctly.
+    """
+    from curl_cffi import requests as cf
+
+    try:
+        r = cf.head(url, impersonate="chrome124", timeout=10)
         return r.status_code < 400
     except Exception:
         return False
@@ -188,12 +211,16 @@ async def discover(
         for conf in confs:
             years = range(start, end + 1)
             if conf.bh_slug:
-                # Sequential with a small delay — blackhat.com rate-limits parallel
-                # curl_cffi requests even at low concurrency.
+                # Sequential + delay: blackhat.com rate-limits parallel curl_cffi threads.
                 checks: list[bool] = []
                 for y in years:
                     checks.append(await asyncio.to_thread(_is_live_bh, conf.bh_slug, y))
                     await asyncio.sleep(0.5)
+            elif conf.use_curl:
+                # Concurrent curl_cffi HEAD checks for servers with httpx-incompatible TLS.
+                checks = await asyncio.gather(
+                    *[asyncio.to_thread(_is_live_curl, conf.url_fn(y)) for y in years]
+                )
             else:
                 candidates = [(y, conf.url_fn(y)) for y in years]
                 checks = await asyncio.gather(
