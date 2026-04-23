@@ -1,9 +1,9 @@
 ---
 name: con
-description: Conference intelligence for security researchers — academic and industry venues. Invoke as `/con [academic|industry] <question>`. Academic mode covers all TAMU-ranked tiers (IEEE S&P, CCS, USENIX Security, NDSS, Crypto, Eurocrypt, ESORICS, RAID, ACSAC, PETS, EuroS&P, CHES, TCC, and more); industry mode covers DEF CON, Black Hat, RSA, CanSecWest, REcon, Troopers, hardwear.io, Infiltrate, HITB, OffensiveCon, and more. Fetches live conference programs and papers from open-access sources (USENIX, NDSS, IACR ePrint, arXiv, DEF CON media archive). Searches by author via DBLP and Semantic Scholar. Evaluates specific papers or talks on a standard rubric: TL;DR, tool/artifact release, reproducibility, CVEs, industry impact, academic impact, and known counterpart work. Use whenever the user mentions conference names, asks about paper rankings or acceptance rates, wants to find or evaluate a specific paper or talk, needs an author's publication record, or wants a cross-conference topic survey.
+description: Conference intelligence for security researchers — academic and industry venues. Invoke as `/con [academic|industry] <question>` or `/con [academic|industry] now` for upcoming conferences and live CFP deadlines. Academic mode covers all TAMU-ranked tiers (IEEE S&P, CCS, USENIX Security, NDSS, Crypto, Eurocrypt, ESORICS, RAID, ACSAC, PETS, EuroS&P, CHES, TCC, and more) and uses confsearch.ethz.ch for live dates; industry mode covers DEF CON, Black Hat, RSA, CanSecWest, REcon, Troopers, hardwear.io, Infiltrate, HITB, OffensiveCon, and more, and uses cfptime.org for live CFP deadlines. Fetches live conference programs and papers from open-access sources (USENIX, NDSS, IACR ePrint, arXiv, DEF CON media archive). Searches by author via DBLP and Semantic Scholar. Evaluates specific papers or talks on a standard rubric: TL;DR, tool/artifact release, reproducibility, CVEs, industry impact, academic impact, and known counterpart work. Use whenever the user mentions conference names, asks about paper rankings, acceptance rates, upcoming deadlines, or ongoing conferences; wants to find or evaluate a specific paper or talk; needs an author's publication record; or wants a cross-conference topic survey.
 metadata:
   author: phretor
-  version: "1.0"
+  version: "1.1"
   preferred-model: haiku
 compatibility: Requires internet access. Run scripts/crawl_conferences.py annually to refresh year-specific URL lists in references/.
 allowed-tools: WebFetch WebSearch Bash
@@ -13,10 +13,15 @@ allowed-tools: WebFetch WebSearch Bash
 
 Dispatches on the first argument:
 
-- **`academic`** → peer-reviewed venues, TAMU tier rankings, paper search
-- **`industry`** → practitioner conferences, talk archives, DEF CON/Black Hat/REcon etc.
+- **`academic`** → peer-reviewed venues, TAMU tier rankings, paper search, live calendar via confsearch.ethz.ch
+- **`industry`** → practitioner conferences, talk archives, live CFP calendar via cfptime.org
 
 Infer the mode from context when unambiguous (e.g., "DEF CON" → industry, "IEEE S&P" → academic). Ask only when genuinely ambiguous.
+
+The second argument can be **`now`** to trigger a live calendar query instead of a paper/talk search:
+- `/con academic now` → upcoming and ongoing academic security conferences, sorted by date
+- `/con industry now` → upcoming industry conferences with open CFPs, sorted by conference date
+- `/con academic now <acronym>` → dates and deadlines for a specific conference (e.g., `/con academic now S&P`)
 
 ---
 
@@ -42,6 +47,63 @@ When asked about a specific paper or talk, always produce this block before any 
 - *Industry impact*: CVE assignments, vendor acknowledgments, patch notes, product integration, news coverage from Krebs/Wired/Ars.
 - *Academic impact*: cite count via Semantic Scholar; search for papers that cite this work in follow-on venues.
 - *Counterpart*: search whether an industry talk preceded/followed an academic paper on the same topic, or vice versa.
+
+---
+
+## Live Calendar (`now`)
+
+### Academic — `now`
+
+Fetch from ConfSearch (ETH Zurich). The API returns CORE-ranked conferences with submission deadlines, notification dates, and conference dates.
+
+**For `/con academic now` (all upcoming security conferences):**
+```
+GET https://confsearch.ethz.ch/api/search-engine/?query=security
+```
+Also query with: `privacy`, `cryptography`, `network security` to broaden coverage.
+
+Filter results to conferences in the embedded tier tables (Tier 1 and 2). Drop results with blank `start` dates or past end dates. Sort by `start` ascending.
+
+**For `/con academic now <acronym>` (specific conference):**
+```
+GET https://confsearch.ethz.ch/api/search-engine/?query=<acronym>
+```
+Pick the top result matching the known acronym. Show all fields.
+
+**Response fields used:** `acronym`, `name`, `location`, `deadline`, `notification`, `start`, `end`, `rank`, `www`
+
+**Output format:**
+
+| Conference | Dates | Location | Submission deadline | Website |
+|---|---|---|---|---|
+| CCS 2026 (A*) | Nov 15–19 2026 | The Hague, NL | Jan 14 / Apr 29 2026 | [link](…) |
+
+Add a section for **open CFPs** (deadline in the future) and **upcoming conferences** (start date within 90 days). Note conferences where the CFP has closed but the event hasn't happened yet.
+
+### Industry — `now`
+
+Fetch from CFPTime. The API returns cybersecurity-focused industry conferences sorted by conference start date.
+
+**Upcoming conferences and open CFPs:**
+```
+GET https://api.cfptime.org/api/upcoming/
+```
+
+**New conference announcements (RSS):**
+```
+GET https://api.cfptime.org/rss
+```
+Parse the RSS XML to extract `<title>`, `<link>`, `<description>` (contains CFP text), and `<pubDate>`.
+
+**Response fields used:** `name`, `cfp_deadline`, `conf_start_date`, `city`, `country`, `website`, `cfp_details`
+
+**Output format:**
+
+| Conference | Dates | Location | CFP deadline | Website |
+|---|---|---|---|---|
+| DEF CON 33 | Aug 2026 | Las Vegas, US | TBD | [link](…) |
+
+Show CFP deadline relative to today (e.g., "closes in 14 days", "closed"). Highlight conferences where the CFP is still open. Omit conferences more than 12 months out unless explicitly asked.
 
 ---
 

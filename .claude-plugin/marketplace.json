@@ -12,8 +12,8 @@
   "plugins": [
     {
       "name": "con",
-      "version": "1.0.0",
-      "description": "Conference intelligence for security researchers — academic (IEEE S&P, CCS, USENIX Security, NDSS, IACR tiers) and industry (DEF CON, Black Hat, REcon, Troopers, hardwear.io). Paper/talk evaluation, author search, cross-conference topic scans.",
+      "version": "1.1.0",
+      "description": "Conference intelligence for security researchers — academic (IEEE S&P, CCS, USENIX Security, NDSS, IACR tiers) and industry (DEF CON, Black Hat, REcon, Troopers, hardwear.io). Live calendar via confsearch.ethz.ch and cfptime.org. Paper/talk evaluation, author search, cross-conference topic scans.",
       "author": {
         "name": "Federico Maggi",
         "email": "fede@maggi.cc",
