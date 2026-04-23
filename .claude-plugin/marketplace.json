@@ -11,13 +11,15 @@
   },
   "plugins": [
     {
-      "name": "phretor-skills",
-      "description": "Skills for security research, conference intelligence (academic and industry), and productivity",
-      "source": "./",
-      "strict": false,
-      "skills": [
-        "./skills/con"
-      ]
+      "name": "con",
+      "version": "1.0.0",
+      "description": "Conference intelligence for security researchers — academic (IEEE S&P, CCS, USENIX Security, NDSS, IACR tiers) and industry (DEF CON, Black Hat, REcon, Troopers, hardwear.io). Paper/talk evaluation, author search, cross-conference topic scans.",
+      "author": {
+        "name": "Federico Maggi",
+        "email": "fede@maggi.cc",
+        "url": "https://github.com/phretor"
+      },
+      "source": "./skills/con"
     }
   ]
 }
