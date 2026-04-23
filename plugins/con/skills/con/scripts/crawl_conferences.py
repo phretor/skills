@@ -1,6 +1,6 @@
 # /// script
 # requires-python = ">=3.13"
-# dependencies = ["httpx>=0.27"]
+# dependencies = ["httpx>=0.27", "curl_cffi>=0.7"]
 # ///
 """Discover live conference program URLs and write references/academic.md and references/industry.md.
 
@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
 
@@ -24,15 +24,22 @@ import httpx
 REFS_DIR = Path(__file__).parent.parent / "references"
 CURRENT_YEAR = date.today().year
 
+# Black Hat sessions.json — requires Chrome TLS impersonation via curl_cffi.
+# Used as the existence probe; the stored URL is the human-facing schedule page.
+_BH_SESSIONS_URL = "https://blackhat.com/{slug}/briefings/schedule/sessions.json"
+_BH_SLUGS = {"usa": "us", "europe": "eu", "asia": "asia"}
+
 
 @dataclass(frozen=True)
 class Conf:
     name: str
     abbrev: str
-    url_fn: object  # (year: int) -> str
+    url_fn: object       # (year: int) -> str  — human-facing URL stored in references
+    bh_slug: str = ""   # non-empty for Black Hat conferences; triggers curl_cffi check
 
 
 # --- Academic URL generators ---
+
 
 def _usenix(year: int) -> str:
     yy = str(year)[2:]
@@ -75,10 +82,6 @@ def _iacr_ches(year: int) -> str:
     return f"https://ches.iacr.org/{year}/"
 
 
-def _esorics(year: int) -> str:
-    return f"https://esorics{year}.compute.dtu.dk/"
-
-
 def _raid(year: int) -> str:
     return f"https://raid{year}.github.io/"
 
@@ -93,24 +96,16 @@ def _euros_p(year: int) -> str:
 
 # --- Industry URL generators ---
 
+
 def _defcon(year: int) -> str:
     n = year - 1993 + 1  # DEF CON 1 = 1993
     return f"https://media.defcon.org/DEF%20CON%20{n}/"
 
 
-def _blackhat_usa(year: int) -> str:
+def _blackhat(region: str, year: int) -> str:
     yy = str(year)[2:]
-    return f"https://www.blackhat.com/us-{yy}/briefings/schedule/"
-
-
-def _blackhat_eu(year: int) -> str:
-    yy = str(year)[2:]
-    return f"https://www.blackhat.com/eu-{yy}/briefings/schedule/"
-
-
-def _blackhat_asia(year: int) -> str:
-    yy = str(year)[2:]
-    return f"https://www.blackhat.com/asia-{yy}/briefings/schedule/"
+    slug = _BH_SLUGS[region]
+    return f"https://www.blackhat.com/{slug}-{yy}/briefings/schedule/"
 
 
 def _recon(year: int) -> str:
@@ -143,7 +138,6 @@ ACADEMIC_CONFS: list[Conf] = [
     Conf("IACR Asiacrypt", "iacr-asiacrypt", _iacr_asiacrypt),
     Conf("IACR TCC", "iacr-tcc", _iacr_tcc),
     Conf("IACR CHES", "iacr-ches", _iacr_ches),
-    Conf("ESORICS", "esorics", _esorics),
     Conf("RAID", "raid", _raid),
     Conf("PETS", "pets", _pets),
     Conf("EuroS&P", "eurosp", _euros_p),
@@ -151,9 +145,9 @@ ACADEMIC_CONFS: list[Conf] = [
 
 INDUSTRY_CONFS: list[Conf] = [
     Conf("DEF CON", "defcon", _defcon),
-    Conf("Black Hat USA", "blackhat-usa", _blackhat_usa),
-    Conf("Black Hat EU", "blackhat-eu", _blackhat_eu),
-    Conf("Black Hat Asia", "blackhat-asia", _blackhat_asia),
+    Conf("Black Hat USA",  "blackhat-usa",  lambda y: _blackhat("usa",    y), bh_slug="us"),
+    Conf("Black Hat EU",   "blackhat-eu",   lambda y: _blackhat("europe", y), bh_slug="eu"),
+    Conf("Black Hat Asia", "blackhat-asia", lambda y: _blackhat("asia",   y), bh_slug="asia"),
     Conf("REcon", "recon", _recon),
     Conf("Troopers", "troopers", _troopers),
     Conf("hardwear.io", "hardwear", _hardwear),
@@ -169,19 +163,47 @@ async def _is_live(client: httpx.AsyncClient, url: str) -> bool:
         return False
 
 
+def _is_live_bh(slug: str, year: int) -> bool:
+    """Probe Black Hat sessions.json using curl_cffi Chrome TLS impersonation.
+
+    blackhat.com is behind Cloudflare; standard httpx/curl requests get 403.
+    curl_cffi spoofs Chrome's TLS fingerprint and passes the bot check.
+    """
+    from curl_cffi import requests as cf
+
+    yy = str(year)[2:]
+    url = _BH_SESSIONS_URL.format(slug=f"{slug}-{yy}")
+    try:
+        resp = cf.get(url, impersonate="chrome124", timeout=15)
+        return resp.status_code == 200 and bool(resp.json().get("sessions"))
+    except Exception:
+        return False
+
+
 async def discover(
     confs: list[Conf], start: int, end: int
 ) -> dict[str, list[tuple[int, str]]]:
     async with httpx.AsyncClient() as client:
         results: dict[str, list[tuple[int, str]]] = {}
         for conf in confs:
-            candidates = [(y, conf.url_fn(y)) for y in range(start, end + 1)]
-            live = await asyncio.gather(*[_is_live(client, url) for _, url in candidates])
+            years = range(start, end + 1)
+            if conf.bh_slug:
+                # Sequential with a small delay — blackhat.com rate-limits parallel
+                # curl_cffi requests even at low concurrency.
+                checks: list[bool] = []
+                for y in years:
+                    checks.append(await asyncio.to_thread(_is_live_bh, conf.bh_slug, y))
+                    await asyncio.sleep(0.5)
+            else:
+                candidates = [(y, conf.url_fn(y)) for y in years]
+                checks = await asyncio.gather(
+                    *[_is_live(client, url) for _, url in candidates]
+                )
             results[conf.abbrev] = [
-                (year, url) for (year, url), ok in zip(candidates, live) if ok
+                (y, conf.url_fn(y)) for y, ok in zip(years, checks) if ok
             ]
             found = len(results[conf.abbrev])
-            print(f"  {conf.name}: {found}/{len(candidates)} URLs live")
+            print(f"  {conf.name}: {found}/{len(list(years))} URLs live")
     return results
 
 
@@ -225,7 +247,7 @@ def main() -> None:
     )
     parser.add_argument("--academic", action="store_true", help="Refresh academic URLs")
     parser.add_argument("--industry", action="store_true", help="Refresh industry URLs")
-    parser.add_argument("--start-year", type=int, default=2014, metavar="YYYY")
+    parser.add_argument("--start-year", type=int, default=2020, metavar="YYYY")
     parser.add_argument("--end-year", type=int, default=CURRENT_YEAR, metavar="YYYY")
     args = parser.parse_args()
 
