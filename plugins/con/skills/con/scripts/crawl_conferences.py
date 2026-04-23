@@ -38,7 +38,7 @@ class Conf:
     #   returns the discovered URL on success, None if the conference has no data
     #   for that year. Runs in asyncio.to_thread (must be sync).
     url_fn: object
-    bh_slug: str = ""      # non-empty → BH sessions.json probe via curl_cffi
+    bh_slug: str = ""  # non-empty → BH sessions.json probe via curl_cffi
     resolver: object = None  # callable(year: int) -> str | None
 
 
@@ -134,7 +134,7 @@ def _blackhat(region: str, year: int) -> str:
 
 
 def _recon(year: int) -> str:
-    return f"https://recon.cx/recon{year}/schedule/"
+    return f"https://recon.cx/{year}/sessions.html"
 
 
 def _troopers(year: int) -> str:
@@ -147,7 +147,7 @@ def _hardwear(year: int) -> str:
 
 
 def _offensivecon(year: int) -> str:
-    return f"https://www.offensivecon.org/{year}/"
+    return f"https://www.offensivecon.org/agenda/{year}.html"
 
 
 # --- Conference registries ---
@@ -170,9 +170,14 @@ ACADEMIC_CONFS: list[Conf] = [
 
 INDUSTRY_CONFS: list[Conf] = [
     Conf("DEF CON", "defcon", _defcon_resolve, resolver=_defcon_resolve),
-    Conf("Black Hat USA",  "blackhat-usa",  lambda y: _blackhat("usa",    y), bh_slug="us"),
-    Conf("Black Hat EU",   "blackhat-eu",   lambda y: _blackhat("europe", y), bh_slug="eu"),
-    Conf("Black Hat Asia", "blackhat-asia", lambda y: _blackhat("asia",   y), bh_slug="asia"),
+    Conf("Black Hat USA", "blackhat-usa", lambda y: _blackhat("usa", y), bh_slug="us"),
+    Conf("Black Hat EU", "blackhat-eu", lambda y: _blackhat("europe", y), bh_slug="eu"),
+    Conf(
+        "Black Hat Asia",
+        "blackhat-asia",
+        lambda y: _blackhat("asia", y),
+        bh_slug="asia",
+    ),
     Conf("REcon", "recon", _recon),
     Conf("Troopers", "troopers", _troopers),
     Conf("hardwear.io", "hardwear", _hardwear),
@@ -204,15 +209,22 @@ def _is_live_bh(slug: str, year: int) -> bool:
 async def discover(
     confs: list[Conf], start: int, end: int
 ) -> dict[str, list[tuple[int, str]]]:
+    # Cap concurrent resolver calls per conference to avoid triggering rate limits
+    # on servers like media.defcon.org that drop connections under parallel load.
+    resolver_sem = asyncio.Semaphore(3)
+
+    async def _run_resolver(fn: object, year: int) -> str | None:
+        async with resolver_sem:
+            return await asyncio.to_thread(fn, year)
+
     async with httpx.AsyncClient() as client:
         results: dict[str, list[tuple[int, str]]] = {}
         for conf in confs:
             years = list(range(start, end + 1))
 
             if conf.resolver:
-                # Resolver handles both check and URL discovery; run concurrently.
                 resolved: list[str | None] = await asyncio.gather(
-                    *[asyncio.to_thread(conf.resolver, y) for y in years]
+                    *[_run_resolver(conf.resolver, y) for y in years]
                 )
                 results[conf.abbrev] = [
                     (y, url) for y, url in zip(years, resolved) if url
@@ -221,7 +233,9 @@ async def discover(
                 # Sequential + delay: blackhat.com rate-limits parallel curl_cffi threads.
                 bh_live: list[bool] = []
                 for y in years:
-                    bh_live.append(await asyncio.to_thread(_is_live_bh, conf.bh_slug, y))
+                    bh_live.append(
+                        await asyncio.to_thread(_is_live_bh, conf.bh_slug, y)
+                    )
                     await asyncio.sleep(0.5)
                 results[conf.abbrev] = [
                     (y, conf.url_fn(y)) for y, ok in zip(years, bh_live) if ok
