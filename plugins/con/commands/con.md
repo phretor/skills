@@ -1,6 +1,6 @@
 ---
-name: con
-description: "Conference intelligence — academic and industry venues. Use as /con [academic|industry] <question> or /con [academic|industry] now [<acronym>]."
+name: phretor:con
+description: "Conference intelligence — academic and industry venues. Use as /phretor:con [academic|industry] <question> or /phretor:con [academic|industry] now [<acronym>]."
 argument-hint: "[academic|industry] <question|now [acronym]>"
 allowed-tools:
   - WebFetch

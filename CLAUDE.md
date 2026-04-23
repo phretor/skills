@@ -43,7 +43,7 @@ Only `plugin.json` belongs in `.claude-plugin/`. Component directories (`skills/
 
 The command is a **thin shim** — it parses `$ARGUMENTS` and delegates to the skill. No logic lives here.
 
-Default command name matches the plugin name. The creator may choose a different name if it reads more naturally (e.g., a plugin `http-client` might use command name `http`).
+Command names must use the `phretor:` namespace prefix to avoid autocomplete collisions (e.g. `phretor:con`, not `con`). The part after the colon should match the plugin name by default; a shorter alias is fine if it reads more naturally.
 
 ```markdown
 ---
