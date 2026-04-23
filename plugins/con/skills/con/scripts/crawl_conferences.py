@@ -38,8 +38,9 @@ class Conf:
     #   returns the discovered URL on success, None if the conference has no data
     #   for that year. Runs in asyncio.to_thread (must be sync).
     url_fn: object
-    bh_slug: str = ""  # non-empty → BH sessions.json probe via curl_cffi
+    bh_slug: str = ""        # non-empty → BH sessions.json probe via curl_cffi
     resolver: object = None  # callable(year: int) -> str | None
+    sequential: bool = False  # run resolver one year at a time with a delay (rate-limited sources)
 
 
 # --- Academic URL generators ---
@@ -54,55 +55,40 @@ def _ndss(year: int) -> str:
     return f"https://www.ndss-symposium.org/ndss{year}/accepted-papers/"
 
 
-def _ccs(year: int) -> str:
-    return f"https://www.sigsac.org/ccs/CCS{year}/accepted-papers.html"
+def _dblp_acm_resolve(dblp_url: str, conf_abbrev: str, year: int) -> str | None:
+    """Generic resolver: DBLP year page → ACM DL proceedings URL.
 
-
-def _asiaccs_dblp_url(year: int) -> str:
-    # DBLP moved AsiaCCS from conf/ccs/ to conf/asiaccs/ after 2020
-    if year >= 2021:
-        return f"https://dblp.org/db/conf/asiaccs/asiaccs{year}.html"
-    return f"https://dblp.org/db/conf/ccs/asiaccs{year}.html"
-
-
-def _asiaccs_resolve(year: int) -> str | None:
-    """Discover AsiaCCS proceedings URL via a multi-step pipeline.
-
-    1. Fetch DBLP year page → extract top-level proceedings DOI (shortest 10.1145/N)
-    2. Try ACM DL frontmatter PDF via curl_cffi → extract text with pdftotext
-       (ACM DL blocks most programmatic access; this step is best-effort)
-    3. Return the canonical ACM proceedings URL regardless of step 2 outcome.
-
-    DBLP is the authoritative, open source. ACM DL blocks curl_cffi as of 2025,
-    so the frontmatter PDF step will typically fail gracefully.
+    Steps:
+    1. Fetch the DBLP year page and extract the shortest 10.1145/N DOI —
+       that is the top-level proceedings DOI (paper DOIs have a longer suffix).
+    2. Construct the canonical https://dl.acm.org/doi/proceedings/{doi} URL.
+    3. Attempt the ACM DL frontmatter PDF via curl_cffi + pdftotext (best-effort;
+       ACM DL blocks programmatic access as of 2025, so this typically skips silently).
     """
-    import subprocess
-    import tempfile
-
+    import subprocess, tempfile
     from curl_cffi import requests as cf
 
-    dblp_url = _asiaccs_dblp_url(year)
-    r = httpx.get(dblp_url, headers={"User-Agent": "Mozilla/5.0"},
-                  timeout=10, follow_redirects=True)
+    try:
+        r = httpx.get(dblp_url, headers={"User-Agent": "Mozilla/5.0"},
+                      timeout=15, follow_redirects=True)
+    except httpx.HTTPError:
+        return None
+
     if r.status_code >= 400:
         return None
 
-    # Extract all 10.1145/NNNNNNN DOIs; the proceedings DOI is the shortest
-    # (paper DOIs append a suffix: 10.1145/NNNNNNN.MMMMMMM)
     dois = re.findall(r'https://doi\.org/(10\.1145/\d+)', r.text)
     if not dois:
         return None
     procs_doi = min(set(dois), key=len)
     procs_url = f"https://dl.acm.org/doi/proceedings/{procs_doi}"
 
-    # Step 2: attempt frontmatter PDF (best-effort — ACM DL blocks most bots)
     fm_url = f"https://dl.acm.org/action/showFmPdf?doi={procs_doi.replace('/', '%2F')}"
     try:
         session = cf.Session(impersonate="chrome124")
         session.get("https://dl.acm.org/", timeout=10)
         pdf_resp = session.get(fm_url, timeout=20)
-        ct = pdf_resp.headers.get("content-type", "")
-        if pdf_resp.status_code == 200 and "pdf" in ct.lower():
+        if pdf_resp.status_code == 200 and "pdf" in pdf_resp.headers.get("content-type", "").lower():
             with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
                 f.write(pdf_resp.content)
                 pdf_path = f.name
@@ -110,11 +96,34 @@ def _asiaccs_resolve(year: int) -> str | None:
                 ["pdftotext", pdf_path, "-"], capture_output=True, text=True, timeout=30
             )
             if result.returncode == 0:
-                print(f"    [asiaccs {year}] extracted {len(result.stdout):,} chars from frontmatter")
+                print(f"    [{conf_abbrev} {year}] extracted {len(result.stdout):,} chars from frontmatter")
     except Exception:
-        pass  # ACM DL access silently skipped
+        pass
 
     return procs_url
+
+
+def _ccs_resolve(year: int) -> str | None:
+    return _dblp_acm_resolve(
+        f"https://dblp.org/db/conf/ccs/ccs{year}.html", "ccs", year
+    )
+
+
+def _asiaccs_resolve(year: int) -> str | None:
+    # DBLP moved AsiaCCS from conf/ccs/ to conf/asiaccs/ after 2020
+    dblp_url = (
+        f"https://dblp.org/db/conf/asiaccs/asiaccs{year}.html"
+        if year >= 2021
+        else f"https://dblp.org/db/conf/ccs/asiaccs{year}.html"
+    )
+    return _dblp_acm_resolve(dblp_url, "asiaccs", year)
+
+
+def _raid_resolve(year: int) -> str | None:
+    # RAID moved to ACM DL in 2021; pre-2021 editions are on Springer and return None.
+    return _dblp_acm_resolve(
+        f"https://dblp.org/db/conf/raid/raid{year}.html", "raid", year
+    )
 
 
 def _acsac(year: int) -> str:
@@ -139,10 +148,6 @@ def _iacr_tcc(year: int) -> str:
 
 def _iacr_ches(year: int) -> str:
     return f"https://ches.iacr.org/{year}/"
-
-
-def _raid(year: int) -> str:
-    return f"https://raid{year}.github.io/"
 
 
 def _pets(year: int) -> str:
@@ -210,15 +215,15 @@ def _offensivecon(year: int) -> str:
 ACADEMIC_CONFS: list[Conf] = [
     Conf("USENIX Security", "usenix-security", _usenix),
     Conf("NDSS", "ndss", _ndss),
-    Conf("CCS", "ccs", _ccs),
-    Conf("ASIACCS", "asiaccs", _asiaccs_resolve, resolver=_asiaccs_resolve),
+    Conf("CCS", "ccs", _ccs_resolve, resolver=_ccs_resolve, sequential=True),
+    Conf("ASIACCS", "asiaccs", _asiaccs_resolve, resolver=_asiaccs_resolve, sequential=True),
     Conf("ACSAC", "acsac", _acsac),
     Conf("IACR Crypto", "iacr-crypto", _iacr_crypto),
     Conf("IACR Eurocrypt", "iacr-eurocrypt", _iacr_eurocrypt),
     Conf("IACR Asiacrypt", "iacr-asiacrypt", _iacr_asiacrypt),
     Conf("IACR TCC", "iacr-tcc", _iacr_tcc),
     Conf("IACR CHES", "iacr-ches", _iacr_ches),
-    Conf("RAID", "raid", _raid),
+    Conf("RAID", "raid", _raid_resolve, resolver=_raid_resolve, sequential=True),
     Conf("PETS", "pets", _pets),
     Conf("EuroS&P", "eurosp", _euros_p),
 ]
@@ -277,7 +282,16 @@ async def discover(
         for conf in confs:
             years = list(range(start, end + 1))
 
-            if conf.resolver:
+            if conf.resolver and conf.sequential:
+                # One request at a time with delay — for DBLP and other rate-limited sources.
+                seq_results: list[tuple[int, str]] = []
+                for y in years:
+                    url = await asyncio.to_thread(conf.resolver, y)
+                    if url:
+                        seq_results.append((y, url))
+                    await asyncio.sleep(1.0)
+                results[conf.abbrev] = seq_results
+            elif conf.resolver:
                 resolved: list[str | None] = await asyncio.gather(
                     *[_run_resolver(conf.resolver, y) for y in years]
                 )
