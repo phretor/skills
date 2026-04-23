@@ -1,9 +1,9 @@
 ---
 name: con
-description: Conference intelligence for security researchers — academic and industry venues. Invoke as `/con [academic|industry] <question>` or `/con [academic|industry] now` for upcoming conferences and live CFP deadlines. Academic mode covers all TAMU-ranked tiers (IEEE S&P, CCS, USENIX Security, NDSS, Crypto, Eurocrypt, ESORICS, RAID, ACSAC, PETS, EuroS&P, CHES, TCC, and more) and uses confsearch.ethz.ch for live dates; industry mode covers DEF CON, Black Hat, RSA, CanSecWest, REcon, Troopers, hardwear.io, Infiltrate, HITB, OffensiveCon, and more, and uses cfptime.org for live CFP deadlines. Fetches live conference programs and papers from open-access sources (USENIX, NDSS, IACR ePrint, arXiv, DEF CON media archive). Searches by author via DBLP and Semantic Scholar. Evaluates specific papers or talks on a standard rubric: TL;DR, tool/artifact release, reproducibility, CVEs, industry impact, academic impact, and known counterpart work. Use whenever the user mentions conference names, asks about paper rankings, acceptance rates, upcoming deadlines, or ongoing conferences; wants to find or evaluate a specific paper or talk; needs an author's publication record; or wants a cross-conference topic survey.
+description: Conference intelligence for security researchers — academic and industry venues. Invoke as `/con [academic|industry] <question>` or `/con [academic|industry] now` for upcoming conferences and live CFP deadlines. Academic mode uses an aggregate ranking derived from CORE 2023 (portal.core.edu.au) and Guofei Gu's security conference statistics (engr.tamu.edu), covering IEEE S&P, CCS, USENIX Security, NDSS, Crypto, Eurocrypt, ESORICS, RAID, ACSAC, PETS, EuroS&P, CHES, TCC, and more; uses confsearch.ethz.ch for live dates. Industry mode covers DEF CON, Black Hat, RSA, CanSecWest, REcon, Troopers, hardwear.io, Infiltrate, HITB, OffensiveCon, and more; uses cfptime.org for live CFP deadlines. Fetches conference programs and papers from open-access sources (USENIX, NDSS, IACR ePrint, arXiv, DEF CON media archive). Searches by author via DBLP and Semantic Scholar. Evaluates specific papers or talks on a standard rubric: TL;DR, tool/artifact release, reproducibility, CVEs, industry impact, academic impact, and known counterpart work. Use whenever the user mentions conference names, asks about paper rankings, acceptance rates, upcoming deadlines, or ongoing conferences; wants to find or evaluate a specific paper or talk; needs an author's publication record; or wants a cross-conference topic survey.
 metadata:
   author: phretor
-  version: "1.1"
+  version: "1.2"
   preferred-model: haiku
 compatibility: Requires internet access. Run scripts/crawl_conferences.py annually to refresh year-specific URL lists in references/.
 allowed-tools: WebFetch WebSearch Bash
@@ -72,11 +72,13 @@ Pick the top result matching the known acronym. Show all fields.
 
 **Response fields used:** `acronym`, `name`, `location`, `deadline`, `notification`, `start`, `end`, `rank`, `www`
 
+Note: the `rank` field is the CORE rank (A\*, A, B, C) — use it directly; no separate CORE lookup needed.
+
 **Output format:**
 
-| Conference | Dates | Location | Submission deadline | Website |
-|---|---|---|---|---|
-| CCS 2026 (A*) | Nov 15–19 2026 | The Hague, NL | Jan 14 / Apr 29 2026 | [link](…) |
+| Conference | CORE | Dates | Location | Submission deadline | Website |
+|---|---|---|---|---|---|
+| CCS 2026 | A\* | Nov 15–19 2026 | The Hague, NL | Jan 14 / Apr 29 2026 | [link](…) |
 
 Add a section for **open CFPs** (deadline in the future) and **upcoming conferences** (start date within 90 days). Note conferences where the CFP has closed but the event hasn't happened yet.
 
@@ -109,46 +111,61 @@ Show CFP deadline relative to today (e.g., "closes in 14 days", "closed"). Highl
 
 ## Academic Mode
 
-### Conference Tier Rankings
+### Conference Rankings
 
-Source: Guofei Gu, TAMU — https://people.engr.tamu.edu/guofei/sec_conf_stat.htm
-*"Not official, only for reference." Biased toward network/system security. Crypto evaluated separately.*
+**Sources for aggregate rank:**
+- CORE 2023: https://portal.core.edu.au/conf-ranks/?search=security&by=all&source=CORE2023&sort=arank
+- Guofei Gu security conference statistics (acceptance rates + community standing): https://people.engr.tamu.edu/guofei/sec_conf_stat.htm *("not official, only for reference"; biased toward network/system security)*
 
-For year-by-year acceptance rate tables, fetch the TAMU page live.
+**Aggregation rule:**
+| Aggregate | Criteria |
+|---|---|
+| **Top** | CORE A\* *or* Guofei T1 |
+| **High** | CORE A *or* Guofei T2 (use Guofei when CORE has no entry) |
+| **Mid** | CORE B *or* Guofei T3 |
+| **Low** | CORE C |
 
-#### Tier 1
+When reasoning about prestige, cite the individual sources (CORE rank + community standing) rather than the aggregate alone. For year-by-year acceptance rate data, fetch the Guofei page live — that data is unique to that source.
 
-| Abbrev | Full Name | Org | Focus |
-|---|---|---|---|
-| IEEE S&P | IEEE Symposium on Security and Privacy ("Oakland") | IEEE | Systems & applied |
-| CCS | ACM Conference on Computer and Communications Security | ACM | Broad |
-| USENIX Security | USENIX Security Symposium | USENIX | Systems & applied |
-| NDSS | Network and Distributed System Security Symposium | ISOC | Network & systems |
-| Crypto | International Cryptology Conference | IACR | Cryptography |
-| Eurocrypt | European Cryptology Conference | IACR | Cryptography |
+#### Ranked Conferences
 
-#### Tier 2
+| Abbrev | Full Name | CORE | Guofei | **Aggregate** | Focus |
+|---|---|---|---|---|---|
+| IEEE S&P | IEEE Symposium on Security and Privacy | A\* | T1 | **Top** | Systems & applied |
+| CCS | ACM Conf. on Computer and Communications Security | A\* | T1 | **Top** | Broad |
+| USENIX Security | USENIX Security Symposium | A\* | T1 | **Top** | Systems & applied |
+| NDSS | Network and Distributed System Security Symposium | A\* | T1 | **Top** | Network & systems |
+| Crypto | International Cryptology Conference (IACR) | — | T1 | **Top** | Cryptography |
+| Eurocrypt | European Cryptology Conference (IACR) | — | T1 | **Top** | Cryptography |
+| ESORICS | European Symposium on Research in Computer Security | A | T2 | **High** | Broad |
+| ACSAC | Annual Computer Security Applications Conference | A | T2 | **High** | Applied |
+| AsiaCCS | ACM Asia Conf. on Computer and Comms Security | A | T2 | **High** | Asia-Pacific |
+| PETS | Privacy Enhancing Technologies Symposium | A | T2 | **High** | Privacy |
+| EuroS&P | IEEE European Symposium on Security and Privacy | A | T2 | **High** | Broad |
+| CSF | IEEE Computer Security Foundations Symposium | A | T2 | **High** | Formal methods |
+| Asiacrypt | Int'l Conf. on Theory and Application of Cryptology | A | T2 | **High** | Cryptography |
+| TCC | Theory of Cryptography Conference | A | T2 | **High** | Crypto theory |
+| FC | Financial Cryptography and Data Security | A | T2 | **High** | Financial crypto |
+| RAID | Recent Advances in Intrusion Detection | — | T2 | **High** | Intrusion detection |
+| DSN | Dependable Systems and Networks | — | T2 | **High** | Dependability |
+| IMC | Internet Measurement Conference | — | T2 | **High** | Network measurement |
+| CHES | Cryptographic Hardware and Embedded Systems | — | T2 | **High** | Hardware crypto |
+| SOUPS | Symposium On Usable Privacy and Security | B | T2 | **High** | Usable security |
+| ACNS | Applied Cryptography and Network Security | B | T3 | **Mid** | Applied crypto |
+| ACISP | Australasian Conf. on Information Security & Privacy | AusB | T3 | **Mid** | Australasian |
+| IFIP SEC | IFIP Information Security & Privacy Conference | B | T3 | **Mid** | Broad |
+| WiSec | ACM Conf. on Security and Privacy in Wireless/Mobile | B | T3 | **Mid** | Wireless |
+| DIMVA | Detection of Intrusions and Malware & Vuln. Assess. | — | T3 | **Mid** | Malware, detection |
+| ICICS | Int'l Conf. on Information and Communications Security | — | T3 | **Mid** | Broad |
+| SecureComm | Int'l Conf. on Security and Privacy in Comm. Networks | C | T3 | **Mid** | Comms security |
+| PST | Privacy, Security and Trust | C | T3 | **Mid** | Broad |
+| PKC | Int'l Conf. on Practice and Theory in Public-Key Crypto | B | — | **Mid** | Public-key crypto |
+| SAC | Selected Areas in Cryptography | B | T3 | **Mid** | Cryptography |
 
-| Abbrev | Full Name | Focus |
-|---|---|---|
-| ESORICS | European Symposium on Research in Computer Security | Broad |
-| RAID | Recent Advances in Intrusion Detection | Intrusion detection, attacks |
-| ACSAC | Annual Computer Security Applications Conference | Applied |
-| DSN | Dependable Systems and Networks | Dependability |
-| IMC | Internet Measurement Conference | Network measurement |
-| ASIACCS | ACM Symposium on Info, Computer & Comms Security | Asia-Pacific |
-| PETS | Privacy Enhancing Technologies Symposium | Privacy |
-| EuroS&P | IEEE European Symposium on Security and Privacy | Broad |
-| CSF | IEEE Computer Security Foundations Symposium | Formal methods |
-| SOUPS | Symposium On Usable Privacy and Security | Usable security |
-| Asiacrypt | Int'l Conference on Theory and Application of Cryptology | Cryptography |
-| TCC | Theory of Cryptography Conference | Crypto theory |
-| CHES | Cryptographic Hardware and Embedded Systems | Hardware crypto |
-| FC | Financial Cryptography and Data Security | Financial crypto |
-
-#### Tier 3 (selected)
-
-SecureComm, CNS, DIMVA, ACNS, ACISP, ICICS, ISC, ICISC, SACMAT, IFIP SEC, WiSec, PST.
+To re-check or extend rankings live:
+```
+GET https://portal.core.edu.au/conf-ranks/?search=<term>&by=all&source=CORE2023&sort=arank&page=1
+```
 
 #### Recent Acceptance Rates
 
