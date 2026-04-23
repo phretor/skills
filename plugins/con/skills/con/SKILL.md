@@ -288,6 +288,66 @@ ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstrac
 
 ---
 
+## paperhub-cli
+
+`paperhub-cli` is installed as a project dependency (`uv sync`) and available in the shell. It searches, reads, and downloads academic papers across multiple open providers.
+
+**Always pass `--no-plan` to `search`.** The `con` skill owns planning and reasoning; skipping paperhub's LLM decomposition phase keeps responses fast and deterministic.
+
+### When to use
+
+**Fallback** — when primary sources (USENIX, NDSS, IACR ePrint, Semantic Scholar, DBLP) return no results for a query:
+```bash
+paperhub-cli search --no-plan "<query>" \
+  --sources arxiv,dblp,semantic_scholar,iacr \
+  --recent-years 5
+```
+
+**Enrichment** — after returning results from primary sources, use paperhub to find related preprints, check citation counts, or confirm a finding:
+```bash
+paperhub-cli search --no-plan "<paper title or topic>" \
+  --sources arxiv,semantic_scholar \
+  --top-k 5
+```
+
+Author-scoped search:
+```bash
+paperhub-cli search --no-plan "<topic>" --author "<Name>" \
+  --sources dblp,semantic_scholar
+```
+
+### Provider selection for security research
+
+| Provider | Strength | Use for |
+|---|---|---|
+| `arxiv` | Full — reliable, open PDFs | cs.CR preprints, recent work |
+| `dblp` | Full metadata | CCS, S&P, USENIX, NDSS, RAID proceedings |
+| `semantic_scholar` | Full + OA PDFs | Citation counts, related work |
+| `iacr` | Best-effort | Crypto papers (Crypto, Eurocrypt, CHES, TCC) |
+| `openalex` | Full — broad | Obscure venues, long-tail coverage |
+
+Default for most security queries: `--sources arxiv,dblp,semantic_scholar,iacr`
+
+### Reading and downloading papers
+
+```bash
+# Abstract only
+paperhub-cli read --id arxiv:<id>
+paperhub-cli read --id doi:<doi>
+
+# Full text (open access only)
+paperhub-cli read --id arxiv:<id> --full
+paperhub-cli read --id doi:<doi> --full
+
+# Download as Markdown (best for reading in context)
+paperhub-cli download --id arxiv:<id> --format md
+paperhub-cli download --id doi:<doi> --format txt
+```
+
+Paper IDs follow the format `provider:id`, e.g. `arxiv:2405.01234`, `doi:10.1145/3658644`, `openalex:W2741809807`.
+
+---
+
 ## URL Maintenance
 
 `references/academic.md` and `references/industry.md` are auto-generated. Refresh them:

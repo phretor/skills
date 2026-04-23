@@ -39,6 +39,11 @@ Live data: [confsearch.ethz.ch](https://confsearch.ethz.ch) (academic) · [cfpti
   apt-get install poppler-utils  # Debian/Ubuntu
   ```
 
+- **paperhub-cli** — multi-source academic paper search, read, and download (arXiv, DBLP, Semantic Scholar, IACR, and more). Installed automatically via `uv sync` from the repo root:
+  ```bash
+  uv sync
+  ```
+
 ## Installation
 
 ```
