@@ -1,0 +1,10 @@
+[project]
+name = "phretor-skills"
+version = "0.1.0"
+requires-python = ">=3.13"
+
+[dependency-groups]
+dev = [
+    "uv>=0.6",
+    "ruff>=0.9",
+]
