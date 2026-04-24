@@ -382,10 +382,18 @@ Read `resources/manifest.json` for cached industry venue-years.
 
 | Conference | Focus | Cache status |
 |---|---|---|
-| DEF CON | Broad hacking, underground research | ✅ 2021–2025 cached |
+| DEF CON | Broad hacking, underground research | ✅ 2021–2025 (428 talks) |
 | Black Hat USA | Advanced research, enterprise security | ⚠️ Blocked (Cloudflare) |
 | Black Hat EU | Same, European edition | ⚠️ Blocked (Cloudflare) |
 | Black Hat Asia | Same, Asian edition | ⚠️ Blocked (Cloudflare) |
+| OffensiveCon | Offensive research, exploitation | ✅ 2022–2025 (44 talks) |
+| — Lower-tier / uncached — | | |
+| USENIX Security | Academic — systems security | ✅ 2024–2025 (857 papers) |
+| IEEE S&P | Academic — systems & applied | ✅ 2021, 2023, 2024 (575 papers) |
+| CCS | Academic — broad | ✅ 2022–2024 (997 papers) |
+| NDSS | Academic — network & systems | ✅ 2021 (87 papers) |
+| ACSAC | Academic — applied | ✅ 2021–2023, 2025 (296 papers) |
+| ACISP | Academic — Australasian | ✅ 2021–2023 (87 papers) |
 | RSA Conference | Enterprise, policy, threat intel | ❌ Not cached |
 | CanSecWest | Advanced technical, Pwn2Own | ❌ Not cached (JS-rendered) |
 | REcon | Reverse engineering, binary analysis | ❌ Not cached |
@@ -393,7 +401,6 @@ Read `resources/manifest.json` for cached industry venue-years.
 | hardwear.io | Hardware, embedded, IoT security | ❌ Not cached |
 | Infiltrate | Offensive research, exploit dev | ❌ Not cached |
 | HITCON | Asia-Pacific, CTF community | ❌ Not cached |
-| OffensiveCon | Offensive research, exploitation | ✅ 2022–2025 cached |
 | HITB | Hacking in the Box (KL/Amsterdam) | ❌ Not cached |
 | VB Conference | Malware, threat intelligence | ❌ Not cached |
 | POC | Power of Community, Korea | ❌ Not cached |

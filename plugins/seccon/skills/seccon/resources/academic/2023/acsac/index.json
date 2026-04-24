@@ -1,0 +1,754 @@
+{
+  "conference": {
+    "name": "Annual Computer Security Applications Conference",
+    "acronym": "ACSAC",
+    "year": 2023,
+    "venue_slug": "acsac"
+  },
+  "coverage": {
+    "papers_count": 59,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "acsac-2023-001",
+      "title": "PhishReplicant: A Language Model-based Approach to Detect Generated Squatting Domain Names.",
+      "authors": [
+        "Takashi Koide",
+        "Naoki Fukushi",
+        "Hiroki Nakano",
+        "Daiki Chiba 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627111",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#KoideFN023"
+    },
+    {
+      "id": "acsac-2023-002",
+      "title": "From Attachments to SEO: Click Here to Learn More about Clickbait PDFs!",
+      "authors": [
+        "Giada Stivala",
+        "Sahar Abdelnabi",
+        "Andrea Mengascini",
+        "Mariano Graziano",
+        "Mario Fritz",
+        "Giancarlo Pellegrino"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627172",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#StivalaAMGFP23"
+    },
+    {
+      "id": "acsac-2023-003",
+      "title": "Scamdog Millionaire: Detecting E-commerce Scams in the Wild.",
+      "authors": [
+        "Platon Kotzias",
+        "Kevin A. Roundy",
+        "Michalis Pachilakis",
+        "Iskander S&#225;nchez-Rola",
+        "Leyla Bilge"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627184",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#KotziasRPSB23"
+    },
+    {
+      "id": "acsac-2023-004",
+      "title": "When Push Comes to Shove: Empirical Analysis of Web Push Implementations in the Wild.",
+      "authors": [
+        "Alberto Carboneri",
+        "Mohammad Ghasemisharif",
+        "Soroush Karami",
+        "Jason Polakis"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627186",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#CarboneriGKP23"
+    },
+    {
+      "id": "acsac-2023-005",
+      "title": "Triereme: Speeding up hybrid fuzzing through efficient query scheduling.",
+      "authors": [
+        "Elia Geretto",
+        "Julius Hohnerlein",
+        "Cristiano Giuffrida",
+        "Herbert Bos",
+        "Erik van der Kouwe",
+        "Klaus von Gleissenthall"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627173",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#GerettoHGBKG23"
+    },
+    {
+      "id": "acsac-2023-006",
+      "title": "On the Feasibility of Cross-Language Detection of Malicious Packages in npm and PyPI.",
+      "authors": [
+        "Piergiorgio Ladisa",
+        "Serena Elisa Ponta",
+        "Nicola Ronzoni",
+        "Matias Martinez",
+        "Olivier Barais"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627138",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#LadisaPRMB23"
+    },
+    {
+      "id": "acsac-2023-007",
+      "title": "Artemis: Defanging Software Supply Chain Attacks in Multi-repository Update Systems.",
+      "authors": [
+        "Marina Moore",
+        "Trishank Karthik Kuppusamy",
+        "Justin Cappos"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627129",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MooreKC23"
+    },
+    {
+      "id": "acsac-2023-008",
+      "title": "ANDetect: A Third-party Ad Network Libraries Detection Framework for Android Applications.",
+      "authors": [
+        "Xinyu Liu 0019",
+        "Ze Jin",
+        "Jiaxi Liu",
+        "Wei Liu 0243",
+        "Xiaoxi Wang",
+        "Qixu Liu"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627182",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#LiuJLLWL23"
+    },
+    {
+      "id": "acsac-2023-009",
+      "title": "Delegation of TLS Authentication to CDNs using Revocable Delegated Credentials.",
+      "authors": [
+        "DaeGeun Yoon",
+        "Taejoong Chung",
+        "Yongdae Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627144",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#YoonCK23"
+    },
+    {
+      "id": "acsac-2023-010",
+      "title": "Domain and Website Attribution beyond WHOIS.",
+      "authors": [
+        "Silvia Sebasti&#225;n",
+        "Raluca-Georgia Diugan",
+        "Juan Caballero",
+        "Iskander S&#225;nchez-Rola",
+        "Leyla Bilge"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627190",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#SebastianDCSB23"
+    },
+    {
+      "id": "acsac-2023-011",
+      "title": "FS3: Few-Shot and Self-Supervised Framework for Efficient Intrusion Detection in Internet of Things Networks.",
+      "authors": [
+        "Ayesha S. Dina",
+        "A. B. Siddique 0001",
+        "D. Manivannan 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627193",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#DinaS023"
+    },
+    {
+      "id": "acsac-2023-012",
+      "title": "An Empirical Analysis of Enterprise-Wide Mandatory Password Updates.",
+      "authors": [
+        "Ariana Mirian",
+        "Grant Ho",
+        "Stefan Savage",
+        "Geoffrey M. Voelker"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627198",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MirianHSV23"
+    },
+    {
+      "id": "acsac-2023-013",
+      "title": "SealClub: Computer-aided Paper Document Authentication.",
+      "authors": [
+        "Mart&#237;n Ochoa",
+        "Hern&#225;n Vanegas",
+        "Jorge Toro-Pozo",
+        "David A. Basin"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627176",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#OchoaVTB23"
+    },
+    {
+      "id": "acsac-2023-014",
+      "title": "Lightweight Privacy-Preserving Proximity Discovery for Remotely-Controlled Drones.",
+      "authors": [
+        "Pietro Tedeschi",
+        "Savio Sciancalepore",
+        "Roberto Di Pietro"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627174",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#TedeschiSP23"
+    },
+    {
+      "id": "acsac-2023-015",
+      "title": "Unleashing IoT Security: Assessing the Effectiveness of Best Practices in Protecting Against Threats.",
+      "authors": [
+        "Philipp P&#252;tz",
+        "Richard Mitev",
+        "Markus Miettinen",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627133",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#PutzMMS23"
+    },
+    {
+      "id": "acsac-2023-016",
+      "title": "A Tagging Solution to Discover IoT Devices in Apartments.",
+      "authors": [
+        "Berkay Kaplan",
+        "Israel J. Lopez-Toledo",
+        "Carl A. Gunter",
+        "Jingyu Qian"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627108",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#KaplanLGQ23"
+    },
+    {
+      "id": "acsac-2023-017",
+      "title": "Hades: Practical Decentralized Identity with Full Accountability and Fine-grained Sybil-resistance.",
+      "authors": [
+        "Ke Wang 0061",
+        "Jianbo Gao 0003",
+        "Qiao Wang",
+        "Jiashuo Zhang 0001",
+        "Yue Li 0037",
+        "Zhi Guan",
+        "Zhong Chen 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627110",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#WangGWZLG023"
+    },
+    {
+      "id": "acsac-2023-018",
+      "title": "Log2Policy: An Approach to Generate Fine-Grained Access Control Rules for Microservices from Scratch.",
+      "authors": [
+        "Shaowen Xu",
+        "Qihang Zhou",
+        "Heqing Huang 0001",
+        "Xiaoqi Jia",
+        "Haichao Du",
+        "Yang Chen",
+        "Yamin Xie"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627137",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#XuZHJDCX23"
+    },
+    {
+      "id": "acsac-2023-019",
+      "title": "The Queen's Guard: A Secure Enforcement of Fine-grained Access Control In Distributed Data Analytics Platforms.",
+      "authors": [
+        "Fahad Shaon",
+        "Sazzadur Rahaman",
+        "Murat Kantarcioglu"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627132",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ShaonRK23"
+    },
+    {
+      "id": "acsac-2023-020",
+      "title": "OAuth 2.0 Redirect URI Validation Falls Short, Literally.",
+      "authors": [
+        "Tommaso Innocenti",
+        "Matteo Golinelli",
+        "Kaan Onarlioglu",
+        "Seyed Ali Mirheidari",
+        "Bruno Crispo",
+        "Engin Kirda"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627140",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#InnocentiGOMCK23"
+    },
+    {
+      "id": "acsac-2023-021",
+      "title": "Secure and Lightweight Over-the-Air Software Update Distribution for Connected Vehicles.",
+      "authors": [
+        "Christian Plappert",
+        "Andreas Fuchs 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627135",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#Plappert023"
+    },
+    {
+      "id": "acsac-2023-022",
+      "title": "Secure and Lightweight ECU Attestations for Resilient Over-the-Air Updates in Connected Vehicles.",
+      "authors": [
+        "Christian Plappert",
+        "Andreas Fuchs 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627202",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#Plappert023a"
+    },
+    {
+      "id": "acsac-2023-023",
+      "title": "Detection of Anomalies in Electric Vehicle Charging Sessions.",
+      "authors": [
+        "Dustin Kern",
+        "Christoph Krau&#223;",
+        "Matthias Hollick"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627127",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#KernKH23"
+    },
+    {
+      "id": "acsac-2023-024",
+      "title": "SePanner: Analyzing Semantics of Controller Variables in Industrial Control Systems based on Network Traffic.",
+      "authors": [
+        "Jie Meng",
+        "Zeyu Yang 0001",
+        "Zhenyong Zhang",
+        "Yangyang Geng",
+        "Ruilong Deng",
+        "Peng Cheng 0001",
+        "Jiming Chen 0001",
+        "Jianying Zhou 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627179",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MengYZGDC0Z23"
+    },
+    {
+      "id": "acsac-2023-025",
+      "title": "FraudLens: Graph Structural Learning for Bitcoin Illicit Activity Identification.",
+      "authors": [
+        "Jack Nicholls",
+        "Aditya Kuppa",
+        "Nhien-An Le-Khac"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627200",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#NichollsKL23"
+    },
+    {
+      "id": "acsac-2023-026",
+      "title": "Poisoning Network Flow Classifiers.",
+      "authors": [
+        "Giorgio Severi",
+        "Simona Boboila",
+        "Alina Oprea",
+        "John T. Holodnak",
+        "Kendra Kratkiewicz",
+        "Jason Matterer"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627123",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#SeveriBOHKM23"
+    },
+    {
+      "id": "acsac-2023-027",
+      "title": "TGC: Transaction Graph Contrast Network for Ethereum Phishing Scam Detection.",
+      "authors": [
+        "Sijia Li",
+        "Gaopeng Gou",
+        "Chang Liu 0049",
+        "Gang Xiong 0001",
+        "Zhen Li 0011",
+        "Junchao Xiao",
+        "Xinyu Xing 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627109",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#LiGL0LXX23"
+    },
+    {
+      "id": "acsac-2023-028",
+      "title": "Can Large Language Models Provide Security & Privacy Advice? Measuring the Ability of LLMs to Refute Misconceptions.",
+      "authors": [
+        "Yufan Chen",
+        "Arjun Arunasalam",
+        "Z. Berkay Celik"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627196",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ChenAC23"
+    },
+    {
+      "id": "acsac-2023-029",
+      "title": "DefWeb: Defending User Privacy against Cache-based Website Fingerprinting Attacks with Intelligent Noise Injection.",
+      "authors": [
+        "Son Seonghun",
+        "Debopriya Roy Dipta",
+        "Berk G&#252;lmezoglu"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627191",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#SeonghunRB23"
+    },
+    {
+      "id": "acsac-2023-030",
+      "title": "Protecting Your Voice from Speech Synthesis Attacks.",
+      "authors": [
+        "Zihao Liu",
+        "Yan Zhang 0133",
+        "Chenglin Miao"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627183",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#LiuZM23"
+    },
+    {
+      "id": "acsac-2023-031",
+      "title": "Continuous Authentication Using Human-Induced Electric Potential.",
+      "authors": [
+        "Srinivasan Murali",
+        "Wenqiang Jin",
+        "Vighnesh Sivaraman",
+        "Huadi Zhu",
+        "Tianxi Ji",
+        "Pan Li 0001",
+        "Ming Li 0006"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627124",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MuraliJSZJ0023"
+    },
+    {
+      "id": "acsac-2023-032",
+      "title": "Cross Body Signal Pairing (CBSP): A Key Generation Protocol for Pairing Wearable Devices with Cardiac and Respiratory Sensors.",
+      "authors": [
+        "Jafar Pourbemany",
+        "Ye Zhu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627185",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#Pourbemany023"
+    },
+    {
+      "id": "acsac-2023-033",
+      "title": "The Day-After-Tomorrow: On the Performance of Radio Fingerprinting over Time.",
+      "authors": [
+        "Saeif Alhazbi",
+        "Savio Sciancalepore",
+        "Gabriele Oligeri"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627192",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#SaeifSG23"
+    },
+    {
+      "id": "acsac-2023-034",
+      "title": "Enhanced In-air Signature Verification via Hand Skeleton Tracking to Defeat Robot-level Replays.",
+      "authors": [
+        "Zeyu Deng",
+        "Long Huang",
+        "Chen Wang 0009"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627195",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#DengHW23"
+    },
+    {
+      "id": "acsac-2023-035",
+      "title": "Secure Softmax/Sigmoid for Machine-learning Computation.",
+      "authors": [
+        "Yu Zheng 0021",
+        "Qizhi Zhang 0003",
+        "Sherman S. M. Chow",
+        "Yuxiang Peng",
+        "Sijun Tan",
+        "Lichun Li",
+        "Shan Yin"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627175",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#0021ZCPTLY23"
+    },
+    {
+      "id": "acsac-2023-036",
+      "title": "Link Membership Inference Attacks against Unsupervised Graph Representation Learning.",
+      "authors": [
+        "Xiuling Wang",
+        "Wendy Hui Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627115",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#WangW23"
+    },
+    {
+      "id": "acsac-2023-037",
+      "title": "FLARE: Fingerprinting Deep Reinforcement Learning Agents using Universal Adversarial Masks.",
+      "authors": [
+        "Buse G. A. Tekgul",
+        "N. Asokan"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627128",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#TekgulA23"
+    },
+    {
+      "id": "acsac-2023-038",
+      "title": "On the Detection of Image-Scaling Attacks in Machine Learning.",
+      "authors": [
+        "Erwin Quiring",
+        "Andreas M&#252;ller 0025",
+        "Konrad Rieck"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627134",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#QuiringMR23"
+    },
+    {
+      "id": "acsac-2023-039",
+      "title": "A First Look at Toxicity Injection Attacks on Open-domain Chatbots.",
+      "authors": [
+        "Connor Weeks",
+        "Aravind Cheruvu",
+        "Sifat Muhammad Abdullah",
+        "Shravya Kanchi",
+        "Daphne Yao",
+        "Bimal Viswanath"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627122",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#WeeksCAKYV23"
+    },
+    {
+      "id": "acsac-2023-040",
+      "title": "DeepTaster: Adversarial Perturbation-Based Fingerprinting to Identify Proprietary Dataset Use in Deep Neural Networks.",
+      "authors": [
+        "Seonhye Park",
+        "Alsharif Abuadbba",
+        "Shuo Wang 0012",
+        "Kristen Moore",
+        "Yansong Gao 0001",
+        "Hyoungshick Kim",
+        "Surya Nepal"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627204",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ParkAWMGKN23"
+    },
+    {
+      "id": "acsac-2023-041",
+      "title": "Prioritizing Remediation of Enterprise Hosts by Malware Execution Risk.",
+      "authors": [
+        "Andrew Chi",
+        "Blake Anderson",
+        "Michael K. Reiter"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627180",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ChiAR23"
+    },
+    {
+      "id": "acsac-2023-042",
+      "title": "Global Analysis with Aggregation-based Beaconing Detection across Large Campus Networks.",
+      "authors": [
+        "Yizhe Zhang 0006",
+        "Hongying Dong",
+        "Alastair Nottingham",
+        "Molly Buchanan",
+        "Donald E. Brown",
+        "Yixin Sun"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627126",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ZhangDNBBS23"
+    },
+    {
+      "id": "acsac-2023-043",
+      "title": "PSP-Mal: Evading Malware Detection via Prioritized Experience-based Reinforcement Learning with Shapley Prior.",
+      "authors": [
+        "Dazhi Zhan",
+        "Wei Bai",
+        "Xin Liu 0042",
+        "Yue Hu 0016",
+        "Lei Zhang 0126",
+        "Shize Guo",
+        "Zhisong Pan 0003"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627178",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ZhanBLHZGP23"
+    },
+    {
+      "id": "acsac-2023-044",
+      "title": "Binary Sight-Seeing: Accelerating Reverse Engineering via Point-of-Interest-Beacons.",
+      "authors": [
+        "Richard August See",
+        "Maximilian Gehring",
+        "Mathias Fischer 0001",
+        "Shankar Karuppayah"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627139",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#SeeG0K23"
+    },
+    {
+      "id": "acsac-2023-045",
+      "title": "DeepContract: Controllable Authorization of Deep Learning Models.",
+      "authors": [
+        "Xirong Zhuang",
+        "Lan Zhang 0002",
+        "Chen Tang 0002",
+        "Huiqi Liu",
+        "Bin Wang 0070",
+        "Yan Zheng",
+        "Bo Ren 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627107",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ZhuangZTLWZ023"
+    },
+    {
+      "id": "acsac-2023-046",
+      "title": "Secure MLaaS with Temper: Trusted and Efficient Model Partitioning and Enclave Reuse.",
+      "authors": [
+        "Fabing Li",
+        "Xiang Li 0156",
+        "Mingyu Gao 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627145",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#LiLG23"
+    },
+    {
+      "id": "acsac-2023-047",
+      "title": "ABFL: A Blockchain-enabled Robust Framework for Secure and Trustworthy Federated Learning.",
+      "authors": [
+        "Bo Cui 0005",
+        "Tianyu Mei"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627121",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#CuiM23"
+    },
+    {
+      "id": "acsac-2023-048",
+      "title": "FLEDGE: Ledger-based Federated Learning Resilient to Inference and Backdoor Attacks.",
+      "authors": [
+        "Jorge Castillo",
+        "Phillip Rieger",
+        "Hossein Fereidooni",
+        "Qian Chen 0019",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627194",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#CastilloRF0S23"
+    },
+    {
+      "id": "acsac-2023-049",
+      "title": "DOPE: DOmain Protection Enforcement with PKS.",
+      "authors": [
+        "Lukas Maar",
+        "Martin Schwarzl",
+        "Fabian Rauscher",
+        "Daniel Gruss",
+        "Stefan Mangard"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627113",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MaarSRGM23"
+    },
+    {
+      "id": "acsac-2023-050",
+      "title": "RandCompile: Removing Forensic Gadgets from the Linux Kernel to Combat its Analysis.",
+      "authors": [
+        "Fabian Franzen",
+        "Andreas Chris Wilhelmer",
+        "Jens Grossklags"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627197",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#FranzenWG23"
+    },
+    {
+      "id": "acsac-2023-051",
+      "title": "Attack of the Knights: Non Uniform Cache Side Channel Attack.",
+      "authors": [
+        "Farabi Mahmud",
+        "Sungkeun Kim",
+        "Harpreet Singh Chawla",
+        "Eun Jung Kim 0001",
+        "Chia-Che Tsai",
+        "Abdullah Muzahid"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627199",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#MahmudKC0TM23"
+    },
+    {
+      "id": "acsac-2023-052",
+      "title": "PAVUDI: Patch-based Vulnerability Discovery using Machine Learning.",
+      "authors": [
+        "Tom Ganz",
+        "Erik Imgrund",
+        "Martin H&#228;rterich",
+        "Konrad Rieck"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627188",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#GanzIHR23"
+    },
+    {
+      "id": "acsac-2023-053",
+      "title": "Remote Attestation with Constrained Disclosure.",
+      "authors": [
+        "Michael Eckel",
+        "Dominik Roy George",
+        "Bj&#246;rn Grohmann",
+        "Christoph Krau&#223;"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627118",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#EckelGGK23"
+    },
+    {
+      "id": "acsac-2023-054",
+      "title": "Remote attestation of confidential VMs using ephemeral vTPMs.",
+      "authors": [
+        "Vikram Narayanan",
+        "Cl&#225;udio Carvalho",
+        "Angelo Ruocco",
+        "Gheorghe Alm&#225;si 0001",
+        "James Bottomley",
+        "Mengmei Ye",
+        "Tobin Feldman-Fitzthum",
+        "Daniele Buono",
+        "Hubertus Franke",
+        "Anton Burtsev"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627112",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#NarayananCRABYF23"
+    },
+    {
+      "id": "acsac-2023-055",
+      "title": "No Forking Way: Detecting Cloning Attacks on Intel SGX Applications.",
+      "authors": [
+        "Samira Briongos",
+        "Ghassan Karame",
+        "Claudio Soriente",
+        "Annika Wilde"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627187",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#BriongosKSW23"
+    },
+    {
+      "id": "acsac-2023-056",
+      "title": "Detecting Weak Keys in Manufacturing Certificates: A Case Study.",
+      "authors": [
+        "Andrew Chi",
+        "Brandon Enright",
+        "David A. McGrew"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627120",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#ChiEM23"
+    },
+    {
+      "id": "acsac-2023-057",
+      "title": "Differentially Private Resource Allocation.",
+      "authors": [
+        "Joann Qiongna Chen",
+        "Tianhao Wang 0001",
+        "Zhikun Zhang 0001",
+        "Yang Zhang 0016",
+        "Somesh Jha",
+        "Zhou Li 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627181",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#Chen00ZJL23"
+    },
+    {
+      "id": "acsac-2023-058",
+      "title": "Mitigating Membership Inference Attacks via Weighted Smoothing.",
+      "authors": [
+        "Mingtian Tan",
+        "Xiaofei Xie",
+        "Jun Sun 0001",
+        "Tianhao Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627189",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#TanX0023"
+    },
+    {
+      "id": "acsac-2023-059",
+      "title": "Mostree: Malicious Secure Private Decision Tree Evaluation with Sublinear Communication.",
+      "authors": [
+        "Jianli Bai",
+        "Xiangfu Song",
+        "Xiaowu Zhang",
+        "Qifan Wang 0003",
+        "Shujie Cui",
+        "Ee-Chien Chang",
+        "Giovanni Russello"
+      ],
+      "doi": "https://doi.org/10.1145/3627106.3627131",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2023.html#BaiSZWCCR23"
+    }
+  ]
+}

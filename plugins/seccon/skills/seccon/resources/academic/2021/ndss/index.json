@@ -1,0 +1,1131 @@
+{
+  "conference": {
+    "name": "Network and Distributed System Security Symposium",
+    "acronym": "NDSS",
+    "year": 2021,
+    "venue_slug": "ndss"
+  },
+  "coverage": {
+    "papers_count": 87,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "ndss-2021-001",
+      "title": "Flexsealing BGP Against Route Leaks: Peerlock Active Measurement and Analysis.",
+      "authors": [
+        "Tyler McDaniel",
+        "Jared M. Smith",
+        "Max Schuchard"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#McDanielSS21"
+    },
+    {
+      "id": "ndss-2021-002",
+      "title": "A Devil of a Time: How Vulnerable is NTP to Malicious Timeservers?",
+      "authors": [
+        "Yarin Perry",
+        "Neta Rozen Schiff",
+        "Michael Schapira"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PerrySS21"
+    },
+    {
+      "id": "ndss-2021-003",
+      "title": "OblivSketch: Oblivious Network Measurement as a Cloud Service.",
+      "authors": [
+        "Shangqi Lai",
+        "Xingliang Yuan",
+        "Joseph K. Liu",
+        "Xun Yi",
+        "Qi Li 0002",
+        "Dongxi Liu",
+        "Surya Nepal"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LaiYLY0LN21"
+    },
+    {
+      "id": "ndss-2021-004",
+      "title": "ROV++: Improved Deployable Defense against BGP Hijacking.",
+      "authors": [
+        "Reynaldo Morillo",
+        "Justin Furuness",
+        "Cameron Morris",
+        "James Breslin",
+        "Amir Herzberg",
+        "Bing Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MorilloFMBH021"
+    },
+    {
+      "id": "ndss-2021-005",
+      "title": "Trust the Crowd: Wireless Witnessing to Detect Attacks on ADS-B-Based Air-Traffic Surveillance.",
+      "authors": [
+        "Kai Jansen",
+        "Liang Niu",
+        "Nian Xue",
+        "Ivan Martinovic",
+        "Christina P&#246;pper"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#JansenNXMP21"
+    },
+    {
+      "id": "ndss-2021-006",
+      "title": "Towards Measuring Supply Chain Attacks on Package Managers for Interpreted Languages.",
+      "authors": [
+        "Ruian Duan",
+        "Omar Alrawi",
+        "Ranjita Pai Kasturi",
+        "Ryan Elder",
+        "Brendan Saltaformaggio",
+        "Wenke Lee"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#DuanAKESL21"
+    },
+    {
+      "id": "ndss-2021-007",
+      "title": "Processing Dangerous Paths - On Security and Privacy of the Portable Document Format.",
+      "authors": [
+        "Jens M&#252;ller 0007",
+        "Dominik Noss",
+        "Christian Mainka",
+        "Vladislav Mladenov",
+        "J&#246;rg Schwenk"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#0007NMMS21"
+    },
+    {
+      "id": "ndss-2021-008",
+      "title": "XDA: Accurate, Robust Disassembly with Transfer Learning.",
+      "authors": [
+        "Kexin Pei",
+        "Jonas Guan",
+        "David Williams-King",
+        "Junfeng Yang",
+        "Suman Jana"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PeiGWYJ21"
+    },
+    {
+      "id": "ndss-2021-009",
+      "title": "Shadow Attacks: Hiding and Replacing Content in Signed PDFs.",
+      "authors": [
+        "Christian Mainka",
+        "Vladislav Mladenov",
+        "Simon Rohlmann"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MainkaMR21"
+    },
+    {
+      "id": "ndss-2021-010",
+      "title": "KUBO: Precise and Scalable Detection of User-triggerable Undefined Behavior Bugs in OS Kernel.",
+      "authors": [
+        "Changming Liu",
+        "Yaohui Chen 0001",
+        "Long Lu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LiuCL21"
+    },
+    {
+      "id": "ndss-2021-011",
+      "title": "Awakening the Web's Sleeper Agents: Misusing Service Workers for Privacy Leakage.",
+      "authors": [
+        "Soroush Karami",
+        "Panagiotis Ilia",
+        "Jason Polakis"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KaramiIP21"
+    },
+    {
+      "id": "ndss-2021-012",
+      "title": "All the Numbers are US: Large-scale Abuse of Contact Discovery in Mobile Messengers.",
+      "authors": [
+        "Christoph Hagen",
+        "Christian Weinert",
+        "Christoph Sendner",
+        "Alexandra Dmitrienko",
+        "Thomas Schneider 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#HagenWSD021"
+    },
+    {
+      "id": "ndss-2021-013",
+      "title": "Improving Signal's Sealed Sender.",
+      "authors": [
+        "Ian Martiny",
+        "Gabriel Kaptchuk",
+        "Adam J. Aviv",
+        "Daniel S. Roche",
+        "Eric Wustrow"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MartinyKARW21"
+    },
+    {
+      "id": "ndss-2021-014",
+      "title": "Tales of Favicons and Caches: Persistent Tracking in Modern Browsers.",
+      "authors": [
+        "Konstantinos Solomos",
+        "John Kristoff",
+        "Chris Kanich",
+        "Jason Polakis"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SolomosKKP21"
+    },
+    {
+      "id": "ndss-2021-015",
+      "title": "Reining in the Web's Inconsistencies with Site Policy.",
+      "authors": [
+        "Stefano Calzavara",
+        "Tobias Urban",
+        "Dennis Tatang",
+        "Marius Steffens",
+        "Ben Stock"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#CalzavaraUTSS21"
+    },
+    {
+      "id": "ndss-2021-016",
+      "title": "From WHOIS to WHOWAS: A Large-Scale Measurement Study of Domain Registration Privacy under the GDPR.",
+      "authors": [
+        "Chaoyi Lu",
+        "Baojun Liu 0002",
+        "Yiming Zhang 0009",
+        "Zhou Li 0001",
+        "Fenglu Zhang",
+        "Haixin Duan",
+        "Ying Liu 0024",
+        "Joann Qiongna Chen",
+        "Jinjin Liang",
+        "Zaifeng Zhang",
+        "Shuang Hao 0001",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LuL00ZD0CLZH021"
+    },
+    {
+      "id": "ndss-2021-017",
+      "title": "Understanding the Growth and Security Considerations of ECS.",
+      "authors": [
+        "Athanasios Kountouras",
+        "Panagiotis Kintis",
+        "Athanasios Avgetidis",
+        "Thomas Papastergiou",
+        "Charles Lever",
+        "Michalis Polychronakis",
+        "Manos Antonakakis"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KountourasKAPLP21"
+    },
+    {
+      "id": "ndss-2021-018",
+      "title": "Mondrian: Comprehensive Inter-domain Network Zoning Architecture.",
+      "authors": [
+        "Jonghoon Kwon",
+        "Claude H&#228;hni",
+        "Patrick Bamert",
+        "Adrian Perrig"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KwonHBP21"
+    },
+    {
+      "id": "ndss-2021-019",
+      "title": "Bringing Balance to the Force: Dynamic Analysis of the Android Application Framework.",
+      "authors": [
+        "Abdallah Dawoud",
+        "Sven Bugiel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#DawoudB21"
+    },
+    {
+      "id": "ndss-2021-020",
+      "title": "SymQEMU: Compilation-based symbolic execution for binaries.",
+      "authors": [
+        "Sebastian Poeplau",
+        "Aur&#233;lien Francillon"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PoeplauF21"
+    },
+    {
+      "id": "ndss-2021-021",
+      "title": "TASE: Reducing Latency of Symbolic Execution with Transactional Memory.",
+      "authors": [
+        "Adam Humphries",
+        "Kartik Cating-Subramanian",
+        "Michael K. Reiter"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#HumphriesCR21"
+    },
+    {
+      "id": "ndss-2021-022",
+      "title": "Refining Indirect Call Targets at the Binary Level.",
+      "authors": [
+        "Sun Hyoung Kim",
+        "Cong Sun 0001",
+        "Dongrui Zeng",
+        "Gang Tan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KimSZT21"
+    },
+    {
+      "id": "ndss-2021-023",
+      "title": "Obfuscated Access and Search Patterns in Searchable Encryption.",
+      "authors": [
+        "Zhiwei Shang",
+        "Simon Oya",
+        "Andreas Peter 0001",
+        "Florian Kerschbaum"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ShangOPK21"
+    },
+    {
+      "id": "ndss-2021-024",
+      "title": "More than a Fair Share: Network Data Remanence Attacks against Secret Sharing-based Schemes.",
+      "authors": [
+        "Leila Rashidi",
+        "Daniel Kostecki",
+        "Alexander James",
+        "Anthony Peterson",
+        "Majid Ghaderi",
+        "Samuel Jero",
+        "Cristina Nita-Rotaru",
+        "Hamed Okhravi",
+        "Reihaneh Safavi-Naini"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#RashidiKJPGJNOS21"
+    },
+    {
+      "id": "ndss-2021-025",
+      "title": "Forward and Backward Private Conjunctive Searchable Symmetric Encryption.",
+      "authors": [
+        "Sikhar Patranabis",
+        "Debdeep Mukhopadhyay"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PatranabisM21"
+    },
+    {
+      "id": "ndss-2021-026",
+      "title": "Practical Non-Interactive Searchable Encryption with Forward and Backward Privacy.",
+      "authors": [
+        "Shifeng Sun 0001",
+        "Ron Steinfeld",
+        "Shangqi Lai",
+        "Xingliang Yuan",
+        "Amin Sakzad",
+        "Joseph K. Liu",
+        "Surya Nepal",
+        "Dawu Gu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SunSLYSLNG21"
+    },
+    {
+      "id": "ndss-2021-027",
+      "title": "Zoom on the Keystrokes: Exploiting Video Calls for Keystroke Inference Attacks.",
+      "authors": [
+        "Mohd Sabra",
+        "Anindya Maiti",
+        "Murtuza Jadliwala"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SabraMJ21"
+    },
+    {
+      "id": "ndss-2021-028",
+      "title": "Deceptive Deletions for Protecting Withdrawn Posts on Social Media Platforms.",
+      "authors": [
+        "Mohsen Minaei",
+        "S. Chandra Mouli",
+        "Mainack Mondal",
+        "Bruno Ribeiro 0001",
+        "Aniket Kate"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MinaeiMM0K21"
+    },
+    {
+      "id": "ndss-2021-029",
+      "title": "Who's Hosting the Block Party? Studying Third-Party Blockage of CSP and SRI.",
+      "authors": [
+        "Marius Steffens",
+        "Marius Musch",
+        "Martin Johns",
+        "Ben Stock"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SteffensMJS21"
+    },
+    {
+      "id": "ndss-2021-030",
+      "title": "To Err.Is Human: Characterizing the Threat of Unintended URLs in Social Media.",
+      "authors": [
+        "Beliz Kaleli",
+        "Brian Kondracki",
+        "Manuel Egele",
+        "Nick Nikiforakis",
+        "Gianluca Stringhini"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KaleliKENS21"
+    },
+    {
+      "id": "ndss-2021-031",
+      "title": "SerialDetector: Principled and Practical Exploration of Object Injection Vulnerabilities for the Web.",
+      "authors": [
+        "Mikhail Shcherbakov",
+        "Musard Balliu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ShcherbakovB21"
+    },
+    {
+      "id": "ndss-2021-032",
+      "title": "The Abuser Inside Apps: Finding the Culprit Committing Mobile Ad Fraud.",
+      "authors": [
+        "Joongyum Kim",
+        "Junghwan Park",
+        "Sooel Son"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KimPS21"
+    },
+    {
+      "id": "ndss-2021-033",
+      "title": "Your Phone is My Proxy: Detecting and Understanding Mobile Proxy Networks.",
+      "authors": [
+        "Xianghang Mi",
+        "Siyuan Tang",
+        "Zhengyi Li",
+        "Xiaojing Liao",
+        "Feng Qian 0001",
+        "XiaoFeng Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MiTLLQ021"
+    },
+    {
+      "id": "ndss-2021-034",
+      "title": "Understanding Worldwide Private Information Collection on Android.",
+      "authors": [
+        "Yun Shen",
+        "Pierre-Antoine Vervier",
+        "Gianluca Stringhini"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ShenVS21"
+    },
+    {
+      "id": "ndss-2021-035",
+      "title": "On the Insecurity of SMS One-Time Password Messages against Local Attackers in Modern Mobile Devices.",
+      "authors": [
+        "Zeyu Lei",
+        "Yuhong Nan",
+        "Yanick Fratantonio",
+        "Antonio Bianchi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LeiNFB21"
+    },
+    {
+      "id": "ndss-2021-036",
+      "title": "Preventing and Detecting State Inference Attacks on Android.",
+      "authors": [
+        "Andrea Possemato",
+        "Dario Nisi",
+        "Yanick Fratantonio"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PossematoNF21"
+    },
+    {
+      "id": "ndss-2021-037",
+      "title": "As Strong As Its Weakest Link: How to Break Blockchain DApps at RPC Service.",
+      "authors": [
+        "Kai Li 0017",
+        "Jiaqi Chen",
+        "Xianghong Liu",
+        "Yuzhe Richard Tang",
+        "XiaoFeng Wang 0001",
+        "Xiapu Luo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LiCLT0L21"
+    },
+    {
+      "id": "ndss-2021-038",
+      "title": "RandRunner: Distributed Randomness from Trapdoor VDFs with Strong Uniqueness.",
+      "authors": [
+        "Philipp Schindler",
+        "Aljosha Judmayer",
+        "Markus Hittmeir",
+        "Nicholas Stifter",
+        "Edgar R. Weippl"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SchindlerJHSW21"
+    },
+    {
+      "id": "ndss-2021-039",
+      "title": "LaKSA: A Probabilistic Proof-of-Stake Protocol.",
+      "authors": [
+        "Dani&#235;l Reijsbergen",
+        "Pawel Szalachowski",
+        "Junming Ke",
+        "Zengpeng Li 0001",
+        "Jianying Zhou 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ReijsbergenSKL021"
+    },
+    {
+      "id": "ndss-2021-040",
+      "title": "SquirRL: Automating Attack Analysis on Blockchain Incentive Mechanisms with Deep Reinforcement Learning.",
+      "authors": [
+        "Charlie Hou",
+        "Mingxun Zhou",
+        "Yan Ji 0001",
+        "Phil Daian",
+        "Florian Tram&#232;r",
+        "Giulia Fanti",
+        "Ari Juels"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#HouZJDTFJ21"
+    },
+    {
+      "id": "ndss-2021-041",
+      "title": "Bitcontracts: Supporting Smart Contracts in Legacy Blockchains.",
+      "authors": [
+        "Karl W&#252;st",
+        "Loris Diana",
+        "Kari Kostiainen",
+        "Ghassan Karame",
+        "Sinisa Matetic",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#WustDKKMC21"
+    },
+    {
+      "id": "ndss-2021-042",
+      "title": "QPEP: An Actionable Approach to Secure and Performant Broadband From Geostationary Orbit.",
+      "authors": [
+        "James Pavur",
+        "Martin Strohmeier",
+        "Vincent Lenders",
+        "Ivan Martinovic"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#PavurSLM21"
+    },
+    {
+      "id": "ndss-2021-043",
+      "title": "A Formal Analysis of the FIDO UAF Protocol.",
+      "authors": [
+        "Haonan Feng",
+        "Hui Li 0070",
+        "Xuesong Pan",
+        "Ziming Zhao 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#FengLP021"
+    },
+    {
+      "id": "ndss-2021-044",
+      "title": "PHOENIX: Device-Centric Cellular Network Protocol Monitoring using Runtime Verification.",
+      "authors": [
+        "Mitziu Echeverria",
+        "Zeeshan Ahmed",
+        "Bincheng Wang",
+        "M. Fareed Arif",
+        "Syed Rafiul Hussain",
+        "Omar Chowdhury"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#EcheverriaAWAHC21"
+    },
+    {
+      "id": "ndss-2021-045",
+      "title": "The Bluetooth CYBORG: Analysis of the Full Human-Machine Passkey Entry AKE Protocol.",
+      "authors": [
+        "Michael Troncoso",
+        "Britta Hale"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#TroncosoH21"
+    },
+    {
+      "id": "ndss-2021-046",
+      "title": "NetPlier: Probabilistic Network Protocol Reverse Engineering from Message Traces.",
+      "authors": [
+        "Yapeng Ye",
+        "Zhuo Zhang 0002",
+        "Fei Wang 0046",
+        "Xiangyu Zhang 0001",
+        "Dongyan Xu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#Ye0W0X21"
+    },
+    {
+      "id": "ndss-2021-047",
+      "title": "Screen Gleaning: A Screen Reading TEMPEST Attack on Mobile Devices Exploiting an Electromagnetic Side Channel.",
+      "authors": [
+        "Zhuoran Liu 0001",
+        "Niels Samwel",
+        "Leo Weissbart",
+        "Zhengyu Zhao 0001",
+        "Dirk Lauret",
+        "Lejla Batina",
+        "Martha A. Larson"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LiuSW0LBL21"
+    },
+    {
+      "id": "ndss-2021-048",
+      "title": "Rosita: Towards Automatic Elimination of Power-Analysis Leakage in Ciphers.",
+      "authors": [
+        "Madura A. Shelton",
+        "Niels Samwel",
+        "Lejla Batina",
+        "Francesco Regazzoni 0001",
+        "Markus Wagner 0007",
+        "Yuval Yarom"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SheltonSB00Y21"
+    },
+    {
+      "id": "ndss-2021-049",
+      "title": "Hunting the Haunter - Efficient Relational Symbolic Execution for Spectre with Haunted RelSE.",
+      "authors": [
+        "Lesly-Ann Daniel",
+        "S&#233;bastien Bardin",
+        "Tamara Rezk"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#DanielBR21"
+    },
+    {
+      "id": "ndss-2021-050",
+      "title": "SpecTaint: Speculative Taint Analysis for Discovering Spectre Gadgets.",
+      "authors": [
+        "Zhenxiao Qi",
+        "Qian Feng",
+        "Yueqiang Cheng",
+        "Mengjia Yan 0001",
+        "Peng Li",
+        "Heng Yin 0001",
+        "Tao Wei 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#QiFCYLYW21"
+    },
+    {
+      "id": "ndss-2021-051",
+      "title": "Understanding and Detecting International Revenue Share Fraud.",
+      "authors": [
+        "Merve Sahin",
+        "Aur&#233;lien Francillon"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SahinF21"
+    },
+    {
+      "id": "ndss-2021-052",
+      "title": "Differential Training: A Generic Framework to Reduce Label Noises for Android Malware Detection.",
+      "authors": [
+        "Jiayun Xu",
+        "Yingjiu Li",
+        "Robert H. Deng"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#XuLD21"
+    },
+    {
+      "id": "ndss-2021-053",
+      "title": "MINOS: A Lightweight Real-Time Cryptojacking Detection System.",
+      "authors": [
+        "Faraz Naseem Naseem",
+        "Ahmet Aris",
+        "Leonardo Babun",
+        "Ege Tekiner",
+        "A. Selcuk Uluagac"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#NaseemABTU21"
+    },
+    {
+      "id": "ndss-2021-054",
+      "title": "Does Every Second Count? Time-based Evolution of Malware Behavior in Sandboxes.",
+      "authors": [
+        "Alexander K&#252;chler",
+        "Alessandro Mantovani",
+        "Yufei Han 0001",
+        "Leyla Bilge",
+        "Davide Balzarotti"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KuchlerMHBB21"
+    },
+    {
+      "id": "ndss-2021-055",
+      "title": "Hey Alexa, is this Skill Safe?: Taking a Closer Look at the Alexa Skill Ecosystem.",
+      "authors": [
+        "Christopher Lentzsch",
+        "Sheel Jayesh Shah",
+        "Benjamin Andow",
+        "Martin Degeling",
+        "Anupam Das 0001",
+        "William Enck"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LentzschSAD0E21"
+    },
+    {
+      "id": "ndss-2021-056",
+      "title": "IoTSafe: Enforcing Safety and Security Policy with Real IoT Physical Interaction Discovery.",
+      "authors": [
+        "Wenbo Ding 0003",
+        "Hongxin Hu",
+        "Long Cheng 0005"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#DingH021"
+    },
+    {
+      "id": "ndss-2021-057",
+      "title": "PFirewall: Semantics-Aware Customizable Data Flow Control for Smart Home Privacy Protection.",
+      "authors": [
+        "Haotian Chi",
+        "Qiang Zeng 0001",
+        "Xiaojiang Du",
+        "Lannan Luo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#Chi0DL21"
+    },
+    {
+      "id": "ndss-2021-058",
+      "title": "EarArray: Defending against DolphinAttack via Acoustic Attenuation.",
+      "authors": [
+        "Guoming Zhang",
+        "Xiaoyu Ji 0001",
+        "Xinfeng Li",
+        "Gang Qu 0001",
+        "Wenyuan Xu 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ZhangJLQX21"
+    },
+    {
+      "id": "ndss-2021-059",
+      "title": "POP and PUSH: Demystifying and Defending against (Mach) Port-oriented Programming.",
+      "authors": [
+        "Min Zheng",
+        "Xiaolong Bai",
+        "Yajin Zhou",
+        "Chao Zhang 0008",
+        "Fuping Qu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ZhengBZZQ21"
+    },
+    {
+      "id": "ndss-2021-060",
+      "title": "&#1044;&#1086;&#1074;&#1077;&#1088;&#1103;'&#1081;, &#1085;&#1086; &#1087;&#1088;&#1086;&#1074;&#1077;&#1088;&#1103;'&#1081;: SFI safety for native-compiled Wasm.",
+      "authors": [
+        "Evan Johnson 0001",
+        "David Thien",
+        "Yousef Alhessi",
+        "Shravan Narayan",
+        "Fraser Brown",
+        "Sorin Lerner",
+        "Tyler McMullen",
+        "Stefan Savage",
+        "Deian Stefan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#JohnsonTANBLMSS21"
+    },
+    {
+      "id": "ndss-2021-061",
+      "title": "Detecting Kernel Memory Leaks in Specialized Modules with Ownership Reasoning.",
+      "authors": [
+        "Navid Emamdoost",
+        "Qiushi Wu",
+        "Kangjie Lu",
+        "Stephen McCamant"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#EmamdoostWLM21"
+    },
+    {
+      "id": "ndss-2021-062",
+      "title": "Let's Stride Blindfolded in a Forest: Sublinear Multi-Client Decision Trees Evaluation.",
+      "authors": [
+        "Jack P. K. Ma",
+        "Raymond K. H. Tai",
+        "Yongjun Zhao 0001",
+        "Sherman S. M. Chow"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#MaT0C21"
+    },
+    {
+      "id": "ndss-2021-063",
+      "title": "Practical Blind Membership Inference Attack via Differential Comparisons.",
+      "authors": [
+        "Bo Hui 0002",
+        "Yuchen Yang 0001",
+        "Haolin Yuan",
+        "Philippe Burlina",
+        "Neil Zhenqiang Gong",
+        "Yinzhi Cao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#HuiYYBGC21"
+    },
+    {
+      "id": "ndss-2021-064",
+      "title": "GALA: Greedy ComputAtion for Linear Algebra in Privacy-Preserved Neural Networks.",
+      "authors": [
+        "Qiao Zhang 0002",
+        "Chunsheng Xin",
+        "Hongyi Wu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ZhangXW21"
+    },
+    {
+      "id": "ndss-2021-065",
+      "title": "FARE: Enabling Fine-grained Attack Categorization under Low-quality Labeled Data.",
+      "authors": [
+        "Junjie Liang",
+        "Wenbo Guo 0002",
+        "Tongbo Luo",
+        "Vasant G. Honavar",
+        "Gang Wang 0011",
+        "Xinyu Xing 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#Liang0LH0X21"
+    },
+    {
+      "id": "ndss-2021-066",
+      "title": "PGFUZZ: Policy-Guided Fuzzing for Robotic Vehicles.",
+      "authors": [
+        "Hyungsub Kim",
+        "Muslum Ozgur Ozmen",
+        "Antonio Bianchi",
+        "Z. Berkay Celik",
+        "Dongyan Xu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KimOBCX21"
+    },
+    {
+      "id": "ndss-2021-067",
+      "title": "Favocado: Fuzzing the Binding Code of JavaScript Engines Using Semantically Correct Test Cases.",
+      "authors": [
+        "Sung Ta Dinh",
+        "Haehyun Cho",
+        "Kyle Martin",
+        "Adam Oest",
+        "Kyle Zeng",
+        "Alexandros Kapravelos",
+        "Gail-Joon Ahn",
+        "Tiffany Bao",
+        "Ruoyu Wang 0001",
+        "Adam Doup&#233;",
+        "Yan Shoshitaishvili"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#DinhCMOZKAB0DS21"
+    },
+    {
+      "id": "ndss-2021-068",
+      "title": "WINNIE : Fuzzing Windows Applications with Harness Synthesis and Fast Cloning.",
+      "authors": [
+        "Jinho Jung 0001",
+        "Stephen Tong",
+        "Hong Hu 0004",
+        "Jungwon Lim",
+        "Yonghwi Jin",
+        "Taesoo Kim"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#JungT0LJK21"
+    },
+    {
+      "id": "ndss-2021-069",
+      "title": "Reinforcement Learning-based Hierarchical Seed Scheduling for Greybox Fuzzing.",
+      "authors": [
+        "Jinghan Wang",
+        "Chengyu Song",
+        "Heng Yin 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#WangSY21"
+    },
+    {
+      "id": "ndss-2021-070",
+      "title": "Evading Voltage-Based Intrusion Detection on Automotive CAN.",
+      "authors": [
+        "Rohit Bhatia",
+        "Vireshwar Kumar",
+        "Khaled Serag",
+        "Z. Berkay Celik",
+        "Mathias Payer",
+        "Dongyan Xu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#BhatiaKSCPX21"
+    },
+    {
+      "id": "ndss-2021-071",
+      "title": "HERA: Hotpatching of Embedded Real-time Applications.",
+      "authors": [
+        "Christian Niesler",
+        "Sebastian Surminski",
+        "Lucas Davi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#NieslerSD21"
+    },
+    {
+      "id": "ndss-2021-072",
+      "title": "From Library Portability to Para-rehosting: Natively Executing Microcontroller Software on Commodity Hardware.",
+      "authors": [
+        "Wenqiang Li",
+        "Le Guan",
+        "Jingqiang Lin 0001",
+        "Jiameng Shi",
+        "Fengjun Li"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LiGLSL21"
+    },
+    {
+      "id": "ndss-2021-073",
+      "title": "BaseSpec: Comparative Analysis of Baseband Software and Cellular Specifications for L3 Protocols.",
+      "authors": [
+        "Eunsoo Kim",
+        "Dongkwan Kim 0001",
+        "CheolJun Park",
+        "Insu Yun",
+        "Yongdae Kim"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KimKPYK21"
+    },
+    {
+      "id": "ndss-2021-074",
+      "title": "POSEIDON: Privacy-Preserving Federated Neural Network Learning.",
+      "authors": [
+        "Sinem Sav",
+        "Apostolos Pyrgelis",
+        "Juan Ram&#243;n Troncoso-Pastoriza",
+        "David Froelicher",
+        "Jean-Philippe Bossuat",
+        "Joao Sa Sousa",
+        "Jean-Pierre Hubaux"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#SavPTFBSH21"
+    },
+    {
+      "id": "ndss-2021-075",
+      "title": "FLTrust: Byzantine-robust Federated Learning via Trust Bootstrapping.",
+      "authors": [
+        "Xiaoyu Cao",
+        "Minghong Fang",
+        "Jia Liu 0002",
+        "Neil Zhenqiang Gong"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#CaoF0G21"
+    },
+    {
+      "id": "ndss-2021-076",
+      "title": "Manipulating the Byzantine: Optimizing Model Poisoning Attacks and Defenses for Federated Learning.",
+      "authors": [
+        "Virat Shejwalkar",
+        "Amir Houmansadr"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ShejwalkarH21"
+    },
+    {
+      "id": "ndss-2021-077",
+      "title": "Data Poisoning Attacks to Deep Learning Based Recommender Systems.",
+      "authors": [
+        "Hai Huang 0014",
+        "Jiaming Mu",
+        "Neil Zhenqiang Gong",
+        "Qi Li 0002",
+        "Bin Liu 0045",
+        "Mingwei Xu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#HuangMGL0X21"
+    },
+    {
+      "id": "ndss-2021-078",
+      "title": "C^2SR: Cybercrime Scene Reconstruction for Post-mortem Forensic Analysis.",
+      "authors": [
+        "Yonghwi Kwon 0001",
+        "Weihang Wang 0001",
+        "Jinho Jung 0001",
+        "Kyu Hyung Lee",
+        "Roberto Perdisci"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#KwonWJLP21"
+    },
+    {
+      "id": "ndss-2021-079",
+      "title": "ALchemist: Fusing Application and Audit Logs for Precise Attack Provenance without Instrumentation.",
+      "authors": [
+        "Le Yu",
+        "Shiqing Ma",
+        "Zhuo Zhang 0002",
+        "Guanhong Tao 0001",
+        "Xiangyu Zhang 0001",
+        "Dongyan Xu",
+        "Vincent E. Urias",
+        "Han Wei Lin",
+        "Gabriela F. Ciocarlie",
+        "Vinod Yegneswaran",
+        "Ashish Gehani"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#YuMZT0XULCYG21"
+    },
+    {
+      "id": "ndss-2021-080",
+      "title": "WATSON: Abstracting Behaviors from Audit Logs via Aggregation of Contextual Semantics.",
+      "authors": [
+        "Jun Zeng 0006",
+        "Zheng Leong Chua",
+        "Yinfang Chen",
+        "Kaihang Ji",
+        "Zhenkai Liang",
+        "Jian Mao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ZengCCJLM21"
+    },
+    {
+      "id": "ndss-2021-081",
+      "title": "DOVE: A Data-Oblivious Virtual Environment.",
+      "authors": [
+        "Hyun Bin Lee",
+        "Tushar M. Jois",
+        "Christopher W. Fletcher",
+        "Carl A. Gunter"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LeeJFG21"
+    },
+    {
+      "id": "ndss-2021-082",
+      "title": "CHANCEL: Efficient Multi-client Isolation Under Adversarial Programs.",
+      "authors": [
+        "Adil Ahmad",
+        "Juhee Kim",
+        "Jaebaek Seo",
+        "Insik Shin",
+        "Pedro Fonseca 0001",
+        "Byoungyoung Lee"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#AhmadKSSFL21"
+    },
+    {
+      "id": "ndss-2021-083",
+      "title": "Emilia: Catching Iago in Legacy Code.",
+      "authors": [
+        "Rongzhen Cui",
+        "Lianying Zhao",
+        "David Lie"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#CuiZL21"
+    },
+    {
+      "id": "ndss-2021-084",
+      "title": "CV-Inspector: Towards Automating Detection of Adblock Circumvention.",
+      "authors": [
+        "Hieu Le 0003",
+        "Athina Markopoulou",
+        "Zubair Shafiq"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#LeMS21"
+    },
+    {
+      "id": "ndss-2021-085",
+      "title": "FlowLens: Enabling Efficient Flow Classification for ML-based Network Security Applications.",
+      "authors": [
+        "Diogo Barradas",
+        "Nuno Santos 0001",
+        "Lu&#237;s Rodrigues 0001",
+        "Salvatore Signorello",
+        "Fernando M. V. Ramos",
+        "Andr&#233; Madeira"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#Barradas00SRM21"
+    },
+    {
+      "id": "ndss-2021-086",
+      "title": "PrivacyFlash Pro: Automating Privacy Policy Generation for Mobile Apps.",
+      "authors": [
+        "Sebastian Zimmeck",
+        "Rafael Goldstein",
+        "David Baraka"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#ZimmeckGB21"
+    },
+    {
+      "id": "ndss-2021-087",
+      "title": "Towards Understanding and Detecting Cyberbullying in Real-world Images.",
+      "authors": [
+        "Nishant Vishwamitra",
+        "Hongxin Hu",
+        "Feng Luo 0001",
+        "Long Cheng 0005"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/ndss/ndss2021.html#VishwamitraH0021"
+    }
+  ]
+}

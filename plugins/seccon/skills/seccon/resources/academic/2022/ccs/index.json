@@ -1,0 +1,3571 @@
+{
+  "conference": {
+    "name": "ACM Conference on Computer and Communications Security",
+    "acronym": "CCS",
+    "year": 2022,
+    "venue_slug": "ccs"
+  },
+  "coverage": {
+    "papers_count": 287,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "ccs-2022-001",
+      "title": "Designing Hardware for Cryptography and Cryptography for Hardware.",
+      "authors": [
+        "Srinivas Devadas",
+        "Simon Langowski",
+        "Nikola Samardzic",
+        "Sacha Servan-Schreiber",
+        "Daniel S&#225;nchez 0003"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559393",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DevadasLSS022"
+    },
+    {
+      "id": "ccs-2022-002",
+      "title": "We Are the Experts, and We Are the Problem: The Security Advice Fiasco.",
+      "authors": [
+        "Michelle L. Mazurek"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559394",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Mazurek22"
+    },
+    {
+      "id": "ccs-2022-003",
+      "title": "Sustainability is a Security Problem.",
+      "authors": [
+        "Patrick Drew McDaniel"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559396",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#McDaniel22"
+    },
+    {
+      "id": "ccs-2022-004",
+      "title": "Updatable Public Key Encryption from DCR: Efficient Constructions With Stronger Security.",
+      "authors": [
+        "Calvin Abou Haidar",
+        "Beno&#238;t Libert",
+        "Alain Passel&#232;gue"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559376",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HaidarLP22"
+    },
+    {
+      "id": "ccs-2022-005",
+      "title": "Helping or Hindering?: How Browser Extensions Undermine Security.",
+      "authors": [
+        "Shubham Agarwal 0006"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560685",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#000622"
+    },
+    {
+      "id": "ccs-2022-006",
+      "title": "Practical, Round-Optimal Lattice-Based Blind Signatures.",
+      "authors": [
+        "Shweta Agrawal 0001",
+        "Elena Kirshanova",
+        "Damien Stehl&#233;",
+        "Anshu Yadav"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560650",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AgrawalKSY22"
+    },
+    {
+      "id": "ccs-2022-007",
+      "title": "Blacktooth: Breaking through the Defense of Bluetooth in Silence.",
+      "authors": [
+        "Mingrui Ai",
+        "Kaiping Xue",
+        "Bo Luo",
+        "Lutong Chen",
+        "Nenghai Yu",
+        "Qibin Sun",
+        "Feng Wu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560668",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AiXLCYS022"
+    },
+    {
+      "id": "ccs-2022-008",
+      "title": "Server-Aided Continuous Group Key Agreement.",
+      "authors": [
+        "Jo&#235;l Alwen",
+        "Dominik Hartmann",
+        "Eike Kiltz",
+        "Marta Mularczyk"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560632",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AlwenHKM22"
+    },
+    {
+      "id": "ccs-2022-009",
+      "title": "Enforcing Fine-grained Constant-time Policies.",
+      "authors": [
+        "Basavesh Ammanaghatta Shivakumar",
+        "Gilles Barthe",
+        "Benjamin Gr&#233;goire",
+        "Vincent Laporte",
+        "Swarn Priya"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560689",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShivakumarBGLP22"
+    },
+    {
+      "id": "ccs-2022-010",
+      "title": "Post Quantum Noise.",
+      "authors": [
+        "Yawning Angel",
+        "Benjamin Dowling",
+        "Andreas H&#252;lsing",
+        "Peter Schwabe",
+        "Florian Weber"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560577",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AngelDHSW22"
+    },
+    {
+      "id": "ccs-2022-011",
+      "title": "Laconic Private Set-Intersection From Pairings.",
+      "authors": [
+        "Diego F. Aranha",
+        "Chuanwei Lin",
+        "Claudio Orlandi",
+        "Mark Simkin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560642",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AranhaLO022"
+    },
+    {
+      "id": "ccs-2022-012",
+      "title": "Efficient Secure Three-Party Sorting with Applications to Data Analysis and Heavy Hitters.",
+      "authors": [
+        "Gilad Asharov",
+        "Koki Hamada",
+        "Dai Ikarashi",
+        "Ryo Kikuchi",
+        "Ariel Nof",
+        "Benny Pinkas",
+        "Katsumi Takahashi",
+        "Junichi Tomida"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560691",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AsharovHIKNPTT22"
+    },
+    {
+      "id": "ccs-2022-013",
+      "title": "Chaghri - A FHE-friendly Block Cipher.",
+      "authors": [
+        "Tomer Ashur",
+        "Mohammad Mahzoun",
+        "Dilara Toprakhisar"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559364",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AshurMT22"
+    },
+    {
+      "id": "ccs-2022-014",
+      "title": "Secure Parallel Computation on Privately Partitioned Data and Applications.",
+      "authors": [
+        "Nuttapong Attrapadung",
+        "Hiraku Morita",
+        "Kazuma Ohara",
+        "Jacob C. N. Schuldt",
+        "Tadanori Teruya",
+        "Kazunari Tozawa"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560695",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AttrapadungMOST22"
+    },
+    {
+      "id": "ccs-2022-015",
+      "title": "Thora: Atomic and Privacy-Preserving Multi-Channel Updates.",
+      "authors": [
+        "Lukas Aumayr",
+        "Kasra Abbaszadeh",
+        "Matteo Maffei"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560556",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AumayrAM22"
+    },
+    {
+      "id": "ccs-2022-016",
+      "title": "Sleepy Channels: Bi-directional Payment Channels without Watchtowers.",
+      "authors": [
+        "Lukas Aumayr",
+        "Sri Aravinda Krishnan Thyagarajan",
+        "Giulio Malavolta",
+        "Pedro Moreno-Sanchez",
+        "Matteo Maffei"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559370",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AumayrTMMM22"
+    },
+    {
+      "id": "ccs-2022-017",
+      "title": "On the Adaptive Security of the Threshold BLS Signature Scheme.",
+      "authors": [
+        "Renas Bacho",
+        "Julian Loss"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560656",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BachoL22"
+    },
+    {
+      "id": "ccs-2022-018",
+      "title": "Secret-Shared Joins with Multiplicity from Aggregation Trees.",
+      "authors": [
+        "Saikrishna Badrinarayanan",
+        "Sourav Das 0001",
+        "Gayathri Garimella",
+        "Srinivasan Raghuraman",
+        "Peter Rindal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560670",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BadrinarayananD22"
+    },
+    {
+      "id": "ccs-2022-019",
+      "title": "META-BTS: Bootstrapping Precision Beyond the Limit.",
+      "authors": [
+        "Youngjin Bae",
+        "Jung Hee Cheon",
+        "Wonhee Cho 0001",
+        "Jaehyung Kim 0002",
+        "Taekyung Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560696",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BaeC0KK22"
+    },
+    {
+      "id": "ccs-2022-020",
+      "title": "i-TiRE: Incremental Timed-Release Encryption or How to use Timed-Release Encryption on Blockchains?",
+      "authors": [
+        "Leemon Baird",
+        "Pratyay Mukherjee",
+        "Rohit Sinha 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560704",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BairdM022"
+    },
+    {
+      "id": "ccs-2022-021",
+      "title": "Membership Inference Attacks and Generalization: A Causal Perspective.",
+      "authors": [
+        "Teodora Baluta",
+        "Shiqi Shen",
+        "S. Hitarth",
+        "Shruti Tople",
+        "Prateek Saxena"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560694",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BalutaSHTS22"
+    },
+    {
+      "id": "ccs-2022-022",
+      "title": "Tidy: Symbolic Verification of Timed Cryptographic Protocols.",
+      "authors": [
+        "Gilles Barthe",
+        "Ugo Dal Lago",
+        "Giulio Malavolta",
+        "Itsaka Rakotonirina"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559343",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BartheLMR22"
+    },
+    {
+      "id": "ccs-2022-023",
+      "title": "A Wolf in Sheep's Clothing: Spreading Deadly Pathogens Under the Disguise of Popular Music.",
+      "authors": [
+        "Anomadarshi Barua",
+        "Yonatan Gizachew Achamyeleh",
+        "Mohammad Abdullah Al Faruque"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560643",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BaruaAF22"
+    },
+    {
+      "id": "ccs-2022-024",
+      "title": "Feta: Efficient Threshold Designated-Verifier Zero-Knowledge Proofs.",
+      "authors": [
+        "Carsten Baum",
+        "Robin Jadoul",
+        "Emmanuela Orsini",
+        "Peter Scholl",
+        "Nigel P. Smart"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559354",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BaumJOSS22"
+    },
+    {
+      "id": "ccs-2022-025",
+      "title": "Distributed, Private, Sparse Histograms in the Two-Server Model.",
+      "authors": [
+        "James Bell 0001",
+        "Adri&#224; Gasc&#243;n",
+        "Badih Ghazi",
+        "Ravi Kumar 0001",
+        "Pasin Manurangsi",
+        "Mariana Raykova 0001",
+        "Phillipp Schoppmann"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559383",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001GG0M0S22"
+    },
+    {
+      "id": "ccs-2022-026",
+      "title": "Threshold Cryptography as a Service (in the Multiserver and YOSO Models).",
+      "authors": [
+        "Fabrice Benhamouda",
+        "Shai Halevi",
+        "Hugo Krawczyk",
+        "Alex Miao",
+        "Tal Rabin"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559397",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BenhamoudaHKMR22"
+    },
+    {
+      "id": "ccs-2022-027",
+      "title": "Privacy Limitations of Interest-based Advertising on The Web: A Post-mortem Empirical Analysis of Google's FLoC.",
+      "authors": [
+        "Alex Berke",
+        "Dan Calacci"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560626",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BerkeC22"
+    },
+    {
+      "id": "ccs-2022-028",
+      "title": "JIT-Picking: Differential Fuzzing of JavaScript Engines.",
+      "authors": [
+        "Lukas Bernhard",
+        "Tobias Scharnowski",
+        "Moritz Schloegel",
+        "Tim Blazytko",
+        "Thorsten Holz"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560624",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BernhardSSBH22"
+    },
+    {
+      "id": "ccs-2022-029",
+      "title": "A Symbolic Analysis of Privacy for TLS 1.3 with Encrypted Client Hello.",
+      "authors": [
+        "Karthikeyan Bhargavan",
+        "Vincent Cheval",
+        "Christopher A. Wood"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559360",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BhargavanCW22"
+    },
+    {
+      "id": "ccs-2022-030",
+      "title": "Power Contracts: Provably Complete Power Leakage Models for Processors.",
+      "authors": [
+        "Roderick Bloem",
+        "Barbara Gigerl",
+        "Marc Gourjon",
+        "Vedad Hadzic",
+        "Stefan Mangard",
+        "Robert Primas"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560600",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BloemGGHMP22"
+    },
+    {
+      "id": "ccs-2022-031",
+      "title": "Themis: An On-Site Voting System with Systematic Cast-as-intended Verification and Partial Accountability.",
+      "authors": [
+        "Mikael Bougon",
+        "Herv&#233; Chabanne",
+        "V&#233;ronique Cortier",
+        "Alexandre Debant",
+        "Emmanuelle Dottax",
+        "Jannik Dreier",
+        "Pierrick Gaudry",
+        "Mathieu Turuani"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560563",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BougonCCDDDGT22"
+    },
+    {
+      "id": "ccs-2022-032",
+      "title": "Victory by KO: Attacking OpenPGP Using Key Overwriting.",
+      "authors": [
+        "Lara Bruseghini",
+        "Daniel Huigens",
+        "Kenneth G. Paterson"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559363",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BruseghiniHP22"
+    },
+    {
+      "id": "ccs-2022-033",
+      "title": "Do Opt-Outs Really Opt Me Out?",
+      "authors": [
+        "Duc Bui",
+        "Brian Tang",
+        "Kang G. Shin"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560574",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#BuiTS22"
+    },
+    {
+      "id": "ccs-2022-034",
+      "title": "Vizard: A Metadata-hiding Data Analytic System with End-to-End Policy Controls.",
+      "authors": [
+        "Chengjun Cai",
+        "Yichen Zang",
+        "Cong Wang 0001",
+        "Xiaohua Jia",
+        "Qian Wang 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559349",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CaiZWJW22"
+    },
+    {
+      "id": "ccs-2022-035",
+      "title": "Succinct Zero-Knowledge Batch Proofs for Set Accumulators.",
+      "authors": [
+        "Matteo Campanelli",
+        "Dario Fiore 0001",
+        "Semin Han",
+        "Jihye Kim 0001",
+        "Dimitris Kolonelos",
+        "Hyunok Oh"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560677",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Campanelli0HKKO22"
+    },
+    {
+      "id": "ccs-2022-036",
+      "title": "Widespread Underestimation of Sensitivity in Differentially Private Libraries and How to Fix It.",
+      "authors": [
+        "S&#237;lvia Casacuberta",
+        "Michael Shoemate",
+        "Salil P. Vadhan",
+        "Connor Wagaman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560708",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CasacubertaSVW22"
+    },
+    {
+      "id": "ccs-2022-037",
+      "title": "SFuzz: Slice-based Fuzzing for Real-Time Operating Systems.",
+      "authors": [
+        "Libo Chen 0001",
+        "Quanpu Cai",
+        "Zhenbang Ma",
+        "Yanhao Wang",
+        "Hong Hu 0004",
+        "Minghang Shen",
+        "Yue Liu",
+        "Shanqing Guo",
+        "Haixin Duan",
+        "Kaida Jiang",
+        "Zhi Xue"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559367",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ChenCMW0SLGDJX22"
+    },
+    {
+      "id": "ccs-2022-038",
+      "title": "Graph Unlearning.",
+      "authors": [
+        "Min Chen 0032",
+        "Zhikun Zhang 0001",
+        "Tianhao Wang 0001",
+        "Michael Backes 0001",
+        "Mathias Humbert",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559352",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Chen000H022"
+    },
+    {
+      "id": "ccs-2022-039",
+      "title": "MetaEmu: An Architecture Agnostic Rehosting Framework for Automotive Firmware.",
+      "authors": [
+        "Zitai Chen",
+        "Sam L. Thomas",
+        "Flavio D. Garcia"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559338",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ChenTG22"
+    },
+    {
+      "id": "ccs-2022-040",
+      "title": "PSI from Ring-OLE.",
+      "authors": [
+        "Wutichai Chongchitmate",
+        "Yuval Ishai",
+        "Steve Lu 0001",
+        "Rafail Ostrovsky"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559378",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ChongchitmateIL22"
+    },
+    {
+      "id": "ccs-2022-041",
+      "title": "HammerScope: Observing DRAM Power Consumption Using Rowhammer.",
+      "authors": [
+        "Yaakov Cohen",
+        "Kevin Sam Tharayil",
+        "Arie Haenel",
+        "Daniel Genkin",
+        "Angelos D. Keromytis",
+        "Yossi Oren",
+        "Yuval Yarom"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560688",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CohenTHGKOY22"
+    },
+    {
+      "id": "ccs-2022-042",
+      "title": "SortingHat: Efficient Private Decision Tree Evaluation via Homomorphic Encryption and Transciphering.",
+      "authors": [
+        "Kelong Cong",
+        "Debajyoti Das 0001",
+        "Jeongeun Park 0001",
+        "Hilder V. L. Pereira"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560702",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Cong00P22"
+    },
+    {
+      "id": "ccs-2022-043",
+      "title": "SSLGuard: A Watermarking Scheme for Self-supervised Learning Pre-trained Encoders.",
+      "authors": [
+        "Tianshuo Cong",
+        "Xinlei He 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559355",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CongHZ22"
+    },
+    {
+      "id": "ccs-2022-044",
+      "title": "The Generals' Scuttlebutt: Byzantine-Resilient Gossip Protocols.",
+      "authors": [
+        "Sandro Coretti",
+        "Aggelos Kiayias",
+        "Cristopher Moore",
+        "Alexander Russell"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560638",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CorettiKMR22"
+    },
+    {
+      "id": "ccs-2022-045",
+      "title": "Sharp: Short Relaxed Range Proofs.",
+      "authors": [
+        "Geoffroy Couteau",
+        "Dahmun Goudarzi",
+        "Michael Kloo&#223;",
+        "Michael Reichle"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560628",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CouteauGKR22"
+    },
+    {
+      "id": "ccs-2022-046",
+      "title": "QuerySnout: Automating the Discovery of Attribute Inference Attacks against Query-Based Systems.",
+      "authors": [
+        "Ana-Maria Cretu 0002",
+        "Florimond Houssiau",
+        "Antoine Cully",
+        "Yves-Alexandre de Montjoye"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560581",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0002HCM22"
+    },
+    {
+      "id": "ccs-2022-047",
+      "title": "VRust: Automated Vulnerability Detection for Solana Smart Contracts.",
+      "authors": [
+        "Siwei Cui",
+        "Gang Zhao",
+        "Yifei Gao",
+        "Tien Tavu",
+        "Jeff Huang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560552",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#CuiZGT022"
+    },
+    {
+      "id": "ccs-2022-048",
+      "title": "Fast Fully Secure Multi-Party Computation over Any Ring with Two-Thirds Honest Majority.",
+      "authors": [
+        "Anders P. K. Dalskov",
+        "Daniel Escudero 0001",
+        "Ariel Nof"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559389",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Dalskov0N22"
+    },
+    {
+      "id": "ccs-2022-049",
+      "title": "Understanding Security Issues in the NFT Ecosystem.",
+      "authors": [
+        "Dipanjan Das 0002",
+        "Priyanka Bose",
+        "Nicola Ruaro",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559342",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0002BRKV22"
+    },
+    {
+      "id": "ccs-2022-050",
+      "title": "GearBox: Optimal-size Shard Committees by Leveraging the Safety-Liveness Dichotomy.",
+      "authors": [
+        "Bernardo David",
+        "Bernardo Magri",
+        "Christian Matt 0002",
+        "Jesper Buus Nielsen",
+        "Daniel Tschudi"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559375",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DavidM0NT22"
+    },
+    {
+      "id": "ccs-2022-051",
+      "title": "STAR: Secret Sharing for Private Threshold Aggregation Reporting.",
+      "authors": [
+        "Alex Davidson",
+        "Peter Snyder",
+        "E. B. Quirk",
+        "Joseph Genereux",
+        "Benjamin Livshits",
+        "Hamed Haddadi"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560631",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DavidsonSQGLH22"
+    },
+    {
+      "id": "ccs-2022-052",
+      "title": "CANflict: Exploiting Peripheral Conflicts for Data-Link Layer Attacks on Automotive Networks.",
+      "authors": [
+        "Alvise de Faveri Tron",
+        "Stefano Longari",
+        "Michele Carminati",
+        "Mario Polino",
+        "Stefano Zanero"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560618",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TronLCPZ22"
+    },
+    {
+      "id": "ccs-2022-053",
+      "title": "Two-Client Inner-Product Functional Encryption with an Application to Money-Laundering Detection.",
+      "authors": [
+        "Paola de Perthuis",
+        "David Pointcheval"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559374",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#PerthuisP22"
+    },
+    {
+      "id": "ccs-2022-054",
+      "title": "On the (In)Security of Secure ROS2.",
+      "authors": [
+        "Gelei Deng",
+        "Guowen Xu",
+        "Yuan Zhou 0005",
+        "Tianwei Zhang 0004",
+        "Yang Liu 0003"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560681",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DengXZ0022"
+    },
+    {
+      "id": "ccs-2022-055",
+      "title": "FenceSitter: Black-box, Content-Agnostic, and Synchronization-Free Enrollment-Phase Attacks on Speaker Recognition Systems.",
+      "authors": [
+        "Jiangyi Deng",
+        "Yanjiao Chen",
+        "Wenyuan Xu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559357",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DengCX22"
+    },
+    {
+      "id": "ccs-2022-056",
+      "title": "StrongBox: A GPU TEE on Arm Endpoints.",
+      "authors": [
+        "Yunjie Deng 0001",
+        "Chenxu Wang 0005",
+        "Shunchang Yu",
+        "Shiqing Liu",
+        "Zhenyu Ning",
+        "Kevin Leach",
+        "Jin Li 0002",
+        "Shoumeng Yan",
+        "Zhengyu He",
+        "Jiannong Cao 0001",
+        "Fengwei Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560627",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DengWYLNLLYHCZ22"
+    },
+    {
+      "id": "ccs-2022-057",
+      "title": "Understanding Real-world Threats to Deep Learning Models in Android Apps.",
+      "authors": [
+        "Zizhuang Deng",
+        "Kai Chen 0012",
+        "Guozhu Meng",
+        "Xiaodong Zhang 0014",
+        "Ke Xu",
+        "Yao Cheng"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559388",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DengCMZXC22"
+    },
+    {
+      "id": "ccs-2022-058",
+      "title": "A Run a Day Won't Keep the Hacker Away: Inference Attacks on Endpoint Privacy Zones in Fitness Tracking Social Networks.",
+      "authors": [
+        "Karel Dhondt",
+        "Victor Le Pochat",
+        "Alexios Voulimeneas",
+        "Wouter Joosen",
+        "Stijn Volckaert"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560616",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DhondtPVJV22"
+    },
+    {
+      "id": "ccs-2022-059",
+      "title": "Second-Order Low-Randomness d + 1 Hardware Sharing of the AES.",
+      "authors": [
+        "Siemen Dhooghe",
+        "Aein Rezaei Shahmirzadi",
+        "Amir Moradi 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560634",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DhoogheS022"
+    },
+    {
+      "id": "ccs-2022-060",
+      "title": "Improving Line-Point Zero Knowledge: Two Multiplications for the Price of One.",
+      "authors": [
+        "Samuel Dittmer",
+        "Yuval Ishai",
+        "Steve Lu 0001",
+        "Rafail Ostrovsky"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559385",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DittmerILO22"
+    },
+    {
+      "id": "ccs-2022-061",
+      "title": "Shorter Signatures Based on Tailor-Made Minimalist Symmetric-Key Crypto.",
+      "authors": [
+        "Christoph Dobraunig",
+        "Daniel Kales",
+        "Christian Rechberger",
+        "Markus Schofnegger",
+        "Greg Zaverucha"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559353",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DobraunigKRSZ22"
+    },
+    {
+      "id": "ccs-2022-062",
+      "title": "Leakage and Tamper Resilient Permutation-Based Cryptography.",
+      "authors": [
+        "Christoph Dobraunig",
+        "Bart Mennink",
+        "Robert Primas"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560635",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DobraunigMP22"
+    },
+    {
+      "id": "ccs-2022-063",
+      "title": "Exposing the Rat in the Tunnel: Using Traffic Analysis for Tor-based Malware Detection.",
+      "authors": [
+        "Priyanka Dodia",
+        "Mashael AlSabah",
+        "Omar Alrawi",
+        "Tao Wang 0012"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560604",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DodiaAAW22"
+    },
+    {
+      "id": "ccs-2022-064",
+      "title": "Watch Out for Race Condition Attacks When Using Android External Storage.",
+      "authors": [
+        "Shaoyong Du",
+        "Xin Liu",
+        "Guoqing Lai",
+        "Xiangyang Luo 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560666",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DuLLL22"
+    },
+    {
+      "id": "ccs-2022-065",
+      "title": "Perception-Aware Attack: Creating Adversarial Music via Reverse-Engineering Human Perception.",
+      "authors": [
+        "Rui Duan",
+        "Zhe Qu",
+        "Shangqing Zhao",
+        "Leah Ding",
+        "Yao Liu 0007",
+        "Zhuo Lu"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559350",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DuanQZDLL22"
+    },
+    {
+      "id": "ccs-2022-066",
+      "title": "Towards Automated Safety Vetting of Smart Contracts in Decentralized Applications.",
+      "authors": [
+        "Yue Duan",
+        "Xin Zhao",
+        "Yu Pan",
+        "Shucheng Li",
+        "Minghao Li 0003",
+        "Fengyuan Xu",
+        "Mu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559384",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DuanZPLLX022"
+    },
+    {
+      "id": "ccs-2022-067",
+      "title": "Poirot: Probabilistically Recommending Protections for the Android Framework.",
+      "authors": [
+        "Zeinab El-Rewini",
+        "Zhuo Zhang 0002",
+        "Yousra Aafer"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560710",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#El-Rewini0A22"
+    },
+    {
+      "id": "ccs-2022-068",
+      "title": "TurboPack: Honest Majority MPC with Constant Online Communication.",
+      "authors": [
+        "Daniel Escudero 0001",
+        "Vipul Goyal",
+        "Antigoni Polychroniadou",
+        "Yifan Song 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560633",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001GPS22"
+    },
+    {
+      "id": "ccs-2022-069",
+      "title": "Automatic Detection of Speculative Execution Combinations.",
+      "authors": [
+        "Xaver Fabian",
+        "Marco Guarnieri",
+        "Marco Patrignani"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560555",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FabianGP22"
+    },
+    {
+      "id": "ccs-2022-070",
+      "title": "When Frodo Flips: End-to-End Key Recovery on FrodoKEM via Rowhammer.",
+      "authors": [
+        "Michael Fahr",
+        "Hunter Kippen",
+        "Andrew Kwong",
+        "Thinh Dang 0001",
+        "Jacob Lichtinger",
+        "Dana Dachman-Soled",
+        "Daniel Genkin",
+        "Alexander Nelson 0001",
+        "Ray A. Perlner",
+        "Arkady Yerukhimovich",
+        "Daniel Apon"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560673",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FahrKKDLDGNPYA22"
+    },
+    {
+      "id": "ccs-2022-071",
+      "title": "NFGen: Automatic Non-linear Function Evaluation Code Generator for General-purpose MPC Platforms.",
+      "authors": [
+        "Xiaoyu Fan",
+        "Kun Chen 0004",
+        "Guosai Wang",
+        "Mingchun Zhuang",
+        "Yi Li 0005",
+        "Wei Xu 0005"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560565",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FanCWZLX22"
+    },
+    {
+      "id": "ccs-2022-072",
+      "title": "Shifted Inverse: A General Mechanism for Monotonic Functions under User Differential Privacy.",
+      "authors": [
+        "Juanru Fang",
+        "Wei Dong 0007",
+        "Ke Yi 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560567",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FangD022"
+    },
+    {
+      "id": "ccs-2022-073",
+      "title": "CINI MINIS: Domain Isolation for Fault and Combined Security.",
+      "authors": [
+        "Jakob Feldtkeller",
+        "Jan Richter-Brockmann",
+        "Pascal Sasdrich",
+        "Tim G&#252;neysu"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560614",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FeldtkellerRSG22"
+    },
+    {
+      "id": "ccs-2022-074",
+      "title": "Adversarial Correctness and Privacy for Probabilistic Data Structures.",
+      "authors": [
+        "Mia Filic",
+        "Kenneth G. Paterson",
+        "Anupama Unnikrishnan",
+        "Fernando Virdia"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560621",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FilicPUV22"
+    },
+    {
+      "id": "ccs-2022-075",
+      "title": "LibAFL: A Framework to Build Modular and Reusable Fuzzers.",
+      "authors": [
+        "Andrea Fioraldi",
+        "Dominik Christian Maier",
+        "Dongjia Zhang",
+        "Davide Balzarotti"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560602",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FioraldiMZB22"
+    },
+    {
+      "id": "ccs-2022-076",
+      "title": "Efficient Zero-Knowledge Proofs on Signed Data with Applications to Verifiable Computation on Data Streams.",
+      "authors": [
+        "Dario Fiore 0001",
+        "Ida Tucker"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560630",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001T22"
+    },
+    {
+      "id": "ccs-2022-077",
+      "title": "Minotaur: Multi-Resource Blockchain Consensus.",
+      "authors": [
+        "Matthias Fitzi",
+        "Xuechao Wang",
+        "Sreeram Kannan",
+        "Aggelos Kiayias",
+        "Nikos Leonardos",
+        "Pramod Viswanath",
+        "Gerui Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559356",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FitziWKKLVW22"
+    },
+    {
+      "id": "ccs-2022-078",
+      "title": "Squirrel: Efficient Synchronized Multi-Signatures from Lattices.",
+      "authors": [
+        "Nils Fleischhacker",
+        "Mark Simkin 0001",
+        "Zhenfei Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560655",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Fleischhacker0Z22"
+    },
+    {
+      "id": "ccs-2022-079",
+      "title": "Am I Private and If So, how Many?: Communicating Privacy Guarantees of Differential Privacy with Risk Communication Formats.",
+      "authors": [
+        "Daniel Franzen",
+        "Saskia Nu&#241;ez von Voigt",
+        "Peter S&#246;rries",
+        "Florian Tschorsch",
+        "Claudia M&#252;ller-Birn"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560693",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FranzenVSTM22"
+    },
+    {
+      "id": "ccs-2022-080",
+      "title": "Understanding the How and the Why: Exploring Secure Development Practices through a Course Competition.",
+      "authors": [
+        "Kelsey R. Fulton",
+        "Daniel Votipka",
+        "Desiree Abrokwa",
+        "Michelle L. Mazurek",
+        "Michael Hicks 0001",
+        "James Parker"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560569",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FultonVAM0P22"
+    },
+    {
+      "id": "ccs-2022-081",
+      "title": "&#34;Is your explanation stable?&#34;: A Robustness Evaluation Framework for Feature Attribution.",
+      "authors": [
+        "Yuyou Gan",
+        "Yuhao Mao",
+        "Xuhong Zhang 0002",
+        "Shouling Ji",
+        "Yuwen Pu",
+        "Meng Han",
+        "Jianwei Yin",
+        "Ting Wang 0006"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559392",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GanM0JPHY022"
+    },
+    {
+      "id": "ccs-2022-082",
+      "title": "Secure Auctions in the Presence of Rational Adversaries.",
+      "authors": [
+        "Chaya Ganesh",
+        "Bhavana Kanukurthi",
+        "Girisha Shankar"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560706",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GaneshKS22"
+    },
+    {
+      "id": "ccs-2022-083",
+      "title": "Dumbo-NG: Fast Asynchronous BFT Consensus with Throughput-Oblivious Latency.",
+      "authors": [
+        "Yingzi Gao",
+        "Yuan Lu 0001",
+        "Zhenliang Lu",
+        "Qiang Tang 0005",
+        "Jing Xu 0002",
+        "Zhenfeng Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559379",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Gao0L00Z22"
+    },
+    {
+      "id": "ccs-2022-084",
+      "title": "Succinct Zero Knowledge for Floating Point Computations.",
+      "authors": [
+        "Sanjam Garg",
+        "Abhishek Jain 0002",
+        "Zhengzhong Jin",
+        "Yinuo Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560653",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Garg0JZ22"
+    },
+    {
+      "id": "ccs-2022-085",
+      "title": "Practical Settlement Bounds for Proof-of-Work Blockchains.",
+      "authors": [
+        "Peter Gazi",
+        "Ling Ren 0001",
+        "Alexander Russell"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559368",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Gazi0R22"
+    },
+    {
+      "id": "ccs-2022-086",
+      "title": "Hecate: Lifting and Shifting On-Premises Workloads to an Untrusted Cloud.",
+      "authors": [
+        "Xinyang Ge",
+        "Hsuan-Chi Kuo",
+        "Weidong Cui"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560592",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GeKC22"
+    },
+    {
+      "id": "ccs-2022-087",
+      "title": "C2C: Fine-grained Configuration-driven System Call Filtering.",
+      "authors": [
+        "Seyedhamed Ghavamnia",
+        "Tapti Palit",
+        "Michalis Polychronakis"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559366",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GhavamniaPP22"
+    },
+    {
+      "id": "ccs-2022-088",
+      "title": "Foundations of Coin Mixing Services.",
+      "authors": [
+        "Noemi Glaeser",
+        "Matteo Maffei",
+        "Giulio Malavolta",
+        "Pedro Moreno-Sanchez",
+        "Erkan Tairi",
+        "Sri Aravinda Krishnan Thyagarajan"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560637",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GlaeserMMMTT22"
+    },
+    {
+      "id": "ccs-2022-089",
+      "title": "ATTRITION: Attacking Static Hardware Trojan Detection Techniques Using Reinforcement Learning.",
+      "authors": [
+        "Vasudev Gohil",
+        "Hao Guo",
+        "Satwik Patnaik",
+        "Jeyavijayan Rajendran"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560690",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GohilGPR22"
+    },
+    {
+      "id": "ccs-2022-090",
+      "title": "Watch Your Back: Identifying Cybercrime Financial Relationships in Bitcoin through Back-and-Forth Exploration.",
+      "authors": [
+        "Gibran G&#243;mez",
+        "Pedro Moreno-Sanchez",
+        "Juan Caballero"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560587",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GomezMC22"
+    },
+    {
+      "id": "ccs-2022-091",
+      "title": "DangZero: Efficient Use-After-Free Detection via Direct Page Table Access.",
+      "authors": [
+        "Floris Gorter",
+        "Koen Koning",
+        "Herbert Bos",
+        "Cristiano Giuffrida"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560625",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GorterKBG22"
+    },
+    {
+      "id": "ccs-2022-092",
+      "title": "Reinforced Concrete: A Fast Hash Function for Verifiable Computation.",
+      "authors": [
+        "Lorenzo Grassi 0001",
+        "Dmitry Khovratovich",
+        "Reinhard L&#252;ftenegger",
+        "Christian Rechberger",
+        "Markus Schofnegger",
+        "Roman Walch"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560686",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001KLRSW22"
+    },
+    {
+      "id": "ccs-2022-093",
+      "title": "Proof-of-Possession for KEM Certificates using Verifiable Generation.",
+      "authors": [
+        "Tim G&#252;neysu",
+        "Philip W. Hodges",
+        "Georg Land",
+        "Mike Ounsworth",
+        "Douglas Stebila",
+        "Greg Zaverucha"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560560",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GuneysuHLOSZ22"
+    },
+    {
+      "id": "ccs-2022-094",
+      "title": "SPECPATCH: Human-In-The-Loop Adversarial Audio Spectrogram Patch Attack on Speech Recognition.",
+      "authors": [
+        "Hanqing Guo",
+        "Yuanda Wang",
+        "Nikolay Ivanov",
+        "Li Xiao 0001",
+        "Qiben Yan"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560660",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#GuoWI0Y22"
+    },
+    {
+      "id": "ccs-2022-095",
+      "title": "Identifying a Training-Set Attack's Target Using Renormalized Influence Estimation.",
+      "authors": [
+        "Zayd Hammoudeh",
+        "Daniel Lowd"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559335",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HammoudehL22"
+    },
+    {
+      "id": "ccs-2022-096",
+      "title": "Location Heartbleeding: The Rise of Wi-Fi Spoofing Attack Via Geolocation API.",
+      "authors": [
+        "Xiao Han 0009",
+        "Junjie Xiong",
+        "Wenbo Shen",
+        "Zhuo Lu",
+        "Yao Liu 0007"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560623",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HanXSLL22"
+    },
+    {
+      "id": "ccs-2022-097",
+      "title": "How to Hide MetaData in MLS-Like Secure Group Messaging: Simple, Modular, and Post-Quantum.",
+      "authors": [
+        "Keitaro Hashimoto",
+        "Shuichi Katsumata",
+        "Thomas Prest"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560679",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HashimotoKP22"
+    },
+    {
+      "id": "ccs-2022-098",
+      "title": "Behind the Scenes of RPKI.",
+      "authors": [
+        "Tomas Hlavacek",
+        "Philipp Jeitner",
+        "Donika Mirdita",
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560645",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HlavacekJMSW22"
+    },
+    {
+      "id": "ccs-2022-099",
+      "title": "On the Privacy Risks of Cell-Based NAS Architectures.",
+      "authors": [
+        "Hai Huang 0014",
+        "Zhikun Zhang 0001",
+        "Yun Shen",
+        "Michael Backes 0001",
+        "Qi Li 0002",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560619",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Huang0S00022"
+    },
+    {
+      "id": "ccs-2022-100",
+      "title": "Kryvos: Publicly Tally-Hiding Verifiable E-Voting.",
+      "authors": [
+        "Nicolas Huber",
+        "Ralf K&#252;sters",
+        "Toomas Krips",
+        "Julian Liedtke",
+        "Johannes M&#252;ller 0001",
+        "Daniel Rausch 0001",
+        "Pascal Reisert",
+        "Andreas Vogt 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560701",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HuberKKL00R022"
+    },
+    {
+      "id": "ccs-2022-101",
+      "title": "Selective MPC: Distributed Computation of Differentially Private Key-Value Statistics.",
+      "authors": [
+        "Thomas Humphries",
+        "Rasoul Akhavan Mahdavi",
+        "Shannon Veitch",
+        "Florian Kerschbaum"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560559",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HumphriesMVK22"
+    },
+    {
+      "id": "ccs-2022-102",
+      "title": "SpecDoctor: Differential Fuzz Testing to Find Transient Execution Vulnerabilities.",
+      "authors": [
+        "Jaewon Hur",
+        "Suhwan Song",
+        "Sunwoo Kim",
+        "Byoungyoung Lee"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560578",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HurSKL22"
+    },
+    {
+      "id": "ccs-2022-103",
+      "title": "Microarchitectural Leakage Templates and Their Application to Cache-Based Side Channels.",
+      "authors": [
+        "Ahmad Ibrahim 0002",
+        "Hamed Nemati",
+        "Till Schl&#252;ter",
+        "Nils Ole Tippenhauer",
+        "Christian Rossow"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560613",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0002NSTR22"
+    },
+    {
+      "id": "ccs-2022-104",
+      "title": "Differentially Private Triangle and 4-Cycle Counting in the Shuffle Model.",
+      "authors": [
+        "Jacob Imola",
+        "Takao Murakami",
+        "Kamalika Chaudhuri"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560659",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ImolaMC22"
+    },
+    {
+      "id": "ccs-2022-105",
+      "title": "On the Success Rate of Side-Channel Attacks on Masked Implementations: Information-Theoretical Bounds and Their Practical Usage.",
+      "authors": [
+        "Akira Ito 0002",
+        "Rei Ueno",
+        "Naofumi Homma"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560579",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ItoUH22"
+    },
+    {
+      "id": "ccs-2022-106",
+      "title": "AI/ML for Network Security: The Emperor has no Clothes.",
+      "authors": [
+        "Arthur Selle Jacobs",
+        "Roman Beltiukov",
+        "Walter Willinger",
+        "Ronaldo A. Ferreira",
+        "Arpit Gupta",
+        "Lisandro Z. Granville"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560609",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JacobsBWFGG22"
+    },
+    {
+      "id": "ccs-2022-107",
+      "title": "DISTINCT: Identity Theft using In-Browser Communications in Dual-Window Single Sign-On.",
+      "authors": [
+        "Louis Jannett",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "J&#246;rg Schwenk"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560692",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JannettMMS22"
+    },
+    {
+      "id": "ccs-2022-108",
+      "title": "Are Attribute Inference Attacks Just Imputation?",
+      "authors": [
+        "Bargav Jayaraman",
+        "David Evans 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560663",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Jayaraman022"
+    },
+    {
+      "id": "ccs-2022-109",
+      "title": "Cache Refinement Type for Side-Channel Detection of Cryptographic Software.",
+      "authors": [
+        "Ke Jiang",
+        "Yuyan Bao",
+        "Shuai Wang 0011",
+        "Zhibo Liu",
+        "Tianwei Zhang 0004"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560672",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JiangBWL022"
+    },
+    {
+      "id": "ccs-2022-110",
+      "title": "Evocatio: Conjuring Bug Capabilities from a Single PoC.",
+      "authors": [
+        "Zhiyuan Jiang",
+        "Shuitao Gan",
+        "Adrian Herrera",
+        "Flavio Toffalini",
+        "Lucio Romerio",
+        "Chaojing Tang",
+        "Manuel Egele",
+        "Chao Zhang 0008",
+        "Mathias Payer"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560575",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JiangGHTRTEZP22"
+    },
+    {
+      "id": "ccs-2022-111",
+      "title": "Understanding IoT Security from a Market-Scale Perspective.",
+      "authors": [
+        "Xin Jin",
+        "Sunil Manandhar",
+        "Kaushal Kafle",
+        "Zhiqiang Lin 0001",
+        "Adwait Nadkarni"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560640",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JinMKLN22"
+    },
+    {
+      "id": "ccs-2022-112",
+      "title": "SymLM: Predicting Function Names in Stripped Binaries via Context-Sensitive Execution-Aware Code Embeddings.",
+      "authors": [
+        "Xin Jin",
+        "Kexin Pei",
+        "Jun Yeon Won",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560612",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JinPWL22"
+    },
+    {
+      "id": "ccs-2022-113",
+      "title": "P-Verifier: Understanding and Mitigating Security Risks in Cloud-based IoT Access Policies.",
+      "authors": [
+        "Ze Jin",
+        "Luyi Xing",
+        "Yiwei Fang",
+        "Yan Jia 0009",
+        "Bin Yuan",
+        "Qixu Liu"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560680",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JinXFJYL22"
+    },
+    {
+      "id": "ccs-2022-114",
+      "title": "Private and Reliable Neural Network Inference.",
+      "authors": [
+        "Nikola Jovanovic 0001",
+        "Marc Fischer 0002",
+        "Samuel Steffen",
+        "Martin T. Vechev"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560709",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#00010SV22"
+    },
+    {
+      "id": "ccs-2022-115",
+      "title": "A Scalable and Dynamic ACL System for In-Network Defense.",
+      "authors": [
+        "Changhun Jung",
+        "Sian Kim",
+        "Rhongho Jang",
+        "David Mohaisen",
+        "DaeHun Nyang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560606",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JungKJMN22"
+    },
+    {
+      "id": "ccs-2022-116",
+      "title": "TRACER: Signature-based Static Analysis for Detecting Recurring Vulnerabilities.",
+      "authors": [
+        "Wooseok Kang",
+        "Byoungho Son",
+        "Kihong Heo"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560664",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KangSH22"
+    },
+    {
+      "id": "ccs-2022-117",
+      "title": "HyperDbg: Reinventing Hardware-Assisted Debugging.",
+      "authors": [
+        "Mohammad Sina Karvandi",
+        "MohammadHosein Gholamrezaei",
+        "Saleh Khalaj Monfared",
+        "Soroush Meghdadi Zanjani",
+        "Behrooz Abbassi",
+        "Ali Amini",
+        "Reza Mortazavi",
+        "Saeid Gorgin 0001",
+        "Dara Rahmati",
+        "Michael Schwarz 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560649",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KarvandiGMZAAM022"
+    },
+    {
+      "id": "ccs-2022-118",
+      "title": "RedShift: Transparent SNARKs from List Polynomial Commitments.",
+      "authors": [
+        "Assimakis A. Kattis",
+        "Konstantin Panarin",
+        "Alexander Vlasov"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560657",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KattisPV22"
+    },
+    {
+      "id": "ccs-2022-119",
+      "title": "PEReDi: Privacy-Enhanced, Regulated and Distributed Central Bank Digital Currencies.",
+      "authors": [
+        "Aggelos Kiayias",
+        "Markulf Kohlweiss",
+        "Amirreza Sarencheh"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560707",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KiayiasKS22"
+    },
+    {
+      "id": "ccs-2022-120",
+      "title": "DriveFuzz: Discovering Autonomous Driving Bugs through Driving Quality-Guided Fuzzing.",
+      "authors": [
+        "Seulbae Kim",
+        "Major Liu",
+        "Junghwan John Rhee",
+        "Yuseok Jeon",
+        "Yonghwi Kwon 0001",
+        "Chung Hwan Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560558",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KimLRJ0K22"
+    },
+    {
+      "id": "ccs-2022-121",
+      "title": "Phishing URL Detection: A Network-based Approach Robust to Evasion.",
+      "authors": [
+        "Taeri Kim 0001",
+        "Noseong Park",
+        "Jiwon Hong",
+        "Sang-Wook Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560615",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KimPHK22"
+    },
+    {
+      "id": "ccs-2022-122",
+      "title": "NTRU-v-um: Secure Fully Homomorphic Encryption from NTRU with Small Modulus.",
+      "authors": [
+        "Kamil Kluczniak"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560700",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Kluczniak22"
+    },
+    {
+      "id": "ccs-2022-123",
+      "title": "Low-Latency Hardware Private Circuits.",
+      "authors": [
+        "David Knichel",
+        "Amir Moradi 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559362",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Knichel022"
+    },
+    {
+      "id": "ccs-2022-124",
+      "title": "LPGNet: Link Private Graph Networks for Node Classification.",
+      "authors": [
+        "Aashish Kolluri",
+        "Teodora Baluta",
+        "Bryan Hooi",
+        "Prateek Saxena"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560705",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KolluriBHS22"
+    },
+    {
+      "id": "ccs-2022-125",
+      "title": "Leakage Inversion: Towards Quantifying Privacy in Searchable Encryption.",
+      "authors": [
+        "Evgenios M. Kornaropoulos",
+        "Nathaniel Moyer",
+        "Charalampos Papamanthou",
+        "Alexandros Psomas 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560593",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KornaropoulosMP22"
+    },
+    {
+      "id": "ccs-2022-126",
+      "title": "PentaGOD: Stepping beyond Traditional GOD with Five Parties.",
+      "authors": [
+        "Nishat Koti",
+        "Varsha Bhat Kukkala",
+        "Arpita Patra",
+        "Bhavish Raj Gopal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559369",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KotiKPG22"
+    },
+    {
+      "id": "ccs-2022-127",
+      "title": "Hammurabi: A Framework for Pluggable, Logic-Based X.509 Certificate Validation Policies.",
+      "authors": [
+        "James Larisch",
+        "Waqar Aqeel",
+        "Michael Lum",
+        "Yaelle Goldschlag",
+        "Leah Kannan",
+        "Kasra Torshizi",
+        "Yujie Wang",
+        "Taejoong Chung",
+        "Dave Levin",
+        "Bruce M. Maggs",
+        "Alan Mislove",
+        "Bryan Parno",
+        "Christo Wilson"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560594",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LarischALGKTWCL22"
+    },
+    {
+      "id": "ccs-2022-128",
+      "title": "Cerberus: A Formal Approach to Secure and Efficient Enclave Memory Sharing.",
+      "authors": [
+        "Dayeol Lee",
+        "Kevin Cheang",
+        "Alexander Thomas",
+        "Catherine Lu",
+        "Pranav Gaddamadugu",
+        "Anjo Vahldiek-Oberwagner",
+        "Mona Vij",
+        "Dawn Song",
+        "Sanjit A. Seshia",
+        "Krste Asanovic"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560595",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LeeCTLGVVSSA22"
+    },
+    {
+      "id": "ccs-2022-129",
+      "title": "Collect Responsibly But Deliver Arbitrarily?: A Study on Cross-User Privacy Leakage in Mobile Apps.",
+      "authors": [
+        "Shuai Li 0006",
+        "Zhemin Yang",
+        "Nan Hua",
+        "Peng Liu 0005",
+        "Xiaohan Zhang 0001",
+        "Guangliang Yang 0001",
+        "Min Yang 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559371",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiYH000022"
+    },
+    {
+      "id": "ccs-2022-130",
+      "title": "PACMem: Enforcing Spatial and Temporal Memory Safety via ARM Pointer Authentication.",
+      "authors": [
+        "Yuan Li 0061",
+        "Wende Tan",
+        "Zhizheng Lv",
+        "Songtao Yang",
+        "Mathias Payer",
+        "Ying Liu 0024",
+        "Chao Zhang 0008"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560598",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiTLYPLZ22"
+    },
+    {
+      "id": "ccs-2022-131",
+      "title": "Auditing Membership Leakages of Multi-Exit Networks.",
+      "authors": [
+        "Zheng Li 0023",
+        "Yiyong Liu",
+        "Xinlei He 0001",
+        "Ning Yu 0006",
+        "Michael Backes 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559359",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiLHY0022"
+    },
+    {
+      "id": "ccs-2022-132",
+      "title": "Overo: Sharing Private Audio Recordings.",
+      "authors": [
+        "Jaemin Lim",
+        "Kiyeon Kim",
+        "Hyunwoo Yu",
+        "Suk-Bok Lee"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560572",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LimKYL22"
+    },
+    {
+      "id": "ccs-2022-133",
+      "title": "InviCloak: An End-to-End Approach to Privacy and Performance in Web Content Distribution.",
+      "authors": [
+        "Shihan Lin",
+        "Rui Xin 0002",
+        "Aayush Goel",
+        "Xiaowei Yang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559336",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LinXGY22"
+    },
+    {
+      "id": "ccs-2022-134",
+      "title": "DirtyCred: Escalating Privilege in Linux Kernel.",
+      "authors": [
+        "Zhenpeng Lin",
+        "Yuhang Wu 0003",
+        "Xinyu Xing 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560585",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LinWX22"
+    },
+    {
+      "id": "ccs-2022-135",
+      "title": "Frequency Throttling Side-Channel Attack.",
+      "authors": [
+        "Chen Liu 0013",
+        "Abhishek Chakraborty 0001",
+        "Nikhil Chawla",
+        "Neer Roggel"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560682",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuCCR22"
+    },
+    {
+      "id": "ccs-2022-136",
+      "title": "Ready Raider One: Exploring the Misuse of Cloud Gaming Services.",
+      "authors": [
+        "Guannan Liu 0003",
+        "Daiping Liu",
+        "Shuai Hao 0001",
+        "Xing Gao 0001",
+        "Kun Sun 0001",
+        "Haining Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560647",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuL000W22"
+    },
+    {
+      "id": "ccs-2022-137",
+      "title": "When Evil Calls: Targeted Adversarial Voice over IP Network.",
+      "authors": [
+        "Han Liu",
+        "Zhiyuan Yu 0001",
+        "Mingming Zha 0001",
+        "XiaoFeng Wang 0001",
+        "William Yeoh 0001",
+        "Yevgeniy Vorobeychik",
+        "Ning Zhang 0017"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560671",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuYZ00VZ22"
+    },
+    {
+      "id": "ccs-2022-138",
+      "title": "Order-Disorder: Imitation Adversarial Attacks for Black-box Neural Ranking Models.",
+      "authors": [
+        "Jiawei Liu 0002",
+        "Yangyang Kang",
+        "Di Tang 0001",
+        "Kaisong Song",
+        "Changlong Sun",
+        "Xiaofeng Wang 0006",
+        "Wei Lu 0019",
+        "Xiaozhong Liu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560683",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuKTSSWLL22"
+    },
+    {
+      "id": "ccs-2022-139",
+      "title": "Matproofs: Maintainable Matrix Commitment with Efficient Aggregation.",
+      "authors": [
+        "Jing Liu 0069",
+        "Liang Feng Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560591",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuZ22"
+    },
+    {
+      "id": "ccs-2022-140",
+      "title": "Harnessing Perceptual Adversarial Patches for Crowd Counting.",
+      "authors": [
+        "Shunchang Liu",
+        "Jiakai Wang",
+        "Aishan Liu",
+        "Yingwei Li 0002",
+        "Yijie Gao",
+        "Xianglong Liu 0001",
+        "Dacheng Tao"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560566",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuWLLG0T22"
+    },
+    {
+      "id": "ccs-2022-141",
+      "title": "Acquirer: A Hybrid Approach to Detecting Algorithmic Complexity Vulnerabilities.",
+      "authors": [
+        "Yinxi Liu",
+        "Wei Meng 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559337",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Liu022"
+    },
+    {
+      "id": "ccs-2022-142",
+      "title": "Membership Inference Attacks by Exploiting Loss Trajectory.",
+      "authors": [
+        "Yiyong Liu",
+        "Zhengyu Zhao 0001",
+        "Michael Backes 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560684",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Liu00022"
+    },
+    {
+      "id": "ccs-2022-143",
+      "title": "Empirical Analysis of EIP-1559: Transaction Fees, Waiting Times, and Consensus Security.",
+      "authors": [
+        "Yulin Liu 0002",
+        "Yuxuan Lu 0001",
+        "Kartik Nayak",
+        "Fan Zhang 0022",
+        "Luyao Zhang 0001",
+        "Yinhong Zhao"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559341",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuLNZZZ22"
+    },
+    {
+      "id": "ccs-2022-144",
+      "title": "StolenEncoder: Stealing Pre-trained Encoders in Self-supervised Learning.",
+      "authors": [
+        "Yupei Liu",
+        "Jinyuan Jia 0001",
+        "Hongbin Liu 0005",
+        "Neil Zhenqiang Gong"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560586",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuJ0G22"
+    },
+    {
+      "id": "ccs-2022-145",
+      "title": "LoneNeuron: A Highly-Effective Feature-Domain Neural Trojan Using Invisible and Polymorphic Watermarks.",
+      "authors": [
+        "Zeyan Liu",
+        "Fengjun Li",
+        "Zhu Li 0001",
+        "Bo Luo"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560678",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuLLL22"
+    },
+    {
+      "id": "ccs-2022-146",
+      "title": "Detecting Missing-Permission-Check Vulnerabilities in Distributed Cloud Systems.",
+      "authors": [
+        "Jie Lu 0009",
+        "Haofeng Li",
+        "Chen Liu",
+        "Lian Li 0002",
+        "Kun Cheng"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560589",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuLL0C22"
+    },
+    {
+      "id": "ccs-2022-147",
+      "title": "Bolt-Dumbo Transformer: Asynchronous Consensus As Fast As the Pipelined BFT.",
+      "authors": [
+        "Yuan Lu 0001",
+        "Zhenliang Lu",
+        "Qiang Tang 0005"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559346",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001L022"
+    },
+    {
+      "id": "ccs-2022-148",
+      "title": "TChecker: Precise Static Inter-Procedural Analysis for Detecting Taint-Style Vulnerabilities in PHP Applications.",
+      "authors": [
+        "Changhua Luo",
+        "Penghui Li 0001",
+        "Wei Meng 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559391",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Luo0022"
+    },
+    {
+      "id": "ccs-2022-149",
+      "title": "Proving UNSAT in Zero Knowledge.",
+      "authors": [
+        "Ning Luo 0002",
+        "Timos Antonopoulos",
+        "William R. Harris",
+        "Ruzica Piskac",
+        "Eran Tromer",
+        "Xiao Wang 0012"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559373",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuoAHPTW22"
+    },
+    {
+      "id": "ccs-2022-150",
+      "title": "Frequency Estimation in the Shuffle Model with Almost a Single Message.",
+      "authors": [
+        "Qiyao Luo",
+        "Yilei Wang",
+        "Ke Yi 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560608",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuoW022"
+    },
+    {
+      "id": "ccs-2022-151",
+      "title": "Feature Inference Attack on Shapley Values.",
+      "authors": [
+        "Xinjian Luo",
+        "Yangfan Jiang 0001",
+        "Xiaokui Xiao"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560573",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuoJX22"
+    },
+    {
+      "id": "ccs-2022-152",
+      "title": "Federated Boosted Decision Trees with Differential Privacy.",
+      "authors": [
+        "Samuel Maddock",
+        "Graham Cormode",
+        "Tianhao Wang 0001",
+        "Carsten Maple",
+        "Somesh Jha"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560687",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#MaddockC0MJ22"
+    },
+    {
+      "id": "ccs-2022-153",
+      "title": "The Closer You Look, The More You Learn: A Grey-box Approach to Protocol State Machine Learning.",
+      "authors": [
+        "Chris McMahon Stone",
+        "Sam L. Thomas",
+        "Mathy Vanhoef",
+        "James Henderson",
+        "Nicolas Bailluet",
+        "Tom Chothia"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559365",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#StoneTVHBC22"
+    },
+    {
+      "id": "ccs-2022-154",
+      "title": "Securing Reset Operations in NISQ Quantum Computers.",
+      "authors": [
+        "Allen Mi",
+        "Shuwen Deng",
+        "Jakub Szefer"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559380",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#MiDS22"
+    },
+    {
+      "id": "ccs-2022-155",
+      "title": "Constant Latency in Sleepy Consensus.",
+      "authors": [
+        "Atsuki Momose",
+        "Ling Ren 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559347",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Momose022"
+    },
+    {
+      "id": "ccs-2022-156",
+      "title": "Physical Hijacking Attacks against Object Trackers.",
+      "authors": [
+        "Raymond Muller",
+        "Yanmao Man",
+        "Z. Berkay Celik",
+        "Ming Li 0003",
+        "Ryan M. Gerdes"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559390",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#MullerMCLG22"
+    },
+    {
+      "id": "ccs-2022-157",
+      "title": "The Multi-User Security of Triple Encryption, Revisited: Exact Security, Strengthening, and Application to TDES.",
+      "authors": [
+        "Yusuke Naito 0001",
+        "Yu Sasaki 0001",
+        "Takeshi Sugawara 0001",
+        "Kan Yasuda"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560674",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001S0Y22"
+    },
+    {
+      "id": "ccs-2022-158",
+      "title": "CERBERUS: Exploring Federated Prediction of Security Events.",
+      "authors": [
+        "Mohammad Naseri",
+        "Yufei Han 0001",
+        "Enrico Mariconti",
+        "Yun Shen",
+        "Gianluca Stringhini",
+        "Emiliano De Cristofaro"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560580",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#NaseriHMSSC22"
+    },
+    {
+      "id": "ccs-2022-159",
+      "title": "Sigstore: Software Signing for Everybody.",
+      "authors": [
+        "Zachary Newman",
+        "John Speed Meyers",
+        "Santiago Torres-Arias"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560596",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#NewmanMT22"
+    },
+    {
+      "id": "ccs-2022-160",
+      "title": "Freely Given Consent?: Studying Consent Notice of Third-Party Tracking and Its Violations of GDPR in Android Apps.",
+      "authors": [
+        "Trung Tin Nguyen",
+        "Michael Backes 0001",
+        "Ben Stock"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560564",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Nguyen0S22"
+    },
+    {
+      "id": "ccs-2022-161",
+      "title": "NARRATOR: Secure and Practical State Continuity for Trusted Execution in the Cloud.",
+      "authors": [
+        "Jianyu Niu",
+        "Wei Peng",
+        "Xiaokuan Zhang",
+        "Yinqian Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560620",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#NiuPZZ22"
+    },
+    {
+      "id": "ccs-2022-162",
+      "title": "Cart-ology: Intercepting Targeted Advertising via Ad Network Identity Entanglement.",
+      "authors": [
+        "ChangSeok Oh",
+        "Chris Kanich",
+        "Damon McCoy",
+        "Paul Pearce"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560641",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#OhKMP22"
+    },
+    {
+      "id": "ccs-2022-163",
+      "title": "Discovering IoT Physical Channel Vulnerabilities.",
+      "authors": [
+        "Muslum Ozgur Ozmen",
+        "Xuansong Li",
+        "Andrew Chu",
+        "Z. Berkay Celik",
+        "Bardh Hoxha",
+        "Xiangyu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560644",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#OzmenLCCH022"
+    },
+    {
+      "id": "ccs-2022-164",
+      "title": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency.",
+      "authors": [
+        "Dario Pasquini",
+        "Danilo Francati",
+        "Giuseppe Ateniese"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560557",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#PasquiniFA22"
+    },
+    {
+      "id": "ccs-2022-165",
+      "title": "Hidden in Plain Sight: Exploring Encrypted Channels in Android Apps.",
+      "authors": [
+        "Sajjad Pourali",
+        "Nayanamana Samarasinghe",
+        "Mohammad Mannan"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560665",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#PouraliSM22"
+    },
+    {
+      "id": "ccs-2022-166",
+      "title": "Cerberus: Query-driven Scalable Vulnerability Detection in OAuth Service Provider Implementations.",
+      "authors": [
+        "Tamjid Al Rahat",
+        "Yu Feng 0001",
+        "Yuan Tian 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559381",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Rahat0T22"
+    },
+    {
+      "id": "ccs-2022-167",
+      "title": "TickTock: Detecting Microphone Status in Laptops Leveraging Electromagnetic Leakage of Clock Signals.",
+      "authors": [
+        "Soundarya Ramesh",
+        "Ghozali Suhariyanto Hadi",
+        "Sihun Yang",
+        "Mun Choon Chan",
+        "Jun Han 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560698",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RameshHYCH22"
+    },
+    {
+      "id": "ccs-2022-168",
+      "title": "FABEO: Fast Attribute-Based Encryption with Optimal Security.",
+      "authors": [
+        "Doreen Riepel",
+        "Hoeteck Wee"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560699",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RiepelW22"
+    },
+    {
+      "id": "ccs-2022-169",
+      "title": "Blazing Fast PSI from Improved OKVS and Subfield VOLE.",
+      "authors": [
+        "Srinivasan Raghuraman",
+        "Peter Rindal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560658",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RaghuramanR22"
+    },
+    {
+      "id": "ccs-2022-170",
+      "title": "Strengthening Order Preserving Encryption with Differential Privacy.",
+      "authors": [
+        "Amrita Roy Chowdhury 0001",
+        "Bolin Ding",
+        "Somesh Jha",
+        "Weiran Liu",
+        "Jingren Zhou 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560610",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001DJLZ22"
+    },
+    {
+      "id": "ccs-2022-171",
+      "title": "EIFFeL: Ensuring Integrity for Federated Learning.",
+      "authors": [
+        "Amrita Roy Chowdhury 0001",
+        "Chuan Guo 0001",
+        "Somesh Jha",
+        "Laurens van der Maaten"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560611",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001GJM22"
+    },
+    {
+      "id": "ccs-2022-172",
+      "title": "ROAST: Robust Asynchronous Schnorr Threshold Signatures.",
+      "authors": [
+        "Tim Ruffing",
+        "Viktoria Ronge",
+        "Elliott Jin",
+        "Jonas Schneider-Bensch",
+        "Dominique Schr&#246;der"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560583",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RuffingRJSS22"
+    },
+    {
+      "id": "ccs-2022-173",
+      "title": "Fast Fully Oblivious Compaction and Shuffling.",
+      "authors": [
+        "Sajin Sasy",
+        "Aaron Johnson 0001",
+        "Ian Goldberg 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560603",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SasyJG22"
+    },
+    {
+      "id": "ccs-2022-174",
+      "title": "FeIDo: Recoverable FIDO2 Tokens Using Electronic IDs.",
+      "authors": [
+        "Fabian Schwarz",
+        "Khue Do",
+        "Gunnar Heide",
+        "Lucjan Hanzlik",
+        "Christian Rossow"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560584",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SchwarzDHHR22"
+    },
+    {
+      "id": "ccs-2022-175",
+      "title": "MC2: Rigorous and Efficient Directed Greybox Fuzzing.",
+      "authors": [
+        "Abhishek Shah",
+        "Dongdong She",
+        "Samanway Sadhu",
+        "Krish Singal",
+        "Peter Coffman",
+        "Suman Jana"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560648",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShahSSSCJ22"
+    },
+    {
+      "id": "ccs-2022-176",
+      "title": "Post-breach Recovery: Protection against White-box Adversarial Examples for Leaked DNN Models.",
+      "authors": [
+        "Shawn Shan",
+        "Wenxin Ding",
+        "Emily Wenger",
+        "Haitao Zheng 0001",
+        "Ben Y. Zhao"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560561",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShanDW0Z22"
+    },
+    {
+      "id": "ccs-2022-177",
+      "title": "Gringotts: Fast and Accurate Internal Denial-of-Wallet Detection for Serverless Computing.",
+      "authors": [
+        "Junxian Shen",
+        "Han Zhang 0009",
+        "Yantao Geng",
+        "Jiawei Li",
+        "Jilong Wang 0001",
+        "Mingwei Xu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560629",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShenZGL0X22"
+    },
+    {
+      "id": "ccs-2022-178",
+      "title": "Finding MNEMON: Reviving Memories of Node Embeddings.",
+      "authors": [
+        "Yun Shen",
+        "Yufei Han 0001",
+        "Zhikun Zhang 0001",
+        "Min Chen 0032",
+        "Ting Yu 0001",
+        "Michael Backes 0001",
+        "Yang Zhang 0016",
+        "Gianluca Stringhini"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559358",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShenH0CY0ZS22"
+    },
+    {
+      "id": "ccs-2022-179",
+      "title": "Why So Toxic?: Measuring and Triggering Toxic Behavior in Open-Domain Chatbots.",
+      "authors": [
+        "Wai Man Si",
+        "Michael Backes 0001",
+        "Jeremy Blackburn",
+        "Emiliano De Cristofaro",
+        "Gianluca Stringhini",
+        "Savvas Zannettou",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560599",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Si0BCSZ022"
+    },
+    {
+      "id": "ccs-2022-180",
+      "title": "Escaping the Confines of Time: Continuous Browser Extension Fingerprinting Through Ephemeral Modifications.",
+      "authors": [
+        "Konstantinos Solomos",
+        "Panagiotis Ilia",
+        "Nick Nikiforakis",
+        "Jason Polakis"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560576",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SolomosINP22"
+    },
+    {
+      "id": "ccs-2022-181",
+      "title": "pMPL: A Robust Multi-Party Learning Framework with a Privileged Party.",
+      "authors": [
+        "Lushan Song",
+        "Jiaxuan Wang",
+        "Zhexuan Wang",
+        "Xinyu Tu",
+        "Guopeng Lin",
+        "Wenqiang Ruan",
+        "Haoqi Wu",
+        "Weili Han"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560697",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SongWWTLRWH22"
+    },
+    {
+      "id": "ccs-2022-182",
+      "title": "Bullshark: DAG BFT Protocols Made Practical.",
+      "authors": [
+        "Alexander Spiegelman",
+        "Neil Giridharan",
+        "Alberto Sonnino",
+        "Lefteris Kokoris-Kogias"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559361",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SpiegelmanGSK22"
+    },
+    {
+      "id": "ccs-2022-183",
+      "title": "Batching, Aggregation, and Zero-Knowledge Proofs in Bilinear Accumulators.",
+      "authors": [
+        "Shravan Srinivasan",
+        "Ioanna Karantaidou",
+        "Foteini Baldimtsi",
+        "Charalampos Papamanthou"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560676",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SrinivasanKBP22"
+    },
+    {
+      "id": "ccs-2022-184",
+      "title": "Zapper: Smart Contracts with Data and Identity Privacy.",
+      "authors": [
+        "Samuel Steffen",
+        "Benjamin Bichsel",
+        "Martin T. Vechev"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560622",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SteffenBV22"
+    },
+    {
+      "id": "ccs-2022-185",
+      "title": "Clues in Tweets: Twitter-Guided Discovery and Analysis of SMS Spam.",
+      "authors": [
+        "Siyuan Tang",
+        "Xianghang Mi",
+        "Ying Li 0104",
+        "XiaoFeng Wang 0001",
+        "Kai Chen 0012"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559351",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TangML0022"
+    },
+    {
+      "id": "ccs-2022-186",
+      "title": "NeVerMore: Exploiting RDMA Mistakes in NVMe-oF Storage Applications.",
+      "authors": [
+        "Konstantin Taranov",
+        "Benjamin Rothenberger",
+        "Daniele De Sensi",
+        "Adrian Perrig",
+        "Torsten Hoefler"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560568",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TaranovRSPH22"
+    },
+    {
+      "id": "ccs-2022-187",
+      "title": "Truth Serum: Poisoning Machine Learning Models to Reveal Their Secrets.",
+      "authors": [
+        "Florian Tram&#232;r",
+        "Reza Shokri",
+        "Ayrton San Joaquin",
+        "Hoang Le",
+        "Matthew Jagielski",
+        "Sanghyun Hong 0001",
+        "Nicholas Carlini"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560554",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TramerSJLJ0C22"
+    },
+    {
+      "id": "ccs-2022-188",
+      "title": "VeRSA: Verifiable Registries with Efficient Client Audits from RSA Authenticated Dictionaries.",
+      "authors": [
+        "Nirvan Tyagi",
+        "Ben Fisch",
+        "Andrew Zitek",
+        "Joseph Bonneau",
+        "Stefano Tessaro"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560605",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TyagiFZBT22"
+    },
+    {
+      "id": "ccs-2022-189",
+      "title": "L-SRR: Local Differential Privacy for Location-Based Services with Staircase Randomized Response.",
+      "authors": [
+        "Han Wang 0021",
+        "Hanbin Hong",
+        "Li Xiong 0001",
+        "Zhan Qin",
+        "Yuan Hong 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560636",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangH0QH22"
+    },
+    {
+      "id": "ccs-2022-190",
+      "title": "Practical Volume-Hiding Encrypted Multi-Maps with Optimal Overhead and Beyond.",
+      "authors": [
+        "Jianfeng Wang 0001",
+        "Shifeng Sun 0001",
+        "Tianci Li",
+        "Saiyu Qi",
+        "Xiaofeng Chen 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559345",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangSLQ022"
+    },
+    {
+      "id": "ccs-2022-191",
+      "title": "ENGRAFT: Enclave-guarded Raft on Byzantine Faulty Nodes.",
+      "authors": [
+        "Weili Wang 0005",
+        "Sen Deng",
+        "Jianyu Niu",
+        "Michael K. Reiter",
+        "Yinqian Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560639",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0005DNRZ22"
+    },
+    {
+      "id": "ccs-2022-192",
+      "title": "Don't Kick Over the Beehive: Attacks and Security Analysis on Zigbee.",
+      "authors": [
+        "Xian Wang",
+        "Shuang Hao 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560703",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangH22"
+    },
+    {
+      "id": "ccs-2022-193",
+      "title": "Group Property Inference Attacks Against Graph Neural Networks.",
+      "authors": [
+        "Xiuling Wang",
+        "Wendy Hui Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560662",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangW22"
+    },
+    {
+      "id": "ccs-2022-194",
+      "title": "DPIS: An Enhanced Mechanism for Differentially Private SGD with Importance Sampling.",
+      "authors": [
+        "Jianxin Wei 0005",
+        "Ergute Bao",
+        "Xiaokui Xiao",
+        "Yin Yang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560562",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0005BX022"
+    },
+    {
+      "id": "ccs-2022-195",
+      "title": "AntMan: Interactive Zero-Knowledge Proofs with Sublinear Communication.",
+      "authors": [
+        "Chenkai Weng",
+        "Kang Yang 0002",
+        "Zhaomin Yang",
+        "Xiang Xie",
+        "Xiao Wang 0012"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560667",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Weng0YX022"
+    },
+    {
+      "id": "ccs-2022-196",
+      "title": "Microwalk-CI: Practical Side-Channel Analysis for JavaScript Applications.",
+      "authors": [
+        "Jan Wichelmann",
+        "Florian Sieck",
+        "Anna P&#228;tschke",
+        "Thomas Eisenbarth 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560654",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WichelmannSP022"
+    },
+    {
+      "id": "ccs-2022-197",
+      "title": "EchoHand: High Accuracy and Presentation Attack Resistant Hand Authentication on Commodity Mobile Devices.",
+      "authors": [
+        "Cong Wu 0003",
+        "Jing Chen 0003",
+        "Kun He 0008",
+        "Ziming Zhao 0001",
+        "Ruiying Du",
+        "Chen Zhang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560553",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0003000DZ22"
+    },
+    {
+      "id": "ccs-2022-198",
+      "title": "Platypus: A Central Bank Digital Currency with Unlinkable Transactions and Privacy-Preserving Regulation.",
+      "authors": [
+        "Karl W&#252;st",
+        "Kari Kostiainen",
+        "Noah Delius",
+        "Srdjan Capkun"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560617",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WustKDC22"
+    },
+    {
+      "id": "ccs-2022-199",
+      "title": "Protecting Critical Inter-Domain Communication through Flyover Reservations.",
+      "authors": [
+        "Marc Wyss",
+        "Giacomo Giuliari",
+        "Jonas Mohler",
+        "Adrian Perrig"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560582",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WyssGMP22"
+    },
+    {
+      "id": "ccs-2022-200",
+      "title": "Understanding and Mitigating Remote Code Execution Vulnerabilities in Cross-platform Ecosystem.",
+      "authors": [
+        "Feng Xiao",
+        "Zheng Yang",
+        "Joey Allen",
+        "Guangliang Yang 0001",
+        "Grant Williams",
+        "Wenke Lee"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559340",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#XiaoYA0WL22"
+    },
+    {
+      "id": "ccs-2022-201",
+      "title": "CETIS: Retrofitting Intel CET for Generic and Efficient Intra-process Memory Isolation.",
+      "authors": [
+        "Mengyao Xie",
+        "Chenggang Wu 0002",
+        "Yinqian Zhang",
+        "Jiali Xu",
+        "Yuanming Lai",
+        "Yan Kang 0002",
+        "Wei Wang 0385",
+        "Zhe Wang 0017"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559344",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Xie0ZXLKW022"
+    },
+    {
+      "id": "ccs-2022-202",
+      "title": "zkBridge: Trustless Cross-chain Bridges Made Practical.",
+      "authors": [
+        "Tiancheng Xie",
+        "Jiaheng Zhang",
+        "Zerui Cheng",
+        "Fan Zhang 0022",
+        "Yupeng Zhang 0001",
+        "Yongzheng Jia",
+        "Dan Boneh",
+        "Dawn Song"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560652",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#XieZCZ0JBS22"
+    },
+    {
+      "id": "ccs-2022-203",
+      "title": "Automatic Detection of Fake Key Attacks in Secure Messaging.",
+      "authors": [
+        "Tarun Kumar Yadav",
+        "Devashish Gosain",
+        "Amir Herzberg",
+        "Daniel Zappala",
+        "Kent E. Seamons"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560588",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YadavGHZS22"
+    },
+    {
+      "id": "ccs-2022-204",
+      "title": "WINK: Wireless Inference of Numerical Keystrokes via Zero-Training Spatiotemporal Analysis.",
+      "authors": [
+        "Edwin Yang",
+        "Qiuye He",
+        "Song Fang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559339",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YangHF22"
+    },
+    {
+      "id": "ccs-2022-205",
+      "title": "An Extensive Study of Residential Proxies in China.",
+      "authors": [
+        "Mingshuo Yang",
+        "Yunnan Yu",
+        "Xianghang Mi",
+        "Shujun Tang",
+        "Shanqing Guo",
+        "Yilin Li",
+        "Xiaofeng Zheng",
+        "Haixin Duan"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559377",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YangYMTGLZD22"
+    },
+    {
+      "id": "ccs-2022-206",
+      "title": "Detecting and Measuring Misconfigured Manifests in Android Apps.",
+      "authors": [
+        "Yuqing Yang 0003",
+        "Mohamed Elsabagh",
+        "Chaoshun Zuo",
+        "Ryan Johnson 0002",
+        "Angelos Stavrou",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560607",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YangEZ0SL22"
+    },
+    {
+      "id": "ccs-2022-207",
+      "title": "Cross Miniapp Request Forgery: Root Causes, Attacks, and Vulnerability Detection.",
+      "authors": [
+        "Yuqing Yang 0003",
+        "Yue Zhang 0025",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560597",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Yang0L22"
+    },
+    {
+      "id": "ccs-2022-208",
+      "title": "Enhanced Membership Inference Attacks against Machine Learning Models.",
+      "authors": [
+        "Jiayuan Ye 0001",
+        "Aadyaa Maddi",
+        "Sasi Kumar Murakonda",
+        "Vincent Bindschaedler",
+        "Reza Shokri"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560675",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0001MMBS22"
+    },
+    {
+      "id": "ccs-2022-209",
+      "title": "HeatDeCam: Detecting Hidden Spy Cameras via Thermal Emissions.",
+      "authors": [
+        "Zhiyuan Yu 0001",
+        "Zhuohang Li",
+        "Yuanhaur Chang",
+        "Skylar Fong",
+        "Jian Liu 0001",
+        "Ning Zhang 0017"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560669",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YuLCFLZ22"
+    },
+    {
+      "id": "ccs-2022-210",
+      "title": "Caulk: Lookup Arguments in Sublinear Time.",
+      "authors": [
+        "Arantxa Zapico",
+        "Vitalik Buterin",
+        "Dmitry Khovratovich",
+        "Mary Maller",
+        "Anca Nitulescu",
+        "Mark Simkin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560646",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZapicoBKMN022"
+    },
+    {
+      "id": "ccs-2022-211",
+      "title": "PalanT&#237;r: Optimizing Attack Provenance with Hardware-enhanced System Observability.",
+      "authors": [
+        "Jun Zeng 0006",
+        "Chuqi Zhang",
+        "Zhenkai Liang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560570",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZengZL22"
+    },
+    {
+      "id": "ccs-2022-212",
+      "title": "PACE: Fully Parallelizable BFT from Reproposable Byzantine Agreement.",
+      "authors": [
+        "Haibin Zhang",
+        "Sisi Duan"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559348",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhangD22"
+    },
+    {
+      "id": "ccs-2022-213",
+      "title": "I'm SPARTACUS, No, I'm SPARTACUS: Proactively Protecting Users from Phishing by Intentionally Triggering Cloaking Behavior.",
+      "authors": [
+        "Penghui Zhang",
+        "Zhibo Sun",
+        "Sukwha Kyung",
+        "Hans Walter Behrens",
+        "Zion Leonahenahe Basque",
+        "Haehyun Cho",
+        "Adam Oest",
+        "Ruoyu Wang 0001",
+        "Tiffany Bao",
+        "Yan Shoshitaishvili",
+        "Gail-Joon Ahn",
+        "Adam Doup&#233;"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559334",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhangSKBBCO0BSA22"
+    },
+    {
+      "id": "ccs-2022-214",
+      "title": "When Good Becomes Evil: Tracking Bluetooth Low Energy Devices via Allowlist-based Side Channel and Its Countermeasure.",
+      "authors": [
+        "Yue Zhang 0025",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559372",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0025L22"
+    },
+    {
+      "id": "ccs-2022-215",
+      "title": "VOProof: Efficient zkSNARKs from Vector Oracle Compilers.",
+      "authors": [
+        "Yuncong Zhang",
+        "Alan Szepieniec",
+        "Ren Zhang 0003",
+        "Shifeng Sun 0001",
+        "Geng Wang",
+        "Dawu Gu"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559387",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhangSZSWG22"
+    },
+    {
+      "id": "ccs-2022-216",
+      "title": "Characterizing and Detecting Non-Consensual Photo Sharing on Social Networks.",
+      "authors": [
+        "Tengfei Zheng",
+        "Tongqing Zhou",
+        "Qiang Liu 0004",
+        "Kui Wu 0001",
+        "Zhiping Cai"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560571",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhengZ0WC22"
+    },
+    {
+      "id": "ccs-2022-217",
+      "title": "Ibex: Privacy-preserving Ad Conversion Tracking and Bidding.",
+      "authors": [
+        "Ke Zhong",
+        "Yiping Ma 0001",
+        "Sebastian Angel"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560651",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Zhong0A22"
+    },
+    {
+      "id": "ccs-2022-218",
+      "title": "Uncovering Intent based Leak of Sensitive Data in Android Framework.",
+      "authors": [
+        "Hao Zhou 0043",
+        "Xiapu Luo",
+        "Haoyu Wang 0001",
+        "Haipeng Cai"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560601",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhouLWC22"
+    },
+    {
+      "id": "ccs-2022-219",
+      "title": "Non-Distinguishable Inconsistencies as a Deterministic Oracle for Detecting Security Bugs.",
+      "authors": [
+        "Qingyang Zhou",
+        "Qiushi Wu",
+        "Dinghao Liu",
+        "Shouling Ji",
+        "Kangjie Lu"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560661",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhouWLJL22"
+    },
+    {
+      "id": "ccs-2022-220",
+      "title": "What Your Firmware Tells You Is Not How You Should Emulate It: A Specification-Guided Approach for Firmware Emulation.",
+      "authors": [
+        "Wei Zhou 0026",
+        "Lan Zhang 0008",
+        "Le Guan",
+        "Peng Liu 0005",
+        "Yuqing Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3559386",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhouZGL022"
+    },
+    {
+      "id": "ccs-2022-221",
+      "title": "Perils and Mitigation of Security Risks of Cooperation in Mobile-as-a-Gateway IoT.",
+      "authors": [
+        "Xin'an Zhou",
+        "Jiale Guan",
+        "Luyi Xing",
+        "Zhiyun Qian"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3560590",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhouGXQ22"
+    },
+    {
+      "id": "ccs-2022-222",
+      "title": "Poster: Backdoor Attacks on Spiking NNs and Neuromorphic Datasets.",
+      "authors": [
+        "Gorka Abad",
+        "Oguzhan Ersoy",
+        "Stjepan Picek",
+        "V&#237;ctor Julio Ram&#237;rez-Dur&#225;n",
+        "Aitor Urbieta"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563532",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AbadEPRU22"
+    },
+    {
+      "id": "ccs-2022-223",
+      "title": "Poster: Correctness of n-parties ECDSA By the Claim of Byzantine Agreement.",
+      "authors": [
+        "Akshit Aggarwal",
+        "Srinibas Swain"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563546",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AggarwalS22"
+    },
+    {
+      "id": "ccs-2022-224",
+      "title": "Poster: Ontology Enabled Chatbot for Applying Privacy by Design in IoT Systems.",
+      "authors": [
+        "Lamya Alkhariji",
+        "Suparna De",
+        "Omer F. Rana",
+        "Charith Perera"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563504",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#AlkharijiDRP22"
+    },
+    {
+      "id": "ccs-2022-225",
+      "title": "Poster: A Post-Quantum Oblivious PRF from Isogenies.",
+      "authors": [
+        "Andrea Basso 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563542",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#000222"
+    },
+    {
+      "id": "ccs-2022-226",
+      "title": "Poster: Efficient Three-Party Shuffling Using Precomputation.",
+      "authors": [
+        "Andreas Br&#252;ggemann",
+        "Thomas Schneider 0003",
+        "Ajith Suresh",
+        "Hossein Yalame"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563511",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Bruggemann0SY22"
+    },
+    {
+      "id": "ccs-2022-227",
+      "title": "Poster: Data Recovery from Ransomware Attacks via File System Forensics and Flash Translation Layer Data Extraction.",
+      "authors": [
+        "Niusen Chen",
+        "Josh Dafoe",
+        "Bo Chen 0028"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563538",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ChenDC22"
+    },
+    {
+      "id": "ccs-2022-228",
+      "title": "Poster: Inaudible Acoustic Noise from Silicon Capacitors for Voice-Command Injection.",
+      "authors": [
+        "Kohei Doi",
+        "Takeshi Sugawara 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563526",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Doi022"
+    },
+    {
+      "id": "ccs-2022-229",
+      "title": "Poster: An Analysis of Privacy Features in 'Expert-Approved' Kids' Apps.",
+      "authors": [
+        "Anirudh Ekambaranathan",
+        "Jun Zhao 0003",
+        "Max Van Kleek"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563549",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Ekambaranathan022"
+    },
+    {
+      "id": "ccs-2022-230",
+      "title": "Poster: A Systems Approach to GDPR Compliance-by-Design in Web Development Stacks.",
+      "authors": [
+        "Mafalda Ferreira",
+        "Tiago Brito",
+        "Jos&#233; Fragoso Santos",
+        "Nuno Santos 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563521",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FerreiraBS022"
+    },
+    {
+      "id": "ccs-2022-231",
+      "title": "Poster: Privacy-Preserving Epidemiological Modeling on Mobile Graphs.",
+      "authors": [
+        "Daniel G&#252;nther 0004",
+        "Marco Holz",
+        "Benjamin Judkewitz",
+        "Helen M&#246;llering",
+        "Benny Pinkas",
+        "Thomas Schneider 0003",
+        "Ajith Suresh"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563497",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0004HJMP0S22"
+    },
+    {
+      "id": "ccs-2022-232",
+      "title": "Poster EveGAN: Using Generative Deep Learning for Cryptanalysis.",
+      "authors": [
+        "Roger A. Hallman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563493",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Hallman22"
+    },
+    {
+      "id": "ccs-2022-233",
+      "title": "Poster: A Novel Formal Threat Analyzer for Activity Monitoring-based Smart Home Heating, Ventilation, and Cooling Control System.",
+      "authors": [
+        "Nur Imtiazul Haque",
+        "Maurice Ngouen",
+        "Yazen Al-Wahadneh",
+        "Mohammad Ashiqur Rahman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563547",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HaqueNAR22"
+    },
+    {
+      "id": "ccs-2022-234",
+      "title": "Poster: The Unintended Consequences of Algorithm Agility in DNSSEC.",
+      "authors": [
+        "Elias Heftrig",
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563517",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HeftrigSW22"
+    },
+    {
+      "id": "ccs-2022-235",
+      "title": "Poster: MSILDiffer - A Security Patch Analysis Framework Based on Microsoft Intermediate Language for Large Software.",
+      "authors": [
+        "Can Huang",
+        "Cheng Li 0045",
+        "Jiashuo Liang",
+        "Xinhui Han"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563518",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#HuangLLH22"
+    },
+    {
+      "id": "ccs-2022-236",
+      "title": "Poster: Vogue: Faster Computation of Private Heavy Hitters.",
+      "authors": [
+        "Pranav Jangir",
+        "Nishat Koti",
+        "Varsha Bhat Kukkala",
+        "Arpita Patra",
+        "Bhavish Raj Gopal",
+        "Somya Sangal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563544",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#JangirKKPGS22"
+    },
+    {
+      "id": "ccs-2022-237",
+      "title": "Poster: Coded Broadcast for Scalable Leader-Based BFT Consensus.",
+      "authors": [
+        "Ioannis Kaklamanis",
+        "Lei Yang",
+        "Mohammad Alizadeh"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563494",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KaklamanisYA22"
+    },
+    {
+      "id": "ccs-2022-238",
+      "title": "Poster MPClan: : Protocol Suite for Privacy-Conscious Computations.",
+      "authors": [
+        "Nishat Koti",
+        "Shravani Patil",
+        "Arpita Patra",
+        "Ajith Suresh"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563496",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KotiPPS22"
+    },
+    {
+      "id": "ccs-2022-239",
+      "title": "Poster: Patient Community - A Test Bed for Privacy Threat Analysis.",
+      "authors": [
+        "Immanuel Kunz",
+        "Angelika Schneider",
+        "Christian Banse",
+        "Konrad Weiss",
+        "Andreas Binder"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3564253",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#KunzSBWB22"
+    },
+    {
+      "id": "ccs-2022-240",
+      "title": "Poster: Adversarial Perturbation Attacks on the State-of-the-Art Cryptojacking Detection System in IoT Networks.",
+      "authors": [
+        "Kiho Lee",
+        "Sanghak Oh",
+        "Hyoungshick Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563530",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LeeOK22"
+    },
+    {
+      "id": "ccs-2022-241",
+      "title": "Poster: EOSDFA: Data Flow Analysis of EOSIO Smart Contracts.",
+      "authors": [
+        "Levi Taiji Li",
+        "Mu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563545",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiZ22"
+    },
+    {
+      "id": "ccs-2022-242",
+      "title": "Poster: Cryptographic Inferences for Video Deep Neural Networks.",
+      "authors": [
+        "Bingyu Liu",
+        "Rujia Wang",
+        "Zhongjie Ba",
+        "Shanglin Zhou",
+        "Caiwen Ding",
+        "Yuan Hong 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563543",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LiuWBZDH22"
+    },
+    {
+      "id": "ccs-2022-243",
+      "title": "Poster: User Sessions on Tor Onion Services: Can Colluding ISPs Deanonymize Them at Scale?",
+      "authors": [
+        "Daniela Lopes",
+        "Pedro Medeiros",
+        "Jin-Dong Dong",
+        "Diogo Barradas",
+        "Bernardo Portela",
+        "Jo&#227;o Vinagre",
+        "Bernardo Ferreira",
+        "Nicolas Christin",
+        "Nuno Santos 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563520",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LopesMDBPVFC022"
+    },
+    {
+      "id": "ccs-2022-244",
+      "title": "Poster: Investigating QUIC's Potential Impact on Censorship Circumvention.",
+      "authors": [
+        "Anna Harbluk Lorimer",
+        "Nick Feamster",
+        "Prateek Mittal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563519",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LorimerFM22"
+    },
+    {
+      "id": "ccs-2022-245",
+      "title": "Poster: CFMAP: A Robust CPU Clock Fingerprint Model for Device Authentication.",
+      "authors": [
+        "Xiaofeng Lu",
+        "Renyu Pang",
+        "Pietro Li&#242;"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563528",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuPL22"
+    },
+    {
+      "id": "ccs-2022-246",
+      "title": "Poster: Towards Complete Computation Graph Generation for Security Assessment of ROS Applications.",
+      "authors": [
+        "Yunpeng Luo",
+        "Ziwen Wan",
+        "Qi Alfred Chen"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563540",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#LuoWC22"
+    },
+    {
+      "id": "ccs-2022-247",
+      "title": "Poster: Effectiveness of Moving Target Defense Techniques to Disrupt Attacks in the Cloud.",
+      "authors": [
+        "Salman Manzoor",
+        "Antonios Gouglidis",
+        "Matthew Bradbury",
+        "Neeraj Suri"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563514",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ManzoorGBS22"
+    },
+    {
+      "id": "ccs-2022-248",
+      "title": "Poster: Multi-Layer Threat Analysis of the Cloud.",
+      "authors": [
+        "Salman Manzoor",
+        "Antonios Gouglidis",
+        "Matthew Bradbury",
+        "Neeraj Suri"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563515",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ManzoorGBS22a"
+    },
+    {
+      "id": "ccs-2022-249",
+      "title": "Poster: RPKI Kill Switch.",
+      "authors": [
+        "Donika Mirdita",
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563536",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#MirditaSW22"
+    },
+    {
+      "id": "ccs-2022-250",
+      "title": "Poster: Physics-Informed Augmentation for Contextual Anomaly Detection in Smart Grid.",
+      "authors": [
+        "Muhammad Nouman Nafees",
+        "Neetesh Saxena",
+        "Pete Burnap"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563533",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#NafeesSB22"
+    },
+    {
+      "id": "ccs-2022-251",
+      "title": "Poster CTI4AI: Threat Intelligence Generation and Sharing after Red Teaming AI Models.",
+      "authors": [
+        "Chuyen Nguyen",
+        "Caleb Morgan",
+        "Sudip Mittal"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563525",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#NguyenMM22"
+    },
+    {
+      "id": "ccs-2022-252",
+      "title": "Poster - Towards Authorship Obfuscation with Language Models.",
+      "authors": [
+        "Rajvardhan Oak"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563512",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Oak22"
+    },
+    {
+      "id": "ccs-2022-253",
+      "title": "Poster: Adversarial Defense with Deep Learning Coverage on MagNet's Purification.",
+      "authors": [
+        "Leo Hyun Park",
+        "Jaewoo Park 0004",
+        "Soochang Chung",
+        "Jaeuk Kim",
+        "Myung Gyo Oh",
+        "Taekyoung Kwon 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563550",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ParkPCKO022"
+    },
+    {
+      "id": "ccs-2022-254",
+      "title": "Poster: A WiFi Vision-based Approach to Person Re-identification.",
+      "authors": [
+        "Yili Ren",
+        "Yichao Wang",
+        "Sheng Tan",
+        "Yingying Chen 0001",
+        "Jie Yang 0003"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563516",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RenWTCY22"
+    },
+    {
+      "id": "ccs-2022-255",
+      "title": "Poster: ReMouse Dataset: Measuring Similarity of Human-Generated Trajectories as an Important Step in Dealing with Session-Replay Bots.",
+      "authors": [
+        "Shadi Sadeghpour",
+        "Natalija Vlajic"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563522",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SadeghpourV22"
+    },
+    {
+      "id": "ccs-2022-256",
+      "title": "Poster AutoPatch: Automatic Hotpatching of Real-Time Embedded Devices.",
+      "authors": [
+        "Mohsen Salehi",
+        "Karthik Pattabiraman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563534",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SalehiP22"
+    },
+    {
+      "id": "ccs-2022-257",
+      "title": "Poster: MUSTARD - Adaptive Behavioral Analysis for Ransomware Detection.",
+      "authors": [
+        "Davide Sanvito",
+        "Giuseppe Siracusano",
+        "Roberto Gonzalez",
+        "Roberto Bifulco"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563529",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SanvitoSGB22"
+    },
+    {
+      "id": "ccs-2022-258",
+      "title": "Poster: Towards Large-Scale Measurement Study on LiDAR Spoofing Attacks against Object Detection.",
+      "authors": [
+        "Takami Sato",
+        "Yuki Hayakawa",
+        "Ryo Suzuki",
+        "Yohsuke Shiiki",
+        "Kentaro Yoshioka",
+        "Qi Alfred Chen"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563537",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SatoHSSYC22"
+    },
+    {
+      "id": "ccs-2022-259",
+      "title": "Poster: INSIDE - Enhancing Network Intrusion Detection in Power Grids with Automated Facility Monitoring.",
+      "authors": [
+        "Martin Serror",
+        "Lennart Bader",
+        "Martin Henze",
+        "Arne Schwarze",
+        "Kai N&#252;rnberger"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563500",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SerrorBHSN22"
+    },
+    {
+      "id": "ccs-2022-260",
+      "title": "Poster: Insights into Global Deployment of RPKI Validation.",
+      "authors": [
+        "Haya Schulmann",
+        "Niklas Vogel",
+        "Michael Waidner"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563523",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShulmanVW22"
+    },
+    {
+      "id": "ccs-2022-261",
+      "title": "Poster: DNS in Routers Considered Harmful.",
+      "authors": [
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563509",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ShulmanW22"
+    },
+    {
+      "id": "ccs-2022-262",
+      "title": "Poster: Privacy-preserving Genome Analysis using Verifiable Off-Chain Computation.",
+      "authors": [
+        "Leon Visscher",
+        "Mohammed Alghazwi",
+        "Dimka Karastoyanova",
+        "Fatih Turkmen"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563548",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#VisscherAKT22"
+    },
+    {
+      "id": "ccs-2022-263",
+      "title": "Poster: On the System-Level Effectiveness of Physical Object-Hiding Adversarial Attack in Autonomous Driving.",
+      "authors": [
+        "Ningfei Wang",
+        "Yunpeng Luo",
+        "Takami Sato",
+        "Kaidi Xu",
+        "Qi Alfred Chen"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563539",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangLSXC22"
+    },
+    {
+      "id": "ccs-2022-264",
+      "title": "Poster: Enabling Cost-Effective Blockchain Applications via Workload-Adaptive Transaction Execution.",
+      "authors": [
+        "Yibo Wang 0006",
+        "Yuzhe Tang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563505",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangT22"
+    },
+    {
+      "id": "ccs-2022-265",
+      "title": "Poster: Fingerprint-Face Friction Based Earable Authentication.",
+      "authors": [
+        "Zi Wang 0003",
+        "Yilin Wang 0034",
+        "Yingying Chen 0001",
+        "Jie Yang 0003"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563524",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#WangWCY22"
+    },
+    {
+      "id": "ccs-2022-266",
+      "title": "Poster: Clean-label Backdoor Attack on Graph Neural Networks.",
+      "authors": [
+        "Jing Xu 0028",
+        "Stjepan Picek"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563531",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#XuP22"
+    },
+    {
+      "id": "ccs-2022-267",
+      "title": "Poster: Unanimous-Majority - Pushing Blockchain Sharding Throughput to its Limit.",
+      "authors": [
+        "Yibin Xu",
+        "Tijs Slaats",
+        "Boris D&#252;dder"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563506",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#XuSD22"
+    },
+    {
+      "id": "ccs-2022-268",
+      "title": "Poster: User-controlled System-level Encryption for all Applications.",
+      "authors": [
+        "Tarun Kumar Yadav",
+        "Justin Hales",
+        "Kent E. Seamons"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563541",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YadavHS22"
+    },
+    {
+      "id": "ccs-2022-269",
+      "title": "Poster: Automated Discovery of Sensor Spoofing Attacks on Robotic Vehicles.",
+      "authors": [
+        "Kyeongseok Yang",
+        "Sudharssan Mohan",
+        "Yonghwi Kwon 0001",
+        "Heejo Lee",
+        "Chung Hwan Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563551",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YangM0LK22"
+    },
+    {
+      "id": "ccs-2022-270",
+      "title": "Poster: TaintGrep: A Static Analysis Tool for Detecting Vulnerabilities of Android Apps Supporting User-defined Rules.",
+      "authors": [
+        "Ruiguo Yang",
+        "Jiajin Cai",
+        "Xinhui Han"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563527",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YangCH22"
+    },
+    {
+      "id": "ccs-2022-271",
+      "title": "Poster: May the Swarm Be With You: Sensor Spoofing Attacks Against Drone Swarms.",
+      "authors": [
+        "Yingao Elaine Yao",
+        "Pritam Dash",
+        "Karthik Pattabiraman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563535",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YaoDP22"
+    },
+    {
+      "id": "ccs-2022-272",
+      "title": "Demo: End-to-End Wireless Disruption of CCS EV Charging.",
+      "authors": [
+        "Sebastian K&#246;hler 0005",
+        "Richard Baker 0008",
+        "Martin Strohmeier",
+        "Ivan Martinovic"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563489",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Kohler0SM22"
+    },
+    {
+      "id": "ccs-2022-273",
+      "title": "Demo - SPoKE: Secure Polling and Knowledge Exchange.",
+      "authors": [
+        "Thomas Sandholm",
+        "Sayandev Mukherjee",
+        "Bernardo A. Huberman"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563701",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SandholmMH22"
+    },
+    {
+      "id": "ccs-2022-274",
+      "title": "Demo - MaLFraDA: A Machine Learning Framework with Data Airlock.",
+      "authors": [
+        "Chandra Thapa",
+        "Seyit Camtepe",
+        "Raj Gaire 0001",
+        "Surya Nepal",
+        "Seung Ick Jang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563480",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ThapaC0NJ22"
+    },
+    {
+      "id": "ccs-2022-275",
+      "title": "Demo: VaxPass - A Scalable and Verifiable Platform for COVID-19 Records.",
+      "authors": [
+        "Xiangan Tian",
+        "Vlasis Koutsos",
+        "Lijia Wu",
+        "Yijian Wu",
+        "Dimitrios Papadopoulos 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563492",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#TianKWW022"
+    },
+    {
+      "id": "ccs-2022-276",
+      "title": "WAHC'22: 10th Workshop on Encrypted Computing and Applied Homomorphic Cryptography.",
+      "authors": [
+        "Michael Brenner 0003",
+        "Anamaria Costache",
+        "Kurt Rohloff"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563287",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#0003CR22"
+    },
+    {
+      "id": "ccs-2022-277",
+      "title": "CPSIoTSec '22: 4th Workshop on CPS & IoT Security and Privacy.",
+      "authors": [
+        "Earlence Fernandes",
+        "Cristina Alcaraz"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563360",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#FernandesA22"
+    },
+    {
+      "id": "ccs-2022-278",
+      "title": "WPES '22: 21st Workshop on Privacy in the Electronic Society.",
+      "authors": [
+        "Yuan Hong 0001",
+        "Lingyu Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563220",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Hong022"
+    },
+    {
+      "id": "ccs-2022-279",
+      "title": "MTD '22: 9th ACM Workshop on Moving Target Defense.",
+      "authors": [
+        "Hamed Okhravi",
+        "Cliff Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563358",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#OkhraviW22"
+    },
+    {
+      "id": "ccs-2022-280",
+      "title": "CCSW '22: The 2022 Cloud Computing Security Workshop.",
+      "authors": [
+        "Marten van Dijk",
+        "Francesco Regazzoni 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563821",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Dijk022"
+    },
+    {
+      "id": "ccs-2022-281",
+      "title": "ConsensusDay '22: ACM Workshop on Developments in Consensus.",
+      "authors": [
+        "Jorge M. Soares",
+        "Dawn Song",
+        "Marko Vukolic"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563286",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#SoaresSV22"
+    },
+    {
+      "id": "ccs-2022-282",
+      "title": "ASHES 2022 - 6th Workshop on Attacks and Solutions in Hardware Security.",
+      "authors": [
+        "Chip-Hong Chang",
+        "Domenic Forte",
+        "Debdeep Mukhopadhyay",
+        "Ulrich R&#252;hrmair"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563763",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ChangFMR22"
+    },
+    {
+      "id": "ccs-2022-283",
+      "title": "AISec '22: 15th ACM Workshop on Artificial Intelligence and Security.",
+      "authors": [
+        "Ambra Demontis",
+        "Xinyun Chen",
+        "Florian Tram&#232;r"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563683",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#DemontisCT22"
+    },
+    {
+      "id": "ccs-2022-284",
+      "title": "Checkmate '22: Research on offensive and defensive techniques in the context of Man At The End (MATE) attacks.",
+      "authors": [
+        "Golden G. Richard III",
+        "Tim Blazytko"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3564247",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#RichardB22"
+    },
+    {
+      "id": "ccs-2022-285",
+      "title": "SCORED '22: ACM Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses.",
+      "authors": [
+        "Santiago Torres-Arias",
+        "Marcela S. Melara",
+        "Laurent Simon"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563443",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#Torres-AriasMS22"
+    },
+    {
+      "id": "ccs-2022-286",
+      "title": "AMSec'22: ACM CCS Workshop on Additive Manufacturing (3D Printing) Security.",
+      "authors": [
+        "Mark Yampolskiy",
+        "Moti Yung"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563554",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#YampolskiyY22"
+    },
+    {
+      "id": "ccs-2022-287",
+      "title": "DeFi '22: ACM CCS Workshop on Decentralized Finance and Security.",
+      "authors": [
+        "Fan Zhang 0009",
+        "Patrick McCorry"
+      ],
+      "doi": "https://doi.org/10.1145/3548606.3563431",
+      "dblp_url": "https://dblp.org/db/conf/ccs/ccs2022.html#ZhangM22"
+    }
+  ]
+}

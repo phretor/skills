@@ -1,0 +1,324 @@
+{
+  "conference": {
+    "name": "Australasian Conference on Information Security and Privacy",
+    "acronym": "ACISP",
+    "year": 2023,
+    "venue_slug": "acisp"
+  },
+  "coverage": {
+    "papers_count": 27,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "acisp-2023-001",
+      "title": "Improved Differential Cryptanalysis on SPECK Using Plaintext Structures.",
+      "authors": [
+        "Zhuohui Feng",
+        "Ye Luo",
+        "Chao Wang",
+        "Qianqian Yang 0003",
+        "Zhiquan Liu 0001",
+        "Ling Song 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_1",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#FengLW0L023"
+    },
+    {
+      "id": "acisp-2023-002",
+      "title": "Linear Cryptanalysis and Its Variants with Fast Fourier Transformation Technique on MPC/FHE/ZK-Friendly &#120125;<sub>p</sub>-Based Ciphers.",
+      "authors": [
+        "Zeyu Xu",
+        "Shiyao Chen",
+        "Meiqin Wang",
+        "Puwen Wei"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_2",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#XuCWW23"
+    },
+    {
+      "id": "acisp-2023-003",
+      "title": "A New Correlation Cube Attack Based on Division Property.",
+      "authors": [
+        "Cheng Che",
+        "Tian Tian 0004"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_3",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#CheT23"
+    },
+    {
+      "id": "acisp-2023-004",
+      "title": "The Triangle Differential Cryptanalysis.",
+      "authors": [
+        "Xiaofeng Xie",
+        "Tian Tian 0004"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_4",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#XieT23"
+    },
+    {
+      "id": "acisp-2023-005",
+      "title": "Key Recovery Attacks on Grain-Like Keystream Generators with Key Injection.",
+      "authors": [
+        "Matthew Beighton",
+        "Harry Bartlett",
+        "Leonie Simpson",
+        "Kenneth Koon-Ho Wong"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_5",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#BeightonBSW23"
+    },
+    {
+      "id": "acisp-2023-006",
+      "title": "Related-Cipher Attacks: Applications to Ballet and ANT.",
+      "authors": [
+        "Yongxia Mao",
+        "Wenling Wu",
+        "Yafei Zheng",
+        "Lei Zhang 0186"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_6",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#MaoWZ023"
+    },
+    {
+      "id": "acisp-2023-007",
+      "title": "Cryptanalysis of SPEEDY.",
+      "authors": [
+        "Jinliang Wang",
+        "Chao Niu",
+        "Qun Liu 0006",
+        "Muzhou Li",
+        "Bart Preneel",
+        "Meiqin Wang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_7",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#WangNLLPW23"
+    },
+    {
+      "id": "acisp-2023-008",
+      "title": "Reconsidering Generic Composition: The Modes A10, A11 and A12 are Insecure.",
+      "authors": [
+        "Francesco Berti"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_8",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#Berti23"
+    },
+    {
+      "id": "acisp-2023-009",
+      "title": "Exploring Formal Methods for Cryptographic Hash Function Implementations.",
+      "authors": [
+        "Nicky Mouha"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_9",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#Mouha23"
+    },
+    {
+      "id": "acisp-2023-010",
+      "title": "A Tightly Secure ID-Based Signature Scheme Under DL Assumption in AGM.",
+      "authors": [
+        "Jia-Chng Loh",
+        "Fuchun Guo",
+        "Willy Susilo",
+        "Guomin Yang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_10",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#LohGSY23"
+    },
+    {
+      "id": "acisp-2023-011",
+      "title": "Compact Password Authenticated Key Exchange from Group Actions.",
+      "authors": [
+        "Ren Ishibashi",
+        "Kazuki Yoneyama"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_11",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#IshibashiY23"
+    },
+    {
+      "id": "acisp-2023-012",
+      "title": "Multi-key Homomorphic Secret Sharing from LWE Without Multi-key HE.",
+      "authors": [
+        "Peiying Xu",
+        "Li-Ping Wang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_12",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#XuW23"
+    },
+    {
+      "id": "acisp-2023-013",
+      "title": "Identity-Based Encryption from Lattices Using Approximate Trapdoors.",
+      "authors": [
+        "Malika Izabach&#232;ne",
+        "Lucas Prabel",
+        "Adeline Roux-Langlois"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_13",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#IzabachenePR23"
+    },
+    {
+      "id": "acisp-2023-014",
+      "title": "Homomorphic Signatures for Subset and Superset Mixed Predicates and Its Applications.",
+      "authors": [
+        "Masahito Ishizaka",
+        "Kazuhide Fukushima"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_14",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#IshizakaF23"
+    },
+    {
+      "id": "acisp-2023-015",
+      "title": "Adaptively Secure Identity-Based Encryption from Middle-Product Learning with Errors.",
+      "authors": [
+        "Jingjing Fan",
+        "Xingye Lu",
+        "Man Ho Au"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_15",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#FanLA23"
+    },
+    {
+      "id": "acisp-2023-016",
+      "title": "Quantum-Access Security of Hash-Based Signature Schemes.",
+      "authors": [
+        "Quan Yuan",
+        "Mehdi Tibouchi",
+        "Masayuki Abe"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_16",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#YuanTA23"
+    },
+    {
+      "id": "acisp-2023-017",
+      "title": "Tightly Secure Lattice Identity-Based Signature in the Quantum Random Oracle Model.",
+      "authors": [
+        "Ernest Foo",
+        "Qinyi Li"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_17",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#FooL23"
+    },
+    {
+      "id": "acisp-2023-018",
+      "title": "Ghidle: Efficient Large-State Block Ciphers for Post-quantum Security.",
+      "authors": [
+        "Motoki Nakahashi",
+        "Rentaro Shiba",
+        "Ravi Anand",
+        "Mostafizar Rahman",
+        "Kosei Sakamoto",
+        "Fukang Liu",
+        "Takanori Isobe 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_18",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#NakahashiSARSL023"
+    },
+    {
+      "id": "acisp-2023-019",
+      "title": "Quantum Algorithm for Finding Impossible Differentials and Zero-Correlation Linear Hulls of Symmetric Ciphers.",
+      "authors": [
+        "Huiqin Chen",
+        "Yongqiang Li 0001",
+        "Parhat Abla",
+        "Zhiran Li",
+        "Lin Jiao",
+        "Mingsheng Wang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_19",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#Chen0ALJW23"
+    },
+    {
+      "id": "acisp-2023-020",
+      "title": "Memory-Efficient Quantum Information Set Decoding Algorithm.",
+      "authors": [
+        "Naoto Kimura",
+        "Atsushi Takayasu",
+        "Tsuyoshi Takagi"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_20",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#KimuraTT23"
+    },
+    {
+      "id": "acisp-2023-021",
+      "title": "CSI-SharK: CSI-FiSh with Sharing-friendly Keys.",
+      "authors": [
+        "Shahla Atapoor",
+        "Karim Baghery",
+        "Daniele Cozzo",
+        "Robi Pedersen"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_21",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#AtapoorBCP23"
+    },
+    {
+      "id": "acisp-2023-022",
+      "title": "Practical Verifiable Random Function with RKA Security.",
+      "authors": [
+        "Tsz Hon Yuen",
+        "Shimin Pan",
+        "Sheng Huang",
+        "Xiaoting Zhang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_22",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#YuenPHZ23"
+    },
+    {
+      "id": "acisp-2023-023",
+      "title": "Statistically Consistent Broadcast Authenticated Encryption with Keyword Search - Adaptive Security from Standard Assumptions.",
+      "authors": [
+        "Sayantan Mukherjee"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_23",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#Mukherjee23"
+    },
+    {
+      "id": "acisp-2023-024",
+      "title": "Modular Design of KEM-Based Authenticated Key Exchange.",
+      "authors": [
+        "Colin Boyd",
+        "Bor de Kock",
+        "Lise Millerjord"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_24",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#BoydKM23"
+    },
+    {
+      "id": "acisp-2023-025",
+      "title": "Reusable, Instant and Private Payment Guarantees for Cryptocurrencies.",
+      "authors": [
+        "Akash Madhusudan",
+        "Mahdi Sedaghat",
+        "Samarth Tiwari",
+        "Kelong Cong",
+        "Bart Preneel"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_25",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#MadhusudanSTCP23"
+    },
+    {
+      "id": "acisp-2023-026",
+      "title": "BinAlign: Alignment Padding Based Compiler Provenance Recovery.",
+      "authors": [
+        "Maliha Ismail",
+        "Yan Lin 0003",
+        "DongGyun Han",
+        "Debin Gao"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_26",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#Ismail0HG23"
+    },
+    {
+      "id": "acisp-2023-027",
+      "title": "Encrypted Network Traffic Classification with Higher Order Graph Neural Network.",
+      "authors": [
+        "Zulu Okonkwo",
+        "Ernest Foo",
+        "Zhe Hou",
+        "Qinyi Li",
+        "Zahra Jadidi"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-35486-1_27",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2023.html#OkonkwoFHLJ23"
+    }
+  ]
+}

@@ -1,0 +1,1013 @@
+{
+  "conference": {
+    "name": "Annual Computer Security Applications Conference",
+    "acronym": "ACSAC",
+    "year": 2021,
+    "venue_slug": "acsac"
+  },
+  "coverage": {
+    "papers_count": 80,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "acsac-2021-001",
+      "title": "Stealing Machine Learning Models: Attacks and Countermeasures for Generative Adversarial Networks.",
+      "authors": [
+        "Hailong Hu",
+        "Jun Pang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485838",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Hu021"
+    },
+    {
+      "id": "acsac-2021-002",
+      "title": "The Many-faced God: Attacking Face Verification System with Embedding and Image Recovery.",
+      "authors": [
+        "Mingtian Tan",
+        "Zhe Zhou 0001",
+        "Zhou Li 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485840",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Tan0021"
+    },
+    {
+      "id": "acsac-2021-003",
+      "title": "Two Souls in an Adversarial Image: Towards Universal Adversarial Example Detection using Multi-view Inconsistency.",
+      "authors": [
+        "Sohaib Kiani",
+        "Sana Awan",
+        "Chao Lan",
+        "Fengjun Li",
+        "Bo Luo"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485904",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KianiALLL21"
+    },
+    {
+      "id": "acsac-2021-004",
+      "title": "Efficient, Private and Robust Federated Learning.",
+      "authors": [
+        "Meng Hao 0001",
+        "Hongwei Li 0001",
+        "Guowen Xu",
+        "Hanxiao Chen 0001",
+        "Tianwei Zhang 0004"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488014",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#HaoLXC021"
+    },
+    {
+      "id": "acsac-2021-005",
+      "title": "Morphence: Moving Target Defense Against Adversarial Examples.",
+      "authors": [
+        "Abderrahmen Amich",
+        "Birhanu Eshete"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485899",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#AmichE21"
+    },
+    {
+      "id": "acsac-2021-006",
+      "title": "Heterogeneous-PAKE: Bridging the Gap between PAKE Protocols and Their Real-World Deployment.",
+      "authors": [
+        "Rong Wei",
+        "Fangyu Zheng",
+        "Lili Gao",
+        "Jiankuo Dong",
+        "Guang Fan",
+        "Lipeng Wan 0002",
+        "Jingqiang Lin 0001",
+        "Yuewu Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485877",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#WeiZGDFWLW21"
+    },
+    {
+      "id": "acsac-2021-007",
+      "title": "A formal analysis of IKEv2's post-quantum extension.",
+      "authors": [
+        "Stefan-Lukas Gazdag",
+        "Sophia Grundner-Culemann",
+        "Tobias Guggemos",
+        "Tobias Heider",
+        "Daniel Loebenberger"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485885",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#GazdagGGHL21"
+    },
+    {
+      "id": "acsac-2021-008",
+      "title": "Optimized Paillier's Cryptosystem with Fast Encryption and Decryption.",
+      "authors": [
+        "Huanyu Ma",
+        "Shuai Han 0001",
+        "Hao Lei"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485842",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#MaHL21"
+    },
+    {
+      "id": "acsac-2021-009",
+      "title": "Towards Practical Post-quantum Signatures for Resource-Limited Internet of Things.",
+      "authors": [
+        "Rouzbeh Behnia",
+        "Attila Altay Yavuz"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488023",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#BehniaY21"
+    },
+    {
+      "id": "acsac-2021-010",
+      "title": "VASA: Vector AES Instructions for Security Applications.",
+      "authors": [
+        "Jean-Pierre M&#252;nch",
+        "Thomas Schneider 0003",
+        "Hossein Yalame"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485897",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Munch0Y21"
+    },
+    {
+      "id": "acsac-2021-011",
+      "title": "Program Obfuscation via ABI Debiasing.",
+      "authors": [
+        "David Demicco",
+        "Rukayat Erinfolami",
+        "Aravind Prakash"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488017",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#DemiccoEP21"
+    },
+    {
+      "id": "acsac-2021-012",
+      "title": "A Look Back on a Function Identification Problem.",
+      "authors": [
+        "Hyungjoon Koo",
+        "Soyeon Park",
+        "Taesoo Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488018",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KooPK21"
+    },
+    {
+      "id": "acsac-2021-013",
+      "title": "SoftMark: Software Watermarking via a Binary Function Relocation.",
+      "authors": [
+        "Honggoo Kang",
+        "Yonghwi Kwon 0001",
+        "Sangjin Lee 0002",
+        "Hyungjoon Koo"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488027",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KangKLK21"
+    },
+    {
+      "id": "acsac-2021-014",
+      "title": "Dynamic Taint Analysis versus Obfuscated Self-Checking.",
+      "authors": [
+        "Sebastian Banescu",
+        "Samuel Valenzuela",
+        "Marius Guggenmos",
+        "Mohsen Ahmadvand",
+        "Alexander Pretschner"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485926",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#BanescuVGAP21"
+    },
+    {
+      "id": "acsac-2021-015",
+      "title": "Dicos: Discovering Insecure Code Snippets from Stack Overflow Posts by Leveraging User Discussions.",
+      "authors": [
+        "Hyunji Hong",
+        "Seunghoon Woo",
+        "Heejo Lee"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488026",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#HongWL21"
+    },
+    {
+      "id": "acsac-2021-016",
+      "title": "ARID: Anonymous Remote IDentification of Unmanned Aerial Vehicles.",
+      "authors": [
+        "Pietro Tedeschi",
+        "Savio Sciancalepore",
+        "Roberto Di Pietro"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485834",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#TedeschiSP21"
+    },
+    {
+      "id": "acsac-2021-017",
+      "title": "Sipster: Settling IOU Privately and Quickly with Smart Meters.",
+      "authors": [
+        "Sherman S. M. Chow",
+        "Ming Li 0006",
+        "Yongjun Zhao 0001",
+        "Wenqiang Jin"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488029",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ChowLZJ21"
+    },
+    {
+      "id": "acsac-2021-018",
+      "title": "TEEKAP: Self-Expiring Data Capsule using Trusted Execution Environment.",
+      "authors": [
+        "Mingyuan Gao",
+        "Hung Dang",
+        "Ee-Chien Chang"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485919",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#GaoDC21"
+    },
+    {
+      "id": "acsac-2021-019",
+      "title": "BAPM: Block Attention Profiling Model for Multi-tab Website Fingerprinting Attacks on Tor.",
+      "authors": [
+        "Zhong Guan",
+        "Gang Xiong 0001",
+        "Gaopeng Gou",
+        "Zhen Li 0011",
+        "Mingxin Cui",
+        "Chang Liu 0049"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485891",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#GuanXGLCL21"
+    },
+    {
+      "id": "acsac-2021-020",
+      "title": "Try before You Buy: Privacy-preserving Data Evaluation on Cloud-based Machine Learning Data Marketplace.",
+      "authors": [
+        "Qiyang Song",
+        "Jiahao Cao 0001",
+        "Kun Sun 0001",
+        "Qi Li 0002",
+        "Ke Xu 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485921",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#SongC00021"
+    },
+    {
+      "id": "acsac-2021-021",
+      "title": "VIA: Analyzing Device Interfaces of Protected Virtual Machines.",
+      "authors": [
+        "Felicitas Hetzelt",
+        "Martin Radev",
+        "Robert Buhren",
+        "Mathias Morbitzer",
+        "Jean-Pierre Seifert"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488011",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#HetzeltRBMS21"
+    },
+    {
+      "id": "acsac-2021-022",
+      "title": "Rocky: Replicating Block Devices for Tamper and Failure Resistant Edge-based Virtualized Desktop Infrastructure.",
+      "authors": [
+        "Beom Heyn Kim",
+        "Hyoungshick Kim"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485886",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KimK21"
+    },
+    {
+      "id": "acsac-2021-023",
+      "title": "On Detecting Growing-Up Behaviors of Malicious Accounts in Privacy-Centric Mobile Social Networks.",
+      "authors": [
+        "Zijie Yang",
+        "Binghui Wang",
+        "Haoran Li",
+        "Dong Yuan 0006",
+        "Zhuotao Liu",
+        "Neil Zhenqiang Gong",
+        "Chang Liu 0021",
+        "Qi Li 0002",
+        "Xiao Liang",
+        "Shaofeng Hu"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488013",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#YangWLYLGLLLH21"
+    },
+    {
+      "id": "acsac-2021-024",
+      "title": "ReCFA: Resilient Control-Flow Attestation.",
+      "authors": [
+        "Yumei Zhang",
+        "Xinzhi Liu",
+        "Cong Sun 0001",
+        "Dongrui Zeng",
+        "Gang Tan",
+        "Xiao Kan",
+        "Siqi Ma"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485900",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhangL0ZTKM21"
+    },
+    {
+      "id": "acsac-2021-025",
+      "title": "Practical Attestation for Edge Devices Running Compute Heavy Machine Learning Applications.",
+      "authors": [
+        "Ismi Abidi",
+        "Vireshwar Kumar",
+        "Rijurekha Sen"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485909",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#AbidiKS21"
+    },
+    {
+      "id": "acsac-2021-026",
+      "title": "Is Visualization Enough? Evaluating the Efficacy of MUD-Visualizer in Enabling Ease of Deployment for Manufacturer Usage Description (MUD).",
+      "authors": [
+        "Vafa Andalibi",
+        "Jayati Dev",
+        "DongInn Kim",
+        "Eliot Lear",
+        "L. Jean Camp"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485879",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#AndalibiDKLC21"
+    },
+    {
+      "id": "acsac-2021-027",
+      "title": "A Cross-role and Bi-national Analysis on Security Efforts and Constraints of Software Development Projects.",
+      "authors": [
+        "Fumihiro Kanei",
+        "Ayako Akiyama Hasegawa",
+        "Eitaro Shioji",
+        "Mitsuaki Akiyama"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485922",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KaneiHSA21"
+    },
+    {
+      "id": "acsac-2021-028",
+      "title": "An Efficient Man-Machine Recognition Method Based On Mouse Trajectory Feature De-redundancy.",
+      "authors": [
+        "Xiaofeng Lu",
+        "Zhenhan Feng",
+        "Jupeng Xia"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485895",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LuFX21"
+    },
+    {
+      "id": "acsac-2021-029",
+      "title": "OPay: an Orientation-based Contactless Payment Solution Against Passive Attacks.",
+      "authors": [
+        "Mahshid Mehr Nezhad",
+        "Feng Hao 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485887",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#NezhadH21"
+    },
+    {
+      "id": "acsac-2021-030",
+      "title": "What's in a Cyber Threat Intelligence sharing platform?: A mixed-methods user experience investigation of MISP.",
+      "authors": [
+        "Borce Stojkovski",
+        "Gabriele Lenzini",
+        "Vincent Koenig",
+        "Salvador Rivas"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488030",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#StojkovskiLKR21"
+    },
+    {
+      "id": "acsac-2021-031",
+      "title": "They See Me Rollin': Inherent Vulnerability of the Rolling Shutter in CMOS Image Sensors.",
+      "authors": [
+        "Sebastian K&#246;hler 0005",
+        "Giulio Lovisotto",
+        "Simon Birnbach",
+        "Richard Baker 0008",
+        "Ivan Martinovic"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488016",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KohlerLB0M21"
+    },
+    {
+      "id": "acsac-2021-032",
+      "title": "Evaluating the Effectiveness of Protection Jamming Devices in Mitigating Smart Speaker Eavesdropping Attacks Using Gaussian White Noise.",
+      "authors": [
+        "Payton Walker",
+        "Nitesh Saxena"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485896",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#WalkerS21"
+    },
+    {
+      "id": "acsac-2021-033",
+      "title": "S2-CAN: Sufficiently Secure Controller Area Network.",
+      "authors": [
+        "Mert D. Pes&#233;",
+        "Jay W. Schauer",
+        "Junhui Li",
+        "Kang G. Shin"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485883",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#PeseSLS21"
+    },
+    {
+      "id": "acsac-2021-034",
+      "title": "Crypto-Chain: A Relay Resilience Framework for Smart Vehicles.",
+      "authors": [
+        "Abubakar Sadiq Sani",
+        "Dong Yuan 0001",
+        "Elisa Bertino",
+        "Zhao Yang Dong"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485920",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#SaniYBD21"
+    },
+    {
+      "id": "acsac-2021-035",
+      "title": "Advanced System Resiliency Based on Virtualization Techniques for IoT Devices.",
+      "authors": [
+        "Jonas R&#246;ckl",
+        "Mykolai Protsenko",
+        "Monika Huber 0001",
+        "Tilo M&#252;ller",
+        "Felix C. Freiling"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485836",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#RocklPHMF21"
+    },
+    {
+      "id": "acsac-2021-036",
+      "title": "Global Feature Analysis and Comparative Evaluation of Freestyle In-Air-Handwriting Passcode for User Authentication.",
+      "authors": [
+        "Duo Lu",
+        "Yuli Deng",
+        "Dijiang Huang"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485906",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LuDH21"
+    },
+    {
+      "id": "acsac-2021-037",
+      "title": "2D-2FA: A New Dimension in Two-Factor Authentication.",
+      "authors": [
+        "Maliheh Shirvanian",
+        "Shashank Agrawal"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485910",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ShirvanianA21"
+    },
+    {
+      "id": "acsac-2021-038",
+      "title": "Group Time-based One-time Passwords and its Application to Efficient Privacy-Preserving Proof of Location.",
+      "authors": [
+        "Zheng Yang 0001",
+        "Chenglu Jin",
+        "Jianting Ning",
+        "Zengpeng Li 0001",
+        "Tien Tuan Anh Dinh",
+        "Jianying Zhou 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488009",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#0001JNLD021"
+    },
+    {
+      "id": "acsac-2021-039",
+      "title": "Digit Semantics based Optimization for Practical Password Cracking Tools.",
+      "authors": [
+        "Haodong Zhang",
+        "Chuanwang Wang",
+        "Wenqiang Ruan",
+        "Junjie Zhang",
+        "Ming Xu 0006",
+        "Weili Han"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488025",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhangWRZXH21"
+    },
+    {
+      "id": "acsac-2021-040",
+      "title": "Systematization of Password ManagerUse Cases and Design Paradigms.",
+      "authors": [
+        "James Simmons",
+        "Oumar Diallo",
+        "Sean Oesch",
+        "Scott Ruoti"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485889",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#SimmonsDOR21"
+    },
+    {
+      "id": "acsac-2021-041",
+      "title": "Eluding ML-based Adblockers With Actionable Adversarial Examples.",
+      "authors": [
+        "Shitong Zhu",
+        "Zhongjie Wang 0002",
+        "Xun Chen",
+        "Shasha Li 0001",
+        "Keyu Man",
+        "Umar Iqbal 0002",
+        "Zhiyun Qian",
+        "Kevin S. Chan",
+        "Srikanth V. Krishnamurthy",
+        "Zubair Shafiq",
+        "Yu Hao 0006",
+        "Guoren Li",
+        "Zheng Zhang",
+        "Xiaochen Zou"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488008",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhuWCLMIQCKSHLZ21"
+    },
+    {
+      "id": "acsac-2021-042",
+      "title": "BadNL: Backdoor Attacks against NLP Models with Semantic-preserving Improvements.",
+      "authors": [
+        "Xiaoyi Chen",
+        "Ahmed Salem 0001",
+        "Dingfan Chen",
+        "Michael Backes 0001",
+        "Shiqing Ma",
+        "Qingni Shen",
+        "Zhonghai Wu",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485837",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Chen0C0MSW021"
+    },
+    {
+      "id": "acsac-2021-043",
+      "title": "MISA: Online Defense of Trojaned Models using Misattributions.",
+      "authors": [
+        "Panagiota Kiourti",
+        "Wenchao Li 0001",
+        "Anirban Roy",
+        "Karan Sikka",
+        "Susmit Jha"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485908",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KiourtiLRSJ21"
+    },
+    {
+      "id": "acsac-2021-044",
+      "title": "Detecting Audio Adversarial Examples with Logit Noising.",
+      "authors": [
+        "Namgyu Park",
+        "Sangwoo Ji",
+        "Jong Kim 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485912",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ParkJ021"
+    },
+    {
+      "id": "acsac-2021-045",
+      "title": "Can We Leverage Predictive Uncertainty to Detect Dataset Shift and Adversarial Examples in Android Malware Detection?",
+      "authors": [
+        "Deqiang Li",
+        "Tian Qiu",
+        "Shuo Chen 0003",
+        "Qianmu Li",
+        "Shouhuai Xu"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485916",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LiQCLX21"
+    },
+    {
+      "id": "acsac-2021-046",
+      "title": "TLB Poisoning Attacks on AMD Secure Encrypted Virtualization.",
+      "authors": [
+        "Mengyuan Li 0004",
+        "Yinqian Zhang",
+        "Huibo Wang",
+        "Kang Li",
+        "Yueqiang Cheng"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485876",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LiZWLC21"
+    },
+    {
+      "id": "acsac-2021-047",
+      "title": "Reinhardt: Real-time Reconfigurable Hardware Architecture for Regular Expression Matching in DPI.",
+      "authors": [
+        "Taejune Park",
+        "Jaehyun Nam",
+        "Seung Ho Na",
+        "Jaewoong Chung",
+        "Seungwon Shin 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485878",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ParkNNCS21"
+    },
+    {
+      "id": "acsac-2021-048",
+      "title": "Understanding the Threats of Trojaned Quantized Neural Network in Model Supply Chains.",
+      "authors": [
+        "Xudong Pan",
+        "Mi Zhang 0001",
+        "Yifan Yan",
+        "Min Yang 0002"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485881",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#PanZYY21"
+    },
+    {
+      "id": "acsac-2021-049",
+      "title": "FlexFilt: Towards Flexible Instruction Filtering for Security.",
+      "authors": [
+        "Leila Delshadtehrani",
+        "Sadullah Canakci",
+        "William Blair",
+        "Manuel Egele",
+        "Ajay Joshi"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488019",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#DelshadtehraniC21"
+    },
+    {
+      "id": "acsac-2021-050",
+      "title": "RingRAM: A Unified Hardware SecurityPrimitive for IoT Devices that Gets Better with Age.",
+      "authors": [
+        "Michael Moukarzel",
+        "Matthew Hicks"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485905",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#MoukarzelH21"
+    },
+    {
+      "id": "acsac-2021-051",
+      "title": "SODA: A System for Cyber Deception Orchestration and Automation.",
+      "authors": [
+        "Md Sajidul Islam Sajid",
+        "Jinpeng Wei",
+        "Basel Abdeen",
+        "Ehab Al-Shaer",
+        "Md. Mazharul Islam 0001",
+        "Walter Diong",
+        "Latifur Khan"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485918",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#SajidWAAIDK21"
+    },
+    {
+      "id": "acsac-2021-052",
+      "title": "Reproducible and Adaptable Log Data Generation for Sound Cybersecurity Experiments.",
+      "authors": [
+        "Rafael Uetz",
+        "Christian Hemminghaus",
+        "Louis Hackl&#228;nder",
+        "Philipp Schlipper",
+        "Martin Henze"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488020",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#UetzHHSH21"
+    },
+    {
+      "id": "acsac-2021-053",
+      "title": "Obfuscation Revealed: Leveraging Electromagnetic Signals for Obfuscated Malware Classification.",
+      "authors": [
+        "Duy-Phuc Pham",
+        "Damien Marion 0001",
+        "Matthieu Mastio",
+        "Annelie Heuser"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485894",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Pham0MH21"
+    },
+    {
+      "id": "acsac-2021-054",
+      "title": "CommanderGabble: A Universal Attack Against ASR Systems Leveraging Fast Speech.",
+      "authors": [
+        "Zhaohe John Zhang",
+        "Edwin Yang",
+        "Song Fang 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485892",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhangYF21"
+    },
+    {
+      "id": "acsac-2021-055",
+      "title": "Physical Logic Bombs in 3D Printers via Emerging 4D Techniques.",
+      "authors": [
+        "Tuan Le",
+        "Sriharsha Etigowni",
+        "Sizhuang Liang",
+        "Xirui Peng",
+        "H. Jerry Qi",
+        "Mehdi Javanmard",
+        "Saman A. Zonouz",
+        "Raheem Beyah"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485880",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LeELPQJZB21"
+    },
+    {
+      "id": "acsac-2021-056",
+      "title": "SolSaviour: A Defending Framework for Deployed Defective Smart Contracts.",
+      "authors": [
+        "Zecheng Li 0001",
+        "Yu Zhou 0047",
+        "Songtao Guo",
+        "Bin Xiao 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488015",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LiZG021"
+    },
+    {
+      "id": "acsac-2021-057",
+      "title": "Improving Streaming Cryptocurrency Transaction Classification via Biased Sampling and Graph Feedback.",
+      "authors": [
+        "Shaltiel Eloul",
+        "Sean J. Moran",
+        "Jacob Mendel"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485913",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#EloulMM21"
+    },
+    {
+      "id": "acsac-2021-058",
+      "title": "Mitosis: Practically Scaling Permissioned Blockchains.",
+      "authors": [
+        "Giorgia Azzurra Marson",
+        "S&#233;bastien Andreina",
+        "Lorenzo Alluminio",
+        "Konstantin Munichev",
+        "Ghassan Karame"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485915",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#MarsonAAMK21"
+    },
+    {
+      "id": "acsac-2021-059",
+      "title": "An Exploration of ARM System-Level Cache and GPU Side Channels.",
+      "authors": [
+        "Patrick Cronin",
+        "Xing Gao 0001",
+        "Haining Wang 0001",
+        "Chase Cotton"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485902",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Cronin0WC21"
+    },
+    {
+      "id": "acsac-2021-060",
+      "title": "LaserShark: Establishing Fast, Bidirectional Communication into Air-Gapped Systems.",
+      "authors": [
+        "Niclas K&#252;hnapfel",
+        "Stefan Preu&#223;ler",
+        "Maximilian Noppel",
+        "Thomas Schneider",
+        "Konrad Rieck",
+        "Christian Wressnegger"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485911",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KuhnapfelPNSRW21"
+    },
+    {
+      "id": "acsac-2021-061",
+      "title": "Rupair: Towards Automatic Buffer Overflow Detection and Rectification for Rust.",
+      "authors": [
+        "Baojian Hua",
+        "Wanrong Ouyang",
+        "Chengman Jiang",
+        "Qiliang Fan",
+        "Zhizhong Pan"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485841",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#HuaOJFP21"
+    },
+    {
+      "id": "acsac-2021-062",
+      "title": "Keeping Safe Rust Safe with Galeed.",
+      "authors": [
+        "Elijah Rivera",
+        "Samuel Mergendahl",
+        "Howard E. Shrobe",
+        "Hamed Okhravi",
+        "Nathan Burow"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485903",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#RiveraMSOB21"
+    },
+    {
+      "id": "acsac-2021-063",
+      "title": "DistAppGaurd: Distributed Application Behaviour Profiling in Cloud-Based Environment.",
+      "authors": [
+        "Mohammad Mahdi Ghorbani",
+        "Fereydoun Farrahi Moghaddam",
+        "Mengyuan Zhang 0001",
+        "Makan Pourzandi",
+        "Kim Khoa Nguyen",
+        "Mohamed Cheriet"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485907",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#GhorbaniMZPNC21"
+    },
+    {
+      "id": "acsac-2021-064",
+      "title": "ICS3Fuzzer: A Framework for Discovering Protocol Implementation Bugs in ICS Supervisory Software by Fuzzing.",
+      "authors": [
+        "Dongliang Fang",
+        "Zhanwei Song",
+        "Le Guan",
+        "Puzhuo Liu",
+        "Anni Peng",
+        "Kai Cheng",
+        "Yaowen Zheng",
+        "Peng Liu 0005",
+        "Hongsong Zhu",
+        "Limin Sun 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488028",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#FangSGLPCZLZS21"
+    },
+    {
+      "id": "acsac-2021-065",
+      "title": "argXtract: Deriving IoT Security Configurations via Automated Static Analysis of Stripped ARM Cortex-M Binaries.",
+      "authors": [
+        "Pallavi Sivakumaran",
+        "Jorge Blasco"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488007",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#SivakumaranB21"
+    },
+    {
+      "id": "acsac-2021-066",
+      "title": "On Key Reinstallation Attacks over 4G LTE Control-Plane: Feasibility and Negative Impact.",
+      "authors": [
+        "Muhammad Taqi Raza",
+        "Yunqi Guo",
+        "Songwu Lu",
+        "Fatima Muhammad Anwar 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485833",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#RazaGLA21"
+    },
+    {
+      "id": "acsac-2021-067",
+      "title": "Security of Multicarrier Time-of-Flight Ranging.",
+      "authors": [
+        "Patrick Leu",
+        "Martin Kotuliak",
+        "Marc Roeschlin",
+        "Srdjan Capkun"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485898",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#LeuKRC21"
+    },
+    {
+      "id": "acsac-2021-068",
+      "title": "Don't hand it Over: Vulnerabilities in the Handover Procedure of Cellular Telecommunications.",
+      "authors": [
+        "Evangelos Bitsikas",
+        "Christina P&#246;pper"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485914",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#BitsikasP21"
+    },
+    {
+      "id": "acsac-2021-069",
+      "title": "Time to Rethink the Design of Qi Standard? Security and Privacy Vulnerability Analysis of Qi Wireless Charging.",
+      "authors": [
+        "Yi Wu 0020",
+        "Zhuohang Li",
+        "Nicholas Van Nostrand",
+        "Jian Liu 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485839",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#WuLNL21"
+    },
+    {
+      "id": "acsac-2021-070",
+      "title": "Detecting and Characterizing SMS Spearphishing Attacks.",
+      "authors": [
+        "Mingxuan Liu 0006",
+        "Yiming Zhang 0009",
+        "Baojun Liu 0002",
+        "Zhou Li 0001",
+        "Haixin Duan",
+        "Donghong Sun"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488012",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Liu0LLDS21"
+    },
+    {
+      "id": "acsac-2021-071",
+      "title": "Characterizing Improper Input Validation Vulnerabilities of Mobile Crowdsourcing Services.",
+      "authors": [
+        "Sojhal Ismail Khan",
+        "Dominika C. Woszczyk",
+        "Chengzeng You",
+        "Soteris Demetriou",
+        "Muhammad Naveed 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485888",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#KhanWYD021"
+    },
+    {
+      "id": "acsac-2021-072",
+      "title": "Towards Stalkerware Detection with Precise Warnings.",
+      "authors": [
+        "Yufei Han 0001",
+        "Kevin Alejandro Roundy",
+        "Acar Tamersoy"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485901",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#HanRT21"
+    },
+    {
+      "id": "acsac-2021-073",
+      "title": "Repack Me If You Can: An Anti-Repackaging Solution Based on Android Virtualization.",
+      "authors": [
+        "Antonio Ruggia",
+        "Eleonora Losiouk",
+        "Luca Verderame",
+        "Mauro Conti",
+        "Alessio Merlo"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488021",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#RuggiaLVCM21"
+    },
+    {
+      "id": "acsac-2021-074",
+      "title": "Westworld: Fuzzing-Assisted Remote Dynamic Symbolic Execution of Smart Apps on IoT Cloud Platforms.",
+      "authors": [
+        "Lannan Luo",
+        "Qiang Zeng 0001",
+        "Bokai Yang",
+        "Fei Zuo",
+        "Junzhe Wang"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488022",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#Luo0YZW21"
+    },
+    {
+      "id": "acsac-2021-075",
+      "title": "The Emperor's New Autofill Framework: A Security Analysis of Autofill on iOS and Android.",
+      "authors": [
+        "Sean Oesch",
+        "Anuj Gautam",
+        "Scott Ruoti"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485884",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#OeschGR21"
+    },
+    {
+      "id": "acsac-2021-076",
+      "title": "FINN: Fingerprinting Network Flows using Neural Networks.",
+      "authors": [
+        "Fatemeh Rezaei",
+        "Amir Houmansadr"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488010",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#RezaeiH21"
+    },
+    {
+      "id": "acsac-2021-077",
+      "title": "MAppGraph: Mobile-App Classification on Encrypted Network Traffic using Deep Graph Convolution Neural Networks.",
+      "authors": [
+        "Thai-Dien Pham",
+        "Thien-Lac Ho",
+        "Tram Truong Huu",
+        "Tien-Dung Cao",
+        "Hong Linh Truong 0001"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485925",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#PhamHTCT21"
+    },
+    {
+      "id": "acsac-2021-078",
+      "title": "SMap: Internet-wide Scanning for Spoofing.",
+      "authors": [
+        "Tianxiang Dai",
+        "Haya Schulmann"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485917",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#DaiS21"
+    },
+    {
+      "id": "acsac-2021-079",
+      "title": "MineHunter: A Practical Cryptomining Traffic Detection Algorithm Based on Time Series Tracking.",
+      "authors": [
+        "Shize Zhang",
+        "Zhiliang Wang",
+        "Jiahai Yang 0001",
+        "Xin Cheng 0022",
+        "Xiaoqian Ma",
+        "Hui Zhang 0052",
+        "Bo Wang 0066",
+        "Zimu Li",
+        "Jianping Wu"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3485835",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhangWYCMZWLW21"
+    },
+    {
+      "id": "acsac-2021-080",
+      "title": "Platform-Oblivious Anti-Spam Gateway.",
+      "authors": [
+        "Yihe Zhang 0001",
+        "Xu Yuan 0001",
+        "Nian-Feng Tzeng"
+      ],
+      "doi": "https://doi.org/10.1145/3485832.3488024",
+      "dblp_url": "https://dblp.org/db/conf/acsac/acsac2021.html#ZhangYT21"
+    }
+  ]
+}

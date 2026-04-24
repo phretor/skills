@@ -1,0 +1,1492 @@
+{
+  "conference": {
+    "name": "IEEE Symposium on Security and Privacy",
+    "acronym": "IEEE S&P",
+    "year": 2021,
+    "venue_slug": "ieee-sp"
+  },
+  "coverage": {
+    "papers_count": 114,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "ieee-sp-2021-001",
+      "title": "Using Selective Memoization to Defeat Regular Expression Denial of Service (ReDoS).",
+      "authors": [
+        "James C. Davis 0001",
+        "Francisco Servant",
+        "Dongyoon Lee"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00032",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#DavisSL21"
+    },
+    {
+      "id": "ieee-sp-2021-002",
+      "title": "Co-Inflow: Coarse-grained Information Flow Control for Java-like Languages.",
+      "authors": [
+        "Jian Xiang",
+        "Stephen Chong"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00002",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#XiangC21"
+    },
+    {
+      "id": "ieee-sp-2021-003",
+      "title": "When Function Signature Recovery Meets Compiler Optimization.",
+      "authors": [
+        "Yan Lin 0003",
+        "Debin Gao"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00006",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LinG21"
+    },
+    {
+      "id": "ieee-sp-2021-004",
+      "title": "How Did That Get In My Phone? Unwanted App Distribution on Android Devices.",
+      "authors": [
+        "Platon Kotzias",
+        "Juan Caballero",
+        "Leyla Bilge"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00041",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KotziasCB21"
+    },
+    {
+      "id": "ieee-sp-2021-005",
+      "title": "Android Custom Permissions Demystified: From Privilege Escalation to Design Shortcomings.",
+      "authors": [
+        "Rui Li 0102",
+        "Wenrui Diao",
+        "Zhou Li 0001",
+        "Jianqi Du",
+        "Shanqing Guo"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00070",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LiDLDG21"
+    },
+    {
+      "id": "ieee-sp-2021-006",
+      "title": "Trust, But Verify: A Longitudinal Analysis Of Android OEM Compliance and Customization.",
+      "authors": [
+        "Andrea Possemato",
+        "Simone Aonzo",
+        "Davide Balzarotti",
+        "Yanick Fratantonio"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00074",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PossematoABF21"
+    },
+    {
+      "id": "ieee-sp-2021-007",
+      "title": "Detecting AI Trojans Using Meta Neural Analysis.",
+      "authors": [
+        "Xiaojun Xu",
+        "Qi Wang 0017",
+        "Huichen Li",
+        "Nikita Borisov",
+        "Carl A. Gunter",
+        "Bo Li 0026"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00034",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#XuWLBGL21"
+    },
+    {
+      "id": "ieee-sp-2021-008",
+      "title": "Adversarial Watermarking Transformer: Towards Tracing Text Provenance with Data Hiding.",
+      "authors": [
+        "Sahar Abdelnabi",
+        "Mario Fritz"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00083",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#AbdelnabiF21"
+    },
+    {
+      "id": "ieee-sp-2021-009",
+      "title": "Machine Unlearning.",
+      "authors": [
+        "Lucas Bourtoule",
+        "Varun Chandrasekaran",
+        "Christopher A. Choquette-Choo",
+        "Hengrui Jia 0001",
+        "Adelin Travers",
+        "Baiwu Zhang",
+        "David Lie",
+        "Nicolas Papernot"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00019",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BourtouleCCJTZL21"
+    },
+    {
+      "id": "ieee-sp-2021-010",
+      "title": "Poltergeist: Acoustic Adversarial Machine Learning against Cameras and Computer Vision.",
+      "authors": [
+        "Xiaoyu Ji 0001",
+        "Yushi Cheng",
+        "Yuepeng Zhang",
+        "Kai Wang 0073",
+        "Chen Yan 0001",
+        "Wenyuan Xu 0001",
+        "Kevin Fu"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00091",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#JiCZWYXF21"
+    },
+    {
+      "id": "ieee-sp-2021-011",
+      "title": "Invisible for both Camera and LiDAR: Security of Multi-Sensor Fusion based Perception in Autonomous Driving Under Physical-World Attacks.",
+      "authors": [
+        "Yulong Cao",
+        "Ningfei Wang",
+        "Chaowei Xiao",
+        "Dawei Yang",
+        "Jin Fang",
+        "Ruigang Yang",
+        "Qi Alfred Chen",
+        "Mingyan Liu",
+        "Bo Li 0026"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00076",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CaoWXYFYCLL21"
+    },
+    {
+      "id": "ieee-sp-2021-012",
+      "title": "CANNON: Reliable and Stealthy Remote Shutdown Attacks via Unaltered Automotive Microcontrollers.",
+      "authors": [
+        "Sekar Kulandaivel",
+        "Shalabh Jain",
+        "Jorge Guajardo",
+        "Vyas Sekar"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00122",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KulandaivelJGS21"
+    },
+    {
+      "id": "ieee-sp-2021-013",
+      "title": "SoK: Quantifying Cyber Risk.",
+      "authors": [
+        "Daniel W. Woods",
+        "Rainer B&#246;hme"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00053",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#WoodsB21"
+    },
+    {
+      "id": "ieee-sp-2021-014",
+      "title": "Self-Supervised Euphemism Detection and Identification for Content Moderation.",
+      "authors": [
+        "Wanzheng Zhu",
+        "Hongyu Gong",
+        "Rohan Bansal",
+        "Zachary Weinberg",
+        "Nicolas Christin",
+        "Giulia Fanti",
+        "Suma Bhat"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00075",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhuGBWCFB21"
+    },
+    {
+      "id": "ieee-sp-2021-015",
+      "title": "SoK: Hate, Harassment, and the Changing Landscape of Online Abuse.",
+      "authors": [
+        "Kurt Thomas",
+        "Devdatta Akhawe",
+        "Michael D. Bailey",
+        "Dan Boneh",
+        "Elie Bursztein",
+        "Sunny Consolvo",
+        "Nicola Dell",
+        "Zakir Durumeric",
+        "Patrick Gage Kelley",
+        "Deepak Kumar 0006",
+        "Damon McCoy",
+        "Sarah Meiklejohn",
+        "Thomas Ristenpart",
+        "Gianluca Stringhini"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00028",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ThomasABBBCDDKK21"
+    },
+    {
+      "id": "ieee-sp-2021-016",
+      "title": "Keep the Dirt: Tainted TreeKEM, Adaptively and Actively Secure Continuous Group Key Agreement.",
+      "authors": [
+        "Karen Klein",
+        "Guillermo Pascual-Perez",
+        "Michael Walter 0001",
+        "Chethan Kamath",
+        "Margarita Capretto",
+        "Miguel Cueto",
+        "Ilia Markov",
+        "Michelle Yeo",
+        "Jo&#235;l Alwen",
+        "Krzysztof Pietrzak"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00035",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KleinPWKCCMYAP21"
+    },
+    {
+      "id": "ieee-sp-2021-017",
+      "title": "Merkle<sup>2</sup>: A Low-Latency Transparency Log System.",
+      "authors": [
+        "Yuncong Hu",
+        "Kian Hooshmand",
+        "Harika Kalidhindi",
+        "Seung Jin Yang",
+        "Raluca Ada Popa"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00088",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HuHKYP21"
+    },
+    {
+      "id": "ieee-sp-2021-018",
+      "title": "Post-quantum WireGuard.",
+      "authors": [
+        "Andreas H&#252;lsing",
+        "Kai-Chun Ning",
+        "Peter Schwabe",
+        "Florian Weber",
+        "Philip R. Zimmermann"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00030",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HulsingNSWZ21"
+    },
+    {
+      "id": "ieee-sp-2021-019",
+      "title": "Invisible Probe: Timing Attacks with PCIe Congestion Side-channel.",
+      "authors": [
+        "Mingtian Tan",
+        "Junpeng Wan",
+        "Zhe Zhou 0001",
+        "Zhou Li 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00059",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TanWZL21"
+    },
+    {
+      "id": "ieee-sp-2021-020",
+      "title": "CacheOut: Leaking Data on Intel CPUs via Cache Evictions.",
+      "authors": [
+        "Stephan van Schaik",
+        "Marina Minkin",
+        "Andrew Kwong",
+        "Daniel Genkin",
+        "Yuval Yarom"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00064",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#SchaikMKGY21"
+    },
+    {
+      "id": "ieee-sp-2021-021",
+      "title": "PLATYPUS: Software-based Power Side-Channel Attacks on x86.",
+      "authors": [
+        "Moritz Lipp",
+        "Andreas Kogler",
+        "David F. Oswald",
+        "Michael Schwarz 0001",
+        "Catherine Easdon",
+        "Claudio Canella",
+        "Daniel Gruss"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00063",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LippKOSECG21"
+    },
+    {
+      "id": "ieee-sp-2021-022",
+      "title": "Defensive Technology Use by Political Activists During the Sudanese Revolution.",
+      "authors": [
+        "Alaa Daffalla",
+        "Lucy Simko",
+        "Tadayoshi Kohno",
+        "Alexandru G. Bardas"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00055",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#DaffallaSKB21"
+    },
+    {
+      "id": "ieee-sp-2021-023",
+      "title": "DP-Sniper: Black-Box Discovery of Differential Privacy Violations using Classifiers.",
+      "authors": [
+        "Benjamin Bichsel",
+        "Samuel Steffen",
+        "Ilija Bogunovic",
+        "Martin T. Vechev"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00081",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BichselSBV21"
+    },
+    {
+      "id": "ieee-sp-2021-024",
+      "title": "Is Private Learning Possible with Instance Encoding?",
+      "authors": [
+        "Nicholas Carlini",
+        "Samuel Deng",
+        "Sanjam Garg",
+        "Somesh Jha",
+        "Saeed Mahloujifar",
+        "Mohammad Mahmoody",
+        "Abhradeep Thakurta",
+        "Florian Tram&#232;r"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00099",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CarliniDGJMMTT21"
+    },
+    {
+      "id": "ieee-sp-2021-025",
+      "title": "High-Frequency Trading on Decentralized On-Chain Exchanges.",
+      "authors": [
+        "Liyi Zhou",
+        "Kaihua Qin",
+        "Christof Ferreira Torres",
+        "Duc Viet Le 0001",
+        "Arthur Gervais"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00027",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhouQTLG21"
+    },
+    {
+      "id": "ieee-sp-2021-026",
+      "title": "Ebb-and-Flow Protocols: A Resolution of the Availability-Finality Dilemma.",
+      "authors": [
+        "Joachim Neu",
+        "Ertem Nusret Tas",
+        "David Tse"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00045",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#NeuTT21"
+    },
+    {
+      "id": "ieee-sp-2021-027",
+      "title": "Red Belly: A Secure, Fair and Scalable Open Blockchain.",
+      "authors": [
+        "Tyler Crain",
+        "Christopher Natoli",
+        "Vincent Gramoli"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00087",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CrainNG21"
+    },
+    {
+      "id": "ieee-sp-2021-028",
+      "title": "Diane: Identifying Fuzzing Triggers in Apps to Generate Under-constrained Inputs for IoT Devices.",
+      "authors": [
+        "Nilo Redini",
+        "Andrea Continella",
+        "Dipanjan Das 0002",
+        "Giulio De Pasquale",
+        "Noah Spahn",
+        "Aravind Machiry",
+        "Antonio Bianchi",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00066",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#RediniCDPSMBKV21"
+    },
+    {
+      "id": "ieee-sp-2021-029",
+      "title": "Data Privacy in Trigger-Action Systems.",
+      "authors": [
+        "Yunang Chen",
+        "Amrita Roy Chowdhury 0001",
+        "Ruizhe Wang 0003",
+        "Andrei Sabelfeld",
+        "Rahul Chatterjee 0001",
+        "Earlence Fernandes"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00108",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenCWSCF21"
+    },
+    {
+      "id": "ieee-sp-2021-030",
+      "title": "Which Privacy and Security Attributes Most Impact Consumers' Risk Perception and Willingness to Purchase IoT Devices?",
+      "authors": [
+        "Pardis Emami Naeini",
+        "Janarth Dheenadhayalan",
+        "Yuvraj Agarwal",
+        "Lorrie Faith Cranor"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00112",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#NaeiniDAC21"
+    },
+    {
+      "id": "ieee-sp-2021-031",
+      "title": "An Interactive Prover for Protocol Verification in the Computational Model.",
+      "authors": [
+        "David Baelde",
+        "St&#233;phanie Delaune",
+        "Charlie Jacomme",
+        "Adrien Koutsos",
+        "Sol&#232;ne Moreau"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00078",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BaeldeDJKM21"
+    },
+    {
+      "id": "ieee-sp-2021-032",
+      "title": "SmartPulse: Automated Checking of Temporal Properties in Smart Contracts.",
+      "authors": [
+        "Jon Stephens",
+        "Kostas Ferles",
+        "Benjamin Mariano",
+        "Shuvendu K. Lahiri",
+        "Isil Dillig"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00085",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#StephensFMLD21"
+    },
+    {
+      "id": "ieee-sp-2021-033",
+      "title": "An I/O Separation Model for Formal Verification of Kernel Implementations.",
+      "authors": [
+        "Miao Yu",
+        "Virgil D. Gligor",
+        "Limin Jia 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00101",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#YuGJ21"
+    },
+    {
+      "id": "ieee-sp-2021-034",
+      "title": "Diogenes: Lightweight Scalable RSA Modulus Generation with a Dishonest Majority.",
+      "authors": [
+        "Megan Chen",
+        "Carmit Hazay",
+        "Yuval Ishai",
+        "Yuriy Kashnikov",
+        "Daniele Micciancio",
+        "Tarik Riviere",
+        "Abhi Shelat",
+        "Muthuramakrishnan Venkitasubramaniam",
+        "Ruihan Wang"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00025",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenHIKMRSVW21"
+    },
+    {
+      "id": "ieee-sp-2021-035",
+      "title": "Refresh When You Wake Up: Proactive Threshold Wallets with Offline Devices.",
+      "authors": [
+        "Yashvanth Kondi",
+        "Bernardo Magri",
+        "Claudio Orlandi",
+        "Omer Shlomovits"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00067",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KondiMOS21"
+    },
+    {
+      "id": "ieee-sp-2021-036",
+      "title": "Compact Certificates of Collective Knowledge.",
+      "authors": [
+        "Silvio Micali",
+        "Leonid Reyzin",
+        "Georgios Vlachos",
+        "Riad S. Wahby",
+        "Nickolai Zeldovich"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00096",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#MicaliRVWZ21"
+    },
+    {
+      "id": "ieee-sp-2021-037",
+      "title": "One Engine to Fuzz 'em All: Generic Language Processor Testing with Semantic Validation.",
+      "authors": [
+        "Yongheng Chen",
+        "Rui Zhong",
+        "Hong Hu 0004",
+        "Hangfan Zhang",
+        "Yupeng Yang",
+        "Dinghao Wu",
+        "Wenke Lee"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00071",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenZHZYWL21"
+    },
+    {
+      "id": "ieee-sp-2021-038",
+      "title": "StochFuzz: Sound and Cost-effective Fuzzing of Stripped Binaries by Incremental and Stochastic Rewriting.",
+      "authors": [
+        "Zhuo Zhang 0002",
+        "Wei You 0001",
+        "Guanhong Tao 0001",
+        "Yousra Aafer",
+        "Xuwei Liu",
+        "Xiangyu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00109",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhangYTALZ21"
+    },
+    {
+      "id": "ieee-sp-2021-039",
+      "title": "NtFuzz: Enabling Type-Aware Kernel Fuzzing on Windows with Static Binary Analysis.",
+      "authors": [
+        "Jaeseung Choi 0002",
+        "Kangsu Kim",
+        "Daejin Lee",
+        "Sang Kil Cha"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00114",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChoiKLC21"
+    },
+    {
+      "id": "ieee-sp-2021-040",
+      "title": "Who is Real Bob? Adversarial Attacks on Speaker Recognition Systems.",
+      "authors": [
+        "Guangke Chen",
+        "Sen Chen 0001",
+        "Lingling Fan 0003",
+        "Xiaoning Du 0001",
+        "Zhe Zhao 0007",
+        "Fu Song",
+        "Yang Liu 0003"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00004",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenCFDZSL21"
+    },
+    {
+      "id": "ieee-sp-2021-041",
+      "title": "Hear &#34;No Evil&#34;, See &#34;Kenansville&#34;*: Efficient and Transferable Black-Box Attacks on Speech Recognition and Voice Identification Systems.",
+      "authors": [
+        "Hadi Abdullah",
+        "Muhammad Sajidur Rahman",
+        "Washington Garcia",
+        "Kevin Warren",
+        "Anurag Swarnim Yadav",
+        "Tom Shrimpton",
+        "Patrick Traynor"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00009",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#AbdullahRGWYST21"
+    },
+    {
+      "id": "ieee-sp-2021-042",
+      "title": "SoK: The Faults in our ASRs: An Overview of Attacks against Automatic Speech Recognition and Speaker Identification Systems.",
+      "authors": [
+        "Hadi Abdullah",
+        "Kevin Warren",
+        "Vincent Bindschaedler",
+        "Nicolas Papernot",
+        "Patrick Traynor"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00014",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#AbdullahWBPT21"
+    },
+    {
+      "id": "ieee-sp-2021-043",
+      "title": "Cross-Domain Access Control Encryption: Arbitrary-policy, Constant-size, Efficient.",
+      "authors": [
+        "Xiuhua Wang 0001",
+        "Sherman S. M. Chow"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00023",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#WangC21"
+    },
+    {
+      "id": "ieee-sp-2021-044",
+      "title": "Lightweight Techniques for Private Heavy Hitters.",
+      "authors": [
+        "Dan Boneh",
+        "Elette Boyle",
+        "Henry Corrigan-Gibbs",
+        "Niv Gilboa",
+        "Yuval Ishai"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00048",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BonehBCGI21"
+    },
+    {
+      "id": "ieee-sp-2021-045",
+      "title": "SoK: Computer-Aided Cryptography.",
+      "authors": [
+        "Manuel Barbosa",
+        "Gilles Barthe",
+        "Karthik Bhargavan",
+        "Bruno Blanchet",
+        "Cas Cremers",
+        "Kevin Liao",
+        "Bryan Parno"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00008",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BarbosaBBBCLP21"
+    },
+    {
+      "id": "ieee-sp-2021-046",
+      "title": "ConDySTA: Context-Aware Dynamic Supplement to Static Taint Analysis.",
+      "authors": [
+        "Xueling Zhang",
+        "Xiaoyin Wang",
+        "Rocky Slavin",
+        "Jianwei Niu 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00040",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhangWSN21"
+    },
+    {
+      "id": "ieee-sp-2021-047",
+      "title": "OSPREY: Recovery of Variable and Data Structure via Probabilistic Analysis for Stripped Binary.",
+      "authors": [
+        "Zhuo Zhang 0002",
+        "Yapeng Ye",
+        "Wei You 0001",
+        "Guanhong Tao 0001",
+        "Wen-Chuan Lee",
+        "Yonghwi Kwon 0001",
+        "Yousra Aafer",
+        "Xiangyu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00051",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhangYYTLKAZ21"
+    },
+    {
+      "id": "ieee-sp-2021-048",
+      "title": "SoK: All You Ever Wanted to Know About x86/x64 Binary Disassembly But Were Afraid to Ask.",
+      "authors": [
+        "Chengbin Pang",
+        "Ruotong Yu",
+        "Yaohui Chen 0001",
+        "Eric Koskinen",
+        "Georgios Portokalidis",
+        "Bing Mao 0001",
+        "Jun Xu 0024"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00012",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PangYCKPMX21"
+    },
+    {
+      "id": "ieee-sp-2021-049",
+      "title": "Learning Differentially Private Mechanisms.",
+      "authors": [
+        "Subhajit Roy 0001",
+        "Justin Hsu",
+        "Aws Albarghouthi"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00060",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#RoyHA21"
+    },
+    {
+      "id": "ieee-sp-2021-050",
+      "title": "Adversary Instantiation: Lower Bounds for Differentially Private Machine Learning.",
+      "authors": [
+        "Milad Nasr",
+        "Shuang Song 0001",
+        "Abhradeep Thakurta",
+        "Nicolas Papernot",
+        "Nicholas Carlini"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00069",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#NasrSTPC21"
+    },
+    {
+      "id": "ieee-sp-2021-051",
+      "title": "Manipulation Attacks in Local Differential Privacy.",
+      "authors": [
+        "Albert Cheu",
+        "Adam D. Smith 0001",
+        "Jonathan R. Ullman"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00001",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CheuSU21"
+    },
+    {
+      "id": "ieee-sp-2021-052",
+      "title": "Bitcoin-Compatible Virtual Channels.",
+      "authors": [
+        "Lukas Aumayr",
+        "Matteo Maffei",
+        "Oguzhan Ersoy",
+        "Andreas Erwig",
+        "Sebastian Faust",
+        "Siavash Riahi 0002",
+        "Kristina Host&#225;kov&#225;",
+        "Pedro Moreno-Sanchez"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00097",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#AumayrMEEFRHM21"
+    },
+    {
+      "id": "ieee-sp-2021-053",
+      "title": "On the Just-In-Time Discovery of Profit-Generating Transactions in DeFi Protocols.",
+      "authors": [
+        "Liyi Zhou",
+        "Kaihua Qin",
+        "Antoine Cully",
+        "Benjamin Livshits",
+        "Arthur Gervais"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00113",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhouQCLG21"
+    },
+    {
+      "id": "ieee-sp-2021-054",
+      "title": "Lockable Signatures for Blockchains: Scriptless Scripts for All Signatures.",
+      "authors": [
+        "Sri Aravinda Krishnan Thyagarajan",
+        "Giulio Malavolta"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00065",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ThyagarajanM21"
+    },
+    {
+      "id": "ieee-sp-2021-055",
+      "title": "Randomized Last-Level Caches Are Still Vulnerable to Cache Side-Channel Attacks! But We Can Fix It.",
+      "authors": [
+        "Wei Song 0002",
+        "Boya Li",
+        "Zihan Xue",
+        "Zhenzhen Li",
+        "Wenhao Wang 0001",
+        "Peng Liu 0005"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00050",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#SongLXLWL21"
+    },
+    {
+      "id": "ieee-sp-2021-056",
+      "title": "Bomberman: Defining and Defeating Hardware Ticking Timebombs at Design-time.",
+      "authors": [
+        "Timothy Trippel",
+        "Kang G. Shin",
+        "Kevin B. Bush",
+        "Matthew Hicks"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00052",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TrippelSBH21"
+    },
+    {
+      "id": "ieee-sp-2021-057",
+      "title": "Systematic Analysis of Randomization-based Protected Cache Architectures.",
+      "authors": [
+        "Antoon Purnal",
+        "Lukas Giner",
+        "Daniel Gruss",
+        "Ingrid Verbauwhede"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00011",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PurnalGGV21"
+    },
+    {
+      "id": "ieee-sp-2021-058",
+      "title": "SiRnn: A Math Library for Secure RNN Inference.",
+      "authors": [
+        "Deevashwer Rathee",
+        "Mayank Rathee",
+        "Rahul Kranti Kiran Goli",
+        "Divya Gupta 0001",
+        "Rahul Sharma 0001",
+        "Nishanth Chandran",
+        "Aseem Rastogi"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00086",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#RatheeRGGSCR21"
+    },
+    {
+      "id": "ieee-sp-2021-059",
+      "title": "CryptGPU: Fast Privacy-Preserving Machine Learning on the GPU.",
+      "authors": [
+        "Sijun Tan",
+        "Brian Knott",
+        "Yuan Tian 0001",
+        "David J. Wu 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00098",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TanKTW21"
+    },
+    {
+      "id": "ieee-sp-2021-060",
+      "title": "Proof-of-Learning: Definitions and Practice.",
+      "authors": [
+        "Hengrui Jia 0001",
+        "Mohammad Yaghini",
+        "Christopher A. Choquette-Choo",
+        "Natalie Dullerud",
+        "Anvith Thudi",
+        "Varun Chandrasekaran",
+        "Nicolas Papernot"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00106",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#JiaYCDTCP21"
+    },
+    {
+      "id": "ieee-sp-2021-061",
+      "title": "PEGASUS: Bridging Polynomial and Non-polynomial Evaluations in Homomorphic Encryption.",
+      "authors": [
+        "Wen-jie Lu",
+        "Zhicong Huang",
+        "Cheng Hong 0001",
+        "Yiping Ma 0001",
+        "Hunter Qu"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00043",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LuHHMQ21"
+    },
+    {
+      "id": "ieee-sp-2021-062",
+      "title": "Wolverine: Fast, Scalable, and Communication-Efficient Zero-Knowledge Proofs for Boolean and Arithmetic Circuits.",
+      "authors": [
+        "Chenkai Weng",
+        "Kang Yang 0002",
+        "Jonathan Katz",
+        "Xiao Wang 0012"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00056",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#WengYKW21"
+    },
+    {
+      "id": "ieee-sp-2021-063",
+      "title": "SoK: Fully Homomorphic Encryption Compilers.",
+      "authors": [
+        "Alexander Viand",
+        "Patrick Jattke",
+        "Anwar Hithnawi"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00068",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ViandJH21"
+    },
+    {
+      "id": "ieee-sp-2021-064",
+      "title": "CrawlPhish: Large-scale Analysis of Client-side Cloaking Techniques in Phishing.",
+      "authors": [
+        "Penghui Zhang",
+        "Adam Oest",
+        "Haehyun Cho",
+        "Zhibo Sun",
+        "RC Johnson",
+        "Brad Wardman",
+        "Shaown Sarker",
+        "Alexandros Kapravelos",
+        "Tiffany Bao",
+        "Ruoyu Wang 0001",
+        "Yan Shoshitaishvili",
+        "Adam Doup&#233;",
+        "Gail-Joon Ahn"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00021",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ZhangOCSJWSKBWS21"
+    },
+    {
+      "id": "ieee-sp-2021-065",
+      "title": "Black Widow: Blackbox Data-driven Web Scanning.",
+      "authors": [
+        "Benjamin Eriksson",
+        "Giancarlo Pellegrino",
+        "Andrei Sabelfeld"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00022",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ErikssonPS21"
+    },
+    {
+      "id": "ieee-sp-2021-066",
+      "title": "Fingerprinting the Fingerprinters: Learning to Detect Browser Fingerprinting Behaviors.",
+      "authors": [
+        "Umar Iqbal 0002",
+        "Steven Englehardt",
+        "Zubair Shafiq"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00017",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#IqbalES21"
+    },
+    {
+      "id": "ieee-sp-2021-067",
+      "title": "A Security Model and Fully Verified Implementation for the IETF QUIC Record Layer.",
+      "authors": [
+        "Antoine Delignat-Lavaud",
+        "C&#233;dric Fournet",
+        "Bryan Parno",
+        "Jonathan Protzenko",
+        "Tahina Ramananandro",
+        "Jay Bosamiya",
+        "Joseph Lallemand",
+        "Itsaka Rakotonirina",
+        "Yi Zhou 0025"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00039",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#Delignat-Lavaud21"
+    },
+    {
+      "id": "ieee-sp-2021-068",
+      "title": "Cross Layer Attacks and How to Use Them (for DNS Cache Poisoning, Device Tracking and More).",
+      "authors": [
+        "Amit Klein 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00054",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#Klein21"
+    },
+    {
+      "id": "ieee-sp-2021-069",
+      "title": "Bookworm Game: Automatic Discovery of LTE Vulnerabilities Through Documentation Analysis.",
+      "authors": [
+        "Yi Chen 0024",
+        "Yepeng Yao",
+        "XiaoFeng Wang 0001",
+        "Dandan Xu",
+        "Chang Yue",
+        "Xiaozhong Liu 0001",
+        "Kai Chen 0012",
+        "Haixu Tang",
+        "Baoxu Liu"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00104",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenYWXYLCTL21"
+    },
+    {
+      "id": "ieee-sp-2021-070",
+      "title": "SGUARD: Towards Fixing Vulnerable Smart Contracts Automatically.",
+      "authors": [
+        "Tai D. Nguyen",
+        "Long H. Pham",
+        "Jun Sun 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00057",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#NguyenPS21"
+    },
+    {
+      "id": "ieee-sp-2021-071",
+      "title": "MAD-HTLC: Because HTLC is Crazy-Cheap to Attack.",
+      "authors": [
+        "Itay Tsabary",
+        "Matan Yechieli",
+        "Alex Manuskin",
+        "Ittay Eyal"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00080",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TsabaryYME21"
+    },
+    {
+      "id": "ieee-sp-2021-072",
+      "title": "Compositional Security for Reentrant Applications.",
+      "authors": [
+        "Ethan Cecchetti",
+        "Siqiu Yao",
+        "Haobin Ni",
+        "Andrew C. Myers"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00084",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CecchettiYNM21"
+    },
+    {
+      "id": "ieee-sp-2021-073",
+      "title": "HackEd: A Pedagogical Analysis of Online Vulnerability Discovery Exercises.",
+      "authors": [
+        "Daniel Votipka",
+        "Eric Zhang",
+        "Michelle L. Mazurek"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00092",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#VotipkaZM21"
+    },
+    {
+      "id": "ieee-sp-2021-074",
+      "title": "DifuzzRTL: Differential Fuzz Testing to Find CPU Bugs.",
+      "authors": [
+        "Jaewon Hur",
+        "Suhwan Song",
+        "Dongup Kwon",
+        "Eunjin Baek",
+        "Jangwoo Kim",
+        "Byoungyoung Lee"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00103",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HurSKBKL21"
+    },
+    {
+      "id": "ieee-sp-2021-075",
+      "title": "When LoRa Meets EMR: Electromagnetic Covert Channels Can Be Super Resilient.",
+      "authors": [
+        "Cheng Shen",
+        "Tian Liu",
+        "Jun Huang 0001",
+        "Rui Tan 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00031",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ShenLHT21"
+    },
+    {
+      "id": "ieee-sp-2021-076",
+      "title": "Linking Bluetooth LE & Classic and Implications for Privacy-Preserving Bluetooth-Based Protocols.",
+      "authors": [
+        "Norbert Ludant",
+        "Tien Dang Vo-Huu",
+        "Sashank Narain",
+        "Guevara Noubir"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00102",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LudantVNN21"
+    },
+    {
+      "id": "ieee-sp-2021-077",
+      "title": "Method Confusion Attack on Bluetooth Pairing.",
+      "authors": [
+        "Maximilian von Tschirschnitz",
+        "Ludwig Peuckert",
+        "Fabian Franzen",
+        "Jens Grossklags"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00013",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TschirschnitzPF21"
+    },
+    {
+      "id": "ieee-sp-2021-078",
+      "title": "CanDID: Can-Do Decentralized Identity with Legacy Compatibility, Sybil-Resistance, and Accountability.",
+      "authors": [
+        "Deepak Maram",
+        "Harjasleen Malvai",
+        "Fan Zhang 0022",
+        "Nerla Jean-Louis",
+        "Alexander Frolov",
+        "Tyler Kell",
+        "Tyrone Lobban",
+        "Christine Moy",
+        "Ari Juels",
+        "Andrew Miller 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00038",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#MaramMZJFKLMJM21"
+    },
+    {
+      "id": "ieee-sp-2021-079",
+      "title": "They Would do Better if They Worked Together: The Case of Interaction Problems Between Password Managers and Websites.",
+      "authors": [
+        "Nicolas Huaman",
+        "Sabrina Amft",
+        "Marten Oltrogge",
+        "Yasemin Acar",
+        "Sascha Fahl"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00094",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HuamanAOAF21"
+    },
+    {
+      "id": "ieee-sp-2021-080",
+      "title": "Improving Password Guessing via Representation Learning.",
+      "authors": [
+        "Dario Pasquini",
+        "Ankit Gangwal",
+        "Giuseppe Ateniese",
+        "Massimo Bernaschi",
+        "Mauro Conti"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00016",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PasquiniGABC21"
+    },
+    {
+      "id": "ieee-sp-2021-081",
+      "title": "ARBITRAR: User-Guided API Misuse Detection.",
+      "authors": [
+        "Ziyang Li 0002",
+        "Aravind Machiry",
+        "Binghong Chen",
+        "Mayur Naik",
+        "Ke Wang 0022",
+        "Le Song"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00090",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LiMCNWS21"
+    },
+    {
+      "id": "ieee-sp-2021-082",
+      "title": "Compositional Non-Interference for Fine-Grained Concurrent Programs.",
+      "authors": [
+        "Dan Frumin",
+        "Robbert Krebbers",
+        "Lars Birkedal"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00003",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#FruminKB21"
+    },
+    {
+      "id": "ieee-sp-2021-083",
+      "title": "SoK: Security and Privacy in the Age of Commercial Drones.",
+      "authors": [
+        "Ben Nassi",
+        "Ron Bitton",
+        "Ryusuke Masuoka",
+        "Asaf Shabtai",
+        "Yuval Elovici"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00005",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#NassiBMSE21"
+    },
+    {
+      "id": "ieee-sp-2021-084",
+      "title": "A First Look at Zoombombing.",
+      "authors": [
+        "Chen Ling 0004",
+        "Utkucan Balci",
+        "Jeremy Blackburn",
+        "Gianluca Stringhini"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00061",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LingBBS21"
+    },
+    {
+      "id": "ieee-sp-2021-085",
+      "title": "Revealer: Detecting and Exploiting Regular Expression Denial-of-Service Vulnerabilities.",
+      "authors": [
+        "Yinxi Liu",
+        "Mingxue Zhang 0001",
+        "Wei Meng 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00062",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LiuZM21"
+    },
+    {
+      "id": "ieee-sp-2021-086",
+      "title": "Breaking the Specification: PDF Certification.",
+      "authors": [
+        "Simon Rohlmann",
+        "Vladislav Mladenov",
+        "Christian Mainka",
+        "J&#246;rg Schwenk"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00110",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#RohlmannMMS21"
+    },
+    {
+      "id": "ieee-sp-2021-087",
+      "title": "Response-Hiding Encrypted Ranges: Revisiting Security via Parametrized Leakage-Abuse Attacks.",
+      "authors": [
+        "Evgenios M. Kornaropoulos",
+        "Charalampos Papamanthou",
+        "Roberto Tamassia"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00044",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KornaropoulosPT21"
+    },
+    {
+      "id": "ieee-sp-2021-088",
+      "title": "A Decentralized and Encrypted National Gun Registry.",
+      "authors": [
+        "Seny Kamara",
+        "Tarik Moataz",
+        "Andrew Park",
+        "Lucy Qin"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00072",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KamaraMPQ21"
+    },
+    {
+      "id": "ieee-sp-2021-089",
+      "title": "Zero Knowledge for Everything and Everyone: Fast ZK Processor with Cached ORAM for ANSI C Programs.",
+      "authors": [
+        "David Heath",
+        "Yibin Yang 0001",
+        "David Devecsery",
+        "Vladimir Kolesnikov"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00089",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HeathYDK21"
+    },
+    {
+      "id": "ieee-sp-2021-090",
+      "title": "Survivalism: Systematic Analysis of Windows Malware Living-Off-The-Land.",
+      "authors": [
+        "Frederick Barr-Smith",
+        "Xabier Ugarte-Pedrero",
+        "Mariano Graziano",
+        "Riccardo Spolaor",
+        "Ivan Martinovic"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00047",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#Barr-SmithUGSM21"
+    },
+    {
+      "id": "ieee-sp-2021-091",
+      "title": "Runtime Recovery of Web Applications under Zero-Day ReDoS Attacks.",
+      "authors": [
+        "Zhihao Bai",
+        "Ke Wang 0040",
+        "Hang Zhu",
+        "Yinzhi Cao",
+        "Xin Jin 0008"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00077",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BaiWZCJ21"
+    },
+    {
+      "id": "ieee-sp-2021-092",
+      "title": "Good Bot, Bad Bot: Characterizing Automated Browsing Activity.",
+      "authors": [
+        "Xigao Li",
+        "Babak Amin Azad",
+        "Amir Rahmati",
+        "Nick Nikiforakis"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00079",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LiARN21"
+    },
+    {
+      "id": "ieee-sp-2021-093",
+      "title": "Trouble Over-The-Air: An Analysis of FOTA Apps in the Android Ecosystem.",
+      "authors": [
+        "Eduardo Bl&#225;zquez",
+        "Sergio Pastrana",
+        "&#193;lvaro Feal",
+        "Julien Gamba",
+        "Platon Kotzias",
+        "Narseo Vallina-Rodriguez",
+        "Juan Tapiador"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00095",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BlazquezPFGKVT21"
+    },
+    {
+      "id": "ieee-sp-2021-094",
+      "title": "Doing good by fighting fraud: Ethical anti-fraud systems for mobile payments.",
+      "authors": [
+        "Zain ul Abi Din",
+        "Hari Venugopalan",
+        "Henry Lin",
+        "Adam Wushensky",
+        "Steven Liu",
+        "Samuel T. King"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00100",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#DinVLWLK21"
+    },
+    {
+      "id": "ieee-sp-2021-095",
+      "title": "Happer: Unpacking Android Apps via a Hardware-Assisted Approach.",
+      "authors": [
+        "Lei Xue 0001",
+        "Hao Zhou 0043",
+        "Xiapu Luo",
+        "Yajin Zhou",
+        "Yang Shi 0002",
+        "Guofei Gu",
+        "Fengwei Zhang",
+        "Man Ho Au"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00105",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#XueZLZSGZA21"
+    },
+    {
+      "id": "ieee-sp-2021-096",
+      "title": "The Provable Security of Ed25519: Theory and Practice.",
+      "authors": [
+        "Jacqueline Brendel",
+        "Cas Cremers",
+        "Dennis Jackson",
+        "Mang Zhao"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00042",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BrendelCJZ21"
+    },
+    {
+      "id": "ieee-sp-2021-097",
+      "title": "Epochal Signatures for Deniable Group Chats.",
+      "authors": [
+        "Andreas H&#252;lsing",
+        "Florian Weber"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00058",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HulsingW21"
+    },
+    {
+      "id": "ieee-sp-2021-098",
+      "title": "BUFFing signature schemes beyond unforgeability and the case of post-quantum signatures.",
+      "authors": [
+        "Cas Cremers",
+        "Samed D&#252;zl&#252;",
+        "Rune Fiedler",
+        "Marc Fischlin",
+        "Christian Janson"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00093",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#CremersDFFJ21"
+    },
+    {
+      "id": "ieee-sp-2021-099",
+      "title": "Detecting Filter List Evasion with Event-Loop-Turn Granularity JavaScript Signatures.",
+      "authors": [
+        "Quan Chen",
+        "Peter Snyder",
+        "Ben Livshits",
+        "Alexandros Kapravelos"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00007",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#ChenSLK21"
+    },
+    {
+      "id": "ieee-sp-2021-100",
+      "title": "Reading Between the Lines: An Extensive Evaluation of the Security and Privacy Implications of EPUB Reading Systems.",
+      "authors": [
+        "Gertjan Franken",
+        "Tom van Goethem",
+        "Wouter Joosen"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00015",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#FrankenGJ21"
+    },
+    {
+      "id": "ieee-sp-2021-101",
+      "title": "Did you mix me? Formally Verifying Verifiable Mix Nets in Electronic Voting.",
+      "authors": [
+        "Thomas Haines",
+        "Rajeev Gor&#233;",
+        "Bhavesh Sharma"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00033",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HainesGS21"
+    },
+    {
+      "id": "ieee-sp-2021-102",
+      "title": "The EMV Standard: Break, Fix, Verify.",
+      "authors": [
+        "David A. Basin",
+        "Ralf Sasse",
+        "Jorge Toro-Pozo"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00037",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BasinST21"
+    },
+    {
+      "id": "ieee-sp-2021-103",
+      "title": "A Secure and Formally Verified Linux KVM Hypervisor.",
+      "authors": [
+        "Shih-Wei Li",
+        "Xupeng Li",
+        "Ronghui Gu",
+        "Jason Nieh",
+        "John Zhuang Hui"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00049",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#LiLGNH21"
+    },
+    {
+      "id": "ieee-sp-2021-104",
+      "title": "Many-out-of-Many Proofs and Applications to Anonymous Zether.",
+      "authors": [
+        "Benjamin E. Diamond"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00026",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#Diamond21"
+    },
+    {
+      "id": "ieee-sp-2021-105",
+      "title": "On the Anonymity Guarantees of Anonymous Proof-of-Stake Protocols.",
+      "authors": [
+        "Markulf Kohlweiss",
+        "Varun Madathil",
+        "Kartik Nayak",
+        "Alessandra Scafuro"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00107",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KohlweissMNS21"
+    },
+    {
+      "id": "ieee-sp-2021-106",
+      "title": "A<sup>2</sup>L: Anonymous Atomic Locks for Scalability in Payment Channel Hubs.",
+      "authors": [
+        "Erkan Tairi",
+        "Pedro Moreno-Sanchez",
+        "Matteo Maffei"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00111",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#TairiMM21"
+    },
+    {
+      "id": "ieee-sp-2021-107",
+      "title": "CrossTalk: Speculative Data Leaks Across Cores Are Real.",
+      "authors": [
+        "Hany Ragab",
+        "Alyssa Milburn",
+        "Kaveh Razavi",
+        "Herbert Bos",
+        "Cristiano Giuffrida"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00020",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#RagabMRBG21"
+    },
+    {
+      "id": "ieee-sp-2021-108",
+      "title": "Hardware-Software Contracts for Secure Speculation.",
+      "authors": [
+        "Marco Guarnieri",
+        "Boris K&#246;pf",
+        "Jan Reineke 0001",
+        "Pepe Vila"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00036",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#GuarnieriKRV21"
+    },
+    {
+      "id": "ieee-sp-2021-109",
+      "title": "High-Assurance Cryptography in the Spectre Era.",
+      "authors": [
+        "Gilles Barthe",
+        "Sunjay Cauligi",
+        "Benjamin Gr&#233;goire",
+        "Adrien Koutsos",
+        "Kevin Liao",
+        "Tiago Oliveira 0004",
+        "Swarn Priya",
+        "Tamara Rezk",
+        "Peter Schwabe"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00046",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#BartheCGKLOPRS21"
+    },
+    {
+      "id": "ieee-sp-2021-110",
+      "title": "A Novel Dynamic Analysis Infrastructure to Instrument Untrusted Execution Flow Across User-Kernel Spaces.",
+      "authors": [
+        "Jiaqi Hong",
+        "Xuhua Ding"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00024",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#HongD21"
+    },
+    {
+      "id": "ieee-sp-2021-111",
+      "title": "DynPTA: Combining Static and Dynamic Analysis for Practical Selective Data Protection.",
+      "authors": [
+        "Tapti Palit",
+        "Jarin Firose Moon",
+        "Fabian Monrose",
+        "Michalis Polychronakis"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00082",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PalitMMP21"
+    },
+    {
+      "id": "ieee-sp-2021-112",
+      "title": "DICE: Automatic Emulation of DMA Input Channels for Dynamic Firmware Analysis.",
+      "authors": [
+        "Alejandro Mera",
+        "Bo Feng 0002",
+        "Long Lu",
+        "Engin Kirda"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00018",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#MeraFLK21"
+    },
+    {
+      "id": "ieee-sp-2021-113",
+      "title": "Real-World Snapshots vs. Theory: Questioning the t-Probing Security Model.",
+      "authors": [
+        "Thilo Krachenfels",
+        "Fatemeh Ganji",
+        "Amir Moradi 0001",
+        "Shahin Tajik",
+        "Jean-Pierre Seifert"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00029",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#KrachenfelsGMTS21"
+    },
+    {
+      "id": "ieee-sp-2021-114",
+      "title": "CRYLOGGER: Detecting Crypto Misuses Dynamically.",
+      "authors": [
+        "Luca Piccolboni",
+        "Giuseppe Di Guglielmo",
+        "Luca P. Carloni",
+        "Simha Sethumadhavan"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.00010",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2021.html#PiccolboniGCS21"
+    }
+  ]
+}

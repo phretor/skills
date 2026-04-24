@@ -1,0 +1,311 @@
+{
+  "conference": {
+    "name": "Australasian Conference on Information Security and Privacy",
+    "acronym": "ACISP",
+    "year": 2022,
+    "venue_slug": "acisp"
+  },
+  "coverage": {
+    "papers_count": 25,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "acisp-2022-001",
+      "title": "Key Structures: Improved Related-Key Boomerang Attack Against the Full AES-256.",
+      "authors": [
+        "Jian Guo 0001",
+        "Ling Song 0001",
+        "Haoyang Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_1",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#GuoSW22"
+    },
+    {
+      "id": "acisp-2022-002",
+      "title": "Truncated Differential Properties of the Diagonal Set of Inputs for 5-Round AES.",
+      "authors": [
+        "Lorenzo Grassi 0001",
+        "Christian Rechberger"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_2",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#GrassiR22"
+    },
+    {
+      "id": "acisp-2022-003",
+      "title": "PNB-Focused Differential Cryptanalysis of ChaCha Stream Cipher.",
+      "authors": [
+        "Shotaro Miyashita",
+        "Ryoma Ito 0001",
+        "Atsuko Miyaji"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_3",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#MiyashitaIM22"
+    },
+    {
+      "id": "acisp-2022-004",
+      "title": "Improved Differential Attack on Round-Reduced LEA.",
+      "authors": [
+        "Yuhan Zhang 0009",
+        "Wenling Wu",
+        "Lei Zhang 0186"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_4",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#ZhangWZ22"
+    },
+    {
+      "id": "acisp-2022-005",
+      "title": "Implementing Grover Oracle for Lightweight Block Ciphers Under Depth Constraints.",
+      "authors": [
+        "Subodh Bijwe",
+        "Amit Kumar Chauhan",
+        "Somitra Kumar Sanadhya"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_5",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#BijweCS22"
+    },
+    {
+      "id": "acisp-2022-006",
+      "title": "Improved Division Property for Ciphers with Complex Linear Layers.",
+      "authors": [
+        "Yongxia Mao",
+        "Wenling Wu",
+        "Bolin Wang",
+        "Li Zhang 0108"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_6",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#MaoWWZ22"
+    },
+    {
+      "id": "acisp-2022-007",
+      "title": "Fast Skinny-128 SIMD Implementations for Sequential Modes of Operation.",
+      "authors": [
+        "Alexandre Adomnicai",
+        "Kazuhiko Minematsu",
+        "Maki Shigeri"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_7",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#AdomnicaiMS22"
+    },
+    {
+      "id": "acisp-2022-008",
+      "title": "Handle the Traces: Revisiting the Attack on ECDSA with EHNP.",
+      "authors": [
+        "Jinzheng Cao",
+        "Yanbin Pan",
+        "Qingfeng Cheng",
+        "Xinghua Li 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_8",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#CaoPCL22"
+    },
+    {
+      "id": "acisp-2022-009",
+      "title": "Hybrid Dual and Meet-LWE Attack.",
+      "authors": [
+        "Lei Bi 0002",
+        "Xianhui Lu",
+        "Junjie Luo 0001",
+        "Kunpeng Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_9",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#BiLLW22"
+    },
+    {
+      "id": "acisp-2022-010",
+      "title": "Cryptanalysis and Repair of a Gabidulin Code Based Cryptosystem from ACISP 2018.",
+      "authors": [
+        "Wenshuo Guo",
+        "Fangwei Fu 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_10",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#GuoF22"
+    },
+    {
+      "id": "acisp-2022-011",
+      "title": "Chosen Ciphertext Secure Keyed Two-Level Homomorphic Encryption.",
+      "authors": [
+        "Yusaku Maeda",
+        "Koji Nuida"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_11",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#MaedaN22"
+    },
+    {
+      "id": "acisp-2022-012",
+      "title": "Structure-Preserving Linearly Homomorphic Signature with Designated Combiner for Subspace.",
+      "authors": [
+        "Yumei Li 0003",
+        "Mingwu Zhang",
+        "Futai Zhang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_12",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#LiZZ22"
+    },
+    {
+      "id": "acisp-2022-013",
+      "title": "TIDE: A Novel Approach to Constructing Timed-Release Encryption.",
+      "authors": [
+        "Angelique Faye Loe",
+        "Liam Medley",
+        "Christian O'Connell",
+        "Elizabeth A. Quaglia"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_13",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#LoeMOQ22"
+    },
+    {
+      "id": "acisp-2022-014",
+      "title": "Multi-signatures for ECDSA and Its Applications in Blockchain.",
+      "authors": [
+        "Shimin Pan",
+        "Kwan Yin Chan",
+        "Handong Cui",
+        "Tsz Hon Yuen"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_14",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#PanCCY22"
+    },
+    {
+      "id": "acisp-2022-015",
+      "title": "Fiat-Shamir Signatures Based on Module-NTRU.",
+      "authors": [
+        "Shi Bai 0001",
+        "Austin Beard",
+        "Floyd Johnson",
+        "Sulani K. B. Vidhanalage",
+        "Tran Ngo"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_15",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#BaiBJVN22"
+    },
+    {
+      "id": "acisp-2022-016",
+      "title": "Speeding-Up Parallel Computation of Large Smooth-Degree Isogeny Using Precedence-Constrained Scheduling.",
+      "authors": [
+        "Kittiphon Phalakarn",
+        "Vorapong Suppakitpaisarn",
+        "M. Anwar Hasan"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_16",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#PhalakarnSH22"
+    },
+    {
+      "id": "acisp-2022-017",
+      "title": "An Injectivity Analysis of Crystals-Kyber and Implications on Quantum Security.",
+      "authors": [
+        "Xiaohui Ding",
+        "Muhammed F. Esgin",
+        "Amin Sakzad",
+        "Ron Steinfeld"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_17",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#DingESS22"
+    },
+    {
+      "id": "acisp-2022-018",
+      "title": "Verifiable Decryption in the Head.",
+      "authors": [
+        "Kristian Gj&#248;steen",
+        "Thomas Haines",
+        "Johannes M&#252;ller 0001",
+        "Peter B. R&#248;nne",
+        "Tjerand Silde"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_18",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#GjosteenHMRS22"
+    },
+    {
+      "id": "acisp-2022-019",
+      "title": "Resumable Zero-Knowledge for Circuits from Symmetric Key Primitives.",
+      "authors": [
+        "Handong Zhang",
+        "Puwen Wei",
+        "Haiyang Xue",
+        "Yi Deng",
+        "Jinsong Li",
+        "Wei Wang",
+        "Guoxiao Liu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_19",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#ZhangWXDLWL22"
+    },
+    {
+      "id": "acisp-2022-020",
+      "title": "On Security of Fuzzy Commitment Scheme for Biometric Authentication.",
+      "authors": [
+        "Donghoon Chang",
+        "Surabhi Garg",
+        "Munawar Hasan",
+        "Sweta Mishra"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_20",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#ChangGHM22"
+    },
+    {
+      "id": "acisp-2022-021",
+      "title": "SoK: Decentralized Randomness Beacon Protocols.",
+      "authors": [
+        "Mayank Raikwar",
+        "Danilo Gligoroski"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_21",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#RaikwarG22"
+    },
+    {
+      "id": "acisp-2022-022",
+      "title": "CCOM: Cost-Efficient and Collusion-Resistant Oracle Mechanism for Smart Contracts.",
+      "authors": [
+        "Xiaofei Wu",
+        "Hao Wang 0007",
+        "Chunpeng Ge 0001",
+        "Lu Zhou 0002",
+        "Qiong Huang 0001",
+        "Lanju Kong",
+        "Lizhen Cui",
+        "Zhe Liu 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_22",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#WuWGZHKCL22"
+    },
+    {
+      "id": "acisp-2022-023",
+      "title": "DeChain: A Blockchain Framework Enhancing Decentralization via Sharding.",
+      "authors": [
+        "Shenwei Chen",
+        "Zhen Liu 0008",
+        "Yu Long 0001",
+        "Dawu Gu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_23",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#ChenLLG22"
+    },
+    {
+      "id": "acisp-2022-024",
+      "title": "Garrison: A Novel Watchtower Scheme for Bitcoin.",
+      "authors": [
+        "Arash Mirzaei",
+        "Amin Sakzad",
+        "Jiangshan Yu",
+        "Ron Steinfeld"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_24",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#MirzaeiSYS22"
+    },
+    {
+      "id": "acisp-2022-025",
+      "title": "Shoot Before You Escape: Dynamic Behavior Monitor of Bitcoin Users via Bi-Temporal Network Analytics.",
+      "authors": [
+        "Chen Zhao",
+        "Jianing Ding",
+        "Zhenzhen Li",
+        "Zhen Li 0011",
+        "Gang Xiong 0001",
+        "Gaopeng Gou"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-031-22301-3_25",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2022.html#ZhaoDLLXG22"
+    }
+  ]
+}

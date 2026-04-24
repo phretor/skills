@@ -1,0 +1,5929 @@
+{
+  "conference": {
+    "name": "USENIX Security Symposium",
+    "acronym": "USENIX Security",
+    "year": 2025,
+    "venue_slug": "usenix-security"
+  },
+  "coverage": {
+    "papers_count": 439,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "usenix-security-2025-001",
+      "title": "Analyzing the AI Nudification Application Ecosystem.",
+      "authors": [
+        "Cassidy Gibson",
+        "Daniel Olszewski",
+        "Natalie Grace Brigham",
+        "Anna Crowder",
+        "Kevin R. B. Butler",
+        "Patrick Traynor",
+        "Elissa M. Redmiles",
+        "Tadayoshi Kohno"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GibsonOBCBTRK25"
+    },
+    {
+      "id": "usenix-security-2025-002",
+      "title": "Easy As Child's Play: An Empirical Study on Age Verification of Adult-Oriented Android Apps.",
+      "authors": [
+        "Yifan Yao",
+        "Shawn McCollum",
+        "Zhibo Sun",
+        "Yue Zhang 0025"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YaoMS025"
+    },
+    {
+      "id": "usenix-security-2025-003",
+      "title": "Abusability of Automation Apps in Intimate Partner Violence.",
+      "authors": [
+        "Shirley Zhang 0002",
+        "Paul Chung",
+        "Jacob Vervelde",
+        "Nishant Korapati",
+        "Rahul Chatterjee 0001",
+        "Kassem Fawaz"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002CVK0F25"
+    },
+    {
+      "id": "usenix-security-2025-004",
+      "title": "Malicious LLM-Based Conversational AI Makes Users Reveal Personal Information.",
+      "authors": [
+        "Xiao Zhan",
+        "Juan Carlos Carrillo",
+        "William Seymour",
+        "Jose Such"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhanCSS25"
+    },
+    {
+      "id": "usenix-security-2025-005",
+      "title": "An Industry Interview Study of Software Signing for Supply Chain Security.",
+      "authors": [
+        "Kelechi G. Kalu",
+        "Tanmay Singla",
+        "Chinenye Okafor",
+        "Santiago Torres-Arias",
+        "James C. Davis 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KaluSOT025"
+    },
+    {
+      "id": "usenix-security-2025-006",
+      "title": "Voluntary Investment, Mandatory Minimums, or Cyber Insurance: What Minimizes Losses?",
+      "authors": [
+        "Adam Hastings",
+        "Simha Sethumadhavan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HastingsS25"
+    },
+    {
+      "id": "usenix-security-2025-007",
+      "title": "A First Look at Governments' Enterprise Security Guidance.",
+      "authors": [
+        "Kimberly Ruth",
+        "Raymond Buernor Obu",
+        "Ifeoluwa Shode",
+        "Gavin Li",
+        "Carrie Gates",
+        "Grant Ho",
+        "Zakir Durumeric"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RuthOSLGHD25"
+    },
+    {
+      "id": "usenix-security-2025-008",
+      "title": "SoK: Can Synthetic Images Replace Real Data? A Survey of Utility and Privacy of Synthetic Image Generation.",
+      "authors": [
+        "Yunsung Chung",
+        "Yunbei Zhang",
+        "Nassir Marrouche",
+        "Jihun Hamm"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChungZMH25"
+    },
+    {
+      "id": "usenix-security-2025-009",
+      "title": "Characterizing and Detecting Propaganda-Spreading Accounts on Telegram.",
+      "authors": [
+        "Klim Kireev",
+        "Yevhen Mykhno",
+        "Carmela Troncoso",
+        "Rebekah Overdorf"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KireevMTO25"
+    },
+    {
+      "id": "usenix-security-2025-010",
+      "title": "GradEscape: A Gradient-Based Evader Against AI-Generated Text Detectors.",
+      "authors": [
+        "Wenlong Meng",
+        "Shuguo Fan",
+        "Chengkun Wei",
+        "Min Chen 0032",
+        "Yuwei Li 0002",
+        "Yuanchao Zhang",
+        "Zhikun Zhang 0001",
+        "Wenzhi Chen"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MengFW0LZ0C25"
+    },
+    {
+      "id": "usenix-security-2025-011",
+      "title": "Provably Robust Multi-bit Watermarking for AI-generated Text.",
+      "authors": [
+        "Wenjie Qu 0001",
+        "Wengrui Zheng",
+        "Tianyang Tao",
+        "Dong Yin",
+        "Yanze Jiang",
+        "Zhihua Tian",
+        "Wei Zou",
+        "Jinyuan Jia 0001",
+        "Jiaheng Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001ZTYJTZ0Z25"
+    },
+    {
+      "id": "usenix-security-2025-012",
+      "title": "HateBench: Benchmarking Hate Speech Detectors on LLM-Generated Content and Hate Campaigns.",
+      "authors": [
+        "Xinyue Shen 0001",
+        "Yixin Wu 0001",
+        "Yiting Qu",
+        "Michael Backes 0001",
+        "Savvas Zannettou",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00010Q0Z025"
+    },
+    {
+      "id": "usenix-security-2025-013",
+      "title": "EmbedX: Embedding-Based Cross-Trigger Backdoor Attack Against Large Language Models.",
+      "authors": [
+        "Nan Yan 0001",
+        "Yuqing Li 0001",
+        "Xiong Wang 0006",
+        "Jing Chen 0003",
+        "Kun He 0008",
+        "Bo Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001L000025"
+    },
+    {
+      "id": "usenix-security-2025-014",
+      "title": "Mind the Inconspicuous: Revealing the Hidden Weakness in Aligned LLMs' Refusal Boundaries.",
+      "authors": [
+        "Jiahao Yu 0001",
+        "Haozheng Luo",
+        "Jerry Yao-Chieh Hu",
+        "Yan Chen 0004",
+        "Wenbo Guo 0002",
+        "Han Liu 0001",
+        "Xinyu Xing 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001LHC00025"
+    },
+    {
+      "id": "usenix-security-2025-015",
+      "title": "Game of Arrows: On the (In-)Security of Weight Obfuscation for On-Device TEE-Shielded LLM Partition Algorithms.",
+      "authors": [
+        "Pengli Wang",
+        "Bingyou Dong",
+        "Yifeng Cai",
+        "Zheng Zhang",
+        "Junlin Liu",
+        "Huanran Xue",
+        "Ye Wu",
+        "Yao Zhang",
+        "Ziqi Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangDCZLXWZZ25"
+    },
+    {
+      "id": "usenix-security-2025-016",
+      "title": "LLMmap: Fingerprinting for Large Language Models.",
+      "authors": [
+        "Dario Pasquini",
+        "Evgenios M. Kornaropoulos",
+        "Giuseppe Ateniese"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PasquiniKA25"
+    },
+    {
+      "id": "usenix-security-2025-017",
+      "title": "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models.",
+      "authors": [
+        "Minkyoo Song",
+        "Hanna Kim",
+        "Jaehan Kim",
+        "Seungwon Shin 0001",
+        "Sooel Son"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SongKK0S25"
+    },
+    {
+      "id": "usenix-security-2025-018",
+      "title": "Activation Approximations Can Incur Safety Vulnerabilities in Aligned LLMs: Comprehensive Analysis and Defense.",
+      "authors": [
+        "Jiawen Zhang 0005",
+        "Kejia Chen 0007",
+        "Lipeng He",
+        "Jian Lou 0001",
+        "Dan Li 0032",
+        "Zunlei Feng",
+        "Mingli Song",
+        "Jian Liu 0012",
+        "Kui Ren 0001",
+        "Xiaohu Yang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00050H0LFS00025"
+    },
+    {
+      "id": "usenix-security-2025-019",
+      "title": "Narrowbeer: A Practical Replay Attack Against the Widevine DRM.",
+      "authors": [
+        "Florian Roudot",
+        "Mohamed Sabt"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RoudotS25"
+    },
+    {
+      "id": "usenix-security-2025-020",
+      "title": "Lancet: A Formalization Framework for Crash and Exploit Pathology.",
+      "authors": [
+        "Qinrun Dai",
+        "Kirby Linvill",
+        "Yueqi Chen 0001",
+        "Gowtham Kaki"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DaiL0K25"
+    },
+    {
+      "id": "usenix-security-2025-021",
+      "title": "Synthesis of Code-Reuse Attacks from p-code Programs.",
+      "authors": [
+        "Mark DenHoed",
+        "Tom Melham"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DenHoedM25"
+    },
+    {
+      "id": "usenix-security-2025-022",
+      "title": "Sound and Efficient Generation of Data-Oriented Exploits via Programming Language Synthesis.",
+      "authors": [
+        "Yuxi Ling",
+        "Gokul Rajiv",
+        "Kiran Gopinathan",
+        "Ilya Sergey"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LingRGS25"
+    },
+    {
+      "id": "usenix-security-2025-023",
+      "title": "My ZIP isn't your ZIP: Identifying and Exploiting Semantic Gaps Between ZIP Parsers.",
+      "authors": [
+        "Yufan You",
+        "Jianjun Chen 0005",
+        "Qi Wang 0094",
+        "Haixin Duan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#You00D25"
+    },
+    {
+      "id": "usenix-security-2025-024",
+      "title": "Tady: A Neural Disassembler without Structural Constraint Violations.",
+      "authors": [
+        "Siliang Qin",
+        "Fengrui Yang",
+        "Hao Wang 0003",
+        "Bolun Zhang",
+        "Zeyu Gao",
+        "Chao Zhang 0008",
+        "Kai Chen 0012"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#QinYWZG0025"
+    },
+    {
+      "id": "usenix-security-2025-025",
+      "title": "SoK: Towards a Unified Approach to Applied Replicability for Computer Security.",
+      "authors": [
+        "Daniel Olszewski",
+        "Tyler Tucker",
+        "Kevin R. B. Butler",
+        "Patrick Traynor"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#OlszewskiTBT25"
+    },
+    {
+      "id": "usenix-security-2025-026",
+      "title": "LLMxCPG: Context-Aware Vulnerability Detection Through Code Property Graph-Guided Large Language Models.",
+      "authors": [
+        "Ahmed Lekssays",
+        "Hamza Mouhcine",
+        "Khang Tran",
+        "Ting Yu 0001",
+        "Issa Khalil"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LekssaysMT0K25"
+    },
+    {
+      "id": "usenix-security-2025-027",
+      "title": "X.509DoS: Exploiting and Detecting Denial-of-Service Vulnerabilities in Cryptographic Libraries using Crafted X.509 Certificates.",
+      "authors": [
+        "Bing Shi",
+        "Wenchao Li",
+        "Yuchen Wang",
+        "Xiaolong Bai",
+        "Luyi Xing"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ShiLWBX25"
+    },
+    {
+      "id": "usenix-security-2025-028",
+      "title": "Cyber-Physical Deception Through Coordinated IoT Honeypots.",
+      "authors": [
+        "Chongqi Guan",
+        "Guohong Cao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuanC25"
+    },
+    {
+      "id": "usenix-security-2025-029",
+      "title": "AutoLabel: Automated Fine-Grained Log Labeling for Cyber Attack Dataset Generation.",
+      "authors": [
+        "Yihao Peng",
+        "Tongxin Zhang",
+        "Jieshao Lai",
+        "Yuxuan Zhang",
+        "Yiming Wu",
+        "Hai Wan",
+        "Xibin Zhao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PengZLZWWZ25"
+    },
+    {
+      "id": "usenix-security-2025-030",
+      "title": "CoVault: Secure, Scalable Analytics of Personal Data.",
+      "authors": [
+        "Roberta De Viti",
+        "Isaac Sheff",
+        "Noemi Glaeser",
+        "Baltasar Dinis",
+        "Rodrigo Rodrigues 0001",
+        "Bobby Bhattacharjee",
+        "Anwar Hithnawi",
+        "Deepak Garg 0001",
+        "Peter Druschel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VitiSGD0BH0D25"
+    },
+    {
+      "id": "usenix-security-2025-031",
+      "title": "EvilEDR: Repurposing EDR as an Offensive Tool.",
+      "authors": [
+        "Kotaiba Alachkar",
+        "Dirk Gaastra",
+        "Eduardo Barbaro",
+        "Michel van Eeten",
+        "Yury Zhauniarovich"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AlachkarGBEZ25"
+    },
+    {
+      "id": "usenix-security-2025-032",
+      "title": "TAPAS: An Efficient Online APT Detection with Task-guided Process Provenance Graph Segmentation and Analysis.",
+      "authors": [
+        "Bo Zhang",
+        "Yansong Gao 0001",
+        "Changlong Yu",
+        "Boyu Kuang",
+        "Zhi Zhang 0001",
+        "Hyoungshick Kim",
+        "Anmin Fu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhang0YK0KF25"
+    },
+    {
+      "id": "usenix-security-2025-033",
+      "title": "Nothing is Unreachable: Automated Synthesis of Robust Code-Reuse Gadget Chains for Arbitrary Exploitation Primitives.",
+      "authors": [
+        "Nicolas Bailluet",
+        "Emmanuel Fleury",
+        "Isabelle Puaut",
+        "Erven Rohou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BailluetFPR25"
+    },
+    {
+      "id": "usenix-security-2025-034",
+      "title": "BlueGuard: Accelerated Host and Guest Introspection Using DPUs.",
+      "authors": [
+        "Meni Orenbach",
+        "Rami Ailabouni",
+        "Nael Masalha",
+        "Thanh Nguyen",
+        "Ahmad Saleh",
+        "Frank Block",
+        "Fritz Alder",
+        "Ofir Arkin",
+        "Ahmad Atamli"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#OrenbachAMNSBAA25"
+    },
+    {
+      "id": "usenix-security-2025-035",
+      "title": "RollingEvidence: Autoregressive Video Evidence via Rolling Shutter Effect.",
+      "authors": [
+        "Feng Qian 0006",
+        "Lingfeng Zhang 0004",
+        "Tao Luo",
+        "Shiqi Xu",
+        "Zhijun Yu",
+        "Wei Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00060LXYW25"
+    },
+    {
+      "id": "usenix-security-2025-036",
+      "title": "From Constraints to Cracks: Constraint Semantic Inconsistencies as Vulnerability Beacons for Embedded Systems.",
+      "authors": [
+        "Jiaxu Zhao 0004",
+        "Yuekang Li",
+        "Yanyan Zou 0002",
+        "Yang Xiao 0011",
+        "Naijia Jiang",
+        "Yeting Li",
+        "Nanyu Zhong",
+        "Bingwei Peng",
+        "Kunpeng Jian",
+        "Wei Huo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0004L00JLZPJH25"
+    },
+    {
+      "id": "usenix-security-2025-037",
+      "title": "IRBlock: A Large-Scale Measurement Study of the Great Firewall of Iran.",
+      "authors": [
+        "Jonas Tai",
+        "Karthik Nishanth Sengottuvelavan",
+        "Peter Whiting",
+        "Nguyen Phong Hoang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TaiSWH25"
+    },
+    {
+      "id": "usenix-security-2025-038",
+      "title": "Email Spoofing with SMTP Smuggling: How the Shared Email Infrastructures Magnify this Vulnerability.",
+      "authors": [
+        "Chuhan Wang 0001",
+        "Chenkai Wang 0001",
+        "Songyi Yang",
+        "Sophia Liu",
+        "Jianjun Chen 0005",
+        "Haixin Duan",
+        "Gang Wang 0011"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Wang0YL0D025"
+    },
+    {
+      "id": "usenix-security-2025-039",
+      "title": "The Silent Danger in HTTP: Identifying HTTP Desync Vulnerabilities with Gray-box Testing.",
+      "authors": [
+        "Keran Mu",
+        "Jianjun Chen 0005",
+        "Jianwei Zhuge",
+        "Qi Li 0002",
+        "Haixin Duan",
+        "Nick Feamster"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Mu0Z0DF25"
+    },
+    {
+      "id": "usenix-security-2025-040",
+      "title": "Censorship Evasion with Unidentified Protocol Generation.",
+      "authors": [
+        "Ryan Wails",
+        "Rob Jansen",
+        "Aaron Johnson 0001",
+        "Micah Sherr"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WailsJ0S25"
+    },
+    {
+      "id": "usenix-security-2025-041",
+      "title": "Exposing and Circumventing SNI-based QUIC Censorship of the Great Firewall of China.",
+      "authors": [
+        "Ali Zohaib",
+        "Qiang Zao",
+        "Jackson Sippe",
+        "Abdulrahman Alaraj",
+        "Amir Houmansadr",
+        "Zakir Durumeric",
+        "Eric Wustrow"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZohaibZSAHDW25"
+    },
+    {
+      "id": "usenix-security-2025-042",
+      "title": "Ares: Comprehensive Path Hijacking Detection via Routing Tree.",
+      "authors": [
+        "Yinxiang Tao",
+        "Chengwan Zhang",
+        "Changqing An",
+        "Shuying Zhuang",
+        "Jilong Wang 0001",
+        "Congcong Miao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TaoZAZ0M25"
+    },
+    {
+      "id": "usenix-security-2025-043",
+      "title": "Trust but Verify: An Assessment of Vulnerability Tagging Services.",
+      "authors": [
+        "Szu-Chun Huang",
+        "Harm Griffioen",
+        "Max van der Horst",
+        "Georgios Smaragdakis",
+        "Michel van Eeten",
+        "Yury Zhauniarovich"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuangGHSEZ25"
+    },
+    {
+      "id": "usenix-security-2025-044",
+      "title": "Watch Out Your TV Box: Reversing and Blocking a P2P-based Illegal Streaming Ecosystem.",
+      "authors": [
+        "Jungun Ahn",
+        "Sueun Jung",
+        "Seungwan Yoo",
+        "Jungheum Park",
+        "Sangjin Lee 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AhnJYP025"
+    },
+    {
+      "id": "usenix-security-2025-045",
+      "title": "Catch-22: Uncovering Compromised Hosts using SSH Public Keys.",
+      "authors": [
+        "Cristian Munteanu 0001",
+        "Georgios Smaragdakis",
+        "Anja Feldmann",
+        "Tobias Fiebig"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MunteanuSFF25"
+    },
+    {
+      "id": "usenix-security-2025-046",
+      "title": "USD: NSFW Content Detection for Text-to-Image Models via Scene Graph.",
+      "authors": [
+        "Yuyang Zhang",
+        "Kangjie Chen",
+        "Xudong Jiang",
+        "Jiahui Wen",
+        "Yihui Jin",
+        "Ziyou Liang",
+        "Yihao Huang 0001",
+        "Run Wang 0001",
+        "Lina Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangCJWJL00025"
+    },
+    {
+      "id": "usenix-security-2025-047",
+      "title": "Exposing the Guardrails: Reverse-Engineering and Jailbreaking Safety Filters in DALL&#183;E Text-to-Image Pipelines.",
+      "authors": [
+        "Corban Villa",
+        "Muhammad Shujaat Mirza",
+        "Christina P&#246;pper"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VillaMP25"
+    },
+    {
+      "id": "usenix-security-2025-048",
+      "title": "On the Proactive Generation of Unsafe Images From Text-To-Image Models Using Benign Prompts.",
+      "authors": [
+        "Yixin Wu 0001",
+        "Ning Yu 0006",
+        "Michael Backes 0001",
+        "Yun Shen",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#000100S025"
+    },
+    {
+      "id": "usenix-security-2025-049",
+      "title": "Neural Invisibility Cloak: Concealing Adversary in Images via Compromised AI-driven Image Signal Processing.",
+      "authors": [
+        "Wenjun Zhu",
+        "Xiaoyu Ji 0001",
+        "Xinfeng Li",
+        "Qihang Chen",
+        "Kun Wang",
+        "Xinyu Li",
+        "Ruoyan Xu",
+        "Wenyuan Xu 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhu0LCWLX025"
+    },
+    {
+      "id": "usenix-security-2025-050",
+      "title": "Bridging the Gap in Vision Language Models in Identifying Unsafe Concepts Across Modalities.",
+      "authors": [
+        "Yiting Qu",
+        "Michael Backes 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Qu0025"
+    },
+    {
+      "id": "usenix-security-2025-051",
+      "title": "Backdooring Bias (B^2) into Stable Diffusion Models.",
+      "authors": [
+        "Ali Naseh",
+        "Jaechul Roh",
+        "Eugene Bagdasarian",
+        "Amir Houmansadr"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NasehRBH25"
+    },
+    {
+      "id": "usenix-security-2025-052",
+      "title": "Watch the Watchers! On the Security Risks of Robustness-Enhancing Diffusion Models.",
+      "authors": [
+        "Changjiang Li",
+        "Ren Pang",
+        "Bochuan Cao",
+        "Jinghui Chen",
+        "Fenglong Ma",
+        "Shouling Ji",
+        "Ting Wang 0006"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiPCCMJ025"
+    },
+    {
+      "id": "usenix-security-2025-053",
+      "title": "Pretender: Universal Active Defense against Diffusion Finetuning Attacks.",
+      "authors": [
+        "Zekun Sun",
+        "Zijian Liu",
+        "Shouling Ji",
+        "Chenhao Lin",
+        "Na Ruan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SunLJLR25"
+    },
+    {
+      "id": "usenix-security-2025-054",
+      "title": "Self-interpreting Adversarial Images.",
+      "authors": [
+        "Tingwei Zhang",
+        "Collin Zhang",
+        "John X. Morris",
+        "Eugene Bagdasarian",
+        "Vitaly Shmatikov"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangZMBS25"
+    },
+    {
+      "id": "usenix-security-2025-055",
+      "title": "TORCHLIGHT: Shedding LIGHT on Real-World Attacks on Cloudless IoT Devices Concealed within the Tor Network.",
+      "authors": [
+        "Yumingzhi Pan",
+        "Zhen Ling 0001",
+        "Yue Zhang 0025",
+        "Hongze Wang",
+        "Guangchi Liu",
+        "Junzhou Luo",
+        "Xinwen Fu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Pan00WLLF25"
+    },
+    {
+      "id": "usenix-security-2025-056",
+      "title": "CloudFlow: Identifying Security-sensitive Data Flows in Serverless Applications.",
+      "authors": [
+        "Giuseppe Raffa",
+        "Jorge Blasco",
+        "Daniel O'Keeffe",
+        "Santanu Kumar Dash 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RaffaBO025"
+    },
+    {
+      "id": "usenix-security-2025-057",
+      "title": "Serverless Functions Made Confidential and Efficient with Split Containers.",
+      "authors": [
+        "Jiacheng Shi",
+        "Jinyu Gu 0001",
+        "Yubin Xia",
+        "Haibo Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Shi0X025"
+    },
+    {
+      "id": "usenix-security-2025-058",
+      "title": "Exploring and Exploiting the Resource Isolation Attack Surface of WebAssembly Containers.",
+      "authors": [
+        "Zhaofeng Yu",
+        "Dongyang Zhan",
+        "Lin Ye",
+        "Haining Yu",
+        "Hongli Zhang 0001",
+        "Zhihong Tian"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YuZYY0T25"
+    },
+    {
+      "id": "usenix-security-2025-059",
+      "title": "Transparent Attested DNS for Confidential Computing Services.",
+      "authors": [
+        "Antoine Delignat-Lavaud",
+        "C&#233;dric Fournet",
+        "Kapil Vaswani",
+        "Manuel Costa",
+        "Sylvan Clebsch",
+        "Christoph M. Wintersteiger"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Delignat-Lavaud25"
+    },
+    {
+      "id": "usenix-security-2025-060",
+      "title": "Dorami: Privilege Separating Security Monitor on RISC-V TEEs.",
+      "authors": [
+        "Mark Kuhne",
+        "Stavros Volos",
+        "Shweta Shinde"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KuhneVS25"
+    },
+    {
+      "id": "usenix-security-2025-061",
+      "title": "TLBlur: Compiler-Assisted Automated Hardening against Controlled Channels on Off-the-Shelf Intel SGX Platforms.",
+      "authors": [
+        "Daan Vanoverloop",
+        "Andr&#233;s S&#225;nchez",
+        "Flavio Toffalini",
+        "Frank Piessens",
+        "Mathias Payer",
+        "Jo Van Bulck"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VanoverloopSTPP25"
+    },
+    {
+      "id": "usenix-security-2025-062",
+      "title": "TETD: Trusted Execution in Trust Domains.",
+      "authors": [
+        "Zhanbo Wang",
+        "Jiaxin Zhan",
+        "Xuhua Ding",
+        "Fengwei Zhang",
+        "Ning Hu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangZDZH25"
+    },
+    {
+      "id": "usenix-security-2025-063",
+      "title": "TDXploit: Novel Techniques for Single-Stepping and Cache Attacks on Intel TDX.",
+      "authors": [
+        "Fabian Rauscher",
+        "Luca Wilke",
+        "Hannes Weissteiner",
+        "Thomas Eisenbarth 0001",
+        "Daniel Gruss"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RauscherWW0G25"
+    },
+    {
+      "id": "usenix-security-2025-064",
+      "title": "Auspex: Unveiling Inconsistency Bugs of Transaction Fee Mechanism in Blockchain.",
+      "authors": [
+        "Zheyuan He",
+        "Zihao Li 0001",
+        "Jiahao Luo",
+        "Feng Luo",
+        "Junhan Duan",
+        "Jingwei Li 0001",
+        "Shuwei Song",
+        "Xiapu Luo",
+        "Ting Chen 0002",
+        "Xiaosong Zhang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#He0LLD0SL0025"
+    },
+    {
+      "id": "usenix-security-2025-065",
+      "title": "Blockchain Address Poisoning.",
+      "authors": [
+        "Taro Tsuchiya",
+        "Jin-Dong Dong",
+        "Kyle Soska",
+        "Nicolas Christin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TsuchiyaDSC25"
+    },
+    {
+      "id": "usenix-security-2025-066",
+      "title": "Available Attestation: Towards a Reorg-Resilient Solution for Ethereum Proof-of-Stake.",
+      "authors": [
+        "Mingfei Zhang",
+        "Rujia Li 0001",
+        "Xueqian Lu",
+        "Sisi Duan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhang0LD25"
+    },
+    {
+      "id": "usenix-security-2025-067",
+      "title": "Approve Once, Regret Forever: On the Exploitation of Ethereum's Approve-TransferFrom Ecosystem.",
+      "authors": [
+        "Nicola Ruaro",
+        "Fabio Gritti",
+        "Dongyu Meng",
+        "Robert McLaughlin",
+        "Ilya Grishchenko",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RuaroGMMGKV25"
+    },
+    {
+      "id": "usenix-security-2025-068",
+      "title": "Voting-Bloc Entropy: A New Metric for DAO Decentralization.",
+      "authors": [
+        "Andr&#233;s F&#225;brega",
+        "Amy Zhao",
+        "Jay Yu",
+        "James Austgen",
+        "Sarah Allen",
+        "Kushal Babel",
+        "Mahimna Kelkar",
+        "Ari Juels"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#FabregaZYAABKJ25"
+    },
+    {
+      "id": "usenix-security-2025-069",
+      "title": "Deanonymizing Ethereum Validators: The P2P Network Has a Privacy Issue.",
+      "authors": [
+        "Lioba Heimbach",
+        "Yann Vonlanthen",
+        "Juan Villacis",
+        "Lucianna Kiffer",
+        "Roger Wattenhofer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HeimbachVVKW25"
+    },
+    {
+      "id": "usenix-security-2025-070",
+      "title": "Let's Move2EVM.",
+      "authors": [
+        "Lorenzo Benetollo",
+        "Andreas Lackner",
+        "Matteo Maffei",
+        "Markus Scherer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BenetolloLMS25"
+    },
+    {
+      "id": "usenix-security-2025-071",
+      "title": "Ghost Clusters: Evaluating Attribution of Illicit Services through Cryptocurrency Tracing.",
+      "authors": [
+        "Kelvin Lubbertsen",
+        "Michel van Eeten",
+        "Rolf van Wegberg"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LubbertsenEW25"
+    },
+    {
+      "id": "usenix-security-2025-072",
+      "title": "Surviving in Dark Forest: Towards Evading the Attacks from Front-Running Bots in Application Layer.",
+      "authors": [
+        "Zuchao Ma",
+        "Muhui Jiang",
+        "Feng Luo",
+        "Xiapu Luo",
+        "Yajin Zhou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaJLLZ25"
+    },
+    {
+      "id": "usenix-security-2025-073",
+      "title": "SoK: Inaccessible & Insecure: An Exposition of Authentication Challenges Faced by Blind and Visually Impaired Users in State-of-the-Art Academic Proposals.",
+      "authors": [
+        "Md Mojibur Rahman Redoy Akanda",
+        "Amanda Lacy",
+        "Nitesh Saxena"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AkandaLS25"
+    },
+    {
+      "id": "usenix-security-2025-074",
+      "title": "Scanned and Scammed: Insecurity by ObsQRity? Measuring User Susceptibility and Awareness of QR Code-Based Attacks.",
+      "authors": [
+        "Marvin Kowalewski",
+        "Leona Lassak",
+        "Markus D&#252;rmuth",
+        "Theodor Schnitzler"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KowalewskiLDS25"
+    },
+    {
+      "id": "usenix-security-2025-075",
+      "title": "URL Inspection Tasks: Helping Users Detect Phishing Links in Emails.",
+      "authors": [
+        "Daniele Lain",
+        "Yoshimichi Nakatsuka",
+        "Kari Kostiainen",
+        "Gene Tsudik",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LainNKTC25"
+    },
+    {
+      "id": "usenix-security-2025-076",
+      "title": "Digital Security Perceptions and Practices Around the World: A WEIRD versus Non-WEIRD Comparison.",
+      "authors": [
+        "Franziska Herbert",
+        "Collins W. Munyendo",
+        "Jonas Hielscher",
+        "Steffen Becker 0003",
+        "Yixin Zou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HerbertMH0Z25"
+    },
+    {
+      "id": "usenix-security-2025-077",
+      "title": "SoK: Come Together - Unifying Security, Information Theory, and Cognition for a Mixed Reality Deception Attack Ontology & Analysis Framework.",
+      "authors": [
+        "Ali Teymourian",
+        "Andrew M. Webb 0001",
+        "Taha Gharaibeh",
+        "Arushi Ghildiyal",
+        "Ibrahim Baggili"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TeymourianWGGB25"
+    },
+    {
+      "id": "usenix-security-2025-078",
+      "title": "Am I Infected? Lessons from Operating a Large-Scale IoT Security Diagnostic Service.",
+      "authors": [
+        "Takayuki Sasaki",
+        "Tomoya Inazawa",
+        "Youhei Yamaguchi",
+        "Simon Parkin",
+        "Michel van Eeten",
+        "Katsunari Yoshioka",
+        "Tsutomu Matsumoto"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SasakiIYPEYM25"
+    },
+    {
+      "id": "usenix-security-2025-079",
+      "title": "AirTag-Facilitated Stalking Protection: Evaluating Unwanted Tracking Notifications and Tracker Locating Features.",
+      "authors": [
+        "Da&#241;iel Gerhardt",
+        "Matthias Fassl",
+        "Carolyn Guthoff",
+        "Adrian Dabrowski",
+        "Katharina Krombholz"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GerhardtFGDK25"
+    },
+    {
+      "id": "usenix-security-2025-080",
+      "title": "PrivaCI in VR: Exploring Perceptions and Acceptability of Data Sharing in Virtual Reality Through Contextual Integrity.",
+      "authors": [
+        "Emiram Kablo",
+        "Melina Kleber",
+        "Patricia Arias Cabarcos"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KabloKC25"
+    },
+    {
+      "id": "usenix-security-2025-081",
+      "title": "Shadowed Realities: An Investigation of UI Attacks in WebXR.",
+      "authors": [
+        "Chandrika Mukherjee",
+        "Reham Mohamed 0003",
+        "Arjun Arunasalam",
+        "Habiba Farrukh",
+        "Z. Berkay Celik"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Mukherjee0AFC25"
+    },
+    {
+      "id": "usenix-security-2025-082",
+      "title": "Unlocking the Power of Differentially Private Zeroth-order Optimization for Fine-tuning LLMs.",
+      "authors": [
+        "Ergute Bao",
+        "Yangfan Jiang 0001",
+        "Fei Wei",
+        "Xiaokui Xiao",
+        "Zitao Li",
+        "Yaliang Li",
+        "Bolin Ding"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Bao0WXLLD25"
+    },
+    {
+      "id": "usenix-security-2025-083",
+      "title": "Membership Inference Attacks Against Vision-Language Models.",
+      "authors": [
+        "Yuke Hu",
+        "Zheng Li 0023",
+        "Zhihao Liu",
+        "Yang Zhang 0016",
+        "Zhan Qin",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuLLZQ0025"
+    },
+    {
+      "id": "usenix-security-2025-084",
+      "title": "Towards Label-Only Membership Inference Attack against Pre-trained Large Language Models.",
+      "authors": [
+        "Yu He",
+        "Boheng Li",
+        "Liu Liu",
+        "Zhongjie Ba",
+        "Wei Dong 0007",
+        "Yiming Li 0004",
+        "Zhan Qin",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HeLLB0LQ0025"
+    },
+    {
+      "id": "usenix-security-2025-085",
+      "title": "Depth Gives a False Sense of Privacy: LLM Internal States Inversion.",
+      "authors": [
+        "Tian Dong",
+        "Yan Meng 0001",
+        "Shaofeng Li 0001",
+        "Guoxing Chen",
+        "Zhen Liu 0008",
+        "Haojin Zhu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Dong00C0Z25"
+    },
+    {
+      "id": "usenix-security-2025-086",
+      "title": "I Know What You Said: Unveiling Hardware Cache Side-Channels in Local Large Language Model Inference.",
+      "authors": [
+        "Zibo Gao",
+        "Junjie Hu",
+        "Feng Guo",
+        "Yixin Zhang",
+        "Yinglong Han",
+        "Siyuan Liu",
+        "Haiyang Li",
+        "Zhiqiang Lv"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GaoHGZHLLL25"
+    },
+    {
+      "id": "usenix-security-2025-087",
+      "title": "Evaluating LLM-based Personal Information Extraction and Countermeasures.",
+      "authors": [
+        "Yupei Liu",
+        "Yuqi Jia",
+        "Jinyuan Jia 0001",
+        "Neil Zhenqiang Gong"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuJ0G25"
+    },
+    {
+      "id": "usenix-security-2025-088",
+      "title": "Synthetic Artifact Auditing: Tracing LLM-Generated Synthetic Data Usage in Downstream Applications.",
+      "authors": [
+        "Yixin Wu 0001",
+        "Ziqing Yang 0002",
+        "Yun Shen",
+        "Michael Backes 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00010S0025"
+    },
+    {
+      "id": "usenix-security-2025-089",
+      "title": "Data-Free Model-Related Attacks: Unleashing the Potential of Generative AI.",
+      "authors": [
+        "Dayong Ye",
+        "Tianqing Zhu",
+        "Shang Wang 0004",
+        "Bo Liu 0001",
+        "Leo Yu Zhang",
+        "Wanlei Zhou 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YeZW0Z0025"
+    },
+    {
+      "id": "usenix-security-2025-090",
+      "title": "When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs.",
+      "authors": [
+        "Hanna Kim",
+        "Minkyoo Song",
+        "Seung Ho Na",
+        "Seungwon Shin 0001",
+        "Kimin Lee"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KimSN0L25"
+    },
+    {
+      "id": "usenix-security-2025-091",
+      "title": "Enabling Low-Cost Secure Computing on Untrusted In-Memory Architectures.",
+      "authors": [
+        "Sahar Ghoflsaz Ghinani",
+        "Jingyao Zhang 0002",
+        "Elaheh Sadredini"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GhinaniZS25"
+    },
+    {
+      "id": "usenix-security-2025-092",
+      "title": "AidFuzzer: Adaptive Interrupt-Driven Firmware Fuzzing via Run-Time State Recognition.",
+      "authors": [
+        "Jianqiang Wang",
+        "Qinying Wang",
+        "Tobias Scharnowski",
+        "Li Shi",
+        "Simon W&#246;rner",
+        "Thorsten Holz"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangWSSWH25"
+    },
+    {
+      "id": "usenix-security-2025-093",
+      "title": "GenHuzz: An Efficient Generative Hardware Fuzzer.",
+      "authors": [
+        "Lichao Wu",
+        "Mohamadreza Rostami",
+        "Huimin Li 0004",
+        "Jeyavijayan Rajendran",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WuR0RS25"
+    },
+    {
+      "id": "usenix-security-2025-094",
+      "title": "Software Availability Protection in Cyber-Physical Systems.",
+      "authors": [
+        "Ao Li 0006",
+        "Jinwen Wang",
+        "Ning Zhang 0017"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0006W025"
+    },
+    {
+      "id": "usenix-security-2025-095",
+      "title": "GDMA: Fully Automated DMA Rehosting via Iterative Type Overlays.",
+      "authors": [
+        "Tobias Scharnowski",
+        "Simeon Hoffmann",
+        "Moritz Bley",
+        "Simon W&#246;rner",
+        "Daniel Klischies",
+        "Felix Buchmann",
+        "Nils Ole Tippenhauer",
+        "Thorsten Holz",
+        "Marius Muench"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ScharnowskiHBWK25"
+    },
+    {
+      "id": "usenix-security-2025-096",
+      "title": "Kintsugi: Secure Hotpatching for Code-Shadowing Real-Time Embedded Systems.",
+      "authors": [
+        "Philipp Mackensen",
+        "Christian Niesler",
+        "Roberto Blanco",
+        "Lucas Davi",
+        "Veelasha Moonsamy"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MackensenNBDM25"
+    },
+    {
+      "id": "usenix-security-2025-097",
+      "title": "Security Implications of Malicious G-Codes in 3D Printing.",
+      "authors": [
+        "Jost Rossel",
+        "Vladislav Mladenov",
+        "Nico W&#246;rdenweber",
+        "Juraj Somorovsky"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RosselMWS25"
+    },
+    {
+      "id": "usenix-security-2025-098",
+      "title": "Secure Information Embedding in Forensic 3D Fingerprinting.",
+      "authors": [
+        "Canran Wang",
+        "Jinwen Wang",
+        "Mi Zhou",
+        "Vinh Pham",
+        "Senyue Hao",
+        "Chao Zhou",
+        "Ning Zhang 0017",
+        "Netanel Raviv"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangWZPHZ0R25"
+    },
+    {
+      "id": "usenix-security-2025-099",
+      "title": "SoK: A Security Architect's View of Printed Circuit Board Attacks.",
+      "authors": [
+        "Jacob Harrison",
+        "Nathan Jessurun",
+        "Mark Tehranipoor"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HarrisonJT25"
+    },
+    {
+      "id": "usenix-security-2025-100",
+      "title": "Dumbo-MPC: Efficient Fully Asynchronous MPC with Optimal Resilience.",
+      "authors": [
+        "Yuan Su",
+        "Yuan Lu 0001",
+        "Jiliang Li",
+        "Yuyi Wang 0001",
+        "Chengyi Dong",
+        "Qiang Tang 0005"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Su0L0D025"
+    },
+    {
+      "id": "usenix-security-2025-101",
+      "title": "FABLE: Batched Evaluation on Confidential Lookup Tables in 2PC.",
+      "authors": [
+        "Zhengyuan Su",
+        "Qi Pang",
+        "Simon Beyzerov",
+        "Wenting Zheng"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SuPBZ25"
+    },
+    {
+      "id": "usenix-security-2025-102",
+      "title": "MAESTRO: Multi-Party AES Using Lookup Tables.",
+      "authors": [
+        "Hiraku Morita",
+        "Erik Pohle",
+        "Kunihiko Sadakane",
+        "Peter Scholl",
+        "Kazunari Tozawa",
+        "Daniel Tschudi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MoritaPSSTT25"
+    },
+    {
+      "id": "usenix-security-2025-103",
+      "title": "Efficient 2PC for Constant Round Secure Equality Testing and Comparison.",
+      "authors": [
+        "Tianpei Lu",
+        "Xin Kang",
+        "Bingsheng Zhang",
+        "Zhuo Ma 0001",
+        "Xiaoyuan Zhang",
+        "Yang Liu 0118",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LuKZ0Z00025"
+    },
+    {
+      "id": "usenix-security-2025-104",
+      "title": "Efficient Multi-Party Private Set Union Without Non-Collusion Assumptions.",
+      "authors": [
+        "Minglang Dong",
+        "Cong Zhang",
+        "Yujie Bai",
+        "Yu Chen"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DongZBC25"
+    },
+    {
+      "id": "usenix-security-2025-105",
+      "title": "Scalable Collaborative zk-SNARK and Its Application to Fully Distributed Proof Delegation.",
+      "authors": [
+        "Xuanming Liu",
+        "Zhelei Zhou",
+        "Yinghao Wang",
+        "Yanxin Pang",
+        "Jinye He",
+        "Bingsheng Zhang",
+        "Xiaohu Yang 0001",
+        "Jiaheng Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuZWPHZ0Z25"
+    },
+    {
+      "id": "usenix-security-2025-106",
+      "title": "zkGPT: An Efficient Non-interactive Zero-knowledge Proof Framework for LLM Inference.",
+      "authors": [
+        "Wenjie Qu 0001",
+        "Yijun Sun",
+        "Xuanming Liu",
+        "Tao Lu",
+        "Yanpei Guo",
+        "Kai Chen",
+        "Jiaheng Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001SLLGCZ25"
+    },
+    {
+      "id": "usenix-security-2025-107",
+      "title": "DFS: Delegation-friendly zkSNARK and Private Delegation of Provers.",
+      "authors": [
+        "Yuncong Hu",
+        "Pratyush Mishra 0001",
+        "Xiao Wang 0012",
+        "Jie Xie",
+        "Kang Yang 0002",
+        "Yu Yu 0001",
+        "Yuwen Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuMWX00Z25"
+    },
+    {
+      "id": "usenix-security-2025-108",
+      "title": "SoK: Understanding zk-SNARKs: The Gap Between Research and Practice.",
+      "authors": [
+        "Junkai Liang",
+        "Daqi Hu",
+        "Pengfei Wu 0003",
+        "Yunbo Yang",
+        "Qingni Shen",
+        "Zhonghai Wu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiangH0YSW25"
+    },
+    {
+      "id": "usenix-security-2025-109",
+      "title": "A Mixed-Methods Study of Open-Source Software Maintainers On Vulnerability Management and Platform Security Features.",
+      "authors": [
+        "Jessy Ayala",
+        "Yu-Jye Tung",
+        "Joshua Garcia"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AyalaTG25"
+    },
+    {
+      "id": "usenix-security-2025-110",
+      "title": "&#34;Threat modeling is very formal, it's very technical, and also very hard to do correctly&#34;: Investigating Threat Modeling Practices in Open-Source Software Projects.",
+      "authors": [
+        "Harjot Kaur",
+        "Carson Powers",
+        "Ronald E. Thompson III",
+        "Sascha Fahl",
+        "Daniel Votipka"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KaurPTFV25"
+    },
+    {
+      "id": "usenix-security-2025-111",
+      "title": "&#34;I wasn't sure if this is indeed a security risk&#34;: Data-driven Understanding of Security Issue Reporting in GitHub Repositories of Open Source npm Packages.",
+      "authors": [
+        "Rajdeep Ghosh 0005",
+        "Shiladitya De",
+        "Mainack Mondal"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0005DM25"
+    },
+    {
+      "id": "usenix-security-2025-112",
+      "title": "Context Matters: Qualitative Insights into Developers' Approaches and Challenges with Software Composition Analysis.",
+      "authors": [
+        "Elizabeth Lin",
+        "Sparsha Gowda",
+        "William Enck",
+        "Dominik Wermke"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LinGEW25"
+    },
+    {
+      "id": "usenix-security-2025-113",
+      "title": "Expert Insights into Advanced Persistent Threats: Analysis, Attribution, and Challenges.",
+      "authors": [
+        "Aakanksha Saha",
+        "James Mattei",
+        "Jorge Blasco",
+        "Lorenzo Cavallaro",
+        "Daniel Votipka",
+        "Martina Lindorfer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SahaMBCVL25"
+    },
+    {
+      "id": "usenix-security-2025-114",
+      "title": "How Researchers De-Identify Data in Practice.",
+      "authors": [
+        "Wentao Guo 0005",
+        "Paige Pepitone",
+        "Adam J. Aviv",
+        "Michelle L. Mazurek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0005PAM25"
+    },
+    {
+      "id": "usenix-security-2025-115",
+      "title": "A limited technical background is sufficient for attack-defense tree acceptability.",
+      "authors": [
+        "Nathan Daniel Schiele",
+        "Olga Gadyatskaya"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SchieleG25"
+    },
+    {
+      "id": "usenix-security-2025-116",
+      "title": "&#34;It's not my responsibility to write them&#34;: An Empirical Study of Software Product Managers and Security Requirements.",
+      "authors": [
+        "Houda Naji",
+        "Felix Reichmann",
+        "Tobias Bruns",
+        "M. Angela Sasse",
+        "Alena Naiakshina"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NajiRBSN25"
+    },
+    {
+      "id": "usenix-security-2025-117",
+      "title": "Patching Up: Stakeholder Experiences of Security Updates for Connected Medical Devices.",
+      "authors": [
+        "Lorenz Kustosch",
+        "Carlos Ga&#241;&#225;n",
+        "Michel van Eeten",
+        "Simon Parkin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KustoschGEP25"
+    },
+    {
+      "id": "usenix-security-2025-118",
+      "title": "PRSA: Prompt Stealing Attacks against Real-World Prompt Services.",
+      "authors": [
+        "Yong Yang 0017",
+        "Changjiang Li",
+        "Qingming Li",
+        "Oubo Ma",
+        "Haoyu Wang",
+        "Zonghui Wang",
+        "Yandong Gao",
+        "Wenzhi Chen",
+        "Shouling Ji"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YangLLMWWGCJ25"
+    },
+    {
+      "id": "usenix-security-2025-119",
+      "title": "Cross-Modal Prompt Inversion: Unifying Threats to Text and Image Generative AI Models.",
+      "authors": [
+        "Dayong Ye",
+        "Tianqing Zhu",
+        "Feng He",
+        "Bo Liu 0001",
+        "Minhui Xue 0001",
+        "Wanlei Zhou 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YeZH00025"
+    },
+    {
+      "id": "usenix-security-2025-120",
+      "title": "Prompt Obfuscation for Large Language Models.",
+      "authors": [
+        "David Pape",
+        "Sina Mavali",
+        "Thorsten Eisenhofer",
+        "Lea Sch&#246;nherr"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PapeMES25"
+    },
+    {
+      "id": "usenix-security-2025-121",
+      "title": "TwinBreak: Jailbreaking LLM Security Alignments based on Twin Prompts.",
+      "authors": [
+        "Torsten Krau&#223;",
+        "Hamid Dashtbani",
+        "Alexandra Dmitrienko"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KraussDD25"
+    },
+    {
+      "id": "usenix-security-2025-122",
+      "title": "Exploiting Task-Level Vulnerabilities: An Automatic Jailbreak Attack and Defense Benchmarking for LLMs.",
+      "authors": [
+        "Lan Zhang 0002",
+        "Xinben Gao",
+        "Liuyi Yao",
+        "Jinke Song",
+        "Yaliang Li"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002GYSL25"
+    },
+    {
+      "id": "usenix-security-2025-123",
+      "title": "StruQ: Defending Against Prompt Injection with Structured Queries.",
+      "authors": [
+        "Sizhe Chen",
+        "Julien Piet",
+        "Chawin Sitawarin",
+        "David A. Wagner 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenPS025"
+    },
+    {
+      "id": "usenix-security-2025-124",
+      "title": "PAPILLON: Efficient and Stealthy Fuzz Testing-Powered Jailbreaks for LLMs.",
+      "authors": [
+        "Xueluan Gong",
+        "Mingzhe Li",
+        "Yilin Zhang",
+        "Fengyuan Ran",
+        "Chen Chen 0115",
+        "Yanjiao Chen",
+        "Qian Wang 0002",
+        "Kwok-Yan Lam"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GongLZRCC0L25"
+    },
+    {
+      "id": "usenix-security-2025-125",
+      "title": "Great, Now Write an Article About That: The Crescendo Multi-Turn LLM Jailbreak Attack.",
+      "authors": [
+        "Mark Russinovich",
+        "Ahmed Salem 0001",
+        "Ronen Eldan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Russinovich0E25"
+    },
+    {
+      "id": "usenix-security-2025-126",
+      "title": "SelfDefend: LLMs Can Defend Themselves against Jailbreaking in a Practical Manner.",
+      "authors": [
+        "Xunguang Wang",
+        "Daoyuan Wu",
+        "Zhenlan Ji",
+        "Zongjie Li",
+        "Pingchuan Ma 0004",
+        "Shuai Wang 0011",
+        "Yingjiu Li",
+        "Yang Liu 0003",
+        "Ning Liu",
+        "Juergen Rahmel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangWJL00L0LR25"
+    },
+    {
+      "id": "usenix-security-2025-127",
+      "title": "SoK: So, You Think You Know All About Secure Randomized Caches?",
+      "authors": [
+        "Anubhav Bhatla",
+        "Hari Rohit Bhavsar",
+        "Sayandeep Saha",
+        "Biswabandan Panda"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BhatlaBSP25"
+    },
+    {
+      "id": "usenix-security-2025-128",
+      "title": "TEEcorrelate: An Information-Preserving Defense against Performance-Counter Attacks on TEEs.",
+      "authors": [
+        "Hannes Weissteiner",
+        "Fabian Rauscher",
+        "Robin Leander Schr&#246;der",
+        "Jonas Juffinger",
+        "Stefan Gast",
+        "Jan Wichelmann",
+        "Thomas Eisenbarth 0001",
+        "Daniel Gruss"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WeissteinerRSJG25"
+    },
+    {
+      "id": "usenix-security-2025-129",
+      "title": "Systematic Evaluation of Randomized Cache Designs against Cache Occupancy.",
+      "authors": [
+        "Anirban Chakraborty 0003",
+        "Nimish Mishra",
+        "Sayandeep Saha",
+        "Sarani Bhattacharya",
+        "Debdeep Mukhopadhyay"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0003MSBM25"
+    },
+    {
+      "id": "usenix-security-2025-130",
+      "title": "Exploiting Inaccurate Branch History in Side-Channel Attacks.",
+      "authors": [
+        "Yuhui Zhu",
+        "Alessandro Biondi 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhu025"
+    },
+    {
+      "id": "usenix-security-2025-131",
+      "title": "Phantom Trails: Practical Pre-Silicon Discovery of Transient Data Leaks.",
+      "authors": [
+        "Alvise de Faveri Tron",
+        "Raphael Isemann",
+        "Hany Ragab",
+        "Cristiano Giuffrida",
+        "Klaus von Gleissenthall",
+        "Herbert Bos"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TronIRGGB25"
+    },
+    {
+      "id": "usenix-security-2025-132",
+      "title": "Place Protections at the Right Place: Targeted Hardening for Cryptographic Code against Spectre v1.",
+      "authors": [
+        "Yiming Zhu",
+        "Wenchao Huang 0001",
+        "Yan Xiong 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhu0025"
+    },
+    {
+      "id": "usenix-security-2025-133",
+      "title": "Encarsia: Evaluating CPU Fuzzers via Automatic Bug Injection.",
+      "authors": [
+        "Matej B&#246;lcskei",
+        "Flavien Solt",
+        "Katharina Ceesay-Seitz",
+        "Kaveh Razavi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BolcskeiSCR25"
+    },
+    {
+      "id": "usenix-security-2025-134",
+      "title": "FLOP: Breaking the Apple M3 CPU via False Load Output Predictions.",
+      "authors": [
+        "Jason Kim 0007",
+        "Jalen Chuang",
+        "Daniel Genkin",
+        "Yuval Yarom"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0007CGY25"
+    },
+    {
+      "id": "usenix-security-2025-135",
+      "title": "Branch Privilege Injection: Compromising Spectre v2 Hardware Mitigations by Exploiting Branch Predictor Race Conditions.",
+      "authors": [
+        "Sandro R&#252;egge",
+        "Johannes Wikner",
+        "Kaveh Razavi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RueggeWR25"
+    },
+    {
+      "id": "usenix-security-2025-136",
+      "title": "GraphAce: Secure Two-Party Graph Analysis Achieving Communication Efficiency.",
+      "authors": [
+        "Jiping Yu",
+        "Kun Chen 0004",
+        "Yunyi Chen 0001",
+        "Xiaoyu Fan",
+        "Xiaowei Zhu 0001",
+        "Cheng Hong 0001",
+        "Wenguang Chen"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Yu0CF00C25"
+    },
+    {
+      "id": "usenix-security-2025-137",
+      "title": "Breaking the Layer Barrier: Remodeling Private Transformer Inference with Hybrid CKKS and MPC.",
+      "authors": [
+        "Tianshi Xu",
+        "Wen-jie Lu",
+        "Jiangrui Yu",
+        "Yi Chen",
+        "Chenqi Lin",
+        "Runsheng Wang",
+        "Meng Li 0004"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#XuLYCLW025"
+    },
+    {
+      "id": "usenix-security-2025-138",
+      "title": "HawkEye: Statically and Accurately Profiling the Communication Cost of Models in Multi-party Learning.",
+      "authors": [
+        "Wenqiang Ruan",
+        "Xin Lin",
+        "Ruisheng Zhou",
+        "Guopeng Lin",
+        "Shui Yu",
+        "Weili Han"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RuanLZLYH25"
+    },
+    {
+      "id": "usenix-security-2025-139",
+      "title": "Privacy Audit as Bits Transmission: (Im)possibilities for Audit by One Run.",
+      "authors": [
+        "Zihang Xiang",
+        "Tianhao Wang 0001",
+        "Di Wang 0015"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Xiang0025"
+    },
+    {
+      "id": "usenix-security-2025-140",
+      "title": "General-Purpose f-DP Estimation and Auditing in a Black-Box Setting.",
+      "authors": [
+        "&#214;nder Askin",
+        "Holger Dette",
+        "Martin Dunsche",
+        "Tim Kutta",
+        "Yun Lu 0001",
+        "Yu Wei 0007",
+        "Vassilis Zikas"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AskinDDK00Z25"
+    },
+    {
+      "id": "usenix-security-2025-141",
+      "title": "FastLloyd: Federated, Accurate, Secure, and Tunable k-Means Clustering with Differential Privacy.",
+      "authors": [
+        "Abdulrahman Diaa",
+        "Thomas Humphries",
+        "Florian Kerschbaum"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DiaaHK25"
+    },
+    {
+      "id": "usenix-security-2025-142",
+      "title": "Addressing Sensitivity Distinction in Local Differential Privacy: A General Utility-Optimized Framework.",
+      "authors": [
+        "Xingyu He",
+        "Youwen Zhu",
+        "Rongke Liu",
+        "Gaoning Pan",
+        "Changyu Dong"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HeZLPD25"
+    },
+    {
+      "id": "usenix-security-2025-143",
+      "title": "Further Study on Frequency Estimation under Local Differential Privacy.",
+      "authors": [
+        "Huiyu Fang",
+        "Liquan Chen",
+        "Suhui Liu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#FangCL25"
+    },
+    {
+      "id": "usenix-security-2025-144",
+      "title": "Beyond Statistical Estimation: Differentially Private Individual Computation via Shuffling.",
+      "authors": [
+        "Shaowei Wang 0003",
+        "Changyu Dong",
+        "Xiangfu Song",
+        "Jin Li 0002",
+        "Zhili Zhou 0001",
+        "Di Wang 0015",
+        "Han Wu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0003DS000W25"
+    },
+    {
+      "id": "usenix-security-2025-145",
+      "title": "Stack Overflow Meets Replication: Security Research Amid Evolving Code Snippets.",
+      "authors": [
+        "Alfusainey Jallow",
+        "Sven Bugiel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JallowB25"
+    },
+    {
+      "id": "usenix-security-2025-146",
+      "title": "&#34;I'm regretting that I hit run&#34;: In-situ Assessment of Potential Malware.",
+      "authors": [
+        "Brandon Lit",
+        "Edward Crowder",
+        "Hassan Khan 0002",
+        "Daniel Vogel 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LitCK025"
+    },
+    {
+      "id": "usenix-security-2025-147",
+      "title": "Beyond Exploit Scanning: A Functional Change-Driven Approach to Remote Software Version Identification.",
+      "authors": [
+        "Jinsong Chen",
+        "Mengying Wu",
+        "Geng Hong",
+        "Baichao An",
+        "Mingxuan Liu 0006",
+        "Lei Zhang 0096",
+        "Baojun Liu 0002",
+        "Haixin Duan",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenWHAL0LD025"
+    },
+    {
+      "id": "usenix-security-2025-148",
+      "title": "&#34;I'm trying to learn...and I'm shooting myself in the foot&#34;: Beginners' Struggles When Solving Binary Exploitation Exercises.",
+      "authors": [
+        "James Mattei",
+        "Christopher Pellegrini",
+        "Matthew Soto",
+        "Marina Sanusi Bohuk",
+        "Daniel Votipka"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MatteiPSBV25"
+    },
+    {
+      "id": "usenix-security-2025-149",
+      "title": "Confusing Value with Enumeration: Studying the Use of CVEs in Academia.",
+      "authors": [
+        "Moritz Schloegel",
+        "Daniel Klischies",
+        "Simon Koch 0001",
+        "David Klein 0001",
+        "Lukas Gerlach 0001",
+        "Malte Wessels",
+        "Leon Trampert",
+        "Martin Johns",
+        "Mathy Vanhoef",
+        "Michael Schwarz 0001",
+        "Thorsten Holz",
+        "Jo Van Bulck"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SchloegelK000WT25"
+    },
+    {
+      "id": "usenix-security-2025-150",
+      "title": "&#34;That's my perspective from 30 years of doing this&#34;: An Interview Study on Practices, Experiences, and Challenges of Updating Cryptographic Code.",
+      "authors": [
+        "Alexander Krause 0002",
+        "Harjot Kaur",
+        "Jan H. Klemmer",
+        "Oliver Wiese",
+        "Sascha Fahl"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KrauseKKWF25"
+    },
+    {
+      "id": "usenix-security-2025-151",
+      "title": "&#34;I have no idea how to make it safer&#34;: Studying Security and Privacy Mindsets of Browser Extension Developers.",
+      "authors": [
+        "Shubham Agarwal 0006",
+        "Rafael Mrowczynski",
+        "Maria Hellenthal",
+        "Ben Stock"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0006MHS25"
+    },
+    {
+      "id": "usenix-security-2025-152",
+      "title": "Precise and Effective Gadget Chain Mining through Deserialization Guided Call Graph Construction.",
+      "authors": [
+        "Yiheng Zhang",
+        "Ming Wen 0001",
+        "Shunjie Liu",
+        "Dongjie He",
+        "Hai Jin 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhang0LH025"
+    },
+    {
+      "id": "usenix-security-2025-153",
+      "title": "Mitigating Injection Attacks against E2EE Applications via View-Based Partitioning.",
+      "authors": [
+        "Andr&#233;s F&#225;brega",
+        "Samuel Breckenridge",
+        "Armin Namavari",
+        "Thomas Ristenpart"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#FabregaBNR25"
+    },
+    {
+      "id": "usenix-security-2025-154",
+      "title": "Boosting Gradient Leakage Attacks: Data Reconstruction in Realistic FL Settings.",
+      "authors": [
+        "Mingyuan Fan 0003",
+        "Fuyi Wang",
+        "Cen Chen 0001",
+        "Jianying Zhou 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0003W0025"
+    },
+    {
+      "id": "usenix-security-2025-155",
+      "title": "Refiner: Data Refining against Gradient Leakage Attacks in Federated Learning.",
+      "authors": [
+        "Mingyuan Fan 0003",
+        "Cen Chen 0001",
+        "Chengyu Wang 0001",
+        "Xiaodan Li",
+        "Wenmeng Zhou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#000300LZ25"
+    },
+    {
+      "id": "usenix-security-2025-156",
+      "title": "Aion: Robust and Efficient Multi-Round Single-Mask Secure Aggregation Against Malicious Participants.",
+      "authors": [
+        "Yizhong Liu",
+        "Zixiao Jia",
+        "Xiao Chen",
+        "Song Bian 0001",
+        "Runhua Xu",
+        "Dawei Li 0009",
+        "Yuan Lu 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuJC0X0025"
+    },
+    {
+      "id": "usenix-security-2025-157",
+      "title": "SoK: On Gradient Leakage in Federated Learning.",
+      "authors": [
+        "Jiacheng Du",
+        "Jiahui Hu",
+        "Zhibo Wang 0001",
+        "Peng Sun 0003",
+        "Neil Gong 0001",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DuH0000025"
+    },
+    {
+      "id": "usenix-security-2025-158",
+      "title": "DP-BREM: Differentially-Private and Byzantine-Robust Federated Learning with Client Momentum.",
+      "authors": [
+        "Xiaolan Gu",
+        "Ming Li 0003",
+        "Li Xiong 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Gu0025"
+    },
+    {
+      "id": "usenix-security-2025-159",
+      "title": "SLOTHE : Lazy Approximation of Non-Arithmetic Neural Network Functions over Encrypted Data.",
+      "authors": [
+        "Kevin Nam",
+        "Youyeon Joo",
+        "Seungjin Ha",
+        "Yunheung Paek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NamJHP25"
+    },
+    {
+      "id": "usenix-security-2025-160",
+      "title": "Sharpness-Aware Initialization: Improving Differentially Private Machine Learning from First Principles.",
+      "authors": [
+        "Zihao Wang",
+        "Rui Zhu",
+        "Dongruo Zhou",
+        "Zhikun Zhang 0001",
+        "XiaoFeng Wang 0001",
+        "Haixu Tang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangZZ00T25"
+    },
+    {
+      "id": "usenix-security-2025-161",
+      "title": "Task-Oriented Training Data Privacy Protection for Cloud-based Model Training.",
+      "authors": [
+        "Zhiqiang Wang",
+        "Jiahui Hou",
+        "Haifeng Sun 0005",
+        "Jingmiao Zhang",
+        "Yunhao Yao",
+        "Haikuo Yu",
+        "Xiang-Yang Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangH0ZYY025"
+    },
+    {
+      "id": "usenix-security-2025-162",
+      "title": "From Risk to Resilience: Towards Assessing and Mitigating the Risk of Data Reconstruction Attacks in Federated Learning.",
+      "authors": [
+        "Xiangrui Xu 0001",
+        "Zhize Li 0001",
+        "Yufei Han 0001",
+        "Bin Wang 0062",
+        "Jiqiang Liu",
+        "Wei Wang 0012"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001000L025"
+    },
+    {
+      "id": "usenix-security-2025-163",
+      "title": "Demystifying the (In)Security of QR Code-based Login in Real-world Deployments.",
+      "authors": [
+        "Xin Zhang 0146",
+        "Xiaohan Zhang 0001",
+        "Bo Zhao",
+        "Yuhong Nan",
+        "Zhichen Liu",
+        "Jianzhou Chen",
+        "Huijun Zhou",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhang0ZNLCZ025"
+    },
+    {
+      "id": "usenix-security-2025-164",
+      "title": "Doubly Dangerous: Evading Phishing Reporting Systems by Leveraging Email Tracking Techniques.",
+      "authors": [
+        "Anish Chand",
+        "Nick Nikiforakis",
+        "Phani Vadrevu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChandNV25"
+    },
+    {
+      "id": "usenix-security-2025-165",
+      "title": "Evaluating the Effectiveness and Robustness of Visual Similarity-based Phishing Detection Models.",
+      "authors": [
+        "Fujiao Ji",
+        "Kiho Lee",
+        "Hyungjoon Koo",
+        "Wenhao You",
+        "Euijin Choo",
+        "Hyoungshick Kim",
+        "Doowon Kim"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JiLKYCKK25"
+    },
+    {
+      "id": "usenix-security-2025-166",
+      "title": "Universal Cross-app Attacks: Exploiting and Securing OAuth 2.0 in Integration Platforms.",
+      "authors": [
+        "Kaixuan Luo",
+        "Xianbo Wang",
+        "Adonis P. H. Fung",
+        "Wing Cheong Lau",
+        "Julien Lecomte"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LuoWFLL25"
+    },
+    {
+      "id": "usenix-security-2025-167",
+      "title": "Predictive Response Optimization: Using Reinforcement Learning to Fight Online Social Network Abuse.",
+      "authors": [
+        "Garrett Wilson",
+        "Geoffrey Goh",
+        "Yan Jiang",
+        "Ajay Gupta",
+        "Jiaxuan Wang",
+        "David Freeman",
+        "Francesco Dinuzzo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WilsonGJGWFD25"
+    },
+    {
+      "id": "usenix-security-2025-168",
+      "title": "Hercules Droidot and the murder on the JNI Express.",
+      "authors": [
+        "Luca Di Bartolomeo",
+        "Philipp Mao",
+        "Yu-Jye Tung",
+        "Jessy Ayala",
+        "Samuele Doria",
+        "Paolo Celada",
+        "Marcel Busch",
+        "Joshua Garcia",
+        "Eleonora Losiouk",
+        "Mathias Payer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BartolomeoMTADC25"
+    },
+    {
+      "id": "usenix-security-2025-169",
+      "title": "No Way to Sign Out? Unpacking Non-Compliance with Google Play's App Account Deletion Requirements.",
+      "authors": [
+        "Jingwen Yan",
+        "Song Liao",
+        "Jin Ma",
+        "Mohammed Aldeen",
+        "Salish Kumar",
+        "Long Cheng 0005"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YanLMAK025"
+    },
+    {
+      "id": "usenix-security-2025-170",
+      "title": "Lost in the Mists of Time: Expirations in DNS Footprints of Mobile Apps.",
+      "authors": [
+        "Johnny So",
+        "Iskander S&#225;nchez-Rola",
+        "Nick Nikiforakis"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SoSN25"
+    },
+    {
+      "id": "usenix-security-2025-171",
+      "title": "TapTrap: Animation-Driven Tapjacking on Android.",
+      "authors": [
+        "Philipp Beer",
+        "Marco Squarcina",
+        "Sebastian Roth",
+        "Martina Lindorfer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BeerSRL25"
+    },
+    {
+      "id": "usenix-security-2025-172",
+      "title": "BulletCT: Towards More Scalable Ring Confidential Transactions With Transparent Setup.",
+      "authors": [
+        "Nan Wang 0028",
+        "Qianhui Wang",
+        "Dongxi Liu",
+        "Muhammed F. Esgin",
+        "Alsharif Abuadbba"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangWLEA25"
+    },
+    {
+      "id": "usenix-security-2025-173",
+      "title": "PolySys: an Algebraic Leakage Attack Engine.",
+      "authors": [
+        "Zachary Espiritu",
+        "Seny Kamara",
+        "Tarik Moataz",
+        "Andrew Park"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#EspirituKMP25"
+    },
+    {
+      "id": "usenix-security-2025-174",
+      "title": "Distributional Private Information Retrieval.",
+      "authors": [
+        "Ryan Lehmkuhl",
+        "Alexandra Henzinger",
+        "Henry Corrigan-Gibbs"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LehmkuhlHC25"
+    },
+    {
+      "id": "usenix-security-2025-175",
+      "title": "Practical Keyword Private Information Retrieval from Key-to-Index Mappings.",
+      "authors": [
+        "Meng Hao 0001",
+        "Weiran Liu",
+        "Liqiang Peng",
+        "Cong Zhang",
+        "Pengfei Wu 0003",
+        "Lei Zhang 0006",
+        "Hongwei Li 0001",
+        "Robert H. Deng"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001LPZ000D25"
+    },
+    {
+      "id": "usenix-security-2025-176",
+      "title": "SEAF: Secure Evaluation on Activation Functions with Dynamic Precision for Secure Two-Party Inference.",
+      "authors": [
+        "Hao Guo",
+        "Zhaoqian Liu",
+        "Ximing Fu",
+        "Zhusen Liu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuoLFL25"
+    },
+    {
+      "id": "usenix-security-2025-177",
+      "title": "Fast Enhanced Private Set Union in the Balanced and Unbalanced Scenarios.",
+      "authors": [
+        "Binbin Tu",
+        "Yujie Bai",
+        "Cong Zhang",
+        "Yang Cao 0023",
+        "Yu Chen 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TuBZCC25"
+    },
+    {
+      "id": "usenix-security-2025-178",
+      "title": "BEAT-MEV: Epochless Approach to Batched Threshold Encryption for MEV Prevention.",
+      "authors": [
+        "Jan Bormet",
+        "Sebastian Faust",
+        "Hussien Othman",
+        "Ziyan Qu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BormetFOQ25"
+    },
+    {
+      "id": "usenix-security-2025-179",
+      "title": "Practical Mempool Privacy via One-time Setup Batched Threshold Encryption.",
+      "authors": [
+        "Arka Rai Choudhuri",
+        "Sanjam Garg",
+        "Guru-Vamsi Policharla",
+        "Mingyuan Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChoudhuriGP025"
+    },
+    {
+      "id": "usenix-security-2025-180",
+      "title": "DeepFold: Efficient Multilinear Polynomial Commitment from Reed-Solomon Code and Its Application to Zero-knowledge Proofs.",
+      "authors": [
+        "Yanpei Guo",
+        "Xuanming Liu",
+        "Kexi Huang",
+        "Wenjie Qu 0001",
+        "Tianyang Tao",
+        "Jiaheng Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuoLH0TZ25"
+    },
+    {
+      "id": "usenix-security-2025-181",
+      "title": "Your Shield is My Sword: A Persistent Denial-of-Service Attack via the Reuse of Unvalidated Caches in DNSSEC Validation.",
+      "authors": [
+        "Shuhan Zhang",
+        "Shuai Wang 0028",
+        "Li Chen 0008",
+        "Dan Li 0001",
+        "Baojun Liu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Zhang000L25"
+    },
+    {
+      "id": "usenix-security-2025-182",
+      "title": "POPS: From History to Mitigation of DNS Cache Poisoning Attacks.",
+      "authors": [
+        "Yehuda Afek",
+        "Harel Berger",
+        "Anat Bremler-Barr"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AfekBB25"
+    },
+    {
+      "id": "usenix-security-2025-183",
+      "title": "DNS FLaRE: A Flush-Reload Attack on DNS Forwarders.",
+      "authors": [
+        "Gilad Moav",
+        "Yehuda Afek",
+        "Anat Bremler-Barr",
+        "Amit Klein 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MoavAB025"
+    },
+    {
+      "id": "usenix-security-2025-184",
+      "title": "Lemon: Network-Wide DDoS Detection with Routing-Oblivious Per-Flow Measurement.",
+      "authors": [
+        "Wenhao Wu",
+        "Zhenyu Li 0001",
+        "Xilai Liu",
+        "Zhaohua Wang",
+        "Heng Pan",
+        "Guangxing Zhang",
+        "Gaogang Xie"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Wu0LWPZX25"
+    },
+    {
+      "id": "usenix-security-2025-185",
+      "title": "Assessing the Aftermath: the Effects of a Global Takedown against DDoS-for-hire Services.",
+      "authors": [
+        "Anh V. Vu",
+        "Ben Collier",
+        "Daniel R. Thomas",
+        "John Kristoff",
+        "Richard Clayton 0001",
+        "Alice Hutchings"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VuCTK0H25"
+    },
+    {
+      "id": "usenix-security-2025-186",
+      "title": "BGP Vortex: Update Message Floods Can Create Internet Instabilities.",
+      "authors": [
+        "Felix St&#246;ger",
+        "Henry Birge-Lee",
+        "Giacomo Giuliari",
+        "Jordi Subir&#224; Nieto",
+        "Adrian Perrig"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#StogerBGNP25"
+    },
+    {
+      "id": "usenix-security-2025-187",
+      "title": "ImpROV: Measurement and Practical Mitigation of Collateral Damage in RPKI Route Origin Validation.",
+      "authors": [
+        "Weitong Li",
+        "Yuze Li",
+        "Taejoong Chung"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiLC25"
+    },
+    {
+      "id": "usenix-security-2025-188",
+      "title": "SoK: An Introspective Analysis of RPKI Security.",
+      "authors": [
+        "Donika Mirdita",
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MirditaSW25"
+    },
+    {
+      "id": "usenix-security-2025-189",
+      "title": "Onions Got Puzzled: On the Challenges of Mitigating Denial-of-Service Problems in Tor Onion Services.",
+      "authors": [
+        "Jinseo Lee",
+        "Hobin Kim",
+        "Min Suk Kang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LeeKK25"
+    },
+    {
+      "id": "usenix-security-2025-190",
+      "title": "We Have a Package for You! A Comprehensive Analysis of Package Hallucinations by Code Generating LLMs.",
+      "authors": [
+        "Joseph Spracklen",
+        "Raveen Wijewickrama",
+        "A. H. M. Nazmus Sakib",
+        "Anindya Maiti",
+        "Bimal Viswanath",
+        "Murtuza Jadliwala"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SpracklenWSMV25"
+    },
+    {
+      "id": "usenix-security-2025-191",
+      "title": "Mirage in the Eyes: Hallucination Attack on Multi-modal Large Language Models with Only Attention Sink.",
+      "authors": [
+        "Yining Wang",
+        "Mi Zhang 0001",
+        "Junjie Sun",
+        "Chenyue Wang",
+        "Min Yang 0002",
+        "Hui Xue 0001",
+        "Jialing Tao",
+        "Ranjie Duan",
+        "Jiexi Liu 0005"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Wang0SW00TD025"
+    },
+    {
+      "id": "usenix-security-2025-192",
+      "title": "&#34;I Cannot Write This Because It Violates Our Content Policy&#34;: Understanding Content Moderation Policies and User Experiences in Generative AI Products.",
+      "authors": [
+        "Lan Gao 0001",
+        "Oscar Chen",
+        "Rachel Lee",
+        "Nick Feamster",
+        "Chenhao Tan",
+        "Marshini Chetty"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001CLFTC25"
+    },
+    {
+      "id": "usenix-security-2025-193",
+      "title": "Are CAPTCHAs Still Bot-hard? Generalized Visual CAPTCHA Solving with Agentic Vision Language Model.",
+      "authors": [
+        "Xiwen Teoh",
+        "Yun Lin 0001",
+        "Siqi Li",
+        "Ruofan Liu",
+        "Avi Sollomoni",
+        "Yaniv Harel",
+        "Jin Song Dong 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Teoh0LLSH025"
+    },
+    {
+      "id": "usenix-security-2025-194",
+      "title": "Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents.",
+      "authors": [
+        "Fengyu Liu",
+        "Yuan Zhang 0009",
+        "Jiaqi Luo",
+        "Jiarun Dai",
+        "Tian Chen",
+        "Letian Yuan",
+        "Zhengmin Yu",
+        "Youkun Shi",
+        "Ke Li",
+        "Chengyuan Zhou",
+        "Hao Chen 0003",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Liu0LDCYYSLZ0025"
+    },
+    {
+      "id": "usenix-security-2025-195",
+      "title": "Machine Against the RAG: Jamming Retrieval-Augmented Generation with Blocker Documents.",
+      "authors": [
+        "Avital Shafran",
+        "Roei Schuster",
+        "Vitaly Shmatikov"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ShafranSS25"
+    },
+    {
+      "id": "usenix-security-2025-196",
+      "title": "Topic-FlipRAG: Topic-Orientated Adversarial Opinion Manipulation Attacks to Retrieval-Augmented Generation Models.",
+      "authors": [
+        "Yuyang Gong",
+        "Zhuo Chen",
+        "Jiawei Liu 0002",
+        "Miaokun Chen",
+        "Fengchang Yu",
+        "Wei Lu 0019",
+        "XiaoFeng Wang 0001",
+        "Xiaozhong Liu 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GongC0CY00L25"
+    },
+    {
+      "id": "usenix-security-2025-197",
+      "title": "PoisonedRAG: Knowledge Corruption Attacks to Retrieval-Augmented Generation of Large Language Models.",
+      "authors": [
+        "Wei Zou",
+        "Runpeng Geng",
+        "Binghui Wang",
+        "Jinyuan Jia 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZouGW025"
+    },
+    {
+      "id": "usenix-security-2025-198",
+      "title": "TracLLM: A Generic Framework for Attributing Long Context LLMs.",
+      "authors": [
+        "Yanting Wang 0001",
+        "Wei Zou",
+        "Runpeng Geng",
+        "Jinyuan Jia 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangZG025"
+    },
+    {
+      "id": "usenix-security-2025-199",
+      "title": "Sound of Interference: Electromagnetic Eavesdropping Attack on Digital Microphones Using Pulse Density Modulation.",
+      "authors": [
+        "Arifu Onishi",
+        "S. Hrushikesh Bhupathiraju",
+        "Rishikesh Bhatt",
+        "Sara Rampazzi",
+        "Takeshi Sugawara 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#OnishiBBR025"
+    },
+    {
+      "id": "usenix-security-2025-200",
+      "title": "TimeTravel: Real-time Timing Drift Attack on System Time Using Acoustic Waves.",
+      "authors": [
+        "Jianshuo Liu",
+        "Hong Li 0004",
+        "Haining Wang 0001",
+        "Mengjie Sun",
+        "Hui Wen 0001",
+        "Jinfa Wang",
+        "Limin Sun 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Liu00SWW025"
+    },
+    {
+      "id": "usenix-security-2025-201",
+      "title": "DiskSpy: Exploring a Long-Range Covert-Channel Attack via mmWave Sensing of &#956;m-level HDD Vibrations.",
+      "authors": [
+        "Weiye Xu 0001",
+        "Danli Wen",
+        "Jianwei Liu 0008",
+        "Zixin Lin",
+        "Yuanqing Zheng",
+        "Xian Xu",
+        "Jinsong Han"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#XuW0LZXH25"
+    },
+    {
+      "id": "usenix-security-2025-202",
+      "title": "HubBub: Contention-Based Side-Channel Attacks on USB Hubs.",
+      "authors": [
+        "Junpeng Wan",
+        "Yanxiang Bi",
+        "Han Gao",
+        "Dave (Jing) Tian"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WanBGT25"
+    },
+    {
+      "id": "usenix-security-2025-203",
+      "title": "Lost in Translation: Enabling Confused Deputy Attacks on EDA Software with TransFuzz.",
+      "authors": [
+        "Flavien Solt",
+        "Kaveh Razavi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SoltR25"
+    },
+    {
+      "id": "usenix-security-2025-204",
+      "title": "Automated Discovery of Semantic Attacks in Multi-Robot Navigation Systems.",
+      "authors": [
+        "Doguhan Yeke",
+        "Kartik Anand Pant",
+        "Muslum Ozgur Ozmen",
+        "Hyungsub Kim",
+        "James M. Goppert",
+        "Inseok Hwang 0002",
+        "Antonio Bianchi",
+        "Z. Berkay Celik"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YekePOKG0BC25"
+    },
+    {
+      "id": "usenix-security-2025-205",
+      "title": "The Ghost Navigator: Revisiting the Hidden Vulnerability of Localization in Autonomous Driving.",
+      "authors": [
+        "Junqi Zhang",
+        "Shaoyin Cheng",
+        "Linqing Hu",
+        "Jie Zhang 0073",
+        "Chengyu Shi",
+        "Xingshuo Han",
+        "Tianwei Zhang 0004",
+        "Yueqiang Cheng",
+        "Weiming Zhang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangCH0SH0C025"
+    },
+    {
+      "id": "usenix-security-2025-206",
+      "title": "NeuroScope: Reverse Engineering Deep Neural Network on Edge Devices using Dynamic Analysis.",
+      "authors": [
+        "Ruoyu Wu",
+        "Muqi Zou",
+        "Arslan Khan",
+        "Taegyu Kim",
+        "Dongyan Xu",
+        "Dave (Jing) Tian",
+        "Antonio Bianchi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WuZKKXTB25"
+    },
+    {
+      "id": "usenix-security-2025-207",
+      "title": "BarraCUDA: Edge GPUs do Leak DNN Weights.",
+      "authors": [
+        "P&#233;ter Horv&#225;th",
+        "Lukasz Chmielewski",
+        "L&#233;o Weissbart",
+        "Lejla Batina",
+        "Yuval Yarom"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HorvathCWBY25"
+    },
+    {
+      "id": "usenix-security-2025-208",
+      "title": "CollisionRepair: First-Aid and Automated Patching for Storage Collision Vulnerabilities in Smart Contracts.",
+      "authors": [
+        "Yu Pan",
+        "Wanjing Han",
+        "Yue Duan",
+        "Mu Zhang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PanHD025"
+    },
+    {
+      "id": "usenix-security-2025-209",
+      "title": "On the Atomicity and Efficiency of Blockchain Payment Channels.",
+      "authors": [
+        "Di Wu",
+        "Shoupeng Ren",
+        "Yuman Bai",
+        "Lipeng He",
+        "Jian Liu 0012",
+        "Wu Wen",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WuRBH0W0025"
+    },
+    {
+      "id": "usenix-security-2025-210",
+      "title": "Parallelizing Universal Atomic Swaps for Multi-Chain Cryptocurrency Exchanges.",
+      "authors": [
+        "Danlei Xiao",
+        "Chuan Zhang 0003",
+        "Haotian Deng",
+        "Jinwen Liang",
+        "Licheng Wang",
+        "Liehuang Zhu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Xiao0DLWZ25"
+    },
+    {
+      "id": "usenix-security-2025-211",
+      "title": "Automated Soundness and Completeness Vetting of Polygon zkEVM.",
+      "authors": [
+        "Xinghao Peng",
+        "Zhiyuan Sun",
+        "Kunsong Zhao",
+        "Zuchao Ma",
+        "Zihao Li 0001",
+        "Jinan Jiang",
+        "Xiapu Luo",
+        "Yinqian Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PengSZM0JLZ25"
+    },
+    {
+      "id": "usenix-security-2025-212",
+      "title": "Does Finality Gadget Finalize Your Block? A Case Study of Binance Consensus.",
+      "authors": [
+        "Rujia Li 0001",
+        "Jingyuan Ding",
+        "Qin Wang 0008",
+        "Keting Jia",
+        "Haibin Zhang",
+        "Sisi Duan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001D0JZD25"
+    },
+    {
+      "id": "usenix-security-2025-213",
+      "title": "Following Devils' Footprint: Towards Real-time Detection of Price Manipulation Attacks.",
+      "authors": [
+        "Bosi Zhang",
+        "Ningyu He",
+        "Xiaohui Hu",
+        "Kai Ma",
+        "Haoyu Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangHHMW25"
+    },
+    {
+      "id": "usenix-security-2025-214",
+      "title": "Recover from Excessive Faults in Partially-Synchronous BFT SMR.",
+      "authors": [
+        "Tiantian Gong",
+        "Gustavo Franco Camilo",
+        "Kartik Nayak",
+        "Andrew Lewis-Pye",
+        "Aniket Kate"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GongCNLK25"
+    },
+    {
+      "id": "usenix-security-2025-215",
+      "title": "TockOwl: Asynchronous Consensus with Fault and Network Adaptability.",
+      "authors": [
+        "Minghang Li",
+        "Qianhong Wu",
+        "Zhipeng Wang 0009",
+        "Bo Qin",
+        "Bohang Wei",
+        "Hang Ruan",
+        "Shihong Xiong",
+        "Zhenyang Ding"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiW0QWRXD25"
+    },
+    {
+      "id": "usenix-security-2025-216",
+      "title": "Thunderdome: Timelock-Free Rationally-Secure Virtual Channels.",
+      "authors": [
+        "Zeta Avarikioti",
+        "Yuheng Wang",
+        "Yuyi Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AvarikiotiWW25"
+    },
+    {
+      "id": "usenix-security-2025-217",
+      "title": "The Doom of Device Drivers: Your Android Device (Most Likely) has N-Day Kernel Vulnerabilities.",
+      "authors": [
+        "Lukas Maar",
+        "Florian Draschbacher",
+        "Lorenz Schumm",
+        "Ernesto Mart&#237;nez Garc&#237;a",
+        "Stefan Mangard"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaarDSGM25"
+    },
+    {
+      "id": "usenix-security-2025-218",
+      "title": "NASS: Fuzzing All Native Android System Services with Interface Awareness and Coverage.",
+      "authors": [
+        "Philipp Mao",
+        "Marcel Busch",
+        "Mathias Payer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaoBP25"
+    },
+    {
+      "id": "usenix-security-2025-219",
+      "title": "Ariadne: Navigating through the Labyrinth of Data-Driven Customization Inconsistencies in Android.",
+      "authors": [
+        "Parjanya Vyas",
+        "Haseeb Ur Rehman Faheem",
+        "Yousra Aafer",
+        "N. Asokan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VyasFAA25"
+    },
+    {
+      "id": "usenix-security-2025-220",
+      "title": "Harness: Transparent and Lightweight Protection of Vehicle Control on Untrusted Android Automotive Operating System.",
+      "authors": [
+        "Haochen Gong",
+        "Siyu Hong",
+        "Shenyi Yang",
+        "Rui Chang",
+        "Wenbo Shen",
+        "Ziqi Yuan",
+        "Chenyang Yu",
+        "Yajin Zhou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GongHYCSYYZ25"
+    },
+    {
+      "id": "usenix-security-2025-221",
+      "title": "Scoop: Mitigation of Recapture Attacks on Provenance-Based Media Authentication.",
+      "authors": [
+        "Yuxin (Myles) Liu",
+        "Habiba Farrukh",
+        "Ardalan Amiri Sani",
+        "Sharad Agarwal",
+        "Gene Tsudik"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuFSAT25"
+    },
+    {
+      "id": "usenix-security-2025-222",
+      "title": "Chimera: Creating Digitally Signed Fake Photos by Fooling Image Recapture and Deepfake Detectors.",
+      "authors": [
+        "Seongbin Park",
+        "Alexander Vilesov",
+        "Jinghuai Zhang",
+        "Hossein Khalili",
+        "Yuan Tian",
+        "Achuta Kadambi",
+        "Nader Sehatbakhsh"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ParkVZKTKS25"
+    },
+    {
+      "id": "usenix-security-2025-223",
+      "title": "Principled and Automated Approach for Investigating AR/VR Attacks.",
+      "authors": [
+        "Muhammad Shoaib",
+        "Alex Suh",
+        "Wajih Ul Hassan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ShoaibSH25"
+    },
+    {
+      "id": "usenix-security-2025-224",
+      "title": "Tracking You from a Thousand Miles Away! Turning a Bluetooth Device into an Apple AirTag Without Root Privileges.",
+      "authors": [
+        "Junming Chen",
+        "Xiaoyue Ma",
+        "Lannan Luo",
+        "Qiang Zeng 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenML025"
+    },
+    {
+      "id": "usenix-security-2025-225",
+      "title": "ChoiceJacking: Compromising Mobile Devices through Malicious Chargers like a Decade ago.",
+      "authors": [
+        "Florian Draschbacher",
+        "Lukas Maar",
+        "Mathias Oberhuber",
+        "Stefan Mangard"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DraschbacherMOM25"
+    },
+    {
+      "id": "usenix-security-2025-226",
+      "title": "PATCHAGENT: A Practical Program Repair Agent Mimicking Human Expertise.",
+      "authors": [
+        "Zheng Yu 0003",
+        "Ziyi Guo",
+        "Yuhang Wu 0003",
+        "Jiahao Yu 0001",
+        "Meng Xu 0001",
+        "Dongliang Mu",
+        "Yan Chen 0004",
+        "Xinyu Xing 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0003G00XM0025"
+    },
+    {
+      "id": "usenix-security-2025-227",
+      "title": "Logs In, Patches Out: Automated Vulnerability Repair via Tree-of-Thought LLM Analysis.",
+      "authors": [
+        "Youngjoon Kim 0001",
+        "Sunguk Shin 0001",
+        "Hyoungshick Kim",
+        "Jiwon Yoon 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Kim0KY25"
+    },
+    {
+      "id": "usenix-security-2025-228",
+      "title": "SoK: Automated Vulnerability Repair: Methods, Tools, and Assessments.",
+      "authors": [
+        "Yiwei Hu",
+        "Zhen Li 0027",
+        "Kedie Shu",
+        "Shenghua Guan",
+        "Deqing Zou",
+        "Shouhuai Xu",
+        "Bin Yuan",
+        "Hai Jin 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Hu0SGZXY025"
+    },
+    {
+      "id": "usenix-security-2025-229",
+      "title": "SoK: Towards Effective Automated Vulnerability Repair.",
+      "authors": [
+        "Ying Li 0095",
+        "Faysal Hossain Shezan",
+        "Bomin Wei",
+        "Gang Wang 0011",
+        "Yuan Tian 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0095SW0025"
+    },
+    {
+      "id": "usenix-security-2025-230",
+      "title": "VULCANBOOST: Boosting ReDoS Fixes through Symbolic Representation and Feature Normalization.",
+      "authors": [
+        "Yeting Li",
+        "Yecheng Sun",
+        "Zhiwu Xu 0001",
+        "Haiming Chen 0001",
+        "Xinyi Wang 0013",
+        "Hengyu Yang",
+        "Huina Chao",
+        "Cen Zhang",
+        "Yang Xiao 0011",
+        "Yanyan Zou 0002",
+        "Feng Li 0045",
+        "Wei Huo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiS00WYCZ000H25"
+    },
+    {
+      "id": "usenix-security-2025-231",
+      "title": "APPATCH: Automated Adaptive Prompting Large Language Models for Real-World Software Vulnerability Patching.",
+      "authors": [
+        "Yu Nong",
+        "Haoran Yang 0002",
+        "Long Cheng 0005",
+        "Hongxin Hu",
+        "Haipeng Cai"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NongY0HC25"
+    },
+    {
+      "id": "usenix-security-2025-232",
+      "title": "RangeSanitizer: Detecting Memory Errors with Efficient Range Checks.",
+      "authors": [
+        "Floris Gorter",
+        "Cristiano Giuffrida"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GorterG25"
+    },
+    {
+      "id": "usenix-security-2025-233",
+      "title": "DISPATCH: Unraveling Security Patches from Entangled Code Changes.",
+      "authors": [
+        "Shiyu Sun",
+        "Yunlong Xing",
+        "Xinda Wang 0001",
+        "Shu Wang 0004",
+        "Qi Li 0002",
+        "Kun Sun 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SunX00L025"
+    },
+    {
+      "id": "usenix-security-2025-234",
+      "title": "Attacker Control and Bug Prioritization.",
+      "authors": [
+        "Guilhem Lacombe",
+        "S&#233;bastien Bardin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LacombeB25"
+    },
+    {
+      "id": "usenix-security-2025-235",
+      "title": "VoiceWukong: Benchmarking Deepfake Voice Detection.",
+      "authors": [
+        "Ziwei Yan",
+        "Yanjie Zhao 0001",
+        "Haoyu Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Yan0025"
+    },
+    {
+      "id": "usenix-security-2025-236",
+      "title": "SafeSpeech: Robust and Universal Voice Protection Against Malicious Speech Synthesis.",
+      "authors": [
+        "Zhisheng Zhang",
+        "Derui Wang",
+        "Qianyi Yang",
+        "Pengyang Huang",
+        "Junhan Pu",
+        "Yuxin Cao",
+        "Kai Ye",
+        "Jie Hao 0001",
+        "Yixian Yang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangWYHPCY0Y25"
+    },
+    {
+      "id": "usenix-security-2025-237",
+      "title": "AUDIO WATERMARK: Dynamic and Harmless Watermark for Black-box Voice Dataset Copyright Protection.",
+      "authors": [
+        "Hanqing Guo",
+        "Junfeng Guo",
+        "Bocheng Chen",
+        "Yuanda Wang",
+        "Xun Chen",
+        "Heng Huang 0001",
+        "Qiben Yan",
+        "Li Xiao 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuoGCWCHY025"
+    },
+    {
+      "id": "usenix-security-2025-238",
+      "title": "SoK: Automated TTP Extraction from CTI Reports - Are We There Yet?",
+      "authors": [
+        "Marvin B&#252;chel",
+        "Tommaso Paladini",
+        "Stefano Longari",
+        "Michele Carminati",
+        "Stefano Zanero",
+        "Hodaya Binyamini",
+        "Gal Engelberg",
+        "Dan Klein 0003",
+        "Giancarlo Guizzardi",
+        "Marco Caselli",
+        "Andrea Continella",
+        "Maarten van Steen",
+        "Andreas Peter 0001",
+        "Thijs van Ede"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BuchelPLCZBE0GC25"
+    },
+    {
+      "id": "usenix-security-2025-239",
+      "title": "Whispering Under the Eaves: Protecting User Privacy Against Commercial and LLM-powered Automatic Speech Recognition Systems.",
+      "authors": [
+        "Weifei Jin",
+        "Yuxin Cao",
+        "Junjie Su",
+        "Derui Wang",
+        "Yedi Zhang",
+        "Minhui Xue 0001",
+        "Jie Hao 0001",
+        "Jin Song Dong 0001",
+        "Yixian Yang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JinCSWZ00DY25"
+    },
+    {
+      "id": "usenix-security-2025-240",
+      "title": "AudioMarkNet: Audio Watermarking for Deepfake Speech Detection.",
+      "authors": [
+        "Wei Zong",
+        "Yang-Wai Chow",
+        "Willy Susilo",
+        "Joonsang Baek",
+        "Seyit Camtepe"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZongCSBC25"
+    },
+    {
+      "id": "usenix-security-2025-241",
+      "title": "SoK: Efficiency Robustness of Dynamic Deep Learning Systems.",
+      "authors": [
+        "Ravishka Rathnasuriya",
+        "Tingxi Li",
+        "Zexin Xu",
+        "Zihe Song",
+        "Mirazul Haque",
+        "Simin Chen",
+        "Wei Yang 0013"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RathnasuriyaLXS25"
+    },
+    {
+      "id": "usenix-security-2025-242",
+      "title": "From Meme to Threat: On the Hateful Meme Understanding and Induced Hateful Content Generation in Open-Source Vision Language Models.",
+      "authors": [
+        "Yihan Ma 0001",
+        "Xinyue Shen 0001",
+        "Yiting Qu",
+        "Ning Yu 0006",
+        "Michael Backes 0001",
+        "Savvas Zannettou",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00010Q00Z025"
+    },
+    {
+      "id": "usenix-security-2025-243",
+      "title": "When Translators Refuse to Translate: A Novel Attack to Speech Translation Systems.",
+      "authors": [
+        "Haolin Wu 0001",
+        "Chang Liu 0089",
+        "Jing Chen 0003",
+        "Ruiying Du",
+        "Kun He 0008",
+        "Yu Zhang 0036",
+        "Cong Wu 0003",
+        "Tianwei Zhang 0004",
+        "Qing Guo 0005",
+        "Jie Zhang 0073"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WuL0D00000025"
+    },
+    {
+      "id": "usenix-security-2025-244",
+      "title": "MalGuard: Towards Real-Time, Accurate, and Actionable Detection of Malicious Packages in PyPI Ecosystem.",
+      "authors": [
+        "Xingan Gao",
+        "Xiaobing Sun 0001",
+        "Sicong Cao",
+        "Kaifeng Huang 0001",
+        "Di Wu",
+        "Xiaolei Liu",
+        "Xingwei Lin",
+        "Yang Xiang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Gao0C0WLLX25"
+    },
+    {
+      "id": "usenix-security-2025-245",
+      "title": "VAPD: An Anomaly Detection Model for PDF Malware Forensics with Adversarial Robustness.",
+      "authors": [
+        "Side Liu",
+        "Jiang Ming 0002",
+        "Yilin Zhou",
+        "Jianming Fu",
+        "Guojun Peng"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Liu0ZFP25"
+    },
+    {
+      "id": "usenix-security-2025-246",
+      "title": "NOKEScam: Understanding and Rectifying Non-Sense Keywords Spear Scam in Search Engines.",
+      "authors": [
+        "Mingxuan Liu 0006",
+        "Yunyi Zhang",
+        "Lijie Wu",
+        "Baojun Liu 0002",
+        "Geng Hong",
+        "Yiming Zhang 0009",
+        "Hui Jiang",
+        "Jia Zhang 0004",
+        "Haixin Duan",
+        "Min Zhang 0054",
+        "Wei Guan",
+        "Fan Shi 0003",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuZWLH0J0D0GS025"
+    },
+    {
+      "id": "usenix-security-2025-247",
+      "title": "The Ransomware Decade: The Creation of a Fine-Grained Dataset and a Longitudinal Study.",
+      "authors": [
+        "Armin Sarabi",
+        "Ziyuan Huang 0004",
+        "Chenlan Wang 0001",
+        "Tai Karir",
+        "Mingyan Liu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SarabiH0KL25"
+    },
+    {
+      "id": "usenix-security-2025-248",
+      "title": "High Stakes, Low Certainty: Evaluating the Efficacy of High-Level Indicators of Compromise in Ransomware Attribution.",
+      "authors": [
+        "Max van der Horst",
+        "Ricky Kho",
+        "Olga Gadyatskaya",
+        "Michel Mollema",
+        "Michel van Eeten",
+        "Yury Zhauniarovich"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HorstKGMEZ25"
+    },
+    {
+      "id": "usenix-security-2025-249",
+      "title": "DarkGram: A Large-Scale Analysis of Cybercriminal Activity Channels on Telegram.",
+      "authors": [
+        "Sayak Saha Roy",
+        "Elham Pourabbas Vafa",
+        "Kobra Khanmohamaddi",
+        "Shirin Nilizadeh"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RoyVKN25"
+    },
+    {
+      "id": "usenix-security-2025-250",
+      "title": "&#34;Please don't send that bot anything&#34;: A Mixed-methods Study of Personal Impersonation Attacks Targeting Digital Payments on Social Media.",
+      "authors": [
+        "Hoang Dai Nguyen",
+        "Sumit Dhungana",
+        "Madhulika Itha",
+        "Phani Vadrevu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NguyenDIV25"
+    },
+    {
+      "id": "usenix-security-2025-251",
+      "title": "'Hey mum, I dropped my phone down the toilet': Investigating Hi Mum and Dad SMS Scams in the United Kingdom.",
+      "authors": [
+        "Sharad Agarwal",
+        "Emma Harvey",
+        "Enrico Mariconti",
+        "Guillermo Suarez-Tangil",
+        "Marie Vasek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AgarwalHMSV25"
+    },
+    {
+      "id": "usenix-security-2025-252",
+      "title": "Fighting Fire with Fire: Continuous Attack for Adversarial Android Malware Detection.",
+      "authors": [
+        "Yinyuan Zhang",
+        "Cuiying Gao",
+        "Yueming Wu 0001",
+        "Shihan Dou",
+        "Cong Wu 0003",
+        "Ying Zhang 0066",
+        "Wei Yuan 0001",
+        "Yang Liu 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangG0D0Z0025"
+    },
+    {
+      "id": "usenix-security-2025-253",
+      "title": "Hobbit: Space-Efficient zkSNARK with Optimal Prover Time.",
+      "authors": [
+        "Christodoulos Pappas",
+        "Dimitrios Papadopoulos 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Pappas025"
+    },
+    {
+      "id": "usenix-security-2025-254",
+      "title": "A Tale of Two Worlds, a Formal Story of WireGuard Hybridization.",
+      "authors": [
+        "Pascal Lafourcade 0001",
+        "Dhekra Mahmoud",
+        "Sylvain Ruhault",
+        "Abdul Rahman Taleb"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001MRT25"
+    },
+    {
+      "id": "usenix-security-2025-255",
+      "title": "Improved Secure Two-party Computation from a Geometric Perspective.",
+      "authors": [
+        "Hao Guo",
+        "Liqiang Peng",
+        "Haiyang Xue",
+        "Li Peng",
+        "Weiran Liu",
+        "Zhe Liu",
+        "Lei Hu 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuoPXPLL025"
+    },
+    {
+      "id": "usenix-security-2025-256",
+      "title": "Secure Caches for Compartmentalized Software.",
+      "authors": [
+        "Kerem Arikan",
+        "Huaxin Tang",
+        "Williams Zhang Cen",
+        "Yu David Liu",
+        "Nael B. Abu-Ghazaleh",
+        "Dmitry Ponomarev 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ArikanTCLA025"
+    },
+    {
+      "id": "usenix-security-2025-257",
+      "title": "zk-promises: Anonymous Moderation, Reputation, and Blocking from Anonymous Credentials with Callbacks.",
+      "authors": [
+        "Maurice Shih",
+        "Michael Rosenberg",
+        "Hari Kailad",
+        "Ian Miers"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ShihRKM25"
+    },
+    {
+      "id": "usenix-security-2025-258",
+      "title": "A Formal Analysis of Apple's iMessage PQ3 Protocol.",
+      "authors": [
+        "Felix Linker",
+        "Ralf Sasse",
+        "David A. Basin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LinkerSB25"
+    },
+    {
+      "id": "usenix-security-2025-259",
+      "title": "Towards Practical, End-to-End Formally Verified X.509 Certificate Validators with Verdict.",
+      "authors": [
+        "Zhengyao Lin",
+        "Michael McLoughlin",
+        "Pratap Singh",
+        "Rory Brennan-Jones",
+        "Paul Hitchcox",
+        "Joshua Gancher",
+        "Bryan Parno"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LinMSBHGP25"
+    },
+    {
+      "id": "usenix-security-2025-260",
+      "title": "PICACHV: Formally Verified Data Use Policy Enforcement for Secure Data Analytics.",
+      "authors": [
+        "Haobin Hiroki Chen",
+        "Hongbo Chen",
+        "Mingshen Sun",
+        "Chenghong Wang",
+        "XiaoFeng Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenCSW025"
+    },
+    {
+      "id": "usenix-security-2025-261",
+      "title": "OwlC: Compiling Security Protocols to Verified, Secure, High-Performance Libraries.",
+      "authors": [
+        "Pratap Singh",
+        "Joshua Gancher",
+        "Bryan Parno"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SinghGP25"
+    },
+    {
+      "id": "usenix-security-2025-262",
+      "title": "On the Virtues of Information Security in the UK Climate Movement.",
+      "authors": [
+        "Mikaela Brough",
+        "Rikke Bjerg Jensen",
+        "Martin R. Albrecht"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BroughJA25"
+    },
+    {
+      "id": "usenix-security-2025-263",
+      "title": "Tracking the Takes and Trajectories of English-Language News Narratives across Trustworthy and Worrisome Websites.",
+      "authors": [
+        "Hans W. A. Hanley",
+        "Emily Okabe",
+        "Zakir Durumeric"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HanleyOD25"
+    },
+    {
+      "id": "usenix-security-2025-264",
+      "title": "&#34;No, I Can't Be a Security Personnel on Your Phone&#34;: Security and Privacy Threats From Sharing Infrastructure in Rural Ghana.",
+      "authors": [
+        "Emmanuel Tweneboah",
+        "Collins W. Munyendo",
+        "Yixin Zou"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TweneboahMZ25"
+    },
+    {
+      "id": "usenix-security-2025-265",
+      "title": "Regulating Smart Device Support Periods: User Expectations and the European Cyber Resilience Act.",
+      "authors": [
+        "Lorenz Kustosch",
+        "Carlos Ga&#241;&#225;n",
+        "Mattis van 't Schip",
+        "Michel van Eeten",
+        "Simon Parkin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KustoschGSEP25"
+    },
+    {
+      "id": "usenix-security-2025-266",
+      "title": "Characterizing the MrDeepFakes Sexual Deepfake Marketplace.",
+      "authors": [
+        "Catherine Han",
+        "Anne Li",
+        "Deepak Kumar 0006",
+        "Zakir Durumeric"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HanL0D25"
+    },
+    {
+      "id": "usenix-security-2025-267",
+      "title": "Vulnerability of Text-Matching in ML/AI Conference Reviewer Assignments to Collusions.",
+      "authors": [
+        "Jhih-Yi Hsieh",
+        "Aditi Raghunathan",
+        "Nihar B. Shah"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HsiehRS25"
+    },
+    {
+      "id": "usenix-security-2025-268",
+      "title": "Dormant: Defending against Pose-driven Human Image Animation.",
+      "authors": [
+        "Jiachen Zhou 0001",
+        "Mingsi Wang",
+        "Tianlin Li",
+        "Guozhu Meng",
+        "Kai Chen 0012"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001WLM025"
+    },
+    {
+      "id": "usenix-security-2025-269",
+      "title": "The Conspiracy Money Machine: Uncovering Telegram's Conspiracy Channels and their Profit Model.",
+      "authors": [
+        "Vincenzo Imperati",
+        "Massimo La Morgia",
+        "Alessandro Mei",
+        "Alberto Maria Mongardini",
+        "Francesco Sassi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ImperatiMMMS25"
+    },
+    {
+      "id": "usenix-security-2025-270",
+      "title": "SoK: Machine Learning for Misinformation Detection.",
+      "authors": [
+        "Madelyne Xiao",
+        "Jonathan R. Mayer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#XiaoM25"
+    },
+    {
+      "id": "usenix-security-2025-271",
+      "title": "LLFuzz: An Over-the-Air Dynamic Testing Framework for Cellular Baseband Lower Layers.",
+      "authors": [
+        "Tuan Dinh Hoang",
+        "Taekkyung Oh",
+        "CheolJun Park",
+        "Insu Yun",
+        "Yongdae Kim"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HoangOPYK25"
+    },
+    {
+      "id": "usenix-security-2025-272",
+      "title": "Preventing Artificially Inflated SMS Attacks through Large-Scale Traffic Inspection.",
+      "authors": [
+        "Jun Ho Huh",
+        "Hyejin Shin",
+        "Sunwoo Ahn",
+        "Hayoon Yi",
+        "Joonho Cho",
+        "Taewoo Kim",
+        "Minchae Lim",
+        "Nu-El Choi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuhSAYCKLC25"
+    },
+    {
+      "id": "usenix-security-2025-273",
+      "title": "GLaDoS: Location-aware Denial-of-Service of Cellular Networks.",
+      "authors": [
+        "Simon Erni",
+        "Martin Kotuliak",
+        "Richard Baker 0008",
+        "Ivan Martinovic",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ErniK0MC25"
+    },
+    {
+      "id": "usenix-security-2025-274",
+      "title": "AKMA+: Security and Privacy-Enhanced and Standard-Compatible AKMA for 5G Communication.",
+      "authors": [
+        "Yang Yang 0026",
+        "Guomin Yang",
+        "Yingjiu Li",
+        "Minming Huang",
+        "Zilin Shen",
+        "Imtiaz Karim",
+        "Ralf Sasse",
+        "David A. Basin",
+        "Elisa Bertino",
+        "Jian Weng 0001",
+        "HweeHwa Pang",
+        "Robert H. Deng"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0026YLHSKSBB0PD25"
+    },
+    {
+      "id": "usenix-security-2025-275",
+      "title": "A Thorough Security Analysis of BLE Proximity Tracking Protocols.",
+      "authors": [
+        "Xiaofeng Liu 0013",
+        "Chaoshun Zuo",
+        "Qinsheng Hou",
+        "Pengcheng Ren",
+        "Jianliang Wu 0002",
+        "Qingchuan Zhao",
+        "Shanqing Guo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0013ZHR0ZG25"
+    },
+    {
+      "id": "usenix-security-2025-276",
+      "title": "Gotta Detect 'Em All: Fake Base Station and Multi-Step Attack Detection in Cellular Networks.",
+      "authors": [
+        "Kazi Samin Mubasshir",
+        "Imtiaz Karim",
+        "Elisa Bertino"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MubasshirKB25"
+    },
+    {
+      "id": "usenix-security-2025-277",
+      "title": "SNI5GECT: A Practical Approach to Inject aNRchy into 5G NR.",
+      "authors": [
+        "Shijie Luo",
+        "Matheus E. Garbelini",
+        "Sudipta Chattopadhyay 0001",
+        "Jianying Zhou 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LuoG0025"
+    },
+    {
+      "id": "usenix-security-2025-278",
+      "title": "CoreCrisis: Threat-Guided and Context-Aware Iterative Learning and Fuzzing of 5G Core Networks.",
+      "authors": [
+        "Yilu Dong",
+        "Tianchang Yang",
+        "Abdullah Al Ishtiaq",
+        "Syed Md. Mukit Rashid",
+        "Ali Ranjbar",
+        "Kai Tu",
+        "Tianwei Wu",
+        "Md. Sultan Mahmud",
+        "Syed Rafiul Hussain"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DongYIRRTWMH25"
+    },
+    {
+      "id": "usenix-security-2025-279",
+      "title": "eSIMplicity or eSIMplification? Privacy and Security Risks in the eSIM Ecosystem.",
+      "authors": [
+        "Maryam Motallebighomi",
+        "Jason Veara",
+        "Evangelos Bitsikas",
+        "Aanjhan Ranganathan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MotallebighomiV25"
+    },
+    {
+      "id": "usenix-security-2025-280",
+      "title": "Disparate Privacy Vulnerability: Targeted Attribute Inference Attacks and Defenses.",
+      "authors": [
+        "Ehsanul Kabir",
+        "Lucas Craig",
+        "Shagufta Mehnaz"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KabirCM25"
+    },
+    {
+      "id": "usenix-security-2025-281",
+      "title": "Enhanced Label-Only Membership Inference Attacks with Fewer Queries.",
+      "authors": [
+        "Hao Li 0092",
+        "Zheng Li 0023",
+        "Siyuan Wu",
+        "Yutong Ye 0002",
+        "Min Zhang 0043",
+        "Dengguo Feng",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00920W00F025"
+    },
+    {
+      "id": "usenix-security-2025-282",
+      "title": "For Human Ears Only: Preventing Automated Monitoring on Voice Data.",
+      "authors": [
+        "Irtaza Shahid",
+        "Nirupam Roy"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ShahidR25"
+    },
+    {
+      "id": "usenix-security-2025-283",
+      "title": "Towards a Re-evaluation of Data Forging Attacks in Practice.",
+      "authors": [
+        "Mohamed Suliman 0002",
+        "Anisa Halimi",
+        "Swanand Ravindra Kadhe",
+        "Nathalie Baracaldo",
+        "Douglas J. Leith"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002HKBL25"
+    },
+    {
+      "id": "usenix-security-2025-284",
+      "title": "Free Record-Level Privacy Risk Evaluation Through Artifact-Based Methods.",
+      "authors": [
+        "Joseph Pollock",
+        "Igor Shilov",
+        "Euodia Dodd",
+        "Yves-Alexandre de Montjoye"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PollockSDM25"
+    },
+    {
+      "id": "usenix-security-2025-285",
+      "title": "Rectifying Privacy and Efficacy Measurements in Machine Unlearning: A New Inference Attack Perspective.",
+      "authors": [
+        "Nima Naderloui",
+        "Shenao Yan",
+        "Binghui Wang",
+        "Jie Fu 0003",
+        "Wendy Hui Wang",
+        "Weiran Liu",
+        "Yuan Hong 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NaderlouiYW0WL025"
+    },
+    {
+      "id": "usenix-security-2025-286",
+      "title": "Phantom: Privacy-Preserving Deep Neural Network Model Obfuscation in Heterogeneous TEE and GPU System.",
+      "authors": [
+        "Juyang Bai",
+        "Md Hafizul Islam Chowdhuryy",
+        "Jingtao Li",
+        "Fan Yao 0001",
+        "Chaitali Chakrabarti",
+        "Deliang Fan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BaiCLYCF25"
+    },
+    {
+      "id": "usenix-security-2025-287",
+      "title": "LOHEN: Layer-wise Optimizations for Neural Network Inferences over Encrypted Data with High Performance or Accuracy.",
+      "authors": [
+        "Kevin Nam",
+        "Youyeon Joo",
+        "Dongju Lee",
+        "Seungjin Ha",
+        "Hyunyoung Oh",
+        "Hyungon Moon",
+        "Yunheung Paek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NamJLHOMP25"
+    },
+    {
+      "id": "usenix-security-2025-288",
+      "title": "SoK: Data Reconstruction Attacks Against Machine Learning Models: Definition, Metrics, and Benchmark.",
+      "authors": [
+        "Rui Wen 0002",
+        "Yiyong Liu",
+        "Michael Backes 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002L0025"
+    },
+    {
+      "id": "usenix-security-2025-289",
+      "title": "McSee: Evaluating Advanced Rowhammer Attacks and Defenses via Automated DRAM Traffic Analysis.",
+      "authors": [
+        "Patrick Jattke",
+        "Michele Marazzi",
+        "Flavien Solt",
+        "Max Wipfli",
+        "Stefan Gloor",
+        "Kaveh Razavi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JattkeMSWGR25"
+    },
+    {
+      "id": "usenix-security-2025-290",
+      "title": "Not so Refreshing: Attacking GPUs using RFM Rowhammer Mitigation.",
+      "authors": [
+        "Ravan Nazaraliyev",
+        "Yicheng Zhang 0004",
+        "Sankha Baran Dutta",
+        "Andr&#233;s M&#225;rquez 0001",
+        "Kevin J. Barker",
+        "Nael B. Abu-Ghazaleh"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NazaraliyevZD0B25"
+    },
+    {
+      "id": "usenix-security-2025-291",
+      "title": "Posthammer: Pervasive Browser-based Rowhammer Attacks with Postponed Refresh Commands.",
+      "authors": [
+        "Finn de Ridder",
+        "Patrick Jattke",
+        "Kaveh Razavi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RidderJR25"
+    },
+    {
+      "id": "usenix-security-2025-292",
+      "title": "ECC.fail: Mounting Rowhammer Attacks on DDR4 Servers with ECC Memory.",
+      "authors": [
+        "Nureddin Kamadan",
+        "Walter Wang",
+        "Stephan van Schaik",
+        "Christina Garman",
+        "Daniel Genkin",
+        "Yuval Yarom"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KamadanWSGGY25"
+    },
+    {
+      "id": "usenix-security-2025-293",
+      "title": "Relocate-Vote: Using Sparsity Information to Exploit Ciphertext Side-Channels.",
+      "authors": [
+        "Yuqin Yan",
+        "Wei Huang 0027",
+        "Ilya Grishchenko",
+        "Gururaj Saileshwar",
+        "Aastha Mehta",
+        "David Lie"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Yan0GSML25"
+    },
+    {
+      "id": "usenix-security-2025-294",
+      "title": "GPUHammer: Rowhammer Attacks on GPU Memories are Practical.",
+      "authors": [
+        "Chris S. Lin",
+        "Joyce Qu",
+        "Gururaj Saileshwar"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LinQS25"
+    },
+    {
+      "id": "usenix-security-2025-295",
+      "title": "SCASE: Automated Secret Recovery via Side-Channel-Assisted Symbolic Execution.",
+      "authors": [
+        "Daniel Weber 0007",
+        "Lukas Gerlach 0001",
+        "Leon Trampert",
+        "Youheng L&#252;",
+        "Jo Van Bulck",
+        "Michael Schwarz 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00070TLB025"
+    },
+    {
+      "id": "usenix-security-2025-296",
+      "title": "Shadows in Cipher Spaces: Exploiting Tweak Repetition in Hardware Memory Encryption.",
+      "authors": [
+        "Wei Peng",
+        "Yinshuai Li",
+        "Yinqian Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PengLZ25"
+    },
+    {
+      "id": "usenix-security-2025-297",
+      "title": "Breaking the Blindfold: Deep Learning-based Blind Side-channel Analysis.",
+      "authors": [
+        "Azade Rezaeezade",
+        "Trevor Yap",
+        "Dirmanto Jap",
+        "Shivam Bhasin",
+        "Stjepan Picek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RezaeezadeYJBP25"
+    },
+    {
+      "id": "usenix-security-2025-298",
+      "title": "Addressing the Address Books' (Interdependent) Privacy Issues.",
+      "authors": [
+        "Kavous Salehzadeh Niksirat",
+        "Lev Velykoivanenko",
+        "Samuel M&#228;tzler",
+        "Stephan Mulders",
+        "Aurelia Tam&#242;-Larrieux",
+        "Marc-Olivier Boldi",
+        "Mathias Humbert",
+        "K&#233;vin Huguenin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NiksiratVMMTBHH25"
+    },
+    {
+      "id": "usenix-security-2025-299",
+      "title": "HyTrack: Resurrectable and Persistent Tracking Across Android Apps and the Web.",
+      "authors": [
+        "Malte Wessels",
+        "Simon Koch 0001",
+        "Jan Drescher",
+        "Louis Bettels",
+        "David Klein 0001",
+        "Martin Johns"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Wessels0DB0J25"
+    },
+    {
+      "id": "usenix-security-2025-300",
+      "title": "I Can Tell Your Secrets: Inferring Privacy Attributes from Mini-app Interaction History in Super-apps.",
+      "authors": [
+        "Yifeng Cai",
+        "Ziqi Zhang",
+        "Mengyu Yao",
+        "Junlin Liu",
+        "Xiaoke Zhao",
+        "Xinyi Fu",
+        "Ruoyu Li",
+        "Zhe Liu 0001",
+        "Xiangqun Chen",
+        "Yao Guo 0001",
+        "Ding Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#CaiZYLZFL0C0025"
+    },
+    {
+      "id": "usenix-security-2025-301",
+      "title": "Seeing Through: Analyzing and Attacking Virtual Backgrounds in Video Calls.",
+      "authors": [
+        "Felix Weissberg",
+        "Jan Malte Hilgefort",
+        "Steve Grogorick",
+        "Daniel Arp",
+        "Thorsten Eisenhofer",
+        "Martin Eisemann",
+        "Konrad Rieck"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WeissbergHGAEER25"
+    },
+    {
+      "id": "usenix-security-2025-302",
+      "title": "Endangered Privacy: Large-Scale Monitoring of Video Streaming Services.",
+      "authors": [
+        "Martin Bj&#246;rklund",
+        "Romaric Duvignau"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BjorklundD25"
+    },
+    {
+      "id": "usenix-security-2025-303",
+      "title": "Bots can Snoop: Uncovering and Mitigating Privacy Risks of Bots in Group Chats.",
+      "authors": [
+        "Kai-Hsiang Chou",
+        "Yi-Min Lin",
+        "Yi-An Wang",
+        "Jonathan Weiping Li",
+        "Tiffany Hyun-Jin Kim",
+        "Hsu-Chun Hsiao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChouLWLKH25"
+    },
+    {
+      "id": "usenix-security-2025-304",
+      "title": "EchoLLM: LLM-Augmented Acoustic Eavesdropping Attack on Bone Conduction Headphones with mmWave Radar.",
+      "authors": [
+        "Xin Yao 0002",
+        "Kecheng Huang",
+        "Yimin Chen 0004",
+        "Jiawei Guo",
+        "Jie Tang",
+        "Ming Zhao 0007"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002H0GT025"
+    },
+    {
+      "id": "usenix-security-2025-305",
+      "title": "DiffLoc: WiFi Hidden Camera Localization Based on Electromagnetic Diffraction.",
+      "authors": [
+        "Xiang Zhang 0011",
+        "Jie Zhang 0073",
+        "Huan Yan 0004",
+        "Jinyang Huang",
+        "Zehua Ma",
+        "Bin Liu 0016",
+        "Meng Li 0006",
+        "Kejiang Chen",
+        "Qing Guo 0005",
+        "Tianwei Zhang 0004",
+        "Zhi Liu 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#001100HM00C00025"
+    },
+    {
+      "id": "usenix-security-2025-306",
+      "title": "Double-Edged Shield: On the Fingerprintability of Customized Ad Blockers.",
+      "authors": [
+        "Saiid El Hajj Chehade",
+        "Ben Stock",
+        "Carmela Troncoso"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChehadeST25"
+    },
+    {
+      "id": "usenix-security-2025-307",
+      "title": "How Transparent is Usable Privacy and Security Research? A Meta-Study on Current Research Transparency Practices.",
+      "authors": [
+        "Jan H. Klemmer",
+        "Juliane Schm&#252;ser",
+        "Fabian Fischer 0009",
+        "Jacques Suray",
+        "Jan-Ulrich Holtgrave",
+        "Simon Lenau",
+        "Byron M. Lowens",
+        "Florian Schaub",
+        "Sascha Fahl"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KlemmerS0SHLLSF25"
+    },
+    {
+      "id": "usenix-security-2025-308",
+      "title": "Understanding How Users Prepare for and React to Smartphone Theft.",
+      "authors": [
+        "Divyanshu Bhardwaj",
+        "Sumair Ijaz Hashmi",
+        "Katharina Krombholz",
+        "Maximilian Golla"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BhardwajHKG25"
+    },
+    {
+      "id": "usenix-security-2025-309",
+      "title": "Exploring User Security and Privacy Attitudes and Concerns Toward the Use of General-Purpose LLM Chatbots for Mental Health.",
+      "authors": [
+        "Jabari Kwesi",
+        "Jiaxun Cao",
+        "Riya Manchanda",
+        "Pardis Emami Naeini"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KwesiCMN25"
+    },
+    {
+      "id": "usenix-security-2025-310",
+      "title": "Investigating the Impact of Online Community Involvement on Safety Practices and Perceived Risks Among People Who Use Drugs.",
+      "authors": [
+        "Jiliang Li",
+        "Nora Sinong Lu",
+        "Isaak Hanimann",
+        "Janice Jianing Si",
+        "Dazhao Cheng",
+        "Xiaobo Zhou 0002",
+        "Kanye Ye Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiLHSC0W25"
+    },
+    {
+      "id": "usenix-security-2025-311",
+      "title": "Privacy Solution or Menace? Investigating Perceptions of Radio-Frequency Sensing.",
+      "authors": [
+        "Maximiliane Windl",
+        "Omer Akgul",
+        "Nathan Malkin",
+        "Lorrie Faith Cranor"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WindlAMC25"
+    },
+    {
+      "id": "usenix-security-2025-312",
+      "title": "Navigating Security and Privacy Threats in Homeless Service Provision.",
+      "authors": [
+        "Yuxi Wu",
+        "Ruoxi Zhang",
+        "Shiyue Liu",
+        "Mufei He",
+        "Aidan Hong",
+        "Jeremy J. Northup",
+        "Calla Kainaroi",
+        "Fei Fang 0001",
+        "Hong Shen 0004"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WuZLHHNK0025"
+    },
+    {
+      "id": "usenix-security-2025-313",
+      "title": "Security and Privacy Advice for UPI Users in India.",
+      "authors": [
+        "Deepthi Mungara",
+        "Harshini Sri Ramulu",
+        "Yasemin Acar"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MungaraRA25"
+    },
+    {
+      "id": "usenix-security-2025-314",
+      "title": "&#34;Helps me Take the Post With a Grain of Salt: &#34; Soft Moderation Effects on Accuracy Perceptions and Sharing Intentions of Inauthentic Political Content on X.",
+      "authors": [
+        "Filipo Sharevski",
+        "Verena Distler",
+        "Florian Alt"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SharevskiDA25"
+    },
+    {
+      "id": "usenix-security-2025-315",
+      "title": "As Advertised? Understanding the Impact of Influencer VPN Ads.",
+      "authors": [
+        "Omer Akgul",
+        "Richard Roberts",
+        "Emma Shroyer",
+        "Dave Levin",
+        "Michelle L. Mazurek"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AkgulRSLM25"
+    },
+    {
+      "id": "usenix-security-2025-316",
+      "title": "Fuzzing the PHP Interpreter via Dataflow Fusion.",
+      "authors": [
+        "Yuancheng Jiang",
+        "Chuqi Zhang",
+        "Bonan Ruan",
+        "Jiahao Liu 0005",
+        "Manuel Rigger",
+        "Roland H. C. Yap",
+        "Zhenkai Liang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JiangZR0RYL25"
+    },
+    {
+      "id": "usenix-security-2025-317",
+      "title": "Waltzz: WebAssembly Runtime Fuzzing with Stack-Invariant Transformation.",
+      "authors": [
+        "Lingming Zhang",
+        "Binbin Zhao",
+        "Jiacheng Xu",
+        "Peiyu Liu 0003",
+        "Qinge Xie",
+        "Yuan Tian 0001",
+        "Jianhai Chen",
+        "Shouling Ji"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangZX0X0CJ25"
+    },
+    {
+      "id": "usenix-security-2025-318",
+      "title": "MBFuzzer: A Multi-Party Protocol Fuzzer for MQTT Brokers.",
+      "authors": [
+        "Xiangpu Song",
+        "Jianliang Wu 0002",
+        "Yingpei Zeng",
+        "Hao Pan",
+        "Chaoshun Zuo",
+        "Qingchuan Zhao",
+        "Shanqing Guo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Song0ZPZZG25"
+    },
+    {
+      "id": "usenix-security-2025-319",
+      "title": "ChainFuzz: Exploiting Upstream Vulnerabilities in Open-Source Supply Chains.",
+      "authors": [
+        "Peng Deng",
+        "Lei Zhang 0096",
+        "Yuchuan Meng",
+        "Zhemin Yang",
+        "Yuan Zhang 0009",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Deng0MY0Y25"
+    },
+    {
+      "id": "usenix-security-2025-320",
+      "title": "IDFuzz: Intelligent Directed Grey-box Fuzzing.",
+      "authors": [
+        "Yiyang Chen",
+        "Chao Zhang 0008",
+        "Long Wang",
+        "Wenyu Zhu",
+        "Changhua Luo",
+        "Nuoqi Gui",
+        "Zheyu Ma",
+        "Xingjian Zhang 0009",
+        "Bingkai Su"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Chen0WZLGM0S25"
+    },
+    {
+      "id": "usenix-security-2025-321",
+      "title": "Robust, Efficient, and Widely Available Greybox Fuzzing for COTS Binaries with System Call Pattern Feedback.",
+      "authors": [
+        "Jifan Xiao",
+        "Peng Jiang 0007",
+        "Zixi Zhao",
+        "Ruizhe Huang",
+        "Junlin Liu",
+        "Ding Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Xiao0ZHL025"
+    },
+    {
+      "id": "usenix-security-2025-322",
+      "title": "BLuEMan: A Stateful Simulation-based Fuzzing Framework for Open-Source RTOS Bluetooth Low Energy Protocol Stacks.",
+      "authors": [
+        "Wei-Che Kao",
+        "Yen-Chia Chen",
+        "Yu-Sheng Lin",
+        "Yu-Cheng Yang",
+        "Chi-Yu Li 0001",
+        "Chun-Ying Huang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KaoCLYLH25"
+    },
+    {
+      "id": "usenix-security-2025-323",
+      "title": "ELFuzz: Efficient Input Generation via LLM-driven Synthesis Over Fuzzer Space.",
+      "authors": [
+        "Chuyang Chen 0001",
+        "Brendan Dolan-Gavitt",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenDC25"
+    },
+    {
+      "id": "usenix-security-2025-324",
+      "title": "Hybrid Language Processor Fuzzing via LLM-Based Constraint Solving.",
+      "authors": [
+        "Yupeng Yang",
+        "Shenglong Yao",
+        "Jizhou Chen",
+        "Wenke Lee"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YangYCL25"
+    },
+    {
+      "id": "usenix-security-2025-325",
+      "title": "Rowhammer-Based Trojan Injection: One Bit Flip Is Sufficient for Backdooring DNNs.",
+      "authors": [
+        "Xiang Li",
+        "Ying Meng",
+        "Junming Chen",
+        "Lannan Luo",
+        "Qiang Zeng 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiMCL025"
+    },
+    {
+      "id": "usenix-security-2025-326",
+      "title": "From Purity to Peril: Backdooring Merged Models From &#34;Harmless&#34; Benign Components.",
+      "authors": [
+        "Lijin Wang",
+        "Jingjing Wang",
+        "Tianshuo Cong",
+        "Xinlei He 0001",
+        "Zhan Qin",
+        "Xinyi Huang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangWC0Q025"
+    },
+    {
+      "id": "usenix-security-2025-327",
+      "title": "Revisiting Training-Inference Trigger Intensity in Backdoor Attacks.",
+      "authors": [
+        "Chenhao Lin",
+        "Chenyang Zhao 0006",
+        "Shiwei Wang",
+        "Longtian Wang",
+        "Chao Shen 0001",
+        "Zhengyu Zhao 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Lin0WW0025"
+    },
+    {
+      "id": "usenix-security-2025-328",
+      "title": "Persistent Backdoor Attacks in Continual Learning.",
+      "authors": [
+        "Zhen Guo",
+        "Abhinav Kumar 0007",
+        "Reza Tourani"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Guo0T25"
+    },
+    {
+      "id": "usenix-security-2025-329",
+      "title": "Data Duplication: A Novel Multi-Purpose Attack Paradigm in Machine Unlearning.",
+      "authors": [
+        "Dayong Ye",
+        "Tianqing Zhu",
+        "Jiayang Li",
+        "Kun Gao 0006",
+        "Bo Liu 0001",
+        "Leo Yu Zhang",
+        "Wanlei Zhou 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YeZL00Z0025"
+    },
+    {
+      "id": "usenix-security-2025-330",
+      "title": "DeBackdoor: A Deductive Framework for Detecting Backdoor Attacks on Deep Models with Limited Data.",
+      "authors": [
+        "Dorde Popovic",
+        "Amin Sadeghi",
+        "Ting Yu 0001",
+        "Sanjay Chawla",
+        "Issa Khalil"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PopovicS0CK25"
+    },
+    {
+      "id": "usenix-security-2025-331",
+      "title": "SoK: Gradient Inversion Attacks in Federated Learning.",
+      "authors": [
+        "Vincenzo Carletti",
+        "Pasquale Foggia",
+        "Carlo Mazzocca",
+        "Giuseppe Parrella",
+        "Mario Vento"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#CarlettiFMPV25"
+    },
+    {
+      "id": "usenix-security-2025-332",
+      "title": "PoiSAFL: Scalable Poisoning Attack Framework to Byzantine-resilient Semi-asynchronous Federated Learning.",
+      "authors": [
+        "Xiaoyi Pang",
+        "Chenxu Zhao",
+        "Zhibo Wang 0001",
+        "Jiahui Hu",
+        "Yinggui Wang",
+        "Lei Wang 0251",
+        "Tao Wei 0002",
+        "Kui Ren 0001",
+        "Chun Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PangZ0HWW00025"
+    },
+    {
+      "id": "usenix-security-2025-333",
+      "title": "Towards Lifecycle Unlearning Commitment Management: Measuring Sample-level Unlearning Completeness.",
+      "authors": [
+        "Cheng-Long Wang 0003",
+        "Qi Li",
+        "Zihang Xiang",
+        "Yinzhi Cao",
+        "Di Wang 0015"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangLXC025"
+    },
+    {
+      "id": "usenix-security-2025-334",
+      "title": "Evaluating Privacy Policies under Modern Privacy Laws At Scale: An LLM-Based Automated Approach.",
+      "authors": [
+        "Qinge Xie",
+        "Karthik Ramakrishnan",
+        "Frank Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#XieR025"
+    },
+    {
+      "id": "usenix-security-2025-335",
+      "title": "Navigating Cookie Consent Violations Across the Globe.",
+      "authors": [
+        "Brian Tang",
+        "Duc Bui",
+        "Kang G. Shin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TangBS25"
+    },
+    {
+      "id": "usenix-security-2025-336",
+      "title": "Websites' Global Privacy Control Compliance at Scale and over Time.",
+      "authors": [
+        "Katherine Hausladen",
+        "Oliver Wang",
+        "Sophie Eng",
+        "Jocelyn Wang",
+        "Francisca Wijaya",
+        "Matthew May",
+        "Sebastian Zimmeck"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HausladenWEWWMZ25"
+    },
+    {
+      "id": "usenix-security-2025-337",
+      "title": "Privacy Law Enforcement Under Centralized Governance: A Qualitative Analysis of Four Years' Special Privacy Rectification Campaigns.",
+      "authors": [
+        "Tao Jing",
+        "Yao Li",
+        "Jingzhou Ye",
+        "Jie Wang",
+        "Xueqiang Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JingLYWW25"
+    },
+    {
+      "id": "usenix-security-2025-338",
+      "title": "A Stakeholder-Based Framework to Highlight Tensions when Implementing Privacy Features.",
+      "authors": [
+        "Julia Netter",
+        "Tim Nelson",
+        "Skyler Austen",
+        "Eva Lau",
+        "Colton Rusch",
+        "Malte Schwarzkopf",
+        "Kathi Fisler"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#NetterNALRSF25"
+    },
+    {
+      "id": "usenix-security-2025-339",
+      "title": "Who Pays Whom? Anonymous EMV-Compliant Contactless Payments.",
+      "authors": [
+        "Charles Olivier-Anclin",
+        "Ioana Boureanu",
+        "Liqun Chen 0002",
+        "Christopher J. P. Newton",
+        "Tom Chothia",
+        "Anna Clee",
+        "Andreas Kokkinis",
+        "Pascal Lafourcade 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Olivier-AnclinB25"
+    },
+    {
+      "id": "usenix-security-2025-340",
+      "title": "Atkscopes: Multiresolution Adversarial Perturbation as a Unified Attack on Perceptual Hashing and Beyond.",
+      "authors": [
+        "Yushu Zhang 0001",
+        "Yuanyuan Sun",
+        "Shuren Qi",
+        "Zhongyun Hua",
+        "Wenying Wen",
+        "Yuming Fang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001SQHWF25"
+    },
+    {
+      "id": "usenix-security-2025-341",
+      "title": "SpeechGuard: Recoverable and Customizable Speech Privacy Protection.",
+      "authors": [
+        "Jingmiao Zhang",
+        "Suyuan Liu",
+        "Jiahui Hou",
+        "Zhiqiang Wang",
+        "Haikuo Yu",
+        "Xiang-Yang Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangLHWY025"
+    },
+    {
+      "id": "usenix-security-2025-342",
+      "title": "Shimmer: a Provably Secure Steganography Based on Entropy Collecting Mechanism.",
+      "authors": [
+        "Minhao Bai",
+        "Kaiyi Pang",
+        "Guorui Liao",
+        "Jinshuai Yang",
+        "Yongfeng Huang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BaiPLY025"
+    },
+    {
+      "id": "usenix-security-2025-343",
+      "title": "Encrypted Access Logging for Online Accounts: Device Attributions without Device Tracking.",
+      "authors": [
+        "Carolina Ortega P&#233;rez",
+        "Alaa Daffalla"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PerezD25"
+    },
+    {
+      "id": "usenix-security-2025-344",
+      "title": "Exploring How to Authenticate Application Messages in MLS: More Efficient, Post-Quantum, and Anonymous Blocklistable.",
+      "authors": [
+        "Keitaro Hashimoto",
+        "Shuichi Katsumata",
+        "Guillermo Pascual-Perez"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HashimotoKP25"
+    },
+    {
+      "id": "usenix-security-2025-345",
+      "title": "How to Compare Bandwidth Constrained Two-Party Secure Messaging Protocols: A Quest for A More Efficient and Secure Post-Quantum Protocol.",
+      "authors": [
+        "Benedikt Auerbach",
+        "Yevgeniy Dodis",
+        "Daniel Jost 0001",
+        "Shuichi Katsumata",
+        "Rolfe Schmidt"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AuerbachD0KS25"
+    },
+    {
+      "id": "usenix-security-2025-346",
+      "title": "S/MINE: Collecting and Analyzing S/MIME Certificates at Scale.",
+      "authors": [
+        "Gurur &#214;ndar&#246;",
+        "Jonas Kaspereit",
+        "Samson Umezulike",
+        "Christoph Saatjohann",
+        "Fabian Ising",
+        "Sebastian Schinzel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#OndaroKUSIS25"
+    },
+    {
+      "id": "usenix-security-2025-347",
+      "title": "Achilles: A Formal Framework of Leaking Secrets from Signature Schemes via Rowhammer.",
+      "authors": [
+        "Junkai Liang",
+        "Zhi Zhang 0001",
+        "Xin Zhang 0110",
+        "Qingni Shen",
+        "Yansong Gao 0001",
+        "Xingliang Yuan",
+        "Haiyang Xue",
+        "Pengfei Wu 0003",
+        "Zhonghai Wu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Liang00S0YX0W25"
+    },
+    {
+      "id": "usenix-security-2025-348",
+      "title": "Bundled Authenticated Key Exchange: A Concrete Treatment of Signal's Handshake Protocol and Post-Quantum Security.",
+      "authors": [
+        "Keitaro Hashimoto",
+        "Shuichi Katsumata",
+        "Thom Wiggers"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HashimotoKW25"
+    },
+    {
+      "id": "usenix-security-2025-349",
+      "title": "Comprehensive Deniability Analysis of Signal Handshake Protocols: X3DH, PQXDH to Fully Post-Quantum with Deniable Ring Signatures.",
+      "authors": [
+        "Shuichi Katsumata",
+        "Guilhem Niot",
+        "Ida Tucker",
+        "Thom Wiggers"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KatsumataNTW25"
+    },
+    {
+      "id": "usenix-security-2025-350",
+      "title": "SparSamp: Efficient Provably Secure Steganography Based on Sparse Sampling.",
+      "authors": [
+        "Yaofei Wang",
+        "Gang Pei",
+        "Kejiang Chen",
+        "Jinyang Ding",
+        "Chao Pan",
+        "Weilong Pang",
+        "Donghui Hu",
+        "Weiming Zhang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangPCDPPH025"
+    },
+    {
+      "id": "usenix-security-2025-351",
+      "title": "A Framework for Designing Provably Secure Steganography.",
+      "authors": [
+        "Guorui Liao",
+        "Jinshuai Yang",
+        "Weizhi Shao",
+        "Yongfeng Huang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiaoYS025"
+    },
+    {
+      "id": "usenix-security-2025-352",
+      "title": "REVDECODE: Enhancing Binary Function Matching with Context-Aware Graph Representations and Relevance Decoding.",
+      "authors": [
+        "Tongwei Ren",
+        "Ronghan Che",
+        "Guin Gilman",
+        "Lorenzo De Carli",
+        "Robert J. Walls"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#RenCGCW25"
+    },
+    {
+      "id": "usenix-security-2025-353",
+      "title": "BLens: Contrastive Captioning of Binary Functions using Ensemble Embedding.",
+      "authors": [
+        "Tristan Benoit",
+        "Yunru Wang",
+        "Moritz Dannehl",
+        "Johannes Kinder"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BenoitWDK25"
+    },
+    {
+      "id": "usenix-security-2025-354",
+      "title": "TRex: Practical Type Reconstruction for Binary Code.",
+      "authors": [
+        "Jay Bosamiya",
+        "Maverick Woo",
+        "Bryan Parno"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BosamiyaWP25"
+    },
+    {
+      "id": "usenix-security-2025-355",
+      "title": "Vest: Verified, Secure, High-Performance Parsing and Serialization for Rust.",
+      "authors": [
+        "Yi Cai",
+        "Pratap Singh",
+        "Zhengyao Lin",
+        "Jay Bosamiya",
+        "Joshua Gancher",
+        "Milijana Surbatovich",
+        "Bryan Parno"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#CaiSLBGSP25"
+    },
+    {
+      "id": "usenix-security-2025-356",
+      "title": "LEMIX: Enabling Testing of Embedded Applications as Linux Applications.",
+      "authors": [
+        "Sai Ritvik Tanksalkar",
+        "Siddharth Muralee",
+        "Srihari Danduri",
+        "Paschal C. Amusuo",
+        "Antonio Bianchi",
+        "James C. Davis 0001",
+        "Aravind Kumar Machiry"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TanksalkarMDAB025"
+    },
+    {
+      "id": "usenix-security-2025-357",
+      "title": "TYPEPULSE: Detecting Type Confusion Bugs in Rust Programs.",
+      "authors": [
+        "Hung-Mao Chen",
+        "Xu He",
+        "Shu Wang 0004",
+        "Xiaokuan Zhang",
+        "Kun Sun 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChenH0Z025"
+    },
+    {
+      "id": "usenix-security-2025-358",
+      "title": "From Alarms to Real Bugs: Multi-target Multi-step Directed Greybox Fuzzing for Static Analysis Result Verification.",
+      "authors": [
+        "Andrew Bao",
+        "Wenjia Zhao",
+        "Yanhao Wang",
+        "Yueqiang Cheng",
+        "Stephen McCamant",
+        "Pen-Chung Yew"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BaoZWCMY25"
+    },
+    {
+      "id": "usenix-security-2025-359",
+      "title": "Low-Cost and Comprehensive Non-textual Input Fuzzing with LLM-Synthesized Input Generators.",
+      "authors": [
+        "Kunpeng Zhang",
+        "Zongjie Li",
+        "Daoyuan Wu",
+        "Shuai Wang 0011",
+        "Xin Xia 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangLW0025"
+    },
+    {
+      "id": "usenix-security-2025-360",
+      "title": "Pig in a Poke: Automatically Detecting and Exploiting Link Following Vulnerabilities in Windows File Operations.",
+      "authors": [
+        "Bocheng Xiang",
+        "Yuan Zhang 0009",
+        "Fengyu Liu",
+        "Hao Huang",
+        "Zihan Lin",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Xiang0LHL025"
+    },
+    {
+      "id": "usenix-security-2025-361",
+      "title": "GNSS-WASP: GNSS Wide Area SPoofing.",
+      "authors": [
+        "Christopher Tibaldo",
+        "Harshad Sathaye",
+        "Giovanni Camurati",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#TibaldoSCC25"
+    },
+    {
+      "id": "usenix-security-2025-362",
+      "title": "LEO-Range: Physical Layer Design for Secure Ranging with Low Earth Orbiting Satellites.",
+      "authors": [
+        "Daniele Coppola",
+        "Arslan Mumtaz",
+        "Giovanni Camurati",
+        "Harshad Sathaye",
+        "Mridula Singh",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#CoppolaMCSSC25"
+    },
+    {
+      "id": "usenix-security-2025-363",
+      "title": "A Comprehensive Formal Security Analysis of OPC UA.",
+      "authors": [
+        "Vincent Diemunsch",
+        "Lucca Hirschi",
+        "Steve Kremer"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DiemunschHK25"
+    },
+    {
+      "id": "usenix-security-2025-364",
+      "title": "Towards Internet-Based State Learning of TLS State Machines.",
+      "authors": [
+        "Marcel Maehren",
+        "Nurullah Erinola",
+        "Robert Merget",
+        "J&#246;rg Schwenk",
+        "Juraj Somorovsky"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaehrenEMSS25"
+    },
+    {
+      "id": "usenix-security-2025-365",
+      "title": "Misty Registry: An Empirical Study of Flawed Domain Registry Operation.",
+      "authors": [
+        "Mingming Zhang 0010",
+        "Yunyi Zhang",
+        "Baojun Liu 0002",
+        "Haixin Duan",
+        "Min Zhang 0054",
+        "Fan Shi 0003",
+        "Chengxi Xu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangZLD00X25"
+    },
+    {
+      "id": "usenix-security-2025-366",
+      "title": "Haunted by Legacy: Discovering and Exploiting Vulnerable Tunnelling Hosts.",
+      "authors": [
+        "Angelos Beitis",
+        "Mathy Vanhoef"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BeitisV25"
+    },
+    {
+      "id": "usenix-security-2025-367",
+      "title": "GeCos Replacing Experts: Generalizable and Comprehensible Industrial Intrusion Detection.",
+      "authors": [
+        "Konrad Wolsing",
+        "Eric Wagner 0003",
+        "Luisa Lux",
+        "Klaus Wehrle",
+        "Martin Henze"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Wolsing0LWH25"
+    },
+    {
+      "id": "usenix-security-2025-368",
+      "title": "ORTHRUS: Achieving High Quality of Attribution in Provenance-based Intrusion Detection Systems.",
+      "authors": [
+        "Baoxiang Jiang",
+        "Tristan Bilot",
+        "Nour El Madhoun",
+        "Khaldoun Al Agha",
+        "Anis Zouaoui",
+        "Shahrear Iqbal",
+        "Xueyuan Han",
+        "Thomas Pasquier"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JiangBMAZIHP25"
+    },
+    {
+      "id": "usenix-security-2025-369",
+      "title": "Sometimes Simpler is Better: A Comprehensive Analysis of State-of-the-Art Provenance-Based Intrusion Detection Systems.",
+      "authors": [
+        "Tristan Bilot",
+        "Baoxiang Jiang",
+        "Zefeng Li",
+        "Nour El Madhoun",
+        "Khaldoun Al Agha",
+        "Anis Zouaoui",
+        "Thomas Pasquier"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BilotJLMAZP25"
+    },
+    {
+      "id": "usenix-security-2025-370",
+      "title": "CAMP in the Odyssey: Provably Robust Reinforcement Learning with Certified Radius Maximization.",
+      "authors": [
+        "Derui Wang",
+        "Kristen Moore",
+        "Diksha Goel",
+        "Minjune Kim",
+        "Gang Li 0009",
+        "Yang Li 0182",
+        "Robin Doss",
+        "Minhui Xue 0001",
+        "Bo Li 0026",
+        "Seyit Camtepe",
+        "Liming Zhu 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangMGK00D00C025"
+    },
+    {
+      "id": "usenix-security-2025-371",
+      "title": "Towards Understanding and Enhancing Security of Proof-of-Training for DNN Model Ownership Verification.",
+      "authors": [
+        "Yijia Chang",
+        "Hanrui Jiang",
+        "Chao Lin 0003",
+        "Xinyi Huang 0001",
+        "Jian Weng 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChangJL0025"
+    },
+    {
+      "id": "usenix-security-2025-372",
+      "title": "AGNNCert: Defending Graph Neural Networks against Arbitrary Perturbations with Deterministic Certification.",
+      "authors": [
+        "Jiate Li",
+        "Binghui Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiW25"
+    },
+    {
+      "id": "usenix-security-2025-373",
+      "title": "LightShed: Defeating Perturbation-based Image Copyright Protections.",
+      "authors": [
+        "Hanna Foerster",
+        "Sasha Behrouzi",
+        "Phillip Rieger",
+        "Murtuza Jadliwala",
+        "Ahmad-Reza Sadeghi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#FoersterBRJS25"
+    },
+    {
+      "id": "usenix-security-2025-374",
+      "title": "Robustifying ML-powered Network Classifiers with PANTS.",
+      "authors": [
+        "Minhao Jin",
+        "Maria Apostolaki"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JinA25"
+    },
+    {
+      "id": "usenix-security-2025-375",
+      "title": "THEMIS: Towards Practical Intellectual Property Protection for Post-Deployment On-Device Deep Learning Models.",
+      "authors": [
+        "Yujin Huang",
+        "Zhi Zhang 0001",
+        "Qingchuan Zhao",
+        "Xingliang Yuan",
+        "Chunyang Chen 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuangZZY025"
+    },
+    {
+      "id": "usenix-security-2025-376",
+      "title": "A Crack in the Bark: Leveraging Public Knowledge to Remove Tree-Ring Watermarks.",
+      "authors": [
+        "Junhua Lin",
+        "Marc Juarez"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LinJ25"
+    },
+    {
+      "id": "usenix-security-2025-377",
+      "title": "CertTA: Certified Robustness Made Practical for Learning-Based Traffic Analysis.",
+      "authors": [
+        "Jinzhu Yan",
+        "Zhuotao Liu",
+        "Yuyang Xie",
+        "Shiyu Liang",
+        "Lin Liu 0018",
+        "Ke Xu 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YanLXLL025"
+    },
+    {
+      "id": "usenix-security-2025-378",
+      "title": "Invisible but Detected: Physical Adversarial Shadow Attack and Defense on LiDAR Object Detection.",
+      "authors": [
+        "Ryunosuke Kobayashi",
+        "Kazuki Nomoto",
+        "Yuna Tanaka",
+        "Go Tsuruoka",
+        "Tatsuya Mori"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KobayashiNTTM25"
+    },
+    {
+      "id": "usenix-security-2025-379",
+      "title": "From Threat to Trust: Exploiting Attention Mechanisms for Attacks and Defenses in Cooperative Perception.",
+      "authors": [
+        "Chenyi Wang 0005",
+        "Raymond Muller",
+        "Ruoyu Song 0001",
+        "Jean-Philippe Monteuuis",
+        "Jonathan Petit",
+        "Yanmao Man",
+        "Ryan M. Gerdes",
+        "Z. Berkay Celik",
+        "Ming Li 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangM0MPMGC025"
+    },
+    {
+      "id": "usenix-security-2025-380",
+      "title": "Await() a Second: Evading Control Flow Integrity by Hijacking C++ Coroutines.",
+      "authors": [
+        "Marcos Bajo",
+        "Christian Rossow"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#BajoR25"
+    },
+    {
+      "id": "usenix-security-2025-381",
+      "title": "System Register Hijacking: Compromising Kernel Integrity By Turning System Registers Against the System.",
+      "authors": [
+        "Jennifer Miller",
+        "Manas Ghandat",
+        "Kyle Zeng",
+        "Hongkai Chen",
+        "Abdelouahab Benchikh",
+        "Tiffany Bao",
+        "Ruoyu Wang 0001",
+        "Adam Doup&#233;",
+        "Yan Shoshitaishvili"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MillerGZCBB0DS25"
+    },
+    {
+      "id": "usenix-security-2025-382",
+      "title": "When Good Kernel Defenses Go Bad: Reliable and Stable Kernel Exploits via Defense-Amplified TLB Side-Channel Leaks.",
+      "authors": [
+        "Lukas Maar",
+        "Lukas Giner",
+        "Daniel Gruss",
+        "Stefan Mangard"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaarGGM25"
+    },
+    {
+      "id": "usenix-security-2025-383",
+      "title": "Approximation Enforced Execution of Untrusted Linux Kernel Extensions.",
+      "authors": [
+        "Hao Sun 0021",
+        "Zhendong Su 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0021025"
+    },
+    {
+      "id": "usenix-security-2025-384",
+      "title": "EKC: A Portable and Extensible Kernel Compartment for De-Privileging Commodity OS.",
+      "authors": [
+        "Jiaqin Yan",
+        "Qiujiang Chen",
+        "Shuai Zhou",
+        "Yuke Peng",
+        "Guoxing Chen",
+        "Yinqian Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YanCZPCZ25"
+    },
+    {
+      "id": "usenix-security-2025-385",
+      "title": "The Cost of Performance: Breaking ThreadX with Kernel Object Masquerading Attacks.",
+      "authors": [
+        "Xinhui Shao",
+        "Zhen Ling 0001",
+        "Yue Zhang 0025",
+        "Huaiyu Yan",
+        "Yumeng Wei",
+        "Lan Luo",
+        "Zixia Liu",
+        "Junzhou Luo",
+        "Xinwen Fu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Shao00YWLLLF25"
+    },
+    {
+      "id": "usenix-security-2025-386",
+      "title": "Subverting the Secure VM by Exploiting PCIe Devices.",
+      "authors": [
+        "Cheolwoo Myung",
+        "Sangho Lee 0001",
+        "Byoungyoung Lee"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Myung0L25"
+    },
+    {
+      "id": "usenix-security-2025-387",
+      "title": "Finding Metadata Inconsistencies in Distributed File Systems via Cross-Node Operation Modeling.",
+      "authors": [
+        "Fuchen Ma",
+        "Yuanliang Chen",
+        "Yuanhang Zhou",
+        "Zhen Yan",
+        "Hao Sun 0021",
+        "Yu Jiang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MaCZY0025"
+    },
+    {
+      "id": "usenix-security-2025-388",
+      "title": "Save what must be saved: Secure context switching with Sailor.",
+      "authors": [
+        "Neelu S. Kalani",
+        "Thomas Bourgeat",
+        "Guerney D. H. Hunt",
+        "Wojciech Ozga"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KalaniBHO25"
+    },
+    {
+      "id": "usenix-security-2025-389",
+      "title": "Flexway O-Sort: Enclave-Friendly and Optimal Oblivious Sorting.",
+      "authors": [
+        "Tianyao Gu",
+        "Yilei Wang",
+        "Afonso Tinoco",
+        "Bingnan Chen",
+        "Ke Yi 0001",
+        "Elaine Shi"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#GuWTC0S25"
+    },
+    {
+      "id": "usenix-security-2025-390",
+      "title": "Treebeard: A Scalable and Fault Tolerant ORAM Datastore.",
+      "authors": [
+        "Amin Setayesh",
+        "Cheran Mahalingam",
+        "Emily Chen",
+        "Sujaya Maiyya"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SetayeshMCM25"
+    },
+    {
+      "id": "usenix-security-2025-391",
+      "title": "Learning from Functionality Outputs: Private Join and Compute in the Real World.",
+      "authors": [
+        "Francesca Falzon",
+        "Tianxin Tang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#FalzonT25"
+    },
+    {
+      "id": "usenix-security-2025-392",
+      "title": "ALERT: Machine Learning-Enhanced Risk Estimation for Databases Supporting Encrypted Queries.",
+      "authors": [
+        "Longxiang Wang",
+        "Lei Xu 0019",
+        "Yufei Chen 0001",
+        "Ying Zou 0029",
+        "Cong Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangXC0025"
+    },
+    {
+      "id": "usenix-security-2025-393",
+      "title": "Distributed Private Aggregation in Graph Neural Networks.",
+      "authors": [
+        "Huanhuan Jia",
+        "Yuanbo Zhao",
+        "Kai Dong 0001",
+        "Zhen Ling 0001",
+        "Ming Yang 0001",
+        "Junzhou Luo",
+        "Xinwen Fu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#JiaZ000LF25"
+    },
+    {
+      "id": "usenix-security-2025-394",
+      "title": "Suda: An Efficient and Secure Unbalanced Data Alignment Framework for Vertical Privacy-Preserving Machine Learning.",
+      "authors": [
+        "Lushan Song",
+        "Qizhi Zhang 0007",
+        "Yu Lin",
+        "Haoyu Niu",
+        "Daode Zhang",
+        "Zheng Qu",
+        "Weili Han",
+        "Jue Hong",
+        "Quanwei Cai 0003",
+        "Ye Wu"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SongZLNZQHH0W25"
+    },
+    {
+      "id": "usenix-security-2025-395",
+      "title": "Assuring Certified Database Utility in Privacy-Preserving Database Fingerprinting.",
+      "authors": [
+        "Mingyang Song",
+        "Zhongyun Hua",
+        "Yifeng Zheng 0001",
+        "Tao Xiang 0001",
+        "Guoai Xu",
+        "Xingliang Yuan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SongH00XY25"
+    },
+    {
+      "id": "usenix-security-2025-396",
+      "title": "Shechi: A Secure Distributed Computation Compiler Based on Multiparty Homomorphic Encryption.",
+      "authors": [
+        "Haris Smajlovic",
+        "David Froelicher",
+        "Ariya Shajii",
+        "Bonnie Berger",
+        "Hyunghoon Cho",
+        "Ibrahim Numanagic"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#SmajlovicFSBCN25"
+    },
+    {
+      "id": "usenix-security-2025-397",
+      "title": "Private Set Intersection and other Set Operations in the Third Party Setting.",
+      "authors": [
+        "Foo Yee Yeo",
+        "Jason H. M. Ying"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YeoY25"
+    },
+    {
+      "id": "usenix-security-2025-398",
+      "title": "Detecting Compromise of Passkey Storage on the Cloud.",
+      "authors": [
+        "Mazharul Islam 0002",
+        "Sunpreet S. Arora",
+        "Rahul Chatterjee 0001",
+        "Ke Coby Wang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0002A0W25"
+    },
+    {
+      "id": "usenix-security-2025-399",
+      "title": "OneTouch: Effortless 2FA Scheme to Secure Fingerprint Authentication with Wearable OTP Token.",
+      "authors": [
+        "Yihui Yan",
+        "Zhice Yang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YanY25"
+    },
+    {
+      "id": "usenix-security-2025-400",
+      "title": "Practically Secure Honey Password Vaults: New Design and New Evaluation against Online Guessing.",
+      "authors": [
+        "Haibo Cheng 0001",
+        "Fugeng Huang",
+        "Jiahong Yang 0003",
+        "Wenting Li 0002",
+        "Ping Wang 0003"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChengHY0025"
+    },
+    {
+      "id": "usenix-security-2025-401",
+      "title": "Password Guessing Using Large Language Models.",
+      "authors": [
+        "Yunkai Zou",
+        "Maoxiang An",
+        "Ding Wang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZouA025"
+    },
+    {
+      "id": "usenix-security-2025-402",
+      "title": "A Framework for Abusability Analysis: The Case of Passkeys in Interpersonal Threat Models.",
+      "authors": [
+        "Alaa Daffalla",
+        "Arkaprabha Bhattacharya",
+        "Jacob Wilder",
+        "Rahul Chatterjee 0001",
+        "Nicola Dell",
+        "Rosanna Bellini",
+        "Thomas Ristenpart"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#DaffallaBW0DBR25"
+    },
+    {
+      "id": "usenix-security-2025-403",
+      "title": "CertPHash: Towards Certified Perceptual Hashing via Robust Training.",
+      "authors": [
+        "Yuchen Yang 0001",
+        "Qichang Liu",
+        "Christopher Brix",
+        "Huan Zhang 0001",
+        "Yinzhi Cao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YangLB0C25"
+    },
+    {
+      "id": "usenix-security-2025-404",
+      "title": "Phishing Attacks against Password Manager Browser Extensions.",
+      "authors": [
+        "Claudio Anliker",
+        "Daniele Lain",
+        "Srdjan Capkun"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AnlikerLC25"
+    },
+    {
+      "id": "usenix-security-2025-405",
+      "title": "Red Bleed: A Pragmatic Near-Infrared Presentation Attack on Facial Biometric Authentication Systems.",
+      "authors": [
+        "Bowen Hu",
+        "Kuo Wang",
+        "Chip-Hong Chang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HuWC25"
+    },
+    {
+      "id": "usenix-security-2025-406",
+      "title": "Oblivious Digital Tokens.",
+      "authors": [
+        "Mihael Liskij",
+        "Xuhua Ding",
+        "Gene Tsudik",
+        "David A. Basin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiskijDTB25"
+    },
+    {
+      "id": "usenix-security-2025-407",
+      "title": "V-ORAM: A Versatile and Adaptive ORAM Framework with Service Transformation for Dynamic Workloads.",
+      "authors": [
+        "Bo Zhang 0119",
+        "Helei Cui",
+        "Xingliang Yuan",
+        "Zhiwen Yu 0001",
+        "Bin Guo 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0119CY0025"
+    },
+    {
+      "id": "usenix-security-2025-408",
+      "title": "AUTOVR: Automated UI Exploration for Detecting Sensitive Data Flow Exposures in Virtual Reality Apps.",
+      "authors": [
+        "John Y. Kim",
+        "Chaoshun Zuo",
+        "Yanjie Zhao",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KimZZ025"
+    },
+    {
+      "id": "usenix-security-2025-409",
+      "title": "Found in Translation: A Generative Language Modeling Approach to Memory Access Pattern Attacks.",
+      "authors": [
+        "Grace Jia",
+        "Alex Wong 0001",
+        "Anurag Khandelwal"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Jia0K25"
+    },
+    {
+      "id": "usenix-security-2025-410",
+      "title": "More is Less: Extra Features in Contactless Payments Break Security.",
+      "authors": [
+        "George Pavlides",
+        "Anna Clee",
+        "Ioana Boureanu",
+        "Tom Chothia"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#PavlidesCBC25"
+    },
+    {
+      "id": "usenix-security-2025-411",
+      "title": "Current Affairs: A Security Measurement Study of CCS EV Charging Deployments.",
+      "authors": [
+        "Marcell Szak&#225;ly",
+        "Sebastian K&#246;hler 0005",
+        "Ivan Martinovic"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Szakaly0M25"
+    },
+    {
+      "id": "usenix-security-2025-412",
+      "title": "STEK Sharing is Not Caring: Bypassing TLS Authentication in Web Servers using Session Tickets.",
+      "authors": [
+        "Sven Hebrok",
+        "Tim Leonhard Storm",
+        "Felix Matthias Cramer",
+        "Maximilian Radoy",
+        "Juraj Somorovsky"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HebrokSCRS25"
+    },
+    {
+      "id": "usenix-security-2025-413",
+      "title": "Too Much of a Good Thing: (In-)Security of Mandatory Security Software for Financial Services in South Korea.",
+      "authors": [
+        "Taisic Yun",
+        "Suhwan Jeong",
+        "Yonghwa Lee",
+        "Seungjoo Kim",
+        "Hyoungshick Kim",
+        "Insu Yun",
+        "Yongdae Kim"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#YunJLKKYK25"
+    },
+    {
+      "id": "usenix-security-2025-414",
+      "title": "Unsafe LLM-Based Search: Quantitative Analysis and Mitigation of Safety Risks in AI Web Search.",
+      "authors": [
+        "Zeren Luo",
+        "Zifan Peng",
+        "Yule Liu",
+        "Zhen Sun 0001",
+        "Mingchen Li",
+        "Jingyi Zheng",
+        "Xinlei He 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LuoPL0LZ025"
+    },
+    {
+      "id": "usenix-security-2025-415",
+      "title": "Generated Data with Fake Privacy: Hidden Dangers of Fine-tuning Large Language Models on Generated Data.",
+      "authors": [
+        "Atilla Akkus",
+        "Masoud Poorghaffar Aghdam",
+        "Mingjie Li 0007",
+        "Junjie Chu 0002",
+        "Michael Backes 0001",
+        "Yang Zhang 0016",
+        "Sinem Sav"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AkkusA000ZS25"
+    },
+    {
+      "id": "usenix-security-2025-416",
+      "title": "Cloak, Honey, Trap: Proactive Defenses Against LLM Agents.",
+      "authors": [
+        "Daniel Ayzenshteyn",
+        "Roy Weiss",
+        "Yisroel Mirsky"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#AyzenshteynWM25"
+    },
+    {
+      "id": "usenix-security-2025-417",
+      "title": "Big Help or Big Brother? Auditing Tracking, Profiling, and Personalization in Generative AI Assistants.",
+      "authors": [
+        "Yash Vekaria",
+        "Aurelio Loris Canino",
+        "Jonathan Levitsky",
+        "Alex Ciechonski",
+        "Patricia Callejo",
+        "Anna Maria Mandalari",
+        "Zubair Shafiq"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VekariaCLCCMS25"
+    },
+    {
+      "id": "usenix-security-2025-418",
+      "title": "SOFT: Selective Data Obfuscation for Protecting LLM Fine-tuning against Membership Inference Attacks.",
+      "authors": [
+        "Kaiyuan Zhang 0002",
+        "Siyuan Cheng 0005",
+        "Hanxi Guo",
+        "Yuetian Chen",
+        "Zian Su",
+        "Shengwei An",
+        "Yuntao Du 0002",
+        "Charles Fleming",
+        "Ashish Kundu",
+        "Xiangyu Zhang 0001",
+        "Ninghui Li 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#00020GCSA0FK0L25"
+    },
+    {
+      "id": "usenix-security-2025-419",
+      "title": "Effective PII Extraction from LLMs through Augmented Few-Shot Learning.",
+      "authors": [
+        "Shuai Cheng",
+        "Shu Meng",
+        "Haitao Xu 0002",
+        "Haoran Zhang",
+        "Shuai Hao 0001",
+        "Chuan Yue",
+        "Wenrui Ma",
+        "Meng Han",
+        "Fan Zhang 0010",
+        "Zhao Li 0007"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChengM0ZHYMHZL25"
+    },
+    {
+      "id": "usenix-security-2025-420",
+      "title": "Private Investigator: Extracting Personally Identifiable Information from Large Language Models Using Optimized Prompts.",
+      "authors": [
+        "Seongho Keum",
+        "Dongwon Shin",
+        "Leo Marchyok",
+        "Sanghyun Hong 0001",
+        "Sooel Son"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#KeumSM0S25"
+    },
+    {
+      "id": "usenix-security-2025-421",
+      "title": "PrivacyXray: Detecting Privacy Breaches in LLMs through Semantic Consistency and Probability Certainty.",
+      "authors": [
+        "Jinwen He",
+        "Yiyang Lu",
+        "Zijin Lin",
+        "Kai Chen 0012",
+        "Yue Zhao 0018"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HeLL0025"
+    },
+    {
+      "id": "usenix-security-2025-422",
+      "title": "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation.",
+      "authors": [
+        "Shenyi Zhang",
+        "Yuchen Zhai",
+        "Keyan Guo",
+        "Hongxin Hu",
+        "Shengnan Guo",
+        "Zheng Fang 0014",
+        "Lingchen Zhao",
+        "Chao Shen 0001",
+        "Cong Wang 0001",
+        "Qian Wang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhangZGHG0Z00025"
+    },
+    {
+      "id": "usenix-security-2025-423",
+      "title": "Web Execution Bundles: Reproducible, Accurate, and Archivable Web Measurements.",
+      "authors": [
+        "Florian Hantke",
+        "Peter Snyder",
+        "Hamed Haddadi",
+        "Ben Stock"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#HantkeSHS25"
+    },
+    {
+      "id": "usenix-security-2025-424",
+      "title": "XSSky: Detecting XSS Vulnerabilities through Local Path-Persistent Fuzzing.",
+      "authors": [
+        "Youkun Shi",
+        "Yuan Zhang 0009",
+        "Tianhao Bai",
+        "Feng Xue",
+        "Jiarun Dai",
+        "Fengyu Liu",
+        "Lei Zhang 0096",
+        "Xiapu Luo",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Shi0BXDL0L025"
+    },
+    {
+      "id": "usenix-security-2025-425",
+      "title": "ZIPPER: Static Taint Analysis for PHP Applications with Precision and Efficiency.",
+      "authors": [
+        "Xinyi Wang 0013",
+        "Yeting Li",
+        "Jie Lu 0009",
+        "Shizhe Cui",
+        "Chenghang Shi",
+        "Qin Mai",
+        "Yunpei Zhang",
+        "Yang Xiao 0011",
+        "Feng Li 0045",
+        "Wei Huo"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangLLCSMZ00H25"
+    },
+    {
+      "id": "usenix-security-2025-426",
+      "title": "The DOMino Effect: Detecting and Exploiting DOM Clobbering Gadgets via Concolic Execution with Symbolic DOM.",
+      "authors": [
+        "Zhengyu Liu",
+        "Theo Lee",
+        "Jianjia Yu",
+        "Zifeng Kang",
+        "Yinzhi Cao"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LiuLYKC25"
+    },
+    {
+      "id": "usenix-security-2025-427",
+      "title": "FIXX: FInding eXploits from eXamples.",
+      "authors": [
+        "Neil P. Thimmaiah",
+        "Yashashvi J. Dave",
+        "Rigel Gjomemo",
+        "V. N. Venkatakrishnan"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ThimmaiahDGV25"
+    },
+    {
+      "id": "usenix-security-2025-428",
+      "title": "Careless Retention and Management: Understanding and Detecting Data Retention Denial-of-Service Vulnerabilities in Java Web Containers.",
+      "authors": [
+        "Keke Lian",
+        "Lei Zhang 0096",
+        "Haoran Zhao",
+        "Yinzhi Cao",
+        "Yongheng Liu",
+        "Fute Sun",
+        "Yuan Zhang 0009",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Lian0ZCLS0025"
+    },
+    {
+      "id": "usenix-security-2025-429",
+      "title": "Effective Directed Fuzzing with Hierarchical Scheduling for Web Vulnerability Detection.",
+      "authors": [
+        "Zihan Lin",
+        "Yuan Zhang 0009",
+        "Jiarun Dai",
+        "Xinyou Huang",
+        "Bocheng Xiang",
+        "Guangliang Yang 0001",
+        "Letian Yuan",
+        "Lei Zhang 0096",
+        "Tian Chen",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Lin0DHX0Y0C025"
+    },
+    {
+      "id": "usenix-security-2025-430",
+      "title": "Towards Automatic Detection and Exploitation of Java Web Application Vulnerabilities via Concolic Execution guided by Cross-thread Object Manipulation.",
+      "authors": [
+        "Xinyou Huang",
+        "Lei Zhang 0096",
+        "Yongheng Liu",
+        "Peng Deng",
+        "Yinzhi Cao",
+        "Yuan Zhang 0009",
+        "Min Yang 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Huang0LDC0025"
+    },
+    {
+      "id": "usenix-security-2025-431",
+      "title": "Efficient Batchable Secure Outsourced Computation: Depth-Aware Arithmetization of Common Primitives for BFV & BGV.",
+      "authors": [
+        "Jelle Vos",
+        "Mauro Conti",
+        "Zekeriya Erkin"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#VosCE25"
+    },
+    {
+      "id": "usenix-security-2025-432",
+      "title": "Arbitrary-Threshold Fully Homomorphic Encryption with Lower Complexity.",
+      "authors": [
+        "Yijia Chang",
+        "Songze Li"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ChangL25"
+    },
+    {
+      "id": "usenix-security-2025-433",
+      "title": "Leuvenshtein: Efficient FHE-based Edit Distance Computation with Single Bootstrap per Cell.",
+      "authors": [
+        "Wouter Legiest",
+        "Jan-Pieter D'Anvers",
+        "Bojan Spasic",
+        "Nam-Luc Tran",
+        "Ingrid Verbauwhede"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#LegiestDSTV25"
+    },
+    {
+      "id": "usenix-security-2025-434",
+      "title": "Engorgio: An Arbitrary-Precision Unbounded-Size Hybrid Encrypted Database via Quantized Fully Homomorphic Encryption.",
+      "authors": [
+        "Song Bian 0001",
+        "Haowen Pan",
+        "Jiaqi Hu",
+        "Zhou Zhang 0016",
+        "Yunhao Fu",
+        "Jiafeng Hua",
+        "Yunyi Chen",
+        "Bo Zhang",
+        "Yier Jin",
+        "Jin Dong 0004",
+        "Zhenyu Guan 0002"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#0001PH0FHCZJDG25"
+    },
+    {
+      "id": "usenix-security-2025-435",
+      "title": "Qelect: Lattice-based Single Secret Leader Election Made Practical.",
+      "authors": [
+        "Yunhao Wang",
+        "Fan Zhang"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#WangZ25"
+    },
+    {
+      "id": "usenix-security-2025-436",
+      "title": "GlitchFHE: Attacking Fully Homomorphic Encryption Using Fault Injection.",
+      "authors": [
+        "Lakshmi Likhitha Mankali",
+        "Mohammed Nabeel 0001",
+        "Faiq Raees",
+        "Michail Maniatakos",
+        "Ozgur Sinanoglu",
+        "Johann Knechtel"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#Mankali0RMSK25"
+    },
+    {
+      "id": "usenix-security-2025-437",
+      "title": "H2O2RAM: A High-Performance Hierarchical Doubly Oblivious RAM.",
+      "authors": [
+        "Leqian Zheng",
+        "Zheng Zhang",
+        "Wentao Dong",
+        "Yao Zhang",
+        "Ye Wu",
+        "Cong Wang 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#ZhengZDZW025"
+    },
+    {
+      "id": "usenix-security-2025-438",
+      "title": "OBLIVIATOR: OBLIVIous Parallel Joins and other OperATORs in Shared Memory Environments.",
+      "authors": [
+        "Apostolos Mavrogiannakis",
+        "Xian Wang",
+        "Ioannis Demertzis",
+        "Dimitrios Papadopoulos 0001",
+        "Minos N. Garofalakis"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MavrogiannakisW25"
+    },
+    {
+      "id": "usenix-security-2025-439",
+      "title": "Efficient Ranking, Order Statistics, and Sorting under CKKS.",
+      "authors": [
+        "Federico Mazzone",
+        "Maarten H. Everts",
+        "Florian Hahn 0001",
+        "Andreas Peter 0001"
+      ],
+      "doi": "",
+      "dblp_url": "https://dblp.org/db/conf/uss/uss2025.html#MazzoneE0025"
+    }
+  ]
+}

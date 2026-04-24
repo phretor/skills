@@ -1,0 +1,427 @@
+{
+  "conference": {
+    "name": "Australasian Conference on Information Security and Privacy",
+    "acronym": "ACISP",
+    "year": 2021,
+    "venue_slug": "acisp"
+  },
+  "coverage": {
+    "papers_count": 35,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "acisp-2021-001",
+      "title": "Leakage Resilient Cheating Detectable Secret Sharing Schemes.",
+      "authors": [
+        "Sabyasachi Dutta",
+        "Reihaneh Safavi-Naini"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_1",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#DuttaS21"
+    },
+    {
+      "id": "acisp-2021-002",
+      "title": "Chosen Ciphertext Secure Functional Encryption from Constrained Witness PRF.",
+      "authors": [
+        "Tapas Pal",
+        "Ratna Dutta"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_2",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#PalD21"
+    },
+    {
+      "id": "acisp-2021-003",
+      "title": "Updatable Trapdoor SPHFs: Modular Construction of Updatable Zero-Knowledge Arguments and More.",
+      "authors": [
+        "Behzad Abdolmaleki",
+        "Daniel Slamanig"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_3",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#AbdolmalekiS21"
+    },
+    {
+      "id": "acisp-2021-004",
+      "title": "Small Superset and Big Subset Obfuscation.",
+      "authors": [
+        "Steven D. Galbraith",
+        "Trey Li"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_4",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#GalbraithL21"
+    },
+    {
+      "id": "acisp-2021-005",
+      "title": "Algebraic Attacks on Round-Reduced Keccak.",
+      "authors": [
+        "Fukang Liu",
+        "Takanori Isobe 0001",
+        "Willi Meier",
+        "Zhonghao Yang 0003"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_5",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiuIMY21"
+    },
+    {
+      "id": "acisp-2021-006",
+      "title": "On MILP-Based Automatic Search for Bit-Based Division Property for Ciphers with (Large) Linear Layers.",
+      "authors": [
+        "Muhammad ElSheikh",
+        "Amr M. Youssef"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_6",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ElSheikhY21"
+    },
+    {
+      "id": "acisp-2021-007",
+      "title": "Constructions of Iterative Near-MDS Matrices with the Lowest XOR Count.",
+      "authors": [
+        "Xiaodan Li",
+        "Wenling Wu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_7",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiW21"
+    },
+    {
+      "id": "acisp-2021-008",
+      "title": "Forced Independent Optimized Implementation of 4-Bit S-Box.",
+      "authors": [
+        "Yanhong Fan 0001",
+        "Weijia Wang 0003",
+        "Zhihu Li",
+        "Zhenyu Lu",
+        "Siu-Ming Yiu",
+        "Meiqin Wang"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_8",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#FanWLLYW21"
+    },
+    {
+      "id": "acisp-2021-009",
+      "title": "Distinguishing and Key Recovery Attacks on the Reduced-Round SNOW-V.",
+      "authors": [
+        "Jin Hoki",
+        "Takanori Isobe 0001",
+        "Ryoma Ito 0001",
+        "Fukang Liu",
+        "Kosei Sakamoto"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_9",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#HokiIILS21"
+    },
+    {
+      "id": "acisp-2021-010",
+      "title": "Broadcast Authenticated Encryption with Keyword Search.",
+      "authors": [
+        "Xueqiao Liu",
+        "Kai He",
+        "Guomin Yang",
+        "Willy Susilo",
+        "Joseph Tonien",
+        "Qiong Huang 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_10",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiuHYSTH21"
+    },
+    {
+      "id": "acisp-2021-011",
+      "title": "An Anonymous Trace-and-Revoke Broadcast Encryption Scheme.",
+      "authors": [
+        "Olivier Blazy",
+        "Sayantan Mukherjee",
+        "Huyen Nguyen",
+        "Duong Hieu Phan",
+        "Damien Stehl&#233;"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_11",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#BlazyMNPS21"
+    },
+    {
+      "id": "acisp-2021-012",
+      "title": "Security Analysis of End-to-End Encryption for Zoom Meetings.",
+      "authors": [
+        "Takanori Isobe 0001",
+        "Ryoma Ito 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_12",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#IsobeI21"
+    },
+    {
+      "id": "acisp-2021-013",
+      "title": "CCA Secure Attribute-Hiding Inner Product Encryption from Minimal Assumption.",
+      "authors": [
+        "Tapas Pal",
+        "Ratna Dutta"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_13",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#PalD21a"
+    },
+    {
+      "id": "acisp-2021-014",
+      "title": "Optimal Randomized Partial Checking for Decryption Mix Nets.",
+      "authors": [
+        "Thomas Haines",
+        "Johannes M&#252;ller 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_14",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#HainesM21"
+    },
+    {
+      "id": "acisp-2021-015",
+      "title": "A Novel Proof of Shuffle: Exponentially Secure Cut-and-Choose.",
+      "authors": [
+        "Thomas Haines",
+        "Johannes M&#252;ller 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_15",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#HainesM21a"
+    },
+    {
+      "id": "acisp-2021-016",
+      "title": "Private Decision Tree Evaluation with Constant Rounds via (Only) Fair SS-4PC.",
+      "authors": [
+        "Hikaru Tsuchida 0001",
+        "Takashi Nishide"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_16",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#TsuchidaN21"
+    },
+    {
+      "id": "acisp-2021-017",
+      "title": "Partially-Fair Computation from Timed-Release Encryption and Oblivious Transfer.",
+      "authors": [
+        "Geoffroy Couteau",
+        "A. W. Roscoe 0001",
+        "Peter Y. A. Ryan"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_17",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#CouteauRR21"
+    },
+    {
+      "id": "acisp-2021-018",
+      "title": "Concise Mercurial Subvector Commitments: Definitions and Constructions.",
+      "authors": [
+        "Yannan Li 0001",
+        "Willy Susilo",
+        "Guomin Yang",
+        "Tran Viet Xuan Phuong",
+        "Yong Yu 0002",
+        "Dongxi Liu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_18",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiSYPYL21"
+    },
+    {
+      "id": "acisp-2021-019",
+      "title": "A Secure Cross-Shard View-Change Protocol for Sharding Blockchains.",
+      "authors": [
+        "Yizhong Liu",
+        "Jianwei Liu 0001",
+        "Yiming Hei",
+        "Yu Xia 0013",
+        "Qianhong Wu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_19",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiuLHXW21"
+    },
+    {
+      "id": "acisp-2021-020",
+      "title": "Efficient Unique Ring Signature for Blockchain Privacy Protection.",
+      "authors": [
+        "The Anh Ta",
+        "Thanh Xuan Khuc",
+        "Tuong Ngoc Nguyen",
+        "Huy Quoc Le",
+        "Dung Hoang Duong",
+        "Willy Susilo",
+        "Kazuhide Fukushima",
+        "Shinsaku Kiyomoto"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_20",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#TaKNLDSFK21"
+    },
+    {
+      "id": "acisp-2021-021",
+      "title": "Redactable Transactions in Consortium Blockchain: Controlled by Multi-authority CP-ABE.",
+      "authors": [
+        "Zongyang Zhang",
+        "Tong Li 0018",
+        "Zhuo Wang",
+        "Jianwei Liu 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_21",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ZhangLWL21"
+    },
+    {
+      "id": "acisp-2021-022",
+      "title": "Transparency or Anonymity Leak: Monero Mining Pools Data Publication.",
+      "authors": [
+        "Dimaz Ankaa Wijaya",
+        "Joseph K. Liu",
+        "Ron Steinfeld",
+        "Dongxi Liu"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_22",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#WijayaLSL21"
+    },
+    {
+      "id": "acisp-2021-023",
+      "title": "Mind the Scraps: Attacking Blockchain Based on Selfdestruct.",
+      "authors": [
+        "Wei-Yang Chiu",
+        "Weizhi Meng 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_23",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ChiuM21"
+    },
+    {
+      "id": "acisp-2021-024",
+      "title": "A Blockchain-Enabled Federated Learning Model for Privacy Preservation: System Design.",
+      "authors": [
+        "Minfeng Qi",
+        "Ziyuan Wang 0003",
+        "Fan Wu",
+        "Rob Hanson",
+        "Shiping Chen 0001",
+        "Yang Xiang 0001",
+        "Liming Zhu 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_24",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#QiWWHCXZ21"
+    },
+    {
+      "id": "acisp-2021-025",
+      "title": "ALRS: An Adversarial Noise Based Privacy-Preserving Data Sharing Mechanism.",
+      "authors": [
+        "Jikun Chen",
+        "Ruoyu Deng",
+        "Hongbin Chen",
+        "Na Ruan",
+        "Yao Liu 0007",
+        "Chao Liu",
+        "Chunhua Su"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_25",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ChenDCRLLS21"
+    },
+    {
+      "id": "acisp-2021-026",
+      "title": "Non-interactive, Secure Verifiable Aggregation for Decentralized, Privacy-Preserving Learning.",
+      "authors": [
+        "Carlo Brunetta",
+        "Georgia Tsaloli",
+        "Bei Liang",
+        "Gustavo Banegas",
+        "Aikaterini Mitrokotsa"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_26",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#BrunettaTLBM21"
+    },
+    {
+      "id": "acisp-2021-027",
+      "title": "Towards Visualizing and Detecting Audio Adversarial Examples for Automatic Speech Recognition.",
+      "authors": [
+        "Wei Zong",
+        "Yang-Wai Chow",
+        "Willy Susilo"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_27",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ZongCS21"
+    },
+    {
+      "id": "acisp-2021-028",
+      "title": "Oriole: Thwarting Privacy Against Trustworthy Deep Learning Models.",
+      "authors": [
+        "Liuqiao Chen",
+        "Hu Wang 0005",
+        "Benjamin Zi Hao Zhao",
+        "Minhui Xue 0001",
+        "Haifeng Qian"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_28",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#ChenWZXQ21"
+    },
+    {
+      "id": "acisp-2021-029",
+      "title": "Puncturable Identity-Based Encryption from Lattices.",
+      "authors": [
+        "Priyanka Dutta 0001",
+        "Willy Susilo",
+        "Dung Hoang Duong",
+        "Partha Sarathi Roy 0001"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_29",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#DuttaSDR21"
+    },
+    {
+      "id": "acisp-2021-030",
+      "title": "Optimizing Bootstrapping and Evaluating Large FHE Gates in the LWE-Based GSW-FHE.",
+      "authors": [
+        "Chao Liu 0060",
+        "Anyu Wang 0001",
+        "Zhongxiang Zheng"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_30",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#LiuWZ21"
+    },
+    {
+      "id": "acisp-2021-031",
+      "title": "Forward-Secure Group Encryptions from Lattices.",
+      "authors": [
+        "Jing Pan",
+        "Xiaofeng Chen 0001",
+        "Fangguo Zhang",
+        "Willy Susilo"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_31",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#PanCZS21"
+    },
+    {
+      "id": "acisp-2021-032",
+      "title": "Anonymous Lattice Identity-Based Encryption with Traceable Identities.",
+      "authors": [
+        "Xavier Boyen",
+        "Ernest Foo",
+        "Qinyi Li"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_32",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#BoyenFL21"
+    },
+    {
+      "id": "acisp-2021-033",
+      "title": "Lattice-Based Secure Biometric Authentication for Hamming Distance.",
+      "authors": [
+        "Jung Hee Cheon",
+        "Dongwoo Kim 0003",
+        "Duhyeong Kim",
+        "Joohee Lee",
+        "Junbum Shin",
+        "Yongsoo Song"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_33",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#CheonKKLSS21"
+    },
+    {
+      "id": "acisp-2021-034",
+      "title": "A Trustless GQ Multi-signature Scheme with Identifiable Abort.",
+      "authors": [
+        "Handong Cui",
+        "Tsz Hon Yuen"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_34",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#CuiY21"
+    },
+    {
+      "id": "acisp-2021-035",
+      "title": "Verifiable Obtained Random Subsets for Improving SPHINCS<sup>+</sup>.",
+      "authors": [
+        "Mahmoud Yehia",
+        "Riham AlTawy",
+        "T. Aaron Gulliver"
+      ],
+      "doi": "https://doi.org/10.1007/978-3-030-90567-5_35",
+      "dblp_url": "https://dblp.org/db/conf/acisp/acisp2021.html#YehiaAG21"
+    }
+  ]
+}
