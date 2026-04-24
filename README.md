@@ -1,19 +1,24 @@
 # phretor/skills
 
-Public [Agent Skills](https://agentskills.io) for Claude Code.
+Public [Agent Skills](https://agentskills.io) for Pi.
 
 ## Install
 
 ```bash
-/plugin marketplace add phretor/skills
-claude plugins install phretor-skills
+pi install https://github.com/phretor/skills
 ```
 
-## Plugins
+Or load locally from a checkout:
 
-| Plugin | Command | Description |
+```bash
+pi install .
+```
+
+## Skills
+
+| Skill | Command | Description |
 |---|---|---|
-| [con](plugins/con/) | `/con [academic\|industry] <question>` | Conference intelligence: rankings, paper/talk search, author lookup, live CFP calendar, structured work evaluation |
+| [seccon](plugins/seccon/) | `/skill:seccon help` | Security conference intelligence: rankings, paper/talk search, author lookup, live CFP calendar, topic-filtered `now`, `deadlines`, `latest`, venue comparison, and academic `<year> <acronym>` shorthand |
 
 ## Contributing
 

@@ -1,0 +1,10 @@
+{
+  "name": "seccon",
+  "version": "1.2.0",
+  "description": "Security conference intelligence for security researchers — academic and industry venues",
+  "author": {
+    "name": "Federico Maggi",
+    "email": "fede@maggi.cc",
+    "url": "https://github.com/phretor"
+  }
+}

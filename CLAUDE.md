@@ -71,7 +71,7 @@ Invoke the `<skill-name>` skill with these arguments for the full workflow.
 
 ### `skills/<skill-name>/SKILL.md`
 
-Frontmatter must contain only `name`, `description`, and (optionally) `allowed-tools`. No `version`, `author`, or `metadata` — those belong in `plugin.json`.
+Frontmatter must contain only `name`, `description`, and (optionally) `allowed-tools`. If you add extra fields for compatibility with other harnesses, keep them YAML-safe and expect Claude-oriented validators to warn. Never put `version` or `author` here — those belong in `plugin.json`.
 
 ```yaml
 ---
@@ -149,5 +149,37 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 - **Behavioral guidance over reference dumps**: explain _why_ and _when_, not just _what_
 - **No hardcoded absolute paths**: use `{baseDir}` or relative paths
 - **Python scripts**: use PEP 723 inline dependency headers and `uv run`
-- **System dependencies**: declare in SKILL.md `compatibility` field with install commands for both macOS (`brew`) and Linux (`apt-get`); repeat in `README.md` under a `## Requirements` section
+- **System dependencies**: if you declare them in a SKILL.md `compatibility` field for Pi, also repeat them in `README.md` under a `## Requirements` section
 - **SKILL.md under 500 lines**: split overflow into `references/` or `workflows/`
+
+## YAML Frontmatter Steering
+
+YAML parse failures are easy to introduce in skill frontmatter. Before committing, sanity-check these rules:
+
+- **Quote any scalar containing `:`**. Example: `description: "Looks up S&P: rankings and papers"`
+- **Prefer quoted strings for all frontmatter prose**, even when not strictly required
+- **For long values, use a block scalar** instead of a long plain string:
+
+```yaml
+compatibility: >-
+  Requires internet access. System dependency: pdftotext (poppler) for extracting
+  text from downloaded papers and frontmatter PDFs. Install with `brew install
+  poppler` (macOS) or `apt-get install poppler-utils` (Linux).
+```
+
+- **Do not use unquoted plain scalars with embedded `:`**, because YAML may treat them as nested mappings
+- **Keep frontmatter minimal**; move detailed prose into the body when possible
+- **If a field is optional for one harness but noisy for another, prefer documenting it in README.md instead of frontmatter**
+
+Safe pattern:
+
+```yaml
+---
+name: seccon
+description: "Looks up academic and industry security conferences."
+allowed-tools: WebFetch WebSearch Bash
+compatibility: >-
+  Requires internet access. Install pdftotext via `brew install poppler` or
+  `apt-get install poppler-utils`.
+---
+```

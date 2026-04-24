@@ -1,0 +1,18 @@
+{
+  "name": "phretor-skills",
+  "version": "1.2.0",
+  "private": true,
+  "description": "Agent Skills for Pi, starting with security conference intelligence for security researchers.",
+  "keywords": [
+    "pi-package",
+    "agent-skills",
+    "claude-code",
+    "pi",
+    "security-research"
+  ],
+  "pi": {
+    "skills": [
+      "./plugins/*/skills"
+    ]
+  }
+}
