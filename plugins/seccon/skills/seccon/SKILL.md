@@ -404,14 +404,50 @@ Read `references/industry.md` for year-specific talk archive URLs (updated by `s
 DEF CON media archive uses numbered editions (DEF CON 1 = 1993):
 `https://media.defcon.org/DEF%20CON%20{N}/`
 
+### Black Hat Sessions JSON
+
+Black Hat schedule pages are Handlebars.js shells. The actual session data
+(title, speakers, description, track, format, files) is loaded from a `sessions.json`
+endpoint. Fetch the JSON directly instead of crawling the HTML page:
+
+```
+https://www.blackhat.com/us-{YY}/briefings/sessions.json
+https://www.blackhat.com/eu-{YY}/briefings/sessions.json
+https://www.blackhat.com/asia-{YY}/briefings/sessions.json
+```
+
+**JSON structure:** the top-level `sessions` array contains objects with:
+- `title`, `description`, `full_description` — talk title and abstract
+- `speakers` — array with `person_id`, `role`, first/last name, company
+- `track_1`, `track_2` — topic track names
+- `format`, `duration` — session format metadata
+- `bh_files` — object with `slides`, `whitepaper`, `source_code` URLs
+- `public_tags.tag` — array of topic tags (`{name, id}`)
+- `time_display`, `room`, `additional_dates` — scheduling info
+
+**Cloudflare protection:** the JSON endpoint is behind Cloudflare and may
+return 403 when accessed with a plain `curl` or the crawler script. Try with
+a browser User-Agent header:
+
+```bash
+curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" <url>
+```
+
+If blocked, fall back to the DEF CON media archive or note that Black Hat data
+is unavailable from the current environment.
+
 ### Cross-Conference Topic Scan (Industry)
 
-Search the DEF CON and Black Hat archives by keyword. Also check:
+Search the DEF CON and Black Hat archives by keyword. For Black Hat, fetch the
+`sessions.json` endpoint directly (see "Black Hat Sessions JSON" above) and
+filter the JSON — the HTML schedule page is a Handlebars.js shell, not the
+actual data. Also check:
 - Slides on Speaker Deck / SlideShare
 - Videos on YouTube (channel: "DEFCONConference", "Black Hat")
 - Papers mentioned in talk abstracts → follow to academic venues
 
-When a talk has a companion paper (common at Black Hat), cross-reference it via the academic rubric.
+When a talk has a companion paper (common at Black Hat), cross-reference it via
+the academic rubric.
 
 ---
 

@@ -59,6 +59,14 @@ Paper search plugins also use `paperhub-cli`, installed automatically via `uv sy
 
 See [CLAUDE.md](CLAUDE.md) for plugin structure, required files, and quality standards.
 
+## Disclaimer
+
+Using these skills causes the agent to fetch content from public-facing
+conference websites (program pages, proceedings archives, CFP APIs). The
+crawler caches aggressively to minimize requests, but repeated use may still
+trigger rate limits or temporary IP bans from upstream sites. This is inherent
+to the kind of data this repo provides. Use responsibly.
+
 ## License
 
 MIT
