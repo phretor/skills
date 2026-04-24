@@ -426,15 +426,12 @@ https://www.blackhat.com/asia-{YY}/briefings/sessions.json
 - `time_display`, `room`, `additional_dates` — scheduling info
 
 **Cloudflare protection:** the JSON endpoint is behind Cloudflare and may
-return 403 when accessed with a plain `curl` or the crawler script. Try with
-a browser User-Agent header:
+return 403. The crawler uses `curl_cffi` with Chrome TLS impersonation
+and a 60s timeout; even a full headless Chromium via Playwright may be
+blocked at the IP level on some networks.
 
-```bash
-curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" <url>
-```
-
-If blocked, fall back to the DEF CON media archive or note that Black Hat data
-is unavailable from the current environment.
+If blocked, note that Black Hat data is unavailable from the current
+environment and fall back to the DEF CON media archive or other venues.
 
 ### Cross-Conference Topic Scan (Industry)
 
