@@ -1,0 +1,91 @@
+{
+  "conference": {
+    "name": "REcon 2023",
+    "acronym": "REcon",
+    "year": 2023,
+    "url": "https://recon.cx/2023/sessions.html"
+  },
+  "coverage": {
+    "talks_count": 9,
+    "has_abstracts": false,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "rc2023-001",
+      "title": "NVMe: New Vulnerabilities Made easy",
+      "speakers": [
+        "Tal Lossos"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-002",
+      "title": "Cracking the final frontier: Reverse engineering and exploiting low-earth orbit satellites",
+      "speakers": [
+        "Johannes Willbold"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-003",
+      "title": "Unchained Skies: A Deep Dive into Reverse Engineering and Exploitation of Drones",
+      "speakers": [
+        "Moritz Schloegel",
+        "Nico Schiller"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-004",
+      "title": "A Backdoor Lockpick",
+      "speakers": [
+        "Olivia Lucca Fraser"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-005",
+      "title": "Ice Ice Baby: Coppin' RAM With DIY Cryo-Mechanical Robot",
+      "speakers": [
+        "Ang Cui",
+        "Grant Skipper",
+        "Yuanzhe Wu"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-006",
+      "title": "Handoff All Your Privacy (Again)",
+      "speakers": [
+        "Christine Fossaceca"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-007",
+      "title": "Hello 1994: Abusing Windows Explorer via Component Object Model in 2023",
+      "speakers": [
+        "Michael Harbison"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-008",
+      "title": "Press Play to Restart: Under the Hood of the Windows Restart Manager",
+      "speakers": [
+        "Mathilde Venault"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    },
+    {
+      "id": "rc2023-009",
+      "title": "Unveiling Secrets in Binaries using Code Detection Strategies",
+      "speakers": [
+        "Tim Blazytko"
+      ],
+      "archive_url": "https://recon.cx/2023/sessions.html"
+    }
+  ]
+}

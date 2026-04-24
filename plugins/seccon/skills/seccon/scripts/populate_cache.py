@@ -204,6 +204,33 @@ def crawl_offensivecon_year(year: int) -> int:
     return len(talks)
 
 
+def crawl_recon_year(year: int) -> int:
+    url = f"https://recon.cx/{year}/sessions.html"
+    html = _curl(url)
+    if not html:
+        return 0
+    talks = []
+    for m in re.finditer(r'<ul class="training-list">(.*?)</ul>', html, re.DOTALL):
+        items = re.findall(r'<li>(.*?)</li>', m.group(1), re.DOTALL)
+        for item in items:
+            text = re.sub(r'<[^>]+>', ' ', item).strip()
+            text = re.sub(r'\s+', ' ', text)
+            if not text or len(text) < 10:
+                continue
+            parts = text.split(' - ', 1)
+            title = parts[0].strip() if parts else text
+            speaker = parts[1].strip() if len(parts) > 1 else ""
+            speakers = [s.strip() for s in re.split(r'[,&]', speaker) if s.strip()]
+            talks.append({"id": f"rc{year}-{len(talks)+1:03d}", "title": title, "speakers": speakers or [speaker], "archive_url": url})
+    if not talks:
+        return 0
+    out_dir = RESOURCES / "industry" / str(year) / "recon"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    idx = {"conference": {"name": f"REcon {year}", "acronym": "REcon", "year": year, "url": url}, "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": False, "last_crawled": "2026-04-24"}, "talks": talks}
+    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    return len(talks)
+
+
 def write_manifest(academic_cached: dict, industry_cached: dict):
     manifest = {
         "version": "1.3.0",
@@ -278,6 +305,14 @@ def main():
         oc.append(y) if c else None
         print(f"    OffensiveCon {y}: {c or 'unreachable'}")
     ind["offensivecon"] = oc
+
+    print("\n  REcon...")
+    rc = []
+    for y in [2022, 2023, 2024, 2025]:
+        c = crawl_recon_year(y)
+        rc.append(y) if c else None
+        print(f"    REcon {y}: {c or 'unreachable'}")
+    ind["recon"] = rc
 
     print("\n--- Updating manifest ---")
     write_manifest(ac_cached, ind)

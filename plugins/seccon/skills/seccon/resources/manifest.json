@@ -360,6 +360,18 @@
           ],
           "note": ""
         },
+        "recon": {
+          "cached": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021
+          ],
+          "note": ""
+        },
         "blackhat-usa": {
           "cached": [],
           "gaps": [
@@ -405,17 +417,6 @@
           "note": "Not yet crawled"
         },
         "cansecwest": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "note": "Not yet crawled"
-        },
-        "recon": {
           "cached": [],
           "gaps": [
             2021,

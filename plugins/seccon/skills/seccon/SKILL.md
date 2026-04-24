@@ -387,6 +387,7 @@ Read `resources/manifest.json` for cached industry venue-years.
 | Black Hat EU | Same, European edition | ⚠️ Blocked (Cloudflare) |
 | Black Hat Asia | Same, Asian edition | ⚠️ Blocked (Cloudflare) |
 | OffensiveCon | Offensive research, exploitation | ✅ 2022–2025 (44 talks) |
+| REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
 | — Lower-tier / uncached — | | |
 | USENIX Security | Academic — systems security | ✅ 2024–2025 (857 papers) |
 | IEEE S&P | Academic — systems & applied | ✅ 2021, 2023, 2024 (575 papers) |

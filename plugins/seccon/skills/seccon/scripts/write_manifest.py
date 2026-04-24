@@ -59,21 +59,23 @@ for slug in sorted(VENUE_NAMES):
     note = "DBLP unreachable from this environment" if not cached else ""
     manifest["coverage"]["academic"]["venues"][slug] = {"cached": sorted(cached), "gaps": gaps, "note": note}
 
-# Industry venues (only DEF CON and OffensiveCon currently cached)
-for slug in ("defcon", "offensivecon"):
+# Industry venues — scan filesystem for what's cached
+INDUSTRY_SLUGS = ["defcon", "offensivecon", "recon", "blackhat-usa", "blackhat-eu", "blackhat-asia",
+                  "rsec", "cansecwest", "troopers", "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"]
+for slug in INDUSTRY_SLUGS:
     cached = []
     for year in YEARS:
         idx = RESOURCES / "industry" / str(year) / slug / "index.json"
         if idx.exists():
             cached.append(year)
     gaps = sorted(set(YEARS) - set(cached))
-    manifest["coverage"]["industry"]["venues"][slug] = {"cached": sorted(cached), "gaps": gaps, "note": ""}
-
-for bh in ("blackhat-usa", "blackhat-eu", "blackhat-asia"):
-    manifest["coverage"]["industry"]["venues"][bh] = {"cached": [], "gaps": YEARS, "note": "Cloudflare blocked"}
-
-for o in ("rsec", "cansecwest", "recon", "troopers", "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"):
-    manifest["coverage"]["industry"]["venues"][o] = {"cached": [], "gaps": YEARS, "note": "Not yet crawled"}
+    note = ""
+    if not cached:
+        if slug in ("blackhat-usa", "blackhat-eu", "blackhat-asia"):
+            note = "Cloudflare blocked"
+        else:
+            note = "Not yet crawled"
+    manifest["coverage"]["industry"]["venues"][slug] = {"cached": sorted(cached), "gaps": gaps, "note": note}
 
 MANIFEST.write_text(json.dumps(manifest, indent=2))
 
