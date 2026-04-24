@@ -1,0 +1,82 @@
+{
+  "conference": {
+    "name": "OffensiveCon 2024",
+    "acronym": "OffensiveCon",
+    "year": 2024,
+    "url": "https://www.offensivecon.org/agenda/2024.html"
+  },
+  "coverage": {
+    "talks_count": 11,
+    "has_abstracts": false,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "oc2024-001",
+      "title": "Registration, coffee and snacks",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-002",
+      "title": "Welcome Address",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-003",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-004",
+      "title": "Lunch",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-005",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-006",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-007",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-008",
+      "title": "Lunch",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-009",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-010",
+      "title": "Coffee Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    },
+    {
+      "id": "oc2024-011",
+      "title": "Closing Remarks",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2024.html"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "conference": {
+    "name": "OffensiveCon 2023",
+    "acronym": "OffensiveCon",
+    "year": 2023,
+    "url": "https://www.offensivecon.org/agenda/2023.html"
+  },
+  "coverage": {
+    "talks_count": 14,
+    "has_abstracts": false,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "oc2023-001",
+      "title": "Registration and Coffee",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-002",
+      "title": "Opening Remarks and Welcome Address",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-003",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-004",
+      "title": "Lunch",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-005",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-006",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-007",
+      "title": "Dinner and Opening Party at Papillon Restaurant & Bar - Sponsored",
+      "speakers": [
+        "DFSEC - Please note that buses leave 1930 from the lobby!"
+      ],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-008",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-009",
+      "title": "Lunch",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-010",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-011",
+      "title": "Break",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-012",
+      "title": "Closing Remarks",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-013",
+      "title": "Dinner at the Hilton",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    },
+    {
+      "id": "oc2023-014",
+      "title": "Closing Party at the Bellboy Bar - Sponsored",
+      "speakers": [
+        "Trenchant"
+      ],
+      "archive_url": "https://www.offensivecon.org/agenda/2023.html"
+    }
+  ]
+}

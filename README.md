@@ -61,11 +61,18 @@ See [CLAUDE.md](CLAUDE.md) for plugin structure, required files, and quality sta
 
 ## Disclaimer
 
-Using these skills causes the agent to fetch content from public-facing
-conference websites (program pages, proceedings archives, CFP APIs). The
-crawler caches aggressively to minimize requests, but repeated use may still
-trigger rate limits or temporary IP bans from upstream sites. This is inherent
-to the kind of data this repo provides. Use responsibly.
+These skills primarily operate from a **curated cache** (`resources/`) of paper
+and talk metadata collected from public-facing conference websites. Cache
+updates are done in batch by the maintainer; the agent only fetches live
+content in two cases:
+- **Calendar queries** (`now`, `deadlines`) via dedicated APIs (CFPTime,
+  ConfSearch) that expect programmatic access.
+- **On-demand PDF fetching** when the user drills into a specific paper or
+  talk — a single targeted request per paper.
+
+This design minimizes traffic to upstream sites. If a venue is unreachable
+(Cloudflare, paywall, JS-rendered), it is marked as a gap in the manifest
+rather than retried on every query. Use responsibly.
 
 ## License
 

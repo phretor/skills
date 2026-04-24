@@ -1,0 +1,800 @@
+{
+  "conference": {
+    "name": "DEF CON 32",
+    "acronym": "DEF CON",
+    "year": 2024,
+    "edition": 32,
+    "url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+  },
+  "coverage": {
+    "talks_count": 87,
+    "has_abstracts": false,
+    "has_slides": true,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "dc32-001",
+      "title": "Aapo Oksman - Leveraging private APNs for mobile network traffic analysis",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Aapo%20Oksman%20-%20Leveraging%20private%20APNs%20for%20mobile%20network%20traffic%20analysis.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-002",
+      "title": "Aaron Grattafiori Ivan Evtimov Joanna Bitton Maya Pavlova - Taming the Beast - Inside the Llama 3 Red Team Process",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Aaron%20Grattafiori%20Ivan%20Evtimov%20Joanna%20Bitton%20Maya%20Pavlova%20-%20Taming%20the%20Beast%20-%20Inside%20the%20Llama%203%20Red%20Team%20Process.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-003",
+      "title": "Adnan Khan John Stawinski - Grand Theft Actions Abusing Self-Hosted GitHub Runners at Scale",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Adnan%20Khan%20John%20Stawinski%20-%20Grand%20Theft%20Actions%20Abusing%20Self-Hosted%20GitHub%20Runners%20at%20Scale.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-004",
+      "title": "Adversary Vilage - Mark Foudy - Exploiting Voice Cloning in Adversarial Simulation",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Adversary%20Vilage%20-%20Mark%20Foudy%20-%20Exploiting%20Voice%20Cloning%20in%20Adversarial%20Simulation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-005",
+      "title": "Alessandro Magnosi - DriverJack - Turning NTFS and Emulated Read-only Filesystems in an Infection and Persistence Vector",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Alessandro%20Magnosi%20-%20DriverJack%20-%20Turning%20NTFS%20and%20Emulated%20Read-only%20Filesystems%20in%20an%20Infection%20and%20Persistence%20Vector.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-006",
+      "title": "Alexander Rubin Martin Rakhmanov - Atomic Honeypot A MySQL Honeypot That Drops Shells",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Alexander%20Rubin%20Martin%20Rakhmanov%20-%20Atomic%20Honeypot%20A%20MySQL%20Honeypot%20That%20Drops%20Shells.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-007",
+      "title": "Alon Leviev - Windows Downdate Downgrade Attacks Using Windows Updates",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Alon%20Leviev%20-%20Windows%20Downdate%20Downgrade%20Attacks%20Using%20Windows%20Updates.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-008",
+      "title": "Andrew Case Austin Sellers Golden Richard David McDonald Gustavo Moreira - Defeating EDR Evading Malware with Memory Forensics",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Andrew%20Case%20Austin%20Sellers%20Golden%20Richard%20David%20McDonald%20Gustavo%20Moreira%20-%20Defeating%20EDR%20Evading%20Malware%20with%20Memory%20Forensics.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-009",
+      "title": "Anthony Kava - Solving the Lover Stalker Killer Murder with strings grep and Perl",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Anthony%20Kava%20-%20Solving%20the%20Lover%20Stalker%20Killer%20Murder%20with%20strings%20grep%20and%20Perl.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-010",
+      "title": "Anthony Kava -Solving the Lover Stalker Killer Murder with strings grep and Perl",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Anthony%20Kava%20-Solving%20the%20Lover%20Stalker%20Killer%20Murder%20with%20strings%20grep%20and%20Perl.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-011",
+      "title": "atlas - automobiles, alcohol, blood, sweat, and creative reversing of an obfuscated Car-Modding tool",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20atlas%20-%20automobiles%2C%20alcohol%2C%20blood%2C%20sweat%2C%20and%20creative%20reversing%20of%20an%20obfuscated%20Car-Modding%20tool.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-012",
+      "title": "Aviad Hahami - OH-MY-DC - Abusing OIDC all the way to your cloud",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Aviad%20Hahami%20-%20OH-MY-DC%20-%20Abusing%20OIDC%20all%20the%20way%20to%20your%20cloud.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-013",
+      "title": "Babak Javadi Aaron Levy Nick Draffen - High Intensity Deconstruction Chronicles of a Cryptographic Heist",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Babak%20Javadi%20Aaron%20Levy%20Nick%20Draffen%20-%20High%20Intensity%20Deconstruction%20Chronicles%20of%20a%20Cryptographic%20Heist.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-014",
+      "title": "Bramwell Brizendine Shiva Shashank Kusuma - Techniques for Creating Process Injection Attacks with Advanced Return-Oriented Programming white paper",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Bramwell%20Brizendine%20Shiva%20Shashank%20Kusuma%20-%20Techniques%20for%20Creating%20Process%20Injection%20Attacks%20with%20Advanced%20Return-Oriented%20Programming%20white%20paper.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-015",
+      "title": "Bramwell Brizendine Shiva Shashank Kusuma - Techniques for Creating Process Injection Attacks with Advanced Return-Oriented Programming",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Bramwell%20Brizendine%20Shiva%20Shashank%20Kusuma%20-%20Techniques%20for%20Creating%20Process%20Injection%20Attacks%20with%20Advanced%20Return-Oriented%20Programming.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-016",
+      "title": "Ceri Coburn Dirk-jan Mollema - Abusing Windows Hello Without a Severed Hand",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Ceri%20Coburn%20Dirk-jan%20Mollema%20-%20Abusing%20Windows%20Hello%20Without%20a%20Severed%20Hand.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-017",
+      "title": "Chanin Kim Myeonghun Pak Myeongjin Shin - Watchers being watched Exploiting the Surveillance System and its supply chain",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Chanin%20Kim%20Myeonghun%20Pak%20Myeongjin%20Shin%20-%20Watchers%20being%20watched%20Exploiting%20the%20Surveillance%20System%20and%20its%20supply%20chain.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-018",
+      "title": "Charles Fol - Iconv set the charset to RCE exploiting the glibc to hack the PHP engine",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Charles%20Fol%20-%20Iconv%20set%20the%20charset%20to%20RCE%20exploiting%20the%20glibc%20to%20hack%20the%20PHP%20engine.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-019",
+      "title": "Damien Cauquil Romain Cayre - One for all and all for WHAD wireless shenanigans made easy",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Damien%20Cauquil%20Romain%20Cayre%20-%20One%20for%20all%20and%20all%20for%20WHAD%20wireless%20shenanigans%20made%20easy.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-020",
+      "title": "Daniel Bohannon Sabajete Elezaj - MaLDAPtive LDAP Obfuscation Deobfuscation and Detection",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Daniel%20Bohannon%20Sabajete%20Elezaj%20-%20MaLDAPtive%20LDAP%20Obfuscation%20Deobfuscation%20and%20Detection.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-021",
+      "title": "Daniel Messer - A Shadow Librarian in Broad Daylight Fighting back against ever encroaching capitalism",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Daniel%20Messer%20-%20A%20Shadow%20Librarian%20in%20Broad%20Daylight%20Fighting%20back%20against%20ever%20encroaching%20capitalism.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-022",
+      "title": "David Mel\u00e9ndez Gabriela (Gabs) Garcia - Abusing legacy railroad signaling systems",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20David%20Mel%C3%A9ndez%20Gabriela%20%28Gabs%29%20Garcia%20-%20Abusing%20legacy%20railroad%20signaling%20systems.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-023",
+      "title": "Dennis Giese Braelynn - Open sesame - or how vulnerable is your stuff in electronic lockers",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Dennis%20Giese%20Braelynn%20-%20Open%20sesame%20-%20or%20how%20vulnerable%20is%20your%20stuff%20in%20electronic%20lockers.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-024",
+      "title": "Eduard Agavriloae Matei Josephs - AWS CloudQuarry - Digging for Secrets in Public AMIs",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Eduard%20Agavriloae%20Matei%20Josephs%20-%20AWS%20CloudQuarry%20-%20Digging%20for%20Secrets%20in%20Public%20AMIs.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-025",
+      "title": "Enrique Nissim Krzysztof Okupski - AMD Sinkclose Universal Ring-2 Privilege Escalation Redacted",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Enrique%20Nissim%20Krzysztof%20Okupski%20-%20AMD%20Sinkclose%20Universal%20Ring-2%20Privilege%20Escalation%20Redacted.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-026",
+      "title": "Enrique Nissim Krzysztof Okupski - AMD Sinkclose Universal Ring-2 Privilege Escalation",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Enrique%20Nissim%20Krzysztof%20Okupski%20-%20AMD%20Sinkclose%20Universal%20Ring-2%20Privilege%20Escalation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-027",
+      "title": "Erwin Karincic Woody - Mobile Mesh RF Network Exploitation - Getting the Tea from goTenna",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Erwin%20Karincic%20Woody%20-%20Mobile%20Mesh%20RF%20Network%20Exploitation%20-%20Getting%20the%20Tea%20from%20goTenna.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-028",
+      "title": "Gareth Heyes - Splitting the email atom - exploiting parsers to bypass access controls",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Gareth%20Heyes%20-%20Splitting%20the%20email%20atom%20-%20exploiting%20parsers%20to%20bypass%20access%20controls.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-029",
+      "title": "General Paul M Nakasone - Spies and Bytes Victory in the Digital Age",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20General%20Paul%20M%20Nakasone%20-%20Spies%20and%20Bytes%20Victory%20in%20the%20Digital%20Age.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-030",
+      "title": "Harriet Farlow - On Your Oceans 11 Team Im the AI Guy (technically Girl)",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Harriet%20Farlow%20-%20On%20Your%20Oceans%2011%20Team%20Im%20the%20AI%20Guy%20%28technically%20Girl%29.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-031",
+      "title": "HD Moore Rob King - Sshamble Unexpected Exposures in the Secure Shell",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20HD%20Moore%20Rob%20King%20-%20Sshamble%20Unexpected%20Exposures%20in%20the%20Secure%20Shell.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-032",
+      "title": "Helvio Carvalho Junior - HookChain A new perspective for Bypassing EDR Solutions",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Helvio%20Carvalho%20Junior%20-%20HookChain%20A%20new%20perspective%20for%20Bypassing%20EDR%20Solutions.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-033",
+      "title": "HexRabbit Chen - Clash, Burn, and Exploit - Manipulate Filters to Pwn kernelCTF",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20HexRabbit%20Chen%20-%20Clash%2C%20Burn%2C%20and%20Exploit%20-%20Manipulate%20Filters%20to%20Pwn%20kernelCTF.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-034",
+      "title": "Jacob Braun - DEF CON Franklin Project",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jacob%20Braun%20-%20DEF%20CON%20Franklin%20Project.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-035",
+      "title": "Jacob Shams - Securing CCTV Cameras Against Blind Spots",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jacob%20Shams%20-%20Securing%20CCTV%20Cameras%20Against%20Blind%20Spots.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-036",
+      "title": "Jake Jepson Rik Chatterjee - Compromising an Electronic Logging Device and Creating a Truck2Truck Worm",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jake%20Jepson%20Rik%20Chatterjee%20-%20Compromising%20an%20Electronic%20Logging%20Device%20and%20Creating%20a%20Truck2Truck%20Worm.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-037",
+      "title": "Jeffrey Hofmann Colby Morgan - Discovering and exploiting local attacks against the 1Password MacOS desktop application",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jeffrey%20Hofmann%20Colby%20Morgan%20-%20Discovering%20and%20exploiting%20local%20attacks%20against%20the%201Password%20MacOS%20desktop%20application.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-038",
+      "title": "Jeffrey Knockel Mona Wang - The not-so-silent type Breaking network crypto in almost every popular Chinese keyboard app",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jeffrey%20Knockel%20Mona%20Wang%20-%20The%20not-so-silent%20type%20Breaking%20network%20crypto%20in%20almost%20every%20popular%20Chinese%20keyboard%20app.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-039",
+      "title": "JiaQing Huang Hao Zheng Yue Liu - Dragon SlayingGuide Bug Hunting In VMware Device Virtualization",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20JiaQing%20Huang%20Hao%20Zheng%20Yue%20Liu%20-%20Dragon%20SlayingGuide%20Bug%20Hunting%20In%20VMware%20Device%20Virtualization.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-040",
+      "title": "Jim Rush Tomais Williamson - NTLM - The Last Ride",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jim%20Rush%20Tomais%20Williamson%20-%20NTLM%20-%20The%20Last%20Ride.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-041",
+      "title": "Joe Grand Bruno Krauss - Joe and Brunos Guide to Hacking Time - Regenerating Passwords from RoboForm's Password Generator",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Joe%20Grand%20Bruno%20Krauss%20-%20Joe%20and%20Brunos%20Guide%20to%20Hacking%20Time%20-%20Regenerating%20Passwords%20from%20RoboForm%27s%20Password%20Generator.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-042",
+      "title": "Jon DiMaggio - Behind Enemy Lines - Going undercover to breach the LockBit Ransomware Operation",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Jon%20DiMaggio%20-%20Behind%20Enemy%20Lines%20-%20Going%20undercover%20to%20breach%20the%20LockBit%20Ransomware%20Operation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-043",
+      "title": "Joseph Cox - Inside the FBIs Secret Encrypted Phone Company Anom",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Joseph%20Cox%20-%20Inside%20the%20FBIs%20Secret%20Encrypted%20Phone%20Company%20Anom.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-044",
+      "title": "Ken Gannon Ilyes Beghdadi - Xiaomi The Money Our Toronto Pwn2Own Exploit and Behind The Scenes Story",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Ken%20Gannon%20Ilyes%20Beghdadi%20-%20Xiaomi%20The%20Money%20Our%20Toronto%20Pwn2Own%20Exploit%20and%20Behind%20The%20Scenes%20Story.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-045",
+      "title": "Lennert Wouters Ian Carroll - Unsaflok - Hacking millions of hotel locks",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Lennert%20Wouters%20Ian%20Carroll%20-%20Unsaflok%20-%20Hacking%20millions%20of%20hotel%20locks.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-046",
+      "title": "Martin Doyhenard - Gotta Cache em all bending the rules of web cache exploitation",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Martin%20Doyhenard%20-%20Gotta%20Cache%20em%20all%20bending%20the%20rules%20of%20web%20cache%20exploitation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-047",
+      "title": "Matt Burch - Where\u2019s the Money - Defeating ATM Disk Encryption-white paper",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Matt%20Burch%20-%20Where%E2%80%99s%20the%20Money%20-%20Defeating%20ATM%20Disk%20Encryption-white%20paper.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-048",
+      "title": "Matt Burch - Where\u2019s the Money - Defeating ATM Disk Encryption",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Matt%20Burch%20-%20Where%E2%80%99s%20the%20Money%20-%20Defeating%20ATM%20Disk%20Encryption.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-049",
+      "title": "Matthew Bryant - The Secret Life of a Rogue Device - Lost IT Assets on the Public Marketplace",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Matthew%20Bryant%20-%20The%20Secret%20Life%20of%20a%20Rogue%20Device%20-%20Lost%20IT%20Assets%20on%20the%20Public%20Marketplace.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-050",
+      "title": "Max Libra Kersten - No Symbols When Reversing No Problem Bring Your Own",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Max%20Libra%20Kersten%20-%20No%20Symbols%20When%20Reversing%20No%20Problem%20Bring%20Your%20Own.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-051",
+      "title": "Michael Gorelik Arnold Osipov - Outlook Unleashing RCE Chaos CVE-2024-30103 & CVE-2024-38021",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Michael%20Gorelik%20Arnold%20Osipov%20-%20Outlook%20Unleashing%20RCE%20Chaos%20CVE-2024-30103%20%26%20CVE-2024-38021.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-052",
+      "title": "Michael Orlitzky - Laundering Money",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Michael%20Orlitzky%20-%20Laundering%20Money.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-053",
+      "title": "Michael Torres - Sudos and Sudon'ts - Peering inside Sudo for Windows",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Michael%20Torres%20-%20Sudos%20and%20Sudon%27ts%20-%20Peering%20inside%20Sudo%20for%20Windows.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-054",
+      "title": "Michal Grygarek Martin Petran Hayyan Ali - Nano-Enigma Uncovering the Secrets Within eFuse Memories",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Michal%20Grygarek%20Martin%20Petran%20Hayyan%20Ali%20-%20Nano-Enigma%20Uncovering%20the%20Secrets%20Within%20eFuse%20Memories.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-055",
+      "title": "Mikhail Shcherbakov - Exploiting the Unexploitable Insights from the Kibana Bug Bounty",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Mikhail%20Shcherbakov%20-%20Exploiting%20the%20Unexploitable%20Insights%20from%20the%20Kibana%20Bug%20Bounty.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-056",
+      "title": "Mix\u00e6l Swan Laufer - Eradicating Hepatitis C With BioTerrorism",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Mix%C3%A6l%20Swan%20Laufer%20-%20Eradicating%20Hepatitis%20C%20With%20BioTerrorism.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-057",
+      "title": "Moritz Abrell - Unlocking the Gates - Hacking a secure Industrial Remote Access Solution",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Moritz%20Abrell%20-%20Unlocking%20the%20Gates%20-%20Hacking%20a%20secure%20Industrial%20Remote%20Access%20Solution.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-058",
+      "title": "Nick Frichette - Kicking in the Door to the Cloud - Exploiting Cloud Provider Vulnerabilities for Initial Access",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Nick%20Frichette%20-%20Kicking%20in%20the%20Door%20to%20the%20Cloud%20-%20Exploiting%20Cloud%20Provider%20Vulnerabilities%20for%20Initial%20Access.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-059",
+      "title": "Or Yair Shmuel Cohen - QuickShell Sharing is caring about an RCE attack chain on Quick Share",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Or%20Yair%20Shmuel%20Cohen%20-%20QuickShell%20Sharing%20is%20caring%20about%20an%20RCE%20attack%20chain%20on%20Quick%20Share.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-060",
+      "title": "Paul Gerste - SQL Injection Isn't Dead Smuggling Queries at the Protocol Level",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Gerste%20-%20SQL%20Injection%20Isn%27t%20Dead%20Smuggling%20Queries%20at%20the%20Protocol%20Level.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-061",
+      "title": "Paul Roberts Chris Wysopal Cory Doctorow Tarah Wheeler Dennis Giese - Bricked & Abandoned - How To Keep The IoT From Becoming An Internet of Trash",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Paul%20Roberts%20Chris%20Wysopal%20Cory%20Doctorow%20Tarah%20Wheeler%20Dennis%20Giese%20-%20Bricked%20%26%20Abandoned%20-%20How%20To%20Keep%20The%20IoT%20From%20Becoming%20An%20Internet%20of%20Trash.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-062",
+      "title": "Pete Stegemeyer - A Treasure Trove of Failures What Historys Greatest Heist Can Teach Us About Defense In Depth",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Pete%20Stegemeyer%20-%20A%20Treasure%20Trove%20of%20Failures%20What%20Historys%20Greatest%20Heist%20Can%20Teach%20Us%20About%20Defense%20In%20Depth.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-063",
+      "title": "Ron Ben-Yizhak David Shandalov - SHIM me what you got - Manipulating Shim and Office for Code Injection",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Ron%20Ben-Yizhak%20David%20Shandalov%20-%20SHIM%20me%20what%20you%20got%20-%20Manipulating%20Shim%20and%20Office%20for%20Code%20Injection.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-064",
+      "title": "Ryan Johnson - Android App Usage and Cell Tower Location Private Sensitive Available to Anyone",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Ryan%20Johnson%20-%20Android%20App%20Usage%20and%20Cell%20Tower%20Location%20Private%20Sensitive%20Available%20to%20Anyone.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-065",
+      "title": "S1nn3r - Smishing Smackdown Unraveling the Threads of USPS Smishing and Fighting Back",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20S1nn3r%20-%20Smishing%20Smackdown%20Unraveling%20the%20Threads%20of%20USPS%20Smishing%20and%20Fighting%20Back.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-066",
+      "title": "Sam Curry - Hacking Millions of Modems (and Investigating Who Hacked My Modem)",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Sam%20Curry%20-%20Hacking%20Millions%20of%20Modems%20%28and%20Investigating%20Who%20Hacked%20My%20Modem%29.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-067",
+      "title": "Samy Kamkar - Optical Espionage Using Lasers to Hear Keystrokes Through Glass Windows",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Samy%20Kamkar%20-%20Optical%20Espionage%20Using%20Lasers%20to%20Hear%20Keystrokes%20Through%20Glass%20Windows.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-068",
+      "title": "Samy Kamkar -Optical Espionage Using Lasers to Hear Keystrokes Through Glass Windows",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Samy%20Kamkar%20-Optical%20Espionage%20Using%20Lasers%20to%20Hear%20Keystrokes%20Through%20Glass%20Windows.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-069",
+      "title": "Silvia Puglisi Roger Dingledine - Measuring the Tor Network",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Silvia%20Puglisi%20Roger%20Dingledine%20-%20Measuring%20the%20Tor%20Network.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-070",
+      "title": "stacksmashing - ACE up the Sleeve From getting JTAG on the iPhone 15 to hacking into Apples new USB-C Controller",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20stacksmashing%20-%20ACE%20up%20the%20Sleeve%20From%20getting%20JTAG%20on%20the%20iPhone%2015%20to%20hacking%20into%20Apples%20new%20USB-C%20Controller.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-071",
+      "title": "Stephen Sims - The Rise and Fall of Binary Exploitation",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Stephen%20Sims%20-%20The%20Rise%20and%20Fall%20of%20Binary%20Exploitation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-072",
+      "title": "Suha Sabi Hussain - Incubated Machine Learning Exploits Backdooring ML Pipelines Using Input-Handling Bugs",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Suha%20Sabi%20Hussain%20-%20Incubated%20Machine%20Learning%20Exploits%20Backdooring%20ML%20Pipelines%20Using%20Input-Handling%20Bugs.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-073",
+      "title": "Thomas Boejstrup Johansen - Why are you still using my server for your internet access",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Thomas%20Boejstrup%20Johansen%20-%20Why%20are%20you%20still%20using%20my%20server%20for%20your%20internet%20access.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-074",
+      "title": "Thomas Roccia - The XZ Backdoor Story The Undercover Operation That Set the Internet on Fire",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Thomas%20Roccia%20-%20The%20XZ%20Backdoor%20Story%20The%20Undercover%20Operation%20That%20Set%20the%20Internet%20on%20Fire.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-075",
+      "title": "Thomas Sermpinis - The hack the crash and two smoking barrels (And all the times I (almost) killed an engineer)",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Thomas%20Sermpinis%20-%20The%20hack%20the%20crash%20and%20two%20smoking%20barrels%20%28And%20all%20the%20times%20I%20%28almost%29%20killed%20an%20engineer%29.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-076",
+      "title": "Timm Lauser Jannis Hamborg - Redefining V2G - How to use your vehicle as a game controller",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Timm%20Lauser%20Jannis%20Hamborg%20-%20Redefining%20V2G%20-%20How%20to%20use%20your%20vehicle%20as%20a%20game%20controller.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-077",
+      "title": "Tom Cross Greg Conti - Deception & Counter Deception - Defending Yourself in a World Full of Lies",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Tom%20Cross%20Greg%20Conti%20-%20Deception%20%26%20Counter%20Deception%20-%20Defending%20Yourself%20in%20a%20World%20Full%20of%20Lies.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-078",
+      "title": "Tony Sager - Stranger in a Changed Land",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Tony%20Sager%20-%20Stranger%20in%20a%20Changed%20Land.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-079",
+      "title": "Vangelis Stykas - Behind Enemy Lines Engaging and disrupting Ransomware Web Panels",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Vangelis%20Stykas%20-%20Behind%20Enemy%20Lines%20Engaging%20and%20disrupting%20Ransomware%20Web%20Panels.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-080",
+      "title": "Vincent Lenders Johannes Willbold Robin Bisping - Breaking the Beam - Exploiting VSAT Satellite Modems from the Earths Surface",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Vincent%20Lenders%20Johannes%20Willbold%20Robin%20Bisping%20-%20Breaking%20the%20Beam%20-%20Exploiting%20VSAT%20Satellite%20Modems%20from%20the%20Earths%20Surface.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-081",
+      "title": "Vincent Lenders Johannes Willbold Robin Bisping - Breaking the Beam Exploiting VSAT Satellite Modems from the Earths Surface",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Vincent%20Lenders%20Johannes%20Willbold%20Robin%20Bisping%20-%20Breaking%20the%20Beam%20Exploiting%20VSAT%20Satellite%20Modems%20from%20the%20Earths%20Surface.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-082",
+      "title": "Vladyslav Zubkov Martin Strohmeier - Exploiting Bluetooth - from your car to the bank account$$",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Vladyslav%20Zubkov%20Martin%20Strohmeier%20-%20Exploiting%20Bluetooth%20-%20from%20your%20car%20to%20the%20bank%20account%24%24.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-083",
+      "title": "WangJunJie Zhang YiSheng He - Defeating magic by magic Using ALPC security features to compromise RPC services",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20WangJunJie%20Zhang%20YiSheng%20He%20-%20Defeating%20magic%20by%20magic%20Using%20ALPC%20security%20features%20to%20compromise%20RPC%20services.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-084",
+      "title": "Wesley McGrew - Reverse Engineering MicroPython Frozen Modules Data Structures Reconstruction and Reading Bytecode",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Wesley%20McGrew%20-%20Reverse%20Engineering%20MicroPython%20Frozen%20Modules%20Data%20Structures%20Reconstruction%20and%20Reading%20Bytecode.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-085",
+      "title": "Xavier Zhang - Mutual authentication is optional",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Xavier%20Zhang%20-%20Mutual%20authentication%20is%20optional.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-086",
+      "title": "Xiling Gong Eugene Rodionov Xuan Xing - The Way to Android Root Exploiting Your GPU on Smartphone",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Xiling%20Gong%20Eugene%20Rodionov%20Xuan%20Xing%20-%20The%20Way%20to%20Android%20Root%20Exploiting%20Your%20GPU%20on%20Smartphone.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    },
+    {
+      "id": "dc32-087",
+      "title": "Yisroel Mirsky Roy Weiss Daniel Ayzenshteyn Guy Amit - Your AI Assistant has a Big Mouth A New Side-Channel Attack",
+      "speakers": [
+        "DEF CON 32"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/DEF%20CON%2032%20-%20Yisroel%20Mirsky%20Roy%20Weiss%20Daniel%20Ayzenshteyn%20Guy%20Amit%20-%20Your%20AI%20Assistant%20has%20a%20Big%20Mouth%20A%20New%20Side-Channel%20Attack.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2032/DEF%20CON%2032%20presentations/"
+    }
+  ]
+}

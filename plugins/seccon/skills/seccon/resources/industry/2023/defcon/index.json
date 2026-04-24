@@ -1,0 +1,872 @@
+{
+  "conference": {
+    "name": "DEF CON 31",
+    "acronym": "DEF CON",
+    "year": 2023,
+    "edition": 31,
+    "url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+  },
+  "coverage": {
+    "talks_count": 95,
+    "has_abstracts": false,
+    "has_slides": true,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "dc31-001",
+      "title": "certmitm automatic exploitation of TLS certificate validation vulnerabilities",
+      "speakers": [
+        "Aapo Oksman"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Aapo%20Oksman%20-%20certmitm%20automatic%20exploitation%20of%20TLS%20certificate%20validation%20vulnerabilities.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-002",
+      "title": "Cellular carriers hate this trick Using SIM tunneling to travel at light speed",
+      "speakers": [
+        "Adrian atrox Dabrowski Gabriel K. Gegenhuber"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Adrian%20atrox%20Dabrowski%20Gabriel%20K.%20Gegenhuber%20-%20Cellular%20carriers%20hate%20this%20trick%20Using%20SIM%20tunneling%20to%20travel%20at%20light%20speed.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-003",
+      "title": "StackMoonwalk A Novel approach to stack spoofing on Windows x64",
+      "speakers": [
+        "Alessandro klezVirus Magnosi Arash waldoirc Parsa Athanasios trickster0 Tserpelis"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Alessandro%20klezVirus%20Magnosi%20Arash%20waldoirc%20Parsa%20Athanasios%20trickster0%20Tserpelis%20-%20StackMoonwalk%20A%20Novel%20approach%20to%20stack%20spoofing%20on%20Windows%20x64.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-004",
+      "title": "Meduza How an exiled pirate media outlet breaks through the Kremlin's propaganda firewall",
+      "speakers": [
+        "Alex"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Alex%20-%20Meduza%20How%20an%20exiled%20pirate%20media%20outlet%20breaks%20through%20the%20Kremlin%27s%20propaganda%20firewall.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-005",
+      "title": "Breaking BMC The Forgotten Key to the Kingdom",
+      "speakers": [
+        "Alex Tereshkin Adam Zabrocki"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Alex%20Tereshkin%20Adam%20Zabrocki%20-%20Breaking%20BMC%20The%20Forgotten%20Key%20to%20the%20Kingdom.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-006",
+      "title": "Backdoor in the Core - Altering the Intel x86 Instruction Set at Runtime",
+      "speakers": [
+        "Alexander Dalsgaard Krog Alexander Skovsende"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Alexander%20Dalsgaard%20Krog%20Alexander%20Skovsende%20-%20Backdoor%20in%20the%20Core%20-%20Altering%20the%20Intel%20x86%20Instruction%20Set%20at%20Runtime.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-007",
+      "title": "Legend of Zelda Use After Free (TASBot glitches OoT)",
+      "speakers": [
+        "Allan dwangoAC Cecil Sauraen Liam MLink Taylor"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Allan%20dwangoAC%20Cecil%20Sauraen%20Liam%20MLink%20Taylor%20-%20Legend%20of%20Zelda%20Use%20After%20Free%20%28TASBot%20glitches%20OoT%29.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-008",
+      "title": "Private Until Presumed Guilty",
+      "speakers": [
+        "Allison Young Diane Akerman"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Allison%20Young%20Diane%20Akerman%20-%20Private%20Until%20Presumed%20Guilty.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-009",
+      "title": "Youre Not George Clooney and This Isnt Ocean's Eleven",
+      "speakers": [
+        "Andrew Brandt"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Andrew%20Brandt%20-%20Youre%20Not%20George%20Clooney%20and%20This%20Isnt%20Ocean%27s%20Eleven.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-010",
+      "title": "I Watched You Roll the Die Unparalleled RDP Monitoring Reveal Attackers Tradecraft",
+      "speakers": [
+        "Andr\u00e9anne Bergeron Olivier Bilodeau"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Andr%C3%A9anne%20Bergeron%20Olivier%20Bilodeau%20-%20I%20Watched%20You%20Roll%20the%20Die%20Unparalleled%20RDP%20Monitoring%20Reveal%20Attackers%20Tradecraft.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-011",
+      "title": "Mass Owning of Seedboxes - A Live Hacking Exhibition",
+      "speakers": [
+        "Anon"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Anon%20-%20Mass%20Owning%20of%20Seedboxes%20-%20A%20Live%20Hacking%20Exhibition.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-012",
+      "title": "The GitHub Actions Worm Compromising GitHub repositories through the Actions dependency tree",
+      "speakers": [
+        "Asi Greenholts"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Asi%20Greenholts%20-%20The%20GitHub%20Actions%20Worm%20Compromising%20GitHub%20repositories%20through%20the%20Actions%20dependency%20tree.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-013",
+      "title": "Apple's Predicament NSPredicate Exploitation on macOS and iOS",
+      "speakers": [
+        "Austin Emmitt"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Austin%20Emmitt%20-%20Apple%27s%20Predicament%20NSPredicate%20Exploitation%20on%20macOS%20and%20iOS.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-014",
+      "title": "Video-based Cryptanalysis Extracting Secret Keys from Power LEDs of Various Non-compromised Devices Using a Video Camera",
+      "speakers": [
+        "Ben Nassi"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Ben%20Nassi%20-%20Video-based%20Cryptanalysis%20Extracting%20Secret%20Keys%20from%20Power%20LEDs%20of%20Various%20Non-compromised%20Devices%20Using%20a%20Video%20Camera.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-015",
+      "title": "A SSLippery Slope Unraveling the Hidden Dangers of Certificate Misuse",
+      "speakers": [
+        "Bill Demirkapi"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Bill%20Demirkapi%20-%20A%20SSLippery%20Slope%20Unraveling%20the%20Hidden%20Dangers%20of%20Certificate%20Misuse.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-016",
+      "title": "ndays are also 0days Can hackers launch 0day RCE attack on popular softwares only with chromium ndays",
+      "speakers": [
+        "Bohan Liu Zheng Wang GuanCheng Li"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Bohan%20Liu%20Zheng%20Wang%20GuanCheng%20Li%20-%20ndays%20are%20also%200days%20Can%20hackers%20launch%200day%20RCE%20attack%20on%20popular%20softwares%20only%20with%20chromium%20ndays.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-017",
+      "title": "Game-Changing Advances in Windows Shellcode Analysis paper-v2",
+      "speakers": [
+        "Brizendine"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Brizendine%20-%20Game-Changing%20Advances%20in%20Windows%20Shellcode%20Analysis%20paper-v2.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-018",
+      "title": "SpamChannel Spoofing Emails From 2 Million Domains and Virtually Becoming Satan",
+      "speakers": [
+        "byt3bl33d3r"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/byt3bl33d3r%20-%20SpamChannel%20Spoofing%20Emails%20From%202%20Million%20Domains%20and%20Virtually%20Becoming%20Satan.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-019",
+      "title": "TETRA Tour de Force Jailbreaking Digital Radios and Base Stations for Fun and Secrets",
+      "speakers": [
+        "Carlo Meijer Wouter Bokslag Jos Wetzels"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Carlo%20Meijer%20Wouter%20Bokslag%20Jos%20Wetzels%20-%20TETRA%20Tour%20de%20Force%20Jailbreaking%20Digital%20Radios%20and%20Base%20Stations%20for%20Fun%20and%20Secrets.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-020",
+      "title": "Exploring Linux Memory Manipulation for Stealth and Evasion Strategies to bypass Read-Only No-Exec and Distroless Environments",
+      "speakers": [
+        "Carlos Polop Yago Gutierrez"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Carlos%20Polop%20Yago%20Gutierrez%20-%20Exploring%20Linux%20Memory%20Manipulation%20for%20Stealth%20and%20Evasion%20Strategies%20to%20bypass%20Read-Only%20No-Exec%20and%20Distroless%20Environments.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-021",
+      "title": "A Broken Marriage Abusing Mixed Vendor Kerberos Stacks",
+      "speakers": [
+        "Ceri Coburn"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Ceri%20Coburn%20-%20A%20Broken%20Marriage%20Abusing%20Mixed%20Vendor%20Kerberos%20Stacks.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-022",
+      "title": "D0 N0 H4RM A Healthcare Security Conversation",
+      "speakers": [
+        "Christian quaddi Dameff MD Jacqueline Burgette Jeff r3plicant Tully MD Nitin Natarajan Senator Mark Warner Suzanne Schwartz MD"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Christian%20quaddi%20Dameff%20MD%20Jacqueline%20Burgette%20Jeff%20r3plicant%20Tully%20MD%20Nitin%20Natarajan%20Senator%20Mark%20Warner%20Suzanne%20Schwartz%20MD%20-%20D0%20N0%20H4RM%20A%20Healthcare%20Security%20Conversation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-023",
+      "title": "The Internals of Veilid a New Decentralized Application Framework",
+      "speakers": [
+        "Christien DilDog Rioux Katelyn Medus4 Bowden"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Christien%20DilDog%20Rioux%20Katelyn%20Medus4%20Bowden%20-%20The%20Internals%20of%20Veilid%20a%20New%20Decentralized%20Application%20Framework.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-024",
+      "title": "Physical Attacks Against Smartphones",
+      "speakers": [
+        "Christopher Wade"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Christopher%20Wade%20-%20Physical%20Attacks%20Against%20Smartphones.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-025",
+      "title": "Tracking the Worlds Dumbest Cyber-Mercenaries",
+      "speakers": [
+        "cooperq"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/cooperq%20-%20Tracking%20the%20Worlds%20Dumbest%20Cyber-Mercenaries.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-026",
+      "title": "Turning my virtual wallet into a skimming device mPOS solutions",
+      "speakers": [
+        "Dan Borgogno Ileana Barrionuevo"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dan%20Borgogno%20Ileana%20Barrionuevo%20-%20Turning%20my%20virtual%20wallet%20into%20a%20skimming%20device%20mPOS%20solutions.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-027",
+      "title": "Badge of Shame Breaking into Secure Facilities with OSDP",
+      "speakers": [
+        "Dan Petro David Vargas"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dan%20Petro%20David%20Vargas%20-%20Badge%20of%20Shame%20Breaking%20into%20Secure%20Facilities%20with%20OSDP.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-028",
+      "title": "Contain Yourself Staying Undetected Using the Windows Container Isolation Framework",
+      "speakers": [
+        "Daniel Avinoam"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Daniel%20Avinoam%20-%20Contain%20Yourself%20Staying%20Undetected%20Using%20the%20Windows%20Container%20Isolation%20Framework.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-029",
+      "title": "Route to bugs Analyzing the security of BGP message parsing",
+      "speakers": [
+        "Daniel dos Santos Simon Guiot"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Daniel%20dos%20Santos%20Simon%20Guiot%20-%20Route%20to%20bugs%20Analyzing%20the%20security%20of%20BGP%20message%20parsing.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-030",
+      "title": "Unlocking hidden powers in Xtensa based Qualcomm Wifi chips",
+      "speakers": [
+        "Daniel Wegemer"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Daniel%20Wegemer%20-%20Unlocking%20hidden%20powers%20in%20Xtensa%20based%20Qualcomm%20Wifi%20chips.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-031",
+      "title": "Terminally Owned - 60 years of escaping",
+      "speakers": [
+        "David Leadbeater"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/David%20Leadbeater%20-%20Terminally%20Owned%20-%2060%20years%20of%20escaping.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-032",
+      "title": "Assessing the Security of Certificates at Scale",
+      "speakers": [
+        "David McGrew Brandon Enright Andrew Chi"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/David%20McGrew%20Brandon%20Enright%20Andrew%20Chi%20-%20Assessing%20the%20Security%20of%20Certificates%20at%20Scale.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-033",
+      "title": "Spread spectrum techniques in disposable drones for anti drone evasion",
+      "speakers": [
+        "David Melendez Gabriela Gabs Garc\u00eda"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/David%20Melendez%20Gabriela%20Gabs%20Garc%C3%ADa%20-%20Spread%20spectrum%20techniques%20in%20disposable%20drones%20for%20anti%20drone%20evasion.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-034",
+      "title": "Vacuum robot security and privacy - prevent your robot from sucking your data",
+      "speakers": [
+        "Dennis Giese"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dennis%20Giese%20-%20Vacuum%20robot%20security%20and%20privacy%20-%20prevent%20your%20robot%20from%20sucking%20your%20data.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-035",
+      "title": "Your Clocks Have Ears - Timing-Based Browser-Based Local Network Port Scanner",
+      "speakers": [
+        "Dongsung Donny Kim"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dongsung%20Donny%20Kim%20-%20Your%20Clocks%20Have%20Ears%20-%20Timing-Based%20Browser-Based%20Local%20Network%20Port%20Scanner.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-036",
+      "title": "Game-Changing Advances in Windows Shellcode Analysis",
+      "speakers": [
+        "Dr. Bramwell Brizendine Max Libra Kersten Jake Hince"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dr.%20Bramwell%20Brizendine%20Max%20Libra%20Kersten%20Jake%20Hince%20-%20Game-Changing%20Advances%20in%20Windows%20Shellcode%20Analysis.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-037",
+      "title": "Advanced ROP Framework Pushing ROP to Its Limits-whitepaper",
+      "speakers": [
+        "Dr. Bramwell Brizendine Shiva Shashank Kusuma"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dr.%20Bramwell%20Brizendine%20Shiva%20Shashank%20Kusuma%20-%20Advanced%20ROP%20Framework%20Pushing%20ROP%20to%20Its%20Limits-whitepaper.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-038",
+      "title": "Advanced ROP Framework Pushing ROP to Its Limits",
+      "speakers": [
+        "Dr. Bramwell Brizendine Shiva Shashank Kusuma"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dr.%20Bramwell%20Brizendine%20Shiva%20Shashank%20Kusuma%20-%20Advanced%20ROP%20Framework%20Pushing%20ROP%20to%20Its%20Limits.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-039",
+      "title": "From Feature to Weapon Breaking Microsoft Teams and SharePoint Integrity",
+      "speakers": [
+        "Dr. Nestori Syynimaa"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Dr.%20Nestori%20Syynimaa%20-%20From%20Feature%20to%20Weapon%20Breaking%20Microsoft%20Teams%20and%20SharePoint%20Integrity.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-040",
+      "title": "J4 Gate The Hustler Poker Cheating Scandal investigation and how Hacking helped me do it",
+      "speakers": [
+        "Duckie"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Duckie%20-%20J4%20Gate%20The%20Hustler%20Poker%20Cheating%20Scandal%20investigation%20and%20how%20Hacking%20helped%20me%20do%20it.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-041",
+      "title": "Revolutionizing ELF binary patching with Shiva A JIT binary patching system for Linux",
+      "speakers": [
+        "ElfMaster"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/ElfMaster%20-%20Revolutionizing%20ELF%20binary%20patching%20with%20Shiva%20A%20JIT%20binary%20patching%20system%20for%20Linux.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-042",
+      "title": "Over the Air Under the Radar Attacking and Securing the Pixel Modem",
+      "speakers": [
+        "Farzan Karimi Xuan Xing  Xiling Gong Eugene Rodionov"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Farzan%20Karimi%20Xuan%20Xing%20%20Xiling%20Gong%20Eugene%20Rodionov%20-%20Over%20the%20Air%20Under%20the%20Radar%20Attacking%20and%20Securing%20the%20Pixel%20Modem.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-043",
+      "title": "Calling it a 0-Day - Hacking at PBXUC Systems",
+      "speakers": [
+        "good pseudonym"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/good%20pseudonym%20-%20Calling%20it%20a%200-Day%20-%20Hacking%20at%20PBXUC%20Systems.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-044",
+      "title": "Smashing the state machine the true potential of web race conditions-whitepaper",
+      "speakers": [
+        "James 'albinowax' Kettle"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/James%20%27albinowax%27%20Kettle%20-%20Smashing%20the%20state%20machine%20the%20true%20potential%20of%20web%20race%20conditions-whitepaper.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-045",
+      "title": "Smashing the state machine the true potential of web race conditions",
+      "speakers": [
+        "James 'albinowax' Kettle"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/James%20%27albinowax%27%20Kettle%20-%20Smashing%20the%20state%20machine%20the%20true%20potential%20of%20web%20race%20conditions.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-046",
+      "title": "New Isnt Always Novel Greping Your Way to 20K at Pwn2Own and How You Can Too",
+      "speakers": [
+        "James Horseman Zach Hanley"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/James%20Horseman%20Zach%20Hanley%20-%20New%20Isnt%20Always%20Novel%20Greping%20Your%20Way%20to%2020K%20at%20Pwn2Own%20and%20How%20You%20Can%20Too.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-047",
+      "title": "Burrowing Through The Network Contextualizing The Vulkan Leaks Historical State-Sponsored Offensive Operations",
+      "speakers": [
+        "Joe Slowik"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Joe%20Slowik%20-%20Burrowing%20Through%20The%20Network%20Contextualizing%20The%20Vulkan%20Leaks%20Historical%20State-Sponsored%20Offensive%20Operations.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-048",
+      "title": "A Different Uber Post Mortem",
+      "speakers": [
+        "Joe Sullivan"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Joe%20Sullivan%20-%20A%20Different%20Uber%20Post%20Mortem.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-049",
+      "title": "Azure B2C 0-Day An Exploit Chain from Public Keys to Microsoft Bug Bounty",
+      "speakers": [
+        "John Novak"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/John%20Novak%20-%20Azure%20B2C%200-Day%20An%20Exploit%20Chain%20from%20Public%20Keys%20to%20Microsoft%20Bug%20Bounty.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-050",
+      "title": "Getting a Migraine - uncovering a unique SIP bypass on macOS",
+      "speakers": [
+        "Jonathan Bar Or Michael Pearse Anurag Bohra"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Bar%20Or%20Michael%20Pearse%20Anurag%20Bohra%20-%20Getting%20a%20Migraine%20-%20uncovering%20a%20unique%20SIP%20bypass%20on%20macOS.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-051",
+      "title": "Second Breakfast Implicit and Mutation-Based Serialization Vulnerabilities in .NET-whitepaper",
+      "speakers": [
+        "Jonathan Birch"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET-whitepaper.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-052",
+      "title": "Second Breakfast Implicit and Mutation-Based Serialization Vulnerabilities in .NET",
+      "speakers": [
+        "Jonathan Birch"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Jonathan%20Birch%20-%20Second%20Breakfast%20Implicit%20and%20Mutation-Based%20Serialization%20Vulnerabilities%20in%20.NET.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-053",
+      "title": "Contactless Overflow Code execution in payment terminals and ATM\u2019s over NFC",
+      "speakers": [
+        "Josep Pi Rodriguez"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Josep%20Pi%20Rodriguez%20-%20Contactless%20Overflow%20Code%20execution%20in%20payment%20terminals%20and%20ATM%E2%80%99s%20over%20NFC.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-054",
+      "title": "Warshopping - Further Phreaking Smart Shopping Cart Wheels Through RF Sniffing and Hardware Reverse Engineering",
+      "speakers": [
+        "Joseph Gabay"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Joseph%20Gabay%20-%20Warshopping%20-%20Further%20Phreaking%20Smart%20Shopping%20Cart%20Wheels%20Through%20RF%20Sniffing%20and%20Hardware%20Reverse%20Engineering.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-055",
+      "title": "HL7Magic Medical Data Hacking Made Easy",
+      "speakers": [
+        "Katie Inns"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Katie%20Inns%20-%20HL7Magic%20Medical%20Data%20Hacking%20Made%20Easy.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-056",
+      "title": "UNConventional Cybercrime How a Bad Anti-Hacking Treaty is Becoming a Law",
+      "speakers": [
+        "Katitza Rodriguez Bill Budington"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Katitza%20Rodriguez%20Bill%20Budington%20-%20UNConventional%20Cybercrime%20How%20a%20Bad%20Anti-Hacking%20Treaty%20is%20Becoming%20a%20Law.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-057",
+      "title": "Runtime Riddles Abusing Manipulation Points in the Android Source",
+      "speakers": [
+        "Laurie Kirk"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Laurie%20Kirk%20-%20Runtime%20Riddles%20Abusing%20Manipulation%20Points%20in%20the%20Android%20Source.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-058",
+      "title": "You can't cheat time - Finding foes and yourself with latency trilateration.",
+      "speakers": [
+        "Lorenzo Cococcia"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Lorenzo%20Cococcia%20-%20You%20can%27t%20cheat%20time%20-%20Finding%20foes%20and%20yourself%20with%20latency%20trilateration..pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-059",
+      "title": "Boston Infinite Money Glitch Hacking Transit Cards Without Ending Up In Handcuffs",
+      "speakers": [
+        "Matthew Harris Zachary Bertocchi Scott Campbell Noah Gibson"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Matthew%20Harris%20Zachary%20Bertocchi%20Scott%20Campbell%20Noah%20Gibson%20-%20Boston%20Infinite%20Money%20Glitch%20Hacking%20Transit%20Cards%20Without%20Ending%20Up%20In%20Handcuffs.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-060",
+      "title": "Defeating VPN Always-On",
+      "speakers": [
+        "Maxime Clementz"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Maxime%20Clementz%20-%20Defeating%20VPN%20Always-On.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-061",
+      "title": "Designing RFID Implants How flipping the bird opens doors for me",
+      "speakers": [
+        "Miana Ella Windall"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Miana%20Ella%20Windall%20-%20Designing%20RFID%20Implants%20How%20flipping%20the%20bird%20opens%20doors%20for%20me.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-062",
+      "title": "mTLS when certificate authentication done wrong",
+      "speakers": [
+        "Michael Stepankin"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Michael%20Stepankin%20-%20mTLS%20when%20certificate%20authentication%20done%20wrong.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-063",
+      "title": "Silent Spring Prototype Pollution Leads to Remote Code Execution in Node.js",
+      "speakers": [
+        "Mikhail Shcherbakov Musard Balliu"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Mikhail%20Shcherbakov%20Musard%20Balliu%20-%20Silent%20Spring%20Prototype%20Pollution%20Leads%20to%20Remote%20Code%20Execution%20in%20Node.js.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-064",
+      "title": "Living Next Door to Russia",
+      "speakers": [
+        "Mikko Hypponen"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Mikko%20Hypponen%20-%20Living%20Next%20Door%20to%20Russia.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-065",
+      "title": "Looking into the future what can we learn about hacking in science-fiction",
+      "speakers": [
+        "Nicolas Minvielle Xavier  Fac\u00e9lina"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Nicolas%20Minvielle%20Xavier%20%20Fac%C3%A9lina%20-%20Looking%20into%20the%20future%20what%20can%20we%20learn%20about%20hacking%20in%20science-fiction.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-066",
+      "title": "Polynonce An ECDSA Attack and Polynomial Dance",
+      "speakers": [
+        "Nils Amiet Marco Macchetti"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Nils%20Amiet%20Marco%20Macchetti%20-%20Polynonce%20An%20ECDSA%20Attack%20and%20Polynomial%20Dance.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-067",
+      "title": "A Comprehensive Review on the Less-Traveled Road 9 Years of Overlooked MikroTik Pre-Auth RCE",
+      "speakers": [
+        "NiNi Chen"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/NiNi%20Chen%20-%20A%20Comprehensive%20Review%20on%20the%20Less-Traveled%20Road%209%20Years%20of%20Overlooked%20MikroTik%20Pre-Auth%20RCE.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-068",
+      "title": "A Pain in the NAS Exploiting Cloud Connectivity to PWN your NAS",
+      "speakers": [
+        "Noam Moshe Sharon Brizinov"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Noam%20Moshe%20Sharon%20Brizinov%20-%20A%20Pain%20in%20the%20NAS%20Exploiting%20Cloud%20Connectivity%20to%20PWN%20your%20NAS.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-069",
+      "title": "Snoop on to them as they snoop on to us",
+      "speakers": [
+        "nullagent rekcahdam"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nullagent%20rekcahdam%20-%20Snoop%20on%20to%20them%20as%20they%20snoop%20on%20to%20us.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-070",
+      "title": "Track the Planet Mapping Identities Monitoring Presence and Decoding Business Alliances in the Azure Ecosystem",
+      "speakers": [
+        "nyxgeek"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/nyxgeek%20-%20Track%20the%20Planet%20Mapping%20Identities%20Monitoring%20Presence%20and%20Decoding%20Business%20Alliances%20in%20the%20Azure%20Ecosystem.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-071",
+      "title": "The Price of Convenience How Security Vulnerabilities in Global Transportation Payment Systems Can Cost You",
+      "speakers": [
+        "Omer Attias"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Omer%20Attias%20-%20The%20Price%20of%20Convenience%20How%20Security%20Vulnerabilities%20in%20Global%20Transportation%20Payment%20Systems%20Can%20Cost%20You.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-072",
+      "title": "Demystifying ( Bypassing) macOS's Background Task Management",
+      "speakers": [
+        "Patrick Wardle"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Patrick%20Wardle%20-%20Demystifying%20%28%20Bypassing%29%20macOS%27s%20Background%20Task%20Management.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-073",
+      "title": "Nothing but Net Leveraging macOS's Networking Frameworks to Heuristically Detect Malware",
+      "speakers": [
+        "Patrick Wardle"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Patrick%20Wardle%20-%20Nothing%20but%20Net%20Leveraging%20macOS%27s%20Networking%20Frameworks%20to%20Heuristically%20Detect%20Malware.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-074",
+      "title": "CON trolling the weather",
+      "speakers": [
+        "Paz Hameiri"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Paz%20Hameiri%20-%20CON%20trolling%20the%20weather.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-075",
+      "title": "Malware design - abusing legacy Microsoft transports and session architecture",
+      "speakers": [
+        "R.J. McDown"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/R.J.%20McDown%20-%20Malware%20design%20-%20abusing%20legacy%20Microsoft%20transports%20and%20session%20architecture.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-076",
+      "title": "Damned if you do - The risks of pointing out the emperor is buck naked",
+      "speakers": [
+        "Renderman Thomas Dang"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Renderman%20Thomas%20Dang%20-%20Damned%20if%20you%20do%20-%20The%20risks%20of%20pointing%20out%20the%20emperor%20is%20buck%20naked.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-077",
+      "title": "Fantastic Ethertypes and Where to Find Them",
+      "speakers": [
+        "Ricky Lawshae"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Ricky%20Lawshae%20-%20Fantastic%20Ethertypes%20and%20Where%20to%20Find%20Them.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-078",
+      "title": "NoFilter Abusing Windows Filtering Platform for privilege escalation",
+      "speakers": [
+        "Ron Ben-Yizhak"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Ron%20Ben-Yizhak%20-%20NoFilter%20Abusing%20Windows%20Filtering%20Platform%20for%20privilege%20escalation.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-079",
+      "title": "Still Vulnerable Out of the Box Revisiting the Security of Prepaid Android Carrier Devices",
+      "speakers": [
+        "Ryan Johnson Mohamed Elsabagh Angelos Stavrou"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Ryan%20Johnson%20Mohamed%20Elsabagh%20Angelos%20Stavrou%20-%20Still%20Vulnerable%20Out%20of%20the%20Box%20Revisiting%20the%20Security%20of%20Prepaid%20Android%20Carrier%20Devices.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-080",
+      "title": "Power Corrupts Corrupt It Back Hacking Power Management in Data Centers",
+      "speakers": [
+        "Sam Quinn Jesse Chick"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Sam%20Quinn%20Jesse%20Chick%20-%20Power%20Corrupts%20Corrupt%20It%20Back%20Hacking%20Power%20Management%20in%20Data%20Centers.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-081",
+      "title": "Exploiting OPC-UA in Every Possible Way Practical Attacks Against Modern OPC-UA Architectures",
+      "speakers": [
+        "Sharon Brizinov Noam Moshe"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Sharon%20Brizinov%20Noam%20Moshe%20-%20Exploiting%20OPC-UA%20in%20Every%20Possible%20Way%20Practical%20Attacks%20Against%20Modern%20OPC-UA%20Architectures.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-082",
+      "title": "Weaponizing Plain Text ANSI Escape Sequences as a Forensic Nightmare",
+      "speakers": [
+        "ST\u00d6K"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/ST%C3%96K%20-%20Weaponizing%20Plain%20Text%20ANSI%20Escape%20Sequences%20as%20a%20Forensic%20Nightmare.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-083",
+      "title": "Growing the Community of AI Hackers with the Generative Red Team",
+      "speakers": [
+        "Sven Cattell Rumman Chowdhury Austin Carson"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Sven%20Cattell%20Rumman%20Chowdhury%20Austin%20Carson%20-%20Growing%20the%20Community%20of%20AI%20Hackers%20with%20the%20Generative%20Red%20Team.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-084",
+      "title": "Cracking Cicada 3301 The Future of Collaborative Puzzle-Solving",
+      "speakers": [
+        "Taiiwo Artorias Puck TheClockworkBird"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Taiiwo%20Artorias%20Puck%20TheClockworkBird%20-%20Cracking%20Cicada%203301%20The%20Future%20of%20Collaborative%20Puzzle-Solving.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-085",
+      "title": "GhostToken Exploiting Google Cloud Platform App Infrastructure to Create Unremovable Trojan Apps",
+      "speakers": [
+        "Tal Skverer"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tal%20Skverer%20-%20GhostToken%20Exploiting%20Google%20Cloud%20Platform%20App%20Infrastructure%20to%20Create%20Unremovable%20Trojan%20Apps.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-086",
+      "title": "Spooky authentication at a distance",
+      "speakers": [
+        "Tamas Jos"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tamas%20Jos%20-%20Spooky%20authentication%20at%20a%20distance.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-087",
+      "title": "Visual Studio Code is why I have (Workspace) Trust issues",
+      "speakers": [
+        "Thomas Chauchefoin Paul Gerste"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Thomas%20Chauchefoin%20Paul%20Gerste%20-%20Visual%20Studio%20Code%20is%20why%20I%20have%20%28Workspace%29%20Trust%20issues.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-088",
+      "title": "Civil Cyber Defense Use Your Resources to Defend Non-Profits as they Combat Human Trafficking and Subvert Authoritarian Regimes",
+      "speakers": [
+        "Tiffany Rad Austin Shamlin"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tiffany%20Rad%20Austin%20Shamlin%20-%20Civil%20Cyber%20Defense%20Use%20Your%20Resources%20to%20Defend%20Non-Profits%20as%20they%20Combat%20Human%20Trafficking%20and%20Subvert%20Authoritarian%20Regimes.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-089",
+      "title": "Private Keys in Public Places",
+      "speakers": [
+        "Tom Pohl"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tom%20Pohl%20-%20Private%20Keys%20in%20Public%20Places.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-090",
+      "title": "Defender-Pretender When Windows Defender Updates Become a Security Risk",
+      "speakers": [
+        "Tomer Bar Omer Attias"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tomer%20Bar%20Omer%20Attias%20-%20Defender-Pretender%20When%20Windows%20Defender%20Updates%20Become%20a%20Security%20Risk.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-091",
+      "title": "Nuthin But A G Thang Evolution of Cellular Networks",
+      "speakers": [
+        "Tracy Mosley"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Tracy%20Mosley%20-%20Nuthin%20But%20A%20G%20Thang%20Evolution%20of%20Cellular%20Networks.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-092",
+      "title": "Unlocking Doors from Half a Continent Away",
+      "speakers": [
+        "Trevor Stevado Sam Haskins"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Trevor%20Stevado%20Sam%20Haskins%20-%20Unlocking%20Doors%20from%20Half%20a%20Continent%20Away.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-093",
+      "title": "Retro Exploitation Using Vintage Computing Plaforms as a Vulnerability Research Playground and Learning Environment",
+      "speakers": [
+        "Wesley McGrew"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Wesley%20McGrew%20-%20Retro%20Exploitation%20Using%20Vintage%20Computing%20Plaforms%20as%20a%20Vulnerability%20Research%20Playground%20and%20Learning%20Environment.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-094",
+      "title": "ELECTRONizing macOS privacy - a new weapon in your red teaming armory",
+      "speakers": [
+        "Wojciech Regu\u0142a"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/Wojciech%20Regu%C5%82a%20-%20ELECTRONizing%20macOS%20privacy%20-%20a%20new%20weapon%20in%20your%20red%20teaming%20armory.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    },
+    {
+      "id": "dc31-095",
+      "title": "LLMs at the Forefront Pioneering the Future of Fuzz Testing in a Rapidly Changing World",
+      "speakers": [
+        "X"
+      ],
+      "slides_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/X%20-%20LLMs%20at%20the%20Forefront%20Pioneering%20the%20Future%20of%20Fuzz%20Testing%20in%20a%20Rapidly%20Changing%20World.pdf",
+      "archive_url": "https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20presentations/"
+    }
+  ]
+}

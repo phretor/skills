@@ -1,0 +1,40 @@
+{
+  "conference": {
+    "name": "OffensiveCon 2025",
+    "acronym": "OffensiveCon",
+    "year": 2025,
+    "url": "https://www.offensivecon.org/agenda/2025.html"
+  },
+  "coverage": {
+    "talks_count": 4,
+    "has_abstracts": false,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "oc2025-001",
+      "title": "Registration, coffee and snacks",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2025.html"
+    },
+    {
+      "id": "oc2025-002",
+      "title": "Welcome Address",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2025.html"
+    },
+    {
+      "id": "oc2025-003",
+      "title": "Pwn2Own Winners Announcement",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2025.html"
+    },
+    {
+      "id": "oc2025-004",
+      "title": "Closing Remarks",
+      "speakers": [],
+      "archive_url": "https://www.offensivecon.org/agenda/2025.html"
+    }
+  ]
+}

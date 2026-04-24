@@ -1,0 +1,506 @@
+{
+  "version": "1.3.0",
+  "generated": "2026-04-24",
+  "cached_range": {
+    "earliest": 2021,
+    "latest": 2025
+  },
+  "notes": "Only years >= 2021 are cached. Requests for older content are out of range.",
+  "coverage": {
+    "academic": {
+      "venues": {
+        "ieee-sp": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IEEEXplore paywall"
+        },
+        "ccs": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "ACM DL paywall"
+        },
+        "usenix-security": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Open access, pending crawl"
+        },
+        "ndss": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Open access, pending crawl"
+        },
+        "crypto": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IACR open, pending crawl"
+        },
+        "eurocrypt": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IACR open, pending crawl"
+        },
+        "esorics": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Springer LNCS"
+        },
+        "acsac": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "asiaccs": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "ACM DL paywall"
+        },
+        "pets": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Open access, pending crawl"
+        },
+        "eurosp": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "csf": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "asiacrypt": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IACR open, pending crawl"
+        },
+        "tcc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IACR open, pending crawl"
+        },
+        "fc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "raid": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "ACM DL paywall"
+        },
+        "imc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "ches": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "IACR open, pending crawl"
+        },
+        "soups": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "USENIX open, pending crawl"
+        },
+        "acns": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "acisp": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "ifip-sec": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "wisec": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "dimva": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "icics": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "securecomm": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "pst": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "pkc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "sac": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        }
+      }
+    },
+    "industry": {
+      "venues": {
+        "defcon": {
+          "cached": [
+            2025,
+            2025,
+            2024,
+            2023,
+            2022,
+            2021
+          ],
+          "gaps": [],
+          "note": "DEF CON 33 (2025) cached; older editions accessible at media.defcon.org"
+        },
+        "blackhat-usa": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Cloudflare blocked"
+        },
+        "blackhat-eu": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Cloudflare blocked"
+        },
+        "blackhat-asia": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Cloudflare blocked"
+        },
+        "rsec": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "cansecwest": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "JS-rendered Squarespace"
+        },
+        "recon": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "troopers": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "hardwear": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "infiltrate": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "hitcon": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "offensivecon": {
+          "cached": [
+            2025,
+            2025,
+            2024,
+            2023,
+            2022
+          ],
+          "gaps": [
+            2021
+          ],
+          "note": "OffensiveCon 2025 cached"
+        },
+        "hitb": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "vb": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        },
+        "poc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "note": "Pending crawl"
+        }
+      }
+    }
+  }
+}
