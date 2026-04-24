@@ -97,7 +97,12 @@ Keep SKILL.md under 500 lines. Move detailed reference material to `references/`
 
 ### `README.md`
 
-Human-facing. Must include: author, When to Use, When NOT to Use, What It Does, Installation one-liner.
+Human-facing. Must include: author, When to Use, When NOT to Use, What It Does.
+
+**Installation instructions are NOT placed here.** All installation instructions
+(for Pi, Claude Code, or any other client) live in the root `README.md` only.
+The per-plugin `README.md` may include a one-liner referencing the root, or omit
+installation entirely.
 
 ```markdown
 # <Plugin Name>
@@ -117,10 +122,6 @@ One-sentence summary.
 ## What It Does
 
 ...
-
-## Installation
-
-/plugin install phretor/skills/plugins/<plugin-name>
 ```
 
 ## Versioning
@@ -151,6 +152,7 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 - **Python scripts**: use PEP 723 inline dependency headers and `uv run`
 - **System dependencies**: if you declare them in a SKILL.md `compatibility` field for Pi, also repeat them in `README.md` under a `## Requirements` section
 - **SKILL.md under 500 lines**: split overflow into `references/` or `workflows/`
+- **Installation instructions centralized**: all install instructions for every plugin live in the root `README.md`, never duplicated in per-plugin `README.md` files
 
 ## YAML Frontmatter Steering
 

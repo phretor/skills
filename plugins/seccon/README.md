@@ -52,66 +52,7 @@ Live data: [confsearch.ethz.ch](https://confsearch.ethz.ch) (academic) · [cfpti
 
 ## Installation
 
-### Pi
-
-```bash
-pi install https://github.com/phretor/skills
-```
-
-Then invoke:
-
-```
-/skill:seccon help
-/skill:seccon academic now
-/skill:seccon academic latest USENIX fuzzing
-```
-
-### Claude Code
-
-```bash
-/plugin install https://github.com/phretor/skills
-```
-
-Or from a local checkout:
-
-```bash
-/plugin install ./plugins/seccon
-```
-
-Then invoke directly in conversation (e.g., "find industry talks on agentic vulnerability research") or use the command:
-
-```
-/skill:seccon help
-```
-
-### Claude Desktop
-
-1. Open Claude Desktop → Settings → Developer → Edit configuration
-2. Add the repo as a plugin source in `claude_desktop_config.json`:
-
-```json
-{
-  "plugins": {
-    "sources": [
-      {"url": "https://github.com/phretor/skills", "type": "github"}
-    ]
-  }
-}
-```
-
-Or clone the repo and reference it locally:
-
-```json
-{
-  "plugins": {
-    "sources": [
-      {"type": "local", "path": "/path/to/skills/plugins/seccon"}
-    ]
-  }
-}
-```
-
-3. Restart Claude Desktop.
+See [root README](../..) for installation instructions for all clients (Pi, Claude Code, etc.).
 
 ## Examples
 
