@@ -188,7 +188,7 @@ def _defcon_resolve(year: int) -> str | None:
     n = year - 1993 + 1
     root = f"https://media.defcon.org/DEF%20CON%20{n}/"
     try:
-        r = cf.get(root, impersonate="chrome124", timeout=15)
+        r = cf.get(root, impersonate="chrome124", timeout=60)
         if r.status_code >= 400:
             return None
         hrefs = re.findall(r'href="([^"]*)"', r.text)
@@ -290,7 +290,7 @@ def _is_live_bh(slug: str, year: int) -> bool:
     yy = str(year)[2:]
     url = _BH_SESSIONS_URL.format(slug=f"{slug}-{yy}")
     try:
-        resp = cf.get(url, impersonate="chrome124", timeout=15)
+        resp = cf.get(url, impersonate="chrome124", timeout=60)
         return resp.status_code == 200 and bool(resp.json().get("sessions"))
     except Exception:
         return False
@@ -410,7 +410,7 @@ def fetch_text(url: str) -> str:
     try:
         from curl_cffi import requests as cf
 
-        r = cf.get(url, impersonate="chrome124", timeout=25)
+        r = cf.get(url, impersonate="chrome124", timeout=60)
         if r.status_code < 400:
             return r.text
     except Exception:
