@@ -411,9 +411,9 @@ Black Hat schedule pages are Handlebars.js shells. The actual session data
 endpoint. Fetch the JSON directly instead of crawling the HTML page:
 
 ```
-https://www.blackhat.com/us-{YY}/briefings/sessions.json
-https://www.blackhat.com/eu-{YY}/briefings/sessions.json
-https://www.blackhat.com/asia-{YY}/briefings/sessions.json
+https://blackhat.com/us-{YY}/briefings/schedule/sessions.json
+https://blackhat.com/eu-{YY}/briefings/schedule/sessions.json
+https://blackhat.com/asia-{YY}/briefings/schedule/sessions.json
 ```
 
 **JSON structure:** the top-level `sessions` array contains objects with:
@@ -427,8 +427,12 @@ https://www.blackhat.com/asia-{YY}/briefings/sessions.json
 
 **Cloudflare protection:** the JSON endpoint is behind Cloudflare and may
 return 403. The crawler uses `curl_cffi` with Chrome TLS impersonation
-and a 60s timeout; even a full headless Chromium via Playwright may be
-blocked at the IP level on some networks.
+and a 60s timeout. Even a full headless Chromium via Playwright with
+stealth tricks (overriding `navigator.webdriver`, `plugins`, `languages`)
+and Firefox were tested — all blocked. This is an IP-level block, not a
+TLS fingerprint or User-Agent issue. If blocked, note that Black Hat data
+is unavailable from the current environment and fall back to the DEF CON
+media archive or other accessible venues.
 
 If blocked, note that Black Hat data is unavailable from the current
 environment and fall back to the DEF CON media archive or other venues.
