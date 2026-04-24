@@ -1,6 +1,15 @@
+<div align="center">
+
 # phretor/skills
 
-Public [Agent Skills](https://agentskills.io) for Pi.
+Public Agent Skills for Pi (and Claude).
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Pi](https://img.shields.io/badge/Pi-%E2%9C%93-blue?logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+PHBvbHlsaW5lIHBvaW50cz0iMjIgMTIgMTYgMTIgMTQgMyA2IDMgNCAxMSAxMCAxMSAxMiAyMCAyMCAyMCIvPjxsaW5lIHgxPSIyIiB5MT0iMTIiIHgyPSI4IiB5Mj0iMTIiLz48L3N2Zz4=&label=Pi)](https://agentskills.io)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-%E2%9C%93-blueviolet)](https://claude.ai)
+[![Skills](https://img.shields.io/badge/Skills-1-2ea44f)](plugins/)
+
+</div>
 
 ## Install
 
@@ -43,6 +52,8 @@ Paper search plugins also use `paperhub-cli`, installed automatically via `uv sy
 | Skill | Command | Description |
 |---|---|---|
 | [seccon](plugins/seccon/) | `/skill:seccon help` | Security conference intelligence: rankings, paper/talk search, author lookup, live CFP calendar, topic-filtered `now`, `deadlines`, `latest`, venue comparison, and academic `<year> <acronym>` shorthand |
+
+> 💡 **Tip:** run `/skill:seccon help` for a quick-start guide with examples.
 
 ## Contributing
 
