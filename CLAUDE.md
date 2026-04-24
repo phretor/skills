@@ -153,6 +153,7 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 - **System dependencies**: if you declare them in a SKILL.md `compatibility` field for Pi, also repeat them in `README.md` under a `## Requirements` section
 - **SKILL.md under 500 lines**: split overflow into `references/` or `workflows/`
 - **Installation instructions centralized**: all install instructions for every plugin live in the root `README.md`, never duplicated in per-plugin `README.md` files
+- **README kept in sync**: every addition or change to a plugin/skill must also update the root `README.md` — the Skills table, Requirements table, badges (Skills count), and any other relevant sections must reflect the new or changed plugin
 
 ## YAML Frontmatter Steering
 
