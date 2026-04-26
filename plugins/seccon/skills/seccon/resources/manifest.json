@@ -373,37 +373,37 @@
           "note": ""
         },
         "blackhat-usa": {
-          "cached": [],
-          "gaps": [
+          "cached": [
             2021,
             2022,
             2023,
             2024,
             2025
           ],
-          "note": "Cloudflare blocked"
+          "gaps": [],
+          "note": ""
         },
         "blackhat-eu": {
-          "cached": [],
-          "gaps": [
+          "cached": [
             2021,
             2022,
             2023,
             2024,
             2025
           ],
-          "note": "Cloudflare blocked"
+          "gaps": [],
+          "note": ""
         },
         "blackhat-asia": {
-          "cached": [],
-          "gaps": [
+          "cached": [
             2021,
             2022,
             2023,
             2024,
             2025
           ],
-          "note": "Cloudflare blocked"
+          "gaps": [],
+          "note": ""
         },
         "rsec": {
           "cached": [],

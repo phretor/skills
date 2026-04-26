@@ -1,0 +1,1053 @@
+{
+  "conference": {
+    "name": "Black Hat USA",
+    "acronym": "BLACKHAT-USA",
+    "year": 2022,
+    "url": "https://blackhat.com/us-22/briefings/schedule/"
+  },
+  "coverage": {
+    "talks_count": 101,
+    "has_abstracts": true,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "bhus22-28699",
+      "title": "Keynote: Black Hat at 25: Where Do We Go from Here?",
+      "speakers": [
+        "Chris Krebs"
+      ],
+      "description": "For twenty-five years, the InfoSec community and industry have been gathering here in the desert. For twenty-five years, we have chipped away at underlying insecurities in the technologies we use every day with new vulnerability research and adversary insights. For twenty-five years we\u2019ve seen vendors and software firms roll out new products and protections.  With the last twenty-five years as prologue and as we look forward to the next twenty-five years, we have to ask ourselves: are we on the right track? <br> <br>We certainly aren\u2019t set up for success, given society\u2019s insatiable and almost pathological need to connect everything. We\u2019re constantly serving up more attack surface to the bad guys and always cleaning up after business decisions that we know will drive bad security outcomes.  All the while factors out of our hands \u2013 namely global market realities and shifting geopolitical dynamics \u2013 wreck nearly overnight carefully orchestrated business plans and national strategies. The last few years of geopolitical chaos and autocratic retrenchment might look like the good ol\u2019 days by the end of the 2020s.<br> <br>This talk will work through today\u2019s risk trends and what they mean for tomorrow\u2019s network defenders, suggesting along the way the needed shifts in both mindset and action to successfully deliver better outcomes while recognizing that we\u2019re going to be forever operating in a contested information environment.  To rip off a Mitch Hedberg joke (RIP), maybe over the next twenty-five years we can build a safer, more resilient technological future where systems and infrastructure behave more like escalators: when they break, they turn into stairs."
+    },
+    {
+      "id": "bhus22-26414",
+      "title": "Browser-Powered Desync Attacks: A New Frontier in HTTP Request Smuggling",
+      "speakers": [
+        "James Kettle"
+      ],
+      "description": "The recent rise of HTTP Request Smuggling has seen a flood of critical findings enabling near-complete compromise of numerous major websites. However, the threat has been confined to attacker-accessible systems with a reverse proxy front-end... until now.<br><br>In this session, I'll show you how to turn your victim's web browser into a desync delivery platform, shifting the request smuggling frontier by exposing single-server websites and internal networks. You'll learn how to combine cross-domain requests with server flaws to poison browser connection pools, install backdoors, and release desync worms. With these techniques, I'll compromise targets including Apache, Akamai, Varnish, Amazon, and multiple web VPNs. <br><br>This new frontier offers both new opportunities and new challenges. While some classic desync gadgets can be adapted, other scenarios force extreme innovation. To help, I'll share a battle-tested methodology combining browser features and custom open-source tooling. We'll also release free online labs to help hone your new skillset.<br><br>I'll also share the research journey, uncovering a strategy for black-box analysis that solved several long-standing desync obstacles and unveiled an extremely effective novel desync trigger. The resulting fallout will encompass client-side, server-side, and even MITM attacks; to wrap up, I'll live-demo breaking HTTPS on Apache.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/us-22-Kettle-Browser-Powered-Desync-Attacks.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/us-22-Kettle-Browser-Powered-Desync-Attacks-wp.pdf"
+    },
+    {
+      "id": "bhus22-26806",
+      "title": "Elevating Kerberos to the Next Level",
+      "speakers": [
+        "James Forshaw",
+        "Nick Landers"
+      ],
+      "description": "Kerberos is the primary authentication protocol for on-premise Windows enterprise networks. As it's so crucial for enterprise security a lot of research has focused on exploiting it for remote access and lateral movement such as the well known Golden/Silver ticket attacks. Comparatively, little research has been undertaken on the implications of Kerberos for security on the local machine, especially for privilege escalation.<br><br>This presentation is a deep dive into the inner workings of Kerberos as it applies to local authentication and some of the unusual behaviors to be found within. We'll describe the security issues we've discovered, including authentication bypasses, sandbox escapes and arbitrary code execution in privileged processes. <br><br>We'll be releasing tooling to inspect and manipulate the state of the Kerberos authentication protocol on the local system so that you can perform your own research. Finally, we'll provide configuration changes that can be used to mitigate some of the by-design security issues that have been presented.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Forshaw-Taking-Kerberos-To-The-Next-Level.pdf"
+    },
+    {
+      "id": "bhus22-26889",
+      "title": "AAD Joined Machines - The New Lateral Movement",
+      "speakers": [
+        "Mor Rubin"
+      ],
+      "description": "With the evolvement of Azure and Pass-Through authentication, many organizations are connecting devices to Azure AD, making authentication and management easier. Azure AD devices can be connected only to Azure AD and no longer to On-Prem AD. Which makes them no longer support Kerberos or NTLM, raising the question of how attackers can get access to those machines.<br><br>This talk will cover new research of an authentication mechanism designed to allow authentication between Azure AD joined machines. We will examine and understand the foundation of the new network protocol, present a way (and a tool) to perform \"Pass-The-Certificate\" attack and finally, we will go over an open-source solution that can help you hunt for attacks.<br><br>Why go through all this trouble? Because Azure AD joined devices support NTLM for local accounts (which are not used for AADJ machines), and Kerberos is not available. This means that old school attacks like Pass-The-Hash or Pass-The-Ticket are mitigated. With the new authentication protocol, we bring these kinds of attacks back to the table.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Rubin-AAD-Joined-Machines-New-Lateral-Movement.pdf"
+    },
+    {
+      "id": "bhus22-27238",
+      "title": "Automatic Protocol Reverse Engineering",
+      "speakers": [
+        "Gabi Nakibly",
+        "Ron Marcovich"
+      ],
+      "description": "Protocol reverse engineering is the process of extracting the specification of a network protocol from a binary code that implements it. Extraction of protocol specification is useful in several security-related contexts, such as finding implementation bugs, determining conformance to a standard, or discovering a botnet's command and control (C&C) protocol.<br><br>Manual reverse engineering of a protocol can be time-consuming. We present a tool that automatically reverse engineers a protocol directly from the binary. Namely, given a binary sample, the tool automatically extracts the protocol specification, including message formats and protocol state machine! The tool leverages symbolic execution and automata learning algorithms. <br><br>This is the first tool that extract a protocol\u2019s specification without relying on captures of the protocol\u2019s traffic, with no prior knowledge of message formats and without assuming there is an active remote protocol peer (such as a C&C server).<br><br>This is a joint work with Prof. Orna Grumberg from the Technion.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Marcovich-PISE-Automatic-Protocol-Reverse-Engineering.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Marcovich-PISE-Automatic-Protocol-Reverse-Engineering-wp.pdf"
+    },
+    {
+      "id": "bhus22-27211",
+      "title": "Blasting Event-Driven Cornucopia: WMI-based User-Space Attacks Blind SIEMs and EDRs",
+      "speakers": [
+        "Claudiu Teodorescu",
+        "Andrey Golchikov",
+        "Igor Korkin"
+      ],
+      "description": "Security solutions engineers always find new ways to monitor OS events to mitigate threats on endpoints. These approaches typically reuse different built-in Windows mechanisms that were never designed with security first in mind. <br><br>At Black Hat Europe 2021, we publicly showed how to blind an entire class of endpoint security products by disabling ETW. Our current research focus is Windows Management Instrumentation (WMI), a mechanism that allows filtering without registering kernel callbacks. WMI is a built-in feature designed to manage enterprise infrastructure and provide detailed diagnostics: hardware, firmware, software, and configurations both locally and remotely. WMI is deeply integrated into Windows user-mode apps and kernel drivers. WMI provides rich information about the computing environment which allows monitoring via event filters, consumers, and bindings to get notifications about important OS events. These features make WMI critical for solutions such as EDRs, AVs, SIEMs.<br><br>The bad news: WMI is vulnerable by design since it is leveraged for malware persistence (APT41, FIN6) and arbitrary code execution (APT29, Stuxnet). Malware countermeasures can disable WMI, making these defense solutions useless. We will provide an analysis of the WMI architecture by reversing user-mode variables and functions from DLLs to demonstrate several new user-mode attacks.<br><br>The core vulnerability of WMI is that the DLLs loaded into the WMI core process (WinMgmt), leverage \"flags\" to perform WMI operations. Attackers can block the access to WMI - receiving new OS events, installing new WMI filters - by modifying these flags. There are no built-in features to block these attacks or repair WMI. Our Security Sensor detects such attacks by inspecting the memory of WMI core service and can disclose other attacks on Windows OS components including privilege escalation, token hijacking, and ETW blinding. These attacks impact all versions of Windows, which is crucial for the design of the core features of WMI.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Teodorescu-Blasting-Event-Driven-Cornucopia.pdf"
+    },
+    {
+      "id": "bhus22-26671",
+      "title": "All Your GNN Models and Data Belong to Me",
+      "speakers": [
+        "Yang Zhang",
+        "Azzedine Benameur",
+        "Yun Shen"
+      ],
+      "description": "Many real-world data come in the form of graphs. Graph neural networks (GNNs), a new family of machine learning (ML) models, have been proposed to fully leverage graph data to build powerful applications. In particular, the inductive GNNs, which can generalize to unseen data, become mainstream in this direction. Those models have facilitated numerous practical solutions to real world problems, such as node classification, community detection link prediction/recommendation, binary similarity detection, malware detection, fraud detection, bot detection, etc.<br><br>To train a good model, a large amount of proprietary data as well as computational resources are needed, leading to valuable intellectual property. Previous research has shown that ML models are prone to adversarial attacks, which aim to steal the functionality of the target models. However, most of them focus on the models trained with non-structured data (such as images and texts). On the other hand, little attention has been paid to the security of models trained with graph data, i.e., GNNs, and, more interestingly, the privacy of the raw data used to train GNNs. <br><br>In this talk, we outline three novel attacks against GNNs, namely model stealing attack, link re-identification attack, and property inference attack. We first show that the attackers, disguised as benign customers of your commercially deployed GNN models, can leverage our model stealing attack to steal GNNs with high accuracy and high fidelity. We then demonstrate that the attackers can infer private and sensitive relationships contained in the raw data you used to train the GNNs. We finally reveal a novel graph reconstruction attack that can reconstruct a graph that has similar graph structural statistics to the target graph. Note that certain graph data is often expensive to obtain and proprietary (e.g., biomedical/molecular graph collected from lab study). Such graph reconstruction attacks may pose a direct threat to pharmaceutical companies leveraging GNNs to accelerate drug discovery.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-shen-all-your-gnn-and-data-belong-to-us.pdf"
+    },
+    {
+      "id": "bhus22-27403",
+      "title": "New Memory Forensics Techniques to Defeat Device Monitoring Malware",
+      "speakers": [
+        "Andrew Case",
+        "Gustavo Moreira",
+        "Austin Sellers",
+        "Golden Richard"
+      ],
+      "description": "Malware that is capable of monitoring hardware devices poses a significant threat to the privacy and security of users and organizations. Common capabilities of such malware include keystroke logging, clipboard monitoring, sampling of microphone audio, and recording of web camera footage. All modern operating systems implement APIs that provide hardware access to processes and all have been abused to monitor the activity of journalists and dissidents, conduct espionage operations, and gather data needed for blackmail. Existing memory forensic methods for detecting these techniques are largely confined to malware that operates within kernel space. The use of kernel rootkits has waned in recent years though as operating systems have sharply locked down access to kernel memory. These limitations placed upon kernel rootkits, along with the easy-to-use APIs in userland that allow for access to hardware devices, has led to many device monitoring malware samples that operate solely within process memory. Unfortunately, current methods for detection of such malware are severely outdated or completely lacking. These include attempts at live forensics, which relies on system APIs, but these APIs are often hooked by malware to hide their activity. Partial memory forensics techniques for Windows exist, but are outdated, and there are techniques across operating systems that have no detection support. Given the recent emphasis on memory analysis, such as in CISA directives related to ProxyLogon and SolarWindows, it is imperative that memory forensic techniques are able to properly detect modern threats. <br><br>In this presentation, we present our effort to develop algorithms capable of detecting userland device monitoring malware across all major operating systems. Our efforts led to several Volatility plugins being created that are capable of automatically locating all information about processes that are monitoring hardware devices. We plan to contribute our Volatility additions to the community during Black Hat.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Case-New-Memory-Forensics-Techniques-to-Defeat-Device-Monitoring-Malware.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Case-New-Memory-Forensics-Techniques-to-Defeat-Device-Monitoring-Malware-wp.pdf"
+    },
+    {
+      "id": "bhus22-26723",
+      "title": "Harm Reduction: A Framework for Effective &#38; Compassionate Security Guidance",
+      "speakers": [
+        "Kyle Tobener"
+      ],
+      "description": "Cybersecurity practitioners in defensive roles are regularly confronted with high risk behaviors from the populations they protect. In theory, the security response should be simple: Inform the user of the risks and get them to stop. Phishing email? Don't click those links. Dangerous software on the internet? Don't download it. Unfortunately, all or nothing guidance like this rarely fits all members of a population and can lead to unintended consequences and increased harm. How can Cybersecurity defenders help those who can't or won't stop engaging in risky behaviors?<br><br>For more than 30 years, healthcare practitioners have been exploring an alternative to all or nothing guidance (aka abstinence or use reduction) called harm reduction. Originally designed in response to the spread of HIV amongst intravenous drug users in the eighties, harm reduction focuses on decreasing the negative consequences of high risk behaviors without requiring abstinence. In doing so, harm reduction recognizes that people engaging in high risk behaviors can still make positive changes to protect themselves and others. At its core, harm reduction is a pragmatic response to inherently complicated humans: if a high risk behavior with harmful consequences is going to happen regardless, the focus should be on reducing risks for the individual and the community around that individual. <br><br>This presentation will explore the core principles of harm reduction, review the body of research that informs its strategies, and propose a framework for applying harm reduction to cybersecurity risks. It will explain why fully eradicating risk taking behaviors is not possible, and how abstinence based guidance may actually increase harm for individuals and populations. More importantly, it will look at the efficacy of harm reduction strategies and show that a pragmatic, compassionate approach to security may be more effective, cost less, and even reduce burnout among cybersecurity practitioners. Attendees will leave this session with a simple harm reduction framework for improving their security guidance in any situation with a spectrum of risks and harms.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Tobener-Harm-Reduction-A-Framework.pdf"
+    },
+    {
+      "id": "bhus22-27832",
+      "title": "Industroyer2: Sandworm&#39;s Cyberwarfare Targets Ukraine&#39;s Power Grid Again",
+      "speakers": [
+        "Robert Lipovsky",
+        "Anton Cherepanov"
+      ],
+      "description": "Industroyer2 \u2013 a new version of the only malware to ever trigger electricity blackouts \u2013 was deployed in Ukraine amidst the ongoing Russian invasion. Like in 2016 with the original Industroyer, the aim of this recent cyberattack was to cause a major blackout \u2013 this time against two million+ people and with components amplifying the impact, making recovery harder.<br><br>We believe the malware authors and attack orchestrators are the notorious Sandworm APT group, attributed by the US DoJ to Russia's GRU.<br><br>Our talk covers the technical details: our reverse engineering of Industroyer2, and a comparison with the original. Industroyer is unique in its ability to communicate with electrical substation ICS hardware \u2013 circuit breakers and protective relays \u2013 using dedicated industrial protocols. While Industroyer contains implementations of four protocols, Industroyer2 \"speaks\" just one: IEC-104.<br><br>We also provide a higher-level analysis of the attackers' modus operandi and discuss why and how the attack was mostly unsuccessful. One of the most puzzling things about Industroyer has been the stark contrast between its sophistication and its impact: a blackout lasting one hour in the middle of the night is not the worst it could've achieved. Industroyer2 didn't even accomplish that.<br><br>Even though it didn't cause any significant outage, the attack did cause disruption \u2013 mostly through multiple pieces of destructive wiper malware, including CaddyWiper. We discuss this and other malware accompanying Industroyer2, and other cyberattacks we have discovered in Ukraine, since Russia's 2022 invasion, and in the eight years since the war in Donbas began.<br><br>Finally, we present actionable advice for defenders, including: log entries to check; EDR rules to consider; configuration options to hamper Sandworm compromise and lateral movement; and detection/hunting rules for Snort and YARA. By sharing our extensive experience tracking Sandworm, attendees will leave better able to protect their infrastructure and hunt for traces of Sandworm.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Cherepanov-Industroyer2-Sandworms-Cyberwarfare-Targets-Ukraines-Power-Grid-Again.pdf"
+    },
+    {
+      "id": "bhus22-26982",
+      "title": "Glitched on Earth by Humans: A Black-Box Security Evaluation of the SpaceX Starlink User Terminal",
+      "speakers": [
+        "Lennert Wouters"
+      ],
+      "description": "The SpaceX operated Starlink low Earth orbit satellite constellation aims to provide satellite internet coverage to the whole world. The widespread availability of Starlink User Terminals (UT) exposes them to hardware hackers and opens the door for an attacker to freely explore the network. The recent Viasat attack demonstrates a need for satellite communication security and the impact security vulnerabilities can have on UTs that are often deployed in isolated locations.<br />\r\n<br />\r\nThis presentation covers the first black-box hardware security evaluation of the SpaceX Starlink UT. The UT uses a custom quad-core Cortex-A53 System-on-Chip (SoC) that implements verified boot based on the ARM trusted firmware (TF-A) project. The early stage TF-A bootloaders, and in particular the immutable ROM bootloader include custom fault injection countermeasures. Despite the black-box nature of our evaluation we were able to bypass firmware signature verification during execution of the ROM bootloader using voltage fault injection.<br />\r\n  <br />\r\nUsing a modified second stage bootloader we could extract the ROM bootloader and eFuse memory. Our emulation based analysis demonstrates that the fault model used during countermeasure development does not hold in practice. Our voltage fault injection attack was first performed in a laboratory setting and later implemented as a custom printed circuit board or 'modchip'. Our attack results in an unfixable compromise of the Starlink UT and allows us to execute arbitrary code.<br />\r\n  <br />\r\nThe ability to obtain root access on the Starlink UT is a prerequisite to freely explore the Starlink network. This presentation will cover an initial exploration of the Starlink network and provides some details on the communication links. Other researchers should be able to build on our work to further explore the Starlink ecosystem.<br />\r\n<br />\r\nThe documented attacks were performed within the scope of the SpaceX Bug Bounty program and were responsibly disclosed.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Wouters-Glitched-On-Earth.pdf"
+    },
+    {
+      "id": "bhus22-27615",
+      "title": "Demystifying Key Stretching and PAKEs",
+      "speakers": [
+        "Steve Thomas"
+      ],
+      "description": "Key stretching can make the difference between recovering a secret nearly instant to nearly impossible, but it has had a fun history with bugs, footguns, and \"features\". This talk will answer many common questions and myths on key stretching and PAKEs. What to avoid, what to use, minimum safe settings for key stretching, side-channel attacks, and when key stretching is necessary with PAKEs. PAKEs can prevent all sorts of attacks and should be used on encrypted cloud services. Most encrypted cloud services that use a password can greatly benefit from PAKEs. By the end, you'll learn enough to be able to make toy key stretching algorithms and toy PAKEs. Just don't push those toys to prod.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Thomas-Demystifying-Key-Stretching-and-PAKEs.pdf"
+    },
+    {
+      "id": "bhus22-27036",
+      "title": "Better Privacy Through Offense: How To Build a Privacy Red Team",
+      "speakers": [
+        "Scott Tenaglia"
+      ],
+      "description": "Red teams are an important component of a holistic cyber security program because they test how well the program stands up to threats from real adversaries. In 2021, Meta created a privacy red team to help improve our privacy posture and preserve the privacy of our ~3 billion users and their data. Based on that experience, we present the case for why a privacy-focused red team is an important part of a holistic privacy program. <br><br>In this talk, you'll learn what a privacy red team is, how it's different from a security red team, the challenges we faced, and examples of real operations we performed. You'll walk away with a better understanding of how privacy red teaming can benefit your organization, and the role that offense can play in your privacy defense.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Tenaglia-Better-Privacy-Through-Offense-How-To-Build-a-Privacy-Red-Team.pdf"
+    },
+    {
+      "id": "bhus22-27239",
+      "title": "Android Universal Root: Exploiting Mobile GPU / Command Queue Drivers",
+      "speakers": [
+        "Xingyu Jin",
+        "Richard Neal",
+        "Jon Bottarini"
+      ],
+      "description": "<div><span>Rooting modern Android devices using kernel bugs from an unprivileged process without any hardcoded offsets/addresses and with almost a 100% success rate is exceptionally rare. After reporting the in-the-wild CVE-2020-0069 in Mediatek's Command Queue device driver, we conducted a security review on ImgTec's PowerVR GPU device driver during which we discovered and reported several such rare vulnerabilities (e.g. GPU CVE-2021-39815). In total, we discovered 35+ exploitable bugs.</span></div><div><span><br></span></div><div><span>This talk will primarily focus on GPU hacking. There have been many vulnerability reports about other GPUs like Mali and Adreno in the last few years, but Google only received a single report about ImgTec's PowerVR GPU. It appears that the security risks of ImgTec's PowerVR GPUs have been underexplored so far, even though ImgTec may have the largest GPU market share in the Android ecosystem as many affordable, popular devices ship with ImgTec's GPUs. In addition to Android devices, many Chromebooks also use PowerVR GPUs. This makes the discovered vulnerabilities and exploits truly cross-platform, plus 10 more OEMs are affected.</span></div><div><span><br></span></div><div><span>In general, kernel memory management for CPUs and GPUs is complex, making it easy to produce unwanted or undefined outcomes. We will discuss the design & implementation of GPU driver technologies such as kernel APIs, memory management, kernel object lifetime, and the implementations of the OpenCL internal libraries.</span></div><div><span><br></span></div><div><span>We will also highlight the latest SELinux policy for limiting unprivileged interaction with ImgTec's PowerVR GPUs on devices, and how to achieve a stable bypass. We will discuss the details of the exploit and show a demo rooting a well-known PowerVR device.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Jin-Android-Universal-Root.pdf"
+    },
+    {
+      "id": "bhus22-27257",
+      "title": "IAM The One Who Knocks",
+      "speakers": [
+        "Igal Gofman",
+        "Noam Dahan"
+      ],
+      "description": "As organizations start their cloud journey, many are looking at leveraging multi-cloud for their infrastructure. Although this gives teams great flexibility in building their environments, each service provider has a unique paradigm for configuring and managing the configuration of resources, identities, and access permissions. For enterprises, multi-cloud environments make enforcing least-privileged access challenging, requiring new rules and permissions that are unique to each cloud environment. Implementing the least privilege model is much more difficult in the public cloud than on-premises.<br><br>This talk presents the hidden risks of managing identities and access in a multi-cloud environment. We will expose access flaws and misconfigurations that attackers can easily abuse to gain access to confidential and sensitive information. We will discuss the inner workings of each cloud provider's Identity and Access Management (IAM) layers and highlight the differences between each cloud service. We then detail how inconsistent entitlements across cloud resources and services can lead to unintended access and how accountability confusion in the shared responsibility model can enable privilege escalation.<br><br>We finish with our insights on using free, open-source tools that can significantly reduce the attack surface in an enterprise cloud environment and present our \"Access Undenied\" open-source tool that helps administrators tackle AccessDenied events (Live Demo).<br> <br>We close our talk by supplying actionable steps anyone can follow, providing a cheat-sheet comparison for the three primary cloud services AWS/Azure/GCP.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Gofman-IAM-The-One-Who-Knocks.pdf"
+    },
+    {
+      "id": "bhus22-27079",
+      "title": "The Growth of Global Election Disinformation: The Role and Methodology of Government-linked Cyber Actors",
+      "speakers": [
+        "Sandra Quincoses"
+      ],
+      "description": "Nisos researchers uncovered a prolific disinformation campaign focused on Colombia's May 2022 elections in which Venezuelan leftist organizations are driving social media narratives in support of current leftist, Colombian Presidential Candidate, and former M-19 revolutionary member, Gustavo Petro. Prior to its suspension from Twitter, @ChalecosAmarill, used a mix of true and misleading information to advocate for presidential candidates with foreign policy positions favorable to U.S. adversaries, which increased its legitimacy and made disinformation difficult to detect. Its social media activities also include engagement with bot/sock puppet social media networks involved in information operations with the aim of influencing the digital environment, especially in Colombia.<br><br>Our assessment concludes a high likelihood that Venezuelan left-wing supporter, Rafael Nu\u00f1ez and his pro-Venezuelan digital marketing associates are responsible for the content found on @ChalecosAmarill's Twitter account and engagement with known bot/sock puppet networks running various Colombia-focused digital campaigns in favor of Petro. Additionally, it is likely that Nu\u00f1ez's efforts are a result of Venezuelan government interests.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Quincoses-The-Growth-of-Global-Election-Disinformtion.pdf"
+    },
+    {
+      "id": "bhus22-27229",
+      "title": "Breaking Firmware Trust From Pre-EFI: Exploiting Early Boot Phases",
+      "speakers": [
+        "Alex Matrosov",
+        "Alex Ermolov",
+        "Yegor Vasilenko",
+        "Sam Thomas"
+      ],
+      "description": "Vulnerabilities in System Management Mode (SMM) and more general UEFI applications/drivers (DXE) are receiving increased attention from security researchers. Over the last 9 months, the Binarly efiXplorer team disclosed 42 high-impact vulnerabilities related to SMM and DXE firmware components. But newer platforms have significantly increased the runtime mitigations in the UEFI firmware execution environment (including SMM). The new Intel platform firmware runtime mitigations reshaped the attack surface for SMM/DXE with new Intel Hardware Shield technologies applied below-the-OS. <br><br>The complexity of the modern platform security features is growing every year. The general security promises of the platform consist of many different layers defining their own security boundaries. Unfortunately, in many cases, these layers may introduce inconsistencies in mitigation technologies and create room for breaking general security promises, allowing for successful attacks.<br><br>In this presentation, we will share our work exploring recent changes in the UEFI firmware security runtime using one of the most recent Intel CPUs as an example. The presentation will cover the evolution of firmware mitigations in SMM/DXE on x86-based CPUs and a discussion about the new attacks on Intel Platform Properties Assessment Module (PPAM), which are often used in tandem with Intel SMI Transfer Monitor (STM). <br><br>These topics have never been publicly discussed from the offensive security research perspective.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Matrosov-Breaking-Firmware-Trust-From-Pre-EFI.pdf"
+    },
+    {
+      "id": "bhus22-26650",
+      "title": "A Fully Trained Jedi, You Are Not",
+      "speakers": [
+        "Adam Shostack"
+      ],
+      "description": "As software organizations try to bring security earlier in the development processes, what can or should regular software or operations engineers know about security? Taking as given that we want them to build secure systems, that demands a shared understanding of the security issues that might come up, and agreement on what that body of knowledge might entail. Without this knowledge, they'll keep building insecure systems. With them, we can have fewer recurring problems that are trivially attackable. <br><br>Training everyone at a firm is expensive. Even if the training content is free, people's time is not. If you have 1,000 people, one hour per person is half a person year (before any overhead). So there is enormous pressure to keep it quick, ensure it meets compliance standards like PCI, and \u2026 the actual knowledge we should be conveying is almost an afterthought. We need to design knowledge scaffolding and tiered approaches to learning, and this talk offers a structure and tools to get there. <br><br>We don't need every developer to be a fully trained Jedi, and we don't have time to train everyone to that level or even as much as we train security champs. So what could we ask everyone to know, and how do we determine what meets that bar?",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Shostack-A-Fully-Trained-Jedi-Semifinal.pdf"
+    },
+    {
+      "id": "bhus22-26536",
+      "title": "Devils Are in the File Descriptors: It Is Time To Catch Them All",
+      "speakers": [
+        "Le Wu"
+      ],
+      "description": "\"Everything is a file\" describes an important feature of Unix. File descriptor or fd is widely used in the Linux kernel. Exporting an fd to user space and importing an fd from user space are very common and basic operations in the Linux kernel. However, we discovered that there are many types of high-risk vulnerabilities lurking in the usage of these operations.<br><br>We discovered that the usage of fd importing operations in the Linux kernel can be a very vulnerable scenario. Several new types of vulnerabilities were found in the scenario and will be revealed for the first time. We also found that known types of vulnerabilities like type confusion are still widespread in the scenario unexpectedly. Moreover, we found a dozen vulnerabilities in the usage of fd exporting operations in kernels. These vulnerabilities exist in the Linux and Android kernels, affecting millions of devices. A comprehensive overview of vulnerabilities in the usage of fd operations will be summarized and thoroughly disclosed in this presentation.<br><br>We discovered some interesting facts about the vulnerabilities in the usage of fd operations. First, the GPU drivers are more vulnerable. Examples of vulnerable ones include ARM mali GPU driver, AMD GPU driver, etc. Second, the kernel drivers which use the dma-buf interfaces are more vulnerable in the above examples. Third, because of the peculiarities of these vulnerabilities, some of them can hardly be found by fuzzers like syzkaller. We will delve deeper into these facts in the presentation.<br><br>To overcome the difficulty of finding the vulnerabilities in the usage of fd operations, we developed several creative methods to guide fuzzers. With the help of such methods, we can easily find the vulnerabilities in the above-described scenarios. Coding tips will also be given for the purpose of preventing such vulnerabilities related to file descriptors.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Wu-Devils-Are-in-the-File.pdf"
+    },
+    {
+      "id": "bhus22-27264",
+      "title": "In Need of &#39;Pair&#39; Review: Vulnerable Code Contributions by GitHub Copilot",
+      "speakers": [
+        "Hammond Pearce",
+        "Benjamin Tan",
+        "Brendan Dolan-Gavitt",
+        "Baleegh Ahmad"
+      ],
+      "description": "On June 29 in 2021 GitHub announced and released their newest tool, 'Copilot' - an 'AI-based Pair Programmer', a deep learning model trained over vast quantities of open-source GitHub code.  However, we humans wrote most of that code. And much of it isn't great. It has bugs, it contains dated coding practices, and many repositories even contain dangerously insecure code. Given the vast quantity of garbage code that Copilot has learned from, is it reasonable to trust the code suggestions that it generates?<br> <br>In this talk, we demonstrate that GitHub Copilot is susceptible to writing vulnerabilities in multiple axis, from SQL injections to buffer overflows, use-after-free to cryptographic issues. We try different languages - C, Python, and even Verilog, where we show it also generates hardware bugs (when it can generate hardware at all).<br><br>Overall, we tried 89 different scenarios for Copilot, generating 1,689 suggestions, and found approximately 40% to be vulnerable.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Pearce-In-Need-Of-Pair-Review.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Pearce-In-Need-Of-Pair-Review-wp.pdf"
+    },
+    {
+      "id": "bhus22-27032",
+      "title": "ELF Section Docking: Revisiting Stageless Payload Delivery",
+      "speakers": [
+        "Dimitry Snezhkov"
+      ],
+      "description": "When it comes to generating and delivering malware on Linux, offensive operators have choices. Some objectives call for a dynamic payload bootstrap off the wire, others require stageless implants. <br><br>Often, malware deployed with bundled payloads can be successfully detected and analyzed. However, we think there are opportunities to improve on the process of embedding payloads in standalone implants that can elevate their survival levels.<br><br>This talk will address developments in the static payload embedding and loading. In our discussion, we will revisit the mechanisms of construction of ELF binaries, and will focus on how ELF sections can be used to facilitate a successful payload hosting, retrieval and loading.<br><br>We will introduce the concept of ELF section docking, whereby a section containing payload can be independently attached to the payload-agnostic loader. We will further expand the concept to address in-field (re-)attachment of sections to loaders without the use of compilers which may be very useful for long-haul offensive operations.<br><br>Furthermore, we will show how ELF docking can be successfully used as an alternative to executable packing when addressing complex payloads and providing teams with options and flexibility in multiple payload delivery scenarios. <br><br>We will touch on detection opportunities and the evasion features implemented in a proof-of-concept loader and injector tooling which will be released during the talk. <br><br>We feel that ELF section docking can help solve some of the payload bundling challenges for the offensive operators, and also introduce ideas to hunters to detect and respond to this technique.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Snezhkov-ELF-Section-Docking-Revisiting-Stageless-Payload-Delivery.pdf"
+    },
+    {
+      "id": "bhus22-27199",
+      "title": "Let&#39;s Dance in the Cache - Destabilizing Hash Table on Microsoft IIS",
+      "speakers": [
+        "Orange Tsai"
+      ],
+      "description": "Hash Table, as the most fundamental Data Structure in Computer Science, is extensively applied in Software Architecture to store data in an associative manner. However, its architecture makes it prone to Collision Attacks. To deal with this problem, 25 years ago, Microsoft designed its own Dynamic Hashing algorithm and applied it everywhere in IIS, the Web Server from Microsoft, to serve various data from HTTP Stack. As Hash Table is everywhere, isn't the design from Microsoft worth scrutinizing?<br><br>We dive into IIS internals through months of Reverse-Engineering efforts to examine both the Hash Table implementation and the use of Hash Table algorithms. Several types of attacks are proposed and uncovered in our research, including (1) A specially designed Zero-Hash Flooding Attack against Microsoft's self-implemented algorithm. (2) A Cache Poisoning Attack based on the inconsistency between Hash-Keys. (3) An unusual Authentication Bypass based on a hash collision.<br><br>By understanding this talk, the audience won't be surprised why we can destabilize the Hash Table easily. The audience will also learn how we explore the IIS internals and will be surprised by our results. These results could not only make a default installed IIS Server hang with 100% CPU but also modify arbitrary HTTP responses through crafted HTTP request. Moreover, we'll demonstrate how we bypass the authentication requirement with a single, crafted password by colliding the identity cache!",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Tsai-Lets-Dance-in-the-Cache-Destabilizing-Hash-Table-on-Microsoft-IIS.pdf"
+    },
+    {
+      "id": "bhus22-27189",
+      "title": "Internal Server Error: Exploiting Inter-Process Communication in SAP's HTTP Server",
+      "speakers": [
+        "Martin Doyhenard"
+      ],
+      "description": "More than 400,000 organizations, including 90% of Fortune 500 companies, rely on SAP's software to keep their business up and running. At the core of every SAP deployment is the Internet Communication Manager (ICM), the piece of software in charge of handling all HTTP requests and responses.<br><br>This talk will demonstrate how to leverage two memory corruption vulnerabilities found in SAP's proprietary HTTP Server, using high-level protocol exploitation techniques. Both techniques, CVE-2022-22536 and CVE-2022-22532, were remotely exploitable and could be used by unauthenticated attackers to completely compromise any SAP installation on the planet. <br><br>First, by escalating an error in the HTTP request-handling process, this presentation will show how to desynchronize ICM data buffers and hijack every user's account with advanced HTTP Smuggling. Furthermore, as the primitives of this vulnerability do not rely on parsing errors, a new technique will be introduced to take over a system, even in an \"impossible to exploit\" scenario - without a proxy! This will include a demo of the first desync botnet, using nothing more than JavaScript and Response Smuggling concepts.<br><br>Next, this talk will examine a Use After Free vulnerability in the shared memory buffers used for Inter-Process Communication. By exploiting an incorrect deallocation, it was possible to tamper messages belonging to other TCP connections and take control of all responses using Cache Poisoning and Response Splitting theory. <br><br>Finally, as the affected buffers are also used to contain Out Of Bounds data, a method to corrupt address pointers and obtain Remote Code Execution will be explained.<br><br>The Internet Communication Manager Advanced Desync (ICMAD) vulnerabilities were addressed by the US Cybersecurity and Infrastructure Security Agency, as well as CERTs from all over the world, proving the tremendous impact they had on enterprise security.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Doyhenard-Internal-Server-Error.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Doyhenard-Internal-Server-Error-wp.pdf"
+    },
+    {
+      "id": "bhus22-27093",
+      "title": "Google Reimagined a Phone. It was Our Job to Red Team and Secure it.",
+      "speakers": [
+        "Farzan Karimi",
+        "Eugene Rodionov",
+        "Xuan Xing",
+        "Christopher Cole"
+      ],
+      "description": "Despite the large number of phone vendors, most Android devices are based on a relatively small subset of system on a chip (SoC) vendors. Google decided to break this pattern with the Pixel 6. From a security perspective, this meant rather than using code that had been tested and used for years, there was a new stack of high value device firmware we needed to get right the first time.<br><br>This talk will go over how Android secured the reimagined Pixel 6 before its launch, focusing on the perspective of the Android Red Team. The team will demonstrate how fuzz testing, black box emulators, static analysis, and manual code reviews were used to identify opportunities for privileged code execution in critical components such as the first end-to-end proof of concept on the Titan M2 chip, as well as ABL with full persistence resulting in a bypass of hardware key attestation. Finally, the Android Red Team will demonstrate multiple security-critical demos. This work showcased the value of red teaming, ensuring a more secure and safe Pixel 6 before its release.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Karimi-Google-Reimagined-A-Phone.pdf"
+    },
+    {
+      "id": "bhus22-28803",
+      "title": "The Cyber Safety Review Board: Studying Incidents to Drive Systemic Change",
+      "speakers": [
+        "Robert Silvers",
+        "Heather Adkins",
+        "Jeff Moss"
+      ],
+      "description": "Join Rob Silvers (DHS Undersecretary for Policy and Chair of the Cyber Safety Review Board) and Heather Adkins (Deputy Chair and Vice President, Security Engineering, Google) for a discussion about the Cyber Safety Review Board\u2019s inaugural review of the Log4j vulnerability. Rob and Heather will talk about key report findings, how industry and government can implement the recommendations, and how the Board is changing the cyber ecosystem."
+    },
+    {
+      "id": "bhus22-27237",
+      "title": "Is WebAssembly Really Safe? --Wasm VM Escape and RCE Vulnerabilities Have Been Found in New Way",
+      "speakers": [
+        "Zhao Hai",
+        "Zhichen Wang",
+        "Mengchen Yu",
+        "Lei Li"
+      ],
+      "description": "WebAssembly (Wasm) supports binary format which provides languages such as C/C++, C# and Rust with a compilation target on the web. It is a web standard with active participation from all major browser vendors (Chrome, Edge, Firefox, Safari). Also, Wasm runtime can be widely used for edge computing.<br><br>Previous research on Wasm security mostly focuses on exploitation at the compiler and linker level, but few people focus on Wasm VM escape. Therefore, we design a new fuzz framework based on Wasm standard to explore the runtime vulnerability itself. The framework can be compatible with all programs or projects containing Wasm design standards.<br><br>If there is an escape vulnerability in the browser kernel or any project that uses Wasm runtime, when an attacker deploys a page or service containing a malicious Wasm binary, he can control the access device or the server that provides the runtime service.<br>We find that these escape vulnerabilities are usually caused by inadequate operand boundary checking of bytecode interpreter or stack overflow of WASI API. For example, in wasm3 and WasmEdge projects, we use the above two methods to achieve VM escape. Meanwhile, there are many exploitable vulnerabilities in the parsing of file data structure, which are usually overflow vulnerabilities caused by inadequate inspection of some input fields. Normally, these vulnerabilities will lead to denial of service attacks. In the process of fuzzing, we find that almost all wasm runtime projects can exploit such vulnerabilities.<br><br>Finally, we will show the off-by-one vulnerability of a PC stack of WasmEdge that we discovered, which successfully conducts RCE on the host. This process is very ingenious and we will explain it in detail at the demo time.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Hai-Is-WebAssembly-Really-Safe.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Hai-Is-WebAssembly-Really-Safe-wp.pdf"
+    },
+    {
+      "id": "bhus22-28230",
+      "title": "Trying to Be Everything to Everyone: Let\u2019s Talk About Burnout",
+      "speakers": [
+        "Stacy Thayer"
+      ],
+      "description": "<div><span>Research shows computer security professionals describe the computer security industry as a high-risk yet high-reward profession with negative effects on the workforce. There is an estimated 805,000 computer security professionals working in the US, but meeting the business demand for computer security professionals would require 62% industry growth. This leaves those in the field understaffed and highly stressed, ultimately leading to burnout. Stress and burnout can lead to mental fatigue, which can negatively impact motivation and engagement. It can also cause diminishing focus and performance levels, and have a negative impact on operational security, satisfaction, and performance, both in the office and at home. This talk will discuss the existing research on burnout in the computer security industry and will discuss what really causes burnout, why it happens, and what you can do to mitigate it, including setting healthy boundaries, avoiding guilt, realistic ways to manage anxiety, and honest self-talk so you can identify what is needed to refill your energy and passion.</span></div><div><span><br></span></div><div><span>I will discuss how to recognize burnout in hidden places and explore the root causes of it.</span></div><div><span><br></span></div><div><span>I will address what to do about it \u2013 going beyond simply meditation, exercise, and healthy eating. If it was that easy, we would all be doing that. This talk is unique in that it will utilize a knowledge of practical psychology to keep it real and use behavioral change models as a guide for reducing burnout. How do you find motivation, appreciation, and time for yourself when it feels like the world around you is demanding you give more? You will leave this talk with a better understanding of how burnout happens, your personal relationship to burnout, and an idea of what to do to help reduce, relieve, and manage it.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Thayer-Everything-To-Everyone-Burnout.pdf"
+    },
+    {
+      "id": "bhus22-27053",
+      "title": "Smishmash - Text Based 2fa Spoofing Using OSINT, Phishing Techniques and a Burner Phone",
+      "speakers": [
+        "Thomas Olofsson",
+        "Mikael Bystr\u00f6m"
+      ],
+      "description": "In recent years the data leaks have escalated, and leaked passwords and usernames have become a common attack vector in phishing attacks. Until recently phone numbers were commonly overlooked by attackers as well as red teams. This year has seen an increase in attacks circumventing text based 2fa.<br><br>In this talk, the researchers will show how it's possible to gather data from publicly available sources and connect the phone numbers most likely used by two factor authentication systems to other leaked email and login credentials. <br><br>We will simulate an attack armed with your cracked password, email address and phone number.<br><br>We will show techniques and methods used by real threat actors to bypass text based 2fa using only publicly leaked data using real time attack by indexing OSINT data combined with publicly available attack tools and frameworks.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Olofsson-Smishsmash.pdf"
+    },
+    {
+      "id": "bhus22-27039",
+      "title": "To Flexibly Tame Kernel Execution With Onsite Analysis",
+      "speakers": [
+        "Xuhua Ding"
+      ],
+      "description": "Existing kernel analysis tools either instrument the subject kernel to report data from the inside or use QEMU to gain information from the translated execution. Instrumentation based tools are not applicable to binary-only operating systems such as Windows. Users may have to re-compile the whole kernel for even a slight change of the functionality. The QEMU based approach takes a performance toll on the entire kernel execution. <br><br>In this talk, we present the Onsite Analysis Infrastructure (OASIS), a novel framework for dynamic kernel analysis. A programmer can develop her kernel analysis application to control a captured kernel thread execution such as tracing or setting breakpoints that affect the thread only and collecting data from it as if the application runs inside the kernel, i.e., onsite analysis. We also show a few applications benefiting from OASIS, including full-VM memory introspection, system call handler control flow tracing, kernel event monitoring, and kernel malware testing.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Ding-To-Flexibly-Tame-Kernel.pdf"
+    },
+    {
+      "id": "bhus22-27348",
+      "title": "Stalloris: RPKI Downgrade Attack",
+      "speakers": [
+        "Philipp Jeitner",
+        "Haya Shulman",
+        "Michael Waidner",
+        "Donika Mirdita",
+        "Tomas Hlavecek"
+      ],
+      "description": "The recent hijack of Twitter prefix by RTCOMM demonstrated the central role of RPKI for Internet routing security. The RPKI filtering (ROV) by major networks limited the propagation of the hijacked prefix.<br><br>We demonstrate the first downgrade attacks against RPKI, which allows remote adversaries to disable RPKI validation, hence exposing to prefix hijacks. In our attacks a malicious RPKI publication point stalls the relying party implementations, disabling the RPKI validation on those networks.<br><br>We show that all the current RPKI relying party implementations are vulnerable to attacks by a malicious publication point. This translates to 20.4% of the IPv4 address space.<br><br>We provide recommendations for preventing our downgrade attacks. However, resolving the fundamental problem is not straightforward: if the relying parties prefer security over connectivity and insist on RPKI validation when ROAs cannot be retrieved, the victim AS may become disconnected from many more networks than just the one that the adversary wishes to hijack. Our work shows that the publication points are a critical infrastructure for Internet connectivity and security. Our main recommendation is therefore that the publication points should be hosted on robust platforms guaranteeing a high degree of connectivity.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Jeitner-Stalloris-RPKI-Downgrade-Attack.pdf"
+    },
+    {
+      "id": "bhus22-27127",
+      "title": "Return to Sender - Detecting Kernel Exploits with eBPF",
+      "speakers": [
+        "Guillaume Fournier"
+      ],
+      "description": "One of the fastest growing subsystems in the Linux Kernel is, without any doubt, eBPF (extended Berkeley Packet Filter). Although eBPF initially targeted network monitoring and filtering use cases, its capabilities have been broadened over time. With each new kernel version, the capabilities of eBPF are getting closer to that of a kernel module with additional benefits: system safety and stability.<br><br>When it comes to security, eBPF has been a hot topic in the previous years, for good and less desirable reasons. Like any other kernel features, eBPF has introduced its fair share of kernel bugs and vulnerabilities, questioning the maturity of a solution that introduces a rich feature set but considerably increases the kernel attack surface. On the other hand, eBPF is now powering an increasing amount of endpoint protection solutions, showcasing original ideas to detect threats at runtime.<br><br>Unlike many projects that aim at detecting malicious behaviors in user space, this talk focuses on how eBPF can be leveraged to detect and prevent various kernel exploitation strategies. As such, we will be releasing KRIE (Kernel Runtime Integrity with eBPF), an open source eBPF-powered tool with real world implementations of the detections we're discussing here. From trying to bypass security features, to changing security parameters or altering the kernel runtime, we'll discover how eBPF can be used to safely introduce security protections, while ensuring system safety and stability. Then, we'll present an original kernel Control Flow Integrity framework that focuses on backward compatibility and doesn't require any specific hardware.<br><br>Finally, we'll cover the performance and overhead introduced by KRIE. We will also discuss the limitations of KRIE, explaining why it is an exciting security layer but why it shouldn't be considered as a bullet proof solution.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Fournier-Return-To-Sender.pdf"
+    },
+    {
+      "id": "bhus22-26559",
+      "title": "AEPIC Leak: Architecturally Leaking Uninitialized Data from the Microarchitecture",
+      "speakers": [
+        "Pietro Borrello",
+        "Andreas Kogler"
+      ],
+      "description": "<div><span>CPU vulnerabilities undermine the security guarantees provided by software- and hardware-security improvements. While the discovery of transient-execution attacks increased the interest in CPU vulnerabilities on a microarchitectural level, architectural CPU vulnerabilities are still understudied.</span></div><div><span><br></span></div><div><span>In this talk, we systematically analyze existing CPU vulnerabilities showing that CPUs suffer from vulnerabilities whose root causes match with those in complex software. We show that transient-execution attacks and architectural vulnerabilities often arise from the same type of bug and identify the blank spots. Investigating the blank spots, we focus on architecturally improperly initialized data locations.</span></div><div><span><br></span></div><div><span>We discover AEPIC Leak, the first architectural CPU bug that leaks stale data from the microarchitecture without using a side channel. AEPIC Leak works on all recent Sunny-Cove-based Intel CPUs (i.e., Ice Lake and Alder Lake) and does not require hyperthreading enabled. It architecturally leaks stale data incorrectly returned by reading undefined APIC-register ranges. AEPIC Leak samples data transferred between the L2 and last-level cache, including SGX enclave data, from the superqueue. We target data in use, e.g., register values and memory loads, as well as data at rest, e.g., SGX-enclave data pages. Even if AEPIC Leak is a sampling-based attack, we introduce techniques to precisely influence from which page and offset the attack leaks from. </span></div><div><span>Our end-to-end attack extracts AES-NI, RSA, and even the Intel SGX attestation keys from enclaves within a few seconds. We discuss mitigations and conclude that the only short-term mitigations for AEPIC Leak are to disable APIC MMIO or not rely on SGX.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Borrello-Architecturally-Leaking-Data.pdf"
+    },
+    {
+      "id": "bhus22-26736",
+      "title": "Trust Dies in Darkness: Shedding Light on Samsung's TrustZone Keymaster Design",
+      "speakers": [
+        "Alon Shakevsky",
+        "Eyal Ronen",
+        "Avishai Wool"
+      ],
+      "description": "ARM-based Android smartphones rely on the TrustZone hardware support for a Trusted Execution Environment (TEE) to implement security-sensitive functions. The TEE runs a separate, isolated, TrustZone Operating System (TZOS), in parallel to Android. The implementation of the cryptographic functions within the TZOS is left to the device vendors, who create proprietary undocumented designs. <br><br>In this work, we expose the cryptographic design and implementation of Android's Hardware-Backed Keystore in Samsung's Galaxy S8, S9, S10, S20, and S21 flagship devices. We reverse-engineered and provide a detailed description of the cryptographic design and code structure, and we unveil severe design flaws. We present an IV reuse attack on AES-GCM that allows an attacker to extract hardware-protected key material, and a downgrade attack that makes even the latest Samsung devices vulnerable to the IV reuse attack. We demonstrate working key extraction attacks on the latest devices. We also show the implications of our attacks on two higher-level cryptographic protocols between the TrustZone and a remote server: we demonstrate a working FIDO2 WebAuthn login bypass and a compromise of Google's Secure Key Import. We discuss multiple flaws in the design flow of TrustZone based protocols. Although our specific attacks only apply to the ~100 million devices made by Samsung, it raises the much more general requirement for open and proven standards for critical cryptographic and security designs.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Shakevsky-Trust-Dies-in-Darkness.pdf"
+    },
+    {
+      "id": "bhus22-26307",
+      "title": "sOfT7: Revealing the Secrets of Siemens S7 PLCs",
+      "speakers": [
+        "Maxim\u202c Barsky",
+        "Eli Biham",
+        "Sara Bitan",
+        "Alon Dankner",
+        "Idan Raz"
+      ],
+      "description": "The programmable logic controller (PLC) is a reliable hardware device implementing complex monitoring and control logic for industrial control systems. The pursuit of new advanced features has driven the ICS vendors to come up with new-generation PLCs, that contain a whole standard OS environment (e.g., Windows or Linux). They are commonly known as PC-based PLCs or SoftPLCs. Siemens' SoftPLC is called ET 200SP and unlike common PLCs (that typically use customized processors), it contains a standard Intel Atom CPU. The PLC runs a hypervisor that controls two VMs: Windows and Adonis Linux, which Siemens calls SWCPU. The Adonis kernel runs the programmable control logic and functions as a software PLC. The SWCPU is encrypted (in the PLC storage) and it is decrypted by the hypervisor during the boot process of the PLC.<br><br>Since the boot process of the ET 200SP is not secure, an attacker can boot his choice of an OS and read the full filesystem, including the binary of the hypervisor, the encrypted SWCPU, and the GRUB configuration files. Surprisingly, this filesystem is also accessible from the Windows VM. We located the code in the hypervisor that decrypts the SWCPU and ran it in a standard Linux environment using Intel Pin. We managed to extract the plaintext SWCPU, which was kept secret for years, ever since Siemens, like other vendors, started encrypting their firmware before the release. Our success indicates that the decryption key is hardcode.<br><br>Our initial research shows evidence that the SWCPU contains codebase used by other Siemens S7 PLCs (e.g., Siemens' Adonis kernel). Thus, it can be used for vulnerability research, throughout the full Siemens S7 product-line. Our conclusion is that Siemens invested efforts in protecting the secrecy of the S7 PLC codebase but failed to adapt their security mechanisms to the new standard environment.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Bitan-Revealing-S7-PLCs.pdf"
+    },
+    {
+      "id": "bhus22-26702",
+      "title": "The Open Threat Hunting Framework: Enabling Organizations to Build, Operationalize, and Scale Threat Hunting",
+      "speakers": [
+        "John Dwyer",
+        "Neil Wyler",
+        "Sameer Koranne"
+      ],
+      "description": "\"Ask 10 infosec professionals to define threat hunting and you'll get 11 different answers.\" Threat hunting is one of those interesting components of cybersecurity where everyone knows they should be doing it but not everyone can fully articulate what threat hunting is.<br> <br>In our roles as threat hunters, we're lucky enough to be witness to, and evaluate, the hunt programs of Fortune 100 companies, state and national governments, and partners and MSPs. This experience has shown us that one person's definition of threat hunting does not necessarily equal another's.<br><br>If you do an Internet search for \"how to build a threat hunting program\" there are plenty of results and some include great insights into what makes a threat hunting program effective. However, while resources do exist, they're often tied to a specific vendor or a particular product and the best way to hunt using it. There's useful information, but you're left trying to find a way to make the proposed processes and techniques work for your environment and not the one driven by the vendor.<br><br>\"If you don't like the road you're walking, start paving another one.\" It's with that in mind that we're releasing a threat hunting framework that can help organizations start a threat hunting program as well as improve threat hunting operations for existing programs that's free and not tied to any particular technology.<br> <br>This framework will enable organizations to take control of building a threat hunting program by providing a clear path to operationalizing threat hunting as well as a well-defined threat hunting process to ensure threat hunters are set up for success.<br>We've responded to far too many incidents that could have been prevented with solid threat hunting operations and we hope this project can help prevent future incidents.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Dwyer-Open-Threat-Hunting-Framework.pdf"
+    },
+    {
+      "id": "bhus22-26940",
+      "title": "(Long) Dragon Tails \u2013 Measuring Dependence on International Vulnerability Research",
+      "speakers": [
+        "Stewart Scott",
+        "Trey Herr",
+        "Frances Nettles",
+        "Yumi Gambrill"
+      ],
+      "description": "<div><span>This talk will present results of a study on the reliance of critical proprietary and open source software on Chinese software vulnerability disclosures. The increasingly difficult environment for Chinese security researchers became acute with the September 2021 passage of a law requiring vulnerabilities also be reported to the MIIT alongside the affected vendor.  As yet however, the impact of these restrictions has not been systematically evaluated in public.</span><span></span></div><div><span><br></span></div><div><span>This talk will present results of a quantitative analysis on the changing proportion of Chinese based vulnerability disclosures to major software products from a selection of proprietary vendors as well as several major open source packages. The analysis considers changes over time in response to the evolving Chinese legal environment, significant divergence from data on the allocations of bug bounty rewards, and noteworthy trends in the type and severity of acknowledged vulnerabilities.</span></div><div><span><br></span></div><div><span>Anecdotally, the Chinese research community's prowess is well known, from its bug discovery exploits at the Tianfu Cup to the prominence of enterprise research labs like Qihoo 360. However, recent laws designed to give the Chinese government early access to the community's discoveries\u2014and the government's willingness to enforce those laws even on high-profile corporations as with its recent punishment of Alibaba\u2014demand a more thorough accounting. This talk will address implications for infosec as well as the wider policy environment, including selected recommendations on how to address the 'supply shock' of vulnerabilities from this research community.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Scott-Long-Dragon-Tails.pdf"
+    },
+    {
+      "id": "bhus22-27541",
+      "title": "RCE-as-a-Service: Lessons Learned from 5 Years of Real-World CI/CD Pipeline Compromise",
+      "speakers": [
+        "Iain Smart",
+        "Viktor Gazdag"
+      ],
+      "description": "In the past 5 years, we've demonstrated countless supply chain attacks in production CI/CD pipelines for virtually every company we've tested, with several dozen successful compromises of targets ranging from small businesses to Fortune 500 companies across almost every market and industry. <br><br>In this presentation, we'll explain why CI/CD pipelines are the most dangerous potential attack surface of your software supply chain. To do this, we'll discuss the sorts of technologies we frequently encounter, how they're used, and why they are the most highly privileged and valuable targets in your company's entire infrastructure. We'll then discuss specific examples (with demos!) of novel abuses of intended functionality in automated pipelines which allow us to turn the build pipelines from a simple developer utility into Remote Code Execution-as-a-Service. <br><br>Is code-signing leading your team into a false sense of security while you programmatically build someone else's malware? Is it true that \"any sufficiently advanced attacker is indistinguishable from one of your developers\"? Have we critically compromised nearly every CI/CD pipeline we've ever touched? The answer to all of these questions is yes. <br><br>Fortunately, this presentation will not only teach you exactly how we did it and the common weaknesses we see in these environments, but also share key defensive takeaways that you can immediately apply to your own development environments.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Gazdag-RCE-as-a-Service.pdf"
+    },
+    {
+      "id": "bhus22-27152",
+      "title": "No One Is Entitled to Their Own Facts, Except in Cybersecurity? Presenting an Investigation Handbook To Develop a Shared Narrative of Major Cyber Incidents",
+      "speakers": [
+        "Victoria Ontiveros",
+        "Tarah Wheeler"
+      ],
+      "description": "You get a fact\u2026and you get a fact\u2026and you get a fact! It sounds like a meme until you realize that's how most people treat their conceptions of what happened after a major cyber incident investigation. If you asked ten people even in the infosec community right now what happened during the Colonial Pipeline hack, you'd get ten different answers that are substantially different on fundamental facts of Who, What, Where, When, Why, and How. <br><br>In December of 2021, Harvard's Belfer Center released a report based on a workshop involving over 100 international experts. Our project investigated how the aviation industry draws lessons learned from aviation incidents and how a process could be applied to cyber incident investigations. Based on this, we have created the Major Cyber Incident Investigations Playbook. This new document, pending publication at Harvard and being released here at Black Hat, is a playbook to make major cyber incident investigations more actionable by setting up an independent review board for major cyber incidents. This can be how we build a shared historical narrative. <br><br>We have condensed the deliberations over trade-offs included in the playbook into eight fundamental questions on how to conduct a major cyber investigation, and most importantly how to communicate the indisputable facts of an incident, as opposed to the opinions on the incident. We include a Crisis Sheet and Facts Sheet to help anyone who is handed this playbook for the first time *after* an incident has already occurred. The analysis included in any review board's report should not only provide lessons learned and recommendations but should also lay to rest disputes over the fundamental facts such as where the attack occurred, the name of the technologies or vulnerabilities exploited, the people harmed, and the approximate cost of the incident and cleanup."
+    },
+    {
+      "id": "bhus22-26999",
+      "title": "Backdooring and Hijacking Azure AD Accounts by Abusing External Identities",
+      "speakers": [
+        "Dirk-jan Mollema"
+      ],
+      "description": "External identities are a concept in Azure Active Directory which makes it possible to collaborate with users outside of an organization. These external users, often called guest users, can be granted permissions to certain resources and work together with users within the organization. The identities of these users are managed in a different Azure AD tenant, or are unmanaged accounts outside of Azure AD. <br><br>This talk explains how these external identities work in Azure AD and how concepts such as B2B collaboration are facilitated. During the research for this talk, several flaws in the implementation were identified, which create novel ways to backdoor and hijack Azure AD accounts from a regular user. There were also ways identified to exploit these external identity links to elevate privileges, bypass Multi Factor Authentication and Conditional Access policies. All these attacks were possible in the default configuration of Azure AD. <br><br>This talk will give insight into the external identities concepts, into the technicalities that allowed these attacks to exist, and into ways to harden against these attacks and detect abuse of these vulnerabilities.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Mollema-Backdooring-and-hijacking-Azure-AD-accounts.pdf"
+    },
+    {
+      "id": "bhus22-27230",
+      "title": "Invisible Finger: Practical Electromagnetic Interference Attack on Touchscreen-based Electronic Devices",
+      "speakers": [
+        "Haoqi Shan",
+        "Boyi Zhang",
+        "Yier Jin",
+        "Shuo Wang"
+      ],
+      "description": "Touchscreen-based electronic devices such as smart phones and smart tablets are widely used in our daily life. While the security of electronic devices has been heavily investigated recently, the resilience of touchscreens against various attacks has yet to be thoroughly investigated. In this presentation, for the first time, we show how touchscreen devices are vulnerable to Intentional Electromagnetic Interference (IEMI) attacks in a systematic and practical way.<br><br>Not only showing how practical IEMI attacks are established on touchscreens, we will also analyze and quantify the underlying mechanism allowing our novel touchscreen attacks in detail. We will show and explain how to calculate the minimum amount of electric field and signal frequency required to induce false touch events. The induced touch events allow attackers to remotely perform short-tap, long-press, and omni-directional gesture on touchscreen devices under a regular conference table without physically touching the victim devices. <br><br>Beyond simply showing how to generate touch events under an ideal scenario, we will introduce our novel and necessary techniques to build up the attack chains in a practical way, such as designing and using a phone locator to infer the position and orientation of the target smart phone out of sight, knowing if the injected IEMI signal works without seeing the screen, etc. We will show and explain how our state-of-the-art attack can be remotely used on different touchscreen devices and deliver practical attack outcomes, including unlocking gesture based pin lock, installing malware on Android devices, and connecting Siri on iOS devices.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Shan-Invisible-Finger.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Shan-Invisible-Finger-wp.pdf"
+    },
+    {
+      "id": "bhus22-26629",
+      "title": "Monitoring Surveillance Vendors: A Deep Dive into In-the-Wild Android Full Chains in 2021",
+      "speakers": [
+        "Xingyu Jin",
+        "Richard Neal",
+        "Christian Resell",
+        "Clement Lecigne"
+      ],
+      "description": "Over the past 12 months, Google's TAG (Threat Analysis Group) and Android Security teams have discovered and analyzed several in-the-wild 1day/0day exploits by surveillance vendors. We will present in-the-wild browser and kernel LPE exploits found in 2021 such as CVE-2021-28663 (Mali GPU), CVE-2020-16040/CVE-2021-38000 (Browser), CVE-2021-1048 (Linux kernel) and CVE-2021-0920 (Linux kernel). CVE-2021-0920 is an in-the-wild 0day Linux kernel garbage collection vulnerability; not publicly well-known, it's much more sophisticated and arcane in contrast with the other aforementioned exploits. We will do a deep dive into the CVE-2021-0920 exploit and its attribution. Furthermore, we will present a novel and previously unseen in-the-wild kernel exploitation technique for fully bypassing a hardware level mitigation.<br><br>Among the commercial exploit vendors who built the above in-the-wild exploits, one, the developer of CVE-2021-0920, has particularly attracted our attention. We have attributed a number of Android 0day/1day exploit samples to this vendor, including attempts at submitting a malicious app to the Google Play store and early use of the Bad Binder exploit. By analyzing the vendor's exploits, we found a full chain in-the-wild targeting Android devices. The exploit chain uses 1day/nday browser exploits CVE-2020-16040/CVE-2021-38000 and 0day CVE-2021-0920 to remotely root Android devices. After our report to the Linux kernel community, the 0day was fixed in September 2021 as CVE-2021-0920. Further research shows that the vulnerability was found at least once before in 2016 and reported on the Linux Kernel Mailing List, but the patch was rejected by the Linux kernel community.<br><br>For devices enabling the hardware level CONFIG_ARM64_UAO mitigation, the vendor develops a novel method (not ret2bpf) to carefully circumvent the mitigation after the addr_limit is tampered. Besides this, the rich functionality of the post-pwn Rootkits has made the exploit more evasive.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Jin-Monitoring-Surveillance-Vendors.pdf"
+    },
+    {
+      "id": "bhus22-26946",
+      "title": "I Am Whoever I Say I Am: Infiltrating Identity Providers Using a 0Click Exploit",
+      "speakers": [
+        "Steven Seeley"
+      ],
+      "description": "Single Sign On (SSO) has become the dominant authentication scheme to login to several related, yet independent, software systems. At the core of this are the identity providers (IdP). Their role is to perform credential verification and to supply a signed token that service providers (SP) can consume for access control.<br><br>On the other hand, when an application requests resources on behalf of a user and they're granted, then an authorization request is made to an authorization server (AS). The AS exchanges a code for a token which is presented to a resource server (RS) and the requested resources are consumed by the requesting application.<br><br>Whilst OAuth2 handles authorization, and SAML handles authentication and as such Identity and Access Management (IAM) solutions have become very popular in the enterprise environment to handle both use cases. What if IAM solutions are vulnerable to critical remote attacks? They need to be exposed on the internet, trusted to guard identities and facilitate access to hundreds if not thousands of users and applications.<br><br>To begin with, I will cover the foundational use-case for IAM solutions and some past in the wild attacks (ITW) attacks with the extent of their impact.<br><br>Continuing, I will present the approach I took with the audit including the challenges and pitfalls that I was faced with and how I overcame them. The result concluding with an unauthenticated remote code execution as root by chaining multiple vulnerabilities on a very popular IAM solution used by several Fortune 500 companies and government organizations.<br><br>The vulnerabilities will be discussed in detail including novel exploitation strategies for bypassing strict outbound network access. Finally, a live demo will be presented with a release of functional exploit code so that penetration testers and network administrators can validate and remediate these critical findings.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Seeley-IAM-who-I-say-IAM.pdf"
+    },
+    {
+      "id": "bhus22-27206",
+      "title": "Real 'Cyber War': Espionage, DDoS, Leaks, and Wipers in the Russian Invasion of Ukraine",
+      "speakers": [
+        "Juan Andres Guerrero-Saade",
+        "Tom Hegel"
+      ],
+      "description": "The Russian invasion of Ukraine has included a wealth of cyber operations that have tested our collective assumptions about the role that cyber plays in modern warfare. The concept of 'Cyber War' has been subject to all kinds of fantastic aberrations fueled by commentators unfamiliar with the realities and constraints of real world cyber. <br><br>From the beginning of 2022, we have dealt with at least seven strains of wiper malware targeting Ukraine. The latest wiper was used to attack satellite modems with suspected spillover into critical infrastructure in Western Europe. Before this, nation-state wiper malware was relatively rare and this period of abundance is teaching us a great deal about the effects attackers can('t) have during military operations and what we should realistically expect in an era of hybrid warfare with cyber components.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Hegel-Real-Cyber-War.pdf"
+    },
+    {
+      "id": "bhus22-26853",
+      "title": "BrokenMesh: New Attack Surfaces of Bluetooth Mesh",
+      "speakers": [
+        "Han Yan",
+        "Lewei Qu",
+        "Dongxiang Ke"
+      ],
+      "description": "<div><span>Bluetooth Mesh is a mesh networking standard based on Bluetooth Low Energy. It was made public by Bluetooth Special Interest Group (Bluetooth SIG) in 2017. Bluetooth Mesh enables many-to-many device communications and is optimized for creating large-scale device networks. It is ideally suited for smart home, industrial deployments and other scenes. At present, Bluetooth Mesh specifications have been widely supported by major chip manufacturers. But in general, security of its implementation has not been paid enough attention.</span></div><div><span><br></span></div><div><span>In this topic, we dived into the Bluetooth Mesh protocol, divided the mesh process into two key stages: network build and network control. We focused on the security of implementation in these two stages. Based on the protocol analysis, an automatic fuzzing tool \u201cBLE Mesh Fuzzer\u201d is proposed. It can cover both network build and network control stages. We evaluated our tools on 8 well-known vendors and open source projects. BLE Mesh Fuzzer has found 17 memory corruption vulnerabilities and obtained 9 CVEs. Some of the vulnerabilities can cause remote code execution without user interaction. Even, they can cause the destruction of the whole mesh network and affect tens of millions of IoT devices. Also, we studied the security of protocol wrapper application. We found 10 vulnerabilities in a well-known vendor and obtained 10 CVEs. The vulnerabilities can lead to serious consequences such as privilege escalation.</span></div><div><span><br></span></div><div><span>In this talk, we will first introduce the background of Bluetooth Mesh. Then, we analyze the network build and network control protocols, illustrate the attack surfaces in their implementation and wrapper application. Next, we will share the design of BLE Mesh Fuzzer. And finally, we explain the causes of vulnerabilities through several real cases, and put forward our safety recommendations.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Yan-BrokenMesh-New-Attack-Surfaces-of-Bluetooth-Mesh.pdf"
+    },
+    {
+      "id": "bhus22-27397",
+      "title": "Fault-Injection Detection Circuits: Design, Calibration, Validation and Tuning",
+      "speakers": [
+        "Daniel Nemiroff",
+        "Carlos Tokunaga"
+      ],
+      "description": "This session covers the tunable replica circuit (TRC), a fault-injection detection circuit that has been integrated into Intel\u00ae Converged Security and Management Engine (Intel\u00ae CSME) in the recent 12th Gen Intel\u00ae Core\u2122 Processor.  This is Intel's first foray into active fault-injection attack detection in high-volume products such as CPUs and chipsets.<br><br>Ultimately, since a timing failure is the primary goal of fault-injection attacks and has been shown as the vehicle to cause unsigned code to run on other security engines, using the TRC to explicitly detect timing failures is Intel's current approach to fault-injection detection in client security engines. Unlike traditional analog voltage and clock monitors, the TRC detects timing failures that result from voltage, clock, temperature, and other glitch attacks, such as electromagnetic radiation. This session will introduce the TRC technology, how the TRC was integrated into Intel CSME, the process for calibrating the TRC in high volume manufacturing (HVM), as well as the false-positive and fault-injection testing that occurred in our physical attack labs.<br>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Nemiroff-Fault-Injection-Detection-Circuits.pdf"
+    },
+    {
+      "id": "bhus22-26345",
+      "title": "Unlimited Results: Breaking Firmware Encryption of ESP32-V3",
+      "speakers": [
+        "Karim Abdellatif",
+        "Olivier H\u00e9riveaux",
+        "Adrian Thillard"
+      ],
+      "description": "ESP32 is one of the most widely used microcontrollers, and is present in hundreds of million devices such as IoT applications, mobile devices, hardware wallets, etc. In 2019, Limited Results published a fault injection attack at Black Hat Europe which resulted in breaking the security of ESP32-V1 chip family. Therefore, Espressif patched this vulnerability and then advised its customers to use ESP32-V3, which is a hardened silicon revision.<br><br>In this talk, we present an in-depth hardware security evaluation for ESP32-V3. The main goal of this evaluation is to extract the firmware encryption key in order to decrypt the encrypted flash content that may possibly contain secret data.<br><br>First, we use Fault Injection (FI), using our homemade electromagnetic fault injector, in an attempt to access the flash encryption keys stored in the read-protected eFuses. We show by experimental results that this new silicon revision contains a bootloader protected against these attacks.<br><br>Therefore, we then explore a different attack path using Side-Channel Attacks (SCAs) on the firmware decryption mechanism, by measuring the information leakage of the firmware decryption operation during the power up. Using this knowledge, we demonstrate that the full 256-bit AES firmware encryption key can be recovered using Side-Channel (SC) analysis in a few hours with a 100% success rate. Finally, as a practical example, we apply our attack to decrypt the contents of a hardware wallet.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-ABDELLATIF-Unlimited-Results-Breaking-Firmware-Encryption.pdf"
+    },
+    {
+      "id": "bhus22-26522",
+      "title": "A Journey Into Fuzzing WebAssembly Virtual Machines",
+      "speakers": [
+        "Patrick Ventuzelo"
+      ],
+      "description": "Since the MVP release in 2017, WebAssembly evolve gradually, bringing new adepts and new VM implementations over time. It's now possible to run WebAssembly modules over every modern browser, in some blockchain, or using a standalone VM.<br><br>In the same way that multiple JavaScript engines are available, there is now a bunch of different WebAssembly VM with their own runtime engines. Their implementation can be totally different, starting from simple bytecode interpretation to complex JIT and AOT compilation. This diversity also exists in the programming language chosen for VM development, impacting directly the internal security of each part of the virtual machine.<br><br>During this talk, we will introduce what is WebAssembly, dive deeper into WebAssembly VM architecture, identify the attack surface and explain our fuzzing strategy to target each different VM component, from module parsing to runtime execution engine. Also, since we are not targeting only one implementation, we will maximize our success rate by using different fuzzing frameworks and techniques such as coverage-guided, structural, and differential fuzzing.<br><br>This journey leads us to the discovery of more than 50 bugs/vulnerabilities across a dozen of C/C++/Rust projects. We will conclude with a global result overview with a focus on some concrete impactful vulnerabilities.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Ventuzelo-A-Journey-Into-Fuzzing-WebAssembly-Virtual-Machines.pdf"
+    },
+    {
+      "id": "bhus22-27120",
+      "title": "Breaking the Chrome Sandbox with Mojo",
+      "speakers": [
+        "Stephen R\u00f6ttger"
+      ],
+      "description": "If you manage to exploit a Chrome renderer vulnerability, you find yourself in a tight sandbox. Access to OS resources like the file system are greatly restricted and site isolation still enforces the web security guarantees. To allow such strong restrictions, various IPC services provide required functionality to the renderer process which themselves can become a target for sandbox escapes.<br><br>In this talk, we will take a look at Mojo, the IPC framework in Chrome. I will explain the protocol's inner workings using three logic bugs as examples. Finally, we're going to write a reliable exploit for a seemingly impossible race condition.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Roettger-Breaking-the-Chrome-Sandbox-with-Mojo.pdf"
+    },
+    {
+      "id": "bhus22-26971",
+      "title": "Attacks From a New Front Door in 4G &#38; 5G Mobile Networks",
+      "speakers": [
+        "Altaf Shaik",
+        "Shinjo Park",
+        "Matteo Strada"
+      ],
+      "description": "The inception of APIs in the telecom industry is destined to change the way mobile networks operated over the last 3 decades. The latest mobile networks now open their doors to enterprise customers, service providers, and application developers providing access to data and core network functions within the carrier's network. This access is facilitated by the well-known HTTP based Restful API paradigm and allows the integration of automotive, health care, industries, and many others with the 5G mobile networks. <br><br>This talk brings to light for the first time the practical details of the APIs that enable next-generation AI, MEC, and IoT applications using the latest 4G and 5G networks. A security investigation on hundreds of APIs from 10 commercial providers and operators reveals that all of them contain several of the top ten most critical API weaknesses. Even an average attacker can easily find a RCE and disrupt the operation of billions of IoT devices that tend to rely on the latest mobile networks. We put forward the security loopholes in telecom exposure APIs and once again remind you that security should be rooted into the design of 5G and IoT networks.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Shaik-Attacks-From-a-New-Front-Door-in-4G-5G-Mobile-Networks.pdf"
+    },
+    {
+      "id": "bhus22-27106",
+      "title": "UWB Real Time Locating Systems: How Secure Radio Communications May Fail in Practice",
+      "speakers": [
+        "Andrea Palanca",
+        "Luca Cremona",
+        "Roya Gordon"
+      ],
+      "description": "Ultra-wideband (UWB) is a rapidly-growing radio technology that, according to the UWB Alliance, is forecasted to drive sales volumes exceeding one billion devices annually by 2025. Among its current applications, off-the-shelf Real Time Locating Systems (RTLS) employ UWB to provide localization solutions for a wide set of use cases (i.e., medical patients location tracking, safety geofencing, asset monitoring, contact tracing, etc.).<br><br>The security of UWB wireless communications has recently been strengthened by the Institute of Electrical and Electronic Engineers (IEEE) 802.15.4z amendment. However, critical phases of the RTLS process are handled by obscure network protocols that are not regulated by standards, leaving the responsibility for their design and implementation to the vendors.<br><br>In an effort to strengthen the security of devices utilizing UWB, Nozomi Networks Labs conducted a security assessment of two popular UWB RTLS solutions available on the market. Our research reveals 0-day vulnerabilities and other weaknesses that, if exploited, could allow an attacker to gain full access to all sensitive location data exchanged over-the-air.<br><br>In this presentation, we will demonstrate how an attacker may exploit RTLS to locate and target people, hinder safety geofencing rules, and interfere with contact tracing, as well as present key actions to help mitigate these weaknesses to secure UWB RTLS from potential cyber attacks.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Gordon-UWB-Real-Time-Locating-Systems.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Gordon-UWB-Real-Time-Locating-Systems-wp.pdf"
+    },
+    {
+      "id": "bhus22-26932",
+      "title": "A New Trend for the Blue Team - Using a Practical Symbolic Engine to Detect Evasive Forms of Malware/Ransomware",
+      "speakers": [
+        "Sheng-Hao Ma",
+        "Mars Cheng",
+        "Hank Chen"
+      ],
+      "description": "Blue Teams and anyone on the defensive side face various challenges when it comes to reverse engineering suspected malware or ransomware binaries, especially ones with obfuscation techniques such as variants, embedded exploits and complex ransomware. First, identifying whether the sample is even worth the effort (what makes it unique/challenging/new), and second, choosing either static, dynamic analysis, or both! With static analysis, you give up the ability to detect obfuscated malicious programs only visible during run-time, and dynamic analysis is both labor and time intensive, and requires a high-degree of skill and experience, not to mention the threat of the binary escaping your sandbox emulation or virtualization environment. <br><br>We believe there may be a new tool in the Blue Team's toolbox, through the use of a symbolic execution engine to detect and analyze suspected malware/ransomware binaries. A practical symbolic engine can help by parsing through many of the possible execution paths of the binary, and having these pathways represented as symbols. This engine can help provide malicious execution paths analysis with relatively low computing resources, analyze contextual relationships based on instruction semantics, taint and fuzzy identification of obfuscated APIs.<br><br>Using our practical symbolic engine based on the combination and improvement of academic and practical research, you can identify and detect various exploit, techniques, and multiple malware/ransomware variants via symbolic signature attack techniques and ransomware behaviors in a fully static situation. Even if the malware binary is obfuscated, we can still statically analyze it and detect it effectively. Our plan is to make our engine available to the community via open source during Black Hat USA 2022, to help give back to the infosec community and help Blue Teams save time on an ongoing and difficult problem.",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Ma-A-New-Trend-for-the-Blue-Team-Using-a-Practical-Symbolic-Engine.pdf"
+    },
+    {
+      "id": "bhus22-27540",
+      "title": "GPT-3 and Me: How Supercomputer-scale Neural Network Models Apply to Defensive Cybersecurity Problems",
+      "speakers": [
+        "Joshua Saxe",
+        "Younghoo Lee"
+      ],
+      "description": "<div><span>A key lesson of recent deep learning successes is that as we scale neural networks, they get better, and sometimes in game-changing ways.</span></div><div><span><br></span></div><div><span>In this talk, we'll demonstrate and explain how supercomputer-scale neural networks open new vistas for security, qualitatively changing the horizons for machine learning security applications in surprising and powerful ways. Specifically, we'll demonstrate two applications of large neural networks to security problems that wouldn't have been tractable with smaller models: generating custom, human-readable explanations of difficult-to-parse attacker behavior, and detecting malicious behaviors even when we have very few examples of the kind of behaviors we're looking for.</span></div><div><span><br></span></div><div><span>We'll describe each example application in transparent and reproducible detail, and then show you how you can use our work, or do your own large neural network experimentation, using publicly available models like OpenAI's GPT-3 series of models.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Saxe-GPT3-and-Me.pdf"
+    },
+    {
+      "id": "bhus22-26427",
+      "title": "Trace Me if You Can: Bypassing Linux Syscall Tracing",
+      "speakers": [
+        "Rex Guo",
+        "Junyuan Zeng"
+      ],
+      "description": "<div><span>In this talk, we will present novel vulnerabilities and exploitation techniques that reliably bypass Linux syscall tracing. A user mode program does not need any special privileges or capabilities to reliably avoid system call tracing detections by exploiting these vulnerabilities. The exploits work even when seccomp, SELinux, and AppArmor are enforced.</span></div><div><span><br></span></div><div><span>Advanced security monitoring solutions on Linux VMs and containers offer system call monitoring to effectively detect attack behaviors. Linux system calls can be monitored by kernel tracing technologies such as tracepoint, kprobe, ptrace, etc. These technologies intercept system calls at different places in the system call execution. These monitoring solutions can be deployed on cloud compute instances such as AWS EC2, Fargate, EKS, and the corresponding services from other cloud providers.</span></div><div><span><br></span></div><div><span>We comprehensively analyzed the Time-of-check-to-time-of-use (TOCTOU) issues in the Linux kernel syscall tracing framework and showed that these issues can be reliably exploited to bypass syscall tracing. Our exploits manipulate different system interactions that can impact the execution time of a syscall. We demonstrated that significant syscall execution delays can be introduced to make TOCTOU bypass reliable even when seccomp, SELinux, and AppArmor are enforced. Compared to the phantom attacks in DEFCON 29, the new exploit primitives we use do not require precise timing control or synchronization. </span></div><div><span><br></span></div><div><span>We will demonstrate our bypass for Falco on Linux VMs/containers and GKE. We will also demonstrate bypass for pdig on AWS Fargate. In addition, we will demonstrate exploitation techniques for syscall enter and explain the reason why certain configurations are difficult to reliably exploit. Finally, we will summarize exploitable TOCTOU scenarios and discuss potential mitigations in various cloud computing environments.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Guo-Trace-me-if-you-can.pdf"
+    },
+    {
+      "id": "bhus22-27728",
+      "title": "Dive Into Apple IO80211Family Vol. 2",
+      "speakers": [
+        "Yu Wang"
+      ],
+      "description": "At the Black Hat USA 2020 I presented a topic [1] related to the Apple IO80211Family, which discussed the architecture, attack surfaces, and numerous cases of kernel vulnerabilities for the Apple 80211 Wi-Fi kernel extensions. One and a half years have passed, and maybe you will be concerned about what new changes have taken place in the above fields? I would say, first of all, that new kernel vulnerabilities and attack surfaces are constantly being introduced while old bugs are being fixed. It's an endless game. Second, the IO80211Skywalk subsystems are becoming more and more important, and some of them have even been open sourced since XNU-8019.80.24. As security researchers, we need to regularly update our background knowledge and fuzzing framework. Next, the IO80211Family subsystem has been refactored again, and the version number in the IO80211FamilyV2 name has been removed. Of course, the changes behind this are not as simple as they seem.<br><br>As the research progressed, I quickly realized a new problem: the attack surfaces of the 80211 Wi-Fi subsystem are scattered all over the operating system, from user-mode daemons to the network protocol stack, and to IO80211Family.kext, IONetworkingFamily.kext, AppleBCMWLANCoreMac.kext, IOSkywalkFamily.kext and other kernel extensions. So, it became very important to integrate the fuzzing framework and make all the components work together, which motivated me to design a new 80211 Wi-Fi fuzzing system. As part of the output of this system, I will share with you more than a dozen zero-day kernel vulnerabilities. Through these brand new cases, this presentation will help you better understand the design of the Apple 80211 Wi-Fi subsystem and the security challenges it faces.<br><br>[1] https://blackhat.com/us-20/briefings/schedule/#dive-into-apple-iofamilyv-20023",
+      "slides_url": "https://i.blackhat.com/USA-22/Wednesday/US-22-Wang-Dive-into-Apple-IO80211Family-Vol-II.pdf"
+    },
+    {
+      "id": "bhus22-28933",
+      "title": "Pre-Stuxnet, Post-Stuxnet: Everything Has Changed, Nothing Has Changed",
+      "speakers": [
+        "Kim Zetter"
+      ],
+      "description": "When Stuxnet was discovered in 2010, it shone a light on vulnerabilities in critical infrastructure that few had noticed before. The security community, largely focused on IT networks, had its eyes opened to a vast sector it had previously ignored \u2014 the operational networks and industrial control systems that manage pipelines, railways, the electric grid, water treatment plants, manufacturing and so many other pivotal industries. Cybersecurity suddenly became inextricably linked to national security. But it shouldn\u2019t have been a surprise to anyone.<br><br>Likewise, that same year, the Aurora campaign that hit Google, RSA and dozens of other companies, launched a new era of massive espionage and supply-chain hacks. Threat actors became more sophisticated, and their operations more consequential \u2014 witness the OPM hack, DNC breach, NotPetya and SolarWinds. But the growing sophistication of operations shouldn\u2019t have been a surprise to anyone.<br><br>A lot has changed in cybersecurity in the years since BlackHat was founded and Stuxnet was discovered, and a lot of advancements have been made. Yet despite a multi-billion dollar security industry and increased government focus on threats, the world is still surprised when threat actors pivot to new, but often wholly predictable, directions.<br><br>There are few things that truly blindside us, however. The rest cast signals long before they occur. What happened with Colonial Pipeline was foreseeable, as was the growing threat of ransomware and the problems created by security issues with voting systems.<br><br>Today we are seeing new signals that portend what\u2019s to come. We see them in Ukraine, we see them in Iran, and we see them in the U.S. At BlackHat\u2019s 25-year mark, it\u2019s important not only to look back at where we came from \u2014 but also where we are headed. There\u2019s a lot of activity in cyberspace that heralds the latter. Is anyone paying attention?<br>"
+    },
+    {
+      "id": "bhus22-27162",
+      "title": "Do Not Trust the ASA, Trojans!",
+      "speakers": [
+        "Jacob Baines"
+      ],
+      "description": "Cisco ASA and ASA-X are widely deployed firewalls that are relied upon to protect internal networks from the dangers of the outside world. This key piece of network infrastructure is an obvious point of attack, and a known target for exploitation and implantation by APT such as the Equation Group. Yet it's been a number of years since a new vulnerability has been published that can provide privileged access to the ASA or the protected internal network. But all good things must come to an end.<br><br>In this talk, new vulnerabilities affecting the Cisco ASA will be presented. We'll exploit the firewall, the system's administrators, and the ASA-X FirePOWER module. The result of which should call into question the firewall's trustworthiness.<br><br>The talk will focus on the practical exploitation of the ASA using these new vulnerabilities. To that end, new tooling and Metasploit modules will be presented. For IT protectors, mitigation and potential indicators of compromise will also be explored.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Baines-Do-Not-Trust-The-ASA-Trojans.pdf"
+    },
+    {
+      "id": "bhus22-27543",
+      "title": "Bug Bounty Evolution: Not Your Grandson's Bug Bounty",
+      "speakers": [
+        "Katie Moussouris"
+      ],
+      "description": "Bug Bounties, once heralded as a security best practice, are growing stale without ever having brought the revolutionary security benefits and great ways to earn a living to the masses that proponents like me dreamed of. What have we been getting wrong and what can we do to save security and our souls? <br><br>Before Google invigorated the bug bounty practice in 2010 by paying nearly triple the going rate that Mozilla set in the mid-1990s, bug bounty programs had received little fanfare during their previous 20 years of existence. Then, in 2013, when these programs were still not considered mainstream for most organizations, Microsoft launched its programs with the largest bounty amounts in the industry by any software vendor at the time. Then, in 2016 came Hack The Pentagon, and suddenly everyone was either running a bug bounty program or wanted to run one.<br><br>Where are we now and what have we learned since 2010? Were the myths of being able to compete on price with the offense market true or was it all just marketing by VC-backed bug bounty platforms? Is there an alternative solution for hackers who currently get treated like disposable workers? What's the best path forward for hackers, organizations, and the security industry now that we have seen over a decade of modern bug bounty programs in practice?<br><br>This talk is for the dreamers, the wishers, the post-modern risk economists, the hackers of labor systems, the destroyers of status quos. This is not your grandson's bug bounty.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Moussouris-Bug-Bounty-Evolution.pdf"
+    },
+    {
+      "id": "bhus22-26322",
+      "title": "ElectroVolt: Pwning Popular Desktop Apps While Uncovering New Attack Surface on Electron",
+      "speakers": [
+        "Aaditya Purani",
+        "Max Garrett",
+        "Mohan Sri Rama Krishna Pedhapati",
+        "William Bowling"
+      ],
+      "description": "Electron based apps are becoming a norm these days as it allows encapsulating web applications into a desktop app which is rendered using chromium. However, if Electron apps load remote content of attackers choice either via feature or misconfiguration of Deep Link or Open redirect or XSS it would lead to Remote Code Execution.<br><br>Previously, it was known that lack of certain feature flags and inefficiency to apply best practices would cause this behavior but we have identified novel attack vectors within the core electron framework which could be leveraged to gain remote code execution on Electron apps despite the feature flags being set correctly under certain circumstances.<br><br>This presentation covers the vulnerabilities found in twenty commonly used Electron applications and gained Remote Code Execution within apps such as Discord, Teams (local file read), VSCode, Basecamp, Mattermost, Element, Notion, and others.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Purani-ElectroVolt-Pwning-Popular-Desktop-Apps.pdf"
+    },
+    {
+      "id": "bhus22-27062",
+      "title": "Ghost in the Wireless, iwlwifi Edition",
+      "speakers": [
+        "Nicolas Iooss",
+        "Gabriel Campana"
+      ],
+      "description": "Wi-Fi replaced Ethernet and became the main network protocol on laptops for the last few years. Software implementations of the Wi-Fi protocol naturally became the targets of attackers, and vulnerabilities found in Wi-Fi drivers were exploited to gain control of the operating system, remotely and without any user interaction. However, not much research has been published on Wi-Fi chips and the firmware they run.<br><br>Nowadays, Intel's Wi-Fi chips implement complex features in their firmware: Wake-on-WLAN, Tunnel Direct Link Setup (TDLS)... We investigated through reverse-engineering some internals of Intel Wi-Fi chips and exploited the way they load their firmware to gain arbitrary code execution. We also studied how the chip can securely store parts of its code in the system memory, through a mechanism we call \"Paging Memory\", and found how any read-anywhere vulnerability can be used to also gain code execution.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Iooss-Ghost-in-the-Wireless-iwlwifi-Edition.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Iooss-Ghost-in-the-Wireless-iwlwifi-Edition-wp.pdf"
+    },
+    {
+      "id": "bhus22-27334",
+      "title": "Process Injection: Breaking All macOS Security Layers With a Single Vulnerability",
+      "speakers": [
+        "Thijs Alkemade"
+      ],
+      "description": "macOS local security is shifting more and more to the iOS model, where every application is codesigned, sandboxed and needs to ask for permission to access data and features. New security layers have been added to make it harder for malware that has gained a foothold to compromise the user's most sensitive data. Changing the security model of something as large and established as macOS is a long process, as it requires many existing parts of the system to be re-examined. For example, creating a security boundary between applications running as the same user is a large change from the previous security model, introducing new vulnerabilities such as process injection.<br><br>CVE-2021-30873 is a process injection vulnerability we reported to Apple that affected all macOS applications. This was addressed in the macOS Monterey update from October 2021, but completely fixing this vulnerability requires changes to all third-party applications as well. Apple has even changed the template for new applications in Xcode to assist developers with this.<br><br>In this talk, we'll explain what a process injection vulnerability is and why it can have a critical impact on macOS. Then, we'll explain the details of this vulnerability, including the techniques we developed to exploit insecure deserialization in macOS. Finally, we will explain how we exploited it to escape the macOS sandbox, elevate our privileges to root and bypass SIP.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Alkemade-Process-Injection-Breaking-All-macOS-Security-Layers-With-a-Single-Vulnerability.pdf"
+    },
+    {
+      "id": "bhus22-26754",
+      "title": "CastGuard: Mitigating Type Confusion in C++",
+      "speakers": [
+        "Joe Bialek"
+      ],
+      "description": "Type confusion vulnerabilities offer incredibly powerful primitives to exploit writers. Many traditional types of memory safety issues (bounds violations, temporal safety) can be automatically detected and prevented in some manner, even if it comes at a performance cost (such as using memory tagging or ASAN). Type confusion is different \u2013 the issue lies with how a legal (in bounds, still live) allocation is interpreted by the software. While you may be able to detect the side effects of a type confusion (such as an integer being treated as a pointer and crashing), the type confusion itself cannot be deterministically detected.<br><br>Building mitigations to generically prevent type confusion is difficult since it typically requires some \"identifier\" to determine what the type of some object is. Adding identifiers changes object layout which is an unacceptable breaking change in an operating system with a stable API and ABI surface.<br><br>This talk introduces a new mitigation called CastGuard which uses a tiny instruction sequence in combination with the virtual function table pointer of an object to deterministically prevent illegal static down-casts in C++ code. CastGuard is currently being deployed to a set of Windows components with more coming in the future.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Bialek-CastGuard.pdf"
+    },
+    {
+      "id": "bhus22-26290",
+      "title": "Ret2page: The Art of Exploiting Use-After-Free Vulnerabilities in the Dedicated Cache",
+      "speakers": [
+        "Yong Wang"
+      ],
+      "description": "Heap isolation is effective mitigation that reduces the exploitability of certain types of vulnerabilities, especially Use-After-Free. In the Android/Linux kernel, A Use-After-Free vulnerability in a dedicated cache is difficult to exploit because none of the ideal victim objects can be directly allocated in the same cache, and from the Android11-5.4 kernel, CONFIG_SLAB_MERGE_DEFAULT is not set on default, which means dedicated caches are never merged into one to reduce memory fragmentation. Thus, to exploit a UAF vulnerability in a dedicated cache, the technique of cross-cache attack has to be applied. However, since the well-known cross-cache attack techniques are time-consuming and less deterministic, lots of Use-After-Free vulnerabilities in the dedicated cache cause little attention and are recognized as unexploitable bugs.<br><br>In this talk, I will introduce \"Ret2page\" - a new and generic exploitation technique. The key idea behind the new exploitation technique is to tame both the SLUB and BUDDY allocator. It aims to reduce time and memory consumption, and improve the success rate of physical page reuse. Moreover, to evaluate the effectiveness of the new exploitation technique and compare it with the well-known cross-cache attack techniques, I will analyze two typical Use-After-Free vulnerabilities fixed last year. Last but not least, to achieve the arbitrary kernel memory R/W ability and gain the root privilege, I will respectively detail how to exploit those two vulnerabilities, bypass the general mitigations(KASLR, PAN, etc), and build the universal Android rooting solutions.<br><br>During the presentation, I will give the exploit demos of rooting Android flagship devices. In summary, the new and generic exploitation technique and the ideas of exploitation have not been thoroughly presented in any previous talks.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-WANG-Ret2page-The-Art-of-Exploiting-Use-After-Free-Vulnerabilities-in-the-Dedicated-Cache.pdf"
+    },
+    {
+      "id": "bhus22-27184",
+      "title": "Whip the Whisperer: Simulating Side Channel Leakage",
+      "speakers": [
+        "Jasper van Woudenberg"
+      ],
+      "description": "Cryptographic side channels are well-understood from a mathematical perspective, and many countermeasures exist that reduce leakage. Yet, there are many implementations in the field that leak. This is caused by a combination of lack of security experts, the fact that upon implementation countermeasures can become leaky, and the absence of good pre-silicon side channel analysis tools. <br><br>In this presentation, we show how common hardware design tools can be used to perform pre-silicon power simulations, and how that can be used to detect leaky implementations. We show a case study of how countermeasure implementations that look fine in source are actually leaky, and how simulation can help pinpoint individual leaky elements, both in software and hardware. There are surprising results where non-related software instructions leak, caused by microarchitectural interactions in the CPU pipeline. Armed with all this knowledge, those issues can be fixed. <br><br>This talk is interesting for hardware and software designers to see how tools can be used to pinpoint leakage down to the gate or code level, and for researchers in finding new side channels due to processor design.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-VanWoudenberg-Whip-the-Whisperer-Simulating-Side-Channel-Leakage.pdf"
+    },
+    {
+      "id": "bhus22-26455",
+      "title": "Perimeter Breached! Hacking an Access Control System",
+      "speakers": [
+        "Steve Povolny",
+        "Sam Quinn"
+      ],
+      "description": "The first critical component to any attack is an entry point. As we lock down our firewalls and sophisticated routers, it can be easy to overlook the network-connected physical access control systems. According to a study done by IBM in 2021, the average cost of a physical security compromise is 3.54 million dollars and takes an average of 223 days to identify a breach. <br><br>Carrier\u2019s LenelS2 is a global distributor of HID Mercury access control systems, widely deployed across multiple industries including education, real estate, healthcare, transportation, and certified for use in federal and state government facilities. <br><br>Trellix's Threat Labs team uncovered 8 zero-day vulnerabilities leading to remote, unauthenticated code execution on the LNL-4420 access control panel. When combined, these findings lead to full system control including the ability for an attacker to remotely manipulate door locks. To emulate a true nation-state level threat, our team began our research without access to the system firmware. During this presentation, we will deep dive into our hardware hacking process including the challenges faced such as bypassing the bootloader, hardware-based watchdog timers, and authentication. We will describe our use of emulation and provide a detailed walkthrough of the 8 discovered zero-day vulnerabilities, describing end to end exploitation using malware we designed to control system functionality. We culminate the talk with an impressive live demo featuring full system control, unlocking doors remotely without triggering any software notifications.<br>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Quinn-Perimeter-Breached.pdf"
+    },
+    {
+      "id": "bhus22-26618",
+      "title": "XMPP Stanza Smuggling or How I Hacked Zoom",
+      "speakers": [
+        "Ivan Fratric"
+      ],
+      "description": "XMPP is a popular instant messaging protocol based on XML that is used in messengers, online games and other applications. <br><br>This talk will introduce a new way of attacking XMPP client software: XMPP stanza smuggling. More specifically, it will show how seemingly subtle quirks in XML parsing can be exploited to \"smuggle\" attacker-controlled XMPP control messages to the victim client and how the design of the XMPP protocol makes it especially susceptible to such issues. It will be demonstrated how such issues led to 0-click remote code execution in the Zoom client. <br><br>While Zoom is used as an example throughout the talk and to demonstrate the maximum impact achievable, the XMPP bugs presented are not specific to Zoom.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Fratric-XMPP-Stanza-Smuggling.pdf"
+    },
+    {
+      "id": "bhus22-27352",
+      "title": "Oops..! I Glitched It Again! How to Multi-Glitch the Glitching-Protections on ARM TrustZone-M",
+      "speakers": [
+        "Ahmad-Reza Sadeghi",
+        "Richard Mitev",
+        "Marvin Sa\u00df"
+      ],
+      "description": "Fault Injection (FI), also referred to as Glitching, has proven to be a severe threat to real-world computing devices. In this kind of attack, physical faults are injected into a device at runtime, to deliberately alter the target's behavior. In order to address this threat, various countermeasures have been proposed to counteract the different types of fault injection methods at different abstraction layers, either requiring modifying the underlying hardware or firmware at the machine instruction level. <br><br>Moreover, only recently, individual chip manufacturers have started to respond to this threat by integrating certain countermeasures in their products. Multiple Fault Injection (MFI) could theoretically be used against instruction-level based countermeasures, however, as stated by previous work conducting those attacks are considered highly impractical due to the lack of precise MFI tools and efficient parameter search algorithms. <br><br>In this presentation, we showcase \u03bc-Glitch, the first FI platform dedicated to injecting multiple, coordinated voltage faults into a target device. We'll show a novel flow for MFI attacks to significantly reduce the search complexity for fault parameters, as otherwise, the search space increases exponentially with each additional fault to be injected. After that, we'll show the effectiveness and practicality of the attack platform on two real-world systems, featuring TrustZone-M: The first one has interdependent backchecking mechanisms, while the second has additionally integrated countermeasures against fault injection. It will be revealed that \u03bc-Glitch can successfully inject four consecutive successful faults within an average time of one day.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Sass-Oops-Glitched-It-Again.pdf"
+    },
+    {
+      "id": "bhus22-26874",
+      "title": "Calculating Risk in the Era of Obscurity: Reading Between the Lines of Security Advisories",
+      "speakers": [
+        "Brian Gorenc",
+        "Dustin Childs"
+      ],
+      "description": "Compliance with industry standards as well as various government regulations also requires a robust servicing and patching strategy. Beyond compliance, you must understand the risk to your resources from poor servicing. To help with this effort, standards exist to help assess risk. However, vendors can manipulate these standards, which can lead to errors when enterprises attempt to accurately gauge risk. Over time, vendors reduced the clarity of language in their advisories to the point where plain language about a bug no longer exists, leaving network defenders to speculate what the real risk from a product may be.<br><br>There are occasions when vendors release patches that are nothing more than placebos \u2013 patches that make no code changes at all and leave administrators with a false sense of security. Similarly, vendors release incomplete patches that do not properly mitigate the vulnerability. Not only does this leave software in a vulnerable state after applying what should be a fix, it doubles the cost of patching, since now another patch must be applied to mitigate the risks incurred from applying the first patch and increases the risk of attack. <br><br>Our conclusions are based on disclosing over 9,500 vulnerabilities over 17 years. This talk provides examples of systemic problems with security patches and how those problems negatively impact enterprise security. We propose methods to incentivize vendors to improve their servicing habits, including alternative disclosure timelines for failed patches. We encourage others disclosing vulnerabilities to adopt similar timelines and for customers to prioritize purchasing based on how vendors impact their risk through servicing.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Gorenc-Calculating-Risk-In-The-Era-Of-Obscurity.pdf"
+    },
+    {
+      "id": "bhus22-26526",
+      "title": "Leveraging the Apple ESF for Behavioral Detections",
+      "speakers": [
+        "Jaron Bradley",
+        "Matt Benyo"
+      ],
+      "description": "<div><span>Since its 2019 introduction in macOS Catalina, we have used the Apple Endpoint Security Framework (ESF) as an event source to fuel behavioral-based detections. </span></div><div><span><br></span></div><div><span>In this talk, we will focus on the difference between the old and new ways of detecting malicious activity on macOS, speaking to why both are relevant today. We will break down how we use ESF data, both in its basic form, as well as a pivot point to perform more advanced detections. </span></div><div><span><br></span></div><div><span>The Endpoint Security Framework provides many different fields that get overlooked in detection scenarios. We will show how we can use these clues to piece together a story about malicious activity that has taken place on a system. Finally, we will discuss examples where ESF has helped us identify that exploitation has taken place, including the detection of multiple 0-days.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Benyo-Leveraging-the-Apple-ESF.pdf"
+    },
+    {
+      "id": "bhus22-26964",
+      "title": "Pwning Cloud Vendors with Untraditional PostgreSQL Vulnerabilities",
+      "speakers": [
+        "Shir Tamari",
+        "Nir Ohfeld"
+      ],
+      "description": "<div><span>Cloud service providers often provide popular and beloved open-source solutions as multi-tenant managed services. This is a significant power of the cloud - to offer anything as a scalable, managed service. However, these projects were not built with multi-tenancy in mind, and therefore, their adoption relies on multiple modifications and adjustments by the cloud vendor.</span></div><div><span><br></span></div><div><span>Our team explored PostgreSQL-as-a-Service offered by multiple cloud providers and found a series of vulnerabilities related to its implementation as a multi-tenant service, including severe isolation issues. The impact of these vulnerabilities can be wide-reaching as they may become the starting point for a cross-account access attack; as we recently demonstrated in the \u201cExtraReplica\u201d vulnerability, a Postgres vulnerability leads to cross-account access of customer databases in Azure Postgres Flexible server service. </span></div><div><span><br></span></div><div><span>This is the first-of-a-kind cloud implementation vulnerability in a platform-as-a-service offering, affecting multiple cloud providers simultaneously. </span></div><div><span><br></span></div><div><span>In this session, we will explain the Postgres vulnerabilities and how they lead us to find cloud isolation vulnerabilities. We will also peek at the services' internals, which we were privileged to see after executing our code on the platform. We will explain how we used these vulnerabilities as a first step within a vulnerability chain and performed lateral movement within the internal cloud network, finally achieving cross-account access to other customers' databases.</span></div><div><span><br></span></div><div><span>We will discuss the learnings and implications of this research for cloud providers and customers using database-as-a-service. We will provide advice for future Postgres-as-a-Service implementations as well as other adaptations of open-source projects to PaaS and review critical design considerations to avoid similar issues. Finally, we will provide customers with risk mitigation strategies to reduce the risk of these attacks.</span></div>"
+    },
+    {
+      "id": "bhus22-26683",
+      "title": "Go With the Flow: Enforcing Program Behavior Through Syscall Sequences and Origins",
+      "speakers": [
+        "Claudio Canella"
+      ],
+      "description": "Over the years, applications increased in size and complexity, and with that also the number of vulnerabilities. Both industry and academia have proposed countermeasures to harden applications against potential attacks. For instance, control-flow integrity (CFI) tries to limit control-flow transfers within an application to transfers that are possible based on the program source code. Unfortunately, such countermeasures only work within one security domain, e.g., only on the userspace level. Once they are circumvented, an attacker can arbitrarily interact with other domains, such as the kernel.<br><br>This talk presents our concept of syscall-flow-integrity protection (SFIP), limiting the control flow across security domains, i.e., user-to-kernel transfers. By design, it is fully compatible with CFI and enhances the system's security in case that CFI is circumvented. SFIP relies on three pillars: syscall sequences that model the control flow of the application, syscall origins that map syscalls to the locations at which they can be invoked, and efficient enforcement of the information by the operating system. We identify 3 challenges in the extraction of the syscall sequences and origins, e.g., a non-bijective mapping between syscalls and syscall locations. We demonstrate a proof-of-concept implementation, called SysFlow, that solves these challenges and allows for automated syscall-flow-integrity protection of large-scale real-world applications with a runtime overhead of only 1.8%. To demonstrate that SFIP is a viable approach to reduce the attack surface of applications, we discuss how it increases the complexity of control-flow-hijacking and mimicry attacks and demonstrate how it can mitigate a real-world attack. Finally, we analyze syscall sequences and origins of several real-world applications, effectively demonstrating an attack surface reduction of 90.9% compared to no protection being applied.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Canella-Go-With-the-Flow-Enforcing-Program-Behavior-Through-Syscall-Sequences-and-Origins.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Canella-Go-With-the-Flow-Enforcing-Program-Behavior-Through-Syscall-Sequences-and-Origins-wp.pdf"
+    },
+    {
+      "id": "bhus22-27613",
+      "title": "Bug Hunters Dump User Data. Can They Keep it? Well They&#39;re Keeping it Anyway.",
+      "speakers": [
+        "Dylan Ayrey",
+        "Whitney Merrill"
+      ],
+      "description": "<div><span>A security researcher used a modern bug bounty platform to disclose an accidental dump of personal data of ~50,000 FAANG company's users from that company's servers. The data passes through several 3rd party systems not related to the company and lands on the researcher's laptop. What were the legal obligations of the company running the program to protect the data affected? What were the legal obligations, if any, put on the researcher around protecting the data? Who should be responsible for the cleanup?</span></div><div><span><br></span></div><div><span>You may be surprised to learn this FAANG company never disclosed the dump, and both the researcher and the 3rd parties continued to have access to the data. </span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Ayrey-Bug-Hunters-Dump-User-Data.pdf"
+    },
+    {
+      "id": "bhus22-26344",
+      "title": "Kubernetes Privilege Escalation: Container Escape == Cluster Admin?",
+      "speakers": [
+        "Yuval Avrahami",
+        "Shaul Ben Hai"
+      ],
+      "description": "Kubernetes has become the de-facto way of running containerized applications on the cloud or on premise. Threat actors noticed, launching Kubernetes-tailored campaigns and releasing dedicated malware with the ultimate goal of compromising clusters. On the defensive side, hardening containers remains a top priority. Defenders hope to prevent container escapes, where a malicious container breaks out and gains control over its underlying node VM.<br><br>Unfortunately, even with cutting-edge sandboxing techniques, it's inevitable that zero day vulnerabilities in container runtimes, the Linux Kernel, or Kubernetes itself, would allow sophisticated attackers to break out of a rogue container. That being said, an escape isn't necessarily game over! Defenders can still *contain* container breakouts: ensure a compromised node cannot take over the entire cluster. <br><br>Kubernetes have done a great job at de-privileging the node agent, the Kubelet. But nodes also host other credentials - their pods' service account tokens. Following a container escape, the attacker can easily harvest and abuse tokens of neighboring pods. In other words, the impact of a container escape is largely dictated by the pods on the attacked node. Which pods run on the average node? Are powerful ones a rare sight or a common practice?<br><br>In this talk, Yuval and Shaul will reveal the powerful system pods quietly installed by popular Kubernetes platforms. They'll show how attackers may abuse these pods, and demo new privilege escalation techniques. Covering managed Kubernetes services and common open-source add-ons, they'll demonstrate how on the most popular platforms today - a single container escape is often enough to take over the entire cluster.<br><br>Looking ahead, they'll present tools that flush out powerful pods and identify privilege escalation paths in a cluster, alongside mitigations that can detect and prevent such attacks. Join them as they embark on the journey of ensuring container escape != cluster admin.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Avrahami-Kubernetes-Privilege-Escalation-Container-Escape-Cluster-Admin.pdf"
+    },
+    {
+      "id": "bhus22-26692",
+      "title": "From Hackathon to Hacked: Web3's Security Journey",
+      "speakers": [
+        "Nathan Hamiel"
+      ],
+      "description": "If there's one prediction you can make with certainty, it's that security in the Web3/blockchain space will get a whole lot worse before it gets better. We have the perfect cocktail of inexperience mixed with emerging technology playing out in full public view with large sums at stake and the permanence of immutable transactions. The result is predictable. An environment free from constraints can seem like an innovation paradise, but when the stakes are so high, you have to get everything right the first time because there may not be a next time. We tend to forget that what we see from this space are experiments playing out in production, and the time between exploitation and losing millions of dollars worth of value can be measured in seconds. So, how did we get here? Is it all doom and gloom? What can be done?<br><br>This talk is a grounded look at the factors contributing to the security failures we've witnessed, free from the hype and hatred associated with the space. We look at the similarities and differences between the development of this new technology and more traditional applications and how some of the attacks manifested. Better testing and tools aren't enough to solve the problem. We discuss actionable steps projects and chains can use today to address these issues and make the ecosystem safer for projects and users."
+    },
+    {
+      "id": "bhus22-27254",
+      "title": "The Battle Against the Billion-Scale Internet Underground Industry: Advertising Fraud Detection and Defense",
+      "speakers": [
+        "Zheng Huang",
+        "Shupeng Gao",
+        "Yakun Zhang",
+        "Hai Yang",
+        "Jie Gao"
+      ],
+      "description": "<div><span>Advertising is the main profit model of internet companies; the annual industry scale of global internet advertising has reached hundreds of billions of dollars. In fact, internet advertising fraud and anti-fraud may be a war that will never end. In the past few years, we have traced and catched hundreds of internet underground industry practitioners, and we have seen the escalation and evolution of technological confrontation.</span></div><div><span><br></span></div><div><span>In this talk, we will select some typical and large-scale internet underground industry gangs and do an in-depth analysis.</span></div><div><span>-Gang 1: An ultra-large-scale advertising fraud group that infected 350 million mobile phones through the mobile big data analysis SDK. They have existed for five years, involving multiple listed companies, and their fraud targets include some global advertising giants, all mobile advertising platforms and all search engines in China.</span></div><div><span>-Gang 2: PC application bundled software exposed at China Central Television (CCTV) Consumer Rights Protection 315 Gala in 2022. They infected millions of computers and planted extension backdoors into browsers. Their fraud targets include all online shopping sites, social networking sites and advertising platforms in China. They defraud the advertising channel for profit, and secretly add fans to the \"We media\".</span></div><div><span>-Gang 3: Malicious click tools for vicious competition among advertisers. They generate harassment and invalid clicks on advertisers which leads discourage investment.</span></div><div><span><br></span></div><div><span>For the above-mentioned advertising fraud gangs, we will summarize the key technologies used by them, conduct a crowd analysis on the internet underground industry practitioners, and classify them into high-end and low-end gangs. High-end internet underground industry gangs can use the upstream and downstream channel resources of the Internet industry, they can quickly infect a large number of devices, profit from invisible advertising shows and simulated clicks on the mobile phones, and tamper with the browser traffic and simulate user clicks on the PC side by using browser plug-in backdoors. Low-end internet underground industry gangs use \"YI language\"(\u6613\u8bed\u8a00) and a series of browser libraries can quickly build hacking tools and sales at a low price, which can also lead to a very bad impact.</span></div><div><span><br></span></div><div><span>In order to perception and trace these gangs, we have developed the Heracles project, which uses a new device fingerprint generation technology and side-channel detection to identify mainstream hacking tools, such as headless browsers (puppeteer, minibrowser, etc), \"mobile key press genie\"(\u6309\u952e\u7cbe\u7075), and \"cloud phones\". We also use javascript runtime and jsbridges hooks in the browser engine, CROS features and other new technologies to detect simulated clicks on mobile advertisements and browser extension hijacking. These technologies are the keys to trace and combat the internet underground industry chain, and significantly reduce advertising fraud risk.</span></div><div><span><br></span></div><div><span>Previously, we were a browser and operating system security research team, we have obtained hundreds of CVEs. We will introduce how security researchers contribute to anti fraud. Many undisclosed methods will be proposed to trace and catch internet underground industry practitioners in this talk, we believe that many companies and anti-fraud practitioners will benefit from it.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Huang-The-Battle-Against-the-Billion-Scale-Internet-Underground-Industry.pdf"
+    },
+    {
+      "id": "bhus22-27185",
+      "title": "RollBack - A New Time-Agnostic Replay Attack Against the Automotive Remote Keyless Entry Systems",
+      "speakers": [
+        "Levente Csikor",
+        "Hoon Wei Lim",
+        "Jun Wen Wong",
+        "Soundarya Ramesh",
+        "Rohini Poolat Parameswarath",
+        "Chan Mun Choon"
+      ],
+      "description": "<div><span>Automotive Remote Keyless Entry (RKE) systems implement disposable </span><span>rolling codes, making every key fob button press unique, effectively </span><span>preventing simple replay attacks. However, RollJam was proven to break </span><span>all rolling code-based systems in general. By a careful sequence of </span><span>signal jamming, capturing, and replaying, an attacker can become aware </span><span>of the subsequent valid unlock signal that has not been used yet. </span><span>RollJam, however, requires continuous deployment indefinitely until it </span><span>is exploited. Otherwise, the captured signals become invalid if the key fob</span><span> is used again without RollJam in place.</span></div><div><span><br></span></div><div><span>We introduce RollBack, a new replay-and-resynchronize attack against </span><span>most of today's RKE systems. </span><span>In particular, we show that even though the one-time code becomes </span><span>invalid in rolling code systems, there is a way to utilize and replay </span><span>previously captured signals that trigger a rollback-like mechanism in </span><span>the RKE system. Put differently, the rolling codes can be </span><span>resynchronized back to a previous code used in the past from where all </span><span>subsequent yet already used signals work again. </span><span>Moreover, the victim can still use the key fob without noticing any </span><span>difference before and after the attack.</span></div><div><span><br></span></div><div><span>Unlike RollJam, RollBack does not necessitate jamming at all. </span><span>Furthermore, it requires signal capturing only once and can be</span></div><div><span>exploited any time in the future as many times as desired. This time-</span><span>agnostic property is particularly attractive to attackers, especially </span><span>in car-sharing/renting scenarios where accessing the key fob is </span><span>straightforward. However, while RollJam defeats virtually any rolling </span><span>code-based system, vehicles might have additional anti-theft measures </span><span>against malfunctioning key fobs, hence against RollBack. Our ongoing </span><span>analysis (covering the Asian vehicle manufacturers for the time being) </span><span>against different vehicle makes, models, and RKE manufacturers revealed </span><span>that ~70% of them are vulnerable to RollBack. Since most of the RKE </span><span>transceivers from three out of the four (identified) manufacturers were </span><span>vulnerable, the impact is expected to be bigger worldwide.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Csikor-RollBack-A-New-Time-Agnostic-Replay-Attack.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Csikor-Rollback-A-New-Time-Agnostic-Replay-wp.pdf"
+    },
+    {
+      "id": "bhus22-27223",
+      "title": "TruEMU: An Extensible, Open-Source, Whole-System iOS Emulator",
+      "speakers": [
+        "Trung Nguyen",
+        "Kyungtae Kim",
+        "Antonio Bianchi",
+        "Dave (Jing) Tian"
+      ],
+      "description": "iOS is one of the most valuable targets for security researchers. Unfortunately, studying the internals of this operating system is notoriously hard, due to the closed nature of the iOS ecosystem and the absence of easily-accessible analysis tools.<br><br>To address this issue, we developed TruEMU, which we present in this talk. TruEMU is the first open-source, extensible, whole-system iOS emulator. Compared to the few available alternatives, TruEMU enables complete iOS kernel emulation, including emulation of the SecureROM and the USB kernel stack. More importantly, TruEMU is completely free and open-source, and it is based on the well-known and highly extensible emulator QEMU.<br><br>This talk will start by presenting the challenges and the solutions we devised to reverse engineer current iOS boot code and kernel code, and explain how to provide adequate support in QEMU. Then, to showcase TruEMU's usefulness and capabilities, we will demonstrate how it can completely boot modern iOS images, including iOS 14 and the latest iOS 15, and how it can properly run different user-space components, such as launchd, restored, etc.<br><br>Later, we will showcase two promising ways to use TruEMU as an iOS vulnerability research platform. Specifically, we will demonstrate how to use TruEMU to enable coverage-based fuzzing of the iOS kernel USB stack. Further, we will show how TruEMU provides a platform to implement coverage-based, syscall-level fuzzing. This platform enables security researchers to automatically explore multiple attack surfaces of iOS.<br><br>In sum, building a complete emulator for iOS is a daunting task. Many features (i.e., many peripherals) still need to be implemented to allow a complete emulation of a modern iOS device. We hope this talk will also bootstrap a large community involvement in this project that will progressively shed more light on the obscure corners of iOS security.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Nguyen-TruEmu.pdf"
+    },
+    {
+      "id": "bhus22-27108",
+      "title": "Talent Need Not Apply: Tradecraft and Objectives of Job-themed APT Social Engineering",
+      "speakers": [
+        "Sveva Vittoria Scenarelli",
+        "Allison Wikoff"
+      ],
+      "description": "When a job offer looks too good to be true\u2026 it probably is. As the COVID-19 pandemic has led workers to rethink their careers and long-term goals, threat actors have exploited it as an opportunity to fulfill strategic objectives. Over the past two years, PwC's Global Threat Intelligence team has tracked nation state threat actors as they socially engineered employees at high-profile companies over email, social media and beyond, enticing them with promising job opportunities - only to infect them with malware and disappear.<br><br>In this talk, we unmask how ongoing operations by advanced persistent threats based in different countries (North Korea and Iran) are using recruitment themes to compromise victims. We draw the profiles of three different threat actors that conduct such operations: North Korea-based Lazarus Group and Black Alicanto; an emerging Iran-based intrusion set which we call Yellow Dev 13; and a threat actor targeting former intelligence officers.<br> <br>Phishing is the oldest trick in the book, but this presentation holds the mirror up to threat actors' faces: the ways they use job themes for phishing, from fake career websites to recruiter personae, become the CV we read to learn their capabilities (their tools, techniques, and procedures); the targets they choose become their cover letters, revealing their intelligence requirements and strategic objectives, from counterintelligence to cryptocurrency theft.<br><br>Ultimately, this talk will leave attendees with different insights depending on their role. Business executives will get an overview of the threat landscape and why their organization might be targeted. Defenders will gain actionable intelligence on how to recognize and defend from, activity by advanced persistent adversaries. Ethical hackers might encounter a few tricks to try - and mistakes to avoid! - in phishing exercises and adversary emulation. As for the general audience, they might never open a document or link from a recruiter again.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Wikoff-Talent-Need-Not-Apply.pdf"
+    },
+    {
+      "id": "bhus22-27067",
+      "title": "\"No Mr. Cyber Threat!\" - A Psychological Approach To Managing the Fail-to-Challenge Vulnerability",
+      "speakers": [
+        "Simon Pavitt",
+        "Stephen Dewsnip"
+      ],
+      "description": "An unrecognised individual enters a busy workplace. They are not wearing any ID and they are asking people if they can use their laptops or plug in an unauthorised USB device. Even though people typically know this is a problem, staff often fail to challenge resulting in an exploitable vulnerability. But our individual is wearing a brightly coloured t-shirt with the words \"CHALLENGE ME\" in large friendly letters on the chest and they are overtly trying to engineer risky behaviours. It is all far too obvious - almost like they want to be caught doing something wrong\u2026<br><br>That is exactly the point. They want to be caught because each time they are challenged, our work indicates that their target becomes more secure. This is the \"Malicious Floorwalker\" exercise, an impactful behavioural intervention designed and delivered by the UK MOD Cyber Awareness Behaviours & Culture team. <br><br>Grounded in robust psychological theory interwoven with social engineering practice, it is a way to manage human vulnerability rather than just uncover it. Taking only two minutes, it puts people at the heart of their own story around challenging a threat. By making it as obvious as possible that a challenge is required it leverages the social cues and psychological tensions felt by the individual, leaving them with no option but to raise a challenge. Importantly this is done in a safe, fun, and light-hearted way, free from fear and punishment; it is simple, yet complex and effective. <br><br>Engaging with the Floorwalker allows individuals to develop their own narrative towards challenging and to build a psychological script to work from in the future. When challenged, the Floorwalker coaches a good outcome and as a result, fosters positive sentiment towards the ideal behaviour. <br><br>We have delivered this across several sites to excellent effect with quantifiable success.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Dewsnip-No-Mr-Cyber-Threat.pdf"
+    },
+    {
+      "id": "bhus22-27597",
+      "title": "Catch Me If You Can: Deterministic Discovery of Race Conditions with Fuzzing",
+      "speakers": [
+        "Ned Williamson"
+      ],
+      "description": "Finding concurrency bugs has presented a challenge for security and development teams. Race condition-based vulnerabilities are a growing category of bugs reported to vendors and have been observed in in-the-wild exploits. Coverage-guided fuzzing has been a boon to the security community both offensive and defensive but on its own is often not sufficient to find deep concurrency issues reliably. <br><br>This research discusses a novel approach to fuzzing that enables deterministic discovery of race condition bugs, allowing researchers to unearth and root cause these serious bugs while still having fun.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-williamson-Catch-Me-If-You-Can.pdf"
+    },
+    {
+      "id": "bhus22-27169",
+      "title": "Cautious: A New Exploitation Method! No Pipe but as Nasty as Dirty Pipe",
+      "speakers": [
+        "Zhenpeng Lin",
+        "Yuhang Wu",
+        "Xinyu Xing"
+      ],
+      "description": "Dirty pipe is the name given to the CVE-2022-0847 vulnerability, present in Linux kernel versions 5.8 and later. It is considered a very serious vulnerability found in the Linux kernel recently partially because it gives a bad actor the ability to escalate privilege but more importantly, its exploitation has no headache in dealing with kernel address randomization and pointer integrity check. With this capability, the exploit built on top of the dirty pipe could be easily used for all versions of kernel affected without even modification.<br><br>While dirty pile is powerful, its exploitability is closely tied to the capability of the CVE-2022-0847 vulnerability which abuses the Linux kernel pipe mechanism to inject data to arbitrary files. For other vulnerabilities without such a pipe-abusive power, the exploitation is still hard to follow the dirty pipe journey and thus brings the same level of security implication. <br><br>In this talk, we present a novel exploitation method pushing the dirty pipe to the next level. To be specific, given a vulnerability with a double-free ability, we will demonstrate that our exploitation method could obtain the dirty-pipe-like ability to overwrite an arbitrary file to escalate privilege. Exploits utilizing our method inherit the advantage of the dirty pipe that the code would work on any version of the kernel affected without modification. We argue that our new exploitation method is not only more general than the dirty pipe but also more powerful. First, rather than tying to a specific vulnerability, this exploitation method allows any vulnerabilities with double-free ability to demonstrate dirty-pipe-like ability. Second, while it is like the dirty pipe that could bypass all the kernel protections, our exploitation method could even demonstrate the ability to escape the container actively that dirty pipe is not capable of.<br><br>Along with this talk, we will demonstrate how our exploitation method works using real world vulnerabilities. Specifically, we will demonstrate privilege escalation on Linux and Android. Last but not least, we will demonstrate how to achieve container escape on CentOS. We will release our exploitation details and all of our exploits demonstrated in this talk. To the best of our knowledge, our exploitation is the first general method that helps develop a universal exploit to different versions of kernel and different architectures. It greatly unloads the burden of exploit migration across versions and architectures. Since our exploitation is general and powerful, it also imposes a great challenge to the existing kernel defense architecture.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Lin-Cautious-A-New-Exploitation-Method.pdf"
+    },
+    {
+      "id": "bhus22-26334",
+      "title": "Living Off the Walled Garden: Abusing the Features of the Early Launch Antimalware Ecosystem",
+      "speakers": [
+        "Matt Graeber"
+      ],
+      "description": "Early Launch Antimalware (ELAM) functionality in Windows offers robust anti-tampering mitigations whereby security vendors declare a Microsoft-approved list of explicitly allowed signers to run as protected (PPL) services. Microsoft makes clear that these mitigations are best-effort attempts to mitigate against security product tampering by labeling ELAM and PPL \"defense-in-depth security features.\" This talk aims to make clear why these mitigations are \"best-effort\" and ultimately indefensible.<br><br>This talk will cover a methodology for assessing ELAM drivers and demonstrate scenarios where overly-permissive rules open up adversary tradecraft opportunities, not through exploiting vulnerabilities but through the abuse of intended functionality. A single, overly-permissive ELAM driver enables an adversary to not only tamper with security products but it also supplies malware with anti-tampering protections, hampering detection and remediation efforts. The talk will conclude with a demo of gaining user-mode code execution through an abusable, signed executable running with an antimalware-light protection level.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Graeber-Living-Off-the-Walled-Garden.pdf"
+    },
+    {
+      "id": "bhus22-27295",
+      "title": "eBPF ELFs JMPing Through the Windows",
+      "speakers": [
+        "Richard Johnson"
+      ],
+      "description": "eBPF tracing is a hot new technology in the EDR and infrastructure space which provides high speed instrumentation and telemetry on events, processes, and network connections. eBPF is natively supported in the Linux kernel and is used in endpoint security products such as Carbon Black and Windows Defender for Linux. Last year, Microsoft released a completely new implementation of an eBPF tracing system for Windows which is destined to become a primary telemetry provider in the near future. eBPF for Windows has a complex architecture that leverages program analysis to verify unsigned user code via abstract interpretation before running it in a kernel context \u2014 integrity of the software is paramount. This research will be the first public work to analyze and discover security vulnerabilities in the new eBPF for Windows implementation.<br><br>Our presentation will discuss the capabilities and security model of eBPF for Windows, followed by details of the design and attack surface which will include the eBPF API, the trusted static verifier and JIT engine, and the kernel implementation of trace hooks and telemetry providers. During our deep dive into the implementation details, we will uncover vulnerabilities at multiple layers and discuss how they were found with demos of fuzzing Windows eBPF components and real-time bug discovery. We will conclude with a discussion about exploitation of memory corruption in the eBPF implementation on Windows which comes with its own challenges as a Windows Protected Process.<br><br>Join us on this journey as we examine this emerging technology on Windows and the security implications of the new attack surface.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Johnson-eBPF-ELFs-JMPing-Through-the-Windows.pdf"
+    },
+    {
+      "id": "bhus22-27359",
+      "title": "DNSSEC Downgrade Attacks",
+      "speakers": [
+        "Haya Shulman",
+        "Elias Heftrig",
+        "Michael Waidner"
+      ],
+      "description": "In this talk, we show that the cryptographic agility in DNSSEC, although critical for making DNS secure with strong cryptography, also introduces a severe vulnerability. We demonstrate that adversaries, by manipulating the cryptographic material in signed DNS responses, can reduce the security level provided by DNSSEC, or, even worse, prevent resolvers from validating DNSSEC at all. We experimentally and ethically evaluate our attacks against popular DNS resolver implementations, public DNS providers, and DNS services worldwide. We validate the success of DNSSEC-downgrade attacks by poisoning the resolvers: we inject fake records, from our own signed domains, into the caches of validating resolvers. Our findings show that major DNS providers, popular resolver implementations, and many other DNS services are vulnerable to our attacks.<br>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Heftrig-DNSSEC-Downgrade-Attacks.pdf"
+    },
+    {
+      "id": "bhus22-27673",
+      "title": "D\u00e9j\u00e0 Vu: Uncovering Stolen Algorithms in Commercial Products",
+      "speakers": [
+        "Patrick Wardle",
+        "Tom McGuire"
+      ],
+      "description": "<div><span>In an ideal world, members of a community work together towards a common goal or greater good. Unfortunately, we do not (yet) live in such a world. </span></div><div><span><br></span></div><div><span>In this talk, we discuss what appears to be a systemic issue impacting our cyber-security community: the theft and unauthorized use of algorithms by corporate entities. Entities who themselves may be part of the community.</span></div><div><span><br></span></div><div><span>First, we\u2019ll present a variety of search techniques that can automatically point to unauthorized code in commercial products. Then we\u2019ll show how reverse-engineering and binary comparison techniques can confirm such findings. </span></div><div><span><br></span></div><div><span>Next, we will apply these approaches in a real-world case study. Specifically, we\u2019ll focus on a popular tool from a non-profit organization that was reverse-engineered by multiple entities such that its core algorithm could be recovered and used (unauthorized), in multiple commercial products.</span></div><div><span><br></span></div><div><span>The talk will end with actionable takeaways and recommendations, as who knows, this may happen to you too! For one, we'll present strategic approaches (and the challenges) of confronting culpable commercial entities (and their legal teams). Moreover, we\u2019ll provide recommendations for corporations to ensure this doesn\u2019t happen in the first place, thus ensuring that our community can remain cohesively focused on its mutual goals.</span></div>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Wardle-Deja-Vu.pdf"
+    },
+    {
+      "id": "bhus22-27167",
+      "title": "Malware Classification With Machine Learning Enhanced by Windows Kernel Emulation",
+      "speakers": [
+        "Dmitrijs Trizna"
+      ],
+      "description": "This session will present a hybrid machine learning architecture that simultaneously utilizes static and dynamic malware analysis methodologies. We employ the Windows kernel emulator published by Mandiant for dynamic analysis and process emulation reports with a 1D convolutional neural network. On the contrary, static analysis is based on the state-of-the-art ensemble model publicly released by Endgame. It surpasses the capabilities of the modern AI classifiers. We use threat intelligence data consisting of in-the-wild telemetry from 100k samples and record a detection rate of 96.70% with a fixed False Positive rate of 0.1%. Additionally, we will show that contextual telemetry from a system, such as an executable's file path, can further increase detection rates. Finally, unaffiliated with any organization, we open-source our hybrid model with a convenient scikit-learn-like API for public use.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Trizna-Malware-Classification-with-machine-learning.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Trizna-Malware-Classification-with-machine-learning-wp.pdf"
+    },
+    {
+      "id": "bhus22-26442",
+      "title": "DirectX: The New Hyper-V Attack Surface",
+      "speakers": [
+        "Zhenhao Hong",
+        "Ziming Zhang"
+      ],
+      "description": "In 2020, Hyper-V introduced a new feature of GPU-Paravirtualization, which is based on GPU virtualization technology. This technology is integrated into WDDM (Windows Display Driver Model) and all WDDMv2.5 or later drivers have native support for GPU virtualization. However, new features mean new attack surfaces.<br><br>In this talk, I will disclose 4 vulnerabilities of Hyper-V DirectX component that I found and have been fixed so far. Two of these vulnerabilities could allow an attacker to run a specially crafted application on a guest operating system that could cause the Hyper-V host operating system to execute arbitrary code.<br><br>To understand these vulnerabilities, I will first introduce the basic architecture of the Hyper-V DirectX component, and explain how to configure the virtual machine parameters to implement the method of using this virtual device in a virtual machine. By referring to the WSL Linux kernel source code and reverse engineering, I will introduce the attack surface of the Hyper-V DirectX component. By disclosing 4 vulnerabilities in Hyper-V DirectX component, you will gain a better understanding of this attack surface. Later, I will describe how to use fuzz to find vulnerabilities in this attack surface. Here, I will use a simple fuzz framework written by myself as a learning case. Finally, I'll share takeaways and my opinions on this attack surface, as well as speculation on the future development of Hyper-V DirectX component.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Hong-DirectX-The-New-Hyper-V-Attack-Surface.pdf"
+    },
+    {
+      "id": "bhus22-26711",
+      "title": "Custom Processing Unit: Tracing and Patching Intel Atom Microcode",
+      "speakers": [
+        "Pietro Borrello",
+        "Martin Schwarzl"
+      ],
+      "description": "The ability to debug or simply observe the microarchitecture of closed-source CPUs has always been an exclusive privilege of the product vendors. For Intel CPUs, even the details of the high-level workings of CPU microcode were only available by digging into patents and not publicly documented.<br><br>In this talk, we present the first systematic study of Intel Atom Microcode and a software-only framework that can observe, trace, and even patch microcode execution, shedding unprecedented light into the internal workings of Intel CPUs.<br><br>We develop a Ghidra decompiler for Atom Microcode and reverse-engineer how the CPU internally uses its control register bus to manage its resources. Resorting to previously disclosed undocumented instructions, we then create a framework that can gain complete control over CPU microcode by replicating such interactions.<br><br>Our framework can assemble and patch micro-instructions, hook CPU events, and trace microcode execution. To showcase its power, we trace and reverse-engineer the routines involved in the obscure Intel CPU microcode update process.<br> <br>For the first time, we disclose the details of the decryption algorithms for microcode updates and the binary format of the decrypted update: an amazing discovery is that a microcode update is, in fact, a custom language interpreted by the CPU. We will make our framework available as open source.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Borrello-Custom-Processing-Unit.pdf"
+    },
+    {
+      "id": "bhus22-26930",
+      "title": "Chasing Your Tail With a Raspberry Pi",
+      "speakers": [
+        "Matt Edmondson"
+      ],
+      "description": "For some people, trying to figure out if you're being followed is a matter of physical safety for themselves or others. In this talk, we'll discuss a methodology for using low cost, off the shelf parts and some adequate python code to help determine if you're being followed by analyzing wireless signals nearby.<br><br>A friend of mine recently found themselves in this situation and came to me for assistance. When I searched for possible solutions, I wasn't shocked at how many tools there are to try to track people, but I was shocked at how few there are to try to help people figure out if they're being tracked. So I decided to make something to help.<br><br>We'll cover methodology and best practices used by professional SIGINT teams including automatically creating an ignore list for friendly devices. We'll discuss challenges encountered during development and field testing including dealing with MAC address randomization. Finally, we'll release the code so anyone who wants to build their own easily can, likely with parts they already have laying around.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Edmondson-Chasing-Your-Tail.pdf"
+    },
+    {
+      "id": "bhus22-26619",
+      "title": "Eliminating Triage Intermediaries for Zero-day Exploits Using a Decentralised Payout Protocol",
+      "speakers": [
+        "Clara Maine",
+        "Akke Toeter",
+        "Victoria Bosch",
+        "Subhechha Subudhi"
+      ],
+      "description": "We present a protocol that collectivises security bounties for deterministically verifiable zero-day exploits. It enables companies to show customers how secure their software is, in terms of dollars staked on their open-source software stack. It also helps ethical hackers retrieve their bounties without ambiguity. Subjectivity and manual labour of triage-processes are eliminated for these exploits.<br> <br>The protocol enables companies and users (stakeholders) to pool bounties on open-source security stacks in decentralised virtual machines (DVMs) containing read and/or write secrets. Stakeholders specify minimum responsible disclosure durations and a public key. Next, ethical hackers can submit an attack to such DVMs, by storing it in a decentralised encrypted locker (DEL), and notifying the DVM of its presence. Once the stakeholders see this notification, (along with the rest of the world), they can use their private key to retrieve the attack from the DEL (before the rest of the world). For each bounty placed on the DVM, a call is made to the DEL just before the end of the accompanying responsible disclosure time. This call verifies that the attack is still encrypted. After the respective responsible disclosure periods have passed, the DEL is decrypted and the attack is executed. Successful attacks compromise the DVM read/write secret, triggering bounty hunter payout.<br> <br>This protocol enables ethical hackers to know, before starting work on their exploit, when they will retrieve a payout and how large that payout will be for publishing their exploits, in a winner-take-all market. At the same time, it allows small companies to stake money on open-source security alongside industry giants. This provides a transparent insight on economically rational hackers in the open-source software zero-day exploits segment of the cyber-security market. The accompanying whitepaper presents more details: https://github.com/trusec<br>",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Maine-Eliminating-Triage-Intermediaries-for-zero-days.pdf"
+    },
+    {
+      "id": "bhus22-26905",
+      "title": "Another Way to Talk with Browser: Exploiting Chrome at Network Layer",
+      "speakers": [
+        "Rong Jian",
+        "Guang Gong"
+      ],
+      "description": "Networking is a critical and complex task for browsers. It ranges from high level JavaScript APIs, all the way down to managing every socket connection. Services on remote servers can control every single byte sent to the browser during communication, which might lead to memory safety issues when the browser parses the inputs. But apart from these security issues due to data processing, are there other logic bugs from a higher-level view? Can this type of bug be exploited and how?<br><br>In this presentation, we will show how we discovered several bugs in the Chrome network stack and exploited them to compromise the renderer process and escaped the Chrome sandbox. We will discuss the design problems of resource fetching/caching and one of the transport layer protocols embedded in Chrome. We will illustrate how server-side responses can affect browser behavior, which results in security bugs. Finally, we will detail the exploit strategy of these bugs which we used to win the Chrome category in the Tianfu Cup 2021 Cybersecurity Contest.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Rong-Another-Way-to-Talk-with-Browser-Exploiting-Chrome-at-Network-Layer.pdf"
+    },
+    {
+      "id": "bhus22-27293",
+      "title": "Don't Get Owned by Your Dependencies: How Firefox Uses In-process Sandboxing To Protect Itself From Exploitable Libraries (And You Can Too!)",
+      "speakers": [
+        "Shravan Narayan",
+        "Tal Garfinkel",
+        "Deian Stefan"
+      ],
+      "description": "Memory safety vulnerabilities in third party C libraries are a major source of zero-day attacks in today's applications. Several years ago, our team began exploring a new approach to mitigating these attacks in Firefox, which relies on third party libraries for everything from media rendering to spell checking.<br><br>To accomplish this, we began migrating Firefox to an architecture where third party C libraries are run in lightweight in-memory sandboxes (based on WebAssembly). Firefox has been shipping with this new architecture since 2020.<br><br>We will explore a variety of hard questions we encountered when bringing this approach to Firefox: How do we ensure sandboxing is efficient enough that we don't have to significantly change or re-architect existing code? How can we retrofit sandboxing without changing libraries? How do we ensure that our application (Firefox), which was written to trust libraries, cannot be exploited when a malicious (but sandboxed) library attacks. <br><br>We will talk about a new language level framework (RLBox) we developed to meet these challenges. RLBox exploits the language level type system to (1) track inputs from untrusted libraries to ensure they are properly sanitized before use, (2) automatically reconciles ABI differences between WebAssembly and application code (3) automate and assist with the process of migrating existing code to use untrusted libraries. <br><br>We will share some examples of our own experience applying RLBox in Firefox, and briefly explore the performance impact of sandboxing. RLBox and its related tools are fully open source and available to participants. We will explore how participants can apply our tools to their own projects.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Narayan-dont-get-owned-by-your-dependencies.pdf"
+    },
+    {
+      "id": "bhus22-27330",
+      "title": "Attack on Titan M, Reloaded: Vulnerability Research on a Modern Security Chip",
+      "speakers": [
+        "Damiano Melotti",
+        "Maxime Rossi Bellom"
+      ],
+      "description": "The Titan M chip was introduced by Google in their Pixel 3 devices, and in a previous study, we analyzed this chip and presented its internals and protections. Based on this acquired background, in this new talk we will focus on how we performed software vulnerability research on such a constrained target, despite the limited information available. <br><br>We will dive into how our black-box fuzzer works and its associated limitations. We then show how emulation-based solutions manage to outperform hardware-bound approaches. By combining a coverage-guided fuzzer (AFL++), an emulator (Unicorn) and some optimizations tailored for this target, we managed to find an interesting vulnerability, which was only allowing to set a single byte to 1, with several constraints on the offset. Despite looking hard to exploit, we present how we managed to obtain code execution from it, and leaked the secrets contained in the secure module.<br><br>This talk is the tale of how we mixed together various known techniques and open source tools, against such a mysterious chip, with almost no debugging support. Often relying only on return codes to develop our tools and exploits, we hope to offer interesting insights for other security researchers studying similar targets.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Melotti-Attack-on-Titan-M-Reloaded.pdf"
+    },
+    {
+      "id": "bhus22-27207",
+      "title": "Charged by an Elephant \u2013 An APT Fabricating Evidence to Throw You In Jail",
+      "speakers": [
+        "Juan Andres Guerrero-Saade",
+        "Tom Hegel"
+      ],
+      "description": "It's easy to forget the human cost of state-sponsored threats operating with impunity. While we often think of espionage, intellectual property theft, or financial gain as the objectives of these cyber operations, there's a far more insidious motivation that flies under the radar\u2013 APTs fabricating evidence in order to frame and incarcerate vulnerable opponents. <br><br>This talk focuses on the activities of ModifiedElephant, a threat actor operating for at least a decade with ties to the commercial surveillance industry. More importantly, we'll discuss how they've gone about incriminating activists who are locked up to this day despite forensic reports that show the evidence was planted. And if that's not concerning enough, we'll show how multiple regional threat actors were going after these same victims prior to their arrest. This cluster of activity represents a critically underreported dimension of how some governments are abusing technology to silence critics, and one that we hope will incense threat researchers into action.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Hegel-Charged-By-An-Elephant.pdf"
+    },
+    {
+      "id": "bhus22-26288",
+      "title": "Human or Not: Can You Really Detect the Fake Voices?",
+      "speakers": [
+        "Xin Liu",
+        "Yuan Tan",
+        "Rui Chong",
+        "Xiaokang Zhou",
+        "Mingyuan Zhang",
+        "Qingguo Zhou"
+      ],
+      "description": "Voice is an essential medium for humans to transfer information and build trust, and the trustworthiness of voice is of great importance to humans. With the development of deep learning technologies, attackers have started to use AI techniques to synthesize and even clone human voices. To combat the misuse of such techniques, researchers have proposed a series of AI-synthesized speech detection approaches and achieved very promising detection results in laboratory environments. Can these approaches really be as effective in the real world as they claim to be? This study provides an in-depth analysis of these works, identifies a set of potential problems, and designs a novel voice clone attack framework, SiF-DeepVC, based on these problems. This study first proposes the idea \"bypass fake voice detection using speaker-irrelative features\" and proves that detecting AI-synthesized speeches is still highly challenging, and existing approaches are not applicable in the real world. In a word, the Red is still far ahead of the Blue.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Liu-Human-Or-Not.pdf"
+    },
+    {
+      "id": "bhus22-26423",
+      "title": "Controlling the Source: Abusing Source Code Management Systems",
+      "speakers": [
+        "Brett Hawkins"
+      ],
+      "description": "Source Code Management (SCM) systems play a vital role within organizations and have been an afterthought in terms of defenses compared to other critical enterprise systems such as Active Directory. SCM systems are used in the majority of organizations to manage source code and integrate with other systems within the enterprise as part of the DevOps pipeline, such as CI/CD systems like Jenkins. These SCM systems provide attackers with opportunities for software supply chain attacks and can facilitate lateral movement and privilege escalation throughout an organization.<br><br>This presentation will include a background on SCM systems, along with detailing ways to abuse some of the most popular SCM systems such as GitHub Enterprise, GitLab Enterprise and Bitbucket to perform various attack scenarios. These attack scenarios will include reconnaissance, manipulation of user roles, repository takeover, pivoting to other DevOps systems, user impersonation and maintaining persistent access. Additionally, there will be a public release of open-source tooling to perform and facilitate these attacks, along with defensive guidance for protecting these SCM systems.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Hawkins-Controlling-the-Source.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Hawkins-Controlling-the-Source-wp.pdf"
+    },
+    {
+      "id": "bhus22-26988",
+      "title": "The Journey of Hunting In-the-Wild Windows LPE 0day",
+      "speakers": [
+        "Quan Jin"
+      ],
+      "description": "From 2017 to 2021, Microsoft disclosed a total of 28 in-the-wild Windows LPE 0days, most of which are Windows kernel LPE vulnerabilities. These vulnerabilities are often used by top level APT and could cause great harm. For security vendors, it is very challenging to capture an in-the-wild Windows kernel LPE 0day. <br><br>At the beginning of 2020, we made a decision to capture an in-the-wild Windows kernel LPE 0day. In order to achieve it, we studied a large number of historical cases. We then developed an effective Windows LPE vulnerability detection method.<br><br>This talk will focus on our story of how to hunt in-the-wild Windows LPE during 2020 and 2021: why we think this is possible, how we study historical cases, how we use learning experience to develop a detection method, and how we continuously improve the method to make it more accurate and effective. By using this method, we successfully captured two in-the-wild Windows LPE 0day and an in-the-wild Windows LPE 1day.<br><br>We will also compare the advantages and disadvantages of our method with other vendors' methods, and give some insights into the trend of Windows LPE 0day in the future.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/us-22-Jin-The-Journey-Of-Hunting-ITW-Windows-LPE-0day.pdf",
+      "whitepaper_url": "https://i.blackhat.com/USA-22/Thursday/us-22-Jin-The-Journey-Of-Hunting-ITW-Windows-LPE-0day-wp.pdf"
+    },
+    {
+      "id": "bhus22-26885",
+      "title": "The COW (Container On Windows) Who Escaped the Silo",
+      "speakers": [
+        "Eran Segal"
+      ],
+      "description": "Virtualization and containers are the foundations of cloud services. Containers should be isolated from the real host's settings to ensure the security of the host.<br><br>In this talk we'll answer these questions: \"Are Windows process-isolated containers really isolated?\" and \"What can an attacker achieve by breaking the isolation?\"<br><br>Before we jump into the vulnerabilities, we'll explain how Windows isolates the container's processes, filesystem and how the host prevents the container from executing syscalls which can impact the host. Specifically, we'll focus on the isolation implementation of Ntoskrnl using server silos and job objects.<br><br>We'll compare Windows containers to Linux containers and describe the differences between their security architectural designs.<br>We'll follow the scenario of an attacker-crafted container running with low privileges. We'll show in multiple ways how to gain privilege escalation inside the container to NT/System. After gaining NT/System permissions, we'll talk about how we escaped the isolation of the container and easily achieved a dump of the entire host's kernel memory from within the container. If the host is configured with a kernel debugger, we can even dump the host's Admin credentials. <br><br>We'll finish by demonstrating how an attacker-crafted container with low privileges can read UEFI settings and then set them. Using this technique an attacker can communicate between containers and cause a permanent Denial-of-Service (DoS) to a host with default settings, through the UEFI interface.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Segal-The-COW-Who-Escaped-the-Silo.pdf",
+      "whitepaper_url": "https://github.com/SafeBreach-Labs/CoWTools"
+    },
+    {
+      "id": "bhus22-27131",
+      "title": "Scaling the Security Researcher to Eliminate OSS Vulnerabilities Once and For All",
+      "speakers": [
+        "Jonathan Leitschuh",
+        "Patrick Way",
+        "Shyam Mehta"
+      ],
+      "description": "Imagine a world where a security researcher becomes aware of a security vulnerability, impacting thousands of Open Source Software (OSS) projects, and is enabled to both identify and fix them all at once. Now imagine a world where a vulnerability is introduced into your production code and a few moments later you receive an automated pull request to fix it. Hundreds of thousands of human hours are invested every year in finding common security vulnerabilities with relatively simple fixes. These vulnerabilities aren't sexy, cool, or new, we've known about them for years, but they're everywhere!<br><br>The scale of GitHub and tools like CodeQL (GitHub's code query language) enable one to scan for vulnerabilities across hundreds of thousands of OSS projects, but the challenge is how to scale the triaging, reporting, and fixing. Simply automating the creation of thousands of bug reports by itself isn't useful, and would be even more of a burden on volunteer maintainers of OSS projects. Ideally, the maintainers would be provided with not only information about the vulnerability, but also a fix in the form of an easily actionable pull request.<br><br>When facing a problem of this scale, what is the most efficient way to leverage researcher knowledge to fix the most vulnerabilities across OSS? This talk will cover a highly scalable solution - automated bulk pull request generation. We'll discuss the practical applications of this technique on real world OSS projects. We'll also cover technologies like CodeQL and OpenRewrite (a style-preserving refactoring tool created at Netflix and now developed by Moderne). Let's not just talk about vulnerabilities, let's actually fix them at scale.<br><br>This work is sponsored by the new Dan Kaminsky Fellowship; a fellowship created to celebrate Dan's memory and legacy by funding open-source work that makes the world a better (and more secure) place.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Leitschuh-Scaling-the-Security-Researcher.pdf"
+    },
+    {
+      "id": "bhus22-28802",
+      "title": "The 8th Annual Black Hat USA NOC Report",
+      "speakers": [
+        "Neil Wyler",
+        "Bart Stump"
+      ],
+      "description": "Back with another year of soul-crushing statistics, the Black Hat NOC team will be sharing all of the data that keeps us equally puzzled, and entertained, year after year. We'll let you know all the tools and techniques we're using to set up, stabilize, and secure the network, and what changes we've made over the past year to try and keep doing things better. Of course, we'll be sharing some of the more humorous network activity and what it helps us learn about the way security professionals conduct themselves on an open WiFi network."
+    },
+    {
+      "id": "bhus22-26638",
+      "title": "A Dirty Little History: Bypassing Spectre Hardware Defenses to Leak Kernel Data",
+      "speakers": [
+        "Pietro Frigo",
+        "Enrico Barberis",
+        "Marius Muench"
+      ],
+      "description": "The initial disclosure of Spectre in 2018 led to an unforeseen era of transient execution attacks. These attacks usually allow a lower-privileged attacker to leak arbitrary data from higher privileged security domains by observing the side-effects of transiently executed instructions. One especially powerful attack variant, Branch Target Injection (BTI), abuses misprediction and resulting mispeculation on indirect branches to transiently execute attacker-controlled instructions. To put a stop to this, affected vendors initially relied on a complicated set of software defenses and began only in the last two years to roll out in-silicon defenses to the consumer market.<br><br>The initial disclosure of Spectre in 2018 led to an unforeseen era of transient execution attacks. These attacks usually allow a lower-privileged attacker to leak arbitrary data from higher privileged security domains by observing the side-effects of transiently executed instructions. One especially powerful attack variant, Branch Target Injection (BTI), abuses misprediction and resulting mispeculation on indirect branches to transiently execute attacker-controlled instructions. To put a stop to this, affected vendors initially relied on a complicated set of software defenses and began only in the last two years to roll out in-silicon defenses to the consumer market.<br><br>To assess the security ramifications of this insight, we developed tooling to automatically test whether a userspace attacker can cause mispredictions in the kernel despite the enabled defenses. Using this tooling, we could verify that BHI, indeed, poses a threat to very recent systems, such as the Google Pixel 6 or systems with 12th generation Intel CPUs. Furthermore, we will also show that this threat is far from theoretical: We developed an end-to-end exploit leaking the contents of etc-shadow in under 10 minutes and provide a technical walk-through accompanied by live demos during this talk.",
+      "slides_url": "https://i.blackhat.com/USA-22/Thursday/US-22-Frigo-A-Dirty-Little-History.pdf"
+    },
+    {
+      "id": "bhus22-29172",
+      "title": "Locknote: Conclusions and Key Takeaways from Black Hat USA 2022",
+      "speakers": [
+        "Jeff Moss",
+        "Justine Bone",
+        "Chris Eng",
+        "Natalie Silvanovich",
+        "Matt Suiche"
+      ],
+      "description": "To close out Black Hat USA 2022, join Black Hat Founder Jeff Moss and Review Board members Sheila A. Berta, Chris Eng, Natalie Silvanovich and Matt Suiche for an insightful conversation on the most pressing issues facing the InfoSec community. This Locknote will feature a candid discussion on the key takeaways coming out of the conference and how these trends will impact future InfoSec strategies."
+    }
+  ]
+}

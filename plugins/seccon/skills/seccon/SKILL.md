@@ -417,9 +417,9 @@ Read `resources/manifest.json` for cached industry venue-years.
 | Conference | Focus | Cache status |
 |---|---|---|
 | DEF CON | Broad hacking, underground research | ✅ 2021–2025 (428 talks) |
-| Black Hat USA | Advanced research, enterprise security | ⚠️ Blocked (Cloudflare) |
-| Black Hat EU | Same, European edition | ⚠️ Blocked (Cloudflare) |
-| Black Hat Asia | Same, Asian edition | ⚠️ Blocked (Cloudflare) |
+| Black Hat USA | Advanced research, enterprise security | ✅ 2021–2026 (580 talks) |
+| Black Hat EU | Same, European edition | ✅ 2021–2025 (257 talks) |
+| Black Hat Asia | Same, Asian edition | ✅ 2021–2025 (209 talks) |
 | OffensiveCon | Offensive research, exploitation | ✅ 2022–2025 (44 talks) |
 | REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
 | — Lower-tier / uncached — | | |

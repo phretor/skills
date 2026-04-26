@@ -1,0 +1,83 @@
+{
+  "conference": {
+    "name": "Black Hat USA",
+    "acronym": "BLACKHAT-USA",
+    "year": 2026,
+    "url": "https://blackhat.com/us-26/briefings/schedule/"
+  },
+  "coverage": {
+    "talks_count": 8,
+    "has_abstracts": true,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "bhus26-53432",
+      "title": "A Billion-User Blast Radius: Owning ChatGPT's Secure Sandbox",
+      "speakers": [
+        "Simcha Kosman"
+      ],
+      "description": "<p>This research is currently under embargo due to ongoing coordinated disclosure. </p>"
+    },
+    {
+      "id": "bhus26-53252",
+      "title": "America's Endangered AI",
+      "speakers": [
+        "Fred Heiding",
+        "Chris Inglis"
+      ],
+      "description": "<p>Artificial intelligence infrastructure has become one of the most valuable assets and lucrative targets in cyberspace. Frontier AI systems concentrate enormous economic and national-security value in a layered stack of chips, cloud infrastructure, model weights, training data, and human operators. At the same time, many AI companies prioritize rapid deployment over security, creating systemic vulnerabilities that adversaries are exploiting. </p><p>This talk examines how nation-state actors increasingly target AI infrastructure through cyber espionage, insider compromise, supply-chain manipulation, and model-weight theft. Similarly, we will discuss how cybercriminals are increasingly using American AI models to launch attacks on American infrastructure. We will highlight recent incidents, such as China's use of Anthropic's AI models to hack American infrastructure, and historical case studies of industrial cyber-espionage, to show how attackers can extract strategic value from AI systems by stealing intellectual property, corrupting model behavior, or undermining trust in deployed systems. </p><p>The presentation introduces a practical framework for securing AI infrastructure across three attack surfaces\u2014chips, wires, and humans\u2014and demonstrates how defenders can detect and mitigate model-weight exfiltration, infrastructure compromise, and insider threats. </p><p>The talk will conclude with recommendations on how organizations and governments can harden AI infrastructure against large-scale attacks on frontier models.</p>"
+    },
+    {
+      "id": "bhus26-54295",
+      "title": "C and Its Consequences: The Source Is Just a Suggestion",
+      "speakers": [
+        "Christopher Domas"
+      ],
+      "description": "<p>int x = k; if (x == 1 && x == 2) { printf(\"this is possible\"); }<br><br>Modern compilers don't mindlessly translate your code - they entirely rewrite it.  By the time C reaches machine code, it's been reshaped by frontend lowering, IR optimizations, register allocation, and backend codegen - a deep, multi-stage pipeline making decisions you can't see.<br><br>By reverse engineering the complex emergent behavior of these modern pipelines, we unfold a widely used defensive coding pattern that can cause an optimizing compiler to introduce TOCTOU vulnerabilities into seemingly immune code - not as a bug, but as a feature.</p>"
+    },
+    {
+      "id": "bhus26-51894",
+      "title": "Can AI Do Novel Security Research? Meet the HTTP Terminator",
+      "speakers": [
+        "James Kettle"
+      ],
+      "description": "<p>We all know AI can find bugs. After a decade of research, I asked a harder question: can an autonomous system invent new attack techniques, and use them to hack live websites at scale? Building this sounded like a bad idea, so I did it.<br><br>It worked - I'll share an arsenal of new HTTP desync triggers, gadgets, and exploits that compromised banks, security solutions, and government infrastructure. Then I'll trace each discovery chain back through the HTTP Terminator, showing how to turn your personal expertise into an autonomous weapon - and the dark arts required to make it lethal.<br><br>I'll also share discoveries from beyond the autonomy horizon - some only reachable with a tight human/AI research loop, and others beyond AI's reach entirely. These include a powerful undisclosed recon technique, and anomalies that hint at new attack classes offering alternative paths to critical impact. I'll analyze the discovery process, sharing detailed experiments that probe the boundaries of what AI can and can't discover.<br><br>You'll leave with new exploits from desync triggers to undisclosed attack classes, and a blueprint for turning your instincts into an autonomous research cascade. And yes, I'll open-source the HTTP Terminator.</p>"
+    },
+    {
+      "id": "bhus26-53926",
+      "title": "Lights Out: BMCs Are Still Broken and Now We Have the Receipts",
+      "speakers": [
+        "HD Moore"
+      ],
+      "description": "<p>Baseboard management controllers (BMCs) are embedded into every modern enterprise server. These devices run their own OS, have their own network interfaces, and are network-reachable even when the server is powered off. The devices speak a protocol called IPMI that was thoroughly trashed by Dan Farmer's ground-breaking research in 2013. Since Farmer's original research into Cipher Zero authentication bypass and RAKP password hash disclosure, dozens of new vulnerabilities have been identified in these devices, but none of this research revisits the IPMI protocol itself.</p><p>We scanned over 15,000 internet-exposed BMCs and 125,000 devices across corporate networks to see what changed. The answer: not enough.</p><p>Three out of four internet-facing IPMI hosts offer valid usernames and password hashes to any attacker on the network. Over 9,000 internal BMCs used default or common passwords. Although California's SB-327 law forced vendors to ship factory-randomized passwords, more devices than ever now retain their initial random password. These random passwords use constrained character sets that make offline cracking feasible with modern GPUs.</p><p>We document novel pre-authentication information leaks: Dell BMCs embed service tags resolvable via Dell's public support portal, HPE BMCs encode part IDs and serial numbers, and many exposed GUIDs contain MAC addresses and manufacturing timestamps.</p><p>BMC attacks are more common than ever, with high-profile cases of malicious firmware implants that provide persistent access, and open source toolkits for building custom firmwares for HP iLO and Supermicro IPMI boards. In June 2025, CISA added its first BMC exposure to its Known Exploited Vulnerabilities catalog. </p><p>A compromised BMC persists through OS reinstalls and disk replacement, and the bidirectional trust between BMC and host means compromising either side compromises both. This bidirectional trust undermines network segmentation. </p><p>As part of this research, we are releasing OOBscan, an open source IPMI auditing tool.</p>"
+    },
+    {
+      "id": "bhus26-53889",
+      "title": "One Key to Rule Them All: Taking Over a Flagship Cloud Service",
+      "speakers": [
+        "Yuval Avrahami",
+        "Lior Maman"
+      ],
+      "description": "<p>Join us as we break down one of the most significant cloud vulnerabilities to date. </p><p>The research is currently under embargo - full abstract coming soon.<br></p>"
+    },
+    {
+      "id": "bhus26-52575",
+      "title": "Scambuster: Social Engineering Scammers at Scale",
+      "speakers": [
+        "Laurent Giovannoni"
+      ],
+      "description": "<p>Most security teams get a scam email and delete it. That's the standard move. Block it, move on, forget it.<br><br>That's exactly what scammers are counting on.<br><br>ScamBuster does something different. It writes back. It picks a human persona, an elderly widow, a small business owner, a confused tourist, and it starts a conversation. The scammer thinks they've found a victim. What they've actually done is start handing over their infrastructure.<br><br>Over 60 days of live operation, the system ran fully on its own. No human in the loop. Here's what it produced:<br>- real conversations with real scammers<br>- IOCs extracted, phone numbers, IBANs, crypto wallets, email accounts<br>- 5.34 average IOCs per conversation<br>- 100% extraction precision on the audited sample. Zero false positives.<br>- Zero security incidents. Not one.<br><br>The system doesn't just run a fixed script. It learns. A multi-armed bandit algorithm figures out which personas work best against which scam types, and it shifts the strategy automatically. The longer it runs, the better it gets.<br><br>The Human Factors angle is the real story here. Scammers are skilled social engineers. They know how to trigger trust, urgency, and greed. But those same psychological levers work on them too, we just have to know which ones to pull, and when. This talk explains how we figured that out, and what the data says.<br><br>The code ships at the conference, MIT license, ready to deploy.</p>"
+    },
+    {
+      "id": "bhus26-51879",
+      "title": "Zero-Day Provisioning: Chaining TP-Link ZTP Vulnerabilities for Infiltrating Networks",
+      "speakers": [
+        "Stanislav Dashevskyi",
+        "Francesco La Spina"
+      ],
+      "description": "<p>An increasing number of network vendors offer Zero-Touch Provisioning (ZTP) to conveniently provision and configure devices with little-to-no manual intervention. A ZTP ecosystem includes provisioning servers (local or cloud-based controllers) that push configurations and updates to client devices: routers, switches, gateways and wireless access points. It is often taken for granted that there is a strong chain of trust between these two parties and that the networking protocols used in ZTP are securely implemented. <br><br>Most vulnerability and threat intelligence reports on network equipment focus on individual \"device takeover\" vulnerabilities allowing for direct Remote Code/Command Execution. There is, however, little recent research examining the security of mechanisms like ZTP, which could allow for exploitation at scale.<br><br>In this talk, we will present 17 new vulnerabilities affecting TP-Link Omada \u2013 a device ecosystem designed with ZTP in mind \u2013 and other devices of the same vendor. In combination, these issues become much more severe than when someone looks at them in isolation - publishing these vulnerabilities at different times does not give users the real dimensions of the risk they were exposed to.<br><br>We will present the networking protocols used by TP-link \u2013 focusing on Omada \u2013 and discuss key vulnerabilities in them, including a chain of trust compromise due to the use of hard-coded cryptographic keys, sensitive information disclosure and remote code execution against some devices. <br><br>Using these new vulnerabilities, we will present attacks against controllers and client devices that allow attackers to infiltrate networks by taking over Omada equipment. We will also show how some protocol vulnerabilities go way beyond one device family and affect other network equipment, physical security cameras, smart home devices, mobile apps with millions of downloads, and even the cloud accounts for all these ecosystems (Tapo, Kasa, Festa, VIGI).</p>"
+    }
+  ]
+}

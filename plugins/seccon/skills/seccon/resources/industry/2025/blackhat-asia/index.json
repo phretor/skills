@@ -1,0 +1,524 @@
+{
+  "conference": {
+    "name": "Black Hat Asia",
+    "acronym": "BLACKHAT-ASIA",
+    "year": 2025,
+    "url": "https://blackhat.com/asia-25/briefings/schedule/"
+  },
+  "coverage": {
+    "talks_count": 48,
+    "has_abstracts": true,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "bhasia25-44612",
+      "title": "Keynote: Cyber Threats in the Age of AI",
+      "speakers": [
+        "Edward Chen"
+      ],
+      "description": "<div><span>As AI reshapes the cyber terrain and presents new attack vectors, traditional threats like ransomware, scams and advanced persistent threats (APTs) remain a significant concern.<br> <br>In this keynote, Deputy Chief Executive Edward Chen will provide an in-depth look at Singapore's evolving cyber threat landscape. He will also discuss the nation's collective efforts \u2013 across government, industry and society \u2013 to combat both emerging and enduring cyber threats to Singapore.<br><br></span></div><p><em>Open to all Black Hat Pass Holders.</em></p>"
+    },
+    {
+      "id": "bhasia25-43199",
+      "title": "vCenter Lost: How the DCERPC Vulnerabilities Changed the Fate of ESXi",
+      "speakers": [
+        "Hao Zheng",
+        "Zibo Li",
+        "Yue Liu"
+      ],
+      "description": "<p>As one of the most widely-used commercial virtualization platforms, the security of VMware virtualization suite has long been a focal point of scrutiny. Over the past few years, we have focused extensively on identifying vulnerabilities within VMware products, particularly those in ESXi and Workstation virtualization implementations. Our efforts have led to multiple submissions of critical vulnerabilities, earning recognition from the vendor. This year, we turned our attention to vCenter Server, the centralized management platform for VMware vSphere environments. Through our research, we discovered four critical vulnerabilities in its DCERPC service\u2014three heap overflow vulnerabilities and one privilege escalation vulnerability. Notably, we were able to exploit one of the heap overflow vulnerabilities in combination with the privilege escalation vulnerability to achieve unauthorized remote root access, successfully completing the Matrix Cup 2024 vulnerability challenge.<br><br>In this presentation, we will begin by providing a detailed overview of the DCERPC protocol and the four vulnerabilities we uncovered in its implementation within vCenter Server, which have been assigned CVE numbers CVE-2024-37079, CVE-2024-37080, CVE-2024-38812, and CVE-2024-38813. It is well-known that achieving remote code execution through memory corruption vulnerabilities in network services is particularly challenging, especially when defenses like Address Space Layout Randomization (ASLR) and Position Independent Executable (PIE) are in place. We will then dive into advanced heap fengshui techniques we used to exploit two of these vulnerabilities to execute remote code with root privileges. Finally, after gaining root access to the vCenter Server's operating system, we will introduce a method to escalate privileges further and gain control over ESXi itself\u2014demonstrating how these vulnerabilities can be leveraged to fully control the virtualized infrastructure.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zheng-vCenter-Lost-How-the-DCERPC-Vulnerabilities-Changed-the-Fate-of-ESXi.pdf"
+    },
+    {
+      "id": "bhasia25-43874",
+      "title": "QuickShell: Sharing is Caring About an RCE Attack Chain on Quick Share",
+      "speakers": [
+        "Or Yair",
+        "Shmuel Cohen"
+      ],
+      "description": "<div><span>Quick Share (formerly Nearby Share) has allowed Android users to easily share files for four years now. A year ago, Google introduced a Windows version.</span></div><div><span><br></span></div><div><span>Google's promotion of Quick Share for preinstallation on Windows, alongside the limited recent research, ignited our curiosity about its safety, leading to an investigation that uncovered more than we had imagined.</span></div><div><span><br></span></div><div><span>We studied its Protobuf-based protocol using hooks, built tools to communicate with Quick Share devices, and a fuzzer that found non-exploitable crashes in the Windows app. We then diverted to search for logic vulnerabilities, and boy oh boy, we regretted we hadn't done it sooner.</span></div><div><span><br></span></div><div><span>We found 10 vulnerabilities both in Windows & Android allowing us to remotely write files into devices without approval, force the Windows app to crash in additional ways, redirect its traffic to our WiFi AP, traverse paths to the user's folder, and more. However, we were looking for the holy grail, an RCE. Thus, we returned to the drawing board, where we realized that the RCE is already in our possession in the form of a complex chain.</span></div><div><span><br></span></div><div><span>In this talk, we'll introduce QuickShell - An RCE attack chain on Windows combining 5 out of 10 vulnerabilities in Quick Share. We'll provide an overview about Quick Share's protocol, present our fuzzer, the found vulnerabilities, a new HTTPS MITM technique, and finally the RCE chain.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Yair-QuickShell-Sharing-is-Caring.pdf"
+    },
+    {
+      "id": "bhasia25-44095",
+      "title": "Think Inside the Box: In-the-Wild Abuse of Windows Sandbox in Targeted Attacks",
+      "speakers": [
+        "Hiroaki Hara"
+      ],
+      "description": "<p>Windows Sandbox is a lightweight virtualization mechanism introduced in 2018, designed to provide an isolated desktop environment for quickly testing suspicious applications. However, this feature can also serve as a \"magic cloak\" for adversaries.<br><br>In 2024, we observed an abuse of Windows Sandbox by the APT group Earth Kasha, believed to operate under the APT10 umbrella. After gaining control of the target machine via a backdoor named \"ANEL,\" delivered through a spear-phishing email, the adversary uploaded multiple components to deploy a secondary payload, dubbed \"NOOPDOOR,\" within Windows Sandbox. Initially, the adversary configured Windows Sandbox using a .wsb file to enable network access and map a host folder to a folder within the Sandbox, allowing access to host files from within the Sandbox. Next, they executed an installer script to extract NOOPDOOR components from a password-protected WinRAR archive and launched it inside the Sandbox. Additionally, the adversary leveraged the TOR application to obscure backdoor traffic originating from the Sandbox. These techniques helped the adversary conceal malicious activity from host-based EPP and EDR solutions.<br><br>This presentation will cover the fundamentals of Windows Sandbox, provide a detailed analysis of the TTPs used for defensive evasion, and discuss actionable countermeasures for prevention and threat hunting.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-HiroakiHara-Think-Inside-the-Box.pdf"
+    },
+    {
+      "id": "bhasia25-43514",
+      "title": "DriveThru Car Hacking: Fast Food, Faster Data Breach",
+      "speakers": [
+        "Alina Tan",
+        "George Chen",
+        "Chee Peng Tan",
+        "Ri-Sheng Tan",
+        "Penelope Chua",
+        "Benjamin Cao"
+      ],
+      "description": "<p>In-car dash cameras (dashcams) have become quintessential to our daily lives, supported by guidelines and regulations from insurance companies as part of insurance reduction or substantiating claims during an accident. However, this can be a double-edged sword without proper security measures, potentially compromising privacy and increasing susceptibility to identity theft.<br><br>In this talk, we present our findings on hacking over two dozen leading dashcam models and provide a step-by-step approach to conducting an automated drive-through compromise on dashcams, resulting in major privacy breach within a few minutes. We will present a novel attack vector, DriveThru Hacking, and a tool that automates the process of Wi-Fi discovery, hacking, data exfiltration, LLM summarisation and insights generation, focusing on a vendor-agnostic attack and performance.<br><br>A live test of the tool will be conducted, highlighting each point of failure and the reconnaissance data gathered from sample dashcam footage - in this demo, you will see how much information can be gleaned, from private conversations to daily routes, and the alarming speed at which compromise can unfold. <br><br>Finally, we conclude with countermeasures to these attacks and precautionary practices we should adopt in the increasingly-connected world we live in today.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Chen-DriveThru-Car-Hacking.pdf",
+      "whitepaper_url": "https://i.blackhat.com/Asia-25/Asia-25-Chen-Drive-Thru-Car-Hacking-wp.pdf"
+    },
+    {
+      "id": "bhasia25-43347",
+      "title": "The Oversights Under the Flow: Discovering and Demystifying the Vulnerable Tooling Suites From Azure MLOps",
+      "speakers": [
+        "Peng Zhou"
+      ],
+      "description": "<p>With the new AI moving to the cloud, a sequence of ML/AI tooling suites has been integrated into the core Azure DevOps functionalities, yielding a new concept of MLOps to enable the LLM capabilities for Azure. However, despite these tools being maintained and reviewed by Microsoft staff, they are almost open-sourced and can be contributed by a broader scope of machine-learning communities. By this condition, any piece of bug is prone to be overlooked and committed into the released versions, posing as the Achilles' Heel to Azure MLOps.</p><p>In this talk, we present a set of new vulnerabilities we have discovered across several tooling suites within the Azure MLOps, affecting from the traditional Azure-CLI and AzureDev to the cutting-edge PromptFlow, Azure-AI-Generative, and DeepSpeed. We also demystify how these vulnerabilities can be exploited to impact the entire lifecycle of Azure MLOps, covering model training, testing, evaluation, and synthesis over the cloud and on-premise. We have reported our findings to MSRC via its Coordinated Vulnerability Disclosure Program and had five reports acknowledged as important severity (the maximal security impacts range from Local Privilege Escalation to Remote Code Execution), three as moderate, and the last two as low. In addition, we investigate the codebase of these vulnerable tools and surprisingly find that most of these vulnerabilities are just written accidentally due to some corner-case oversights. Their secure solutions are already located somewhere in the same codebase but overlooked to apply. Even worse, we can still discover similar oversights in patching progress during our coordinated disclosure, resulting in several incomplete fixes and unpatched overlooks. To this end, we'd like to discuss some potential countermeasures to awaken the maintainer's vigilance and thus stop repeating the same oversight, to protect Azure MLOps at its weakest flow.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zhou-The-Oversights-Under-the-Flow.pdf"
+    },
+    {
+      "id": "bhasia25-43633",
+      "title": "ObfusQate: Where Quantum Magic Meets Code Security \u2013 Say Goodbye to Easy Cracking!",
+      "speakers": [
+        "Vivek Balachandran",
+        "Nikhil Bartake",
+        "Zi Jie See Toh",
+        "Michael Kasper"
+      ],
+      "description": "<div><span>ObfusQate is the pioneering tool designed to obfuscate quantum programs, enhancing their security by making them resistant to reverse engineering and analysis. The tool employs two main types of obfuscation: quantum circuit obfuscation and control flow obfuscation. Participants will gain hands-on experience using ObfusQate to obfuscate traditional quantum algorithms. We will also demonstrate how the tool can hide malicious code within quantum programs through quantum obfuscation while maintaining semantic equivalence of the code.</span></div><div><span><br></span></div><div><span>Quantum Circuit Obfuscation: We have developed and implemented three different types of circuit obfuscation techniques for the first version of our tool. This approach involves using quantum gates and circuits to obscure the core functionality of quantum algorithms at the circuit level. By employing methods such as inverse gates and identity matrices, ObfusQate creates complex and non-intuitive quantum circuits, making them difficult to interpret and analyze.</span></div><div><span><br></span></div><div><span>Control Flow Obfuscation: We have developed and implemented four different types of code flow obfuscation techniques that will obscure the control flow of the quantum programs. This approach targets the logical sequence of operations within quantum programs. By manipulating the control flow and using quantum-based opaque predicates, ObfusQate obscures the execution path, making it more challenging for adversaries to predict and understand the program's behavior. Control flow obfuscations are created by utilizing quantum properties like superposition and entanglement, thereby making automatic deobfuscation possible only if quantum principles are broken.</span></div><div><span><br></span></div><div><span>Like other obfuscators from the classical computing world, ObfusQate can be used for both defensive and offensive purposes. It can protect intellectual property by obfuscating quantum programs, preventing adversaries from reverse-engineering proprietary algorithms. Additionally, the tool can be used to hide malicious content within normal quantum programs, potentially bypassing security detections. We will demonstrate the tool's capability to obfuscate quantum programs without altering their semantics and show how obfuscated malicious code can evade detection by various Large Language Models.</span></div>"
+    },
+    {
+      "id": "bhasia25-44556",
+      "title": "Tinker Tailor LLM Spy: Investigate & Respond to Attacks on GenAI Chatbots",
+      "speakers": [
+        "Allyn Stott"
+      ],
+      "description": "<div><span>It's coming, and you aren't ready\u2014your first generative AI chatbot incident. GenAI chatbots, leveraging LLMs, are revolutionizing customer engagement by providing real-time, automated 24/7 chat support. But when your company's virtual agent starts responding inappropriately to requests and handing out customer PII to anyone who asks nicely, who are they going to call? You.</span></div><div><span><br></span></div><div><span>You've seen the cool prompt injection attack demos and may even be vaguely aware of preventions like LLM guardrails; but are you ready to investigate and respond when those preventions inevitably fail? Would you even know where to start? It's time to connect traditional investigation and response procedures with the exciting new world of GenAI chatbots.</span></div><div><span><br></span></div><div><span>In this talk, you'll learn how to investigate and respond to the unique threats targeting these systems. You'll discover new methods for isolating attacks, gathering information, and getting to the root cause of an incident using AI defense tooling and LLM guardrails. You'll come away from this talk with a playbook for investigating and responding to this new class of GenAI incidents and the preparation steps you'll need to take before your company's chatbot responses start going viral\u2014for the wrong reasons.</span></div>"
+    },
+    {
+      "id": "bhasia25-44141",
+      "title": "JDD: In-depth Mining of Java Deserialization Gadget Chains via Bottom-up Gadget Search and Dataflow-aided Payload Construction",
+      "speakers": [
+        "Bofei Chen",
+        "Yinzhi Cao",
+        "Lei Zhang",
+        "Xinyou Huang",
+        "Yuan Zhang",
+        "Min Yang"
+      ],
+      "description": "<p>Java serialization and deserialization facilitate cooperation between different Java systems, enabling convenient data and code exchange. However, a significant vulnerability known as Java Object Injection (JOI) allows remote attackers to inject crafted serialized objects, triggering internal Java methods (gadgets) and resulting in severe consequences such as remote code execution (RCE). Previous works have attempted to detect and chain gadgets for JOI vulnerabilities using static searches and dynamic payload construction via fuzzing. However, these methods face two key challenges: (i) path explosion in static gadget searches and (ii) a lack of fine-grained object relations connected via object fields in dynamic payload construction.<br>- First, we will introduce a gadget fragment-based summary and bottom-up search approach to address the path explosion challenge. <br>- Second, we will then demonstrate how to infer the dataflow dependencies between injection objects' fields and use them to guide dynamic fuzzing to generate exploitable objects. <br><br>We evaluate JDD upon six popular Java applications (e.g., Apache Dubbo, Sofa-RPC, Solon, etc) in their latest version, which finds 127 zero-day exploitable gadget chains with six Common Vulnerabilities and Exposures (CVE) identifiers assigned (i.e., CVE-2023-35839, CVE-2023-29234, CVE-2023-39131, CVE-2023-48967, CVE-2024-23636, and CVE-2023-41331). Each of these CVEs has a CVSS score of 9.8, indicating an extremely high risk of exploitation and the potential to cause significant security damage. Given the wide range of impacts and potential consequences of these vulnerabilities, the related developers patched all these gadget chains in a prompt and timely manner after we reported our findings.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-JDD-Chen-InDepth-Mining-of-JavaDeserialization-GadgetChains.pdf"
+    },
+    {
+      "id": "bhasia25-44907",
+      "title": "Meetup - Cloud Security: Building Connections in the Cloud",
+      "speakers": [
+        "Lidia Giuliano",
+        "Vandana Verma"
+      ],
+      "description": "<p>Join us for an engaging meetup focused on Cloud Security. This meetup is designed for professionals navigating the complexities of securing cloud environments, offering an opportunity to exchange insights on best practices, emerging threats, and operational challenges.</p><p>Beyond discussions, this meetup prioritizes networking, providing a space for attendees to connect, share experiences, and build professional relationships in the cloud security domain. Whether you're working on securing multi-cloud deployments, tackling identity and access management challenges, or developing compliance strategies, this meetup fosters peer-to-peer learning in an informal setting.</p><p><strong>Open to All Passholders.</strong></p><p><strong>In-person only \u2013 this session will not be recorded or available on-demand.</strong></p>"
+    },
+    {
+      "id": "bhasia25-43510",
+      "title": "Bridging the Gap: Type Confusion and Boundary Vulnerabilities Between WebAssembly and JavaScript in V8",
+      "speakers": [
+        "Nan Wang",
+        "Zhenghang Xiao",
+        "Xuehao Guo",
+        "Ming Hu"
+      ],
+      "description": "<p>As WebAssembly becomes more integrated into modern web browsers, its interaction with JavaScript creates new opportunities for performance optimization, but also introduces significant security risks. This presentation dives deep into the vulnerabilities emerging from the boundaries between WebAssembly and JavaScript, with a focus on type confusion issues and improper handling of object boundaries within the V8 engine.<br><br>Through our research, we have uncovered multiple vulnerabilities in V8, including type confusion between WasmObject and JSObject, as well as issues with the WebAssembly Garbage Collection (WasmGC) and JavaScript Promise Integration (JSPI) API. These vulnerabilities have serious implications for browser security, and could lead to crashes, out-of-bounds accesses, or even remote code execution.<br><br>We will discuss several CVEs, including CVE-2024-5158, CVE-2024-7550, CVE-2024-3156, CVE-2024-8638, and CVE-2024-5838, and explain how these issues were identified, the technical details behind them, and the patches submitted to resolve them. Our goal is to highlight the importance of thorough security reviews and the need for improved safety checks at the WebAssembly-JavaScript interface.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zhenghang-Bridging-the-Gap.pdf"
+    },
+    {
+      "id": "bhasia25-43571",
+      "title": "Double Tap at the Blackbox: Hacking a Car Remotely Twice with MiTM",
+      "speakers": [
+        "Yingjie Cao",
+        "Xinfeng Chen"
+      ],
+      "description": "<p>Obtaining the hardware, extracting firmware, and then reverse engineering to uncover vulnerabilities in automotive systems is a common practice within the vehicle security community. However, access to vehicle components can often be limited\u2014especially for newer models\u2014making it challenging for researchers who do not own the vehicle. Dissecting a car can also be risky and expensive for many security researchers.<br><br>In this session, we explore an affordable and practical research approach to compromise the security of cars. We utilize blackbox testing to assess the security of one of the most famous car manufacturers in China, which recorded 140,000 annual sales in 2023. We kept tracking its security changes for the last three years, witnessing their development in security along with the regulations that came into force (e.g., R155, ISO 21434). As a result of our research, we identified two significant Man-in-the-Middle vulnerabilities that can serve as entry points for exploitation. Both vulnerabilities enable remote vehicle control, with one allowing full control over the entertainment system. Although the powerful mitigations, and security mechanisms are applied one by one to the vehicles, manufacturers should reflect on their effectiveness in investment of security systems.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Cao-DoubleTap-Blackbox.pdf"
+    },
+    {
+      "id": "bhasia25-43618",
+      "title": "The Illusion of Isolation: How Isolation Failures in CI/CD Servers Lead to RCE and Privacy Risks",
+      "speakers": [
+        "Tian Zhou",
+        "Yiwen Wang",
+        "Xiu Zhang"
+      ],
+      "description": "<p>For many years, security research on CI/CD platforms has been a popular topic, but researchers often tend to look for flaws that are visibly present across various functionalities within the workflow rather than auditing CI/CD platform implementations to analyze application mechanisms and identify potential vulnerabilities.<br><br>In the complete CI/CD workflow, isolation mechanisms play a crucial role. For example, CI tasks typically need to be executed on the agent side, and the isolation between the agent and server ensures that users cannot execute code on the platform itself. Additionally, many functions within the CI/CD workflow also require isolation mechanisms, encompassing not only file system isolation but also isolation of user data. However, during our research on several CI/CD products, we were surprised to find that many CI/CD platforms did not prioritize implementing isolation in their functionality designs. When CI/CD servers fail to ensure proper isolation, it can lead to significant application security risks, including sensitive information leaks and even RCE vulnerabilities.<br><br>In this talk, we will share real world vulnerabilities discovered in well-known applications and outline several exploitation methodologies applicable to multiple applications. We conducted research on the implementation of isolation mechanisms, identifying four different attack techniques and discovering multiple RCE vulnerabilities in popular applications like Atlassian Bamboo, GoCD, etc. Additionally, we will analyze the workflows in these applications, discuss data isolation issues, and explore how these impact user and enterprise privacy.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zhou-The-Illusion-of-Isolation-How-Isolation-Failures-In-CICD-Servers-Lead-to-RCE-and-Privacy-Risks.pdf"
+    },
+    {
+      "id": "bhasia25-44550",
+      "title": "Unveiling the Mysteries of Qualcomm's QDSP6 JTAG: A Journey into Advanced Theoretical Reverse Engineering",
+      "speakers": [
+        "Alisa Esage"
+      ],
+      "description": "<p>This talk invites you on an exploration of advanced reverse engineering techniques applied to sophisticated proprietary hardware. Rather than focusing on well-known hands-on methods such as hardware decapsulation and schematic analysis, I will demonstrate how a unique combination of patent analysis, firmware reverse engineering, and theoretical modeling can unlock the intricacies of undocumented hardware technologies and their application semantics.</p><p>Qualcomm's QDSP6, also known as \"Hexagon\", is a little-known mobile-first microarchitecture distinct from ARM and RISC-V. In fact, Hexagon chips power critical components like cellular modems and DSPs within Snapdragon processors, which, in turn, drive a significant portion of the smartphone market, including certain iPhone models. A proprietary real-time operating system named QuRT runs on Hexagon cores side-by-side with the main OS running on ARM cores, such as Android or iOS. Furthermore, Hexagon chips are notoriously secure; any debugging access is severely restricted, even for OEM partners, unless they have close relationships with the vendor. As an independent hacker, you can't debug Hexagon cores at all, even with full hardware access to a Snapdragon development board.</p><p>JTAG is the industry standard for low-level debugging of computer hardware, which is presumed to be available, to some extent, on every System-on-Chip. During my investigation into JTAG availability on Qualcomm SoCs as part of a privately funded research project, I discovered a more complex scenario. The entire hardware debugging ecosystem for QDSP6 is governed by ISDB (In-Silicon Debugger), a proprietary technology layered on top of JTAG. ISDB is the kind of mysterious technology that cannot be looked up on Google (excluding name collisions with ISDB-T, a TV broadcasting standard); it can only be faintly glimpsed through sparse mentions in Qualcomm's technical specifications and a few obscure patents. I accepted the challenge to reverse engineer ISDB without touching hardware, which is the topic of this talk.</p><p>A foundational understanding of assembly programming, low-level debugging, and binary reverse engineering will be helpful.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Esage-UnveilingTheMysteriesOfQDSP6ISDBJTAG.pdf"
+    },
+    {
+      "id": "bhasia25-44563",
+      "title": "Who Cares Where Waldo Is. Locating macOS Users Without Their Consent",
+      "speakers": [
+        "Wojciech Regula"
+      ],
+      "description": "<div><span>Where is Waldo? You've probably experienced how challenging it can be to spot him in the popular illustrations </span><span>shared on social media. But is determining a macOS user's location just as difficult? This presentation will </span><span>demonstrate that it's surprisingly easy.</span></div><div><span><br></span></div><div><span>We'll begin by exploring the macOS privacy framework, focusing on why location services are treated as a </span><span>distinct privacy subsystem. The talk will delve into how location permissions are stored on macOS and examine </span><span>architectural weaknesses in the location database. We'll also discuss the attack surface of location services, </span><span>side-channel attacks, and techniques for obtaining non-precise location data.</span></div><div><span><br></span></div><div><span>Building on this foundation, I will share insights into my previous and newly discovered vulnerabilities that </span><span>lead to precise location data leaks. We'll review Apple's patches for these issues and outline directions for future </span><span>research in this area.</span></div><div><span><br></span></div><div><span>Finally, we'll discuss how attackers might not even need macOS zero-days to compromise a user's location. I'll </span><span>reveal how certain third-party macOS applications willingly share location data with any app that requests it. For </span><span>blue teams, the talk will provide actionable detection strategies to mitigate these risks.</span></div>"
+    },
+    {
+      "id": "bhasia25-43631",
+      "title": "Enhancing Modern Threat Intelligence: The Pivotal Role of Large Language Models in Extracting Actionable TTP Attack Chains",
+      "speakers": [
+        "Lorin Wu",
+        "Porot Mo",
+        "Jack Tang"
+      ],
+      "description": "<p>Currently, the application of LLMs within the security landscape has achieved widespread adoption, becoming a standard practice across the industry. In the realm of threat intelligence, LLMs have distinguished themselves through their exceptional capabilities in extracting IOCs and summarizing cyberattack reports, significantly enhancing the efficiency and precision of threat intelligence processing. However, concurrently, the defensive mechanisms against cyber threats have evolved to be more proactive and dynamic, transcending the traditional reliance on IOC intelligence. The focus has shifted towards deeply mining TTPs (the pinnacle of the Pyramid of Pain). For in-depth defense evaluation systems, the capture of TTP intelligence that can be simulated and executed is of utmost importance. This rapid capture and transformation of modern threat intelligence is crucial for the timely identification and response to cyberattacks, enabling organizations to stay ahead of the curve in the face of evolving security threats.<br><br>Indeed, the current process of extracting and converting the vast amount of unstructured cyberattack reports released by researchers and vendors in the cybersecurity field into executable TTP intelligence (Tactics, Techniques, and Procedures, with highly abstract) is predominantly handled by security experts. This task is extremely time-consuming and labor-intensive. In the face of this challenge, the urgent need arises for an efficient, automated, and precise method to analyze attack reports, accurately extract the TTP attack chains used by attackers, and subsequently generate executable simulation attack scripts based on these insights. After a comprehensive review of existing technologies, we have specifically focused on the approach of leveraging LLMs in conjunction with prompt engineering techniques. Through in-depth evaluation, we have discovered that while this method holds immense potential, none of the LLMs currently available on the market are ready for immediate use when it comes to extracting TTP attack chains. Even when combined with various prompt engineering techniques or enhanced with background knowledge through RAG techniques, the accuracy of their outputs falls short of satisfactory standards, indicating significant space for improvement.<br><br>We have innovatively implemented an efficient and practical method that ingeniously leverages two avenues to provide contextual support for LLMs, significantly overcoming the challenges in extracting TTP attack chains and converting them into executable formats. Specifically, we have incorporated both a pre-defined, optional set of TTPs and the extensive TTP data from existing knowledge graphs as contextual inputs for the LLMs to process. Experimental results have demonstrated a notable improvement in both accuracy and practicality.<br><br>In this presentation, we will delve into sharing our groundbreaking advancements in the field of modern threat intelligence, focusing on the three historic phases of TTP intelligence extraction: the initial exploration in the Bronze Age, the refinement in the Silver Age, culminating in the leap forward into the Golden Age. Subsequently, we will highlight the innovative combination of LLMs with other technologies \u2013 specifically, the strategies of LLM + BERT for precise re-ranking and LLM + RAG (Retrieval-Augmented Generation with TTP knowledge graphs) \u2013 to achieve rapid capture and transformation capabilities for modern threat intelligence.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Wu-Enhancing-Modern-Threat-Intelligence.pdf"
+    },
+    {
+      "id": "bhasia25-43190",
+      "title": "Determining Exploitability of Vulnerabilities with SBOM and VEX",
+      "speakers": [
+        "Anusha Penumacha",
+        "Srinija Kammari"
+      ],
+      "description": "<p>Software Composition Analysis tools are known to generate a flood of vulnerability data in third party code. The key challenge today is determining the number of vulnerabilities that are actually exploitable in the products that are shipped. A lot of tools have started exploring this problem. However, it cannot be completely solved without internal developer context on how a third party package is being used.</p><p>Executive Order 14028 - \"Improving the Nation's Cybersecurity\" (issued May 12, 2021) has compelled all critical software vendors to generate Software Bill of Materials (SBOM) and Vulnerability Exchange (VEX) documents for their products. Most of the federal agencies now mandate this requirement. Even a lot of commercial vendors now require SBOMs in order to safeguard their supply chain posture.</p><p>While SBOMs and VEX can be perceived as a pure compliance requirement, it can also be leveraged as a powerful resource to determine the exploitability of a vulnerability. By automating SBOM and VEX generation, we are trying to achieve EO Compliance in a scalable manner. Additionally, we are also using it to determine the exploitability of our findings. This way we try to minimize the false positives and enhance customer trust.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Penumacha-Determining-Exploitability-of-Vulnerabilities.pdf"
+    },
+    {
+      "id": "bhasia25-44144",
+      "title": "One Bug to Rule Them All: Stably Exploiting a Preauth RCE Vulnerability on Windows Server 2025",
+      "speakers": [
+        "Zhiniang Peng",
+        "Ver",
+        "Zishan Lin"
+      ],
+      "description": "<p>As the security protection mechanisms of the Windows operating system are constantly being proposed and applied, it is becoming increasingly difficult to find exploitable vulnerabilities on current Windows, especially vulnerabilities that can cause preauth 0-click RCE. But, is there really no such vulnerabilities?<br><br>A few months ago, we conducted an in-depth analysis of the Windows Remote Desktop Services and we found several Preauth RCE vulnerabilities in the Remote Desktop Licensing Service, some of them will lead to unauthenticated non-sandboxed 0-click RCE.<br><br>In this talk, we will explore the attack surface of the Remote Desktop Licensing Service, focusing on the newly identified vulnerability, CVE-2024-38077, which impacts all versions of Windows Server from 2003 to 2025. Despite Microsoft's various fortifications to Windows for decades and we didn't see preauth 0-click RCE in Windows for years, we still can exploit a single memory corruption vulnerability to complete the 0-click preauth RCE on Windows. We will then share our approach to bypassing all the mitigations on the latest Windows Server 2025 and build a 0-click preauth RCE exploit by using only CVE-2024-38077.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Peng-One-Bug-to-Rule-Them-All.pdf"
+    },
+    {
+      "id": "bhasia25-43447",
+      "title": "Foreign Information Manipulation and Interference (Disinformation 2.0) - How Patterns of Behavior in the Information Domain Threaten or Attack Organizations' Values, Procedures and Political Processes",
+      "speakers": [
+        "Franky Saegerman"
+      ],
+      "description": "<p>Over the past decade, foreign information manipulation and interference (FIMI) operations have grown in complexity and scope. More specifically, Russia and China have continuously invested resources into developing their hybrid warfare strategy. Hybrid warfare goes beyond physical confrontation. It can include the use of conventional forces but also other elements, such as FIMI operations, to shape the policy, geostrategic positions, public opinion, and capabilities of a target country.</p><p>The speed, availability, and cohesion of tools and tactics employed by foreign malign actors have increased in recent years as the result of increasing global interconnectivity via social media and the internet at large, as well as technological advancements - such as rapid improvements in generative AI - that increasingly enable faster, better, and cheaper FIMI operations and tactics including deep fakes, and manipulated content including text, images, audio, and video. Additionally, these campaigns increasingly seek to destabilize the very foundations of target countries - undermining democratic principles through the targeting of elections, eroding public trust in institutions and local media, and exploiting social divisions to distract and subvert the target's efforts toward progress.</p><p>The speaker will walk the audience through some Asia Pacific case studies that highlight patterns that targeted both NATO as an organization as well as individual NATO member countries and how there is often a link between different tactics, techniques, and procedures (TTPs) - such as usage of proxies, usage of sock puppet accounts, and increasing usage of generative AI to support their activities. FIMI campaigns also frequently target specific demographics to influence decision-making processes in politics, economy, or societal affairs. The lessons I will share will help any organization better prepare for these narrative attacks created by misinformation and disinformation.</p><p>Although attribution is not always straightforward on social media, it often becomes obvious through narrative analysis and social network analysis that foreign actors and the ecosystems they cultivate online covertly try to influence international public opinion on a wide range of topics and issues by amplifying polarization and eroding democratic discourse. The World Economic Forum 2024 Global Risks Report recognizes misinformation and disinformation as the #1 global threat with technological, economic, environmental, social, and political impacts. This talk will go deep into sharing examples and stories of why I also believe this to be the biggest risk to all organizations.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Saegerman-Foreign-Information-Manipulation.pdf"
+    },
+    {
+      "id": "bhasia25-43912",
+      "title": "Mini-App But Great Impact: New Ways to Compromise Mobile Apps",
+      "speakers": [
+        "Wei Wen",
+        "Xiangyu Cao",
+        "Jiangchunxi Hou",
+        "Zixi Liao",
+        "Yingyan Song",
+        "Zhongcheng Li",
+        "Yijie Zhao",
+        "Bin Ma"
+      ],
+      "description": "<p>In the mobile app ecosystem, super-apps serve as platforms hosting mini-apps, facilitating cross-platform operation across Android and iOS. Traditionally, attacks on mobile apps have targeted native applications, web pages, and networks. Our research pioneers a novel exploitation vector targeting mobile apps via mini-apps.<br><br>For security considerations, capabilities open to Mini-Apps need to be strictly restricted and implemented in the sandbox. After comprehensive research on 11 popular super-apps involving hundreds of APIs, we found the sandbox environment can not provide isolation as expected. Attackers can exploit different methods for sandbox escaping and privilege escalation such as attacks against storage and network capabilities, which lead to remote code execution (RCE) and account hijacking.<br><br>Additionally, we have adapted JavaScript prototype pollution for the mini-apps framework. This adaptation allows attackers to tamper with the mini-app environment logic, enabling malicious apps to invoke privileged APIs, inject parameters, and access sensitive data. This is the first instance of deploying this attack in mobile apps, with implications more severe than those in web security.<br><br>The significant risks we identified impacted 9 different super-apps with over 10 billion downloads. (All of the risks have already been reported and repaired.) Through our presentation, we want to expose a new remote attack surface for mobile apps, and improve the security of super-apps to better protect billions of user privacy.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-WEN-Mini-App-But-Great-Impact-New-Ways-to-Compromise-Mobile-Apps.pdf"
+    },
+    {
+      "id": "bhasia25-44148",
+      "title": "Should We Chat, Too? Security Analysis of WeChat's MMTLS Encryption Protocol",
+      "speakers": [
+        "Pellaeon Lin",
+        "Mona Wang",
+        "Jeffrey Knockel"
+      ],
+      "description": "<p>WeChat, with over 1.2 billion monthly active users, stands as the most popular messaging and social media platform in China and third globally. Instead of TLS, WeChat mainly uses a proprietary network encryption protocol called \"MMTLS\". We performed the first public analysis of the security and privacy properties of MMTLS and found it to be a modified version of TLS 1.3, with many of the modifications that WeChat developers made to the cryptography introducing weaknesses.<br><br>We also discovered a second layer of encryption inside MMTLS which we refer to as \"Business-layer encryption\". We analyzed the security and privacy of Business-layer encryption and found serious issues including metadata leak, forgeable integrity check signatures, potential AES-CBC padding oracle and Key, IV re-use in block cipher mode. These issues are not directly exploitable thanks to the protection of outer MMTLS encryption.<br><br>Finally, we hypothesize that WeChat's double-layer encryption is a technical debt, and discuss the wider trend of Chinese apps rolling their own crypto.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Lin-Should-We-Chat-Too.pdf"
+    },
+    {
+      "id": "bhasia25-43862",
+      "title": "KernJC: Automated Vulnerable Environment Generation for Linux Kernel Vulnerabilities",
+      "speakers": [
+        "Bonan Ruan",
+        "Jiahao Liu",
+        "Chuqi Zhang",
+        "Zhenkai Liang"
+      ],
+      "description": "<p>Linux kernel vulnerability reproduction is a critical task in system security. To reproduce a kernel vulnerability, the vulnerable environment and the Proof of Concept (PoC) program are needed. Most existing research focuses on the generation of PoC, while the construction of the environment is overlooked. However, establishing an effective vulnerable environment to trigger a vulnerability is challenging. Firstly, it is hard to guarantee that the selected kernel version for reproduction is vulnerable, as the vulnerability version claims in online databases can occasionally be incorrect. Secondly, many vulnerabilities cannot be reproduced in kernels built with default configurations. Intricate non-default kernel configurations must be set to include and trigger a kernel vulnerability, but less information is available on how to recognize these configurations.<br><br>To solve these challenges, we propose a patch-based approach to identify real vulnerable kernel versions and a graph-based approach to identify necessary configs for activating a specific vulnerability. We implement these approaches in a tool, KernJC, automating the generation of vulnerable environments for kernel vulnerabilities. To evaluate the efficacy of KernJC, we build a dataset containing 66 representative real-world vulnerabilities with PoCs from kernel vulnerability research in the past five years. The evaluation shows that KernJC builds vulnerable environments for all these vulnerabilities, 32 (48.5%) of which require non-default configs, and 4 have incorrect version claims in the National Vulnerability Database (NVD). Furthermore, we conduct large-scale spurious version detection on kernel vulnerabilities and identify 128 vulnerabilities that have spurious version claims in NVD. To foster future research, we release KernJC with the dataset in the community.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Ruan-KernJC.pdf",
+      "whitepaper_url": "https://i.blackhat.com/Asia-25/Asia-25-Ruan-KernJC-wp.pdf"
+    },
+    {
+      "id": "bhasia25-43262",
+      "title": "Watch Your Phone: Novel USB-Based File Access Attacks Against Mobile Devices",
+      "speakers": [
+        "Florian Draschbacher",
+        "Lukas Maar"
+      ],
+      "description": "<div><span>Modern mobile OSs employ lock screens and user confirmation prompts to shield sensitive data from attackers with access to the device's USB port. In this talk, we present novel attacks and attack techniques that bypass both of these critical security mechanisms to gain USB-based file access on state-of-the-art mobile devices.</span></div><div><span><br></span></div><div><span>In the first part of this talk, we uncover the shortcomings of user confirmation prompts for USB file access in iOS and Android. We present novel attack techniques that allow a malicious USB charger to effectively establish a data connection and inject input events at the same time. We show a live demo of an end-to-end attack that uses this technique to bypass user confirmation prompts for USB file access virtually stealthily on a state-of-the-art Samsung phone.</span></div><div><span><br></span></div><div><span>In the second part of this talk, we present novel attacks against locked Android devices. These attacks exploit vulnerabilities in AOSP and vendor-specific Android variants to gain file access through USB. We show two live demos, one of which is an end-to-end attack that allows full read-write access to files on a locked Google Pixel running Android 14 or 15.</span></div><div><span><br></span></div><div><span>We conclude our presentation with a discussion of suitable mitigations for our novel attacks.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Draschbacher-Watch-Your-Phone.pdf"
+    },
+    {
+      "id": "bhasia25-44173",
+      "title": "Operation BlackEcho: Voice Phishing Using Fake Financial and Vaccine Apps",
+      "speakers": [
+        "Hyeji Heo",
+        "Sungchan Jang",
+        "Byungwoo Hwang",
+        "Jinyong Byun",
+        "Kuyju Kim"
+      ],
+      "description": "<div><span>Voice phishing (a.k.a. vishing) is a crime in which scammers deceive victims through phone calls in order to fraudulently obtain funds or steal personal information.</span></div><div><span><br></span></div><div><span>Malicious apps are needed for voice phishing attacks targeting smartphone users. These apps intercept and block phone calls, and tamper with call screens and call logs. </span><span>We have identified an attack group that uses malicious apps disguised as financial and vaccine apps for voice phishing. We estimated that the group has been active since late 2021. </span><span>The attack group lures victims through ads or text messages about low-interest loans or government subsidies. If victims take the bait, the group distributes the 1st malicious app disguised as a financial app. The 1st app installs a 2nd malicious app disguised as a vaccine app and steals victims' input data. </span><span>The 2nd app is used for voice phishing, remote control, victim monitoring, and data leakage. In the second half of 2024, this app was split into two separate apps: a 2nd_main and a 2nd_call app.</span></div><div><span><br></span></div><div><span>We have tracked and analyzed these malicious apps for a year. In this presentation, we will introduce the malicious apps, infrastructure, and recent trends of the attack group.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Heo-Operation-BlackEcho.pdf"
+    },
+    {
+      "id": "bhasia25-43817",
+      "title": "Fake Deals and Real Steals: The Art of E-Commerce Fraud",
+      "speakers": [
+        "Sergey Shekyan",
+        "Qinger Chen"
+      ],
+      "description": "<p>As e-commerce becomes more deeply embedded in our daily lives, fraud continues to evolve, keeping pace with every new opportunity. Attackers are continually looking to exploit vulnerabilities at every stage of the e-commerce transaction lifecycle. From sneaking subpar products alongside legitimate listings to manufacturers engaging in bidding wars for seller placement, and manipulating logistics, payments, and even buyer psychology\u2014fraudsters are looking for ways to game the entire system.</p><p>This presentation follows the journey of a fraudulent product, uncovering how fraudsters try to infiltrate e-commerce platforms and push it to the top of search results. Through a real-world example, it will demonstrate how fraudsters exploit algorithms to push their content, while demand intelligence, including inventory coordination and API scraping, fuels their operations.</p><p>Logistics fraud will be explored in depth, from fake tracking numbers to exploiting platform policies, revealing how fraudsters deceive shipping companies, platforms, and buyers alike. By breaking down each stage, the presentation will showcase how these schemes are detected and how algorithms can mitigate them proactively.</p><p>To bring these stories to life, we'll share our experience of undercover visits to warehouses, agencies and factories to observe fraud operations. These experiences allowed us to connect the dots between online scams and real-world logistics, and helped us develop strategies to tackle fraudster schemes.</p><p>The talk will also examine how fraudulent buyers exploit the system, using fake orders and false claims to manipulate the platform and scale their profits. It will emphasize the importance of security expertise in uncovering these frauds and highlight how experience in e-commerce risk control can help identify critical vulnerabilities that may otherwise go unnoticed.</p><p>This session provides valuable insights for security and risk control professionals in e-commerce and logistics, while also offering a fun and educational experience for anyone who shops online \u2014 just like you.</p><p><em><strong>Note: This session is available in-person only and will not be recorded for on-demand viewing.</strong></em></p>"
+    },
+    {
+      "id": "bhasia25-43871",
+      "title": "Invisible Ink: Privacy Risks of CSS in Browsers and Emails",
+      "speakers": [
+        "Leon Trampert",
+        "Daniel Weber"
+      ],
+      "description": "<p>Recently, Google Chrome and other browsers have started restricting traditional tracking methods, such as third-party cookies, to improve user privacy. Still, websites can leverage browser fingerprinting to track users across websites, even when they try to protect their privacy. Interestingly, the same principles can be leveraged to enhance the security of web applications, such as in risk-based authentication, where users are identified based on their browser fingerprint.</p><p>Traditionally, the tracking industry and privacy community have concentrated on JavaScript-based fingerprinting, which is widely used by websites for tracking and security purposes. This focus has led to the development of spot mitigations that limit the execution of JavaScript.<br></p><p>In this talk, we showcase that these mitigations can lead to a false sense of security. We explore the novel privacy implications of recent additions to Cascading Style Sheets (CSS), a style-sheet language for the web that defines the look and feel of HTML content. Unlike JavaScript, CSS is often considered harmless and, thus, for example, enabled by default in most email clients when rendering HTML emails. </p><p>We show how CSS can be used to track users across websites, enabling third-party tracking and user profiling without the need for cookies or JavaScript, thereby bypassing state-of-the-art mitigations. Even more concerning, modern browser engines, which form the backbone of most email clients, allow these tracking techniques to be used in HTML emails due to their low requirements. </p><p>Email fingerprinting opens up an arsenal of opportunities for tracking parties and malicious actors alike, including user profiling, targeted phishing, and spam campaigns.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Trampert-Invisible-Ink.pdf"
+    },
+    {
+      "id": "bhasia25-44613",
+      "title": "Keynote: Perspectives on Trust in Hardware Supply Chains",
+      "speakers": [
+        "Bunnie Huang"
+      ],
+      "description": "<p>Hardware is born of supply chains - an opaque global network of agents, each working to optimize their local gains. In this talk, bunnie shares some of his experiences navigating the shady underbelly of hardware supply chains. These experiences inform us of important practical differences between securing software and hardware supply chains. We'll wrap up by distilling these experiences into a classification system that anyone can use to establish a grounded perspective on trust in hardware.</p><p><em>Open to all Black Hat Pass Holders.</em></p>"
+    },
+    {
+      "id": "bhasia25-44052",
+      "title": "Impostor Syndrome - Hacking Apple MDMs Using Rogue Device Enrolments",
+      "speakers": [
+        "Marcell Moln\u00e1r",
+        "Magdalena Oczad\u0142y"
+      ],
+      "description": "<p>Apple's solution for mobile device management seems like an airtight process. Enterprise customers buy devices from registered retailers, these are automatically registered in Apple Business Manager which in turn integrates seamlessly with the customer's choice of MDM platform. A company can have devices set up and shipped to remote employees without ever touching them. <br></p><p>With many seemingly airtight systems, the devil is in the details. How do all these systems fit together? How do they authenticate each other? And most importantly who is responsible for security? </p><p>This talk will focus on the gaps between the systems and how an attacker can leverage those to compromise enterprise customers. We will reverse engineer the enrolment process in MacOS, bypass security controls, build rogue machines and look at a series of common misconfigurations that when combined can have devastating outcomes. We will see how the black box of the Apple MDM process can be opened up and can contain some surprising loot.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Molnar-Impostor-Syndrome-Hacking-Apple-MDMs.pdf"
+    },
+    {
+      "id": "bhasia25-44025",
+      "title": "Standing on the Shoulders of Giants: De-Obfuscating WebAssembly Using LLVM",
+      "speakers": [
+        "Vikas Gupta",
+        "Peter Garba"
+      ],
+      "description": "<p>WebAssembly (Wasm) is an increasingly popular compilation target, offering compact representation, efficient validation and compilation, and safe low to no-overhead execution. Wasm is popular not only on the browsers but finding adoption across various platforms. As its popularity grows for various applications, so does the need to obfuscate it, subsequently raising the necessity to de-obfuscate. In this talk we will discuss how to de-obfuscate Wasm code using LLVM compiler infrastructure. <br><br>There is extensive literature available on the security of Wasm from an exploitation perspective, i.e. finding vulnerabilities, writing exploits and secure coding practices. In this work, we will discuss Wasm security from a reverse engineering perspective, specifically how to deal with obfuscate and de-obfuscate Wasm. Broadly we will be covering the following topics in this presentation:<br>- Essential Wasm internals from reverse-engineering perspective. <br>- Brief introduction to obfuscation techniques.<br>- How to perform compiler-based obfuscation of Wasm code using various open-source tooling. <br>- The core idea - how to de-obfuscate Wasm code using LLVM compiler infrastructure.<br><br>LLVM implements extensive code optimisation techniques that can be harnessed to simplify diverse obfuscation techniques. We will use this very idea in our de-obfuscation journey, commencing with simple obfuscation scenarios and progressively ratcheting up the complexity level to demonstrate the effectiveness of our approach. We will also show application of our learnings to some real world scenarios. <br><br>The final takeaway for the audience will be an understanding of how to obfuscate and de-obfuscate Wasm code. Moreover, they will gain confidence to tackle obfuscated code without writing pattern-based simplification rules. The ideas and techniques discussed are not limited to Wasm, in fact they are language and platform agnostic, and can be applied to any obfuscated code.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Gupta-StandingOnTheShouldersOfGiants.pdf"
+    },
+    {
+      "id": "bhasia25-44006",
+      "title": "Behind Closed Doors - Bypassing RFID Readers",
+      "speakers": [
+        "Julia Zdu\u0144czyk"
+      ],
+      "description": "<p>Cloning RFID tags - you probably tried it, or at least heard about it.</p><p>But what if cloning someone's card isn't an easy option? How else can one gain entry into high-security areas without direct access to the credentials?</p><p>In my presentation, I will discuss techniques for bypassing physical access control security mechanisms in Red Teaming scenarios, accompanied by live demos of the attacks discussed.</p><p>We will cover:<br>- How to intercept the communication between the reader and the controller that are using the Wiegand protocol;<br>- How to use this entry point to leverage access through different attacks;<br>- How the OSDP protocol addresses the shortcomings of Wiegand, and what are the security implications of using it;<br>- How could you use a DoS attack on a reader to aid you during a Red Team assessment;<br>- What are the other ways to bypass the access control security mechanisms?</p><p>I will also share some interesting and fun stories from Red Team engagements, demonstrating practical applications of these techniques in real-life scenarios \u2013 hopefully without getting caught ;)</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zdunczyk-Behind-Closed-Doors-Bypassing-RFID-Readers.pdf"
+    },
+    {
+      "id": "bhasia25-43619",
+      "title": "(Mis)adventures with Copilot+: Attacking and Exploiting Windows NPU Drivers",
+      "speakers": [
+        "Nicola Stauffer",
+        "G\u00fcrkan G\u00fcr"
+      ],
+      "description": "<p>In May 2024, Microsoft introduced a new category of PCs designed for AI, called Copilot+ PCs. According to Microsoft, those PCs are starting a new chapter of AI integration on Windows and, thus, personal computing. Each device will have an NPU enabling the device to run Large-Language Models (LLMs) locally. But how exactly were those NPUs integrated into Windows? <br><br>In this talk, we will do a deep dive into the architecture of NPUs and discuss how relevant drivers on Windows are implemented. We will describe different vectors to attack NPUs and showcase how we, as an attacker, can interact with an NPU. Then, we will explain and showcase a bug from two different NPU vendors. For one NPU, we will demonstrate how we can use the discovered bug to escalate our privileges as a concrete exploitation example. Via this Briefing, the attendees will gain insights on NPU bugs and their security implications, and learn how to exploit them on Copilot+ PCs on the latest Windows 11 version 24H2.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Stauffer-Misadventures-With-Copilot-Plus.pdf"
+    },
+    {
+      "id": "bhasia25-44092",
+      "title": "I Have Got to Warn You, It Is a Learning Robot: Using Deep Learning Attribution Methods for Fault Injection Attacks",
+      "speakers": [
+        "Karim Abdellatif"
+      ],
+      "description": "<p>Deep Learning (DL) has recently received significant attention in breaking cryptographic implementations on embedded systems. However, research on the subject mostly focused on side-channel attacks (SCAs).</p><p>In this talk, we present for the first time the use of DL attribution methods used for image processing as a reverse engineering tool for fault injection (FI). We present a practical example in the case of attacking a secure EEPROM (Analog Devices DeepCover DS28C36) in black box approach.</p><p>We collect power consumption traces from the chip while the read memory command is executed. This acquisition is performed when the EEPROM is protected and unprotected. Then, we deliver the power consumption traces to a DL model to learn the difference between them. After that, we use deep learning attribution methods such as gradient or layer-wise relevance propagation (LRP) to reverse the deep learning model decision. This step guides the attacker about the manipulation timings of the security fuses of the EEPROM. By using this knowledge, we conclude that the chip performs a double checking as a countermeasure against single fault injection attacks. Finally, we perform a double laser fault injection which bypasses the two security checks, and therefore we can extract the protected EEPROM user secrets.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Abdellatif-I-Have-Got-to-Warn-You.pdf"
+    },
+    {
+      "id": "bhasia25-44145",
+      "title": "The Drone Supply Chain's Grand Siege: From Initial Breaches to Long-Term Espionage on High-Value Targets",
+      "speakers": [
+        "Pierre Lee",
+        "Vickie Su",
+        "Philip Chen"
+      ],
+      "description": "<div><span>In mid-2024, we disclosed a cyber campaign named TIDRONE, attributed to an unidentified threat actor likely linked to Chinese-speaking groups. This campaign revealed a strong focus on the military industry, specifically targeting drone manufacturers in Taiwan.</span></div><div><span><br></span></div><div><span>Further investigation led to the identification of a related campaign, VENOM, attributed to the cyberespionage group Earth Ammit, which targets military-related industries in Eastern Asia. Since 2022, the VENOM campaign demonstrated Earth Ammit's supply-chain attack strategy, focusing initially on service providers as an entry point to their ultimate targets. This campaign prefers applying shared tools, making attribution difficult, and emphasizing credential theft, particularly from Active Directory (AD), as a precursor to further supply-chain attacks.</span></div><div><span><br></span></div><div><span>Earth Ammit employed distinct TTPs and toolsets based on the stage of their target. For initial breaches involving service providers, the group used a broad range of shared tools to minimize the risk of attribution. These tools facilitated lateral movement and credential harvesting, primarily aimed at compromising the service provider's infrastructure as a stepping stone to reach more valuable targets. In contrast, Earth Ammit adopted more sophisticated and tailored approaches when accessing their true targets. This phase involved the deployment of customized malware, including advanced RATs like CXCLNT and CLNTEND, which were analyzed before. The group shifted its focus to long-term espionage tactics, ensuring persistence and deep infiltration into critical systems. This variation in toolsets and TTPs demonstrated Earth Ammit's strategic adaptability, with simpler methods for penetrating supply-chain networks and more complex, targeted tools reserved for high-value military targets to maximize intelligence gathering and maintain prolonged access.</span></div><div><span><br></span></div><div><span>This presentation offers an in-depth analysis of the TIDRONE and VENOM campaigns, revealing Earth Ammit's evolving arsenal and multi-stage intrusion strategies. It also emphasizes the link between VENOM and Dalbit, highlighted by their shared TTPs, common target profiles, and repeated use of similar tools.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Chen-The-Drone-Supply-Chains-Grand-Siege.pdf"
+    },
+    {
+      "id": "bhasia25-43223",
+      "title": "A Closer Look at the Gaps in the Grid: New Vulnerabilities and Exploits Affecting Solar Power Systems",
+      "speakers": [
+        "Daniel dos Santos",
+        "Francesco La Spina",
+        "Stanislav Dashevskyi"
+      ],
+      "description": "<p>Distributed energy resources (DER), such as solar power systems, are rapidly becoming essential elements of power grids worldwide. However, cybersecurity for these systems is often an afterthought, creating a growing risk to grid reliability. While each residential solar system produces limited power, their combined output reaches dozens of gigawatts \u2014 making their collective impact on grid stability too significant to ignore.<br></p><p>Aimed at deployment in millions of households, solar power systems are designed for ease of use and can be managed remotely. To this end, we analyzed the products of multiple leading solar power system vendors. We discovered close to 50 new vulnerabilities affecting Sungrow, Growatt, and SMA. These vulnerabilities affect the whole solar power ecosystem ranging from power inverters and network connectivity dongles to mobile applications and cloud backends. We will demonstrate a complete exploit chain that allows attackers to control a fleet of power inverters remotely, thus enabling a coordinated attack against power grids. We will also show how this type of attack is very hard to stop during the execution, making grid stabilization a tricky task and potentially forcing grid operators to crisis measure reactions, such as emergency power generation and load shedding. We will then briefly discuss a potential \"incident response\" plan (spoiler alert: it would happen after sundown). As an added bonus, we will discuss discovered vulnerabilities that affect user privacy, allowing to hijack user accounts and leak personal data.<br></p><p>While power grids belong to highly regulated critical infrastructure with stringent reliability requirements, most DER systems are \"typical\" IoT systems with \"typical\" security issues due to cost constraints and the overall low maturity of the technologies. We will conclude the talk with the ongoing DER risk mitigation initiatives and encouragement for security researchers to continue with the analysis of DER systems.<strong></strong></p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-dosSantos-A-Closer-Look-at-the-Gaps-in-the-Grid.pdf"
+    },
+    {
+      "id": "bhasia25-43932",
+      "title": "CDN Cannon: Exploiting CDN Back-to-Origin Strategies for Amplification Attacks",
+      "speakers": [
+        "Zhiwei Lin",
+        "Ziyu Lin"
+      ],
+      "description": "<p>Content Delivery Networks (CDNs) are widely adopted to enhance web performance and offer protection against DDoS attacks. However, our research unveils a critical vulnerability within CDN back-to-origin strategies, allowing attackers to exploit these mechanisms for massive amplification attacks, termed as Back-to-Origin Amplification (BtOAmp) attacks. These attacks leverage CDN configurations that prioritize performance over security, leading to the exhaustion of origin server resources.<br><br>In this talk, we will introduce a new class of HTTP amplification attacks that leverage CDN edge servers as amplifiers to break CDN's DDoS protection mechanisms. By systematically exploring the CDN back-to-origin strategies, we identified five amplification attacks that can effectively compromise the CDN's DDoS protection by directly attacking the origin server. Our experiments show that an attacker can destroy a 1 Gbps bandwidth website using only a laptop with 200 Kbps bandwidth.<br><br>We will also discuss mitigation strategies, along with our responsible disclosure process, where multiple CDN vendors acknowledged the vulnerabilities. This research underscores the need for CDN operators and users to recognize the latent risks within CDN infrastructures and adopt proactive security measures.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Ziyu-Zhiwei-CDN-Cannon.pdf",
+      "whitepaper_url": "https://i.blackhat.com/Asia-25/Asia-25-Ziyu-Zhiwei-CDN-Cannon-wp.pdf"
+    },
+    {
+      "id": "bhasia25-43247",
+      "title": "KernelSnitch: Leaking Kernel Heap Pointers by Exploiting Software-Induced Side-Channel Leakage of Kernel Hash Tables",
+      "speakers": [
+        "Lukas Maar",
+        "Jonas Juffinger"
+      ],
+      "description": "<div><span>In this talk, we present a generic software-induced side-channel attack, KernelSnitch, on the operating system. With this new side-channel attack we opened up a novel attack surface in operating systems that are both, potent and difficult to patch. It allows a kernel heap pointer leak without exploiting any memory safety vulnerabilities and is hardware agnostic, as it does not use any hardware-induced side channels.</span></div><div><span><br></span></div><div><span>In contrast to previous side-channel attacks on the Linux kernel, our side channel advances significantly in two ways: First, it is hardware agnostic and exploits only the timing differences of access operations (within syscalls) to hash tables in the Linux kernel. Second, it is the first side-channel attack on the Linux kernel that enables a byte-accurate pointer leak on the kernel heap.</span></div><div><span><br></span></div><div><span>We conduct an in-depth root cause analysis of this side channel by analyzing one hash table instance, i.e., the futex hash table. In particular, we show that the design of hash tables in the Linux kernel inherently enables this side-channel attack.</span></div><div><span><br></span></div><div><span>Finally, we present a live demo where we perform an end-to-end attack that leaks a kernel heap pointer as an unprivileged user. This attack works in sandboxed environments, such as Docker, and across multiple architectures, including x86_64, AArch64, and RISC-V.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Maar-KernelSnitch.pdf"
+    },
+    {
+      "id": "bhasia25-44912",
+      "title": "Meetup - Staying Sharp & Staying Legal: Ethical Hacking in APAC",
+      "speakers": [
+        "Fyodor Yarochkin"
+      ],
+      "description": "<p>Join us for an engaging Ethical Hacking Meetup at Black Hat Asia, where we'll dive into the legal and ethical boundaries of security research in the APAC region. With diverse cybersecurity laws and regulations across countries, it's critical to understand how to conduct security research responsibly, avoid legal pitfalls, and stay compliant while sharpening your hacking skills. Beyond knowledge-sharing, this meetup is designed to foster connections. This is your chance to exchange insights, discuss challenges, and expand your professional network in a relaxed, informal setting.</p><p><strong>Open to all passholders.</strong></p><p><strong>In-person only \u2013 this session will not be recorded or available on-demand.</strong><br></p>"
+    },
+    {
+      "id": "bhasia25-44176",
+      "title": "The ByzRP Solution: A Global Operational Shield for RPKI Validators",
+      "speakers": [
+        "Donika Mirdita",
+        "Jens Frie\u00df",
+        "Haya Schulmann",
+        "Michael Waidner"
+      ],
+      "description": "<p>The Border Gateway Protocol (BGP) is the core routing protocol on the Internet, but it lacks security mechanisms. At the same time, the democratization of access has transformed the Internet into the default platform, where global services and communications happen. As a result, routing security quickly became an issue of great economic and national security concern. The US Federal Communications Commission and the White House Office of the National Cyber Director formally recognized the urgent need to invest more on protecting Internet routing, and standardize efficient security protocols.<br><br>The Resource Public Key Infrastructure (RPKI) protocol is rapidly becoming the global standard for enforcing Internet routing security for BGP. It currently covers over 50% of IPv4 and IPv6 prefixes and has been deployed by at least 27% of networks in the world, including major Tier-1 providers. However, RPKI is not secure by design. Research on its robustness and security properties has shown that despite the minimal public facing interfaces, RPKI suffers from widespread crash-inducing vulnerabilities and exploitable protocol loopholes. Attacks on RPKI have been well-documented over the years, including previous Black Hat talks. Now that RPKI is poised to go global, with the potential of being included into strict security regulations, it is time to reconsider the current vulnerable deployments and improve their robustness. <br><br>In this work, we introduce Byzantine RPKI (ByzRP), a secure, robust, and distributed intermediate RPKI service that provides a stable output for all RPKI clients worldwide, while being able to completely bypass stalling and denial-of-service attacks on the RPKI infrastructure, with no downtime and service failure. We also offer a secure live ByzRP deployment for all interested parties worldwide to test it and eventually incorporate it into their networks.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Mirdita-The-ByzRP-Solution.pdf"
+    },
+    {
+      "id": "bhasia25-44583",
+      "title": "Dismantling the SEOS Protocol",
+      "speakers": [
+        "Iceman",
+        "Adam (evildaemond) Foster"
+      ],
+      "description": "<div><span>In this talk, we present the first open source implementation of HID SEOS communication protocol over RFID. </span><span>HID SEOS is a credential technology designed to provide enhanced security, flexibility, and convenience for access control and identity management applications. </span><span>It's currently the leading access control solution for HID Global and is widely used in corporate, educational, healthcare, and government settings.</span></div><div><span><br></span></div><div><span>The documentation for this card technology is not publicly available so no previous open source implementation exists.</span></div><div><span>We will demonstrate how it works and give insights in our process of making this project happen. The source code has been incorporated into the Proxmark3 project.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Iceman-dismantling-the-seos-protocol.pdf"
+    },
+    {
+      "id": "bhasia25-43714",
+      "title": "The Problems of Embedded Python in Excel, or How to Excel in Pwning Pandas",
+      "speakers": [
+        "Shalom Carmel",
+        "Ofir Carmel"
+      ],
+      "description": "<div><span>In Windows build 2407, Microsoft released Python support inside Excel as embedded =PY() functions. According to the Microsoft website: </span><span></span><span>\"Python in Excel brings the power of Python analytics into Excel. Use it to process data in Excel with Python code. You type Python directly into a cell, the Python calculations run in the Microsoft cloud, and your results are returned to the worksheet. Python in Excel comes with a core set of Python libraries provided by Anaconda that you can use to simplify your data analysis, find patterns and hidden insights, and visualize your data with plots.\"</span></div><div><span><br></span></div><div><span>The Python code from the PY() Excel function is executed as a Jupyter notebook on Microsoft-managed Jupyter servers. The PY() Excel function has a built-in connection to Excel data and cells as Python pandas objects, and can return discrete values, lists, or pandas datasets.</span></div><div><span><br></span></div><div><span>The implementation creates several attack surfaces:</span></div><div><span>-The Microsoft Azure host and cluster where the Python code runs</span></div><div><span>-The Jupyter server where the Python code runs</span></div><div><span>-3rd parties that share the runtime environment</span></div><div><span><br></span></div><div><span>Despite heavy restrictions on the environment, using Excel data processing capabilities and Python it is possible to upload and execute binaries like nmap and netcat, install rpm packages, and upload and execute shell scripts. </span><span></span><span>It is also possible to poison the Python environment and possibly exfiltrate 3rd party data.</span></div><div><span><br></span></div><div><span>The presentation will show python code, Excel definitions and steps to automate all of the above, that anyone with an Excel spreadsheet can do at home.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Carmel-The-Problems-of-Embedded-Python-in-Excel.pdf"
+    },
+    {
+      "id": "bhasia25-43567",
+      "title": "Sweeping the Blockchain: Unmasking Illicit Accounts in Web3 Scams",
+      "speakers": [
+        "Wenkai Li",
+        "Zhijie Liu",
+        "Xiaoqi Li"
+      ],
+      "description": "<p>The web3 applications have recently been growing, especially on the Ethereum platform, starting to become the target of scammers. The web3 scams, imitating the services provided by legitimate platforms, mimic regular activity to deceive users. </p><p>We will provide a case study where attendees will learn how a malicious scam mimics a normal transaction to deceive users. Previous studies have primarily concentrated on de-anonymization and phishing nodes, neglecting the distinctive features of web3 scams. Moreover, the current phishing account detection tools utilize graph learning or sampling algorithms to obtain graph features. However, large-scale transaction networks with temporal attributes conform to a power-law distribution, posing challenges in detecting web3 scams.</p><p>In this talk, we will introduce ScamSweeper, a novel framework designed to address these challenges. ScamSweeper focuses on the dynamic evolution of transaction graphs to better detect Web3 scams on Ethereum. Attendees will learn how ScamSweeper improves on existing methods by utilizing a structure-temporal random walk to sample transaction networks, capturing both temporal and structural features. The framework also incorporates a variational transformer to analyze the dynamic evolution of transaction patterns over time.</p><p>To detect and analyze these scams, we've collected a large-scale transaction dataset for experiments consisting of web3 scams, phishing, and normal accounts, which are from the first 18 million block heights on Ethereum. Our experiments indicate that ScamSweeper exceeds the state-of-the-art in detecting web3 scams, with advantages of 17.29% in weighted F1-score. In addition, ScamSweeper in phishing node detection has an advantage of 17.5% in F1-score.</p><p>We will walk through how to collect large-scale datasets, what the distinctions of the datasets are in various attributes, how Scamsweeper samples the large-scale transaction data and reduces computational costs, and how Scamsweeper works in web3 scam detection. Attendees will gain a clear understanding of how to apply ScamSweeper to real-world Ethereum transactions, and how to incorporate dynamic evolution analysis into malicious behavior research.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Li-Sweeping-the-Blockchain-Unmasking-Illicit-Accounts-in-Web3-Scams.pdf"
+    },
+    {
+      "id": "bhasia25-43736",
+      "title": "State Manipulation: Unveiling New Attack Vectors in Bluetooth Vulnerability Discovery through Protocol State Machine Reconfiguration",
+      "speakers": [
+        "Lidong Li",
+        "Oliver Dong",
+        "Xiao Wang",
+        "Lewei Qu"
+      ],
+      "description": "<p>The Bluetooth protocol has become ubiquitous, supporting a wide range of devices from personal gadgets like headphones and smartphones to complex systems in automotive and IoT environments. While Bluetooth's flexibility and performance have been thoroughly validated, an overlooked attack surface exists within the protocol's underlying state machines. <br><br>This study uncovers Bluetooth vulnerabilities by analyzing state machine mechanisms in various applications, including automotive and mobile devices. Unlike prior research, which primarily focuses on traditional Bluetooth security issues\u2014such as buffer overflows or crashes triggered by malformed packets in the protocol's Type-Length-Value (TLV) structure\u2014our work delves into the complexities of state machine interactions among supported profiles within the protocol stack. By carefully examining state machine sequences and their interdependencies, we attempt to break the standard execution order and reconfigure protocol interaction states, thereby opening a new path for Bluetooth protocol vulnerability discovery.<br><br>Since state machine-based vulnerabilities often do not produce visible logs or crash data, they frequently evade detection. We will provide in-depth insights into techniques for manipulating Bluetooth state machine interactions, focusing on systematic methods for discovering these vulnerabilities and assessing their impact on the Bluetooth ecosystem.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Li-State-Manipulation.pdf"
+    },
+    {
+      "id": "bhasia25-43972",
+      "title": "Inbox Invasion: Exploiting MIME Ambiguities to Evade Email Attachment Detectors",
+      "speakers": [
+        "Jiahe Zhang",
+        "Jianjun Chen",
+        "Qi Wang",
+        "Hangyu Zhang",
+        "Shengqiang Li",
+        "Chuhan Wang",
+        "Jianwei Zhuge",
+        "Haixin Duan"
+      ],
+      "description": "<p>Email attachments have become a favored delivery vector for malware campaigns. In response, email attachment detectors are widely deployed to safeguard email security. However, an emerging threat arises when adversaries exploit parsing discrepancies between email detectors and clients to evade detection. Currently, uncovering these vulnerabilities still depends on manual, ad hoc methods. </p><p>In this session, we perform the first systematic evaluation of email attachment detection against parsing ambiguity vulnerabilities. We propose a novel testing methodology, MIMEminer, to systematically discover evasion vulnerabilities in email systems. We evaluated our methodology against 16 content detectors of popular email services like Gmail and iCloud, and 7 popular email clients like Outlook and Thunderbird. In total, we discovered 19 new evasion methods affecting all tested email services and clients. We further analyzed these vulnerabilities and identified three primary categories of malware evasions. We have responsibly reported those identified vulnerabilities to the affected providers to help with the remediation of such vulnerabilities and received acknowledgments from Google Gmail, Apple iCloud, Coremail, Tencent, Amavis and Perl MIME-tools.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Zhang-Inbox-Invasion-Exploiting-MIME-Ambiguities.pdf"
+    },
+    {
+      "id": "bhasia25-43954",
+      "title": "AI-Powered Image-Based Command and Control (C2) Framework: Utilizing AI Models to Conceal and Extract Commands in C2 Images",
+      "speakers": [
+        "Qian Feng",
+        "Chris Navarrete"
+      ],
+      "description": "<p>Generative AI concentrates on generating novel and unique content in various forms, including text, image, and video. Many researchers focus on utilizing GenAI models to improve our lives or identifying vulnerabilities in GenAI models. In this talk, we investigate the potential application of GenAI for malicious purposes. Specifically, we aim to explore the feasibility of training a model to serve Command and Control (C2) attacks.<br></p><p>Many C2 attacks have started to rely on the steganography techniques to hide their C2 secrets in images. Even if the firewall enables the decryption feature, it is still hard for security researchers to identify C2 secrets in images within decrypted network payloads. However, it is possible to detect existing C2 implants by identifying the decoding logic in the code. Most steganography techniques used by attackers are rule-based to embed the payload in the least significant bytes of an existing image. The decoding logic is also hard coded in the implant to retrieve C2 secrets. It could be easy to detect the decoding logic in the code using antivirus software via code analysis.<br></p><p>In this talk, we would like to adapt existing ML based steganography techniques for C2 attacks. More specifically, we propose an AI-enhanced C2 framework. It will employ AI models to generate visually indistinguishable encoded images with C2 secrets, and a decoder model which can recover the original C2 secrets from images. The decoding logic is no longer hard coded but a legitimate ML model. This makes the detection more challenging for traditional anti-virus techniques. The decoder model can be retrained to change its hash value to evade signature based detections. We investigate the feasibility of utilizing AI models to generate and decode C2 images, and also show the effectiveness of our framework with a live demo.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Feng-AI-Powered-Image-Based-C2-Framework.pdf",
+      "whitepaper_url": "https://i.blackhat.com/Asia-25/Asia-25-Feng-AI-Powered-Image-Based-C2-Framework.-wp.pdf"
+    },
+    {
+      "id": "bhasia25-44592",
+      "title": "The Black Hat Asia Network Operations Center (NOC) Report",
+      "speakers": [
+        "Neil (Grifter) Wyler",
+        "Bart Stump"
+      ],
+      "description": "<p>Back with another year of soul-crushing statistics, the Black Hat NOC team will be sharing all of the data that keeps us equally puzzled, and entertained, year after year. We'll let you know all the tools and techniques we're using to set up, stabilize, and secure the network, and what changes we've made over the past year to try and keep doing things better. Of course, we'll be sharing some of the more humorous network activity and what it helps us learn about the way security professionals conduct themselves on an open WiFi network.</p>"
+    },
+    {
+      "id": "bhasia25-44048",
+      "title": "Remote Exploitation of Nissan Leaf: Controlling Critical Body Elements from the Internet",
+      "speakers": [
+        "Radu Motspan",
+        "Mikhail Evdokimov",
+        "Polina Smirnova"
+      ],
+      "description": "<div><span>Today's vehicles are evolving rapidly, with a rising number of electric models and an expanding array of digital technologies, such as onboard Wi-Fi, Bluetooth, and USB connectivity. These advancements are making cars increasingly connected and technologically complex. However, most vehicles still have largely proprietary internal systems, which, coupled with the critical importance of automotive safety, makes them a significant area of focus for security research.</span></div><div><span><br></span></div><div><span>This talk explores our successful remote compromise of a 2020 Nissan Leaf, demonstrating how vulnerabilities in the vehicle's connected systems can be exploited to gain control over critical body functions. Our approach began by exploiting weaknesses in Bluetooth to infiltrate the internal network, followed by bypassing the secure boot process to escalate access. Establishing a Command and Control (C2) channel over DNS allowed us to maintain a covert, persistent link with the vehicle, enabling full remote control. By compromising an independent communication CPU, we could interface directly with the CAN bus, which governs critical body elements, including mirrors, wipers, door locks, and even the steering.</span></div><div><span><br></span></div><div><span>Given the serious safety implications, discussing these vulnerabilities is essential for advancing vehicle cybersecurity. In this session, we'll share technical insights into each stage of the compromise\u2014from initial access and command execution to bypassing gateway filters. Our findings underscore the urgent need for improved protections in connected vehicles to safeguard against remote exploitation.</span></div>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Evdokimov-Remote-Exploitation-of-Nissan-Leaf.pdf"
+    },
+    {
+      "id": "bhasia25-43697",
+      "title": "Weaponized Deception: Lessons from Indonesia's Muslim Cyber Army",
+      "speakers": [
+        "Tim Pappa"
+      ],
+      "description": "<p>A defunct Indonesian cyber deception collective of attackers known as Muslim Cyber Army (MCA) modeled one of the first known examples of weaponizing deception and disinformation to disrupt Indonesian politics more than a decade ago, well before the notorious Russian attempts to undermine American electoral politics in 2016. </p><p>This presentation by one of the only former FBI profilers in the world specializing in cyber deception will detail how the MCA organized and functioned as a cyber deception attacker collective. While there has been some commentary on the defunct MCA, there has not been analysis looking at how MCA applied deception to its attacks. Several attackers in the MCA grew up and taught in Islamic boarding schools (pesantren) communities in West and Central Java, Indonesia, which is where the presenter conducted ethnographic research in the past shadowing proselytizers in pesantren, and studying communication practices. </p><p>This presentation will explore the group dynamics of these communities to frame the origin stories of the MCA founder and MCA attackers. This presentation will also feature the first behavioral assessment of the jailed MCA founder and the first application of an expanded deception framework analyzing the MCA's cyber deception activity online. </p><p>This presentation will outline how MCA contributed to the cyber deception field.</p>",
+      "slides_url": "https://i.blackhat.com/Asia-25/Asia-25-Pappa-Muslim-Cyber-Army-Deception.pdf"
+    },
+    {
+      "id": "bhasia25-44611",
+      "title": "Locknote: Highlights & Key Takeaways from Black Hat Asia 2025",
+      "speakers": [
+        "Daniel Cuthbert",
+        "Ryan Flores",
+        "Vitaly Kamluk",
+        "Jeff Moss",
+        "Asuka Nakajima",
+        "Vandana Verma"
+      ],
+      "description": "<p>Join Black Hat Asia Review Board members for a dynamic conversation on the most critical challenges facing the InfoSec community. This Locknote will dive into the conference's standout takeaways and explore how emerging trends will shape the future of cybersecurity strategies.</p><p><em>Open to all Black Hat Pass Holders.</em></p>"
+    }
+  ]
+}

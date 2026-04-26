@@ -1,0 +1,505 @@
+{
+  "conference": {
+    "name": "Black Hat Europe",
+    "acronym": "BLACKHAT-EU",
+    "year": 2025,
+    "url": "https://blackhat.com/eu-25/briefings/schedule/"
+  },
+  "coverage": {
+    "talks_count": 50,
+    "has_abstracts": true,
+    "has_slides": false,
+    "last_crawled": "2026-04-24"
+  },
+  "talks": [
+    {
+      "id": "bheu25-50319",
+      "title": "Keynote: Inside the Ransomware Machine",
+      "speakers": [
+        "Max Smeets"
+      ],
+      "description": "<p>The ransomware gold rush days are fading, but the business model will adapt. Based on unique access to leaked data and years of analysis, this keynote explains what really keeps the ransomware economy running and what might finally stop it. </p>"
+    },
+    {
+      "id": "bheu25-48941",
+      "title": "Fifty Dollars To Root The Cloud: Low-Cost Memory Interposer Attacks On Confidential Computing",
+      "speakers": [
+        "Jesse De Meulemeester",
+        "Jo Van Bulck",
+        "David Oswald"
+      ],
+      "description": "As cloud computing adoption grows, so do concerns about trust and data privacy. Confidential computing, powered by innovative hardware technologies like Intel SGX and AMD SEV, promises strong isolation and transparent memory encryption to protect against privileged attackers and physical threats such as bus snooping and cold boot attacks. In this talk we present a custom, low-cost (50 dollar) DDR4 interposer that dynamically manipulates memory address lines to create adversarial aliases, tricking the processor into granting unauthorized access to encrypted memory. Crucially, our interposer operates at runtime, allowing it to bypass recent boot-time firmware mitigations deployed by Intel and AMD in response to our earlier software-based \"BadRAM\" memory aliasing attacks.<br />\r\n<br />\r\nUsing our novel interposer, we undermine trust in both the Intel SGX and AMD SEV ecosystems. We demonstrate the first successful attack on Intel's Scalable SGX single-key memory domain, enabling arbitrary plaintext read/write access and extraction of SGX's platform provisioning key used for remote attestation. Additionally, we achieve full attestation bypasses on up-to-date AMD SEV-SNP systems despite the latest firmware defenses, allowing us to forge attestation reports and implant persistent backdoors in SEV-protected virtual machines.<br />\r\n<br />\r\nIn the broader context, our results challenge fundamental assumptions about encrypted memory security guarantees and expose critical flaws in the performance-security trade-offs of today's confidential cloud computing systems.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-DeMeulemeester-50dollarstorootthecloud.pdf"
+    },
+    {
+      "id": "bheu25-49247",
+      "title": "Flaw And Order: Finding The Needle In The Haystack Of CodeQL Using LLMs",
+      "speakers": [
+        "Simcha Kosman"
+      ],
+      "description": "<p>Running CodeQL's built-in queries on Redis gave me over 6,800 potential issues. Doable, maybe. But when I tried FFmpeg, I got over 51,000. That's way too much for me. And how many of those are real vulnerabilities? Probably around 0.01%. The sheer number of false positives makes static code analysis impractical - who wants to manually sift through tens of thousands of results just to find a few actual security flaws?<br>To fix this, we built an open-source tool that fuses CodeQL with an LLM-driven agent. This agent autonomously navigates the code, running targeted queries to extract only the relevant context. On top of that, we introduced Guided Questioning, an advanced reasoning technique that keeps the LLM focused, improving accuracy even for complex vulnerabilities.</p><p><br>Using this approach, we reduced false positives by up to 97% and uncovered more than a dozen real-world security issues in Linux, Apache, FFmpeg, Bullet3, Libvips, libretro, Linenoise, and other widely used open-source projects.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Kosman-Flaw-And-Order-Final.pdf"
+    },
+    {
+      "id": "bheu25-48832",
+      "title": "The Forensic Trail On GitHub: Hunting For Supply Chain Activity",
+      "speakers": [
+        "Rami McCarthy",
+        "Amitai Cohen"
+      ],
+      "description": "Ultralytics. tj-actions. Grafana. GitHub Actions are increasingly targeted by attackers and <br />\r\nimplicated in industry-impacting incidents. Thankfully, GitHub's public surface offers numerous <br />\r\nthreat intelligence sources for the discerning defender. This talk covers a comprehensive <br />\r\nmethodology for investigating and tracking real-world supply chain attacks exploiting GitHub <br />\r\nActions, inspired by our work responding to the aforementioned incidents. It adds a new <br />\r\ndimension and set of tools to threat intelligence research. <br />\r\n<br />\r\nWe'll expose the wealth of intelligence available directly from both GitHub and the underlying Git <br />\r\nplane. Through concrete demos, we'll show how to effectively pivot on user metadata and <br />\r\nbehavioral heuristics, uncover attacker forks, and recover deleted gists and commits. We'll also <br />\r\ndemonstrate how to trace attacker aliases, identify targets of reconnaissance, and unmask <br />\r\nattackers and researchers in real-time. Attackers are hiding in the complexity of this ecosystem, <br />\r\nbut with automation we can peel back the noise, empowering detection and investigation. <br />\r\n<br />\r\nThis approach is practical, repeatable, and relies exclusively on publicly available data, ensuring <br />\r\naccessibility for all defenders without the need for private threat intelligence feeds.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-McCarthy-Forensic-Trail-GitHub.pdf"
+    },
+    {
+      "id": "bheu25-49262",
+      "title": "The Fragile Lock: Novel Bypasses For SAML Authentication",
+      "speakers": [
+        "Zak Fedotkin"
+      ],
+      "description": "SAML2 has been the backbone of enterprise single sign-on for over 20 years. Behind its familiar facade lies a chaotic mix of legacy specifications, fragile XML processing, and false assurances of security. Despite endless patches and best practices, the protocol continues to collapse under the weight of its own complexity.<br />\r\n<br />\r\nIn this talk, I will show you how to bypass authentication using subtle flaws in XML handling. I will introduce several previously unpublished techniques that enable the crafting of reliable, stealthy exploits against SAML implementations that appear secure on the surface.<br />\r\n<br />\r\nI will also release an open-source toolkit designed to identify and exploit these vulnerabilities in real-world SAML deployments.<br />\r\n<br />\r\nIt is time to stop patching the unpatchable and start questioning the protocol itself.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Fedotkin-TheFragileLock.pdf",
+      "whitepaper_url": "https://i.blackhat.com/BH-EU-25/eu-25-Fedotkin-TheFragileLock-WP.pdf"
+    },
+    {
+      "id": "bheu25-48310",
+      "title": "One Entry Point to Thousands of Phones: China\u2011Nexus\u202fAPT Exploiting Ivanti Endpoint Manager Mobile",
+      "speakers": [
+        "Arda B\u00fcy\u00fckkaya"
+      ],
+      "description": "This session explores a targeted cyber espionage campaign by a China-nexus nation state APT group that exploited Ivanti Endpoint Manager Mobile (EPMM) to infiltrate critical sectors across Europe, including government, healthcare, telecom, and finance. <br />\r\n<br />\r\nThe attackers chained CVE-2025-4427 and CVE-2025-4428 to exploit Java Expression Language injection and a misrouted API, achieving unauthenticated remote code execution on internet-facing Ivanti EPMM servers. From there, they established persistent remote access and moved laterally into Entra ID (Office 365) cloud environments.<br />\r\n<br />\r\nThis talk draws on real world incident response and collaboration with European CERTs and NCSCs. Attendees will learn about the threat actor's tooling, TTPs, and cloud security, along with detection opportunities and practical steps to secure mobile management systems and hybrid environments against similar threats.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Buyukkaya-OneEntryPointtoThousandsofPhon.pdf"
+    },
+    {
+      "id": "bheu25-48930",
+      "title": "Page Phantoms: Zero-IO, In-Memory Tampering Of The Linux Page Cache",
+      "speakers": [
+        "jia jia"
+      ],
+      "description": "In modern cyber defense, the combination of high-privilege VMI from a Host VMM and an in-guest EDR monitoring I/O paths forms a defense-in-depth architecture believed to be unbypassable. This presentation introduces \"MGLRU Deceit,\" a novel kernel attack primitive that silently penetrates both layers of this defense.<br />\r\n<br />\r\nMGLRU Deceit abuses Linux's newest memory management mechanism\u2014the Multi-Generational LRU (MGLRU), default since kernel 6.1. Rather than exploiting a vulnerability, the attack abuses a design feature: MGLRU's protection of hot data extends the residency time of critical pages in the page cache, creating a stable window for an attacker to locate and capture a target page. By manipulating page metadata, we can isolate a page from the kernel's reclaimer, enabling the hijacking and tampering of any file's in-memory content without modifying filesystem metadata.<br />\r\n<br />\r\nThe attack operates entirely at the memory management layer, bypassing the VFS and block I/O stacks. The tampered page is never written back to disk; its filesystem association is later severed and it is returned to the buddy system as a clean page. This \"zero-I/O footprint\" evades EDRs and deceives VMI solutions that monitor struct inode integrity, as the attack only alters the file's data page, not its metadata.<br />\r\n<br />\r\nIn our live demonstration, we will build a dual-defense target environment: a VMM memory monitor on the L1 host and a simulated EDR kernel module inside the L2 guest. We will first show both systems successfully detecting a conventional modification to the shadow file. We will then launch the MGLRU Deceit attack and witness both monitoring systems remain completely silent as we leverage the modified in-memory content of the shadow file to successfully gain root privileges. The technique presented is a practical, reproducible, and sophisticated method for bypassing defense-in-depth, usable by advanced malware.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-JIA-Page-Phantom-Zero-IO-In-Memory-Tamp.pdf"
+    },
+    {
+      "id": "bheu25-49911",
+      "title": "Weaponizing Image Scaling Against Production AI Systems",
+      "speakers": [
+        "Suha Hussain",
+        "Kikimora Morozova"
+      ],
+      "description": "<p>AI vision systems see differently than humans do. When platforms downscale uploads to save compute, the mathematical properties of interpolation algorithms create exploitable artifacts. In this presentation, we'll show how to craft images which use invisible pixel perturbations to reveal malicious prompts after downscaling, triggering unauthorized tool execution across Google Gemini, Vertex AI, Google Assistant, and Genspark. Beyond image downscaling, we'll explore the broader attack surface, including audio transformations, dithering algorithms, and other preprocessing steps that become prompt injection vectors. You'll learn to fingerprint vulnerable systems using test patterns that reveal specific downscaling implementations across AI libraries. We'll demo Anamorpher, our open-source tool for automated attack generation, with both Python APIs and visual interfaces, as well as examine practical mitigations from displaying actual processed images to implementing design patterns resistant to prompt injection, such as the action selector pattern.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Morozova-Weaponizing-Image-Scaling-Against-Final.pdf"
+    },
+    {
+      "id": "bheu25-49015",
+      "title": "Win-DoS Aftershock: A crash course in revealing insecure blind spots for DoS & DDoS",
+      "speakers": [
+        "Or Yair",
+        "Shahak Morag"
+      ],
+      "description": "Domain Controllers (DCs) are organizations' crown jewels. A successful Denial-of-Service (DoS) attack against them can terminate authentication processes and cause widespread disruption.<br />\r\n<br />\r\nOur previous LdapNightmare research - the first public pre-auth DC DoS exploit for CVE-2024-49113, revealed that DCs can be turned into LDAP clients by communicating with their NetLogon RPC server. These clients could then be crashed by a single invalid value they receive. This taught us that remotely triggered client code is a blind spot that overtrusts.<br />\r\n<br />\r\nEager to find other blind spots in servers on DCs, we asked - what will make server code overtrust? abstraction layers! We realized that although common server code nowadays mostly mitigates classic server risks, that's maybe untrue in case it's transport-agnostic, uses heavy abstractions, and focuses mostly on the application's logic.<br />\r\n<br />\r\nStarting by targeting remotely triggered LDAP client code, we found a vulnerability that denies service from DCs, or alternatively can be exploited to manipulate them to join a DDoS botnet attack. Then, we moved on to target Windows' most common transport-agnostic wrapped server code - RPC functions. By exploiting security gaps in RPC bindings, we developed novel techniques allowing to hammer a single RPC server tens of thousands of times simultaneously from a single system, far surpassing standard concurrency limits! And WOW- this armed us beyond our expectations, with vulnerabilities crashing any form of Windows, both servers and endpoints! Our blind spot hypothesis turned out to be the reality. <br />\r\n<br />\r\nIn this talk, we'll present \"Win-DoS\" - A set of tools exploiting 30 DoS vulnerabilities we discovered in Domain Controllers and Windows endpoints. Most vulnerabilities do not require any authentication, and one even allows not only to crash, but also to effortlessly initiate a botnet harnessing the upload rates and vast resources of any public DCs to participate in DDoS attacks.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Yair-Win-DoS-Aftershock.pdf"
+    },
+    {
+      "id": "bheu25-50486",
+      "title": "Main Stage: Simplifying Cybersecurity",
+      "speakers": [
+        "Seamus Lennon"
+      ],
+      "description": "<p><span class=\"cf0\">As cybersecurity has grown more complex with escalating threats and consequences, revisiting the fundamentals takes extra importance. Join ThreatLocker VP of Operations EMEA, Seamus Lennon as he cuts through the noise to what matters most for practical and effective security. We'll explore simple things you can do to stop cyberattacks so you can better protect your organization today. </span></p>"
+    },
+    {
+      "id": "bheu25-48330",
+      "title": "Cut To The QUIC: Slashing QUIC's Performance With A Hash DoS",
+      "speakers": [
+        "Paul Bottinelli"
+      ],
+      "description": "QUIC was designed for low-latency and high-performance communication, but what if its very design enables an attack that can bring it to a crawl? In this talk, we present a remote Hash Denial-of-Service (Hash DoS) attack that exploits hash collisions in QUIC's processing of connection IDs (CID). Our survey of over 20 QUIC server implementations revealed that a third of them were vulnerable to this attack, allowing a remote attacker to trigger excessive hash table operations with minimal effort, leading to severe slowdowns or even complete stalls. <br />\r\n<br />\r\nIn this talk, we'll break down the attack mechanics, discuss the different hash functions used by QUIC implementations, show how to exploit them, and demonstrate the real-world impact of the attack with performance metrics and a proof-of-concept attack demonstration against a vulnerable implementation. Attendees will gain insight into why this attack emerges from QUIC's design rather than through a mere implementation flaw and why it affects 1/3 of all existing implementations of this modern, widely used protocol supported in all major browsers. We'll also present why some existing mitigations fall short and how to defend against this threat effectively. By the end, attendees will walk away with concrete techniques to identify, test for, and mitigate Hash DoS vulnerabilities in QUIC and other performance-critical protocols.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/EU-25-Bottinelli-CutToTheQUIC-Wednesday-Final.pdf"
+    },
+    {
+      "id": "bheu25-49500",
+      "title": "From Live Exploitation to Zero-Day Discovery: Investigating Attacks on Gogs",
+      "speakers": [
+        "Gili Tikochinski",
+        "Yaara Shriki"
+      ],
+      "description": "<div><span>A single infected server led us into a much larger story. While investigating suspicious repositories on exposed **** Git servers, we uncovered signs of active exploitation: commands hidden inside repository configurations, payloads fetching remote shells, and infrastructure linked to a custom-packed Supershell C2. What at first looked like an opportunistic abuse of a known bug turned out to be something more: an unpatched zero-day vulnerability, already being leveraged in the wild.</span></div><div><span><br></span></div><div><span>While an older RCE was known, the affected systems matched a yet-unknown exploit chain. This mismatch was the first clue that attackers were using a new vulnerability, rather than simply reusing a patched one.</span></div><div><span><br></span></div><div><span>In this talk, we will retrace that investigation. Starting from live exploitation artifacts, we will show how we correlated repositories across multiple tenants, fingerprinted vulnerable internet-facing servers, and pieced together the attack chain. Our scans revealed over 700 compromised **** instances worldwide, with dozens already updated yet still showing signs of compromise. The evidence demonstrated that attackers had a working exploit before disclosure.</span></div><div><span><br></span></div><div><span>We will close with lessons learned for defenders. These include how to detect malicious repository abuse in developer platforms, techniques for hunting zero-days from threat intelligence leads, and what this case study means for the broader risk landscape of self-hosted developer tools.</span></div>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Shriki-From-Live-Exploitation-to-0day.pdf"
+    },
+    {
+      "id": "bheu25-50320",
+      "title": "Keynote: CYBER! Please Check All Boxes Before You Get Pwned",
+      "speakers": [
+        "Linus Neumann"
+      ],
+      "description": "<div><span>Corporate security teams worldwide are drowning in cover-your-ass checklists, keeping them from building real defenses against real threats. </span></div><div><span><br></span></div><div><span>Attackers thrive in exactly these gaps \u2014 that's why the same attack trends remain successful for years and even decades. Ransomware is just the most visible symptom of a severely misguided security paradigm. </span></div><div><span><br></span></div><div><span>But don't despair \u2014 salvation is at hand! </span></div><div><span><br></span></div><div><span>The CRA and DORA are the regulations that will finally fix all other regulations \u2014 by mandating a holistic understanding of your risks and ensuring that everyone can now officially cover their bases the proper way. </span></div><div><span><br></span></div><div><span> Meanwhile, under the banners of fighting terrorism or child abuse, the security of the public's communication infrastructure is under constant political attack. </span></div><div><span><br></span></div><div><span>Proposals such as AI \"snitches\" built into phones keep haunting the EU legislative process \u2014 despite years of clear opposition from every credible expert out there. </span></div><div><span><br></span></div><div><span>There are so many self-proclaimed \"solutions\" that we've long lost sight of the actual problems. </span></div><div><span><br></span></div><div><span>Do we even want to address them? </span></div><div><span><br></span></div><div><span>If so, then let's re-focus \u2014 and get things done. </span></div>"
+    },
+    {
+      "id": "bheu25-48113",
+      "title": "Project Brainfog: Hacking Smart Cities One Building At A Time - A City Of A Thousand Zero Days",
+      "speakers": [
+        "Gjoko Krstic"
+      ],
+      "description": "<p>April 9, 2009, American Auto-Matrix (AAM) introduced AspectFT open web-enabled area controller for Building Automation. AspectFT (Facilitating Technology) comes in versions for various sized projects from a small building stand-alone solution to an Enterprise version for large scale building applications.Utilizing a Linux operating system, AspectFT uses a Java foundation to accomplish a number of building operation routines and control algorithms. Through utilization of this Facilitating Technology users can communicate to their BAS system through protocols such as BACnet IP and MS/TP, Modbus IP and RTU, and the American Auto-Matrix PUP protocol.</p><p>In April 2024, Zero Science Lab identified over 800 vulnerabilities in the 18-year-old codebase dormant through two acquisitions. These controllers encompasses a wide array of locations and entities, spanning various sectors and regions worldwide, ranging from commercial buildings to correctional facilities, and their footprint across more than 30 countries and 220 cities, underscoring the global scope of the systems under investigation.</p><p>In this presentation, we will disclose the vulnerabilities discovered that were left and never addressed because the vendor statement is that these devices were not meant for Internet connectivity despite the opposite marketing campaigns. We will reveal how ABB has started with silent fixes four years after aquisition and how it continued to not follow its own best practices and security disclosure policy.</p><p>We will also show some sneaky backdoors and hidden \"forgotten debugging functionalities\" and interesting authentication issues. These vulnerabilities allow unauthenticated remote root exploits.</p><p>Finally, the whole vendor planning and miscommunication will be presented with multiple fixed versions and unaddressed vulnerabilities in an attempt to downplay the criticality of this incident. Will also show some of the exposed smart giants that are prone to ICS attacks. The session is backed by a 160-page research paper.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Krstic-Project-Brainfog-Hacking-Smart-Ci.pdf"
+    },
+    {
+      "id": "bheu25-48973",
+      "title": "Ghosts in the Stream: Exposing Lives and Devices Behind Encrypted Doors",
+      "speakers": [
+        "Kristopher Schlett",
+        "Bela Genge",
+        "Ioan Padurean",
+        "Savio Sciancalepore"
+      ],
+      "description": "<p>Strong encryption has infiltrated even the most basic battery-powered Internet of Things (IoT) gadgets. Thanks to the latest technological breakthroughs and standard developments \u2013 such as the Matter IoT standard \u2013 these tiny devices are now generating ephemeral Diffie-Hellman keys for every session, sign and encrypt messages, juggle certificate chains, and more. It sounds like IoT users can finally kick back, convinced their privacy is locked down. But not so fast. As this talk reveals, the rigid message structure of Matter traffic leaves it wide open to pattern-based snooping. Passive analysis can unmask exactly what devices lurk in a smart home and pinpoint user actions. Our data, pulled from a real-world office setup at Bitdefender in Targu Mures, Romania, shows that few traces of encrypted traffic are all it takes to identify sensors, actuators, door locks, and lamps. We could even track user movements: smart plugs toggling, locks clicking, lamps changing color. The kicker? Simple statistical techniques are enough to crack user behavior, all from encrypted traffic. With such analytical tools, it becomes possible to systematically reconstruct and reveal the daily routines of individual home users, as well as to uncover privacy-sensitive behaviors in organizational contexts, such as those of office employees working remotely in various environments.</p><p>The talk also dives into why fixing this could be a real headache, since Matter's session protocol introduced versioning only starting with Matter version 1.3. The talk will take a deep dive into why these protocol design choices matter and why future standards should prioritize such aspects.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Schlett-Ghosts-in-the-Stream-Exposing-Lives.pdf",
+      "whitepaper_url": "https://i.blackhat.com/BH-EU-25/eu-25-Schlett-Ghosts-in-the-Stream-Exposing-Lives-WP.pdf"
+    },
+    {
+      "id": "bheu25-48117",
+      "title": "Make Agent Defeat Agent: Automatic Detection of Taint-Style Vulnerabilities in LLM-based Agents",
+      "speakers": [
+        "Fengyu Liu",
+        "Ke Li",
+        "Jiaqi Luo",
+        "Jiarun Dai",
+        "Bocheng Xiang",
+        "Tian Chen",
+        "Yilin Wang",
+        "Youkun Shi",
+        "Xing Li",
+        "Yuan Zhang",
+        "Min Yang"
+      ],
+      "description": "Large Language Models (LLMs) have revolutionized software development, enabling the creation of AI-powered applications known as LLM-based agents. However, recent studies reveal that LLM-based agents are highly susceptible to taint-style vulnerabilities, which allow malicious prompts to exploit security-sensitive operations. These vulnerabilities pose severe threats to the security of agents, potentially allowing attackers to take over the entire agent remotely.<br />\r\n<br />\r\nIn this paper, we propose a novel directed greybox fuzzing approach, called AgentFuzz, the first fuzzing framework for detecting taint-style vulnerabilities in LLM-based agents. AgentFuzz consists of three key phases. First, AgentFuzz leverages the LLM to generate functionality-specific seed prompts in the form of natural language. Second, AgentFuzz utilizes a multifaceted feedback design to assess seed quality from both semantic and distance levels, prioritizing seeds with higher quality. Finally, AgentFuzz employs functionality and argument mutators to refine seeds and trigger vulnerabilities effectively. In our evaluation against 20 widely-used open-source agent applications, AgentFuzz identified 34 high-risk 0-day vulnerabilities, achieving 33 times higher precision than the state-of-the-art approach. These vulnerabilities encompass serious threats like code injection, impacting 14 open-source agents, with 7 of them having over 10,000 stars on GitHub. To date, 23 CVE IDs have been assigned.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-FengyuLiu-Make-Agent-Defeat-Agent-Autom.pdf"
+    },
+    {
+      "id": "bheu25-49161",
+      "title": "ORMageddon: Leaking More Than You Joined For",
+      "speakers": [
+        "Alex Brown"
+      ],
+      "description": "Object Relational Mappers (ORMs) have become ubiquitous across software development, due to the ease of storing code objects on backend databases and builtin security mechanisms to protect against SQL injection. Previous security research has focused on the discovery of SQL injection vulnerabilities in the query builder layer of an ORM, but there has been an oversight into investigating insecure uses of an ORM.<br />\r\n<br />\r\nThis talk is about the ORM Leak vulnerability class, where an insecure use of an ORM or exposed interface for database querying that does not validate user inputs beforehand could result in leaking out sensitive data, without the exploitation of a SQL injection vulnerability. We will cover the conditions necessary for an ORM Leak vulnerability, real world examples of ORM leaks and exploitation techniques such as relational filtering and time-based attacks.<br />\r\nThis talk will be an extension on our previous published research about ORM leaks and showcase a new susceptible ORM, how quirks of that ORM could be abused to bypass validations and how ORM leaks does not necessarily require the use of a susceptible ORM and is more often introduced by the exposure of a dangerous interface to users.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Brown-ORMageddon-Wednesday.pdf"
+    },
+    {
+      "id": "bheu25-49475",
+      "title": "You Win Some, You CheckSum: A Kerberos Delegation Vulnerability",
+      "speakers": [
+        "Eliran Partush",
+        "Dor Segal"
+      ],
+      "description": "<div><span>In Active Directory networks, user identity impersonation is commonly used when applications need to access network resources on behalf of the user. One of the safest ways to implement this is through Kerberos Constrained Delegation (KCD), which enforces trust boundaries between the application and the target services.</span></div><div><span><br></span></div><div>In this talk, we'll dive into the internals of the authentication process behind these mechanisms and present CVE-2025-60704: a logical vulnerability we discovered in Microsoft's Kerberos implementation. Using Machine-in-the-Middle technique, this flaw allowed us to impersonate arbitrary users and ultimately gain control over the entire domain.<br></div><div><span><br></span></div><div><span>To understand how the vulnerability works, we'll walk through protocol behavior, trust assumptions, and some light reverse engineering of Windows internals that helped us trace the flaw down to its root. Finally, we'll discuss mitigation strategies and how to better protect environments relying on Kerberos delegation.</span></div>"
+    },
+    {
+      "id": "bheu25-50572",
+      "title": "Designing the Regulatory Details for the Cyber Security and Resilience Bill",
+      "speakers": [
+        "Jen Ellis",
+        "Anjuli Shere"
+      ],
+      "description": "<p>The Cyber Security and Resilience Bill is the proposed update to the UK's existing Network and Information Systems Regulations 2018. It is expected that the primary legislation will be introduced to Parliament by the time of Black Hat Europe. The primary legislation establishes the basic guardrails and objectives of the legislation, but the more specific regulatory detail will be outlined in the secondary legislation, which is introduced after the primary legislation has been enacted. This session will offer Black Hat Europe's attendees the opportunity to influence that secondary legislation. Come and provide your perspective on what should - or should NOT - be included in the requirements. </p>"
+    },
+    {
+      "id": "bheu25-49085",
+      "title": "AI Search's Dark Side: How We Turned AI's 'Web Browsing' Into A Gateway For Targeting 1B+ Users",
+      "speakers": [
+        "Zheng Wang",
+        "Guancheng Li",
+        "Aone",
+        "Tianze Ding"
+      ],
+      "description": "With the integration of large language models (LLMs) and capabilities such as real-time web search, browser components are now being widely deployed in server-side environments for the first time. While enabling features like online search and image processing, server-side browsers also introduce significant security risks. If a backend browser accesses an attacker-controlled URL, it can potentially trigger remote code execution (RCE) vulnerabilities\u2014ranging from service disruption to large-scale manipulation of LLM outputs, or even full server compromise. These vulnerabilities essentially represent a concentrated shift of attack risks: threats once scattered across individual clients are now aggregated at the server level. Meanwhile, as AI search streamlines intelligent information access for users, it also lowers the barrier for attackers, who can monitor and tamper with user conversations through a single vulnerability.<br />\r\n<br />\r\nIn this talk, we present a systematic study of this emerging attack surface. We evaluated leading LLM services that integrate backend browser components and successfully achieved RCE in six of them\u2014collectively impacting over one billion users. Our study reveals that the offensive and defensive characteristics of server-side browsers differ fundamentally from those of client-side browsers. From an offensive perspective, exploiting server-side browsers required overcoming challenges absent in client environments, such as bypassing domain whitelists, evading JavaScript execution restrictions, and fingerprinting remote browser versions to craft viable payloads. From a defensive perspective, server-side browsers also face unique disadvantages: lack of automatic update mechanisms, deviation from security best practices, and lower exploitation barriers.<br />\r\n<br />\r\nWe conclude by proposing best practices for securely deploying browser components in backend systems, offering actionable guidance to help the industry mitigate these risks at scale.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Wang-AI-Searchs-Dark-Side-How-We-Turned-AIs-Web-Browsing-Into-A-Gateway-For-Targeting-1B-Plus-Users.pdf"
+    },
+    {
+      "id": "bheu25-48965",
+      "title": "Ghost In The Stack: Evolving Call Stack Spoofing In A Post-CET Era",
+      "speakers": [
+        "Alessandro Magnosi"
+      ],
+      "description": "Stack spoofing is a sophisticated technique that manipulates a thread's call stack so that code execution appears to originate from a different, benign location. In 2023, with StackMoonwalk, we presented a novel approach to this that slipped through common stack-based detection logic. Since then, we've watched defenders build on that research to expand telemetry and design more robust detectors. At the same time, we've seen increased adoption of hardware-backed mitigations (HSP|CET), which could offer another source of truth to spot this technique. Two years later, we asked ourselves whether it was finally time for stack spoofing to die. Well... it wasn't.<br />\r\n<br />\r\nThe talk begins in today's non-HSP environments, exploring modern detection frameworks built on call stack analysis and showing how fragile assumptions make them easy to bypass in practice. As proof, we introduce a new technique based on Moonwalk and a new primitive, proxy frames, to exploit these gaps. However, as clever as these methods are, their ROP-based primitives are welcomed by a crash the moment HSP/CET comes into play.<br />\r\n<br />\r\nThis pushed our research back to square one: could stack spoofing be rebuilt to survive CET enforcement? The result is the first known CET-compliant stack spoofing framework (BYOUD), delivered in three functional variants across distinct execution architectures. We first demonstrate how the framework can alter call stack resolution without triggering CP exceptions and then introduce the State-Driven Indirect Execution Architecture (SDIE), which takes the concept further to achieve a full HSP bypass.<br />\r\n<br />\r\nWe will conclude our talk by outlining the key lessons learned throughout this research: why overreliance on any single, emerging mitigation is dangerous, and how fragile design assumptions in detection logic can turn into blind spots. We will also provide concrete strategies and countermeasures so defenders can build stronger, more resilient detection capable of catching the presented techniques.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Magnosi-Ghost-in-the-stack.pdf"
+    },
+    {
+      "id": "bheu25-48150",
+      "title": "SCOMmand And Conquer - Attacking System Center Operations Manager",
+      "speakers": [
+        "Garrett Foster",
+        "Matt Johnson"
+      ],
+      "description": "System Center Operations Manager (SCOM) environments are responsible for monitoring critical infrastructure yet introduce insecure defaults and an often-misconfigured attack surface within enterprise networks. This research exposes how SCOM's default configurations and architectural design choices create exploitable abuse paths that can lead to credential theft, lateral movement across monitored infrastructure, and ultimately, domain privilege escalation.<br />\r\nThis presentation will detail techniques for extracting account credentials, spoofing client enrollment, abusing credential relaying, and manipulating role-based access controls to takeover SCOM. We hope to leave you with a better understanding of SCOM's internal security architecture and tangible defensive guidance for securing SCOM deployments.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Foster-SCOMmand-And-Conquer-Attacking.pdf"
+    },
+    {
+      "id": "bheu25-49195",
+      "title": "Silence On macOS: What 70K Binaries Reveal About The macOS Malware Ecosystem",
+      "speakers": [
+        "Obinna Igbe",
+        "Godwin Attigah"
+      ],
+      "description": "macOS adoption in enterprise environments has surged in recent years, yet defensive tooling and public research still center heavily on Windows threats, leaving macOS malware underrepresented. To help bridge this gap, we introduce MALET, the largest public dataset of macOS malware to date (48.4k malicious / 22.9k benign Mach-O binaries), and Katalina, a new, open-source, high-performance static analysis tool capable of processing thousands of binaries per minute on commodity hardware.<br />\r\n<br />\r\nOur talk distills 18 months of measurement into actionable insights for malware analysts, detection engineers, and incident responders. We show how 96% of macOS malware remains unsigned, and of the signed remainder, 38% use certificates that were later revoked often tied to DPRK APT infrastructure. These binaries evaded Gatekeeper and persisted for up to 721 days before revocation.<br />\r\n<br />\r\nWe surface 185 previously misclassified binaries that AV engines labeled benign despite sharing structural fingerprints with known malware. Static clustering using UUIDs, TeamIDs, and symbol hashes reveals four dominant macOS malware archetypes. We also show how rare entitlement combinations (e.g., com.apple.private.tcc.allow) appear 25x more often in malware, enabling stealth access to sensitive hardware like the microphone and camera.<br />\r\n<br />\r\nWe demonstrate how these findings can directly feed into resilient detection pipelines, including Sigma/YARA rule generation, a live triage workflow, and an extensible open-source toolchain. Attendees will leave with data, tooling, and practical heuristics they can apply immediately in their own environments.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Godwin-Silence-On-macOS.pdf"
+    },
+    {
+      "id": "bheu25-49023",
+      "title": "Bootstrapping Trust: From Isolated Build Machines to Enclaved CI Pipelines",
+      "speakers": [
+        "Ben Liderman",
+        "Maayan Keshet"
+      ],
+      "description": "This session presents a production-ready approach to securing CI build pipelines against compromised infrastructure by anchoring trust in a physically isolated build machine and leveraging enclave-based builders. The isolated machine compiles and signs a minimal enclave image, which becomes the only entity allowed to build software artifacts in the cloud. The builder enclave image runs inside AWS Nitro Enclaves and enforces strict policy checks such as requiring signed commit hashes before proceeding. Remote attestation is used to verify the AWS Nitro enclave's (the builder) integrity by an Intel SGX enclave verifier before provisioning the build secret, with the SGX enclave serving as a root of trust by encrypting its database with the processor's sealing key.<br />\r\n<br />\r\nWe'll detail the threat model, including attackers with SSH or root on CI runners, and walk through a complete enclave build pipeline, showing how trust is rooted in the isolated, air-gapped machine and propagated via the SGX enclave to the Nitro enclave builder. The session includes a demo of a real-world implementation that protects production infrastructure from build tampering and secret exfiltration, even under active adversary conditions.<br />\r\n<br />\r\nAttendees will learn how to design CI pipelines with isolation guarantees similar to air gapped machines but with the build and deployment velocity they are used to in modern cloud environments, integrate enclave attestation into automated builds, and establish a root of trust for critical workloads.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Liderman-Keshet-BootstrappingTrust.pdf"
+    },
+    {
+      "id": "bheu25-48948",
+      "title": "Breaking AI Inference Systems: Lessons From Pwn2Own Berlin",
+      "speakers": [
+        "Patrick Ventuzelo",
+        "Nabih Benazzouz"
+      ],
+      "description": "At Pwn2Own Berlin 2025, AI systems made their debut as official competition targets. This talk documents our successful exploitation of real-world AI infrastructure in that context focusing on vulnerabilities we discovered and demonstrated in Ollama and NVIDIA Triton Inference Server.<br />\r\n<br />\r\nWe detail our security research methodology, which included threat modeling, file format fuzzing, and plugin analysis. In Ollama, we discovered multiple bugs before and during the competition, including an authentication bypass (CVE issued) and a heap overflow found via fuzzing\u2014although it was patched three weeks before the event. In Triton Server, we uncovered a command injection vulnerability in its model configuration pipeline, leading to reliable remote code execution.<br />\r\n<br />\r\nWe'll also briefly explore other AI targets such as RedisAI, ChromaDB, and NVIDIA's container runtime, including insight into a potential stack overflow rediscovery via fuzzing.<br />\r\n<br />\r\nThis session blends concrete technical details with broader insight, sharing actionable takeaways for red teamers and defenders working with inference systems. Attendees will leave with a solid understanding of how to audit, attack, and better defend AI model infrastructure.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Ventuzelo-BreakingAIInferenceSystemsLessonsFromPwn2OwnBerlin.pdf"
+    },
+    {
+      "id": "bheu25-48668",
+      "title": "Not Just Victims: The Hidden Villains Inside Infostealer Logs",
+      "speakers": [
+        "HyunPyo Choi",
+        "DoHyun Hwang",
+        "Yejin Kang",
+        "SangMyung Choi"
+      ],
+      "description": "Infostealer malware is malicious code designed to infiltrate users' systems and secretly extract sensitive data such as browser information, system details, account credentials, cryptocurrency wallets, and screenshots. This stolen data is often sold or leaked on dark web platforms. While many victims are innocent, some are involved in criminal activities, which our research focuses on uncovering. Preliminary analysis of stealer logs revealed distinct behavioral patterns like multiple similar accounts and criminal conduct indicators, suggesting links to scams and illegal operations.<br />\r\n<br />\r\nTo better analyze these vast and complex datasets, we integrated Large Language Models (LLMs) that assist in organizing, classifying, and enriching loosely structured or ambiguous textual data within stealer logs. The LLM helped normalize vague entries and group related data, which was then stored in relational databases for efficient querying and visual interpretation. This method improves investigative efficiency and reveals actionable intelligence.<br />\r\n<br />\r\nImportantly, our data collection adhered strictly to ethical standards by only using publicly accessible data without purchasing illicit sources. Although infostealers are inherently malicious, this research demonstrates how their leaked data can serve as valuable leads in tracking underground criminals. Future research aims to fully automate stealer log analysis using LLMs, enhancing the speed and accuracy of cybercrime investigations.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Choi-Not-Just-Victims-The-Hidden-Villains-Inside-Infostealer-Logs.pdf"
+    },
+    {
+      "id": "bheu25-49018",
+      "title": "SOAPwn: Pwning .NET Framework Applications Through HTTP Client Proxies And WSDL",
+      "speakers": [
+        "Piotr Bazydlo"
+      ],
+      "description": "<p>.NET Framework is still extremely popular. It powers thousands of various applications, including the ones heavily utilized in huge enterprises. Both the .NET Framework (and applications based on it) have been researched for many years, and at some point, we could think that we have already discovered all the major attack surfaces.<br><br>What if I told you that its HTTP client proxies are fundamentally broken? As their name and documentation suggest, their role is to access HTTP-based services. However, they can be abused to access the filesystem and achieve Arbitrary File Write, depending on how the client is being used.<br><br>This presentation details how I discovered the Invalid Cast vulnerability in .NET Framework HTTP client proxies. I will start with the initial discovery of the root cause. Then, I will walk the audience through all the technical aspects related to the vulnerability (together with the main exploitation vectors). It is usually abusable through SOAP clients, especially if they are dynamically created from the attacker-controlled WSDL. I will cover multiple ways to weaponize the WSDL files, which may lead to Remote Code Execution through webshell upload. I will also present the vulnerable code patterns.<br><br>The presentation will also cover my efforts to encourage Microsoft to fix this vulnerability in .NET Framework. They were not cooperative, even though the vulnerability affects multiple Microsoft codebases, including: PowerShell, SharePoint, SQL Server Integration Services and some developer tools.<br><br>I will end this talk with getting shells on popular enterprise-level products. You should expect hundreds of various applications and tools to be vulnerable to this attack vector, which likely will be discovered over the incoming years.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Bazydlo-SOAPwn.pdf",
+      "whitepaper_url": "https://i.blackhat.com/BH-EU-25/eu-25-Bazydlo-SOAPwn-wp.pdf"
+    },
+    {
+      "id": "bheu25-50498",
+      "title": "Keynote: From Script Kiddie to Cyber Kingpin: Preventing the Predictable Progression",
+      "speakers": [
+        "Joe Tidy"
+      ],
+      "description": "<p><span class=\"TextRun SCXW204215545 BCX0\" lang=\"EN-US\" xml:lang=\"EN-US\" data-contrast=\"auto\"><span class=\"NormalTextRun SCXW204215545 BCX0\">What the cruelest hack in history can teach us about the pathway to serious cybercrime. The </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW204215545BCX0\">Vastaamo</span><span class=\"NormalTextRunSCXW204215545 BCX0\"> hack shocked the world but when the hacker behind it was </span><span class=\"NormalTextRunContextualSpellingAndGrammarErrorV2Themed SCXW204215545BCX0\">unmasked</span><span class=\"NormalTextRunSCXW204215545 BCX0\"> it came as no surprise. What can the story of Julius </span><span class=\"NormalTextRun SpellingErrorV2Themed SCXW204215545BCX0\">Kivimaki</span><span class=\"NormalTextRunSCXW204215545 BCX0\"> teach us about teenage hacking culture and how we can end the </span><span class=\"NormalTextRun SCXW204215545BCX0\">cycle.</span> <span class=\"NormalTextRunSCXW204215545 BCX0\">It's</span><span class=\"NormalTextRunSCXW204215545 BCX0\"> a problem </span><span class=\"NormalTextRun SCXW204215545BCX0\">that's</span> <span class=\"NormalTextRunContextualSpellingAndGrammarErrorV2Themed SCXW204215545BCX0\">come</span><span class=\"NormalTextRun SCXW204215545BCX0\"> back into the fore with high profile hacks from Scattered Spider as Cyber Correspondent and author Joe Tidy explains in this keynote talk.</span></span> </p>"
+    },
+    {
+      "id": "bheu25-48477",
+      "title": "Abstractions For Program Analysis",
+      "speakers": [
+        "Kyle Martin"
+      ],
+      "description": "We have an abundance of representations for code; from source code, to assembly, to decomplied code, to dataflow, block diagrams, and so much more. But why? Simply, because there is a best abstraction for every problem you want to solve. But knowing what abstractions are available and when to choose one over another is hard! In this talk, we'll delve deep into intermediate languages, discuss why you should be using them to solve the tasks at hand, and show you how to choose the best abstraction for the job. In doing so, we'll reveal the secrets that power compilers and decompilers (and even processors!) alike to perform analyses that find bugs, vulnerabilities, optimize code, and so, so much more...all without having to read a single line of code!",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Martin-Abstractions-for-Program-Analysis.pdf"
+    },
+    {
+      "id": "bheu25-48091",
+      "title": "Breaking Ring -2: Unveiling System Management Mode Memory Corruption Vulnerability Via Fuzzing",
+      "speakers": [
+        "Jianqiang Wang"
+      ],
+      "description": "System Management Mode (SMM) is an operating mode introduced by the x86 processor to handle critical hardware events and chipset errors. SMM applications, designed to run in this mode, operate at a high privilege level (known as Ring -2, which is even higher than the kernel mode, Ring 0). With the high privilege, SMM applications have almost unlimited access to system resources. However, vendors commonly adopt memory-unsafe programming languages, such as C and C++, to develop SMM applications, making them prone to memory corruption vulnerabilities. Once compromised, the attacker may gain complete control over the system. This intrinsic feature makes SMM applications a very attractive target for attackers.<br />\r\n<br />\r\nWhile SMM applications play a crucial role in the foundation of low-level system software, applying efficient and effective fuzzing to them is a very challenging and complex task. In this talk, we present the first systematic SMM application fuzzing framework specifically designed to detect memory corruption vulnerabilities in closed-source SMM applications. We observe that the SMM application, as part of the UEFI firmware, is supposed to run in a UEFI runtime environment. Without such an environment, SMM applications cannot be correctly initialized and executed. As such, we will present all the technical details related to an all-in-one solution for SMM application fuzzing. Our framework offers a fully featured UEFI runtime environment. With such an environment, we ensure that fuzzing does not result in early crashes and a high number of false positives. Additionally, we present the details behind a universal fuzzing harness for successful fuzzing campaigns. The fuzzing harness contains an interface grouping and a memory access interception mechanism to infer the input semantics, such that it can explore the deep logic of SMM applications. Our framework has already proven its impact: in our experiments, we identified a total of 38 new vulnerabilities in firmware from nine well-known vendors. We will share the technical insights behind these discoveries and walk through several real-world case studies that highlight the power and versatility of our approach.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Wang-Breaking-Ring-2-Unveiling.pdf"
+    },
+    {
+      "id": "bheu25-49039",
+      "title": "LINE-Break: Cryptanalysis And Reverse Engineering Of Letter Sealing",
+      "speakers": [
+        "Thomas Mogensen",
+        "Diego De Freitas Aranha"
+      ],
+      "description": "<p>We present a security analysis of the messaging service known as LINE, a popular platform used daily by millions of users in East Asia -- most notably Japan, Taiwan, Thailand, and Indonesia. More specifically, we focus on its underlying custom end-to-end-encryption (E2EE) protocol known as Letter Sealing v2, which we evaluate with respect to modern E2EE security guarantees. Our findings show that Letter Sealing allows a TLS Man-in-the-Middle attacker or malicious server to violate integrity, authenticity and confidentiality of communications. The stateless design of the protocol allows message replay, reordering, and blocking attacks, compromising the transcript consistency of communications. The lack of origin authentication facilitates impersonation attacks, in which the authorship of messages in one-to-one or group chats can be forged by malicious users colluding with the adversary. Lastly, stickers, a main selling point of the application, present a notable plaintext leakage, which leads to violation of confidentiality. To verify the correctness of our findings, we mounted a Man-in-the-Middle attack on an iOS device, yielding the device's outgoing traffic and the corresponding server responses. Utilizing this setup, we experimentally verified our attacks against the authentic LINE application. We discuss our findings in comparison to the state-of-the-art E2EE protocol Signal, and conclude that Letter Sealing does not satisfy the requirements expected from a modern E2EE messaging protocol. This is joint work with Adam Blatchley Hansen.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/BHEU25-Mogensen-LINE-Break-Cryptanalysis-And-Reverse-Engineering-Of-Letter-Sealing-Final.pdf"
+    },
+    {
+      "id": "bheu25-50638",
+      "title": "CANCELLED- Meet the ICO: Ask the UK's Data Protection Agency Your Cybersecurity Enforcement-Related Questions",
+      "speakers": [
+        "Jen Ellis"
+      ],
+      "description": "<p>The Information Commissioner's Office (ICO) is an independent UK regulator and is charged with upholding the UK's data protection regulations, including investigating potential breaches of regulatory requirements. It has the authority to issue warnings, reprimands, and fines to organisations found to be in violation of data protection requirements. This session is your opportunity to come and meet with members of the ICO, hear what they are working on, their perspective on the state of data protection in the UK, and ask them any relevant questions you may have.</p>"
+    },
+    {
+      "id": "bheu25-48522",
+      "title": "Breaking The Rails: Taking Control Over Legacy And ERTMS/ETCS Railroad Signaling Systems",
+      "speakers": [
+        "David Melendez",
+        "Gabriela Garcia",
+        "Alberto Rodriguez",
+        "Jaime Esquivias",
+        "Joel Serna"
+      ],
+      "description": "Railroad signaling systems have evolved from legacy trackside beacons to sophisticated digital protocols such as the European Train Control System (ETCS) under the European Rail Traffic Management System (ERTMS). Despite these advancements, security vulnerabilities remain due to the inherent trust placed in beacon-based signaling mechanisms. This talk explores how both legacy and high-speed railway signaling systems can be compromised using low-cost and even hand-crafted hardware and software-defined radio (SDR) techniques.<br />\r\n<br />\r\nIn legacy systems such as ASFA (Anuncio de Se\u00f1ales y Frenado Autom\u00e1tico) and similar trackside beacon-based signaling architectures, we demonstrate how an attacker can deploy rogue balises using passive magnetic elements tuned to specific resonance frequencies. These fake beacons can be placed on any track segment to induce emergency braking in passing trains, leading to immediate halts and operational disruptions. We analyze the protocol weaknesses that enable these attacks and their feasibility in real-world scenarios.<br />\r\n<br />\r\nFor high-speed rail systems utilizing ERTMS/ETCS, we investigate vulnerabilities in the Eurobalise communication framework. By capturing and replaying legitimate balise transmissions, an attacker could inject malicious control messages, misleading onboard train control units into triggering emergency stops or causing route confusion. We discuss the technical prerequisites for constructing a replay-capable attack setup.<br />\r\n<br />\r\nThe presentation concludes with recommendations for mitigating these threats, including cryptographic authentication of balise messages, anomaly detection techniques, and real-time verification of beacon authenticity. As rail networks increasingly depend on digital signaling, addressing these vulnerabilities is critical to ensuring the safety and resilience of modern railway infrastructure.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Melendez-Breaking-the-rails.pdf"
+    },
+    {
+      "id": "bheu25-48103",
+      "title": "RMPocalypse: A Catch-22 Breaking AMDs Confidential Computing",
+      "speakers": [
+        "Benedict Markus Schl\u00fcter"
+      ],
+      "description": "AMD SEV-SNP offers confidential computing in form of confidential VMs, such that the untrusted hypervisor cannot tamper with its confidentiality and integrity. SEV-SNP, the latest addition, ensures integrity via the Reverse Map Table (RMP) that stops the hypervisor from tampering guest page mappings. AMD uses RMP entries to protect the rest of the RMP, thus causing a Catch-22 during the RMP setup phase. To address this, SEV-SNP relies on AMD's Platform Security Processor (PSP), that resides next to the x86 cores executing SEV-SNP VMs, to perform the RMP initialization. We present RMPocalypse, a novel attack that shows insufficiency during RMP initialization and exploits it to break not only integrity but also confidentiality guarantees of SEV-SNP. We demonstrate RMPocalypse by enabling debug on production-mode CVMs, faking attestation, VMSA state rollback, and code injection",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/EU-25-Schlueter-RMPocalypse.pdf"
+    },
+    {
+      "id": "bheu25-50622",
+      "title": "Sponsored Session: Why We Can't Retrofit Old Security Principles Onto AI Agents and What to Do About It",
+      "speakers": [
+        "Ilia Shumailov"
+      ],
+      "description": "<p><span>Traditional security relies on axioms like separating code from data, but LLM-based agents blur these lines by treating user prompts and untrusted external content as identical semantic inputs. Dr. Ilia Shumailov argues that current defenses are fundamentally flawed: adaptive attacks bypass standard guardrails with over 90% success, and existing red-teaming incentives often perpetuate vulnerabilities rather than fixing them. This session presents a breakthrough alternative\u2014deployment architectures that fix prompt injections by design and scale to support complex Web and Computer Use Agents. Discover how to move beyond fragile detection models toward systems with provable security against control-flow injections and verifiable security against data-flow attacks for the next generation of autonomous agents.</span></p>"
+    },
+    {
+      "id": "bheu25-48083",
+      "title": "Unmasking Organizations' Security Postures: Insights From Phishing-Resistant Authentication",
+      "speakers": [
+        "Fei Liu"
+      ],
+      "description": "How many phishing attempts bypass enterprise pre-authentication security, including email gateways, DNS filtering, SASE, SWG, browser security, and endpoint protection, to trick users into malicious logins? And how effectively do current security systems detect and respond to these? While general phishing trends are known, the true impact and organizational defense postures remain unclear.<br />\r\nAnalyzing two years of phishing attempts stopped only by phishing-resistant authentication, we quantify a notable volume of attacks that bypass the pre-authentication security layers and successfully trick users. We then dive into events linked to AiTM campaigns using EvilProxy kits, dissecting their patterns across verticals and company sizes, identifying indicators of compromise, and tracking longitudinal trends. As part of our investigation, we also reached out to impacted organizations, with a notable number indicating they hadn't detected these attempts until our notifications.<br />\r\nThis work provides crucial, data-driven evidence highlighting the importance of phishing-resistant authentication and exposing many organizations' often mediocre security postures. It transforms failed authentication into actionable threat intelligence, revealing and helping address organizations' actual security gaps.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/BHEU25-Liu-Unmasking-Security-Postures.pdf"
+    },
+    {
+      "id": "bheu25-50484",
+      "title": "Main Stage: An Evolving Approach to Coordinated Security Research",
+      "speakers": [
+        "Tom Gallagher"
+      ],
+      "description": "<p class=\"pf0\"><span class=\"cf0\">Microsoft's vulnerability discovery and mitigation have evolved significantly and has been shaped by decades of internal research, external collaboration, and hard-earned lessons. What once began as a niche, reactive practice has matured into a critical feedback loop for our overall security posture, driving systemic improvements across the company. Tom is uniquely positioned to share this journey as he was the first penetration tester in Office. </span></p><p class=\"pf0\"><span class=\"cf0\">This session shares key learnings from Microsoft's early experiences in penetration testing and vulnerability response from someone who was personally part of the journey.  The session highlights how those formative moments including rapid patch cycles, customer feedback, and the push for quality have informed today's approach and helped shape a culture that values thoughtful remediation, transparency, and responsible security research.</span></p><p class=\"pf0\"><span class=\"cf0\">Microsoft's proactive stance on vulnerability response emphasizes deep collaboration with the global security research community. Through initiatives like bug bounty programs, Microsoft has created pathways for researchers and partners to work together to protect everyone. In the past year alone, Microsoft has awarded more than $17 million for this high-impact work.</span></p><p class=\"pf0\"><span class=\"cf0\">Attendees will gain a behind-the-scenes look at how Microsoft's vulnerability response has transformed from reactive fixes to a collaborative, trust-driven model. The session will also explore what's next for security research in open-source and AI including some exciting changes to our approach to these challenges. This is a story of progress, partnership, and the human side of securing technology at scale all aligned with our mission to build a safer digital future.</span></p>"
+    },
+    {
+      "id": "bheu25-49138",
+      "title": "Dill With It: Pickle Exploitation Techniques And Their Detection Using SaferPickle",
+      "speakers": [
+        "George Litvinov",
+        "Andrew Johnston"
+      ],
+      "description": "Python's pickle format is a security minefield, yet it remains a cornerstone of modern AI/ML and data science workflows. While its dangers are well-known, the effectiveness of existing open-source scanners against sophisticated attacks has remained largely unexamined.<br />\r\n<br />\r\nIn this talk we introduce five novel bypass techniques to defeat popular open-source scanners like Fickling, Modelscan and Picklescan. We will demonstrate how these tools can be tricked into classifying overtly malicious pickles as safe.<br />\r\n<br />\r\nTo combat these threats, we propose SaferPickle, a new open-source library. This library enhances the pickle format's security at runtime through transparent hardening. We will present its robust, multi-layered scanning engine, which integrates behavioral analysis, direct opcode inspection, and an intelligent module resolution system capable of securely reconstructing malicious calls from fragmented code.<br />\r\n<br />\r\nFinally, we'll share our journey of deploying SaferPickle to protect ML workloads at Google and integrating it as the first-ever pickle scanner in VirusTotal. Attendees will leave with<br />\r\nknowledge of bypass techniques, a new open-source tool and experience of how to harden the ML supply chain against one of its most persistent threats.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Johnston-Dill-With-It.pdf"
+    },
+    {
+      "id": "bheu25-50480",
+      "title": "Keynote: Who Gets to Point Fingers? Technical Capacity and International Accountability",
+      "speakers": [
+        "Louise Marie Hurel"
+      ],
+      "description": "<p>As cyber threats grow more sophisticated and geopolitically complex, the international community continues to grapple with fundamental questions about how states should behave in cyberspace\u2014and how to hold them accountable when they don't. International efforts to establish responsible state behaviour in cyberspace have traditionally centred on a narrow set of voices and technical capabilities. This talk will examine the current diplomatic landscape\u2014from the UN's work on norms of responsible state behaviour to emerging frameworks on state responsibility\u2014and reveal critical gaps in how we think about public cyber attribution. Drawing on research with middle-ground states, the session will explore how Global South nations are developing alternative approaches to attribution that challenge Western-centric assumptions about evidence, legitimacy, and strategic advantage. What happens when countries with limited technical infrastructure are inclined to attribute? How do differing regional threat landscapes shape attribution priorities? And crucially, what can the private sector learn from these perspectives as companies increasingly fill attribution gaps left by states? This talk will bridge high-level diplomatic negotiations with on-the-ground realities on this topic.</p>"
+    },
+    {
+      "id": "bheu25-49423",
+      "title": "Understanding Trends & Patterns In Insider Threat: Analysis Of 1,000+ Cases",
+      "speakers": [
+        "Michael Robinson"
+      ],
+      "description": "This session examines the world of malicious insider threat by identifying the trends and patterns of the Tactics, Techniques, and Procedures (TTPs) observed in over 1,000 cases. Rather than focus on attitudinal surveys or anecdotal data, this session will explore the TTPs used by malicious insiders which are most valuable to digital forensic examiners and incident responders.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Robinson-Understanding-Trends-Patterns-In-Insider-Threat-Analysis.pdf"
+    },
+    {
+      "id": "bheu25-49293",
+      "title": "Unsafe Code Detection Benchmark: Stress-Testing SAST And LLMs On Modern Web Backends",
+      "speakers": [
+        "Andrew Konstantinov",
+        "Irina Iarlykanova"
+      ],
+      "description": "<p>Modern backends aren't C or legacy Java. They're FastAPI/Flask/Django and Express/NestJS/Next.js. Yet we still judge detection tools with sink-centric, synthetic benchmarks that ignore framework semantics. We built the Unsafe Code Detection Benchmark, a reproducible way to score both SAST and LLMs on intentionally vulnerable, minimal micro-apps across today's web frameworks.<br><br>Our benchmark couples an open corpus with a single harness, unified ground truth and a failure-mode taxonomy mapped to CWE/OWASP. It measures precision/recall and cost/latency, controls for prompt/temperature variance and includes \"appears-vulnerable-but-safe\" scenarios to stress false-positives.<br><br>Initial results may surprise: on source-proximate issues common in modern stacks (parameter merging/polllution, middleware/decorator-order authz bypasses, subtle type coercion), state-of-the-art general purpose LLMs outperform industry leading SASTs in their default configuration \u2013 a gap we trace to weak framework awareness and imprecise source modeling. The twist: with simple, framework-aware custom rules SAST surpasses LLMs, showing why deterministic, organization-specific rules remain a force multiplier. LLMs provide strong raw recall but exhibit prompt sensitivity and a tendency to conflate stylistic \"best practices\" with real vulnerabilities.<br><br>Attendees will leave with a practical methodology and tooling to evaluate their own SAST and LLMs on modern stacks, concrete guidance to raise real-world detection rates and a lear path to extend and rerun the benchmark internally. We will release the benchmark specification, the harness for running selected SAST tools and LLMs as well as the open-source corpus.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Konstantinov-UnsafeCodeDetectionBenchmark.pdf"
+    },
+    {
+      "id": "bheu25-48836",
+      "title": "Don't Judge An Audiobook By Its Cover: Taking Over Your Amazon Account With A Kindle",
+      "speakers": [
+        "Valentino Ricotta"
+      ],
+      "description": "Amazon's Kindle is the most popular e-reader on the market, with an extensive ecosystem of e-books. From a security perspective, Kindle devices especially stand out because they are often linked to an Amazon account.<br />\r\n<br />\r\nTheir complex software stack supports numerous e-book file formats (AZW, MOBI, PDF...), as well as many underlying media formats that increase the attack surface. As such, downloading an e-book from the store may allow an attacker to gain root access to the device, take control of the Amazon account, and steal credit card information.<br />\r\n<br />\r\nIn this talk, we will dive into the internals of Kindle devices and discuss a $20,000 bug in the parsing of Audible audiobooks which allowed us to take full control of the e-reader. We will also share general insights on fuzzing file formats based on the MPEG-4 standard (ISOBMFF).",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Ricotta-Dont-Judge-An-Audiobook.pdf"
+    },
+    {
+      "id": "bheu25-49318",
+      "title": "Habemus Securitas - Exploring Apple's Hidden Territories",
+      "speakers": [
+        "Moritz Steffin"
+      ],
+      "description": "<div><span>With the Secure Page Table Monitor (SPTM) and Exclaves, Apple has introduced a broad spectrum of new memory protection mechanisms over the past few years, realized through their Guarded Execution Feature (GXF). Currently, there is little public discussion on piecing these mechanisms together and exploring the broader implications of XNU compartmentalization.</span></div><div><span><br></span></div><div><span>In this talk, we will delve into the inner workings of SPTM, exploring how its services are utilized by XNU and other secure world clients, namely the Secure Kernel (SK), Trusted Execution Monitor (TXM), and Exclaves, and the contributions they make to system and memory security. To achieve this, we analyze the underlying SPTM functionality, with a focus on memory frame typing, page mapping, and the implemented rulesets governing iOS memory mapping across newly introduced SPTM security domains.</span></div>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Steffin-HabemusSecuritas-ExploringApple.pdf",
+      "whitepaper_url": "https://i.blackhat.com/BH-EU-25/eu-25-Steffin-HabemusSecuritas-ExploringApplesHiddenTerritories-WP.pdf"
+    },
+    {
+      "id": "bheu25-49430",
+      "title": "The Post-NVD Era: A Call for Global CVE Decentralization",
+      "speakers": [
+        "Jerry Gamblin"
+      ],
+      "description": "<p>For decades, the National Vulnerability Database (NVD), maintained by NIST, has served as a cornerstone of vulnerability intelligence, providing crucial enrichment for Common Vulnerabilities and Exposures (CVEs). However, the NVD is grappling with an unprecedented backlog, stemming from budget cuts, an exponential surge in vulnerability disclosures, and inherent technical rigidities. This crisis has exposed its fragility and the systemic limitations of a centralized vulnerability management model. A model that leaves organizations blind to critical threats and exacerbates operational burdens. This talk argues that the current NVD crisis is a call for a fundamental paradigm shift, we must move towards global CVE decentralization now!</p><p>We meticulously dissect the NVD's failures and their far-reaching implications, then envision and advocate for a resilient, scalable, and collaborative decentralized ecosystem. By exploring pioneering models such as the Global CVE Allocation System (GCVE), the principles of Federated Search, and the potential of blockchain technology, this talk proposes a multi-faceted architectural evolution. We outline a comprehensive roadmap, detailing evolving responsibilities for software vendors, security teams, government agencies, and researchers. The post-NVD Era is not just about fixing a broken system. It's about embracing a distributed future where collective intelligence, shared responsibility, and technological innovation converge to build a more robust and trustworthy global vulnerability management framework.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Gamblin-ThePostNVDEra.pdf"
+    },
+    {
+      "id": "bheu25-48830",
+      "title": "Token Injection: Crashing LLM Inference With Special Tokens",
+      "speakers": [
+        "Pengyu Ding",
+        "Ziteng Xu",
+        "Zhiniang Peng",
+        "Dongliang Mu"
+      ],
+      "description": "As large language models (LLMs) are deployed at scale, their underlying inference frameworks (e.g., vLLM, SGLang, TensorRT-LLM) have become critical operational pillars. These systems must splice user prompts with control structures, tokenise them, and schedule requests within milliseconds. Within this high-speed pipeline, we identify an underappreciated attack surface: special tokens.<br />\r\n<br />\r\nWe introduce the first \"Token Injection\" attack model, showing how a single prompt composed solely of special tokens can trigger uncaught exceptions in embedding and CUDA computation stages, resulting in denial of service (DoS) or full-service crashes. It can also cause inference manipulation, such as chat interruption and context pollution. The attack requires no authentication and works via standard input interfaces, affecting both self-hosted and managed deployments. We validate impact across multiple inference frameworks, including vLLM, SGLang, TensorRT-LLM, MLX, Ollama, and Hugging Face TGI; and across major platforms, including NVIDIA NIM, Google Vertex AI, Azure AI Foundry, Hugging Face, Meta AI, and OpenRouter.<br />\r\n<br />\r\nThis work shifts the AI security focus from \"model output\" to the security of inference infrastructure, offering practitioners a new perspective and a concrete defence paradigm.",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Ding-Token-Injection-Crashing-LLM-Inference-With-Special-Tokens-final.pdf"
+    },
+    {
+      "id": "bheu25-49334",
+      "title": "Breaking The Harmony: Offensive Testing Of HarmonyOS NEXT Applications With Harm0nyz3r & DVHA",
+      "speakers": [
+        "Jorge Wallace"
+      ],
+      "description": "<p>HarmonyOS NEXT marks Huawei's transition to a fully independent operating system, powering a growing ecosystem of mobile devices and applications. While adoption is accelerating, public research into its security architecture, and its implications for app developers and end users, remains minimal.</p><p>This talk presents the results of a security assessment of HarmonyOS NEXT and its application ecosystem, combining a custom-built testing framework (Harm0nyz3r) with a purposely vulnerable application (Damn Vulnerable HarmonyOS Application \u2013 DVHA). Harm0nyz3r, inspired by Android security tools like Drozer, enables researchers to enumerate and interact with app IPC endpoints, fuzz abilities, and invoke hidden or restricted components. DVHA serves as a realistic playground, containing vulnerabilities such as insecure logging, hardcoded credentials, insecure data storage, SQL injection, command injection, and access control bypasses.</p><p>We will walk through methodology, exploitation workflows, and real-world findings, including challenges posed by HarmonyOS NEXT's unique security model and differences from Android. Live demonstrations will show how Harm0nyz3r maps an application's attack surface, crafts malicious payloads, and successfully exploits vulnerabilities in DVHA \u2014 with clear takeaways for vulnerability discovery in production apps.<br>Attendees will leave with a practical understanding of HarmonyOS NEXT app security, new offensive testing techniques for this emerging platform, and an appreciation of why mobile security research must expand beyond Android and iOS to address the next wave of global devices.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Wallace-Breaking-The-Harmony.pdf"
+    },
+    {
+      "id": "bheu25-49228",
+      "title": "MCP Unchained: Compromising The AI Agent Ecosystem Via Its \"Universal Connector\"",
+      "speakers": [
+        "Cheng huangsheng",
+        "Jing GUO",
+        "WU Huiyu",
+        "Sim Zheng"
+      ],
+      "description": "<p>The Model Context Protocol (MCP) is being positioned as the \"USB-C\" for connecting AI to the physical world. In an 8-month investigation, we conducted the first large-scale security audit of this emerging ecosystem, analyzing over 1,000 MCP projects on GitHub. We identified more than 500 unique vulnerabilities, including critical Remote Code Execution (RCE) flaws impacting major clients like ChatGPT and Cursor.<br>Our research uncovers three systemic attack surfaces across the MCP landscape:</p><ol><li>Protocol-Level Design Flaws: We are the first to demonstrate how to weaponize the new \"Elicitation\" feature, creating a full phishing-to-agent-hijacking exploit chain, and leveraging the protocol's inherent conflation of instruction and data to enable potent indirect prompt injections.</li><li>Implementation Inconsistencies: We discovered that subtle yet exploitable differences in security assumptions and implementations across various language SDKs (Go, Python, Node.js) create cross-platform attack vectors.</li><li>Ecosystem-Level Risks: From tool poisoning and cross-agent data exfiltration to complete takeover, attackers can silently control AI Agents, turning them into persistent backdoors without the user's knowledge.<br></li></ol><p>This talk will publicly disclose multiple real-world attack demonstrations, including exploits against official MCP servers. We will prove that MCP is the next major battleground for AI security.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Huangsheng-MCP-Unchained-Compromising-The-AI-Agent-Ecosystem-Via-Its-Universal-Connector-Final.pdf"
+    },
+    {
+      "id": "bheu25-48918",
+      "title": "Nation-Scale SecOps: How CERT PL Scans Poland",
+      "speakers": [
+        "Krzysztof Zaj\u0105c"
+      ],
+      "description": "<p>At CERT PL, a national CSIRT for Poland, we learned that the security of public entities is an area with numerous easily exploitable vulnerabilities and a significant need for free tools to improve the situation. <br><br>In this presentation, I will describe the approach we follow to enhance the security of public and private entities in Poland. I will introduce moje.cert.pl (meaning 'my CERT PL' in English), a system where administrators can join, scan their domains and networks for vulnerabilities, and receive notifications about user password breaches within their domains \u2014 all in one place and for free. I will also explain how we automatically scan tens of thousands of public entities in Poland (even ones that don't know about the CSIRT) and present Artemis, an open-source tool we developed to achieve this (and also to provide scanning in moje.cert.pl). Additionally, I will outline the philosophy behind building these tools. <br><br>I hope this talk will inspire you to run similar initiatives, whether you are part of a CSIRT, a hosting provider, or even a team of software engineers who want to make a positive impact.</p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Zajac-Nation-Scale-Sec-Ops.pdf"
+    },
+    {
+      "id": "bheu25-50009",
+      "title": "The Black Hat Europe Network Operations Center (NOC) Report",
+      "speakers": [
+        "Neil Wyler",
+        "Bart Stump"
+      ],
+      "description": "<p><span>Back with another year of soul-crushing statistics, the Black Hat NOC team will be sharing all of the data that keeps us equally puzzled, and entertained, year after year. We'll let you know all the tools and techniques we're using to set up, stabilize, and secure the network, and what changes we've made over the past year to try and keep doing things better. Of course, we'll be sharing some of the more humorous network activity and what it helps us learn about the way security professionals conduct themselves on an open WiFi network.</span></p>"
+    },
+    {
+      "id": "bheu25-49156",
+      "title": "Plug and Controlled: Millions of Intranet Devices Are Facing Silent Takeover (On-Demand Only)",
+      "speakers": [
+        "Jincheng Wang",
+        "Nan He"
+      ],
+      "description": "<p>The shift to cloud-managed IoT has introduced a dangerous blind spot in the security posture of millions of enterprise and residential devices. While vendors focus on web-facing threats, a far more insidious risk has emerged: cloud-device communication channels are becoming the new attack surface. In this presentation, we reveal critical vulnerabilities affecting products from major network equipment manufacturers that enable remote, unauthenticated takeover of intranet devices. Moreover, we demonstrate that security improvements made by vendors\u2014such as enforcing one-to-one cloud\u2013device communication channels\u2014are still insufficient, and can continue to be exploited under real-world conditions.<br>We present new attack technique that allows attackers anywhere in the world to impersonate target intranet devices, hijack cloud communication channels, spoof the cloud and bypass companion app authentication, and ultimately achieve Remote Code Execution (RCE) with root privileges. Our research exposes flaws in existing cloud-device authentication mechanism, and a widespread absence of proper channel verification mechanisms.<br>These vulnerabilities silently impact millions of deployed devices worldwide and highlight systemic weaknesses in IoT cloud ecosystem security. Even more concerning, authentication mechanisms are typically finalized during product release and reused across product lines without change. When design flaws exist, they can affect a broad range of devices.<br>This presentation will describe our reverse engineering, vulnerability exploitation, and ethical disclosure processes. We will provide practical guidance for vendors, enterprise defenders, and cloud architects on how to redesign trust boundaries and secure remote management channels within cloud\u2013device\u2013app ecosystem.</p><p><b>This session is available on-demand only via the Black Hat Events App (December 18, 2025 - January 17, 2026).</b></p>",
+      "slides_url": "https://i.blackhat.com/BH-EU-25/eu-25-Wang-Plug-Controlled-Millions-Intranet-Devices.pdf"
+    }
+  ]
+}
