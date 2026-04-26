@@ -29,9 +29,37 @@ Mandatory execution rules:
 - Always start by reading `resources/manifest.json` to learn what is cached and what is missing.
 - Search the cache first: filter `resources/{academic|industry}/{year}/{venue}/index.json` by title, speakers, or abstract.
 - Only fetch full-text content (PDF) on-demand when the user asks about a specific paper or talk in detail.
-- Use Semantic Scholar, DBLP, arXiv, or `paperhub-cli --no-plan` only as fallback/enrichment after the cache returns no results.
+- Use `paperhub-cli search --no-plan` ONLY as enrichment after the cache returns no results. Never use DBLP,
+  Semantic Scholar, arXiv, or any other API directly — those are reachable only through paperhub-cli.
 - If a query targets a year outside 2021–2025, refuse with: "This skill covers the most recent 5 years (2021–2025). Content from <year> is outside the cached window. Contact the maintainer to extend coverage."
 - If a query targets a venue or year that is listed as a gap in manifest.json, say so and optionally offer a calendar-based lookup (for upcoming conferences).
+
+## Anti-Patterns — What This Skill Must NOT Do
+
+These are common mistakes agents make when running this skill. Memorize them:
+
+1. **Never populate the cache yourself by calling DBLP, Semantic Scholar, or any API directly.**
+   The cache is maintained by the maintainer via `scripts/populate_cache.py`. If a venue-year
+   is a gap, say so. Do not try to fill it at runtime by scraping DBLP XML, Semantic Scholar,
+   or any other source.
+
+2. **Never use `web_search` (Tavily, Brave, Google).**
+   See IRON RULE below. This is the most commonly violated rule.
+
+3. **Never use tools other than those explicitly listed (paperhub-cli, pdftotext, curl, Bash, WebFetch).**
+   Do not invoke external search APIs, academic indexers, or paper databases that aren't
+   paperhub-cli. paperhub-cli is the only approved external paper search tool, and only for
+   enrichment after the cache has been exhausted.
+
+4. **Never fabricate or hallucinate paper/talk metadata.**
+   If the cache doesn't have a paper/talk listed, do not guess titles, authors, or DOIs.
+   Say the data isn't available. The rubric dimensions (Tools/artifacts, Impact, etc.)
+   must be sourced from actual content you fetched on-demand, not inferred.
+
+5. **Never crawl conference pages outside the `scripts/` crawlers.**
+   Do not write ad-hoc `curl` or `httpx` calls to scrape venue pages mid-conversation.
+   Use `WebFetch` only for URLs explicitly documented in the skill (e.g., CFPTime,
+   ConfSearch, a specific PDF the user asked about).
 
 ## IRON RULE — No Generic Web Search
 
