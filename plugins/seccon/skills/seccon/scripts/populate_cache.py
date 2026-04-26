@@ -207,6 +207,59 @@ def crawl_recon_year(year: int) -> int:
     return len(talks)
 
 
+def crawl_hardwear_year(year: int) -> int:
+    """Crawl hardwear.io talks from YouTube RSS feed.
+
+    Uses the channel uploads RSS feed. Limited to ~15 most recent videos;
+    for full coverage, configure YOUTUBE_API_KEY and use the Data API.
+    """
+    url = "https://www.youtube.com/feeds/videos.xml?channel_id=UChwYb9xc9tZXquQxu4G0l_g"
+    xml = _curl(url, timeout=15)
+    if not xml:
+        return 0
+    talks = []
+    for entry in re.finditer(r'<entry>(.*?)</entry>', xml, re.DOTALL):
+        content = entry.group(1)
+        title_match = re.search(r'<title>(.*?)</title>', content, re.DOTALL)
+        if not title_match:
+            continue
+        full_title = title_match.group(1).strip()
+        # Parse: "Hardwear.io NL 2025: Title by Speaker" or "Hardwear.io NL 2025 | Title - Speaker"
+        # Only keep entries matching the requested year
+        if str(year) not in full_title:
+            continue
+        # Extract talk title and speakers
+        title = full_title
+        # Remove prefix like "Hardwear.io NL 2025: " or "Hardwear.io NL2025: " or "Hardwear.io NL 2025 | "
+        for sep in [": ", " | ", ":"]:
+            parts = title.split(sep, 1)
+            if len(parts) > 1 and "hardwear" in parts[0].lower():
+                title = parts[1].strip()
+                break
+        speakers = []
+        # Try extracting "by Speaker" pattern
+        if " by " in title:
+            parts = title.rsplit(" by ", 1)
+            title = parts[0].strip()
+            speaker_part = parts[1].strip()
+            speakers = [s.strip() for s in re.split(r'[,&]', speaker_part) if s.strip()]
+        video_id = re.search(r'<yt:videoId>(.*?)</yt:videoId>', content)
+        video_url = f"https://www.youtube.com/watch?v={video_id.group(1)}" if video_id else ""
+        talk_id = f"hw{year}-{len(talks)+1:03d}"
+        talks.append({"id": talk_id, "title": title, "speakers": speakers, "video_url": video_url})
+    if not talks:
+        return 0
+    out_dir = RESOURCES / "industry" / str(year) / "hardwear"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    idx = {
+        "conference": {"name": "hardwear.io", "acronym": "hardwear.io", "year": year, "url": f"https://hardwear.io/netherlands-{year}/talks/"},
+        "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": False, "source": "YouTube RSS (limited)", "last_crawled": "2026-04-24"},
+        "talks": talks,
+    }
+    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    return len(talks)
+
+
 def write_manifest(academic_cached: dict, industry_cached: dict):
     manifest = {
         "version": "1.3.0",
@@ -289,6 +342,14 @@ def main():
         rc.append(y) if c else None
         print(f"    REcon {y}: {c or 'unreachable'}")
     ind["recon"] = rc
+
+    print("\n--- hardwear.io (YouTube RSS) ---")
+    hw = []
+    for y in [2025]:
+        c = crawl_hardwear_year(y)
+        hw.append(y) if c else None
+        print(f"    hardwear.io {y}: {c or 'no data'}")
+    ind["hardwear"] = hw
 
     print("\n--- Updating manifest ---")
     write_manifest(ac_cached, ind)

@@ -1,0 +1,110 @@
+{
+  "conference": {
+    "name": "hardwear.io",
+    "acronym": "hardwear.io",
+    "year": 2025,
+    "url": "https://hardwear.io/netherlands-2025/talks/"
+  },
+  "coverage": {
+    "talks_count": 14,
+    "has_abstracts": false,
+    "has_slides": false,
+    "last_crawled": "2026-04-24",
+    "note": "YouTube RSS feed (limited to ~15 most recent)"
+  },
+  "talks": [
+    {
+      "id": "hw25-001",
+      "title": "Bypassing PQC Signature Verification w FaultInjection Dilithium, XMSS, SPHINCS+",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=Qdk4KT8nWu0"
+    },
+    {
+      "id": "hw25-002",
+      "title": "Security-First DRAM Design: Coping w Data-Disturbance Error of Today &amp; Tomorrow",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=YvFq20y_oVQ"
+    },
+    {
+      "id": "hw25-003",
+      "title": "GPUHammer: Flipping Bits in GPUs for Fun and Profit",
+      "speakers": [
+        "Gururaj Saileshwar"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=zO6ALt90fv8"
+    },
+    {
+      "id": "hw25-004",
+      "title": "Challenges and Lessons Learned",
+      "speakers": [
+        "Elia Geretto"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=8rvXGCzIEOg"
+    },
+    {
+      "id": "hw25-005",
+      "title": "Rowhammer Is Back On DDR5",
+      "speakers": [
+        "Patrick Jattke"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=KKj8SSyyE-o"
+    },
+    {
+      "id": "hw25-006",
+      "title": "RE Realtek RTL8761B* Bluetooth chips, to make better Bluetooth security",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=mncR3_HOh-0"
+    },
+    {
+      "id": "hw25-007",
+      "title": "Modern memory error exploitation via speculative execution attacks: Anil Kurmus",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=5zy0vJGILUM"
+    },
+    {
+      "id": "hw25-008",
+      "title": "When Memory Lies: Breaching Processor Security via Rogue Memory Modules",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=eWa2jJslAO4"
+    },
+    {
+      "id": "hw25-009",
+      "title": "faulting a smartphone SOC into a ROP chain at EL3",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=YVc3ckkQ6AA"
+    },
+    {
+      "id": "hw25-010",
+      "title": "Hacking to the Gate(way): Take Over Samsung SmartThings with a Single API Call",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=jOJNJDtf474"
+    },
+    {
+      "id": "hw25-011",
+      "title": "Boot Vectors &amp; Double Glitches: Bypassing RP2350s Secure Boot",
+      "speakers": [
+        "Marius",
+        "amp; Thomas"
+      ],
+      "video_url": "https://www.youtube.com/watch?v=Lqx-pXMq56U"
+    },
+    {
+      "id": "hw25-012",
+      "title": "Watch Out! A Security Case Study Of A COROS Sports Watch - Moritz Abrell",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=WmY9XBJEq2A"
+    },
+    {
+      "id": "hw25-013",
+      "title": "Glitching Google's TV Streamer From Adb To Root - Niek Timmers",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=-w5mpXTnNJA"
+    },
+    {
+      "id": "hw25-014",
+      "title": "How We Broke The OMAP-L138 Trusted Execution Environment - Wouter &amp; Carlo",
+      "speakers": [],
+      "video_url": "https://www.youtube.com/watch?v=tck7Rw_slIY"
+    }
+  ]
+}

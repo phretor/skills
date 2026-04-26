@@ -135,11 +135,11 @@
         "ieee-sp": {
           "cached": [
             2021,
+            2022,
             2023,
             2024
           ],
           "gaps": [
-            2022,
             2025
           ],
           "note": ""
@@ -273,27 +273,17 @@
           "gaps": [],
           "note": ""
         },
-        "rsec": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "note": "Not yet crawled"
-        },
         "hardwear": {
-          "cached": [],
+          "cached": [
+            2025
+          ],
           "gaps": [
             2021,
             2022,
             2023,
-            2024,
-            2025
+            2024
           ],
-          "note": "JS-rendered (speaker names only)"
+          "note": ""
         },
         "hitcon": {
           "cached": [],
@@ -304,7 +294,7 @@
             2024,
             2025
           ],
-          "note": "403 blocked"
+          "note": "Not yet crawled"
         },
         "hitb": {
           "cached": [],
@@ -315,7 +305,7 @@
             2024,
             2025
           ],
-          "note": "JS-rendered (Elementor/WordPress)"
+          "note": "Not yet crawled"
         },
         "vb": {
           "cached": [],
@@ -326,7 +316,7 @@
             2024,
             2025
           ],
-          "note": "403 blocked"
+          "note": "Not yet crawled"
         },
         "poc": {
           "cached": [],
@@ -337,7 +327,7 @@
             2024,
             2025
           ],
-          "note": "JS-rendered (schedule loaded dynamically)"
+          "note": "Not yet crawled"
         }
       }
     }

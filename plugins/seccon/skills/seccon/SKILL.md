@@ -419,7 +419,7 @@ Read `resources/manifest.json` for cached industry venue-years.
 | ACISP | Academic — Australasian | ✅ 2021–2023 (87 papers) |
 | RSA Conference | Enterprise, policy, threat intel | ❌ Not cached |
 | REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
-| hardwear.io | Hardware, embedded, IoT security | ❌ Not cached |
+| hardwear.io | Hardware, embedded, IoT security | ✅ 2025 (14 talks, YouTube RSS) |
 | HITCON | Asia-Pacific, CTF community | ❌ Not cached |
 | HITB | Hacking in the Box (KL/Amsterdam) | ❌ Not cached |
 | VB Conference | Malware, threat intelligence | ❌ Not cached |

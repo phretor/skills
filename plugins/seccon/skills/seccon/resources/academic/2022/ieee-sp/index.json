@@ -1,0 +1,1908 @@
+{
+  "conference": {
+    "name": "IEEE Symposium on Security and Privacy",
+    "acronym": "IEEE S&P",
+    "year": 2022,
+    "venue_slug": "ieee-sp"
+  },
+  "coverage": {
+    "papers_count": 148,
+    "has_abstracts": false,
+    "last_crawled": "2026-04-24"
+  },
+  "papers": [
+    {
+      "id": "ieee-sp-2022-001",
+      "title": "PATA: Fuzzing with Path Aware Taint Analysis.",
+      "authors": [
+        "Jie Liang 0006",
+        "Mingzhe Wang",
+        "Chijin Zhou",
+        "Zhiyong Wu 0010",
+        "Yu Jiang 0001",
+        "Jianzhong Liu",
+        "Zhe Liu 0001",
+        "Jiaguang Sun 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833594",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LiangWZW0L0022"
+    },
+    {
+      "id": "ieee-sp-2022-002",
+      "title": "JIGSAW: Efficient and Scalable Path Constraints Fuzzing.",
+      "authors": [
+        "Ju Chen",
+        "Jinghan Wang",
+        "Chengyu Song",
+        "Heng Yin 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833796",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ChenWSY22"
+    },
+    {
+      "id": "ieee-sp-2022-003",
+      "title": "BEACON: Directed Grey-Box Fuzzing with Provable Path Pruning.",
+      "authors": [
+        "Heqing Huang 0002",
+        "Yiyuan Guo",
+        "Qingkai Shi",
+        "Peisen Yao",
+        "Rongxin Wu",
+        "Charles Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833751",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HuangGSYWZ22"
+    },
+    {
+      "id": "ieee-sp-2022-004",
+      "title": "Automated Attack Synthesis by Extracting Finite State Machines from Protocol Specification Documents.",
+      "authors": [
+        "Maria Leonor Pacheco",
+        "Max von Hippel",
+        "Ben Weintraub",
+        "Dan Goldwasser",
+        "Cristina Nita-Rotaru"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833673",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#PachecoHWGN22"
+    },
+    {
+      "id": "ieee-sp-2022-005",
+      "title": "ProVerif with Lemmas, Induction, Fast Subsumption, and Much More.",
+      "authors": [
+        "Bruno Blanchet",
+        "Vincent Cheval",
+        "V&#233;ronique Cortier"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833653",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BlanchetCC22"
+    },
+    {
+      "id": "ieee-sp-2022-006",
+      "title": "Four Attacks and a Proof for Telegram.",
+      "authors": [
+        "Martin R. Albrecht",
+        "Lenka Marekov&#225;",
+        "Kenneth G. Paterson",
+        "Igors Stepanovs"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833666",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AlbrechtMPS22"
+    },
+    {
+      "id": "ieee-sp-2022-007",
+      "title": "Noise*: A Library of Verified High-Performance Secure Channel Protocol Implementations.",
+      "authors": [
+        "Son Ho",
+        "Jonathan Protzenko",
+        "Abhishek Bichhawat",
+        "Karthikeyan Bhargavan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833621",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HoPBB22"
+    },
+    {
+      "id": "ieee-sp-2022-008",
+      "title": "A Logic and an Interactive Prover for the Computational Post-Quantum Security of Protocols.",
+      "authors": [
+        "Cas Cremers",
+        "Caroline Fontaine",
+        "Charlie Jacomme"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833800",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#CremersFJ22"
+    },
+    {
+      "id": "ieee-sp-2022-009",
+      "title": "IronMask: Versatile Verification of Masking Security.",
+      "authors": [
+        "Sonia Bela&#239;d",
+        "Darius Mercadier",
+        "Matthieu Rivain",
+        "Abdul Rahman Taleb"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833600",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BelaidMRT22"
+    },
+    {
+      "id": "ieee-sp-2022-010",
+      "title": "SAILFISH: Vetting Smart Contract State-Inconsistency Bugs in Seconds.",
+      "authors": [
+        "Priyanka Bose",
+        "Dipanjan Das 0002",
+        "Yanju Chen",
+        "Yu Feng 0001",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833721",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Bose0C0KV22"
+    },
+    {
+      "id": "ieee-sp-2022-011",
+      "title": "ZeeStar: Private Smart Contracts by Homomorphic Encryption and Zero-knowledge Proofs.",
+      "authors": [
+        "Samuel Steffen",
+        "Benjamin Bichsel",
+        "Roger Baumgartner",
+        "Martin T. Vechev"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833732",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SteffenBBV22"
+    },
+    {
+      "id": "ieee-sp-2022-012",
+      "title": "Quantifying Blockchain Extractable Value: How dark is the forest?",
+      "authors": [
+        "Kaihua Qin",
+        "Liyi Zhou",
+        "Arthur Gervais"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833734",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#QinZG22"
+    },
+    {
+      "id": "ieee-sp-2022-013",
+      "title": "A Formal Security Analysis of the W3C Web Payment APIs: Attacks and Verification.",
+      "authors": [
+        "Quoc Huy Do 0001",
+        "Pedram Hosseyni",
+        "Ralf K&#252;sters",
+        "Guido Schmitz",
+        "Nils Wenzler",
+        "Tim W&#252;rtele"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833681",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#0001HKSWW22"
+    },
+    {
+      "id": "ieee-sp-2022-014",
+      "title": "Cats vs. Spectre: An Axiomatic Approach to Modeling Speculative Execution Attacks.",
+      "authors": [
+        "Hern&#225;n Ponce de Le&#243;n",
+        "Johannes Kinder"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833774",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LeonK22"
+    },
+    {
+      "id": "ieee-sp-2022-015",
+      "title": "TASHAROK: Using Mechanism Design for Enhancing Security Resource Allocation in Interdependent Systems.",
+      "authors": [
+        "Mustafa Abdallah",
+        "Daniel Woods",
+        "Parinaz Naghizadeh",
+        "Issa Khalil",
+        "Timothy N. Cason",
+        "Shreyas Sundaram",
+        "Saurabh Bagchi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833591",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AbdallahWNKCSB22"
+    },
+    {
+      "id": "ieee-sp-2022-016",
+      "title": "SoK: Authentication in Augmented and Virtual Reality.",
+      "authors": [
+        "Sophie Stephenson",
+        "Bijeeta Pal",
+        "Stephen Fan",
+        "Earlence Fernandes",
+        "Yuhang Zhao 0001",
+        "Rahul Chatterjee 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833742",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#StephensonPFFZ022"
+    },
+    {
+      "id": "ieee-sp-2022-017",
+      "title": "Delay Wreaks Havoc on Your Smart Home: Delay-based Automation Interference Attacks.",
+      "authors": [
+        "Haotian Chi",
+        "Chenglong Fu 0002",
+        "Qiang Zeng 0001",
+        "Xiaojiang Du"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833620",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Chi00D22"
+    },
+    {
+      "id": "ieee-sp-2022-018",
+      "title": "Peekaboo: A Hub-Based Approach to Enable Transparency in Data Processing within Smart Homes.",
+      "authors": [
+        "Haojian Jin",
+        "Gram Liu",
+        "David Hwang",
+        "Swarun Kumar",
+        "Yuvraj Agarwal",
+        "Jason I. Hong"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833629",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JinLHKAH22"
+    },
+    {
+      "id": "ieee-sp-2022-019",
+      "title": "vSGX: Virtualizing SGX Enclaves on AMD SEV.",
+      "authors": [
+        "Shixuan Zhao 0002",
+        "Mengyuan Li 0004",
+        "Yinqian Zhang",
+        "Zhiqiang Lin 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833694",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZhaoLZL22"
+    },
+    {
+      "id": "ieee-sp-2022-020",
+      "title": "A Systematic Look at Ciphertext Side Channels on AMD SEV-SNP.",
+      "authors": [
+        "Mengyuan Li 0004",
+        "Luca Wilke",
+        "Jan Wichelmann",
+        "Thomas Eisenbarth 0001",
+        "Radu Teodorescu",
+        "Yinqian Zhang"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833768",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LiWW0TZ22"
+    },
+    {
+      "id": "ieee-sp-2022-021",
+      "title": "RT-TEE: Real-time System Availability for Cyber-physical Systems using ARM TrustZone.",
+      "authors": [
+        "Jinwen Wang",
+        "Ao Li 0006",
+        "Haoran Li",
+        "Chenyang Lu 0001",
+        "Ning Zhang 0017"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833604",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WangLL0022"
+    },
+    {
+      "id": "ieee-sp-2022-022",
+      "title": "A Secret-Free Hypervisor: Rethinking Isolation in the Age of Speculative Vulnerabilities.",
+      "authors": [
+        "Hongyan Xia",
+        "David Zhang",
+        "Wei Liu",
+        "Istv&#225;n Haller",
+        "Bruce Sherwin",
+        "David Chisnall"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833726",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#XiaZLHSC22"
+    },
+    {
+      "id": "ieee-sp-2022-023",
+      "title": "Smile: Secure Memory Introspection for Live Enclave.",
+      "authors": [
+        "Lei Zhou 0023",
+        "Xuhua Ding",
+        "Fengwei Zhang"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833714",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZhouDZ22"
+    },
+    {
+      "id": "ieee-sp-2022-024",
+      "title": "Statistical Quantification of Differential Privacy: A Local Approach.",
+      "authors": [
+        "&#214;nder Askin",
+        "Tim Kutta",
+        "Holger Dette"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833689",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AskinKD22"
+    },
+    {
+      "id": "ieee-sp-2022-025",
+      "title": "Locally Differentially Private Sparse Vector Aggregation.",
+      "authors": [
+        "Mingxun Zhou",
+        "Tianhao Wang 0001",
+        "T.-H. Hubert Chan",
+        "Giulia Fanti",
+        "Elaine Shi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833635",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Zhou0CFS22"
+    },
+    {
+      "id": "ieee-sp-2022-026",
+      "title": "Differentially Private Histograms in the Shuffle Model from Fake Users.",
+      "authors": [
+        "Albert Cheu",
+        "Maxim Zhilyaev"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833614",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#CheuZ22"
+    },
+    {
+      "id": "ieee-sp-2022-027",
+      "title": "Differential Privacy and Swapping: Examining De-Identification's Impact on Minority Representation and Privacy Preservation in the U.S. Census.",
+      "authors": [
+        "Miranda Christ",
+        "Sarah Radway",
+        "Steven M. Bellovin"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833668",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ChristRB22"
+    },
+    {
+      "id": "ieee-sp-2022-028",
+      "title": "Are We There Yet? Timing and Floating-Point Attacks on Differential Privacy Systems.",
+      "authors": [
+        "Jiankai Jin",
+        "Eleanor McMurtry",
+        "Benjamin I. P. Rubinstein",
+        "Olga Ohrimenko"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833672",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JinMRO22"
+    },
+    {
+      "id": "ieee-sp-2022-029",
+      "title": "SHADEWATCHER: Recommendation-guided Cyber Threat Analysis using System Audit Records.",
+      "authors": [
+        "Jun Zeng 0006",
+        "Xiang Wang 0010",
+        "Jiahao Liu 0005",
+        "Yinfang Chen",
+        "Zhenkai Liang",
+        "Tat-Seng Chua",
+        "Zheng Leong Chua"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833669",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZengWLCLCC22"
+    },
+    {
+      "id": "ieee-sp-2022-030",
+      "title": "SIRAJ: A Unified Framework for Aggregation of Malicious Entity Detectors.",
+      "authors": [
+        "Saravanan Thirumuruganathan",
+        "Mohamed Nabeel",
+        "Euijin Choo",
+        "Issa Khalil",
+        "Ting Yu 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833725",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Thirumuruganathan22"
+    },
+    {
+      "id": "ieee-sp-2022-031",
+      "title": "DEEPCASE: Semi-Supervised Contextual Analysis of Security Events.",
+      "authors": [
+        "Thijs van Ede",
+        "Hojjat Aghakhani",
+        "Noah Spahn",
+        "Riccardo Bortolameotti",
+        "Marco Cova",
+        "Andrea Continella",
+        "Maarten van Steen",
+        "Andreas Peter 0001",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833671",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#EdeASBCCSPKV22"
+    },
+    {
+      "id": "ieee-sp-2022-032",
+      "title": "DEPCOMM: Graph Summarization on System Audit Logs for Attack Investigation.",
+      "authors": [
+        "Zhiqiang Xu",
+        "Pengcheng Fang",
+        "Changlin Liu",
+        "Xusheng Xiao",
+        "Yu Wen 0001",
+        "Dan Meng 0002"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833632",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#XuFLXWM22"
+    },
+    {
+      "id": "ieee-sp-2022-033",
+      "title": "Measuring and Mitigating the Risk of IP Reuse on Public Clouds.",
+      "authors": [
+        "Eric Pauley",
+        "Ryan Sheatsley",
+        "Blaine Hoak",
+        "Quinn Burke 0002",
+        "Yohan Beugin",
+        "Patrick D. McDaniel"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833784",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#PauleySHBBM22"
+    },
+    {
+      "id": "ieee-sp-2022-034",
+      "title": "SecFloat: Accurate Floating-Point meets Secure 2-Party Computation.",
+      "authors": [
+        "Deevashwer Rathee",
+        "Anwesh Bhattacharya",
+        "Rahul Sharma 0001",
+        "Divya Gupta 0001",
+        "Nishanth Chandran",
+        "Aseem Rastogi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833697",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RatheeB00CR22"
+    },
+    {
+      "id": "ieee-sp-2022-035",
+      "title": "Multi-Server Verifiable Computation of Low-Degree Polynomials.",
+      "authors": [
+        "Liang Feng Zhang",
+        "Huaxiong Wang"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833792",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZhangW22"
+    },
+    {
+      "id": "ieee-sp-2022-036",
+      "title": "Why Crypto-detectors Fail: A Systematic Evaluation of Cryptographic Misuse Detection Techniques.",
+      "authors": [
+        "Amit Seal Ami",
+        "Nathan Cooper",
+        "Kaushal Kafle",
+        "Kevin Moran",
+        "Denys Poshyvanyk",
+        "Adwait Nadkarni"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833582",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AmiCKMPN22"
+    },
+    {
+      "id": "ieee-sp-2022-037",
+      "title": "&#34;They're not that hard to mitigate&#34;: What Cryptographic Library Developers Think About Timing Attacks.",
+      "authors": [
+        "Jan Jancar",
+        "Marcel Fourn&#233;",
+        "Daniel De Almeida Braga",
+        "Mohamed Sabt",
+        "Peter Schwabe",
+        "Gilles Barthe",
+        "Pierre-Alain Fouque",
+        "Yasemin Acar"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833713",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JancarFBSSBFA22"
+    },
+    {
+      "id": "ieee-sp-2022-038",
+      "title": "Annotating, Tracking, and Protecting Cryptographic Secrets with CryptoMPK.",
+      "authors": [
+        "Xuancheng Jin",
+        "Xuangan Xiao",
+        "Songlin Jia",
+        "Wang Gao",
+        "Dawu Gu",
+        "Hang Zhang 0012",
+        "Siqi Ma",
+        "Zhiyun Qian",
+        "Juanru Li"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833650",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JinXJGGZMQL22"
+    },
+    {
+      "id": "ieee-sp-2022-039",
+      "title": "SoK: Practical Foundations for Software Spectre Defenses.",
+      "authors": [
+        "Sunjay Cauligi",
+        "Craig Disselkoen",
+        "Daniel Moghimi",
+        "Gilles Barthe",
+        "Deian Stefan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833707",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#CauligiDMBS22"
+    },
+    {
+      "id": "ieee-sp-2022-040",
+      "title": "SpecHammer: Combining Spectre and Rowhammer for New Speculative Attacks.",
+      "authors": [
+        "Youssef Tobah",
+        "Andrew Kwong",
+        "Ingab Kang",
+        "Daniel Genkin",
+        "Kang G. Shin"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833802",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#TobahKKGS22"
+    },
+    {
+      "id": "ieee-sp-2022-041",
+      "title": "Spook.js: Attacking Chrome Strict Site Isolation via Speculative Execution.",
+      "authors": [
+        "Ayush Agarwal",
+        "Sioli O'Connell",
+        "Jason Kim 0007",
+        "Shaked Yehezkel",
+        "Daniel Genkin",
+        "Eyal Ronen",
+        "Yuval Yarom"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833711",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AgarwalOKYGRY22"
+    },
+    {
+      "id": "ieee-sp-2022-042",
+      "title": "BLACKSMITH: Scalable Rowhammering in the Frequency Domain.",
+      "authors": [
+        "Patrick Jattke",
+        "Victor van der Veen",
+        "Pietro Frigo",
+        "Stijn Gunter",
+        "Kaveh Razavi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833772",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JattkeVFGR22"
+    },
+    {
+      "id": "ieee-sp-2022-043",
+      "title": "ProTRR: Principled yet Optimal In-DRAM Target Row Refresh.",
+      "authors": [
+        "Michele Marazzi",
+        "Patrick Jattke",
+        "Flavien Solt",
+        "Kaveh Razavi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833664",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MarazziJSR22"
+    },
+    {
+      "id": "ieee-sp-2022-044",
+      "title": "Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions.",
+      "authors": [
+        "Hammond Pearce",
+        "Baleegh Ahmad",
+        "Benjamin Tan 0001",
+        "Brendan Dolan-Gavitt",
+        "Ramesh Karri"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833571",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#PearceA0DK22"
+    },
+    {
+      "id": "ieee-sp-2022-045",
+      "title": "Spinning Language Models: Risks of Propaganda-As-A-Service and Countermeasures.",
+      "authors": [
+        "Eugene Bagdasaryan",
+        "Vitaly Shmatikov"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833572",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BagdasaryanS22"
+    },
+    {
+      "id": "ieee-sp-2022-046",
+      "title": "SoK: How Robust is Image Classification Deep Neural Network Watermarking?",
+      "authors": [
+        "Nils Lukas",
+        "Edward Jiang",
+        "Xinda Li 0001",
+        "Florian Kerschbaum"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833693",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LukasJLK22"
+    },
+    {
+      "id": "ieee-sp-2022-047",
+      "title": "Transcending TRANSCEND: Revisiting Malware Classification in the Presence of Concept Drift.",
+      "authors": [
+        "Federico Barbero",
+        "Feargus Pendlebury",
+        "Fabio Pierazzi",
+        "Lorenzo Cavallaro"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833659",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BarberoPPC22"
+    },
+    {
+      "id": "ieee-sp-2022-048",
+      "title": "Copy, Right? A Testing Framework for Copyright Protection of Deep Learning Models.",
+      "authors": [
+        "Jialuo Chen",
+        "Jingyi Wang 0004",
+        "Tinglan Peng",
+        "Youcheng Sun",
+        "Peng Cheng 0001",
+        "Shouling Ji",
+        "Xingjun Ma",
+        "Bo Li 0026",
+        "Dawn Song"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833747",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ChenWPS0JM0S22"
+    },
+    {
+      "id": "ieee-sp-2022-049",
+      "title": "Phishing in Organizations: Findings from a Large-Scale and Long-Term Study.",
+      "authors": [
+        "Daniele Lain",
+        "Kari Kostiainen",
+        "Srdjan Capkun"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833766",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LainKC22"
+    },
+    {
+      "id": "ieee-sp-2022-050",
+      "title": "27 Years and 81 Million Opportunities Later: Investigating the Use of Email Encryption for an Entire University.",
+      "authors": [
+        "Christian Stransky",
+        "Oliver Wiese",
+        "Volker Roth 0002",
+        "Yasemin Acar",
+        "Sascha Fahl"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833755",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#StranskyW0AF22"
+    },
+    {
+      "id": "ieee-sp-2022-051",
+      "title": "Investigating Influencer VPN Ads on YouTube.",
+      "authors": [
+        "Omer Akgul",
+        "Richard Roberts",
+        "Moses Namara",
+        "Dave Levin",
+        "Michelle L. Mazurek"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833633",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AkgulRNLM22"
+    },
+    {
+      "id": "ieee-sp-2022-052",
+      "title": "How Does Usable Security (Not) End Up in Software Products? Results From a Qualitative Interview Study.",
+      "authors": [
+        "Marco Gutfleisch",
+        "Jan H. Klemmer",
+        "Niklas Busch",
+        "Yasemin Acar",
+        "M. Angela Sasse",
+        "Sascha Fahl"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833756",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GutfleischKBASF22"
+    },
+    {
+      "id": "ieee-sp-2022-053",
+      "title": "Private Approximate Nearest Neighbor Search with Sublinear Communication.",
+      "authors": [
+        "Sacha Servan-Schreiber",
+        "Simon Langowski",
+        "Srinivas Devadas"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833702",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Servan-Schreiber22"
+    },
+    {
+      "id": "ieee-sp-2022-054",
+      "title": "SPIRAL: Fast, High-Rate Single-Server PIR via FHE Composition.",
+      "authors": [
+        "Samir Jordan Menon",
+        "David J. Wu 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833700",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MenonW22"
+    },
+    {
+      "id": "ieee-sp-2022-055",
+      "title": "SNARKBlock: Federated Anonymous Blocklisting from Hidden Common Input Aggregate Proofs.",
+      "authors": [
+        "Michael Rosenberg",
+        "Mary Maller",
+        "Ian Miers"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833656",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RosenbergMM22"
+    },
+    {
+      "id": "ieee-sp-2022-056",
+      "title": "How to Attack and Generate Honeywords.",
+      "authors": [
+        "Ding Wang 0002",
+        "Yunkai Zou",
+        "Qiying Dong",
+        "Yuanming Song 0002",
+        "Xinyi Huang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833598",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#0002ZDSH22"
+    },
+    {
+      "id": "ieee-sp-2022-057",
+      "title": "WIGHT: Wired Ghost Touch Attack on Capacitive Touchscreens.",
+      "authors": [
+        "Yan Jiang",
+        "Xiaoyu Ji 0001",
+        "Kai Wang 0073",
+        "Chen Yan 0001",
+        "Richard Mitev",
+        "Ahmad-Reza Sadeghi",
+        "Wenyuan Xu 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833740",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Jiang0WYMSX22"
+    },
+    {
+      "id": "ieee-sp-2022-058",
+      "title": "Time-Print: Authenticating USB Flash Drives with Novel Timing Fingerprints.",
+      "authors": [
+        "Patrick Cronin",
+        "Xing Gao 0001",
+        "Haining Wang 0001",
+        "Chase Cotton"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833595",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Cronin0WC22"
+    },
+    {
+      "id": "ieee-sp-2022-059",
+      "title": "Device Fingerprinting with Peripheral Timestamps.",
+      "authors": [
+        "John V. Monaco"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833612",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Monaco22"
+    },
+    {
+      "id": "ieee-sp-2022-060",
+      "title": "PCR-Auth: Solving Authentication Puzzle Challenge with Encoded Palm Contact Response.",
+      "authors": [
+        "Long Huang",
+        "Chen Wang 0009"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833564",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Huang022"
+    },
+    {
+      "id": "ieee-sp-2022-061",
+      "title": "Mitigating Information Leakage Vulnerabilities with Type-based Data Isolation.",
+      "authors": [
+        "Alyssa Milburn",
+        "Erik van der Kouwe",
+        "Cristiano Giuffrida"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833675",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MilburnKG22"
+    },
+    {
+      "id": "ieee-sp-2022-062",
+      "title": "SYMBEXCEL: Automated Analysis and Understanding of Malicious Excel 4.0 Macros.",
+      "authors": [
+        "Nicola Ruaro",
+        "Fabio Pagani",
+        "Stefano Ortolani",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833765",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RuaroPOKV22"
+    },
+    {
+      "id": "ieee-sp-2022-063",
+      "title": "HEAPSTER: Analyzing the Security of Dynamic Allocators for Monolithic Firmware Images.",
+      "authors": [
+        "Fabio Gritti",
+        "Fabio Pagani",
+        "Ilya Grishchenko",
+        "Lukas Dresel",
+        "Nilo Redini",
+        "Christopher Kruegel",
+        "Giovanni Vigna"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833610",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GrittiPGDRKV22"
+    },
+    {
+      "id": "ieee-sp-2022-064",
+      "title": "SoK: Demystifying Binary Lifters Through the Lens of Downstream Applications.",
+      "authors": [
+        "Zhibo Liu",
+        "Yuanyuan Yuan 0001",
+        "Shuai Wang 0011",
+        "Yuyan Bao"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833799",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LiuYWB22"
+    },
+    {
+      "id": "ieee-sp-2022-065",
+      "title": "Property Inference from Poisoning.",
+      "authors": [
+        "Saeed Mahloujifar",
+        "Esha Ghosh",
+        "Melissa Chase"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833623",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MahloujifarGC22"
+    },
+    {
+      "id": "ieee-sp-2022-066",
+      "title": "Reconstructing Training Data with Informed Adversaries.",
+      "authors": [
+        "Borja Balle",
+        "Giovanni Cherubin",
+        "Jamie Hayes"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833677",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BalleCH22"
+    },
+    {
+      "id": "ieee-sp-2022-067",
+      "title": "DeepSteal: Advanced Model Extractions Leveraging Efficient Weight Stealing in Memories.",
+      "authors": [
+        "Adnan Siraj Rakin",
+        "Md Hafizul Islam Chowdhuryy",
+        "Fan Yao 0001",
+        "Deliang Fan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833743",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RakinCYF22"
+    },
+    {
+      "id": "ieee-sp-2022-068",
+      "title": "Model Stealing Attacks Against Inductive Graph Neural Networks.",
+      "authors": [
+        "Yun Shen",
+        "Xinlei He 0001",
+        "Yufei Han 0001",
+        "Yang Zhang 0016"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833607",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ShenHH022"
+    },
+    {
+      "id": "ieee-sp-2022-069",
+      "title": "Noise-SDR: Arbitrary Modulation of Electromagnetic Noise from Unprivileged Software and Its Impact on Emission Security.",
+      "authors": [
+        "Giovanni Camurati",
+        "Aur&#233;lien Francillon"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833767",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#CamuratiF22"
+    },
+    {
+      "id": "ieee-sp-2022-070",
+      "title": "mmSpy: Spying Phone Calls using mmWave Radars.",
+      "authors": [
+        "Suryoday Basak",
+        "Mahanth Gowda"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833568",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BasakG22"
+    },
+    {
+      "id": "ieee-sp-2022-071",
+      "title": "Attacks on Wireless Coexistence: Exploiting Cross-Technology Performance Features for Inter-Chip Privilege Escalation.",
+      "authors": [
+        "Jiska Classen",
+        "Francesco Gringoli",
+        "Michael Hermann",
+        "Matthias Hollick"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833639",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ClassenGHH22"
+    },
+    {
+      "id": "ieee-sp-2022-072",
+      "title": "Invisible Finger: Practical Electromagnetic Interference Attack on Touchscreen-based Electronic Devices.",
+      "authors": [
+        "Haoqi Shan",
+        "Boyi Zhang",
+        "Zihao Zhan",
+        "Dean Sullivan",
+        "Shuo Wang 0003",
+        "Yier Jin"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833718",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ShanZZSWJ22"
+    },
+    {
+      "id": "ieee-sp-2022-073",
+      "title": "Using Throughput-Centric Byzantine Broadcast to Tolerate Malicious Majority in Blockchains.",
+      "authors": [
+        "Ruomu Hou",
+        "Haifeng Yu",
+        "Prateek Saxena"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833617",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HouYS22"
+    },
+    {
+      "id": "ieee-sp-2022-074",
+      "title": "MatRiCT<sup>+</sup>: More Efficient Post-Quantum Private Blockchain Payments.",
+      "authors": [
+        "Muhammed F. Esgin",
+        "Ron Steinfeld",
+        "Raymond K. Zhao"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833655",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#EsginSZ22"
+    },
+    {
+      "id": "ieee-sp-2022-075",
+      "title": "Universal Atomic Swaps: Secure Exchange of Coins Across All Blockchains.",
+      "authors": [
+        "Sri Aravinda Krishnan Thyagarajan",
+        "Giulio Malavolta",
+        "Pedro Moreno-Sanchez"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833731",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ThyagarajanMM22"
+    },
+    {
+      "id": "ieee-sp-2022-076",
+      "title": "Foundations of Dynamic BFT.",
+      "authors": [
+        "Sisi Duan",
+        "Haibin Zhang"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833787",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#DuanZ22"
+    },
+    {
+      "id": "ieee-sp-2022-077",
+      "title": "COBRA: Dynamic Proactive Secret Sharing for Confidential BFT Services.",
+      "authors": [
+        "Robin Vassantlal",
+        "Eduardo Alchieri",
+        "Bernardo Ferreira",
+        "Alysson Bessani"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833658",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#VassantlalAFB22"
+    },
+    {
+      "id": "ieee-sp-2022-078",
+      "title": "Back to the Drawing Board: A Critical Evaluation of Poisoning Attacks on Production Federated Learning.",
+      "authors": [
+        "Virat Shejwalkar",
+        "Amir Houmansadr",
+        "Peter Kairouz",
+        "Daniel Ramage"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833647",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ShejwalkarHKR22"
+    },
+    {
+      "id": "ieee-sp-2022-079",
+      "title": "Model Orthogonalization: Class Distance Hardening in Neural Networks for Better Security.",
+      "authors": [
+        "Guanhong Tao 0001",
+        "Yingqi Liu",
+        "Guangyu Shen",
+        "Qiuling Xu",
+        "Shengwei An",
+        "Zhuo Zhang 0002",
+        "Xiangyu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833688",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#TaoLSXA0022"
+    },
+    {
+      "id": "ieee-sp-2022-080",
+      "title": "Universal 3-Dimensional Perturbations for Black-Box Attacks on Video Recognition Systems.",
+      "authors": [
+        "Shangyu Xie",
+        "Han Wang 0021",
+        "Yu Kong 0001",
+        "Yuan Hong 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833776",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#XieWKH22"
+    },
+    {
+      "id": "ieee-sp-2022-081",
+      "title": "&#34;Adversarial Examples&#34; for Proof-of-Learning.",
+      "authors": [
+        "Rui Zhang 0118",
+        "Jian Liu 0012",
+        "Yuan Ding",
+        "Zhibo Wang 0001",
+        "Qingbiao Wu",
+        "Kui Ren 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833596",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZhangLDWW022"
+    },
+    {
+      "id": "ieee-sp-2022-082",
+      "title": "Transfer Attacks Revisited: A Large-Scale Empirical Study in Real Computer Vision Settings.",
+      "authors": [
+        "Yuhao Mao",
+        "Chong Fu 0002",
+        "Saizhuo Wang",
+        "Shouling Ji",
+        "Xuhong Zhang 0002",
+        "Zhenguang Liu",
+        "Jun Zhou 0011",
+        "Alex X. Liu",
+        "Raheem Beyah",
+        "Ting Wang 0006"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833783",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MaoFWJ0LZLB022"
+    },
+    {
+      "id": "ieee-sp-2022-083",
+      "title": "Graphics Peeping Unit: Exploiting EM Side-Channel Information of GPUs to Eavesdrop on Your Neighbors.",
+      "authors": [
+        "Zihao Zhan",
+        "Zhenkai Zhang 0002",
+        "Sisheng Liang",
+        "Fan Yao 0001",
+        "Xenofon D. Koutsoukos"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833773",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ZhanZLYK22"
+    },
+    {
+      "id": "ieee-sp-2022-084",
+      "title": "Adversarial Prefetch: New Cross-Core Cache Side Channel Attacks.",
+      "authors": [
+        "Yanan Guo 0002",
+        "Andrew Zigerelli",
+        "Youtao Zhang",
+        "Jun Yang 0002"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833692",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GuoZZ022"
+    },
+    {
+      "id": "ieee-sp-2022-085",
+      "title": "Finding and Exploiting CPU Features using MSR Templating.",
+      "authors": [
+        "Andreas Kogler",
+        "Daniel Weber 0007",
+        "Martin Haubenwallner",
+        "Moritz Lipp",
+        "Daniel Gruss",
+        "Michael Schwarz 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833599",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#KoglerWHLG022"
+    },
+    {
+      "id": "ieee-sp-2022-086",
+      "title": "Augury: Using Data Memory-Dependent Prefetchers to Leak Data at Rest.",
+      "authors": [
+        "Jose Rodrigo Sanchez Vicarte",
+        "Michael Flanders",
+        "Riccardo Paccagnella",
+        "Grant Garrett-Grossman",
+        "Adam Morrison 0001",
+        "Christopher W. Fletcher",
+        "David Kohlbrenner"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833570",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#VicarteFPG0FK22"
+    },
+    {
+      "id": "ieee-sp-2022-087",
+      "title": "MeshUp: Stateless Cache Side-channel Attack on CPU Mesh.",
+      "authors": [
+        "Junpeng Wan",
+        "Yanxiang Bi",
+        "Zhe Zhou 0001",
+        "Zhou Li 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833794",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WanB0022"
+    },
+    {
+      "id": "ieee-sp-2022-088",
+      "title": "Timing-Based Browsing Privacy Vulnerabilities Via Site Isolation.",
+      "authors": [
+        "Zihao Jin",
+        "Ziqiao Kong",
+        "Shuo Chen 0001",
+        "Haixin Duan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833710",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JinKCD22"
+    },
+    {
+      "id": "ieee-sp-2022-089",
+      "title": "WTAGRAPH: Web Tracking and Advertising Detection using Graph Neural Networks.",
+      "authors": [
+        "Zhiju Yang",
+        "Weiping Pei",
+        "Monchu Chen",
+        "Chuan Yue"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833670",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#YangPCY22"
+    },
+    {
+      "id": "ieee-sp-2022-090",
+      "title": "Surakav: Generating Realistic Traces for a Strong Website Fingerprinting Defense.",
+      "authors": [
+        "Jiajun Gong",
+        "Wuqi Zhang",
+        "Charles Zhang 0001",
+        "Tao Wang 0012"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833722",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GongZZW22"
+    },
+    {
+      "id": "ieee-sp-2022-091",
+      "title": "Wobfuscator: Obfuscating JavaScript Malware via Opportunistic Translation to WebAssembly.",
+      "authors": [
+        "Alan Romano",
+        "Daniel Lehmann 0002",
+        "Michael Pradel",
+        "Weihang Wang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833626",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RomanoLP022"
+    },
+    {
+      "id": "ieee-sp-2022-092",
+      "title": "The State of the SameSite: Studying the Usage, Effectiveness, and Adequacy of SameSite Cookies.",
+      "authors": [
+        "Soheil Khodayari",
+        "Giancarlo Pellegrino"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833637",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#KhodayariP22"
+    },
+    {
+      "id": "ieee-sp-2022-093",
+      "title": "IRQDebloat: Reducing Driver Attack Surface in Embedded Devices.",
+      "authors": [
+        "Zhenghao Hu",
+        "Brendan Dolan-Gavitt"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833695",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HuD22"
+    },
+    {
+      "id": "ieee-sp-2022-094",
+      "title": "Finding SMM Privilege-Escalation Vulnerabilities in UEFI Firmware with Protocol-Centric Static Analysis.",
+      "authors": [
+        "Jiawei Yin",
+        "Menghao Li",
+        "Wei Wu",
+        "Dandan Sun",
+        "Jianhua Zhou",
+        "Wei Huo",
+        "Jingling Xue"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833723",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#YinLWSZHX22"
+    },
+    {
+      "id": "ieee-sp-2022-095",
+      "title": "Mind the Gap: Studying the Insecurity of Provably Secure Embedded Trusted Execution Architectures.",
+      "authors": [
+        "Marton Bognar",
+        "Jo Van Bulck",
+        "Frank Piessens"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833735",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BognarBP22"
+    },
+    {
+      "id": "ieee-sp-2022-096",
+      "title": "How Not to Protect Your IP - An Industry-Wide Break of IEEE 1735 Implementations.",
+      "authors": [
+        "Julian Speith",
+        "Florian Schweins",
+        "Maik Ender",
+        "Marc Fyrbiak",
+        "Alexander May 0001",
+        "Christof Paar"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833605",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SpeithSEF0P22"
+    },
+    {
+      "id": "ieee-sp-2022-097",
+      "title": "Hardening Circuit-Design IP Against Reverse-Engineering Attacks.",
+      "authors": [
+        "Animesh Chhotaray",
+        "Thomas Shrimpton"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833634",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ChhotarayS22"
+    },
+    {
+      "id": "ieee-sp-2022-098",
+      "title": "Evaluating Physical-Layer BLE Location Tracking Attacks on Mobile Devices.",
+      "authors": [
+        "Hadi Givehchian",
+        "Nishant Bhaskar",
+        "Eliana Rodriguez Herrera",
+        "H&#233;ctor Rodrigo L&#243;pez Soto",
+        "Christian Dameff",
+        "Dinesh Bharadia",
+        "Aaron Schulman"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833758",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GivehchianBHSDB22"
+    },
+    {
+      "id": "ieee-sp-2022-099",
+      "title": "IRShield: A Countermeasure Against Adversarial Physical-Layer Wireless Sensing.",
+      "authors": [
+        "Paul Staat",
+        "Simon Mulzer",
+        "Stefan Roth 0004",
+        "Veelasha Moonsamy",
+        "Markus Heinrichs",
+        "Rainer Kronberger",
+        "Aydin Sezgin",
+        "Christof Paar"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833676",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#StaatM0MHKSP22"
+    },
+    {
+      "id": "ieee-sp-2022-100",
+      "title": "Anti-Tamper Radio: System-Level Tamper Detection for Computing Systems.",
+      "authors": [
+        "Paul Staat",
+        "Johannes Tobisch",
+        "Christian T. Zenger",
+        "Christof Paar"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833631",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#StaatTZP22"
+    },
+    {
+      "id": "ieee-sp-2022-101",
+      "title": "Practical EMV Relay Protection.",
+      "authors": [
+        "Andreea-Ina Radu",
+        "Tom Chothia",
+        "Christopher J. P. Newton",
+        "Ioana Boureanu",
+        "Liqun Chen 0002"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833642",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RaduCNB022"
+    },
+    {
+      "id": "ieee-sp-2022-102",
+      "title": "AccEar: Accelerometer Acoustic Eavesdropping with Unconstrained Vocabulary.",
+      "authors": [
+        "Pengfei Hu 0001",
+        "Hui Zhuang",
+        "Panneer Selvam Santhalingam",
+        "Riccardo Spolaor",
+        "Parth H. Pathak",
+        "Guoming Zhang",
+        "Xiuzhen Cheng"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833716",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HuZSSPZ022"
+    },
+    {
+      "id": "ieee-sp-2022-103",
+      "title": "Towards Automated Auditing for Account and Session Management Flaws in Single Sign-On Deployments.",
+      "authors": [
+        "Mohammad Ghasemisharif",
+        "Chris Kanich",
+        "Jason Polakis"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833753",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#GhasemisharifKP22"
+    },
+    {
+      "id": "ieee-sp-2022-104",
+      "title": "HARDLOG: Practical Tamper-Proof System Auditing Using a Novel Audit Device.",
+      "authors": [
+        "Adil Ahmad",
+        "Sangho Lee 0001",
+        "Marcus Peinado"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833745",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Ahmad0P22"
+    },
+    {
+      "id": "ieee-sp-2022-105",
+      "title": "SWARMFLAWFINDER: Discovering and Exploiting Logic Flaws of Swarm Algorithms.",
+      "authors": [
+        "Chijung Jung",
+        "Ali Ahad",
+        "Yuseok Jeon",
+        "Yonghwi Kwon 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833685",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JungAJ022"
+    },
+    {
+      "id": "ieee-sp-2022-106",
+      "title": "PGPatch: Policy-Guided Logic Bug Patching for Robotic Vehicles.",
+      "authors": [
+        "Hyungsub Kim",
+        "Muslum Ozgur Ozmen",
+        "Z. Berkay Celik",
+        "Antonio Bianchi",
+        "Dongyan Xu"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833567",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#KimOCBX22"
+    },
+    {
+      "id": "ieee-sp-2022-107",
+      "title": "&#34;Flawed, but like democracy we don't have a better system&#34;: The Experts' Insights on the Peer Review Process of Evaluating Security Papers.",
+      "authors": [
+        "Ananta Soneji",
+        "Faris Bugra Kokulu",
+        "Carlos E. Rubio-Medrano",
+        "Tiffany Bao",
+        "Ruoyu Wang 0001",
+        "Yan Shoshitaishvili",
+        "Adam Doup&#233;"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833581",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SonejiKRB0SD22"
+    },
+    {
+      "id": "ieee-sp-2022-108",
+      "title": "SoK: Social Cybersecurity.",
+      "authors": [
+        "Yuxi Wu",
+        "W. Keith Edwards",
+        "Sauvik Das"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833757",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WuED22"
+    },
+    {
+      "id": "ieee-sp-2022-109",
+      "title": "Committed to Trust: A Qualitative Study on Security & Trust in Open Source Software Projects.",
+      "authors": [
+        "Dominik Wermke",
+        "Noah W&#246;hler",
+        "Jan H. Klemmer",
+        "Marcel Fourn&#233;",
+        "Yasemin Acar",
+        "Sascha Fahl"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833686",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WermkeWKFAF22"
+    },
+    {
+      "id": "ieee-sp-2022-110",
+      "title": "Membership Inference Attacks From First Principles.",
+      "authors": [
+        "Nicholas Carlini",
+        "Steve Chien",
+        "Milad Nasr",
+        "Shuang Song 0001",
+        "Andreas Terzis",
+        "Florian Tram&#232;r"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833649",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#CarliniCN0TT22"
+    },
+    {
+      "id": "ieee-sp-2022-111",
+      "title": "DeepCoFFEA: Improved Flow Correlation Attacks on Tor via Metric Learning and Amplification.",
+      "authors": [
+        "Se Eun Oh",
+        "Taiji Yang",
+        "Nate Mathews",
+        "James K. Holland",
+        "Mohammad Saidur Rahman 0002",
+        "Nicholas Hopper",
+        "Matthew Wright 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833801",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#OhYMH0H022"
+    },
+    {
+      "id": "ieee-sp-2022-112",
+      "title": "ShorTor: Improving Tor Network Latency via Multi-hop Overlay Routing.",
+      "authors": [
+        "Kyle Hogan",
+        "Sacha Servan-Schreiber",
+        "Zachary Newman",
+        "Ben Weintraub",
+        "Cristina Nita-Rotaru",
+        "Srinivas Devadas"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833619",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HoganSNWND22"
+    },
+    {
+      "id": "ieee-sp-2022-113",
+      "title": "Sabre: Sender-Anonymous Messaging with Fast Audits.",
+      "authors": [
+        "Adithya Vadapalli",
+        "Kyle Storrier",
+        "Ryan Henry"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833601",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#VadapalliSH22"
+    },
+    {
+      "id": "ieee-sp-2022-114",
+      "title": "Security Foundations for Application-Based Covert Communication Channels.",
+      "authors": [
+        "James K. Howes IV",
+        "Marios Georgiou 0001",
+        "Alex J. Malozemoff",
+        "Thomas Shrimpton"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833752",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Howes0MS22"
+    },
+    {
+      "id": "ieee-sp-2022-115",
+      "title": "Bad Characters: Imperceptible NLP Attacks.",
+      "authors": [
+        "Nicholas Boucher",
+        "Ilia Shumailov",
+        "Ross Anderson 0001",
+        "Nicolas Papernot"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833641",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BoucherS0P22"
+    },
+    {
+      "id": "ieee-sp-2022-116",
+      "title": "LINKTELLER: Recovering Private Edges from Graph Neural Networks via Influence Analysis.",
+      "authors": [
+        "Fan Wu 0011",
+        "Yunhui Long",
+        "Ce Zhang 0001",
+        "Bo Li 0026"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833806",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#0011L0022"
+    },
+    {
+      "id": "ieee-sp-2022-117",
+      "title": "Piccolo: Exposing Complex Backdoors in NLP Transformer Models.",
+      "authors": [
+        "Yingqi Liu",
+        "Guangyu Shen",
+        "Guanhong Tao 0001",
+        "Shengwei An",
+        "Shiqing Ma",
+        "Xiangyu Zhang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833579",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LiuSTAM022"
+    },
+    {
+      "id": "ieee-sp-2022-118",
+      "title": "BadEncoder: Backdoor Attacks to Pre-trained Encoders in Self-Supervised Learning.",
+      "authors": [
+        "Jinyuan Jia 0001",
+        "Yupei Liu",
+        "Neil Zhenqiang Gong"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833644",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#JiaLG22"
+    },
+    {
+      "id": "ieee-sp-2022-119",
+      "title": "Repairing DoS Vulnerability of Real-World Regexes.",
+      "authors": [
+        "Nariyoshi Chida",
+        "Tachio Terauchi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833597",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#ChidaT22"
+    },
+    {
+      "id": "ieee-sp-2022-120",
+      "title": "GREBE: Unveiling Exploitation Potential for Linux Kernel Bugs.",
+      "authors": [
+        "Zhenpeng Lin",
+        "Yueqi Chen 0001",
+        "Yuhang Wu 0003",
+        "Dongliang Mu",
+        "Chensheng Yu",
+        "Xinyu Xing 0001",
+        "Kang Li"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833683",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LinCWMYXL22"
+    },
+    {
+      "id": "ieee-sp-2022-121",
+      "title": "Goshawk: Hunting Memory Corruptions via Structure-Aware and Object-Centric Memory Operation Synopsis.",
+      "authors": [
+        "Yunlong Lyu",
+        "Yi Fang",
+        "Yiwei Zhang 0008",
+        "Qibin Sun",
+        "Siqi Ma",
+        "Elisa Bertino",
+        "Kangjie Lu",
+        "Juanru Li"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833613",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LyuFZSMBLL22"
+    },
+    {
+      "id": "ieee-sp-2022-122",
+      "title": "FSAFlow: Lightweight and Fast Dynamic Path Tracking and Control for Privacy Protection on Android Using Hybrid Analysis with State-Reduction Strategy.",
+      "authors": [
+        "Zhi Yang",
+        "Zhanhui Yuan",
+        "Shuyuan Jin",
+        "Xingyuan Chen",
+        "Lei Sun",
+        "Xuehui Du",
+        "Wenfa Li",
+        "Hongqi Zhang"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833764",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#YangYJCSDLZ22"
+    },
+    {
+      "id": "ieee-sp-2022-123",
+      "title": "Domains Do Change Their Spots: Quantifying Potential Abuse of Residual Trust.",
+      "authors": [
+        "Johnny So",
+        "Najmeh Miramirkhani",
+        "Michael Ferdman",
+        "Nick Nikiforakis"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833609",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SoMFN22"
+    },
+    {
+      "id": "ieee-sp-2022-124",
+      "title": "Scraping Sticky Leftovers: App User Information Left on Servers After Account Deletion.",
+      "authors": [
+        "Preethi Santhanam",
+        "Hoang Dang",
+        "Zhiyong Shan",
+        "Iulian Neamtiu"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833720",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SanthanamDSN22"
+    },
+    {
+      "id": "ieee-sp-2022-125",
+      "title": "TrollMagnifier: Detecting State-Sponsored Troll Accounts on Reddit.",
+      "authors": [
+        "Mohammad Hammas Saeed",
+        "Shiza Ali",
+        "Jeremy Blackburn",
+        "Emiliano De Cristofaro",
+        "Savvas Zannettou",
+        "Gianluca Stringhini"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833706",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SaeedABCZS22"
+    },
+    {
+      "id": "ieee-sp-2022-126",
+      "title": "Analyzing Ground-Truth Data of Mobile Gambling Scams.",
+      "authors": [
+        "Geng Hong",
+        "Zhemin Yang",
+        "Sen Yang",
+        "Xiaojing Liao",
+        "Xiaolin Du",
+        "Min Yang 0002",
+        "Haixin Duan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833665",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HongYYLD0D22"
+    },
+    {
+      "id": "ieee-sp-2022-127",
+      "title": "Effective Seed Scheduling for Fuzzing with Graph Centrality Analysis.",
+      "authors": [
+        "Dongdong She",
+        "Abhishek Shah",
+        "Suman Jana"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833761",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SheSJ22"
+    },
+    {
+      "id": "ieee-sp-2022-128",
+      "title": "FuzzUSB: Hybrid Stateful Fuzzing of USB Gadget Stacks.",
+      "authors": [
+        "Kyungtae Kim",
+        "Taegyu Kim",
+        "Ertza Warraich",
+        "Byoungyoung Lee",
+        "Kevin R. B. Butler",
+        "Antonio Bianchi",
+        "Dave Jing Tian"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833593",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#KimKWLBBT22"
+    },
+    {
+      "id": "ieee-sp-2022-129",
+      "title": "Exploit the Last Straw That Breaks Android Systems.",
+      "authors": [
+        "Lei Zhang 0096",
+        "Keke Lian",
+        "Haoyu Xiao",
+        "Zhibo Zhang 0006",
+        "Peng Liu 0005",
+        "Yuan Zhang 0009",
+        "Min Yang 0002",
+        "Haixin Duan"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833563",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#0096LXZL00D22"
+    },
+    {
+      "id": "ieee-sp-2022-130",
+      "title": "CirC: Compiler infrastructure for proof systems, software verification, and more.",
+      "authors": [
+        "Alex Ozdemir",
+        "Fraser Brown",
+        "Riad S. Wahby"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833782",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#OzdemirBW22"
+    },
+    {
+      "id": "ieee-sp-2022-131",
+      "title": "HAMRAZ: Resilient Partitioning and Replication.",
+      "authors": [
+        "Xiao Li 0050",
+        "Farzin Houshmand",
+        "Mohsen Lesani"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833661",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LiHL22"
+    },
+    {
+      "id": "ieee-sp-2022-132",
+      "title": "Formal Model-Driven Discovery of Bluetooth Protocol Design Vulnerabilities.",
+      "authors": [
+        "Jianliang Wu 0002",
+        "Ruoyu Wu",
+        "Dongyan Xu",
+        "Dave Jing Tian",
+        "Antonio Bianchi"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833777",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WuWXTB22"
+    },
+    {
+      "id": "ieee-sp-2022-133",
+      "title": "&#34;Desperate Times Call for Desperate Measures&#34;: User Concerns with Mobile Loan Apps in Kenya.",
+      "authors": [
+        "Collins W. Munyendo",
+        "Yasemin Acar",
+        "Adam J. Aviv"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833779",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#MunyendoAA22"
+    },
+    {
+      "id": "ieee-sp-2022-134",
+      "title": "SoK: The Dual Nature of Technology in Sexual Abuse.",
+      "authors": [
+        "Borke Obada-Obieh",
+        "Yue Huang",
+        "Lucrezia Spagnolo",
+        "Konstantin Beznosov"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833663",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Obada-ObiehHSB22"
+    },
+    {
+      "id": "ieee-sp-2022-135",
+      "title": "SoK: A Framework for Unifying At-Risk User Research.",
+      "authors": [
+        "Noel Warford",
+        "Tara Matthews",
+        "Kaitlyn Yang",
+        "Omer Akgul",
+        "Sunny Consolvo",
+        "Patrick Gage Kelley",
+        "Nathan Malkin",
+        "Michelle L. Mazurek",
+        "Manya Sleeper",
+        "Kurt Thomas"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833643",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#WarfordMYACKMMS22"
+    },
+    {
+      "id": "ieee-sp-2022-136",
+      "title": "Deployment of Source Address Validation by Network Operators: A Randomized Control Trial.",
+      "authors": [
+        "Qasim Lone",
+        "Alisa Frik",
+        "Matthew Luckie",
+        "Maciej Korczynski",
+        "Michel van Eeten",
+        "Carlos Ga&#241;&#225;n"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833701",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#LoneFLKEG22"
+    },
+    {
+      "id": "ieee-sp-2022-137",
+      "title": "Exposed Infrastructures: Discovery, Attacks and Remediation of Insecure ICS Remote Management Devices.",
+      "authors": [
+        "Takayuki Sasaki",
+        "Akira Fujita",
+        "Carlos Hernandez Ga&#241;&#225;n",
+        "Michel van Eeten",
+        "Katsunari Yoshioka",
+        "Tsutomu Matsumoto"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833730",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#SasakiFGEYM22"
+    },
+    {
+      "id": "ieee-sp-2022-138",
+      "title": "Robbery on DevOps: Understanding and Mitigating Illicit Cryptomining on Continuous Integration Service Platforms.",
+      "authors": [
+        "Zhi Li 0048",
+        "Weijie Liu 0004",
+        "Hongbo Chen",
+        "XiaoFeng Wang 0001",
+        "Xiaojing Liao",
+        "Luyi Xing",
+        "Mingming Zha 0001",
+        "Hai Jin 0001",
+        "Deqing Zou"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833803",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#00480C0LXZ0Z22"
+    },
+    {
+      "id": "ieee-sp-2022-139",
+      "title": "Privacy-from-Birth: Protecting Sensed Data from Malicious Sensors with VERSA.",
+      "authors": [
+        "Ivan De Oliveira Nunes",
+        "Seoyeon Hwang",
+        "Sashidhar Jakkamsetti",
+        "Gene Tsudik"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833737",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#NunesHJT22"
+    },
+    {
+      "id": "ieee-sp-2022-140",
+      "title": "Publicly Accountable Robust Multi-Party Computation.",
+      "authors": [
+        "Marc Rivinius",
+        "Pascal Reisert",
+        "Daniel Rausch 0001",
+        "Ralf K&#252;sters"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833608",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#RiviniusR0K22"
+    },
+    {
+      "id": "ieee-sp-2022-141",
+      "title": "Waldo: A Private Time-Series Database from Function Secret Sharing.",
+      "authors": [
+        "Emma Dauterman",
+        "Mayank Rathee",
+        "Raluca Ada Popa",
+        "Ion Stoica"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833611",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#DautermanRPS22"
+    },
+    {
+      "id": "ieee-sp-2022-142",
+      "title": "Hark: A Deep Learning System for Navigating Privacy Feedback at Scale.",
+      "authors": [
+        "Hamza Harkous",
+        "Sai Teja Peddinti",
+        "Rishabh Khandelwal",
+        "Animesh Srivastava",
+        "Nina Taft"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833729",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#HarkousPKST22"
+    },
+    {
+      "id": "ieee-sp-2022-143",
+      "title": "Sphinx: Enabling Privacy-Preserving Online Learning over the Cloud.",
+      "authors": [
+        "Han Tian",
+        "Chaoliang Zeng",
+        "Zhenghang Ren",
+        "Di Chai",
+        "Junxue Zhang 0001",
+        "Kai Chen 0005",
+        "Qiang Yang 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833648",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#TianZRCZ0022"
+    },
+    {
+      "id": "ieee-sp-2022-144",
+      "title": "Spurt: Scalable Distributed Randomness Beacon with Transparent Setup.",
+      "authors": [
+        "Sourav Das 0001",
+        "Vinith Krishnan",
+        "Irene Miriam Isaac",
+        "Ling Ren 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833580",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#DasKI022"
+    },
+    {
+      "id": "ieee-sp-2022-145",
+      "title": "Practical Asynchronous Distributed Key Generation.",
+      "authors": [
+        "Sourav Das 0001",
+        "Thomas Yurek",
+        "Zhuolun Xiang",
+        "Andrew Miller 0001",
+        "Lefteris Kokoris-Kogias",
+        "Ling Ren 0001"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833584",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#DasYXMK022"
+    },
+    {
+      "id": "ieee-sp-2022-146",
+      "title": "Security Analysis of the MLS Key Derivation.",
+      "authors": [
+        "Chris Brzuska",
+        "Eric Cornelissen",
+        "Konrad Kohbrok"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833678",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#BrzuskaCK22"
+    },
+    {
+      "id": "ieee-sp-2022-147",
+      "title": "Low-Bandwidth Threshold ECDSA via Pseudorandom Correlation Generators.",
+      "authors": [
+        "Damiano Abram",
+        "Ariel Nof",
+        "Claudio Orlandi",
+        "Peter Scholl",
+        "Omer Shlomovits"
+      ],
+      "doi": "https://doi.org/10.1109/SP46214.2022.9833559",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#AbramNOSS22"
+    },
+    {
+      "id": "ieee-sp-2022-148",
+      "title": "Journey to the Center of the Cookie Ecosystem: Unraveling Actors' Roles and Relationships.",
+      "authors": [
+        "Iskander S&#225;nchez-Rola",
+        "Matteo Dell'Amico",
+        "Davide Balzarotti",
+        "Pierre-Antoine Vervier",
+        "Leyla Bilge"
+      ],
+      "doi": "https://doi.org/10.1109/SP40001.2021.9796062",
+      "dblp_url": "https://dblp.org/db/conf/sp/sp2022.html#Sanchez-RolaDBV22"
+    }
+  ]
+}
