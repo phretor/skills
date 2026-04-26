@@ -430,9 +430,7 @@ Read `resources/manifest.json` for cached industry venue-years.
 | ACSAC | Academic — applied | ✅ 2021–2023, 2025 (296 papers) |
 | ACISP | Academic — Australasian | ✅ 2021–2023 (87 papers) |
 | RSA Conference | Enterprise, policy, threat intel | ❌ Not cached |
-| CanSecWest | Advanced technical, Pwn2Own | ❌ Not cached (JS-rendered) |
-| REcon | Reverse engineering, binary analysis | ❌ Not cached |
-| Troopers | Network security, ICS, Active Directory | ❌ Not cached |
+| REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
 | hardwear.io | Hardware, embedded, IoT security | ❌ Not cached |
 | Infiltrate | Offensive research, exploit dev | ❌ Not cached |
 | HITCON | Asia-Pacific, CTF community | ❌ Not cached |

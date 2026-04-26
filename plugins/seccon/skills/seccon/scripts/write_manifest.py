@@ -61,7 +61,7 @@ for slug in sorted(VENUE_NAMES):
 
 # Industry venues — scan filesystem for what's cached
 INDUSTRY_SLUGS = ["defcon", "offensivecon", "recon", "blackhat-usa", "blackhat-eu", "blackhat-asia",
-                  "rsec", "cansecwest", "troopers", "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"]
+                  "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"]
 for slug in INDUSTRY_SLUGS:
     cached = []
     for year in YEARS:

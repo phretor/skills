@@ -248,7 +248,7 @@ def write_manifest(academic_cached: dict, industry_cached: dict):
     manifest["coverage"]["industry"]["venues"]["offensivecon"] = {"cached": oc, "gaps": sorted(set(YEARS) - set(oc)), "note": ""}
     for bh in ("blackhat-usa", "blackhat-eu", "blackhat-asia"):
         manifest["coverage"]["industry"]["venues"][bh] = {"cached": [], "gaps": YEARS, "note": "Cloudflare blocked"}
-    for o in ("rsec", "cansecwest", "recon", "troopers", "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"):
+    for o in ("rsec", "hardwear", "infiltrate", "hitcon", "hitb", "vb", "poc"):
         manifest["coverage"]["industry"]["venues"][o] = {"cached": [], "gaps": YEARS, "note": "Not yet crawled"}
     MANIFEST.write_text(json.dumps(manifest, indent=2))
 

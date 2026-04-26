@@ -416,28 +416,6 @@
           ],
           "note": "Not yet crawled"
         },
-        "cansecwest": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "note": "Not yet crawled"
-        },
-        "troopers": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "note": "Not yet crawled"
-        },
         "hardwear": {
           "cached": [],
           "gaps": [
