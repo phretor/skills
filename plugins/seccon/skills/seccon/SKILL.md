@@ -51,6 +51,13 @@ These are common mistakes agents make when running this skill. Memorize them:
    paperhub-cli. paperhub-cli is the only approved external paper search tool, and only for
    enrichment after the cache has been exhausted.
 
+6. **Never populate `archive_url` in index.json.**
+   The `archive_url` field is unnecessary bloat. Each venue-year's `index.json` is already
+   organized under `resources/{mode}/{year}/{venue}/`, so the archive URL is derivable from
+   the path. Do not add `archive_url` at the conference level or on individual talk/paper
+   entries. The `slides_url` field is fine when a direct link to slides exists, but
+   `archive_url` must never appear.
+
 4. **Never fabricate or hallucinate paper/talk metadata.**
    If the cache doesn't have a paper/talk listed, do not guess titles, authors, or DOIs.
    Say the data isn't available. The rubric dimensions (Tools/artifacts, Impact, etc.)
@@ -167,8 +174,7 @@ Each file lists all papers/talks for one venue edition:
       "id": "dc33-001",
       "title": "Invitation Is All You Need! ...",
       "speakers": ["Ben Nassi", "Or Yair", "Stav Cohen"],
-      "slides_url": "https://media.defcon.org/.../...pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2033/DEF%20CON%2033%20presentations/"
+      "slides_url": "https://media.defcon.org/.../...pdf"
     }
   ]
 }

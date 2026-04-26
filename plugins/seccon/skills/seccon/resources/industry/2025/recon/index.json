@@ -17,24 +17,21 @@
       "title": "Unveiling RIFT: Advanced Pattern Matching for Rust Libraries",
       "speakers": [
         "Andreas Klopsch"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-002",
       "title": "HyperVinject: Making Virtual Machine Code Injections as Simple as Process Injections",
       "speakers": [
         "Andrei Lutas"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-003",
       "title": "Extracting Antifuse Secrets from the DEF CON 32 badge (RP2350)",
       "speakers": [
         "Andrew D. Zonenberg"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-004",
@@ -43,8 +40,7 @@
         "Antonio Villani",
         "Silvio La Porta",
         "Giulio Barabino"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-005",
@@ -52,8 +48,7 @@
       "speakers": [
         "Antonio Villani",
         "Silvio La Porta"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-006",
@@ -61,48 +56,42 @@
       "speakers": [
         "Bill Marczak",
         "Daniel Roethlisberger"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-007",
       "title": "Breaking Legacy Routers: 5 Zero-Days via Reversing and Hardware Hacking",
       "speakers": [
         "Danilo Erazo"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-008",
       "title": "WinpMem: Volatility's driver that lets malware volatilize",
       "speakers": [
         "Dr. Baptiste David"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-009",
       "title": "The Finer Details of LSA Credential Recovery",
       "speakers": [
         "Evan McBroom"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-010",
       "title": "Adventures in Reversing Streaming DRM Systems",
       "speakers": [
         "Hendi"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-011",
       "title": "Attacking modern software protection with Dynamic Binary Instrumentation",
       "speakers": [
         "Holger Unterbrink"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-012",
@@ -110,24 +99,21 @@
       "speakers": [
         "Joao Santos",
         "Lindsay Kaye"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-013",
       "title": "Offensive Security Tool Development with Ghidra",
       "speakers": [
         "John McIntosh"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-014",
       "title": "Reverse Engineering Patch Tuesday",
       "speakers": [
         "John McIntosh"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-015",
@@ -137,24 +123,21 @@
         "Sebastian Walla",
         "Steffen Haas",
         "Tillmann Werner"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-016",
       "title": "Call, Crash, Repeat: Hacking WhatsApp",
       "speakers": [
         "Luke McLaren"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-017",
       "title": "Coverage-Guided Fuzzing of Rehosted Network Services from Firmware Images",
       "speakers": [
         "Marc \"vanHauser\" Heuse"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-018",
@@ -162,32 +145,28 @@
       "speakers": [
         "Nicol\u00f2 Altamura",
         "Tim Blazytko"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-019",
       "title": "Back from the dead: Exhuming EBC",
       "speakers": [
         "Nika Korchok Wakulich"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-020",
       "title": "QuickShell: Sharing is caring about an RCE attack chain on Quick Share",
       "speakers": [
         "Or Yair"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-021",
       "title": "Reversing Warbird for no fun and no profit",
       "speakers": [
         "Philippe Laulheret"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-022",
@@ -195,40 +174,35 @@
       "speakers": [
         "Riccardo Mori",
         "Robin David"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-023",
       "title": "Beyond decompilation: multi-level lifting for automatic software understanding",
       "speakers": [
         "Sergey Bratus"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-024",
       "title": ".NET Exploitation Workshop",
       "speakers": [
         "Sina Kheirkhah"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-025",
       "title": "Egg Hunting without Eggs: Identifying Memory Locations of Objects Using Structural Characteristics",
       "speakers": [
         "Toshinori Usui"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     },
     {
       "id": "rc2025-026",
       "title": "A Disassembler for ROM Recovery",
       "speakers": [
         "Travis Goodspeed"
-      ],
-      "archive_url": "https://recon.cx/2025/sessions.html"
+      ]
     }
   ]
 }

@@ -17,48 +17,42 @@
       "title": "Zooming in on Zero-click Exploits",
       "speakers": [
         "Natalie Silvanovich"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-002",
       "title": "Reverse engineering of black-box binaries with symbolic and concolic execution techniques",
       "speakers": [
         "Jannis Kirschner"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-003",
       "title": "Instrumenting system applications on Android stock images",
       "speakers": [
         "Vitor Ventura"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-004",
       "title": "Reversing an M32C firmware",
       "speakers": [
         "Lesson learned from playing with an uncommon architecture - Philippe Laulheret"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-005",
       "title": "Breaking the Glass Sandbox: Find Linux Kernel Bugs and Escape",
       "speakers": [
         "Valentina Palmiotti"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-006",
       "title": "Researching the Unisoc baseband, like in the army",
       "speakers": [
         "Slava Makkaveev"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-007",
@@ -66,40 +60,35 @@
       "speakers": [
         "Moritz Schloegel",
         "Tim Blazytko"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-008",
       "title": "Project TEMPA",
       "speakers": [
         "Demystifying Tesla's Bluetooth Passive Entry system - Martin Herfurt"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-009",
       "title": "Beyond AlphaGolang: Automated hunting based on reversing Go binaries",
       "speakers": [
         "Juan Andres Guerrero-Saade"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-010",
       "title": "Function overrides, from a Security mitigation to a fully-fledged Performance Feature in Windows",
       "speakers": [
         "Andrea Allievi"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-011",
       "title": "Living Off the Walled Garden: Abusing the Features of the Early Launch Antimalware Ecosystem",
       "speakers": [
         "Matt Graeber"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-012",
@@ -107,8 +96,7 @@
       "speakers": [
         "James Niven",
         "Lindsay Kaye"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-013",
@@ -116,8 +104,7 @@
       "speakers": [
         "Ian Dupont",
         "Harrison Green"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-014",
@@ -125,24 +112,21 @@
       "speakers": [
         "The bad",
         "the worst and the ugly of APT's operations security - Tomer Bar"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-015",
       "title": "Samsara Metamorphic Engine",
       "speakers": [
         "Michael Grube"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-016",
       "title": "Under the hood of Wslink's multilayered virtual machine",
       "speakers": [
         "Vladislav Hrcka"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-017",
@@ -150,8 +134,7 @@
       "speakers": [
         "Marius Muench",
         "Fabian Freyer"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-018",
@@ -159,32 +142,28 @@
       "speakers": [
         "Pietro Frigo",
         "Enrico Barberis"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-019",
       "title": "Detect Me If You Can",
       "speakers": [
         "Anti-Firmware Forensics - Takahiro Haruyama"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-020",
       "title": "Dotnetfile: parsing .NET PE files has never been easier",
       "speakers": [
         "Yaron Samuel"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     },
     {
       "id": "rc2022-021",
       "title": "When Wireless Malware Stays On After Turning Off iPhones",
       "speakers": [
         "jiska"
-      ],
-      "archive_url": "https://recon.cx/2022/sessions.html"
+      ]
     }
   ]
 }

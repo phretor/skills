@@ -17,16 +17,14 @@
       "title": "Keynote",
       "speakers": [
         "From Student of Compilation to Mother of Decompilation - Cristina Cifuentes"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-002",
       "title": "Tales From The Crypt: Bug Hunting in the Windows CryptoAPI",
       "speakers": [
         "Erik Egsgard"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-003",
@@ -34,16 +32,14 @@
       "speakers": [
         "Tim Blazytko",
         "Moritz Schloegel"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-004",
       "title": "Peeling Back the Windows Registry Layers: A Bug Hunter's Expedition",
       "speakers": [
         "Mateusz Jurczyk"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-005",
@@ -51,40 +47,35 @@
       "speakers": [
         "The end of non data-driven Kernel Exploits? - Andrea Allievi",
         "Satoshi Tanda"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-006",
       "title": "Breaking Z-Waves: How we use Symbolic Execution to find Critical RF Vulnerabilities",
       "speakers": [
         "Oliver Lavery"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-007",
       "title": "WatchWitch",
       "speakers": [
         "The Apple Watch Protocol Stack from Scratch - Nils Rollshausen"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-008",
       "title": "A Tale of Reverse Engineering 1001 GPTs: The Good, the Bad, and the Ugly",
       "speakers": [
         "Elias Bachaalany"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     },
     {
       "id": "rc2024-009",
       "title": "Open Sesame: stack smashing your way into opening doors",
       "speakers": [
         "Lucas Georges"
-      ],
-      "archive_url": "https://recon.cx/2024/sessions.html"
+      ]
     }
   ]
 }

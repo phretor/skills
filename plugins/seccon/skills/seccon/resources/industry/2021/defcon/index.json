@@ -19,8 +19,7 @@
       "speakers": [
         "Adam Zabrocki Alexander Matrosov"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Adam%20Zabrocki%20Alexander%20Matrosov%20-%20Glitching%20RISC-V%20chips%20-%20%20MTVEC%20corruption%20for%20hardening%20ISA.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Adam%20Zabrocki%20Alexander%20Matrosov%20-%20Glitching%20RISC-V%20chips%20-%20%20MTVEC%20corruption%20for%20hardening%20ISA.pdf"
     },
     {
       "id": "dc29-002",
@@ -28,8 +27,7 @@
       "speakers": [
         "Austin Allshouse"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Austin%20Allshouse%20-%20The%20Mechanics%20of%20Compromising%20Low%20Entropy%20RSA%20Keys.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Austin%20Allshouse%20-%20The%20Mechanics%20of%20Compromising%20Low%20Entropy%20RSA%20Keys.pdf"
     },
     {
       "id": "dc29-003",
@@ -37,8 +35,7 @@
       "speakers": [
         "Babak Javadi Nick Draffen Eric Bettse Anze Jensterle"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Babak%20Javadi%20Nick%20Draffen%20Eric%20Bettse%20Anze%20Jensterle%20-%20The%20PACS-man%20Comes%20For%20Us%20All.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Babak%20Javadi%20Nick%20Draffen%20Eric%20Bettse%20Anze%20Jensterle%20-%20The%20PACS-man%20Comes%20For%20Us%20All.pdf"
     },
     {
       "id": "dc29-004",
@@ -46,8 +43,7 @@
       "speakers": [
         "Barak Sternberg"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Barak%20Sternberg%20-%20Extension-Land%20-%20%20exploits%20and%20rootkits%20in%20your%20browser%20extensions.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Barak%20Sternberg%20-%20Extension-Land%20-%20%20exploits%20and%20rootkits%20in%20your%20browser%20extensions.pdf"
     },
     {
       "id": "dc29-005",
@@ -55,8 +51,7 @@
       "speakers": [
         "Ben Kurtz"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ben%20Kurtz%20-%20Offensive%20Golang%20Bonanza%20-%20%20Writing%20Golang%20Malware.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ben%20Kurtz%20-%20Offensive%20Golang%20Bonanza%20-%20%20Writing%20Golang%20Malware.pdf"
     },
     {
       "id": "dc29-006",
@@ -64,8 +59,7 @@
       "speakers": [
         "Bill Graydon"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Bill%20Graydon%20-%20Defeating%20Physical%20Intrusion%20Detection%20Alarm%20Wires.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Bill%20Graydon%20-%20Defeating%20Physical%20Intrusion%20Detection%20Alarm%20Wires.pdf"
     },
     {
       "id": "dc29-007",
@@ -73,8 +67,7 @@
       "speakers": [
         "Brian Hong"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Brian%20Hong%20-%20Sleight%20of%20ARM%20-%20%20Demystifying%20Intel%20Houdini-Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Brian%20Hong%20-%20Sleight%20of%20ARM%20-%20%20Demystifying%20Intel%20Houdini-Slides.pdf"
     },
     {
       "id": "dc29-008",
@@ -82,8 +75,7 @@
       "speakers": [
         "Brian Hong"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Brian%20Hong%20-%20Sleight%20of%20ARM%20-%20%20Demystifying%20Intel%20Houdini.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Brian%20Hong%20-%20Sleight%20of%20ARM%20-%20%20Demystifying%20Intel%20Houdini.pdf"
     },
     {
       "id": "dc29-009",
@@ -91,8 +83,7 @@
       "speakers": [
         "Cedric Owens"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Cedric%20Owens%20-%20Gone%20Apple%20Pickin%20-%20%20Red%20Teaming%20macOS%20Environments%20in%202021.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Cedric%20Owens%20-%20Gone%20Apple%20Pickin%20-%20%20Red%20Teaming%20macOS%20Environments%20in%202021.pdf"
     },
     {
       "id": "dc29-010",
@@ -100,8 +91,7 @@
       "speakers": [
         "Chad Seaman"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Chad%20Seaman%20-%20UPnProxyPot%20-%20%20fake%20the%20funk%2C%20become%20a%20blackhat%20proxy%2C%20MITM%20their%20TLS%2C%20and%20scrape%20the%20wire.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Chad%20Seaman%20-%20UPnProxyPot%20-%20%20fake%20the%20funk%2C%20become%20a%20blackhat%20proxy%2C%20MITM%20their%20TLS%2C%20and%20scrape%20the%20wire.pdf"
     },
     {
       "id": "dc29-011",
@@ -109,8 +99,7 @@
       "speakers": [
         "Christopher Wade"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Christopher%20Wade%20-%20Breaking%20Secure%20Bootloaders.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Christopher%20Wade%20-%20Breaking%20Secure%20Bootloaders.pdf"
     },
     {
       "id": "dc29-012",
@@ -118,8 +107,7 @@
       "speakers": [
         "Claire Vacherot"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Claire%20Vacherot%20-%20Sneak%20into%20buildings%20with%20KNXnetIP.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Claire%20Vacherot%20-%20Sneak%20into%20buildings%20with%20KNXnetIP.pdf"
     },
     {
       "id": "dc29-013",
@@ -127,8 +115,7 @@
       "speakers": [
         "Dan Petro"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Dan%20Petro%20-%20Youre%20Doing%20IoT%20RNG.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Dan%20Petro%20-%20Youre%20Doing%20IoT%20RNG.pdf"
     },
     {
       "id": "dc29-014",
@@ -136,8 +123,7 @@
       "speakers": [
         "David Dworken"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/David%20Dworken%20-%20Worming%20through%20IDEs.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/David%20Dworken%20-%20Worming%20through%20IDEs.pdf"
     },
     {
       "id": "dc29-015",
@@ -145,8 +131,7 @@
       "speakers": [
         "Dennis Giese"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Dennis%20Giese%20-%20Robots%20with%20lasers%20and%20cameras%20but%20no%20security-%20Liberating%20your%20vacuum%20from%20the%20cloud.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Dennis%20Giese%20-%20Robots%20with%20lasers%20and%20cameras%20but%20no%20security-%20Liberating%20your%20vacuum%20from%20the%20cloud.pdf"
     },
     {
       "id": "dc29-016",
@@ -154,8 +139,7 @@
       "speakers": [
         "Eugene Lim Glenice Tan Tan Kee Hock"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Eugene%20Lim%20Glenice%20Tan%20Tan%20Kee%20Hock%20-%20Hacking%20Humans%20with%20AI%20as%20a%20Service.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Eugene%20Lim%20Glenice%20Tan%20Tan%20Kee%20Hock%20-%20Hacking%20Humans%20with%20AI%20as%20a%20Service.pdf"
     },
     {
       "id": "dc29-017",
@@ -163,8 +147,7 @@
       "speakers": [
         "Guillaume Fournier Sylvain Afchain Sylvain Baubeau"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Guillaume%20Fournier%20Sylvain%20Afchain%20Sylvain%20Baubeau%20-%20eBPF%2C%20I%20thought%20we%20were%20friends.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Guillaume%20Fournier%20Sylvain%20Afchain%20Sylvain%20Baubeau%20-%20eBPF%2C%20I%20thought%20we%20were%20friends.pdf"
     },
     {
       "id": "dc29-018",
@@ -172,8 +155,7 @@
       "speakers": [
         "Hao Xing Zekai Wu"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Hao%20Xing%20Zekai%20Wu%20-%20How%20I%20use%20a%20JSON%20Deserialization%200day%20to%20Steal%20Your%20Money%20On%20The%20Blockchain.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Hao%20Xing%20Zekai%20Wu%20-%20How%20I%20use%20a%20JSON%20Deserialization%200day%20to%20Steal%20Your%20Money%20On%20The%20Blockchain.pdf"
     },
     {
       "id": "dc29-019",
@@ -181,8 +163,7 @@
       "speakers": [
         "Ian Coldwater Chad Rikansrud (Bigendian Smalls)"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ian%20Coldwater%20Chad%20Rikansrud%20%28Bigendian%20Smalls%29%20-%20The%20Real-Life%20Story%20of%20the%20First%20Mainframe%20Container%20Breakout.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ian%20Coldwater%20Chad%20Rikansrud%20%28Bigendian%20Smalls%29%20-%20The%20Real-Life%20Story%20of%20the%20First%20Mainframe%20Container%20Breakout.pdf"
     },
     {
       "id": "dc29-020",
@@ -190,8 +171,7 @@
       "speakers": [
         "Ian Vitek"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ian%20Vitek%20-%20Central%20bank%20digital%20currency%2C%20threats%20and%20vulnerabilities.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ian%20Vitek%20-%20Central%20bank%20digital%20currency%2C%20threats%20and%20vulnerabilities.pdf"
     },
     {
       "id": "dc29-021",
@@ -199,8 +179,7 @@
       "speakers": [
         "Ionut Cernica"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ionut%20Cernica%20-%20Hack%20the%20hackers-%20Leaking%20data%20over%20SSL-TLS.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Ionut%20Cernica%20-%20Hack%20the%20hackers-%20Leaking%20data%20over%20SSL-TLS.pdf"
     },
     {
       "id": "dc29-022",
@@ -208,8 +187,7 @@
       "speakers": [
         "Jacob Baines"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jacob%20Baines%20-%20Bring%20Your%20Own%20Print%20Driver%20Vulnerability.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jacob%20Baines%20-%20Bring%20Your%20Own%20Print%20Driver%20Vulnerability.pdf"
     },
     {
       "id": "dc29-023",
@@ -217,8 +195,7 @@
       "speakers": [
         "James Kettle"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/James%20Kettle%20-%20HTTP2%20-%20%20The%20Sequel%20is%20Always%20Worse%20-%20Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/James%20Kettle%20-%20HTTP2%20-%20%20The%20Sequel%20is%20Always%20Worse%20-%20Slides.pdf"
     },
     {
       "id": "dc29-024",
@@ -226,8 +203,7 @@
       "speakers": [
         "James Kettle"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/James%20Kettle%20-%20HTTP2%20-%20%20The%20Sequel%20is%20Always%20Worse%20-%20Whitepaper.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/James%20Kettle%20-%20HTTP2%20-%20%20The%20Sequel%20is%20Always%20Worse%20-%20Whitepaper.pdf"
     },
     {
       "id": "dc29-025",
@@ -235,8 +211,7 @@
       "speakers": [
         "Jeff Dileo"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jeff%20Dileo%20-%20Instrument%20and%20Find%20Out%20-%20%20Writing%20Parasitic%20Tracers%20for%20High%28-Level%29%20Languages.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jeff%20Dileo%20-%20Instrument%20and%20Find%20Out%20-%20%20Writing%20Parasitic%20Tracers%20for%20High%28-Level%29%20Languages.pdf"
     },
     {
       "id": "dc29-026",
@@ -244,8 +219,7 @@
       "speakers": [
         "Jenko Hwong"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jenko%20Hwong%20-%20New%20Phishing%20Attacks%20Exploiting%20OAuth%20Authentication%20Flows.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Jenko%20Hwong%20-%20New%20Phishing%20Attacks%20Exploiting%20OAuth%20Authentication%20Flows.pdf"
     },
     {
       "id": "dc29-027",
@@ -253,8 +227,7 @@
       "speakers": [
         "jiska Alexander Heinrich"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/jiska%20Alexander%20Heinrich%20-%20Wibbly%20Wobbly%2C%20Timey%20Wimey%20-%20Whats%20Really%20Inside%20Apples%20U1%20Chip.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/jiska%20Alexander%20Heinrich%20-%20Wibbly%20Wobbly%2C%20Timey%20Wimey%20-%20Whats%20Really%20Inside%20Apples%20U1%20Chip.pdf"
     },
     {
       "id": "dc29-028",
@@ -262,8 +235,7 @@
       "speakers": [
         "Joseph Gabay"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Joseph%20Gabay%20-%20Dos-%20Denial%20of%20Shopping%20%E2%80%93%20Analyzing%20and%20Exploiting%20%28Physical%29%20Shopping%20Cart%20Immobilization%20Systems.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Joseph%20Gabay%20-%20Dos-%20Denial%20of%20Shopping%20%E2%80%93%20Analyzing%20and%20Exploiting%20%28Physical%29%20Shopping%20Cart%20Immobilization%20Systems.pdf"
     },
     {
       "id": "dc29-029",
@@ -271,8 +243,7 @@
       "speakers": [
         "Justin Perdok"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Justin%20Perdok%20-%20Hi%20Im%20DOMAIN%20Steve%2C%20please%20let%20me%20access%20VLAN2.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Justin%20Perdok%20-%20Hi%20Im%20DOMAIN%20Steve%2C%20please%20let%20me%20access%20VLAN2.pdf"
     },
     {
       "id": "dc29-030",
@@ -280,8 +251,7 @@
       "speakers": [
         "Kelly Kaoudis Sick Codes"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Kelly%20Kaoudis%20Sick%20Codes%20-%20Rotten%20code%2C%20aging%20standards%2C%20%26%20pwning%20IPv4%20parsing%20across%20nearly%20every%20mainstream%20programming%20language.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Kelly%20Kaoudis%20Sick%20Codes%20-%20Rotten%20code%2C%20aging%20standards%2C%20%26%20pwning%20IPv4%20parsing%20across%20nearly%20every%20mainstream%20programming%20language.pdf"
     },
     {
       "id": "dc29-031",
@@ -289,8 +259,7 @@
       "speakers": [
         "Laura Abbott Rick Altherr"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Laura%20Abbott%20Rick%20Altherr%20-%20Breaking%20TrustZone-M%20-%20%20Privilege%20Escalation%20on%20LPC55S69.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Laura%20Abbott%20Rick%20Altherr%20-%20Breaking%20TrustZone-M%20-%20%20Privilege%20Escalation%20on%20LPC55S69.pdf"
     },
     {
       "id": "dc29-032",
@@ -298,8 +267,7 @@
       "speakers": [
         "Mars Cheng Selmon Yang"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Mars%20Cheng%20Selmon%20Yang%20-%20Taking%20Apart%20and%20Taking%20Over%20ICS%20%26%20SCADA%20Ecosystems%20-%20%20A%20Case%20Study%20of%20Mitsubishi%20Electric.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Mars%20Cheng%20Selmon%20Yang%20-%20Taking%20Apart%20and%20Taking%20Over%20ICS%20%26%20SCADA%20Ecosystems%20-%20%20A%20Case%20Study%20of%20Mitsubishi%20Electric.pdf"
     },
     {
       "id": "dc29-033",
@@ -307,8 +275,7 @@
       "speakers": [
         "Martin Doyhenard"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections%20-%20Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections%20-%20Slides.pdf"
     },
     {
       "id": "dc29-034",
@@ -316,8 +283,7 @@
       "speakers": [
         "Martin Doyhenard"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Martin%20Doyhenard%20-%20Response%20Smuggling-%20Pwning%20HTTP-1.1%20Connections.pdf"
     },
     {
       "id": "dc29-035",
@@ -325,8 +291,7 @@
       "speakers": [
         "Matthew Bryant"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Matthew%20Bryant%20-%20Hacking%20G%20Suite%20-%20%20The%20Power%20of%20Dark%20Apps%20Script%20Magic.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Matthew%20Bryant%20-%20Hacking%20G%20Suite%20-%20%20The%20Power%20of%20Dark%20Apps%20Script%20Magic.pdf"
     },
     {
       "id": "dc29-036",
@@ -334,8 +299,7 @@
       "speakers": [
         "Michael Whiteley Katie Whiteley"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Michael%20Whiteley%20Katie%20Whiteley%20-%20Making%20the%20DEF%20CON%2029%20Badge.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Michael%20Whiteley%20Katie%20Whiteley%20-%20Making%20the%20DEF%20CON%2029%20Badge.pdf"
     },
     {
       "id": "dc29-037",
@@ -343,8 +307,7 @@
       "speakers": [
         "Orange Tsai"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Orange%20Tsai%20-%20ProxyLogon%20is%20Just%20the%20Tip%20of%20the%20Iceberg%2C%20A%20New%20Attack%20Surface%20on%20Microsoft%20Exchange%20Server.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Orange%20Tsai%20-%20ProxyLogon%20is%20Just%20the%20Tip%20of%20the%20Iceberg%2C%20A%20New%20Attack%20Surface%20on%20Microsoft%20Exchange%20Server.pdf"
     },
     {
       "id": "dc29-038",
@@ -352,8 +315,7 @@
       "speakers": [
         "PatH"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/PatH%20-%20Warping%20Reality%20-%20creating%20and%20countering%20the%20next%20generation%20of%20Linux%20rootkits%20using%20eBPF.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/PatH%20-%20Warping%20Reality%20-%20creating%20and%20countering%20the%20next%20generation%20of%20Linux%20rootkits%20using%20eBPF.pdf"
     },
     {
       "id": "dc29-039",
@@ -361,8 +323,7 @@
       "speakers": [
         "Patrick Wardle"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Patrick%20Wardle%20-%20Bundles%20of%20Joy%20-%20%20Breaking%20macOS%20via%20Subverted%20Applications%20Bundles.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Patrick%20Wardle%20-%20Bundles%20of%20Joy%20-%20%20Breaking%20macOS%20via%20Subverted%20Applications%20Bundles.pdf"
     },
     {
       "id": "dc29-040",
@@ -370,8 +331,7 @@
       "speakers": [
         "Paz Hameiri"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Paz%20Hameiri%20-%20TEMPEST%20radio%20station-Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Paz%20Hameiri%20-%20TEMPEST%20radio%20station-Slides.pdf"
     },
     {
       "id": "dc29-041",
@@ -379,8 +339,7 @@
       "speakers": [
         "Paz Hameiri"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Paz%20Hameiri%20-%20TEMPEST%20radio%20station.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Paz%20Hameiri%20-%20TEMPEST%20radio%20station.pdf"
     },
     {
       "id": "dc29-042",
@@ -388,8 +347,7 @@
       "speakers": [
         "Rex Guo Junyuan Zeng"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rex%20Guo%20Junyuan%20Zeng%20-%20Phantom%20Attack%20-%20%20Evading%20System%20Call%20Monitoring.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rex%20Guo%20Junyuan%20Zeng%20-%20Phantom%20Attack%20-%20%20Evading%20System%20Call%20Monitoring.pdf"
     },
     {
       "id": "dc29-043",
@@ -397,8 +355,7 @@
       "speakers": [
         "Reza Soosahabi Chuck McAuley"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Reza%20Soosahabi%20Chuck%20McAuley%20-%20SPARROW%20-%20%20A%20Novel%20Covert%20Communication%20Scheme%20Exploiting%20Broadcast%20Signals%20in%20LTE%2C%205G%20%26%20Beyond.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Reza%20Soosahabi%20Chuck%20McAuley%20-%20SPARROW%20-%20%20A%20Novel%20Covert%20Communication%20Scheme%20Exploiting%20Broadcast%20Signals%20in%20LTE%2C%205G%20%26%20Beyond.pdf"
     },
     {
       "id": "dc29-044",
@@ -406,8 +363,7 @@
       "speakers": [
         "Richard Henderson"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Richard%20Henderson%20-%20Old%20MacDonald%20Had%20a%20Barcode%2C%20E-I-E-I%20CAR.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Richard%20Henderson%20-%20Old%20MacDonald%20Had%20a%20Barcode%2C%20E-I-E-I%20CAR.pdf"
     },
     {
       "id": "dc29-045",
@@ -415,8 +371,7 @@
       "speakers": [
         "Richard Thieme AKA neuralcowbo"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Richard%20Thieme%20AKA%20neuralcowbo%20-%20UFOs%20-%20%20Misinformation%2C%20Disinformation%2C%20and%20the%20Basic%20Truth.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Richard%20Thieme%20AKA%20neuralcowbo%20-%20UFOs%20-%20%20Misinformation%2C%20Disinformation%2C%20and%20the%20Basic%20Truth.pdf"
     },
     {
       "id": "dc29-046",
@@ -424,8 +379,7 @@
       "speakers": [
         "Rion Carter"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rion%20Carter%20-%20Why%20does%20my%20security%20camera%20scream%20like%20a%20Banshee-%20Signal%20analysis%20and%20RE%20of%20a%20proprietary%20audio-data%20encoding%20protocol.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rion%20Carter%20-%20Why%20does%20my%20security%20camera%20scream%20like%20a%20Banshee-%20Signal%20analysis%20and%20RE%20of%20a%20proprietary%20audio-data%20encoding%20protocol.pdf"
     },
     {
       "id": "dc29-047",
@@ -433,8 +387,7 @@
       "speakers": [
         "Rotem Bar"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rotem%20Bar%20-%20Abusing%20SAST%20tools%20When%20scanners%20do%20more%20than%20just%20scanning.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Rotem%20Bar%20-%20Abusing%20SAST%20tools%20When%20scanners%20do%20more%20than%20just%20scanning.pdf"
     },
     {
       "id": "dc29-048",
@@ -442,8 +395,7 @@
       "speakers": [
         "Roy Davis"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Roy%20Davis%20-%20No%20Key-%20No%20PIN-%20No%20Combo-%20No%20Problem%20P0wning%20ATMs%20For%20Fun%20and%20Profit.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Roy%20Davis%20-%20No%20Key-%20No%20PIN-%20No%20Combo-%20No%20Problem%20P0wning%20ATMs%20For%20Fun%20and%20Profit.pdf"
     },
     {
       "id": "dc29-049",
@@ -451,8 +403,7 @@
       "speakers": [
         "Sagi Sheinfeld Eyal Karni Yaron Zinar"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sagi%20Sheinfeld%20Eyal%20Karni%20Yaron%20Zinar%20-%20Using%20Machine-in-the-Middle%20to%20Attack%20Active%20Directory%20Authentication%20Schemes.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sagi%20Sheinfeld%20Eyal%20Karni%20Yaron%20Zinar%20-%20Using%20Machine-in-the-Middle%20to%20Attack%20Active%20Directory%20Authentication%20Schemes.pdf"
     },
     {
       "id": "dc29-050",
@@ -460,8 +411,7 @@
       "speakers": [
         "Salvador Mendoza"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Salvador%20Mendoza%20-%20PINATA-%20PIN%20Automatic%20Try%20Attack%20-%20Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Salvador%20Mendoza%20-%20PINATA-%20PIN%20Automatic%20Try%20Attack%20-%20Slides.pdf"
     },
     {
       "id": "dc29-051",
@@ -469,8 +419,7 @@
       "speakers": [
         "Salvador Mendoza"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Salvador%20Mendoza%20-%20PINATA-%20PIN%20Automatic%20Try%20Attack.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Salvador%20Mendoza%20-%20PINATA-%20PIN%20Automatic%20Try%20Attack.pdf"
     },
     {
       "id": "dc29-052",
@@ -478,8 +427,7 @@
       "speakers": [
         "Seth Kintigh"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Seth%20Kintigh%20-%20Over-the-air%20remote%20code%20execution%20on%20the%20DEF%20CON%2027%20badge%20via%20Near%20Field%20Magnetic%20Inductance.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Seth%20Kintigh%20-%20Over-the-air%20remote%20code%20execution%20on%20the%20DEF%20CON%2027%20badge%20via%20Near%20Field%20Magnetic%20Inductance.pdf"
     },
     {
       "id": "dc29-053",
@@ -487,8 +435,7 @@
       "speakers": [
         "Sheila A. Berta"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sheila%20A.%20Berta%20-%20The%20Unbelievable%20Insecurity%20of%20the%20Big%20Data%20Stack.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sheila%20A.%20Berta%20-%20The%20Unbelievable%20Insecurity%20of%20the%20Big%20Data%20Stack.pdf"
     },
     {
       "id": "dc29-054",
@@ -496,8 +443,7 @@
       "speakers": [
         "Sick Codes"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sick%20Codes%20-%20The%20Agricultural%20Data%20Arms%20Race%20-%20%20Exploiting%20a%20Tractor%20Load%20of%20Vulnerabilities%20In%20The%20Global%20Food%20Supply%20Chain.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Sick%20Codes%20-%20The%20Agricultural%20Data%20Arms%20Race%20-%20%20Exploiting%20a%20Tractor%20Load%20of%20Vulnerabilities%20In%20The%20Global%20Food%20Supply%20Chain.pdf"
     },
     {
       "id": "dc29-055",
@@ -505,8 +451,7 @@
       "speakers": [
         "Slava Makkaveev"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Slava%20Makkaveev%20-%20Do%20you%20like%20to%20read-%20I%20know%20how%20to%20take%20over%20your%20Kindle%20with%20an%20e-book%20-%20Slides.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Slava%20Makkaveev%20-%20Do%20you%20like%20to%20read-%20I%20know%20how%20to%20take%20over%20your%20Kindle%20with%20an%20e-book%20-%20Slides.pdf"
     },
     {
       "id": "dc29-056",
@@ -514,8 +459,7 @@
       "speakers": [
         "Tamas K Lengyel"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tamas%20K%20Lengyel%20-%20Fuzzing%20Linux%20with%20Xen.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tamas%20K%20Lengyel%20-%20Fuzzing%20Linux%20with%20Xen.pdf"
     },
     {
       "id": "dc29-057",
@@ -523,8 +467,7 @@
       "speakers": [
         "Tianze Ding"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tianze%20Ding%20-%20Vulnerability%20Exchange%20-%20One%20Domain%20Account%20For%20More%20Than%20Exchange%20Server%20RCE.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tianze%20Ding%20-%20Vulnerability%20Exchange%20-%20One%20Domain%20Account%20For%20More%20Than%20Exchange%20Server%20RCE.pdf"
     },
     {
       "id": "dc29-058",
@@ -532,8 +475,7 @@
       "speakers": [
         "Tom Van Goethem Mathy Vanhoef"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tom%20Van%20Goethem%20Mathy%20Vanhoef%20-%20Timeless%20Timing%20Attacks.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tom%20Van%20Goethem%20Mathy%20Vanhoef%20-%20Timeless%20Timing%20Attacks.pdf"
     },
     {
       "id": "dc29-059",
@@ -541,8 +483,7 @@
       "speakers": [
         "Tomer Bar Eran Segal"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tomer%20Bar%20Eran%20Segal%20-%202021%20-%20Our%20Journey%20Back%20To%20The%20Future%20Of%20Windows%20Vulnerabilities%20and%20the%200-days%20we%20brought%20back%20with%20us.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Tomer%20Bar%20Eran%20Segal%20-%202021%20-%20Our%20Journey%20Back%20To%20The%20Future%20Of%20Windows%20Vulnerabilities%20and%20the%200-days%20we%20brought%20back%20with%20us.pdf"
     },
     {
       "id": "dc29-060",
@@ -550,8 +491,7 @@
       "speakers": [
         "Vivek Nair, Ph.D."
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Vivek%20Nair%2C%20Ph.D.%20-%20Time%20Turner%20-%20Hacking%20RF%20Attendance%20Systems%20%28To%20Be%20in%20Two%20Places%20at%20Once%29.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Vivek%20Nair%2C%20Ph.D.%20-%20Time%20Turner%20-%20Hacking%20RF%20Attendance%20Systems%20%28To%20Be%20in%20Two%20Places%20at%20Once%29.pdf"
     },
     {
       "id": "dc29-061",
@@ -559,8 +499,7 @@
       "speakers": [
         "Yuhao Weng Steven Seeley Zhiniang Peng"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Yuhao%20Weng%20Steven%20Seeley%20Zhiniang%20Peng%20-%20don%27t%20Dare%20to%20Exploit%20-%20An%20Attack%20Surface%20Tour%20of%20SharePoint%20Server.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Yuhao%20Weng%20Steven%20Seeley%20Zhiniang%20Peng%20-%20don%27t%20Dare%20to%20Exploit%20-%20An%20Attack%20Surface%20Tour%20of%20SharePoint%20Server.pdf"
     },
     {
       "id": "dc29-062",
@@ -568,8 +507,7 @@
       "speakers": [
         "Zhipeng Huo Yuebin Sun Chuanda Ding"
       ],
-      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Zhipeng%20Huo%20Yuebin%20Sun%20Chuanda%20Ding%20-%20Caught%20you%20-%20reveal%20and%20exploit%20IPC%20logic%20bugs%20inside%20Apple.pdf",
-      "archive_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/"
+      "slides_url": "https://media.defcon.org/DEF%20CON%2029/DEF%20CON%2029%20presentations/Zhipeng%20Huo%20Yuebin%20Sun%20Chuanda%20Ding%20-%20Caught%20you%20-%20reveal%20and%20exploit%20IPC%20logic%20bugs%20inside%20Apple.pdf"
     }
   ]
 }

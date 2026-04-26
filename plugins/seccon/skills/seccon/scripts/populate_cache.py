@@ -165,7 +165,7 @@ def crawl_defcon_year(year: int) -> int:
         title = parts[1].strip() if len(parts) > 1 else name_no_ext
         speakers = [s.strip() for s in re.split(r'\s+(?:and|&)\s+', sp) if s.strip()] or [sp]
         tid = f"dc{edition}-{len(talks) + 1:03d}"
-        talks.append({"id": tid, "title": title, "speakers": speakers, "slides_url": url + match.group(1), "archive_url": url})
+        talks.append({"id": tid, "title": title, "speakers": speakers, "slides_url": url + match.group(1)})
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "defcon"
@@ -190,7 +190,7 @@ def crawl_offensivecon_year(year: int) -> int:
         parts = c.split(" by ")
         title = parts[0].strip() if parts else c
         speaker = parts[1].strip() if len(parts) > 1 else ""
-        talks.append({"id": f"oc{year}-{len(talks)+1:03d}", "title": title, "speakers": [speaker] if speaker else [], "archive_url": url})
+        talks.append({"id": f"oc{year}-{len(talks)+1:03d}", "title": title, "speakers": [speaker] if speaker else []})
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "offensivecon"
@@ -221,7 +221,7 @@ def crawl_recon_year(year: int) -> int:
             title = parts[0].strip() if parts else text
             speaker = parts[1].strip() if len(parts) > 1 else ""
             speakers = [s.strip() for s in re.split(r'[,&]', speaker) if s.strip()]
-            talks.append({"id": f"rc{year}-{len(talks)+1:03d}", "title": title, "speakers": speakers or [speaker], "archive_url": url})
+            talks.append({"id": f"rc{year}-{len(talks)+1:03d}", "title": title, "speakers": speakers or [speaker]})
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "recon"
