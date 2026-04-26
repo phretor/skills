@@ -369,25 +369,13 @@ For `/skill:seccon academic <year> <acronym>`:
 | AsiaCCS | ACM Asia Conf. on Computer and Comms Security | A | T2 | **High** | Asia-Pacific |
 | PETS | Privacy Enhancing Technologies Symposium | A | T2 | **High** | Privacy |
 | EuroS&P | IEEE European Symposium on Security and Privacy | A | T2 | **High** | Broad |
-| CSF | IEEE Computer Security Foundations Symposium | A | T2 | **High** | Formal methods |
-| Asiacrypt | Int'l Conf. on Theory and Application of Cryptology | A | T2 | **High** | Cryptography |
-| TCC | Theory of Cryptography Conference | A | T2 | **High** | Crypto theory |
 | FC | Financial Cryptography and Data Security | A | T2 | **High** | Financial crypto |
 | RAID | Recent Advances in Intrusion Detection | — | T2 | **High** | Intrusion detection |
 | DSN | Dependable Systems and Networks | — | T2 | **High** | Dependability |
 | IMC | Internet Measurement Conference | — | T2 | **High** | Network measurement |
 | CHES | Cryptographic Hardware and Embedded Systems | — | T2 | **High** | Hardware crypto |
-| SOUPS | Symposium On Usable Privacy and Security | B | T2 | **High** | Usable security |
-| ACNS | Applied Cryptography and Network Security | B | T3 | **Mid** | Applied crypto |
 | ACISP | Australasian Conf. on Information Security & Privacy | AusB | T3 | **Mid** | Australasian |
-| IFIP SEC | IFIP Information Security & Privacy Conference | B | T3 | **Mid** | Broad |
-| WiSec | ACM Conf. on Security and Privacy in Wireless/Mobile | B | T3 | **Mid** | Wireless |
 | DIMVA | Detection of Intrusions and Malware & Vuln. Assess. | — | T3 | **Mid** | Malware, detection |
-| ICICS | Int'l Conf. on Information and Communications Security | — | T3 | **Mid** | Broad |
-| SecureComm | Int'l Conf. on Security and Privacy in Comm. Networks | C | T3 | **Mid** | Comms security |
-| PST | Privacy, Security and Trust | C | T3 | **Mid** | Broad |
-| PKC | Int'l Conf. on Practice and Theory in Public-Key Crypto | B | — | **Mid** | Public-key crypto |
-| SAC | Selected Areas in Cryptography | B | T3 | **Mid** | Cryptography |
 
 #### Recent Acceptance Rates
 
