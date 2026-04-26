@@ -293,18 +293,7 @@
             2024,
             2025
           ],
-          "note": "Not yet crawled"
-        },
-        "infiltrate": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "note": "Not yet crawled"
+          "note": "JS-rendered (speaker names only)"
         },
         "hitcon": {
           "cached": [],
@@ -315,7 +304,7 @@
             2024,
             2025
           ],
-          "note": "Not yet crawled"
+          "note": "403 blocked"
         },
         "hitb": {
           "cached": [],
@@ -326,7 +315,7 @@
             2024,
             2025
           ],
-          "note": "Not yet crawled"
+          "note": "JS-rendered (Elementor/WordPress)"
         },
         "vb": {
           "cached": [],
@@ -337,7 +326,7 @@
             2024,
             2025
           ],
-          "note": "Not yet crawled"
+          "note": "403 blocked"
         },
         "poc": {
           "cached": [],
@@ -348,7 +337,7 @@
             2024,
             2025
           ],
-          "note": "Not yet crawled"
+          "note": "JS-rendered (schedule loaded dynamically)"
         }
       }
     }

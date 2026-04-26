@@ -420,7 +420,6 @@ Read `resources/manifest.json` for cached industry venue-years.
 | RSA Conference | Enterprise, policy, threat intel | ❌ Not cached |
 | REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
 | hardwear.io | Hardware, embedded, IoT security | ❌ Not cached |
-| Infiltrate | Offensive research, exploit dev | ❌ Not cached |
 | HITCON | Asia-Pacific, CTF community | ❌ Not cached |
 | HITB | Hacking in the Box (KL/Amsterdam) | ❌ Not cached |
 | VB Conference | Malware, threat intelligence | ❌ Not cached |
