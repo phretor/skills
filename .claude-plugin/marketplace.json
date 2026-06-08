@@ -5,11 +5,21 @@
     "email": "fede@maggi.cc"
   },
   "metadata": {
-    "description": "Public skills for security research, security conference intelligence, and productivity",
+    "description": "Public skills for security research, security conference intelligence, and writing quality",
     "version": "1.0.0",
     "homepage": "https://github.com/phretor/skills"
   },
   "plugins": [
+    {
+      "name": "writing",
+      "version": "1.0.0",
+      "description": "Eliminate AI writing patterns from prose — detects and removes throat-clearing, passive voice, business jargon, binary contrasts, adverbs, and structural clichés.",
+      "author": {
+        "name": "Hardik Pandya",
+        "url": "https://hvpandya.com"
+      },
+      "source": "./plugins/writing"
+    },
     {
       "name": "seccon",
       "version": "1.3.0",
