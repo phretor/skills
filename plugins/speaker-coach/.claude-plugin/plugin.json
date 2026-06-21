@@ -1,0 +1,10 @@
+{
+  "name": "speaker-coach",
+  "version": "1.0.0",
+  "description": "Coaches cybersecurity speakers through a disciplined backwards-design interview, audits existing talk drafts adversarially, and walks rehearsal critique and T-2-week readiness gates. Adapts to academic, industry, and grassroots venue norms.",
+  "author": {
+    "name": "Federico Maggi",
+    "email": "fede@maggi.cc",
+    "url": "https://github.com/phretor"
+  }
+}
