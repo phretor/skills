@@ -308,6 +308,14 @@ Always hyperlink article titles to the original URL. The URL is available
 from the entry's `url` field. Every article reference must be a clickable
 link.
 
+## Prioritization strategy
+
+- Popularity: items/topics/stories that are repeated across multiple feeds
+- Security events: big and impactful security incidents or vulnerabilities
+- Updates from important venues: topics discussed at or discussing about cybersecurity conferences (industry and academic)
+- Updates from major players, including but not limited to merger and aquisitions
+- Launches and tools
+
 ### Chronicle structure
 
 ```markdown
