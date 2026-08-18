@@ -66,11 +66,17 @@ data source.
 
 ## Base path
 
-```
-CHRONICLE_BASE=~/Personal/Personal Notes/10 - Projects/lowtides
-```
+Resolve `CHRONICLE_BASE` by checking these paths in order. Use the
+first one that exists:
 
-All file paths are relative to `CHRONICLE_BASE`.
+1. `~/Personal/Personal Notes/10 - Projects/lowtides`
+2. The first directory matching `lowtides` under `~/Notes`
+   (use `find ~/Notes -type d -name lowtides -maxdepth 3` and take
+   the first result)
+
+If neither exists, ask the user for a path before proceeding.
+
+All file paths below are relative to `CHRONICLE_BASE`.
 
 ---
 
