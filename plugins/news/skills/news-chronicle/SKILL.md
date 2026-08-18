@@ -31,6 +31,24 @@ allowed-tools: >
 
 # Chronicle: platform security intelligence digest
 
+## Category blocklist
+
+Skip these Miniflux categories entirely. Do not scan them for unread
+entries, do not include their entries in gap-fill searches, and do not
+surface their entries in the chronicle even if starred. Match by
+case-insensitive substring (the category title must contain the string).
+
+```
+Security | Alerts and Advisories
+Science
+Tech | News
+```
+
+After calling `get_categories`, filter the result against this list
+before any further gathering. An entry from a blocked category that
+also appears in a non-blocked category (cross-posted) is still
+excluded.
+
 ## Gate: verify Miniflux is reachable
 
 Before doing anything else, call `mcp__miniflux__healthcheck`.
@@ -169,16 +187,22 @@ Articles that don't match any domain go into `other` only if starred.
 All gathering uses Miniflux MCP tools. Compute Unix timestamps for the
 relevant time window using the current date.
 
+**First step for every cadence:** call `get_categories`, then remove any
+category whose title matches the blocklist (case-insensitive substring).
+All subsequent category scans and entry filtering use only the surviving
+categories. Starred entries from blocked categories are also excluded:
+after fetching starred entries, call `get_entry` to check the category
+and drop any that belong to a blocked category.
+
 ### Daily
 
-1. Starred entries from the last 24 hours:
+1. Starred entries from the last 24 hours (excluding blocked categories):
    ```
    get_entries(starred: true, published_after: <24h-ago-unix>, limit: 100)
    ```
+   Drop entries whose feed belongs to a blocked category.
 
-2. Scan high-value categories for unread entries. First call
-   `get_categories` to discover category IDs and names, then for each
-   security-relevant category:
+2. Scan non-blocked categories for unread entries:
    ```
    get_category_entries(category_id: N, status: "unread", limit: 20)
    ```
