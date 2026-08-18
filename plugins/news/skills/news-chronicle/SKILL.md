@@ -33,10 +33,9 @@ allowed-tools: >
 
 ## Category blocklist
 
-Skip these Miniflux categories entirely. Do not scan them for unread
-entries, do not include their entries in gap-fill searches, and do not
-surface their entries in the chronicle even if starred. Match by
-case-insensitive substring (the category title must contain the string).
+Skip these Miniflux categories during unread scans and gap-fill
+searches. Match by case-insensitive substring (the category title must
+contain the string).
 
 ```
 Security | Alerts and Advisories
@@ -44,10 +43,13 @@ Science
 Tech | News
 ```
 
-After calling `get_categories`, filter the result against this list
-before any further gathering. An entry from a blocked category that
-also appears in a non-blocked category (cross-posted) is still
-excluded.
+After calling `get_categories`, remove matching categories from the
+scan list. Do not fetch unread entries from blocked categories, and
+exclude blocked-category entries from gap-fill search results.
+
+**Exception: starred entries always appear.** If the user explicitly
+starred an entry in a blocked category, include it in the chronicle.
+Starring is a deliberate signal that overrides the category filter.
 
 ## Gate: verify Miniflux is reachable
 
@@ -189,22 +191,19 @@ relevant time window using the current date.
 
 **First step for every cadence:** call `get_categories`, then remove any
 category whose title matches the blocklist (case-insensitive substring).
-All subsequent category scans and entry filtering use only the surviving
-categories. Starred entries from blocked categories are also excluded:
-after fetching starred entries, call `get_entry` to check the category
-and drop any that belong to a blocked category.
+All subsequent category scans use only the surviving categories. Starred
+entries are never filtered by category (starring overrides the blocklist).
 
 ### Daily
 
-1. Starred entries from the last 24 hours (excluding blocked categories):
+1. All starred entries from the last 24 hours (no category filter):
    ```
-   get_entries(starred: true, published_after: <24h-ago-unix>, limit: 100)
+   get_entries(starred: true, published_after: <24h-ago-unix>)
    ```
-   Drop entries whose feed belongs to a blocked category.
 
-2. Scan non-blocked categories for unread entries:
+2. All unread entries from each non-blocked category (no limit):
    ```
-   get_category_entries(category_id: N, status: "unread", limit: 20)
+   get_category_entries(category_id: N, status: "unread")
    ```
 
 3. Deduplicate by entry ID.
@@ -223,17 +222,25 @@ and drop any that belong to a blocked category.
 
 3. Gap-fill: find newly starred entries not covered by any daily snapshot:
    ```
-   get_entries(starred: true, published_after: <7d-ago-unix>, limit: 100)
+   get_entries(starred: true, published_after: <7d-ago-unix>)
    ```
    Filter out IDs already in child snapshots.
 
-4. Category scan: check high-value categories for unread entries not
+4. Adaptive gap-fill: read the watch list from each child daily snapshot.
+   For each watch-list term not already covered by the domain taxonomy
+   keywords, run an additional search:
+   ```
+   get_entries(search: "<watch-list-term>", published_after: <7d-ago-unix>)
+   ```
+   Exclude entries already gathered.
+
+5. Category scan: check non-blocked categories for unread entries not
    already covered:
    ```
-   get_category_entries(category_id: N, status: "unread", limit: 20)
+   get_category_entries(category_id: N, status: "unread")
    ```
 
-5. Synthesize: re-rank merged daily summaries + gap-fill entries. Promote
+6. Synthesize: re-rank merged daily summaries + gap-fill entries. Promote
    stories that appeared across multiple days. Add a "week in review"
    executive summary and a watch list.
 
@@ -248,22 +255,30 @@ from the last 7 days. Note this in the output.
 
 3. Gap-fill via search for entries missed by weeklies:
    ```
-   get_entries(search: "caliptra OR root of trust", published_after: <30d-ago-unix>, limit: 50)
-   get_entries(search: "bmc OR redfish OR openbmc", published_after: <30d-ago-unix>, limit: 50)
-   get_entries(search: "spdm OR pldm OR attestation", published_after: <30d-ago-unix>, limit: 50)
-   get_entries(search: "post-quantum OR cnsa", published_after: <30d-ago-unix>, limit: 50)
-   get_entries(search: "firmware vulnerability OR bootkit", published_after: <30d-ago-unix>, limit: 50)
-   get_entries(search: "gpu security OR confidential computing", published_after: <30d-ago-unix>, limit: 50)
+   get_entries(search: "caliptra OR root of trust", published_after: <30d-ago-unix>)
+   get_entries(search: "bmc OR redfish OR openbmc", published_after: <30d-ago-unix>)
+   get_entries(search: "spdm OR pldm OR attestation", published_after: <30d-ago-unix>)
+   get_entries(search: "post-quantum OR cnsa", published_after: <30d-ago-unix>)
+   get_entries(search: "firmware vulnerability OR bootkit", published_after: <30d-ago-unix>)
+   get_entries(search: "gpu security OR confidential computing", published_after: <30d-ago-unix>)
    ```
    Exclude entries already in weekly snapshots by ID.
 
-4. Trend analysis across merged weeklies:
+4. Adaptive gap-fill: read the watch list from each child weekly snapshot.
+   For each watch-list term not already covered by the domain taxonomy
+   keywords above, run an additional search:
+   ```
+   get_entries(search: "<watch-list-term>", published_after: <30d-ago-unix>)
+   ```
+   Exclude entries already gathered.
+
+5. Trend analysis across merged weeklies:
    - Domains with increasing frequency
    - Stories that developed across multiple weeks
    - New vendors/products/CVEs appearing for the first time
    - Themes absent from weeklies but present in gap-fill
 
-5. Synthesize: curated distillation, not concatenation. Re-rank, highlight
+6. Synthesize: curated distillation, not concatenation. Re-rank, highlight
    the month's most significant developments, produce a "strategic outlook."
 
 If no weekly snapshots exist, fall back to dailies, then to a full sweep.
@@ -350,17 +365,13 @@ Only do this with user confirmation.
 
 ## Token budget
 
-- Daily: aim for under 30 entries read, 10-15 in the final chronicle
-- Weekly: up to 60 entries (most from cached daily snapshots), 20-30
-  in the chronicle
-- Monthly: up to 120 entries (most from cached weekly snapshots), 30-50
-  in the chronicle, plus trend analysis
-
-If the starred count exceeds the budget, prioritize by domain relevance
-(core domains: rot, bmc, firmware, attestation rank highest).
+Fetch all matching entries at every cadence (no artificial limits on
+pulls). The chronicle itself is selective: not every fetched entry makes
+the final output. Prioritize by domain relevance when deciding what to
+include (core domains: rot, bmc, firmware, attestation rank highest).
 
 When composing from snapshots, the token savings are significant: reading
-a daily snapshot's markdown is far cheaper than re-reading 15 original
+a daily snapshot's markdown is far cheaper than re-reading original
 entries. This is the main reason snapshots are mandatory.
 
 You are the language model. There is no summarize or digest command. Read
