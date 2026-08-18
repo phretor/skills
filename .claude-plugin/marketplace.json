@@ -41,6 +41,17 @@
         "url": "https://github.com/phretor"
       },
       "source": "./plugins/speaker-coach"
+    },
+    {
+      "name": "news",
+      "version": "1.0.0",
+      "description": "RSS feed reading, triage, and intelligence chronicles via the Miniflux MCP server.",
+      "author": {
+        "name": "Federico Maggi",
+        "email": "fede@maggi.cc",
+        "url": "https://github.com/phretor"
+      },
+      "source": "./plugins/news"
     }
   ]
 }

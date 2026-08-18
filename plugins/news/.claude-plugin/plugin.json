@@ -1,0 +1,9 @@
+{
+  "name": "news",
+  "version": "1.0.0",
+  "description": "RSS feed reading, triage, and intelligence chronicles via the Miniflux MCP server.",
+  "author": {
+    "name": "Federico Maggi",
+    "url": "https://github.com/phretor"
+  }
+}
