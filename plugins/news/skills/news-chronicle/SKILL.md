@@ -190,6 +190,25 @@ Cluster articles into these domains. An article can appear in multiple.
 
 Articles that don't match any domain go into `other` only if starred.
 
+## Platform ranking preference
+
+When two articles compete for inclusion (space constraints, marginal
+relevance, or tie-breaking within a domain), favor linux/server-side
+content over windows/desktop content. This applies to:
+
+- **Vulnerabilities:** a Linux kernel or server-firmware CVE ranks above
+  a Windows desktop or browser CVE of similar severity.
+- **Incidents/breaches:** server-side or infrastructure compromises rank
+  above endpoint/desktop-focused incidents.
+- **Tooling/research:** server hardening, fleet integrity, or
+  datacenter-relevant research ranks above desktop AV or endpoint
+  detection content.
+
+This is an inclusion tiebreaker, not a filter. Windows/desktop articles
+still appear when they are clearly significant (e.g. a supply-chain
+attack affecting server builds, or a CVE in a component also used
+server-side). The preference only kicks in when cutting marginal entries.
+
 ## Gathering phase
 
 All gathering uses Miniflux MCP tools. Compute Unix timestamps for the
@@ -303,10 +322,41 @@ For each entry:
 - **Significance** for the user's work (why it matters to a firmware security
   team at a hyperscale cloud provider)
 - **Source** with hyperlink (feed name + linked article title)
+- **Proposed opinion** for social sharing (see "Social opinion" below)
 
 Always hyperlink article titles to the original URL. The URL is available
 from the entry's `url` field. Every article reference must be a clickable
 link.
+
+Always append the original publication date to article titles in the
+chronicle output, formatted as `(YYYY-MM-DD)`. Use the entry's
+`published_at` field. Example:
+`### [Article title](url) (2026-08-25)`
+
+### Social opinion
+
+For every article included in the chronicle, draft a proposed opinion
+written in the user's voice: a firmware security tech lead at a
+hyperscaler, opinionated, connecting the news to real infrastructure
+problems. Two variants:
+
+- **LinkedIn:** 2-4 sentences. Can be slightly more formal and provide
+  more context, since the audience may not be deep in the niche.
+- **Twitter/X:** 1-2 sentences max (~250 chars target). Punchier,
+  skip preamble, get to the take.
+
+The opinion is a *take*, not a summary. It should express a position:
+what this means for fleet operators, what vendors should be doing, what
+the industry is getting wrong, what's underappreciated. Avoid neutral
+restatements of the article.
+
+Place the opinion block directly after the Source line for each article:
+
+```markdown
+> **LinkedIn:** {opinion}
+>
+> **Twitter/X:** {opinion}
+```
 
 ## Prioritization strategy
 
@@ -325,12 +375,16 @@ link.
 {2-3 sentences: most important developments, any action items}
 
 ## {Domain name}
-### [{Article title}](url)
+### [{Article title}](url) (YYYY-MM-DD)
 {One-line summary}
 
 **Significance:** {Why this matters}
 
 **Source:** {Feed name} - [{Article title}](url)
+
+> **LinkedIn:** {proposed opinion}
+>
+> **Twitter/X:** {proposed opinion}
 
 {Repeat for each article in this domain}
 
