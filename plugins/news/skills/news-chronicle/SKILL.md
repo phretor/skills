@@ -26,6 +26,8 @@ allowed-tools: >
   Write
   Edit
   Bash(mkdir:*)
+  Bash(date:*)
+  WebFetch
   AskUserQuestion
 ---
 
@@ -98,6 +100,53 @@ Accept one of three cadences (default: daily):
 If the user doesn't specify, infer from context ("what happened this week" =
 weekly; bare "chronicle" = daily). Ask only if genuinely ambiguous.
 
+## Weekly cadence nudges
+
+When running a **daily** chronicle, check the current day of week
+after resolving the base path and before gathering.
+
+### Friday prompt
+
+If today is Friday, after completing the daily chronicle and
+post-chronicle triage, propose a weekly run:
+
+> It's Friday. Want me to generate the weekly chronicle now? This
+> will compose from this week's daily snapshots plus gap-fill.
+
+Use `AskUserQuestion` with options:
+1. **Yes, run weekly now (Recommended)**
+2. **Skip for now**
+
+If the user accepts, immediately run the weekly cadence for the
+current ISO week.
+
+### Missing weekly detection (Sat/Sun/Mon)
+
+If today is Saturday, Sunday, or Monday, before starting the daily
+gathering phase, check whether a weekly chronicle exists for the most
+recent Friday's ISO week. The expected path is:
+
+```
+CHRONICLE_BASE/YYYY/MM/YYYY-WNN-weekly.md
+```
+
+where `WNN` is the ISO week number containing the most recent Friday
+(zero-padded, e.g. `W05`).
+
+If the file is missing, surface a callout before proceeding with the
+daily:
+
+> No weekly chronicle found for last week (W{NN}). Want me to
+> generate it before today's daily? The daily snapshots from that
+> week are available.
+
+Use `AskUserQuestion` with options:
+1. **Yes, generate last week's weekly first (Recommended)**
+2. **Skip, just do today's daily**
+
+If the user accepts, run the weekly cadence for that ISO week first,
+then continue with the daily.
+
 ## Snapshot architecture
 
 Chronicles cascade: higher cadences reuse lower-cadence snapshots as their
@@ -158,6 +207,7 @@ domains: [rot, bmc, firmware]
 entries_scanned: 42
 entries_included: 12
 entry_ids: [1234, 5678, 9012]
+conferences_scanned: [blackhat-usa-2026, defcon-2025]
 sources: []
 ---
 ```
@@ -190,6 +240,12 @@ Cluster articles into these domains. An article can appear in multiple.
 
 Articles that don't match any domain go into `other` only if starred.
 
+The `conference-material` pseudo-domain groups slides, papers, and
+videos discovered by the conference material scan. Items here are
+classified into their primary domain(s) from the taxonomy above but
+rendered under a separate `## Conference material` heading so the
+user sees what came from conference pages vs. RSS feeds.
+
 ## Platform ranking preference
 
 When two articles compete for inclusion (space constraints, marginal
@@ -209,6 +265,49 @@ still appear when they are clearly significant (e.g. a supply-chain
 attack affecting server builds, or a CVE in a component also used
 server-side). The preference only kicks in when cutting marginal entries.
 
+## Vendor patch rollup deprioritization
+
+Recurring vendor patch rollup articles (Microsoft Patch Tuesday,
+Adobe/Oracle/SAP quarterly updates, Chrome/Firefox stable releases)
+are high-volume, low-signal for this chronicle's audience. Apply these
+rules:
+
+1. **Do not include** a patch rollup unless it contains at least one
+   actively-exploited zero-day affecting a server-side, kernel, or
+   infrastructure component (not just a desktop/browser/Office vuln).
+2. When a qualifying zero-day exists, include **only the zero-day
+   itself** as a short entry under `vulns`. Do not restate the full
+   rollup statistics (CVE count, critical count, etc.) -- those belong
+   in a vulnerability management dashboard, not an intelligence brief.
+3. Patch rollups never appear in the executive summary unless the
+   zero-day is firmware, kernel, or hypervisor level.
+4. If a rollup entry is starred, include it (starring overrides), but
+   keep the summary focused on the exploited or server-relevant subset.
+
+## Publication date verification
+
+Some feeds re-publish old content with a fresh `published_at`
+timestamp (aggregator re-syndication, editorial re-promotion, feed
+rebuilds). Before including any entry, verify its actual age:
+
+1. **Compare `published_at` against `created_at`.** If the entry's
+   `created_at` (when Miniflux first saw it) is within the time window
+   but `published_at` is much older (>7 days before the window), the
+   article is old content. Exclude it from the daily unless starred.
+2. **Check for date signals in the title or content.** Titles
+   containing explicit dates, year references, or version numbers from
+   prior years (e.g., "2024 Threat Report" appearing in a 2026 feed)
+   are likely re-publications. Flag and exclude.
+3. **Check for future `published_at`.** Some academic feeds and
+   preprint servers set `published_at` to conference dates months in
+   the future. Treat these entries as available now but display their
+   actual publication date, not the feed timestamp.
+4. **When in doubt, check the article URL** with `fetch_original_content`
+   and look for a byline date or "originally published" notice.
+
+An entry that fails date verification is silently dropped (not flagged
+to the user) unless it was starred.
+
 ## Gathering phase
 
 All gathering uses Miniflux MCP tools. Compute Unix timestamps for the
@@ -221,10 +320,15 @@ entries are never filtered by category (starring overrides the blocklist).
 
 ### Daily
 
-1. All starred entries from the last 24 hours (no category filter):
+1. All starred entries (no category filter, no time filter, newest first):
    ```
-   get_entries(starred: true, published_after: <24h-ago-unix>)
+   get_entries(starred: true, order: "published_at", direction: "desc")
    ```
+   Partition results by age:
+   - **Recent** (published within the last 24 hours): daily inclusion
+     candidates, subject to the starred-entry inclusion rules below.
+   - **Older**: carried forward for weekly/monthly compositing but not
+     included in today's daily unless explicitly requested.
 
 2. All unread entries from each non-blocked category (no limit):
    ```
@@ -233,9 +337,19 @@ entries are never filtered by category (starring overrides the blocklist).
 
 3. Deduplicate by entry ID.
 
-4. Read content: `get_entry` returns stored content. Use
+4. **Publication date verification.** For every candidate entry, apply
+   the date-verification rules above. Drop entries whose actual age
+   falls outside the time window. In particular, watch for CVE feed
+   aggregators and news re-syndicators that re-publish daily.
+
+5. Read content: `get_entry` returns stored content. Use
    `fetch_original_content` only when the stored content is clearly
    truncated or insufficient.
+
+6. **Conference material scan.** Check recent conference web pages for
+   newly published material (slides, papers, videos, proceedings) that
+   may not appear in any RSS feed. See the "Conference material scan"
+   section below for the full procedure.
 
 ### Weekly
 
@@ -308,6 +422,93 @@ from the last 7 days. Note this in the output.
 
 If no weekly snapshots exist, fall back to dailies, then to a full sweep.
 
+## Conference material scan
+
+Conference pages publish slides, papers, and videos outside RSS feeds.
+Every chronicle run checks a curated set of conference web pages for
+recently added material relevant to the domain taxonomy.
+
+### Source: seccon skill resources
+
+The conference URL list comes from the seccon skill's cached index files
+at `~/dev/personal/skills/plugins/seccon/skills/seccon/resources/`.
+
+At the start of each chronicle run (after the Miniflux gathering phase),
+determine which conferences had their most recent edition within the
+last 6 months. Read the `conference.url` field from each matching
+`index.json`:
+
+```
+~/dev/personal/skills/plugins/seccon/skills/seccon/resources/industry/{year}/{venue}/index.json
+~/dev/personal/skills/plugins/seccon/skills/seccon/resources/academic/{year}/{venue}/index.json
+```
+
+Pick the most recent cached edition of each venue. If the conference
+URL is non-null and the conference took place within the last 6 months
+(or is upcoming within the next 2 months), add it to the scan list.
+
+### Scan procedure
+
+For each conference URL on the scan list:
+
+1. Fetch the page with `WebFetch`. Use the URL from the index.json
+   `conference.url` field.
+2. Scan the page content for links to new material: PDFs, slide decks,
+   video recordings, or proceedings pages that were not present in the
+   seccon cache's `index.json` for that venue-year (compare by title
+   or URL).
+3. Filter for domain relevance: only surface material matching the
+   domain taxonomy keywords (firmware, BMC, root of trust, side
+   channel, GPU, attestation, etc.).
+4. For each new relevant item found, include it in the chronicle under
+   a `## Conference material` domain section with:
+   - Conference name and year
+   - Talk/paper title (linked to slides/PDF/video)
+   - One-line summary of relevance
+   - Domain classification
+
+### Cadence-specific behavior
+
+- **Daily:** scan all conferences on the scan list. This catches
+  slides published days after a conference ends.
+- **Weekly:** only scan conferences not already covered by a daily
+  snapshot's conference-material section.
+- **Monthly:** skip (weekly snapshots carry conference material
+  forward).
+
+### Failure handling
+
+If `WebFetch` fails for a conference URL (timeout, 403, redirect
+loop), skip silently. Conference page checks are best-effort and must
+not block the chronicle.
+
+## Starred entry inclusion
+
+Starred entries signal deliberate user interest and are always fetched
+without a time filter so none are lost between runs. For daily
+chronicles, recent starred entries (published within the last 24 hours)
+default to inclusion but can be displaced:
+
+1. **Include** when the entry fits a domain in the taxonomy and no
+   higher-significance unstarred entry competes for the same slot.
+2. **Exclude** when the entry has no domain fit, or a clearly more
+   impactful unstarred entry covers the same domain. Significance is
+   judged by active exploitation, fleet-wide risk, upstream breakage,
+   or regulatory impact.
+3. **Tie-break via interview.** When a recent starred entry and an
+   unstarred entry are roughly equal in significance within the same
+   domain, present both to the user via `AskUserQuestion` and let
+   them decide which to include (or both).
+
+Starred entries older than 24 hours are not included in daily
+chronicles unless the user explicitly requests them. They remain in
+the pool for weekly and monthly compositing.
+
+In candidate lists, label starred entries with `[starred]` so the
+user can spot them at a glance. Rank them by the same
+domain-relevance criteria as unstarred entries, not auto-promoted
+to the top.
+
 ## Synthesis phase
 
 ### Classification
@@ -358,14 +559,6 @@ Place the opinion block directly after the Source line for each article:
 > **Twitter/X:** {opinion}
 ```
 
-## Prioritization strategy
-
-- Popularity: items/topics/stories that are repeated across multiple feeds
-- Security events: big and impactful security incidents or vulnerabilities
-- Updates from important venues: topics discussed at or discussing about cybersecurity conferences (industry and academic)
-- Updates from major players, including but not limited to merger and aquisitions
-- Launches and tools
-
 ### Chronicle structure
 
 ```markdown
@@ -387,6 +580,14 @@ Place the opinion block directly after the Source line for each article:
 > **Twitter/X:** {proposed opinion}
 
 {Repeat for each article in this domain}
+
+## Conference material
+### [{Talk/paper title}](slides-or-video-url) — {Conference Name YYYY}
+{One-line summary}
+
+**Domains:** {domain1, domain2}
+
+{Repeat for each new item found. Omit this section if the scan found nothing new.}
 
 ## Watch list
 {3-5 emerging themes, trends, or developing stories worth tracking}
