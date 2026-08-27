@@ -308,6 +308,96 @@ rebuilds). Before including any entry, verify its actual age:
 An entry that fails date verification is silently dropped (not flagged
 to the user) unless it was starred.
 
+## Mandatory signal: CISA KEV and ENISA EUVD
+
+Every chronicle run must check for new additions to the CISA Known
+Exploited Vulnerabilities (KEV) catalog and the ENISA EU Vulnerability
+Database (EUVD) exploited list. These are authoritative signals that a
+vulnerability is confirmed actively exploited, and they always appear
+in the chronicle when new entries fall within the time window.
+
+### CISA KEV
+
+Fetch the full KEV catalog JSON:
+
+```
+WebFetch(url: "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json",
+         prompt: "Return ONLY the vulnerabilities where dateAdded is within
+                  the last {N} days (use today's date: {YYYY-MM-DD}).
+                  For each, return: cveID, vendorProject, product,
+                  vulnerabilityName, shortDescription, dateAdded,
+                  dueDate, knownRansomwareCampaignUse, notes.
+                  If none match, say NONE.")
+```
+
+Replace `{N}` with 1 for daily, 7 for weekly, 30 for monthly.
+
+### ENISA EUVD
+
+Fetch the ENISA EUVD exploited-vulnerabilities listing:
+
+```
+WebFetch(url: "https://euvd.enisa.europa.eu/homepage/exploited",
+         prompt: "List all vulnerabilities shown on this page. For each,
+                  return: CVE ID, description, vendor/product, CVSS score,
+                  date published or date added. Only include entries from
+                  the last {N} days (use today's date: {YYYY-MM-DD}).
+                  If none match or the page is empty, say NONE.")
+```
+
+### Inclusion rules
+
+1. **Always include.** KEV/EUVD additions are never deprioritized or
+   dropped by platform-ranking, patch-rollup, or space constraints.
+   They are the highest-confidence signal that a vulnerability is
+   under active exploitation.
+2. **Cross-reference with RSS entries.** If a KEV/EUVD CVE also
+   appears in an RSS entry already gathered from Miniflux, merge: use
+   the RSS article's richer content for the summary but add a
+   `**KEV/EUVD:**` tag to mark it as confirmed-exploited.
+3. **Standalone entry when no RSS match.** If a KEV/EUVD CVE has no
+   corresponding RSS entry, create a standalone chronicle entry under
+   `vulns` using the catalog metadata (description, vendor, product,
+   due date).
+4. **Domain classification.** Apply the domain taxonomy as usual. A
+   KEV entry for a firmware, kernel, BMC, or server-infrastructure
+   component also appears in the relevant domain section, not just
+   `vulns`.
+5. **Executive summary.** Any KEV/EUVD addition affecting server-side,
+   kernel, firmware, or hypervisor components must be mentioned in the
+   executive summary.
+
+### Chronicle rendering
+
+KEV/EUVD entries use this format:
+
+```markdown
+### [CVE-YYYY-NNNNN](https://nvd.nist.gov/vuln/detail/CVE-YYYY-NNNNN) (YYYY-MM-DD) [KEV]
+{vendorProject} {product}: {shortDescription}
+
+**Added to KEV:** {dateAdded} | **Remediation due:** {dueDate}
+**Ransomware use:** {Yes/No/Unknown}
+
+**Significance:** {Why this matters for the fleet}
+
+> **LinkedIn:** {opinion}
+>
+> **Twitter/X:** {opinion}
+```
+
+For EUVD-only entries (not in KEV), use `[EUVD]` instead of `[KEV]`.
+For entries in both, use `[KEV] [EUVD]`.
+
+### Frontmatter
+
+Add KEV/EUVD CVE IDs to the snapshot frontmatter for dedup across
+cadences:
+
+```yaml
+kev_cves: [CVE-2026-XXXXX]
+euvd_cves: [CVE-2026-YYYYY]
+```
+
 ## Gathering phase
 
 All gathering uses Miniflux MCP tools. Compute Unix timestamps for the
@@ -346,7 +436,13 @@ entries are never filtered by category (starring overrides the blocklist).
    `fetch_original_content` only when the stored content is clearly
    truncated or insufficient.
 
-6. **Conference material scan.** Check recent conference web pages for
+6. **CISA KEV / ENISA EUVD check.** Fetch the KEV catalog and EUVD
+   exploited list as described in the "Mandatory signal" section.
+   Cross-reference new additions against already-gathered RSS entries.
+   Create standalone entries for any KEV/EUVD CVEs not covered by
+   feeds.
+
+7. **Conference material scan.** Check recent conference web pages for
    newly published material (slides, papers, videos, proceedings) that
    may not appear in any RSS feed. See the "Conference material scan"
    section below for the full procedure.
@@ -379,7 +475,14 @@ entries are never filtered by category (starring overrides the blocklist).
    get_category_entries(category_id: N, status: "unread")
    ```
 
-6. Synthesize: re-rank merged daily summaries + gap-fill entries. Promote
+6. **KEV/EUVD gap-fill.** Fetch the CISA KEV and ENISA EUVD exploited
+   lists as described in the "Mandatory signal" section, using the 7-day
+   window. Cross-reference against `kev_cves` and `euvd_cves` from each
+   child daily snapshot's frontmatter. Include any CVEs added during the
+   week that were missed by dailies (no daily ran that day, or the CVE
+   was added after the daily ran).
+
+7. Synthesize: re-rank merged daily summaries + gap-fill entries. Promote
    stories that appeared across multiple days. Add a "week in review"
    executive summary and a watch list.
 
@@ -411,13 +514,19 @@ from the last 7 days. Note this in the output.
    ```
    Exclude entries already gathered.
 
-5. Trend analysis across merged weeklies:
+5. **KEV/EUVD gap-fill.** Fetch the CISA KEV and ENISA EUVD exploited
+   lists as described in the "Mandatory signal" section, using the 30-day
+   window. Cross-reference against `kev_cves` and `euvd_cves` from each
+   child weekly snapshot's frontmatter. Include any CVEs added during the
+   month that were missed by weeklies.
+
+6. Trend analysis across merged weeklies:
    - Domains with increasing frequency
    - Stories that developed across multiple weeks
    - New vendors/products/CVEs appearing for the first time
    - Themes absent from weeklies but present in gap-fill
 
-6. Synthesize: curated distillation, not concatenation. Re-rank, highlight
+7. Synthesize: curated distillation, not concatenation. Re-rank, highlight
    the month's most significant developments, produce a "strategic outlook."
 
 If no weekly snapshots exist, fall back to dailies, then to a full sweep.
