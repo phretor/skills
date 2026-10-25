@@ -1,6 +1,6 @@
 ---
-name: amazon-writing
-description: Use when writing narrative memos, 6-pagers, 1-pagers, press releases, or PRFAQs in Amazon style. Applies Amazon's no-PowerPoint writing standards with data over adjectives, active voice, and the "so what" test.
+name: ph-amazon-writing
+description: "Writes or rewrites narrative memos, 6-pagers, 1-pagers, press releases, and PRFAQs in Amazon style. Applies Amazon's no-PowerPoint writing standards: data over adjectives, active voice, and the \"so what\" test. Use when the user asks for an Amazon-style memo or names one of these document types."
 allowed-tools: Read Write Edit
 ---
 
@@ -16,9 +16,16 @@ Amazon has a distinctive "no PowerPoint" culture that emphasizes narrative memos
 
 ## When NOT to Use
 
-- General prose cleanup without Amazon-style formatting: use `stop-slop` instead
+- General prose cleanup without Amazon-style formatting: use `ph-stop-slop` instead
 - Slide decks or presentation formats
 - Technical documentation (API docs, READMEs, runbooks)
+
+## Input
+
+Accepts a document type and optional text or file path: `<document-type> [text|file]`.
+
+1. **document-type** (required): `6-pager`, `1-pager`, `press-release`, or `prfaq`. If omitted, ask the user.
+2. **text or file path** (optional): If a file path is given, read the file first. If raw text is given, treat it as the content to rewrite. If neither is given, ask the user to paste the text or name the file.
 
 ## Core Writing Rules
 

@@ -13,7 +13,7 @@ import time
 from pathlib import Path
 from urllib.parse import unquote
 
-RESOURCES = Path(__file__).parent.parent / "resources"
+RESOURCES = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
 MANIFEST = RESOURCES / "manifest.json"
 CURRENT_YEAR = 2025
 YEARS = [2021, 2022, 2023, 2024, 2025]

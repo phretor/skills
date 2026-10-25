@@ -1,11 +1,12 @@
 ---
-name: speaker-coach
-description: "Coaches cybersecurity speakers through a disciplined backwards-design interview, audits existing talk drafts adversarially, and walks rehearsal critique or T-2-week readiness gates. Dispatches on sub-mode: design (forward), debug (audit), rehearse (readiness + rehearsal critique). Adapts to academic, industry, or grassroots venue norms. Use when the user wants to prepare a cybersecurity talk, debug a draft, score a rehearsal, or check final readiness. Invoke as /ph:coach design, /ph:coach debug <artifact>, or /ph:coach rehearse [artifact]."
+name: ph-speaker-coach
+description: "Coaches cybersecurity speakers through a disciplined backwards-design interview, audits existing talk drafts adversarially, and walks rehearsal critique or T-2-week readiness gates. Dispatches on sub-mode: design (forward), debug (audit), rehearse (readiness + rehearsal critique). Adapts to academic, industry, or grassroots venue norms. Use when the user wants to prepare a cybersecurity talk, debug a draft, score a rehearsal, or check final readiness. Invoke with `design`, `debug <artifact>`, or `rehearse [artifact]`."
 allowed-tools: Read Write Edit Bash
 compatibility: >-
-  System dependency: pdftotext (poppler) for slide-deck PDF ingestion. Install
-  with `brew install poppler` (macOS) or `apt-get install poppler-utils`
-  (Debian/Ubuntu). All other functionality works without external dependencies.
+  Requires uv to run the bundled script. System dependency: pdftotext (poppler)
+  for slide-deck PDF ingestion only. Install with `brew install poppler`
+  (macOS) or `apt-get install poppler-utils` (Debian/Ubuntu). All other
+  functionality works without external dependencies.
 ---
 
 # Cybersecurity Speaker Coach
@@ -31,12 +32,15 @@ The skill is venue-aware: it routes the same rubric across academic, industry, a
 - Non-cybersecurity speaking contexts (general TED-style coaching, sales pitches, weddings) — the rubric is cybersecurity-specific and assumes that domain.
 - Ghostwriting an abstract or generating slide content from scratch — this skill coaches the speaker; it doesn't author for them.
 - Slide design / visual styling — only structural visual strategy is in scope; no font / color / layout work.
-- Prose copy-editing — use `ph:write` (the `writing` plugin) instead.
+- Prose copy-editing — use `ph-stop-slop` instead.
 - Generating speaker bios.
 
 ## Sub-mode dispatch
 
-The first argument is the sub-mode. If missing or unrecognized, **ask the user** which mode they want. Do not guess.
+Arguments: `<design|debug|rehearse> [artifact path or note]`.
+
+1. **mode** (required): the first argument. If missing or unrecognized, **ask the user** which mode they want. Do not guess.
+2. **artifact path or note** (optional): a file path (markdown, text, or PDF slide deck) or a freeform note about the talk. Used by `debug` and `rehearse` to seed the audit.
 
 | Mode       | Workflow file                | Use when…                                                                     |
 | ---------- | ---------------------------- | ----------------------------------------------------------------------------- |
@@ -70,7 +74,7 @@ Default artifact path: `./.coach/<slug>.md`. Confirm with the speaker before cre
 
 ### 3. Mode-specific seed (`debug`, `rehearse` only)
 
-For `debug`: ask for the artifact to audit (file path, pasted text, or PDF path). If PDF, run `scripts/extract_deck.py` via `Bash` and save the extracted slide list into the session context. **Do not** start auditing yet — read the artifact, but follow `workflows/debug.md` step ordering.
+For `debug`: ask for the artifact to audit (file path, pasted text, or PDF path). If PDF, run `scripts/extract_deck.py` in a shell and save the extracted slide list into the session context. **Do not** start auditing yet — read the artifact, but follow `workflows/debug.md` step ordering.
 
 For `rehearse`: ask which sub-flow (rehearsal critique vs readiness gate). For readiness, ask "days until the talk?"
 
@@ -85,7 +89,7 @@ These rules apply across all modes. Violating them is the most common failure of
 5. **Always cite the principle when invoking a framework.** Link by file: `references/design-principles.md §N`, `references/audit-anti-patterns.md`, `references/conf-norms.md`.
 6. **Never fabricate scores or evidence.** If the artifact doesn't surface the signal, mark `N/A` and explain why.
 7. **Never rewrite the speaker's content silently.** Propose. Get approval. Then edit.
-8. **Never use the visual-companion / browser tool.** This skill is text-only by design.
+8. **Never use browser or visual tools.** This skill is text-only by design.
 
 ## Persisted artifact schema
 
@@ -200,7 +204,7 @@ Do not preload these into context. Read only when the workflow tells you to.
 
 ## Scripts
 
-`scripts/extract_deck.py` — extracts per-slide text from a PDF deck using `pdftotext` (poppler). Run via `uv run scripts/extract_deck.py <path>`. Fails with a clear install hint if `pdftotext` is missing. Use only when the speaker provides a PDF in `debug` mode.
+`scripts/extract_deck.py` — extracts per-slide text from a PDF deck using `pdftotext` (poppler). Run it from this skill's directory: `uv run scripts/extract_deck.py <path>`. Fails with a clear install hint if `pdftotext` is missing. Use only when the speaker provides a PDF in `debug` mode.
 
 ## Anti-patterns the coach must NEVER do
 
@@ -209,7 +213,7 @@ Do not preload these into context. Read only when the workflow tells you to.
 - Score before identifying the venue. The rubric column changes the interpretation.
 - Fabricate rubric scores when the artifact doesn't surface the signal. Mark `N/A`.
 - Recommend slide tweaks before the takeaway and audience subset are locked.
-- Use the visual-companion / browser tool — this skill is text-only.
+- Use browser or visual tools — this skill is text-only.
 - Bundle multiple questions in one turn (except where a workflow explicitly says so).
 - Sugarcoat the credibility–impact gap. The speaker came for honesty.
 - Rewrite the speaker's content without their approval.

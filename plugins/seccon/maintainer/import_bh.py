@@ -5,7 +5,7 @@
 """Import Black Hat sessions.json exports into resources/ cache.
 
 Usage:
-    uv run scripts/import_bh.py /tmp/seccon/bhus25-sessions.json
+    uv run maintainer/import_bh.py /tmp/seccon/bhus25-sessions.json
 
 This detects the edition and year from the filename pattern:
     bh{edition}{yy}-sessions.json
@@ -18,7 +18,7 @@ import re
 import sys
 from pathlib import Path
 
-RESOURCES = Path(__file__).parent.parent / "resources"
+RESOURCES = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
 
 EDITION_MAP = {
     "us": "blackhat-usa",
@@ -141,7 +141,7 @@ def main():
         if default_dir.exists():
             paths = sorted(str(p) for p in default_dir.glob("bh*-sessions.json"))
         else:
-            print("Usage: uv run scripts/import_bh.py <path-to-sessions.json> [...]")
+            print("Usage: uv run maintainer/import_bh.py <path-to-sessions.json> [...]")
             sys.exit(1)
 
     total = 0

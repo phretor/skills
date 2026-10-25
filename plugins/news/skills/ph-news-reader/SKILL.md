@@ -1,5 +1,5 @@
 ---
-name: news-reader
+name: ph-news-reader
 description: >
   Read, search, triage, and manage RSS feeds via the Miniflux MCP server.
   Use when the user wants to catch up on feeds, find or summarize articles,
@@ -9,6 +9,9 @@ description: >
   "check what's unread", "mark these read", "subscribe to <url>",
   "refresh my feeds", "news feeds", "RSS", "catch up on feeds",
   "unread articles", "star this article", "triage my feeds".
+compatibility: >-
+  Requires a configured and reachable `miniflux` MCP server. No other
+  dependencies.
 allowed-tools: >
   mcp__miniflux__healthcheck
   mcp__miniflux__get_categories
@@ -41,17 +44,31 @@ allowed-tools: >
 # News reader
 
 Agent-facing reference for interacting with RSS feeds through the Miniflux
-MCP server. Every operation below uses `mcp__miniflux__*` tools directly;
-there is no CLI wrapper.
+MCP server. Every operation below uses the server's tools directly, referenced
+by bare tool name (`healthcheck`, `get_entries`, ...); there is no CLI wrapper.
+The tools are exposed by the `miniflux` MCP server; some harnesses prefix them
+(for example `mcp__miniflux__get_entries` in Claude Code).
+
+## When to Use
+
+- Catching up on, searching, or summarizing RSS feed entries
+- Triage: mark read, star, save, or remove entries
+- Subscribing to feeds, refreshing feeds, managing categories, exporting OPML
+
+## When NOT to Use
+
+- Fetching an arbitrary web page that is not a Miniflux feed entry: fetch the URL directly
+- Searching the web for news: use a search tool
+- The `miniflux` MCP server is unavailable: stop and tell the user (see the gate below)
 
 ## Gate: verify Miniflux is reachable
 
-Before doing anything else, call `mcp__miniflux__healthcheck`.
+Before doing anything else, call `healthcheck`.
 
 If it fails or the tool is not available, stop immediately:
 
 > The Miniflux MCP server is not configured or not reachable.
-> Add the `miniflux` MCP server to your Claude Code configuration
+> Add the `miniflux` MCP server to your agent's MCP configuration
 > before using this skill.
 
 Do not fall back to any other tool or CLI. Miniflux MCP is the only

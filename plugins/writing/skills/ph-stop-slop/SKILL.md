@@ -1,5 +1,5 @@
 ---
-name: stop-slop
+name: ph-stop-slop
 description: "Eliminate AI writing patterns from prose. Use when drafting, editing, reviewing, or proofreading any text — blog posts, docs, reports, emails, commit messages, release notes — to catch and remove predictable AI tells: throat-clearing openers, passive voice, business jargon, binary contrasts, adverbs, and formulaic structures. Invoke whenever the user asks to clean up, tighten, review, de-AI, or improve their writing, or when reviewing any prose that may contain AI-generated patterns."
 allowed-tools: Read
 ---
@@ -7,6 +7,10 @@ allowed-tools: Read
 # Stop Slop
 
 Eliminate predictable AI writing patterns from prose.
+
+## Input
+
+Accepts optional text or a file path. If a file path is given, read the file first. If raw text is given, treat it as the prose to review. If neither is given, ask the user to paste the text or name the file.
 
 ## Core Rules
 

@@ -1,12 +1,12 @@
 ---
-name: seccon
-description: "Looks up academic and industry security conferences papers, authors, live CFP deadlines, topic-filtered calendars, venue comparisons, latest-edition lookups, and talk/paper evaluation. Operates from a curated cache (resources/) covering the most recent 5 years. Use when the user asks about wants to find papers at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke as /skill:seccon help, /skill:seccon [academic|industry] now [acronym] [topic], /skill:seccon [academic|industry] deadlines [topic], /skill:seccon [academic|industry] latest [acronym] [topic], /skill:seccon academic compare <venue1> <venue2>, or /skill:seccon academic <year> <acronym>."
+name: ph-seccon
+description: "Looks up academic and industry security conferences papers, authors, live CFP deadlines, topic-filtered calendars, venue comparisons, latest-edition lookups, and talk/paper evaluation. Operates from a curated cache (resources/) covering the most recent 5 years. Use when the user asks about wants to find papers at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke with `help`, `[academic|industry] now [acronym] [topic]`, `[academic|industry] deadlines [topic]`, `[academic|industry] latest [acronym] [topic]`, `academic compare <venue1> <venue2>`, or `academic <year> <acronym>`."
 allowed-tools: WebFetch Bash
 compatibility: >-
-  Requires internet access. System dependency: pdftotext (poppler) for extracting
-  text from downloaded papers and frontmatter PDFs — install with `brew install
-  poppler` (macOS) or `apt-get install poppler-utils` (Linux). Run
-  scripts/populate_cache.py after refreshing to rebuild the resource cache.
+  Requires internet access and uv (paperhub-cli runs via `uvx paperhub-cli`).
+  System dependency: pdftotext (poppler) for extracting text from downloaded
+  papers and frontmatter PDFs — install with `brew install poppler` (macOS) or
+  `apt-get install poppler-utils` (Linux).
 ---
 
 # seccon — Security Conference Intelligence
@@ -29,7 +29,7 @@ Mandatory execution rules:
 - Always start by reading `resources/manifest.json` to learn what is cached and what is missing.
 - Search the cache first: filter `resources/{academic|industry}/{year}/{venue}/index.json` by title, speakers, or abstract.
 - Only fetch full-text content (PDF) on-demand when the user asks about a specific paper or talk in detail.
-- Use `paperhub-cli search --no-plan` ONLY as enrichment after the cache returns no results. Never use DBLP,
+- Use `uvx paperhub-cli search --no-plan` ONLY as enrichment after the cache returns no results. Never use DBLP,
   Semantic Scholar, arXiv, or any other API directly — those are reachable only through paperhub-cli.
 - If a query targets a year outside 2021–2025, refuse with: "This skill covers the most recent 5 years (2021–2025). Content from <year> is outside the cached window. Contact the maintainer to extend coverage."
 - If a query targets a venue or year that is listed as a gap in manifest.json, say so and optionally offer a calendar-based lookup (for upcoming conferences).
@@ -39,14 +39,14 @@ Mandatory execution rules:
 These are common mistakes agents make when running this skill. Memorize them:
 
 1. **Never populate the cache yourself by calling DBLP, Semantic Scholar, or any API directly.**
-   The cache is maintained by the maintainer via `scripts/populate_cache.py`. If a venue-year
+   The cache is maintained by the maintainer via `maintainer/populate_cache.py`. If a venue-year
    is a gap, say so. Do not try to fill it at runtime by scraping DBLP XML, Semantic Scholar,
    or any other source.
 
 2. **Never use `web_search` (Tavily, Brave, Google).**
    See IRON RULE below. This is the most commonly violated rule.
 
-3. **Never use tools other than those explicitly listed (paperhub-cli, pdftotext, curl, Bash, WebFetch).**
+3. **Never use tools other than those explicitly listed (paperhub-cli, pdftotext, curl, and a URL-fetch tool).**
    Do not invoke external search APIs, academic indexers, or paper databases that aren't
    paperhub-cli. paperhub-cli is the only approved external paper search tool, and only for
    enrichment after the cache has been exhausted.
@@ -63,9 +63,9 @@ These are common mistakes agents make when running this skill. Memorize them:
    Say the data isn't available. The rubric dimensions (Tools/artifacts, Impact, etc.)
    must be sourced from actual content you fetched on-demand, not inferred.
 
-5. **Never crawl conference pages outside the `scripts/` crawlers.**
+5. **Never crawl conference pages outside the `maintainer/` crawlers.**
    Do not write ad-hoc `curl` or `httpx` calls to scrape venue pages mid-conversation.
-   Use `WebFetch` only for URLs explicitly documented in the skill (e.g., CFPTime,
+   Fetch URLs only when they are explicitly documented in the skill (e.g., CFPTime,
    ConfSearch, a specific PDF the user asked about).
 
 ## IRON RULE — No Generic Web Search
@@ -77,29 +77,29 @@ official program/schedule pages, proceedings archives, CFPTime, and ConfSearch.
 If content is not in the cache and cannot be fetched on-demand via known venue
 URLs, say so — do not fall back to generic web search.
 
-Supported quick forms:
-- `/skill:seccon help` → concise help and examples
-- `/skill:seccon academic now` → upcoming and ongoing academic security conferences, sorted by date
-- `/skill:seccon industry now` → upcoming industry conferences with open CFPs, sorted by conference date
-- `/skill:seccon academic now <acronym>` → dates and deadlines for a specific conference
-- `/skill:seccon [academic|industry] now <topic>` → upcoming conferences filtered by topic
-- `/skill:seccon [academic|industry] now <acronym> <topic>` → specific conference + topic filter
-- `/skill:seccon [academic|industry] deadlines [topic]` → open CFPs only, sorted by deadline
-- `/skill:seccon [academic|industry] latest <acronym> [topic]` → latest edition from cache, with optional topic focus
-- `/skill:seccon [academic|industry] latest <topic>` → cross-conference topic scan across cached venues
-- `/skill:seccon academic compare <venue1> <venue2>` → compare rank, selectivity, focus
-- `/skill:seccon academic <year> <acronym>` → venue-year lookup from cache
+Supported argument forms (invoke `ph-seccon` with one of these):
+- `help` → concise help and examples
+- `academic now` → upcoming and ongoing academic security conferences, sorted by date
+- `industry now` → upcoming industry conferences with open CFPs, sorted by conference date
+- `academic now <acronym>` → dates and deadlines for a specific conference
+- `[academic|industry] now <topic>` → upcoming conferences filtered by topic
+- `[academic|industry] now <acronym> <topic>` → specific conference + topic filter
+- `[academic|industry] deadlines [topic]` → open CFPs only, sorted by deadline
+- `[academic|industry] latest <acronym> [topic]` → latest edition from cache, with optional topic focus
+- `[academic|industry] latest <topic>` → cross-conference topic scan across cached venues
+- `academic compare <venue1> <venue2>` → compare rank, selectivity, focus
+- `academic <year> <acronym>` → venue-year lookup from cache
 
 ## Help output
 
-If the user runs `/skill:seccon help`, return a concise quick-start guide. Include:
+If the user invokes `help`, return a concise quick-start guide. Include:
 - one-line explanation of academic vs industry mode
 - note that the skill uses a cached index of papers/talks (2021–2025) and fetches full text on-demand
 - the main quick forms
 - 8–12 concrete examples
 - a short note that mode can be inferred when obvious, but explicit mode is preferred
 
-Suggested help examples: `/skill:seccon academic now`, `/skill:seccon academic now CCS side channels`, `/skill:seccon industry now browser exploitation`, `/skill:seccon academic deadlines crypto`, `/skill:seccon academic latest USENIX fuzzing`, `/skill:seccon academic compare CCS NDSS`, `/skill:seccon academic 2024 CCS`.
+Suggested help examples: `academic now`, `academic now CCS side channels`, `industry now browser exploitation`, `academic deadlines crypto`, `academic latest USENIX fuzzing`, `academic compare CCS NDSS`, `academic 2024 CCS`.
 
 ---
 
@@ -189,7 +189,7 @@ Each file lists all papers/talks for one venue edition:
 5. **Drill down on-demand** — when the user picks a specific paper/talk, fetch its full text:
    - Open-access PDF: download with `curl -sL <url> | pdftotext - -`
    - Paywalled: fetch abstract via Semantic Scholar, look for preprint on arXiv/author site
-   - Use `paperhub-cli read --doi <doi> --full` for open-access sources
+   - Use `uvx paperhub-cli read --doi <doi> --full` for open-access sources
 6. **Apply the Work Evaluation Rubric** for in-depth paper/talk evaluation.
 
 ---
@@ -232,9 +232,9 @@ If the user supplies an optional **topic** after `now`, use it to refine the cal
 - add a short **Topic fit** note per row or as a bullet below the table
 
 When calendar results show a venue-year that is NOT in the cache (a gap), note it:
-> "💡 CCS 2026 is upcoming — not yet in the cache. Once the program is published, the maintainer can add it by running `scripts/populate_cache.py`."
+> "💡 CCS 2026 is upcoming — not yet in the cache. Once the program is published, the maintainer can add it by running `maintainer/populate_cache.py`."
 
-**For `/skill:seccon academic now` (all upcoming security conferences):**
+**For `academic now` (all upcoming security conferences):**
 ```
 GET https://confsearch.ethz.ch/api/search-engine/?query=security
 ```
@@ -242,13 +242,13 @@ Also query with: `privacy`, `cryptography`, `network security` to broaden covera
 
 Filter results to conferences in the embedded tier tables (Tier 1 and 2). Drop results with blank `start` dates or past end dates. Sort by `start` ascending.
 
-**For `/skill:seccon academic now <acronym>` (specific conference):**
+**For `academic now <acronym>` (specific conference):**
 ```
 GET https://confsearch.ethz.ch/api/search-engine/?query=<acronym>
 ```
 Pick the top result matching the known acronym. Show all fields.
 
-**For `/skill:seccon academic now <topic>` or `/skill:seccon academic now <acronym> <topic>`:**
+**For `academic now <topic>` or `academic now <acronym> <topic>`:**
 - first resolve whether the first token after `now` is a known acronym from the tier table
 - present calendar results and note any gaps in cache coverage
 
@@ -295,41 +295,41 @@ Show CFP deadline relative to today. Highlight open CFPs. Omit conferences more 
 
 ### Deadlines shortcut
 
-For `/skill:seccon [academic|industry] deadlines [topic]`:
+For `[academic|industry] deadlines [topic]`:
 - return only conferences with open CFPs, sorted by deadline ascending
 - if a topic is supplied, filter by topic fit
 - include a relative deadline note such as `closes in 9 days`
 
 ### Latest shortcut
 
-For `/skill:seccon [academic|industry] latest <acronym> [topic]`:
+For `[academic|industry] latest <acronym> [topic]`:
 - look up the latest cached edition of the venue from `resources/`
 - if the latest cached year is marked as a gap, note that and check if an earlier year is available
 - search within that edition for matching papers or talks by title/speaker/abstract
 - present the best hits
 
-For `/skill:seccon [academic|industry] latest <topic>` (no acronym):
+For `[academic|industry] latest <topic>` (no acronym):
 - perform a **cross-conference topic scan** across all cached venues in that mode
 - for each venue-year that has data, filter `talks`/`papers` by title/speaker/abstract keyword
 - present results grouped by venue
 - note any venues/years that are gaps in the cache
 
 Examples:
-- `/skill:seccon academic latest CCS`
-- `/skill:seccon academic latest USENIX fuzzing`
-- `/skill:seccon industry latest agentic vulnerability research`
-- `/skill:seccon academic latest LLM supply chain attacks`
+- `academic latest CCS`
+- `academic latest USENIX fuzzing`
+- `industry latest agentic vulnerability research`
+- `academic latest LLM supply chain attacks`
 
 ### Compare shortcut
 
-For `/skill:seccon academic compare <venue1> <venue2>`:
+For `academic compare <venue1> <venue2>`:
 - compare rank/tier, acceptance-rate trends, thematic focus, artifact culture
 - use CORE + Guofei for venue standing
 - present as a side-by-side table with a recommendation
 
 ### Academic Year + Acronym shorthand
 
-For `/skill:seccon academic <year> <acronym>`:
+For `academic <year> <acronym>`:
 1. Normalize the acronym against the ranked conference table
 2. If the year is outside 2021–2025, refuse with the cache window message
 3. Load the matching `index.json` from `resources/academic/{year}/{venue}/`
@@ -461,7 +461,7 @@ ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstrac
 
 ## paperhub-cli
 
-`paperhub-cli` is installed as a project dependency (`uv sync`) and available in the shell. It searches, reads, and downloads academic papers across multiple open providers.
+`paperhub-cli` runs on demand through `uvx` (requires `uv`; no install step). It searches, reads, and downloads academic papers across multiple open providers.
 
 **Always pass `--no-plan` to `search`.**
 
@@ -469,33 +469,33 @@ ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstrac
 
 **Enrichment** — after finding a paper in the cache, use paperhub to fetch the abstract, citation count, or related work:
 ```bash
-paperhub-cli search --no-plan "<paper title or topic>" \
+uvx paperhub-cli search --no-plan "<paper title or topic>" \
   --sources arxiv,semantic_scholar \
   --top-k 5
 ```
 
 **Full-text download** for open-access papers found in the cache:
 ```bash
-paperhub-cli read --id arxiv:<id> --full
-paperhub-cli download --id doi:<doi> --format md
+uvx paperhub-cli read --id arxiv:<id> --full
+uvx paperhub-cli download --id doi:<doi> --format md
 ```
 
 ---
 
 ## Cache Maintenance
 
-`resources/` is populated by `scripts/populate_cache.py`. Run it to refresh or extend coverage:
+`resources/` is populated by the maintainer scripts in the repository at `plugins/seccon/maintainer/` (not shipped with `npx skills` installs). Run from `plugins/seccon/` to refresh or extend coverage:
 
 ```bash
 # Populate all accessible venues
-uv run scripts/populate_cache.py
+uv run maintainer/populate_cache.py
 ```
 
 To add a new venue or year that is currently a gap, the maintainer can:
 1. Find the venue's accepted-papers or program page URL
-2. Add it to `scripts/populate_cache.py`
+2. Add it to `maintainer/populate_cache.py`
 3. Run the script
 4. Update `resources/manifest.json` to mark the year as cached
 
-The existing `scripts/crawl_conferences.py` can still be used for ad-hoc
+The existing `maintainer/crawl_conferences.py` can still be used for ad-hoc
 content crawling during development.

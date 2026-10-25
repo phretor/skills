@@ -4,18 +4,19 @@
 # ///
 """Remove specified venues from all seccon files.
 
-Usage: uv run scripts/remove_venues.py
+Usage: uv run maintainer/remove_venues.py
 """
 
 import json
 import re
 from pathlib import Path
 
-SKILL_DIR = Path(__file__).parent.parent
+MAINTAINER_DIR = Path(__file__).parent
+SKILL_DIR = MAINTAINER_DIR.parent / "skills" / "ph-seccon"
 SKILL_MD = SKILL_DIR / "SKILL.md"
 MANIFEST = SKILL_DIR / "resources" / "manifest.json"
-POPULATE = SKILL_DIR / "scripts" / "populate_cache.py"
-WRITEMAN = SKILL_DIR / "scripts" / "write_manifest.py"
+POPULATE = MAINTAINER_DIR / "populate_cache.py"
+WRITEMAN = MAINTAINER_DIR / "write_manifest.py"
 
 VENUES_TO_REMOVE = {
     "csf": "CSF",

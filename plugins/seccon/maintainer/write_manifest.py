@@ -6,7 +6,7 @@
 import json
 from pathlib import Path
 
-RESOURCES = Path(__file__).parent.parent / "resources"
+RESOURCES = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
 MANIFEST = RESOURCES / "manifest.json"
 YEARS = [2021, 2022, 2023, 2024, 2025]
 

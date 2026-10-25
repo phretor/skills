@@ -6,7 +6,7 @@
 import json
 from pathlib import Path
 
-BASE = Path(__file__).parent.parent / "resources"
+BASE = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
 
 for f in BASE.rglob("index.json"):
     data = json.loads(f.read_text())

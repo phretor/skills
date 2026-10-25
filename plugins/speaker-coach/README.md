@@ -18,12 +18,12 @@ Disciplined, interview-style coaching for cybersecurity speakers — design, aud
 - Non-cybersecurity speaking contexts (general TED-style coaching, sales pitches).
 - Ghostwriting an abstract or generating slide content from scratch.
 - Slide design / visual styling (font, color, layout).
-- Prose copy-editing — use the `writing` plugin (`/ph:write`).
+- Prose copy-editing — use `ph-stop-slop` from the `writing` plugin.
 - Generating speaker bios.
 
 ## What It Does
 
-Three sub-modes dispatched via `/ph:coach <mode>`:
+Three sub-modes, selected by the first argument to `ph-speaker-coach` (`design`, `debug <artifact>`, or `rehearse [artifact]`):
 
 - **`design`** — Socratic interview, one question per turn. Walks the speaker backwards from the last slide: target audience subset → 280-character takeaway → 3+ supporting sub-messages → narrative arcs → visual strategy → delivery considerations.
 - **`debug`** — adversarial audit of an existing artifact (abstract, outline, speaker notes, slide-deck PDF, transcript). Names the credibility–impact gap, runs the myth check from *Cybersecurity Supercommunicators*, scans for structural anti-patterns (ego intro, agenda spoiler, wall of code, FUD, vendor pitch at hacker con), scores against the 12-metric rubric using the venue-appropriate column, and produces prioritized surgical fixes.
@@ -35,8 +35,4 @@ Adapts automatically to **venue family** (academic / industry / grassroots) usin
 
 ## Requirements
 
-`pdftotext` (from the `poppler` package) is required only for slide-deck PDF ingestion. All other functionality works without it.
-
-## Installation
-
-See the [root README](../..) for installation instructions for all clients (Pi, Claude Code, etc.).
+`uv` runs the bundled slide-deck extractor. `pdftotext` (from the `poppler` package) is required only for slide-deck PDF ingestion. All other functionality works without them.
