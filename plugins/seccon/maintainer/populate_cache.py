@@ -2,24 +2,26 @@
 # requires-python = ">=3.12"
 # dependencies = []
 # ///
-"""Populate resources/ cache using curl for reliability."""
+"""Refresh a bounded selection of resource indexes; report policy limits and retain old data."""
 
-import concurrent.futures
+import argparse
 import json
 import re
-import subprocess
-import sys
-import time
+from datetime import date
+from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote
+from urllib.parse import unquote, urljoin
+
+from cache_io import coverage, meaningful, timestamp, write_json
+from fetch_policy import Fetcher, FetchResult, validate_content
+from write_manifest import INDUSTRY_SLUGS, build_manifest
+from write_manifest import VENUE_NAMES as ALL_VENUES
 
 RESOURCES = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
-MANIFEST = RESOURCES / "manifest.json"
-CURRENT_YEAR = 2025
-YEARS = [2021, 2022, 2023, 2024, 2025]
-MAX_WORKERS = 3  # keep low for rate limiting
+FETCHER = Fetcher()
+FETCHED: dict[str, FetchResult] = {}
 
-# DBLP XML URLs (primary source, sometimes flaky)
+# Retained DBLP XML adapter; acquisition is subject to current robots policy.
 DBLP_XML_URLS = {
     "ieee-sp": "https://dblp.org/db/conf/sp/sp{year}.xml",
     "ccs": "https://dblp.org/db/conf/ccs/ccs{year}.xml",
@@ -59,27 +61,74 @@ VENUE_NAMES = {
 }
 
 
-def _curl(url: str, timeout: int = 15) -> str | None:
-    """Fetch a URL via curl with retry logic for flaky connections."""
-    for attempt in range(3):
-        try:
-            r = subprocess.run(
-                ["curl", "-sL", "--max-time", str(timeout), url],
-                capture_output=True,
-                text=True,
-                timeout=timeout + 5,
-            )
-            if r.returncode == 0 and r.stdout and len(r.stdout) > 100:
-                return r.stdout
-        except Exception:
-            pass
-        if attempt < 2:
-            time.sleep(1)
-    return None
+class RefreshError(Exception):
+    def __init__(self, result: FetchResult):
+        self.result = result
+        super().__init__(f"{result.outcome}: {result.effective_url or result.url}: {result.reason}")
+
+
+def _fetch_body(url: str) -> str:
+    """Use ordinary HTTP and stop on explicit policy, status or content failures."""
+    years = re.findall(r"20\d{2}", url)
+    year = int(years[0]) if years else None
+    result = validate_content(FETCHER.fetch(url, year=year), year=year)
+    FETCHED[url] = result
+    if result.outcome != "ok":
+        raise RefreshError(result)
+    return result.body
 
 
 def _defcon_edition(year: int) -> int:
-    return 33 - (CURRENT_YEAR - year)
+    return year - 1992
+
+
+def selected_years(years: list[int] | None, *, current_year: int | None = None) -> list[int]:
+    """Select 2021 through this calendar year by default, allowing explicit next editions."""
+    current = current_year if current_year is not None else date.today().year
+    selected = sorted(set(years if years is not None else range(2021, current + 1)))
+    if not selected or any(year < 2021 or year > current + 1 for year in selected):
+        raise ValueError(f"Years must lie between 2021 and {current + 1}")
+    return selected
+
+
+def _write_index(out_dir: Path, index: dict, source: str) -> None:
+    key = "papers" if "papers" in index else "talks"
+    records = index[key]
+    if not records or not all(map(meaningful, records)):
+        raise ValueError(
+            "Extraction produced no complete set of meaningful records; cache retained"
+        )
+    fetched = FETCHED.get(source)
+    previous_source = index.get("coverage", {}).get("source")
+    index["coverage"] = coverage(
+        records, key, source=source, acquired_at=fetched.acquired_at if fetched else None
+    )
+    if fetched:
+        index["coverage"].update(
+            effective_url=fetched.effective_url,
+            status=fetched.status,
+            content_type=fetched.content_type,
+        )
+    if previous_source:
+        index["coverage"]["source_scope"] = previous_source
+        _check_partial_source(out_dir / "index.json", records, key, source)
+    write_json(out_dir / "index.json", index)
+
+
+def _check_partial_source(path: Path, records: list[dict], key: str, source: str) -> None:
+    if not path.exists():
+        return
+    old = json.loads(path.read_text())
+    old_titles = {record["title"] for record in old[key]}
+    new_titles = {record["title"] for record in records}
+    if not old_titles <= new_titles:
+        raise RefreshError(
+            FetchResult(
+                source,
+                outcome="needs-review",
+                reason="Partial source would discard existing records; review required",
+            )
+        )
 
 
 def parse_dblp_xml(xml: str) -> list[dict]:
@@ -110,7 +159,7 @@ def fetch_dblp_year(slug: str, year: int) -> tuple[str, int, list[dict] | None]:
     if not url_tmpl:
         return slug, year, None
     url = url_tmpl.replace("{year}", str(year))
-    xml = _curl(url, timeout=15)
+    xml = _fetch_body(url)
     if not xml or "<inproceedings" not in xml:
         return slug, year, None
     papers = parse_dblp_xml(xml)
@@ -126,7 +175,6 @@ def write_academic_index(slug: str, year: int, papers: list[dict]):
         "coverage": {
             "papers_count": len(papers),
             "has_abstracts": False,
-            "last_crawled": "2026-04-24",
         },
         "papers": [
             {
@@ -139,13 +187,13 @@ def write_academic_index(slug: str, year: int, papers: list[dict]):
             for j, p in enumerate(papers)
         ],
     }
-    (out_dir / "index.json").write_text(json.dumps(index, indent=2))
+    _write_index(out_dir, index, DBLP_XML_URLS[slug].format(year=year))
 
 
 def crawl_defcon_year(year: int) -> int:
     edition = _defcon_edition(year)
     url = f"https://media.defcon.org/DEF%20CON%20{edition}/DEF%20CON%20{edition}%20presentations/"
-    html = _curl(url)
+    html = _fetch_body(url)
     if not html:
         return 0
     talks = []
@@ -176,32 +224,82 @@ def crawl_defcon_year(year: int) -> int:
             "talks_count": len(talks),
             "has_abstracts": False,
             "has_slides": True,
-            "last_crawled": "2026-04-24",
         },
         "talks": talks,
     }
-    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    _write_index(out_dir, idx, url)
     return len(talks)
+
+
+class AgendaParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.depth = 0
+        self.text: list[str] = []
+        self.links: list[str] = []
+        self.cells: list[tuple[str, list[str]]] = []
+
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        if tag == "div":
+            if self.depth:
+                self.depth += 1
+            elif "col-sm-8" in attributes.get("class", "").split():
+                self.depth = 1
+                self.text, self.links = [], []
+        if self.depth and tag == "a" and attributes.get("href"):
+            self.links.append(attributes["href"])
+        if self.depth and tag == "br":
+            self.text.append(" ")
+
+    def handle_data(self, data):
+        if self.depth:
+            self.text.append(data)
+
+    def handle_endtag(self, tag):
+        if tag == "div" and self.depth:
+            self.depth -= 1
+            if not self.depth:
+                self.cells.append((" ".join("".join(self.text).split()), self.links))
+
+
+def parse_offensivecon(html: str, year: int, url: str) -> list[dict]:
+    """Extract speaker-bearing or session-linked cells, including nested inline markup."""
+    parser = AgendaParser()
+    parser.feed(html)
+    talks = []
+    for text, links in parser.cells:
+        if re.match(
+            r"^(registration|welcome|coffee|lunch|closing|opening party|pwn2own winners)\b",
+            text,
+            re.I,
+        ):
+            continue
+        title, sep, people = text.rpartition(" by ")
+        speakers = [name.strip() for name in re.split(r",|\s+(?:and|&)\s+", people) if name.strip()]
+        session = next(
+            (
+                urljoin(url, link)
+                for link in links
+                if re.search(r"talk|session|keynote", link, re.I)
+            ),
+            "",
+        )
+        if not sep:
+            title, speakers = text, []
+        if not title or not (speakers or session):
+            continue
+        talk = {"id": f"oc{year}-{len(talks) + 1:03d}", "title": title, "speakers": speakers}
+        if session:
+            talk["session_url"] = session
+        talks.append(talk)
+    return talks
 
 
 def crawl_offensivecon_year(year: int) -> int:
     url = f"https://www.offensivecon.org/agenda/{year}.html"
-    html = _curl(url)
-    if not html:
-        return 0
-    talks = []
-    for m in re.finditer(r'<div class="col-sm-8">([^<]+)</div>', html):
-        c = m.group(1).strip()
-        parts = c.split(" by ")
-        title = parts[0].strip() if parts else c
-        speaker = parts[1].strip() if len(parts) > 1 else ""
-        talks.append(
-            {
-                "id": f"oc{year}-{len(talks) + 1:03d}",
-                "title": title,
-                "speakers": [speaker] if speaker else [],
-            }
-        )
+    html = _fetch_body(url)
+    talks = parse_offensivecon(html, year, url)
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "offensivecon"
@@ -217,17 +315,16 @@ def crawl_offensivecon_year(year: int) -> int:
             "talks_count": len(talks),
             "has_abstracts": False,
             "has_slides": False,
-            "last_crawled": "2026-04-24",
         },
         "talks": talks,
     }
-    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    _write_index(out_dir, idx, url)
     return len(talks)
 
 
 def crawl_recon_year(year: int) -> int:
     url = f"https://recon.cx/{year}/sessions.html"
-    html = _curl(url)
+    html = _fetch_body(url)
     if not html:
         return 0
     talks = []
@@ -259,54 +356,42 @@ def crawl_recon_year(year: int) -> int:
             "talks_count": len(talks),
             "has_abstracts": False,
             "has_slides": False,
-            "last_crawled": "2026-04-24",
         },
         "talks": talks,
     }
-    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    _write_index(out_dir, idx, url)
     return len(talks)
 
 
-def crawl_hardwear_year(year: int) -> int:
-    """Crawl hardwear.io talks from YouTube RSS feed.
+def _rss_talk(content: str, year: int) -> dict | None:
+    title_match = re.search(r"<title>(.*?)</title>", content, re.DOTALL)
+    if not title_match or str(year) not in title_match.group(1):
+        return None
+    title = title_match.group(1).strip()
+    for separator in (": ", " | ", ":"):
+        parts = title.split(separator, 1)
+        if len(parts) > 1 and "hardwear" in parts[0].lower():
+            title = parts[1].strip()
+            break
+    speakers = []
+    if " by " in title:
+        title, people = title.rsplit(" by ", 1)
+        speakers = [name.strip() for name in re.split(r"[,&]", people) if name.strip()]
+    video_id = re.search(r"<yt:videoId>(.*?)</yt:videoId>", content)
+    video_url = f"https://www.youtube.com/watch?v={video_id.group(1)}" if video_id else ""
+    return {"title": title, "speakers": speakers, "video_url": video_url}
 
-    Uses the channel uploads RSS feed. Limited to ~15 most recent videos;
-    for full coverage, configure YOUTUBE_API_KEY and use the Data API.
-    """
+
+def crawl_hardwear_year(year: int) -> int:
+    """Read the limited recent RSS window only when permitted; no Data API is implemented."""
     url = "https://www.youtube.com/feeds/videos.xml?channel_id=UChwYb9xc9tZXquQxu4G0l_g"
-    xml = _curl(url, timeout=15)
-    if not xml:
-        return 0
+    xml = _fetch_body(url)
     talks = []
     for entry in re.finditer(r"<entry>(.*?)</entry>", xml, re.DOTALL):
-        content = entry.group(1)
-        title_match = re.search(r"<title>(.*?)</title>", content, re.DOTALL)
-        if not title_match:
-            continue
-        full_title = title_match.group(1).strip()
-        # Parse: "Hardwear.io NL 2025: Title by Speaker" or "Hardwear.io NL 2025 | Title - Speaker"
-        # Only keep entries matching the requested year
-        if str(year) not in full_title:
-            continue
-        # Extract talk title and speakers
-        title = full_title
-        # Remove prefix like "Hardwear.io NL 2025: " or "Hardwear.io NL 2025 | "
-        for sep in [": ", " | ", ":"]:
-            parts = title.split(sep, 1)
-            if len(parts) > 1 and "hardwear" in parts[0].lower():
-                title = parts[1].strip()
-                break
-        speakers = []
-        # Try extracting "by Speaker" pattern
-        if " by " in title:
-            parts = title.rsplit(" by ", 1)
-            title = parts[0].strip()
-            speaker_part = parts[1].strip()
-            speakers = [s.strip() for s in re.split(r"[,&]", speaker_part) if s.strip()]
-        video_id = re.search(r"<yt:videoId>(.*?)</yt:videoId>", content)
-        video_url = f"https://www.youtube.com/watch?v={video_id.group(1)}" if video_id else ""
-        talk_id = f"hw{year}-{len(talks) + 1:03d}"
-        talks.append({"id": talk_id, "title": title, "speakers": speakers, "video_url": video_url})
+        talk = _rss_talk(entry.group(1), year)
+        if talk:
+            talk["id"] = f"hw{year}-{len(talks) + 1:03d}"
+            talks.append(talk)
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "hardwear"
@@ -323,94 +408,79 @@ def crawl_hardwear_year(year: int) -> int:
             "has_abstracts": False,
             "has_slides": False,
             "source": "YouTube RSS (limited)",
-            "last_crawled": "2026-04-24",
         },
         "talks": talks,
     }
-    (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
+    _write_index(out_dir, idx, url)
     return len(talks)
 
 
-def main():
-    print("=== Populating resource cache ===\n")
-    print("--- Academic venues (via DBLP XML, retries + low concurrency) ---\n")
-    ac_cached = {}
-    for slug in VENUE_NAMES:
-        ac_cached[slug] = []
-
-    tasks = [(slug, year) for slug in VENUE_NAMES for year in YEARS]
-    total = len(tasks)
-    done = 0
-
-    with concurrent.futures.ThreadPoolExecutor(max_workers=MAX_WORKERS) as pool:
-        futures = {pool.submit(fetch_dblp_year, slug, year): (slug, year) for slug, year in tasks}
-        for f in concurrent.futures.as_completed(futures):
-            slug, year, papers = f.result()
-            done += 1
+def refresh_one(mode: str, slug: str, year: int) -> bool:
+    """Record each refresh separately from the retained index, including policy failures."""
+    handlers = {
+        "defcon": crawl_defcon_year,
+        "offensivecon": crawl_offensivecon_year,
+        "recon": crawl_recon_year,
+        "hardwear": crawl_hardwear_year,
+    }
+    attempt: dict = {"attempted_at": timestamp()}
+    try:
+        if mode == "academic" and slug in DBLP_XML_URLS:
+            _, _, papers = fetch_dblp_year(slug, year)
             if papers:
-                ac_cached[slug].append(year)
                 write_academic_index(slug, year, papers)
-            cached_count = sum(len(v) for v in ac_cached.values())
-            sys.stdout.write(f"\r  {done}/{total} — {cached_count} venue-years cached")
-            sys.stdout.flush()
-    print()
+            count = len(papers or [])
+        elif mode == "industry" and slug in handlers:
+            count = handlers[slug](year)
+        else:
+            attempt.update(
+                outcome="unsupported", reason="No population handler; import/adaptor required"
+            )
+            count = 0
+        if "outcome" not in attempt:
+            attempt.update(outcome="ok" if count else "empty-extraction", records_count=count)
+    except RefreshError as exc:
+        result = exc.result
+        attempt.update(
+            outcome=result.outcome,
+            reason=result.reason,
+            url=result.url,
+            effective_url=result.effective_url,
+            status=result.status,
+            retry_after=result.retry_after,
+        )
+    except (OSError, ValueError) as exc:
+        attempt.update(outcome="refresh-error", reason=str(exc))
+    write_json(RESOURCES / mode / str(year) / slug / "refresh.json", attempt)
+    print(f"{mode}/{year}/{slug}: {attempt['outcome']}; previous cache retained on failure")
+    return attempt["outcome"] == "ok"
 
-    # Print summaries per venue
-    print()
-    for slug in sorted(VENUE_NAMES):
-        cached = ac_cached.get(slug, [])
-        if cached:
-            print(f"  ✓ {VENUE_NAMES[slug][1]:20s}: {', '.join(str(y) for y in sorted(cached))}")
-    for slug in sorted(VENUE_NAMES):
-        failed = [y for y in YEARS if y not in ac_cached.get(slug, [])]
-        if failed:
-            print(f"  ✗ {VENUE_NAMES[slug][1]:20s}: years {', '.join(str(y) for y in failed)}")
 
-    print("\n--- Industry venues ---")
-    ind = {}
-    print("  DEF CON...")
-    dc = []
-    for y in YEARS:
-        c = crawl_defcon_year(y)
-        dc.append(y) if c else None
-        print(f"    DEF CON {_defcon_edition(y)} ({y}): {c or 'unreachable'}")
-    ind["defcon"] = dc
-
-    print("  OffensiveCon...")
-    oc = []
-    for y in YEARS:
-        c = crawl_offensivecon_year(y)
-        oc.append(y) if c else None
-        print(f"    OffensiveCon {y}: {c or 'unreachable'}")
-    ind["offensivecon"] = oc
-
-    print("\n  REcon...")
-    rc = []
-    for y in [2022, 2023, 2024, 2025]:
-        c = crawl_recon_year(y)
-        rc.append(y) if c else None
-        print(f"    REcon {y}: {c or 'unreachable'}")
-    ind["recon"] = rc
-
-    print("\n--- hardwear.io (YouTube RSS) ---")
-    hw = []
-    for y in [2025]:
-        c = crawl_hardwear_year(y)
-        hw.append(y) if c else None
-        print(f"    hardwear.io {y}: {c or 'no data'}")
-    ind["hardwear"] = hw
-
-    print("\n--- Updating manifest ---")
-    subprocess.run([sys.executable, str(Path(__file__).with_name("write_manifest.py"))], check=True)
-
-    # Clean empty dirs
-    for p in list(RESOURCES.rglob("*")):
-        if p.is_dir() and not any(True for _ in p.iterdir()):
-            p.rmdir()
-
-    total_ac = sum(len(v) for v in ac_cached.values())
-    total_ind = sum(len(v) for v in ind.values())
-    print(f"\n=== Done: {total_ac} academic venue-years, {total_ind} industry venue-years ===")
+def main() -> None:
+    global RESOURCES
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--year", type=int, action="append", help="Select one year; repeat for several"
+    )
+    parser.add_argument(
+        "--venue", action="append", choices=sorted(set(ALL_VENUES) | set(INDUSTRY_SLUGS))
+    )
+    parser.add_argument("--output-dir", type=Path, default=RESOURCES, help="Resource cache root")
+    args = parser.parse_args()
+    try:
+        years = selected_years(args.year)
+    except ValueError as exc:
+        parser.error(str(exc))
+    RESOURCES = args.output_dir
+    selected = set(args.venue) if args.venue else set(ALL_VENUES) | set(INDUSTRY_SLUGS)
+    failed = False
+    for mode, venues in (("academic", ALL_VENUES), ("industry", INDUSTRY_SLUGS)):
+        for slug in sorted(set(venues) & selected):
+            for year in years:
+                failed |= not refresh_one(mode, slug, year)
+    write_json(RESOURCES / "manifest.json", build_manifest(RESOURCES))
+    if failed:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

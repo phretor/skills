@@ -45,7 +45,8 @@ Some skills need system dependencies. Each plugin's `README.md` repeats its own.
 |---|---|---|
 | [seccon](plugins/seccon/) | pdftotext (poppler) | `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu) |
 | [seccon](plugins/seccon/) | [uv](https://docs.astral.sh/uv/) (runs `uvx paperhub-cli`) | `brew install uv` or see the uv docs |
-| [seccon](plugins/seccon/) | Internet access (live CFP calendar, on-demand papers) | none |
+| [seccon](plugins/seccon/) | Python 3.12+ (repository maintenance only) | `uv` manages the runtime |
+| [seccon](plugins/seccon/) | Internet access (permitted calendar, provider and paper requests) | none |
 | [speaker-coach](plugins/speaker-coach/) | uv (runs the bundled slide-deck extractor) | `brew install uv` or see the uv docs |
 | [speaker-coach](plugins/speaker-coach/) | pdftotext (poppler) -- only for slide-deck PDF ingestion | `brew install poppler` (macOS) / `apt-get install poppler-utils` (Debian/Ubuntu) |
 | [news](plugins/news/) | Miniflux MCP server | Add the `miniflux` server to your agent's MCP configuration |
@@ -56,9 +57,11 @@ Some skills need system dependencies. Each plugin's `README.md` repeats its own.
 |---|---|---|
 | [`ph-stop-slop`](plugins/writing/) | `[text\|file]` | Eliminate AI writing patterns: throat-clearing, passive voice, jargon, binary contrasts, adverbs, structural clichés. Scores prose on directness, rhythm, trust, authenticity, density. |
 | [`ph-amazon-writing`](plugins/writing/) | `<document-type> [text\|file]` | Write or rewrite narrative memos in Amazon style: 6-pagers, 1-pagers, press releases, PRFAQs. Data over adjectives, active voice, the "so what" test. |
-| [`ph-seccon`](plugins/seccon/) | `help`, `[academic\|industry] now\|deadlines\|latest …`, `academic compare <v1> <v2>`, `academic <year> <acronym>` | Security conference intelligence: rankings, paper/talk search, author lookup, live CFP calendar, topic-filtered `now`, `deadlines`, `latest`, venue comparison, and academic `<year> <acronym>` shorthand. |
+| [`ph-seccon`](plugins/seccon/) | `help`, `[academic\|industry] now\|deadlines\|latest …`, `academic compare <v1> <v2>`, `academic <year> <acronym>` | Security conference intelligence: cached paper/talk search (abstract + description), rankings, policy-permitted author enrichment and calendars, topic-filtered shortcuts, venue comparison, and explicit cache age/quality/gaps. |
 | [`ph-speaker-coach`](plugins/speaker-coach/) | `<design\|debug\|rehearse> [artifact]` | Disciplined interview-style coaching for cybersecurity speakers: backwards-from-the-last-slide forward design, adversarial draft audit against a 12-metric rubric, rehearsal critique, and T-2-week readiness gate. Adapts to academic, industry, and grassroots venue norms. |
 | [`ph-news-reader`](plugins/news/) | (none) | Read, search, triage, and manage RSS feeds via the Miniflux MCP server. |
+
+Seccon maintenance preserves earlier indexes on failure, reports denied/unsupported sources, and accepts bounded venue/year selections. [Source limits and outcomes](plugins/seccon/skills/ph-seccon/references/maintenance.md).
 
 > 💡 **Tip:** invoke `ph-seccon` with `help` for a quick-start guide with examples.
 

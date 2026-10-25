@@ -21,7 +21,7 @@
     },
     {
       "name": "seccon",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "description": "Security conference intelligence for security researchers — academic (aggregate rank from CORE 2023 + Guofei Gu: IEEE S&P, CCS, USENIX Security, NDSS, IACR tiers) and industry (DEF CON, Black Hat, OffensiveCon, REcon, hardwear.io). Live calendar via confsearch.ethz.ch and cfptime.org. Paper/talk evaluation, author search, cross-conference topic scans.",
       "author": {
         "name": "Federico Maggi",

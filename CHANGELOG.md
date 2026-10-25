@@ -4,6 +4,19 @@ Entries are per plugin and version, headed `## <plugin> <version> - <date>`. The
 
 ## [Unreleased]
 
+## seccon 2.1.0 - 2026-10-25
+
+### Fixed
+- Maintainer requests check robots and AI restrictions before targets, redirects and assets; ordinary HTTP preserves status, effective URL, content type and failure causes. Denials/rate limits stop acquisition with finite budgets and crawl delays. Removed browser/TLS impersonation and publisher warm-up probes.
+- Explicit and registry crawling share bounded same-origin linked-data handling; native candidates precede publisher resolution. Registered IEEE S&P and reject changed editions, suspicious titles and incomplete shells.
+- OffensiveCon agenda extraction retains inline speaker markup/entities, separates multiple speakers and excludes logistics. Cached topic queries include both abstract and description.
+- Black Hat imports reject malformed/empty exports with nonzero aggregate status, derive slide/abstract availability and preserve source provenance. Cache writes are atomic; failed refreshes retain old data and record separate outcomes.
+- Population selects 2021 through the current calendar year by default, accepts explicit years/venues, and reports unsupported adapters. Manifest quality and refresh metadata separate availability from validity, age and unverified completeness; future cached editions remain visible.
+
+### Changed
+- Document policy-limited DBLP/DEF CON/YouTube and challenged publisher coverage, partial RSS history and unknown import acquisition dates. No source or cached index was deleted; no Data API integration is claimed.
+- Add trimmed recorded response fixtures and offline regressions for all six reproduced failure classes. Maintainer HTTP helpers now need only the Python standard library.
+
 ## repo 2.0.0 - 2026-10-24
 
 ### Breaking

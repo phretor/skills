@@ -11,7 +11,7 @@ compatibility: >-
 
 # seccon — Security Conference Intelligence
 
-This skill uses a **curated cache** (`resources/`) of paper/talk listings for top venues. The years covered are `cached_range` in `resources/manifest.json`; never assume a window from memory. The cache is populated by responsible crawling of venue-native pages — titles and abstracts only. Full-text PDFs are fetched **on-demand** only when the user drills into a specific paper or talk.
+This skill uses a **curated cache** (`resources/`) of paper/talk listings for top venues. The years covered are `cached_range` in `resources/manifest.json`; never assume a window from memory. The cache contains conference metadata from maintainer acquisitions and imports; public reachability does not establish permission or completeness. Full-text PDFs are fetched **on-demand** only when the user drills into a specific paper or talk.
 
 Dispatches on the first argument:
 
@@ -27,7 +27,9 @@ The second argument can be:
 
 Mandatory execution rules:
 - Always start by reading `resources/manifest.json` to learn what is cached and what is missing.
-- Search the cache first: filter `resources/{academic|industry}/{year}/{venue}/index.json` by title, speakers, or abstract.
+- Search the cache first: filter `resources/{academic|industry}/{year}/{venue}/index.json` by title, authors/speakers, abstract, and description.
+- Inspect each edition's manifest `quality` and `refresh` records. `cached` means a file exists, not that its contents are complete or fresh. Disclose `last_crawled` (or unknown acquisition age), failed refreshes, and partial coverage. Exclude `needs-review` records from confident paper/talk claims; retain the index for review. Prefer record-derived quality flags to legacy coverage flags.
+- Before any live request, including paperhub providers, calendars, PDFs, redirects, and assets, check robots and applicable terms for that host/path. Honor AI-specific restrictions. If policy is denied or unavailable, report that limit and use permitted cached evidence. Stop on challenges, 401/403 or 429/Retry-After; never impersonate a browser, solve a challenge, or switch provider/hostname to evade a denial.
 - Only fetch full-text content (PDF) on-demand when the user asks about a specific paper or talk in detail.
 - Use `uvx paperhub-cli` for enrichment after the cache returns no results and for author search. Never call DBLP,
   Semantic Scholar, arXiv, or any other metadata API directly — those are reachable only through paperhub-cli.
@@ -133,7 +135,7 @@ Read this first on every query. It tells you which venues/years are cached and w
 
 ```json
 {
-  "version": "1.4.0",
+  "version": "1.5.0",
   "generated": "2026-10-24",
   "cached_range": { "earliest": 2021, "latest": 2026 },
   "coverage": {
@@ -182,13 +184,13 @@ Each file lists all papers/talks for one venue edition:
 
 ### Query Flow
 
-1. **Read `resources/manifest.json`** — identify which venues/years are cached and which are gaps.
+1. **Read `resources/manifest.json`** — identify availability, `quality`, acquisition age, and the latest `refresh` outcome. Report stale/unknown age and partial coverage; skip editions needing review.
 2. **Filter by year** — if outside `cached_range`, refuse. If a year is a known gap, say so.
-3. **Filter by venue** — load matching `index.json` files. Filter by title/speaker/abstract keyword.
+3. **Filter by venue** — load matching `index.json` files. Filter by title/author/speaker/abstract/description keyword.
 4. **Narrow to candidate papers/talks** — present the top matches with title, venue, year, and (when available) authors/speakers.
 5. **Drill down on-demand** — when the user picks a specific paper/talk, fetch its full text:
    - Open-access PDF: download with `curl -sL <url> | pdftotext - -`
-   - Paywalled: fetch the abstract with `uvx paperhub-cli read --id doi:<doi>`, and look for a preprint with `uvx paperhub-cli search --no-plan` (arXiv)
+   - Paywalled: use `uvx paperhub-cli read --id doi:<doi>` only through a permitted provider; report absent abstracts or policy limits. Search permitted providers for an open preprint.
    - Open-access sources: `uvx paperhub-cli read --id doi:<doi> --full`
 6. **Apply the Work Evaluation Rubric** for in-depth paper/talk evaluation.
 
@@ -305,12 +307,12 @@ For `[academic|industry] deadlines [topic]`:
 For `[academic|industry] latest <acronym> [topic]`:
 - look up the latest cached edition of the venue from `resources/`
 - if the latest cached year is marked as a gap, note that and check if an earlier year is available
-- search within that edition for matching papers or talks by title/speaker/abstract
+- search within that edition for matching papers or talks by title/author/speaker/abstract/description
 - present the best hits
 
 For `[academic|industry] latest <topic>` (no acronym):
 - perform a **cross-conference topic scan** across all cached venues in that mode
-- for each venue-year that has data, filter `talks`/`papers` by title/speaker/abstract keyword
+- for each venue-year that has data, filter `talks`/`papers` by title/author/speaker/abstract/description keyword
 - present results grouped by venue
 - note any venues/years that are gaps in the cache
 
@@ -346,13 +348,13 @@ Rankings derive from CORE 2023 and Guofei Gu's security conference statistics.
 
 ### Author Search
 
-Route every lookup through `paperhub-cli` (sources `dblp` and `semantic_scholar`):
+Use `paperhub-cli` only with providers whose current policy permits the requested operation. The 2026-10-25 investigation found DBLP search and arXiv export crawling disallowed, and Semantic Scholar robots rate-limited. Do not send the combined default author query under those conditions. Report limited author coverage; use cache evidence or a permitted provider such as Crossref:
 
 ```bash
-uvx paperhub-cli search --no-plan --author "<name>" --sources dblp,semantic_scholar --top-k 20 "<name>"
+uvx paperhub-cli search --no-plan --sources crossref --top-k 20 "<name>"
 ```
 
-1. Run the search; providers may rate-limit (HTTP 429) or return empty results. Report the failure instead of calling DBLP or Semantic Scholar directly.
+1. Check source policy before searching. Results for a name are candidates, not a verified author identity; confirm authors from returned records. Report rate limits or missing fields without direct API fallback.
 2. Cross-reference results against the cache by matching venue acronym + year.
 3. Report: cached counts per venue, most-cited works, active co-authors, inferred themes.
 
@@ -364,7 +366,7 @@ Read `resources/manifest.json` for cached industry venue-years. Venue names, man
 
 ### Cross-Conference Topic Scan (Industry)
 
-Search every cached industry venue-year listed in the manifest (`resources/industry/{year}/{venue}/index.json`) by title/speaker/abstract. For venues with no cached years, note the gap and suggest the maintainer add them.
+Search every cached industry venue-year listed in the manifest (`resources/industry/{year}/{venue}/index.json`) by title/author/speaker/abstract/description. For venues with no cached years, note the gap and suggest the maintainer add them.
 
 When a talk has a companion paper (common at Black Hat), cross-reference it via the academic rubric.
 
@@ -382,14 +384,14 @@ curl -sL <pdf-url> -o paper.pdf && pdftotext paper.pdf -
 curl -sL <pdf-url> | pdftotext - -
 ```
 
-Open-access sources where full-text PDFs are available without auth:
+Potential open-access sources, subject to current host/path policy and terms:
 - USENIX Security and SOUPS: linked from the technical sessions page
 - NDSS: linked from the programme page
 - IACR ePrint: `https://eprint.iacr.org/{YYYY}/{NNN}.pdf`
 - arXiv cs.CR: `https://arxiv.org/pdf/{id}`
-- DEF CON presentations: `media.defcon.org/DEF%20CON%20{N}/...presentations/`
+- DEF CON presentation links may remain in the cache; its media host currently restricts AI agents. Do not fetch those links while that restriction applies.
 
-ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstracts with `uvx paperhub-cli read --id doi:<doi>` and look for preprints through `uvx paperhub-cli search --no-plan` (arXiv) instead.
+For authenticated or challenged publisher resources, report the access limit. Use permitted metadata providers through `uvx paperhub-cli read --id doi:<doi>` or search permitted providers for an open preprint; the wrapper does not grant upstream access.
 
 ---
 
@@ -404,34 +406,23 @@ ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstrac
 **Enrichment** — after finding a paper in the cache, use paperhub to fetch the abstract, citation count, or related work:
 ```bash
 uvx paperhub-cli search --no-plan "<paper title or topic>" \
-  --sources arxiv,semantic_scholar \
+  --sources crossref \
   --top-k 5
 ```
 
-**Full-text download** for open-access papers found in the cache:
+**Full-text lookup** only when that paper's provider and download host permit access. Metadata may have no abstract or full text:
 ```bash
-uvx paperhub-cli read --id arxiv:<id> --full
-uvx paperhub-cli download --id doi:<doi> --format md
+uvx paperhub-cli read --id doi:<doi> --full
 ```
 
 ---
 
 ## Cache Maintenance
 
-`resources/` is populated by the maintainer scripts in the repository at `plugins/seccon/maintainer/` (not shipped with `npx skills` installs). Run from `plugins/seccon/` to refresh or extend coverage:
+Maintainer tools live at `plugins/seccon/maintainer/` in the repository and are not shipped by `npx skills`. See [maintenance limits and outcomes](references/maintenance.md) before refreshing. Runtime queries never fill cache gaps.
 
-```bash
-# Populate all accessible venues
-uv run maintainer/populate_cache.py
-```
+The populator accepts repeated `--venue` and `--year` selections. Its default year range is 2021 through the current calendar year; explicit selection permits the next year. Select only sources whose terms permit acquisition. It records unsupported handlers and failed/policy-limited refreshes separately while preserving earlier indexes. Black Hat requires an authorized local export import. RSS is a recent, partial window; no YouTube Data API integration exists.
 
-Never populate `archive_url` in an `index.json`: each file already sits under `resources/{mode}/{year}/{venue}/`, so the archive URL is derivable from the path. The `slides_url` field is fine when a direct link to slides exists.
+Ad-hoc crawling uses the same pipeline for explicit and registered URLs: ordinary HTTP, robots/AI policy checks, crawl delays, host budgets, redirect/edition validation, and at most eight unique same-origin linked assets. It preserves status, effective URL and content type. `shell`, `edition-mismatch`, and `needs-review` are limits, not successful program extraction. Title heuristics cannot establish complete venue/edition correctness; review ambiguous results before indexing.
 
-To add a new venue or year that is currently a gap, the maintainer can:
-1. Find the venue's accepted-papers or program page URL
-2. Add it to `maintainer/populate_cache.py`
-3. Run the script
-4. Update `resources/manifest.json` to mark the year as cached
-
-The existing `maintainer/crawl_conferences.py` can still be used for ad-hoc
-content crawling during development.
+Never populate `archive_url` in an index; its location derives from `resources/{mode}/{year}/{venue}/`. Direct `slides_url` links are allowed. Adding a population adapter remains maintainer work; a reachable native program does not imply an implemented cache adapter or permission to refresh it.
