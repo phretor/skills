@@ -37,6 +37,22 @@ Security conference intelligence for security researchers — academic and indus
 Rankings derived from CORE 2023 and Guofei Gu's security conference statistics.
 Live data: [confsearch.ethz.ch](https://confsearch.ethz.ch) (academic) · [cfptime.org](https://www.cfptime.org) (industry).
 
+## Disclaimer
+
+`ph-seccon` primarily operates from a **curated cache** (`resources/`) of paper
+and talk metadata collected from public-facing conference websites. Cache
+updates are done in batch by the maintainer; the agent only fetches live
+content in two cases:
+- **Calendar queries** (`now`, `deadlines`) via dedicated APIs (CFPTime,
+  ConfSearch) that expect programmatic access.
+- **On-demand PDF fetching** when the user drills into a specific paper or
+  talk — a single targeted request per paper.
+- **Author search and enrichment** through `uvx paperhub-cli` (DBLP, Semantic Scholar, arXiv) when the cache cannot answer.
+
+This design minimizes traffic to upstream sites. If a venue is unreachable
+(Cloudflare, paywall, JS-rendered), it is marked as a gap in the manifest
+rather than retried on every query. Use responsibly.
+
 ## Requirements
 
 - **pdftotext** (poppler) — for extracting text from downloaded papers and ACM DL frontmatter PDFs:

@@ -29,7 +29,7 @@ Three sub-modes, selected by the first argument to `ph-speaker-coach` (`design`,
 - **`debug`** — adversarial audit of an existing artifact (abstract, outline, speaker notes, slide-deck PDF, transcript). Names the credibility–impact gap, runs the myth check from *Cybersecurity Supercommunicators*, scans for structural anti-patterns (ego intro, agenda spoiler, wall of code, FUD, vendor pitch at hacker con), scores against the 12-metric rubric using the venue-appropriate column, and produces prioritized surgical fixes.
 - **`rehearse`** — two sub-flows: rehearsal-transcript critique (clarity, engagement, narrative, filler-phrase density) or T-2-week readiness gate (walks the pre-talk checklist from messaging to seconds-before-going-on).
 
-Every session writes a single markdown artifact at `./.coach/<slug>.md`, accumulating decisions and scores across iterations. Sub-sequent sessions read the file first and resume where the prior one left off.
+Every session writes a single markdown artifact at `./.coach/<slug>.md`, accumulating decisions and scores across iterations. Subsequent sessions read the file first and resume where the prior one left off.
 
 Adapts automatically to **venue family** (academic / industry / grassroots) using the rubric column from `references/conf-norms.md`. The same metrics are interpreted differently for USENIX Security vs Black Hat vs DEF CON.
 

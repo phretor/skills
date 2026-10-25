@@ -1,6 +1,6 @@
 ---
 name: ph-seccon
-description: "Looks up academic and industry security conferences papers, authors, live CFP deadlines, topic-filtered calendars, venue comparisons, latest-edition lookups, and talk/paper evaluation. Operates from a curated cache (resources/) covering the most recent 5 years. Use when the user asks about wants to find papers at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke with `help`, `[academic|industry] now [acronym] [topic]`, `[academic|industry] deadlines [topic]`, `[academic|industry] latest [acronym] [topic]`, `academic compare <venue1> <venue2>`, or `academic <year> <acronym>`."
+description: "Looks up academic and industry security conference papers, authors, live CFP deadlines, topic-filtered calendars, venue comparisons, latest-edition lookups, and talk/paper evaluation. Operates from a curated cache (resources/) whose coverage is stated in resources/manifest.json. Use when the user wants to find papers or talks at specific venues (S&P, CCS, USENIX, NDSS, DEF CON, Black Hat…), needs an author's publication record, wants to survey a topic across venues, or asks what conferences are coming up. Invoke with `help`, `[academic|industry] now [acronym] [topic]`, `[academic|industry] deadlines [topic]`, `[academic|industry] latest [acronym] [topic]`, `academic compare <venue1> <venue2>`, or `academic <year> <acronym>`."
 allowed-tools: WebFetch Bash
 compatibility: >-
   Requires internet access and uv (paperhub-cli runs via `uvx paperhub-cli`).
@@ -11,11 +11,11 @@ compatibility: >-
 
 # seccon — Security Conference Intelligence
 
-This skill uses a **curated cache** (`resources/`) with 5 years of paper/talk listings (2021–2025) for top venues. The cache is populated by responsible crawling of venue-native pages — titles and abstracts only. Full-text PDFs are fetched **on-demand** only when the user drills into a specific paper or talk.
+This skill uses a **curated cache** (`resources/`) of paper/talk listings for top venues. The years covered are `cached_range` in `resources/manifest.json`; never assume a window from memory. The cache is populated by responsible crawling of venue-native pages — titles and abstracts only. Full-text PDFs are fetched **on-demand** only when the user drills into a specific paper or talk.
 
 Dispatches on the first argument:
 
-- **`academic`** → peer-reviewed venues, TAMU tier rankings, paper search, live calendar via confsearch.ethz.ch
+- **`academic`** → peer-reviewed venues, aggregate tier rankings (CORE 2023 + Guofei Gu), paper search, live calendar via confsearch.ethz.ch
 - **`industry`** → practitioner conferences, talk archives, live CFP calendar via cfptime.org
 
 Infer the mode from context when unambiguous (e.g., "DEF CON" → industry, "IEEE S&P" → academic). Ask only when genuinely ambiguous.
@@ -29,9 +29,10 @@ Mandatory execution rules:
 - Always start by reading `resources/manifest.json` to learn what is cached and what is missing.
 - Search the cache first: filter `resources/{academic|industry}/{year}/{venue}/index.json` by title, speakers, or abstract.
 - Only fetch full-text content (PDF) on-demand when the user asks about a specific paper or talk in detail.
-- Use `uvx paperhub-cli search --no-plan` ONLY as enrichment after the cache returns no results. Never use DBLP,
-  Semantic Scholar, arXiv, or any other API directly — those are reachable only through paperhub-cli.
-- If a query targets a year outside 2021–2025, refuse with: "This skill covers the most recent 5 years (2021–2025). Content from <year> is outside the cached window. Contact the maintainer to extend coverage."
+- Use `uvx paperhub-cli` for enrichment after the cache returns no results and for author search. Never call DBLP,
+  Semantic Scholar, arXiv, or any other metadata API directly — those are reachable only through paperhub-cli.
+  Downloading the PDF of a specific paper from a documented open-access source (see PDF Extraction) is allowed.
+- If a query targets a year outside `cached_range` in the manifest, refuse with: "This skill covers <earliest>–<latest>. Content from <year> is outside the cached window. Contact the maintainer to extend coverage."
 - If a query targets a venue or year that is listed as a gap in manifest.json, say so and optionally offer a calendar-based lookup (for upcoming conferences).
 
 ## Anti-Patterns — What This Skill Must NOT Do
@@ -39,32 +40,26 @@ Mandatory execution rules:
 These are common mistakes agents make when running this skill. Memorize them:
 
 1. **Never populate the cache yourself by calling DBLP, Semantic Scholar, or any API directly.**
-   The cache is maintained by the maintainer via `maintainer/populate_cache.py`. If a venue-year
-   is a gap, say so. Do not try to fill it at runtime by scraping DBLP XML, Semantic Scholar,
-   or any other source.
+   The cache is maintained by the maintainer with the scripts in the repository's
+   `plugins/seccon/maintainer/` directory. If a venue-year is a gap, say so. Do not try to
+   fill it at runtime by scraping DBLP XML, Semantic Scholar, or any other source.
 
 2. **Never use `web_search` (Tavily, Brave, Google).**
    See IRON RULE below. This is the most commonly violated rule.
 
 3. **Never use tools other than those explicitly listed (paperhub-cli, pdftotext, curl, and a URL-fetch tool).**
    Do not invoke external search APIs, academic indexers, or paper databases that aren't
-   paperhub-cli. paperhub-cli is the only approved external paper search tool, and only for
-   enrichment after the cache has been exhausted.
-
-6. **Never populate `archive_url` in index.json.**
-   The `archive_url` field is unnecessary bloat. Each venue-year's `index.json` is already
-   organized under `resources/{mode}/{year}/{venue}/`, so the archive URL is derivable from
-   the path. Do not add `archive_url` at the conference level or on individual talk/paper
-   entries. The `slides_url` field is fine when a direct link to slides exists, but
-   `archive_url` must never appear.
+   paperhub-cli. paperhub-cli is the only approved external paper search tool: it is the
+   only route to DBLP, Semantic Scholar, and arXiv, used for enrichment after the cache has
+   been exhausted and for author search.
 
 4. **Never fabricate or hallucinate paper/talk metadata.**
    If the cache doesn't have a paper/talk listed, do not guess titles, authors, or DOIs.
    Say the data isn't available. The rubric dimensions (Tools/artifacts, Impact, etc.)
    must be sourced from actual content you fetched on-demand, not inferred.
 
-5. **Never crawl conference pages outside the `maintainer/` crawlers.**
-   Do not write ad-hoc `curl` or `httpx` calls to scrape venue pages mid-conversation.
+5. **Never crawl conference pages mid-conversation.**
+   Do not write ad-hoc `curl` or `httpx` calls to scrape venue pages.
    Fetch URLs only when they are explicitly documented in the skill (e.g., CFPTime,
    ConfSearch, a specific PDF the user asked about).
 
@@ -94,7 +89,7 @@ Supported argument forms (invoke `ph-seccon` with one of these):
 
 If the user invokes `help`, return a concise quick-start guide. Include:
 - one-line explanation of academic vs industry mode
-- note that the skill uses a cached index of papers/talks (2021–2025) and fetches full text on-demand
+- note that the skill uses a cached index of papers/talks (state the `cached_range` from the manifest) and fetches full text on-demand
 - the main quick forms
 - 8–12 concrete examples
 - a short note that mode can be inferred when obvious, but explicit mode is preferred
@@ -117,7 +112,7 @@ Suggested help examples: `academic now`, `academic now CCS side channels`, `indu
 - General web search for security news or vulnerability disclosures — use a search tool directly
 - Finding CVE details or patch information — use a CVE database
 - Broad programming or software engineering questions unrelated to academic/industry security research
-- Content from before 2021 — outside the cached window
+- Content outside the manifest's `cached_range`
 
 ---
 
@@ -138,13 +133,18 @@ Read this first on every query. It tells you which venues/years are cached and w
 
 ```json
 {
-  "version": "1.3.0",
-  "cached_range": { "earliest": 2021, "latest": 2025 },
+  "version": "1.4.0",
+  "generated": "2026-10-24",
+  "cached_range": { "earliest": 2021, "latest": 2026 },
   "coverage": {
     "academic": {
       "venues": {
-        "ieee-sp": { "cached": [], "gaps": [2021, 2022, 2023, 2024, 2025], "note": "IEEEXplore paywall" },
-        "defcon": { "cached": [2025], "gaps": [2021, 2022, 2023, 2024], "note": "" }
+        "ccs": { "cached": [2022, 2023, 2024], "gaps": [2021, 2025, 2026], "note": "" }
+      }
+    },
+    "industry": {
+      "venues": {
+        "hitb": { "cached": [], "gaps": [2021, 2022, 2023, 2024, 2025, 2026], "note": "Not yet crawled" }
       }
     }
   }
@@ -183,13 +183,13 @@ Each file lists all papers/talks for one venue edition:
 ### Query Flow
 
 1. **Read `resources/manifest.json`** — identify which venues/years are cached and which are gaps.
-2. **Filter by year** — if outside 2021–2025, refuse. If a year is a known gap, say so.
+2. **Filter by year** — if outside `cached_range`, refuse. If a year is a known gap, say so.
 3. **Filter by venue** — load matching `index.json` files. Filter by title/speaker/abstract keyword.
 4. **Narrow to candidate papers/talks** — present the top matches with title, venue, year, and (when available) authors/speakers.
 5. **Drill down on-demand** — when the user picks a specific paper/talk, fetch its full text:
    - Open-access PDF: download with `curl -sL <url> | pdftotext - -`
-   - Paywalled: fetch abstract via Semantic Scholar, look for preprint on arXiv/author site
-   - Use `uvx paperhub-cli read --doi <doi> --full` for open-access sources
+   - Paywalled: fetch the abstract with `uvx paperhub-cli read --id doi:<doi>`, and look for a preprint with `uvx paperhub-cli search --no-plan` (arXiv)
+   - Open-access sources: `uvx paperhub-cli read --id doi:<doi> --full`
 6. **Apply the Work Evaluation Rubric** for in-depth paper/talk evaluation.
 
 ---
@@ -214,7 +214,7 @@ When asked about a specific paper or talk, always produce this block before any 
 - *Tools/artifacts*: look for GitHub links, project sites, dataset DOIs, PoC code, firmware images, artifact evaluation badges.
 - *Reproducibility*: open-source code, public datasets, detailed methodology, Docker/VM images, artifact badges (USENIX/IEEE/ACM).
 - *Industry impact*: CVE assignments, vendor acknowledgments, patch notes, product integration, news coverage from Krebs/Wired/Ars.
-- *Academic impact*: cite count via Semantic Scholar; search for papers that cite this work in follow-on venues.
+- *Academic impact*: cite count via `uvx paperhub-cli` (source `semantic_scholar`); search for papers that cite this work in follow-on venues.
 - *Counterpart*: search whether an industry talk preceded/followed an academic paper on the same topic, or vice versa.
 
 ---
@@ -232,7 +232,7 @@ If the user supplies an optional **topic** after `now`, use it to refine the cal
 - add a short **Topic fit** note per row or as a bullet below the table
 
 When calendar results show a venue-year that is NOT in the cache (a gap), note it:
-> "💡 CCS 2026 is upcoming — not yet in the cache. Once the program is published, the maintainer can add it by running `maintainer/populate_cache.py`."
+> "💡 CCS 2026 is upcoming — not yet in the cache. Once the program is published, the maintainer can add it."
 
 **For `academic now` (all upcoming security conferences):**
 ```
@@ -240,7 +240,7 @@ GET https://confsearch.ethz.ch/api/search-engine/?query=security
 ```
 Also query with: `privacy`, `cryptography`, `network security` to broaden coverage.
 
-Filter results to conferences in the embedded tier tables (Tier 1 and 2). Drop results with blank `start` dates or past end dates. Sort by `start` ascending.
+Filter results to conferences in the tier table in `references/academic-rankings.md` (Tier 1 and 2). Drop results with blank `start` dates or past end dates. Sort by `start` ascending.
 
 **For `academic now <acronym>` (specific conference):**
 ```
@@ -330,8 +330,8 @@ For `academic compare <venue1> <venue2>`:
 ### Academic Year + Acronym shorthand
 
 For `academic <year> <acronym>`:
-1. Normalize the acronym against the ranked conference table
-2. If the year is outside 2021–2025, refuse with the cache window message
+1. Normalize the acronym against the ranked conference table in `references/academic-rankings.md`
+2. If the year is outside `cached_range`, refuse with the cache window message
 3. Load the matching `index.json` from `resources/academic/{year}/{venue}/`
 4. Return: conference full name, rank, edition URL, papers count, and 3–10 representative paper titles
 5. If the venue-year is a gap, say so and suggest adding it
@@ -340,99 +340,33 @@ For `academic <year> <acronym>`:
 
 ## Academic Mode
 
-### Conference Rankings
+Rankings, aggregation rule, the ranked conference table, and acceptance-rate trends live in `references/academic-rankings.md`. Read it for tier lookups, venue comparison, `now` tier filtering, and acronym normalization.
 
-**Sources for aggregate rank:**
-- CORE 2023: https://portal.core.edu.au/conf-ranks/?search=security&by=all&source=CORE2023&sort=arank
-- Guofei Gu security conference statistics (acceptance rates + community standing): https://people.engr.tamu.edu/guofei/sec_conf_stat.htm
-
-**Aggregation rule:**
-| Aggregate | Criteria |
-|---|---|
-| **Top** | CORE A\* *or* Guofei T1 |
-| **High** | CORE A *or* Guofei T2 |
-| **Mid** | CORE B *or* Guofei T3 |
-| **Low** | CORE C |
-
-#### Ranked Conferences
-
-| Abbrev | Full Name | CORE | Guofei | **Aggregate** | Focus |
-|---|---|---|---|---|---|
-| IEEE S&P | IEEE Symposium on Security and Privacy | A\* | T1 | **Top** | Systems & applied |
-| CCS | ACM Conf. on Computer and Communications Security | A\* | T1 | **Top** | Broad |
-| USENIX Security | USENIX Security Symposium | A\* | T1 | **Top** | Systems & applied |
-| NDSS | Network and Distributed System Security Symposium | A\* | T1 | **Top** | Network & systems |
-| Crypto | International Cryptology Conference (IACR) | — | T1 | **Top** | Cryptography |
-| Eurocrypt | European Cryptology Conference (IACR) | — | T1 | **Top** | Cryptography |
-| ESORICS | European Symposium on Research in Computer Security | A | T2 | **High** | Broad |
-| ACSAC | Annual Computer Security Applications Conference | A | T2 | **High** | Applied |
-| AsiaCCS | ACM Asia Conf. on Computer and Comms Security | A | T2 | **High** | Asia-Pacific |
-| PETS | Privacy Enhancing Technologies Symposium | A | T2 | **High** | Privacy |
-| EuroS&P | IEEE European Symposium on Security and Privacy | A | T2 | **High** | Broad |
-| FC | Financial Cryptography and Data Security | A | T2 | **High** | Financial crypto |
-| RAID | Recent Advances in Intrusion Detection | — | T2 | **High** | Intrusion detection |
-| DSN | Dependable Systems and Networks | — | T2 | **High** | Dependability |
-| IMC | Internet Measurement Conference | — | T2 | **High** | Network measurement |
-| CHES | Cryptographic Hardware and Embedded Systems | — | T2 | **High** | Hardware crypto |
-| ACISP | Australasian Conf. on Information Security & Privacy | AusB | T3 | **Mid** | Australasian |
-| DIMVA | Detection of Intrusions and Malware & Vuln. Assess. | — | T3 | **Mid** | Malware, detection |
-
-#### Recent Acceptance Rates
-
-| Conference | Approx. Rate | Trend |
-|---|---|---|
-| IEEE S&P | 12–18% | Getting harder |
-| CCS | 18–22% | Stable |
-| USENIX Security | 16–19% | Getting harder |
-| NDSS | 14–18% | Slightly harder |
-| Crypto / Eurocrypt | 25–30% | Stable (scope-filtered) |
+Rankings derive from CORE 2023 and Guofei Gu's security conference statistics.
 
 ### Author Search
 
-1. DBLP: `https://dblp.org/search/?q={name}` — complete publication list grouped by venue
-2. Semantic Scholar: `https://api.semanticscholar.org/graph/v1/author/search?query={name}&fields=name,affiliations,papers,citationCount`
-3. Cross-reference results against the cache by matching venue acronym + year
-4. Report: cached counts per venue, most-cited works, active co-authors, inferred themes
+Route every lookup through `paperhub-cli` (sources `dblp` and `semantic_scholar`):
+
+```bash
+uvx paperhub-cli search --no-plan --author "<name>" --sources dblp,semantic_scholar --top-k 20 "<name>"
+```
+
+1. Run the search; providers may rate-limit (HTTP 429) or return empty results. Report the failure instead of calling DBLP or Semantic Scholar directly.
+2. Cross-reference results against the cache by matching venue acronym + year.
+3. Report: cached counts per venue, most-cited works, active co-authors, inferred themes.
 
 ---
 
 ## Industry Mode
 
-Read `resources/manifest.json` for cached industry venue-years.
-
-### Top Industry Security Conferences
-
-| Conference | Focus | Cache status |
-|---|---|---|
-| DEF CON | Broad hacking, underground research | ✅ 2021–2025 (428 talks) |
-| Black Hat USA | Advanced research, enterprise security | ✅ 2021–2026 (580 talks) |
-| Black Hat EU | Same, European edition | ✅ 2021–2025 (257 talks) |
-| Black Hat Asia | Same, Asian edition | ✅ 2021–2025 (209 talks) |
-| OffensiveCon | Offensive research, exploitation | ✅ 2022–2025 (44 talks) |
-| REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
-| — Lower-tier / uncached — | | |
-| USENIX Security | Academic — systems security | ✅ 2024–2025 (857 papers) |
-| IEEE S&P | Academic — systems & applied | ✅ 2021, 2023, 2024 (575 papers) |
-| CCS | Academic — broad | ✅ 2022–2024 (997 papers) |
-| NDSS | Academic — network & systems | ✅ 2021 (87 papers) |
-| ACSAC | Academic — applied | ✅ 2021–2023, 2025 (296 papers) |
-| ACISP | Academic — Australasian | ✅ 2021–2023 (87 papers) |
-| RSA Conference | Enterprise, policy, threat intel | ❌ Not cached |
-| REcon | Reverse engineering, binary analysis | ✅ 2022–2025 (65 talks) |
-| hardwear.io | Hardware, embedded, IoT security | ✅ 2025 (14 talks, YouTube RSS) |
-| HITCON | Asia-Pacific, CTF community | ❌ Not cached |
-| HITB | Hacking in the Box (KL/Amsterdam) | ❌ Not cached |
-| VB Conference | Malware, threat intelligence | ❌ Not cached |
-| POC | Power of Community, Korea | ❌ Not cached |
+Read `resources/manifest.json` for cached industry venue-years. Venue names, manifest slugs, and focus areas are in `references/industry-venues.md`.
 
 ### Cross-Conference Topic Scan (Industry)
 
-Search the cached `resources/industry/{year}/defcon/index.json` and
-`resources/industry/{year}/offensivecon/index.json` files by title/speaker.
-For uncached venues, note the gap and suggest the maintainer add them.
+Search every cached industry venue-year listed in the manifest (`resources/industry/{year}/{venue}/index.json`) by title/speaker/abstract. For venues with no cached years, note the gap and suggest the maintainer add them.
 
-When a talk has a companion paper (common at Black Hat), cross-reference it via
-the academic rubric.
+When a talk has a companion paper (common at Black Hat), cross-reference it via the academic rubric.
 
 ---
 
@@ -455,7 +389,7 @@ Open-access sources where full-text PDFs are available without auth:
 - arXiv cs.CR: `https://arxiv.org/pdf/{id}`
 - DEF CON presentations: `media.defcon.org/DEF%20CON%20{N}/...presentations/`
 
-ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstracts via Semantic Scholar and look for preprints on arXiv or author homepages instead.
+ACM DL (CCS, AsiaCCS) and IEEEXplore (S&P) require authentication; fetch abstracts with `uvx paperhub-cli read --id doi:<doi>` and look for preprints through `uvx paperhub-cli search --no-plan` (arXiv) instead.
 
 ---
 
@@ -490,6 +424,8 @@ uvx paperhub-cli download --id doi:<doi> --format md
 # Populate all accessible venues
 uv run maintainer/populate_cache.py
 ```
+
+Never populate `archive_url` in an `index.json`: each file already sits under `resources/{mode}/{year}/{venue}/`, so the archive URL is derivable from the path. The `slides_url` field is fine when a direct link to slides exists.
 
 To add a new venue or year that is currently a gap, the maintainer can:
 1. Find the venue's accepted-papers or program page URL

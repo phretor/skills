@@ -4,11 +4,26 @@
 # ///
 """Generate manifest.json from current cache state."""
 import json
+from datetime import date
 from pathlib import Path
 
 RESOURCES = Path(__file__).parent.parent / "skills" / "ph-seccon" / "resources"
 MANIFEST = RESOURCES / "manifest.json"
-YEARS = [2021, 2022, 2023, 2024, 2025]
+VERSION = "1.4.0"
+EARLIEST_YEAR = 2021
+
+
+def cached_years() -> list[int]:
+    """Return every year that has at least one index.json on disk."""
+    years = {
+        int(path.parent.parent.name)
+        for path in RESOURCES.glob("*/*/*/index.json")
+        if path.parent.parent.name.isdigit()
+    }
+    return sorted(years)
+
+
+YEARS = list(range(EARLIEST_YEAR, max(cached_years()) + 1))
 
 VENUE_NAMES = {
     "ieee-sp": ("IEEE Symposium on Security and Privacy", "IEEE S&P"),
@@ -31,9 +46,9 @@ VENUE_NAMES = {
 }
 
 manifest = {
-    "version": "1.3.0",
-    "generated": "2026-04-24",
-    "cached_range": {"earliest": 2021, "latest": 2025},
+    "version": VERSION,
+    "generated": date.today().isoformat(),
+    "cached_range": {"earliest": YEARS[0], "latest": YEARS[-1]},
     "coverage": {"academic": {"venues": {}}, "industry": {"venues": {}}},
 }
 

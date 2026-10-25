@@ -1,6 +1,6 @@
 {
   "name": "phretor-skills",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "private": true,
   "description": "Agent Skills for Pi, starting with security conference intelligence for security researchers.",
   "keywords": [

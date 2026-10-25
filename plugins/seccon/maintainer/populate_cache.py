@@ -260,28 +260,6 @@ def crawl_hardwear_year(year: int) -> int:
     return len(talks)
 
 
-def write_manifest(academic_cached: dict, industry_cached: dict):
-    manifest = {
-        "version": "1.3.0",
-        "generated": "2026-04-24",
-        "cached_range": {"earliest": 2021, "latest": 2025},
-        "coverage": {"academic": {"venues": {}}, "industry": {"venues": {}}},
-    }
-    for slug in sorted(VENUE_NAMES):
-        cached = sorted(academic_cached.get(slug, []))
-        gaps = sorted(set(YEARS) - set(cached))
-        manifest["coverage"]["academic"]["venues"][slug] = {"cached": cached, "gaps": gaps, "note": "DBLP unreachable from this environment" if not cached else ""}
-    dc = sorted(industry_cached.get("defcon", []))
-    oc = sorted(industry_cached.get("offensivecon", []))
-    manifest["coverage"]["industry"]["venues"]["defcon"] = {"cached": dc, "gaps": sorted(set(YEARS) - set(dc)), "note": ""}
-    manifest["coverage"]["industry"]["venues"]["offensivecon"] = {"cached": oc, "gaps": sorted(set(YEARS) - set(oc)), "note": ""}
-    for bh in ("blackhat-usa", "blackhat-eu", "blackhat-asia"):
-        manifest["coverage"]["industry"]["venues"][bh] = {"cached": [], "gaps": YEARS, "note": "Cloudflare blocked"}
-    for o in ("rsec", "hardwear", "hitcon", "hitb", "vb", "poc"):
-        manifest["coverage"]["industry"]["venues"][o] = {"cached": [], "gaps": YEARS, "note": "Not yet crawled"}
-    MANIFEST.write_text(json.dumps(manifest, indent=2))
-
-
 def main():
     print("=== Populating resource cache ===\n")
     print("--- Academic venues (via DBLP XML, retries + low concurrency) ---\n")
@@ -352,7 +330,7 @@ def main():
     ind["hardwear"] = hw
 
     print("\n--- Updating manifest ---")
-    write_manifest(ac_cached, ind)
+    subprocess.run([sys.executable, str(Path(__file__).with_name("write_manifest.py"))], check=True)
 
     # Clean empty dirs
     for p in list(RESOURCES.rglob("*")):

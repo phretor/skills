@@ -1,6 +1,7 @@
 ---
 name: ph-stop-slop
 description: "Eliminate AI writing patterns from prose. Use when drafting, editing, reviewing, or proofreading any text — blog posts, docs, reports, emails, commit messages, release notes — to catch and remove predictable AI tells: throat-clearing openers, passive voice, business jargon, binary contrasts, adverbs, and formulaic structures. Invoke whenever the user asks to clean up, tighten, review, de-AI, or improve their writing, or when reviewing any prose that may contain AI-generated patterns."
+license: MIT
 allowed-tools: Read
 ---
 

@@ -115,6 +115,14 @@ Shipped skill files (`SKILL.md`, `references/`, `workflows/`) must read the same
 
 Bump `version` in **both** `plugins/<plugin-name>/.claude-plugin/plugin.json` and the plugin's entry in the root `.claude-plugin/marketplace.json` on every substantive change, and add a `CHANGELOG.md` entry. Clients only update plugins when the version number increases. Keep both version numbers in sync — a mismatch will cause the plugin to stall at the old version.
 
+Version fields and what they mean:
+
+- Plugin version: `plugin.json` and the plugin's marketplace entry. Independent per plugin. Must match.
+- Repository version: `package.json` `version` and marketplace `metadata.version`. One number for the repo as a whole; keep them equal and bump on repo-wide changes.
+- `plugins/seccon/skills/ph-seccon/resources/manifest.json` `version`: the cache dataset version, bumped by `maintainer/write_manifest.py` when cache content changes. Independent of the plugin version.
+
+`CHANGELOG.md` entries are headed `## <plugin> <version> - <date>` (repo-wide changes: `## repo <version> - <date>`). Every plugin's current version needs a section.
+
 ## Root `marketplace.json`
 
 Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-name>`:

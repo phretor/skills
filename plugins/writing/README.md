@@ -2,7 +2,7 @@
 
 Writing quality tools: eliminate AI slop from prose and write narrative memos in Amazon style.
 
-**Author:** [Hardik Pandya](https://hvpandya.com) (ph-stop-slop), [Federico Maggi](https://github.com/phretor) (ph-amazon-writing)
+**Authors:** [Hardik Pandya](https://hvpandya.com) (ph-stop-slop, vendored from [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) under the MIT license, see [`LICENSE`](skills/ph-stop-slop/LICENSE)), [Federico Maggi](https://github.com/phretor) (ph-amazon-writing)
 
 ## When to Use
 

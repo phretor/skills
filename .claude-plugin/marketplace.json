@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Public skills for security research, security conference intelligence, speaker coaching, writing quality, and RSS feed triage",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   "plugins": [
     {
@@ -14,8 +14,8 @@
       "version": "2.0.0",
       "description": "Writing quality tools: eliminate AI slop from prose and write narrative memos in Amazon style (6-pagers, 1-pagers, press releases, PRFAQs).",
       "author": {
-        "name": "Hardik Pandya",
-        "url": "https://hvpandya.com"
+        "name": "Hardik Pandya, Federico Maggi",
+        "url": "https://github.com/phretor"
       },
       "source": "./plugins/writing"
     },
