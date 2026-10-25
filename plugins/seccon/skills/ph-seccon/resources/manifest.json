@@ -1,0 +1,366 @@
+{
+  "version": "1.4.0",
+  "generated": "2026-10-24",
+  "cached_range": {
+    "earliest": 2021,
+    "latest": 2026
+  },
+  "coverage": {
+    "academic": {
+      "venues": {
+        "acisp": {
+          "cached": [
+            2021,
+            2022,
+            2023
+          ],
+          "gaps": [
+            2024,
+            2025,
+            2026
+          ],
+          "note": ""
+        },
+        "acsac": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2025
+          ],
+          "gaps": [
+            2024,
+            2026
+          ],
+          "note": ""
+        },
+        "asiaccs": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "ccs": {
+          "cached": [
+            2022,
+            2023,
+            2024
+          ],
+          "gaps": [
+            2021,
+            2025,
+            2026
+          ],
+          "note": ""
+        },
+        "ches": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "crypto": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "dimva": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "esorics": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "eurocrypt": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "eurosp": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "fc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "ieee-sp": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024
+          ],
+          "gaps": [
+            2025,
+            2026
+          ],
+          "note": ""
+        },
+        "imc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "ndss": {
+          "cached": [
+            2021
+          ],
+          "gaps": [
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": ""
+        },
+        "pets": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "raid": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "DBLP unreachable from this environment"
+        },
+        "usenix-security": {
+          "cached": [
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2026
+          ],
+          "note": ""
+        }
+      }
+    },
+    "industry": {
+      "venues": {
+        "defcon": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2026
+          ],
+          "note": ""
+        },
+        "offensivecon": {
+          "cached": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021,
+            2026
+          ],
+          "note": ""
+        },
+        "recon": {
+          "cached": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021,
+            2026
+          ],
+          "note": ""
+        },
+        "blackhat-usa": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "gaps": [],
+          "note": ""
+        },
+        "blackhat-eu": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2026
+          ],
+          "note": ""
+        },
+        "blackhat-asia": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2026
+          ],
+          "note": ""
+        },
+        "hardwear": {
+          "cached": [
+            2025
+          ],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2026
+          ],
+          "note": ""
+        },
+        "hitcon": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "Not yet crawled"
+        },
+        "hitb": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "Not yet crawled"
+        },
+        "vb": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "Not yet crawled"
+        },
+        "poc": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "Not yet crawled"
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
 {
   "name": "writing",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Writing quality tools: eliminate AI slop from prose and write narrative memos in Amazon style (6-pagers, 1-pagers, press releases, PRFAQs).",
   "author": {
-    "name": "Hardik Pandya",
-    "url": "https://hvpandya.com"
+    "name": "Hardik Pandya, Federico Maggi",
+    "url": "https://github.com/phretor"
   }
 }

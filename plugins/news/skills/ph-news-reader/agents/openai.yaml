@@ -1,0 +1,9 @@
+interface:
+  display_name: "News Reader"
+  short_description: "Read, search, and triage RSS feeds through Miniflux."
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "miniflux"
+      description: "Miniflux MCP server"

@@ -2,7 +2,7 @@
 
 Writing quality tools: eliminate AI slop from prose and write narrative memos in Amazon style.
 
-**Author:** [Hardik Pandya](https://hvpandya.com) (stop-slop), [Federico Maggi](https://github.com/phretor) (amazon-writing)
+**Authors:** [Hardik Pandya](https://hvpandya.com) (ph-stop-slop, vendored from [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) under the MIT license, see [`LICENSE`](skills/ph-stop-slop/LICENSE)), [Federico Maggi](https://github.com/phretor) (ph-amazon-writing)
 
 ## When to Use
 
@@ -22,7 +22,7 @@ Writing quality tools: eliminate AI slop from prose and write narrative memos in
 
 ## What It Does
 
-### stop-slop (`/ph:write`)
+### ph-stop-slop
 
 Applies the Stop Slop ruleset to prose:
 
@@ -33,11 +33,13 @@ Applies the Stop Slop ruleset to prose:
 5. Eliminates false agency ("the decision emerges") and narrator-from-a-distance voice
 6. Scores prose 1-10 across five dimensions (directness, rhythm, trust, authenticity, density); flags anything below 35/50 for revision
 
-Detailed banned-phrase lists: [`skills/stop-slop/references/phrases.md`](skills/stop-slop/references/phrases.md)
-Structural clichés: [`skills/stop-slop/references/structures.md`](skills/stop-slop/references/structures.md)
-Before/after examples: [`skills/stop-slop/references/examples.md`](skills/stop-slop/references/examples.md)
+Detailed banned-phrase lists: [`skills/ph-stop-slop/references/phrases.md`](skills/ph-stop-slop/references/phrases.md)
+Structural clichés: [`skills/ph-stop-slop/references/structures.md`](skills/ph-stop-slop/references/structures.md)
+Before/after examples: [`skills/ph-stop-slop/references/examples.md`](skills/ph-stop-slop/references/examples.md)
 
-### amazon-writing (`/ph:amazon-writing`)
+### ph-amazon-writing
+
+Arguments: `<document-type> [text|file]`.
 
 Rewrites content following Amazon's narrative memo standards:
 
@@ -45,8 +47,4 @@ Rewrites content following Amazon's narrative memo standards:
 2. Supports four document types: 6-pager, 1-pager, press release, PRFAQ
 3. Loads document-specific guidelines from reference files for required sections and format constraints
 
-Document-type references: [`skills/amazon-writing/references/`](skills/amazon-writing/references/)
-
-## Installation
-
-See [root README](../..) for installation instructions for all clients (Pi, Claude Code, etc.).
+Document-type references: [`skills/ph-amazon-writing/references/`](skills/ph-amazon-writing/references/)

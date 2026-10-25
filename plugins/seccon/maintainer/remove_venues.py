@@ -1,0 +1,114 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = []
+# ///
+"""Remove specified venues from the seccon manifest, scripts, and rankings table.
+
+Usage: uv run maintainer/remove_venues.py
+"""
+
+import json
+import re
+from pathlib import Path
+
+MAINTAINER_DIR = Path(__file__).parent
+SKILL_DIR = MAINTAINER_DIR.parent / "skills" / "ph-seccon"
+RANKINGS_MD = SKILL_DIR / "references" / "academic-rankings.md"
+MANIFEST = SKILL_DIR / "resources" / "manifest.json"
+POPULATE = MAINTAINER_DIR / "populate_cache.py"
+WRITEMAN = MAINTAINER_DIR / "write_manifest.py"
+
+VENUES_TO_REMOVE = {
+    "csf": "CSF",
+    "asiacrypt": "Asiacrypt",
+    "tcc": "TCC",
+    "soups": "SOUPS",
+    "acns": "ACNS",
+    "ifip-sec": "IFIP SEC",
+    "wisec": "WiSec",
+    "icics": "ICICS",
+    "securecomm": "SecureComm",
+    "pst": "PST",
+    "pkc": "PKC",
+    "sac": "SAC",
+}
+
+
+def remove_from_manifest():
+    data = json.loads(MANIFEST.read_text())
+    for slug in VENUES_TO_REMOVE:
+        if slug in data["coverage"]["academic"]["venues"]:
+            del data["coverage"]["academic"]["venues"][slug]
+            print(f"  manifest: removed {slug}")
+    MANIFEST.write_text(json.dumps(data, indent=2))
+
+
+def remove_from_populate_cache():
+    """Remove slugs from DBLP_XML_URLS and VENUE_NAMES dicts."""
+    path = POPULATE
+    text = path.read_text()
+
+    # Remove DBLP_XML_URLS entries
+    for slug in VENUES_TO_REMOVE:
+        # Match the line(s) for this slug in DBLP_XML_URLS
+        pattern = rf'    "{re.escape(slug)}":.*\n'
+        text = re.sub(pattern, "", text)
+
+    # Remove VENUE_NAMES entries
+    for slug in VENUES_TO_REMOVE:
+        pattern = rf'    "{re.escape(slug)}":.*\n'
+        text = re.sub(pattern, "", text)
+
+    path.write_text(text)
+    print(f"  populate_cache.py: cleaned {len(VENUES_TO_REMOVE)} slugs")
+
+
+def remove_from_write_manifest():
+    path = WRITEMAN
+    text = path.read_text()
+
+    for slug in VENUES_TO_REMOVE:
+        pattern = rf'    "{re.escape(slug)}":.*\n'
+        text = re.sub(pattern, "", text)
+
+    path.write_text(text)
+    print(f"  write_manifest.py: cleaned {len(VENUES_TO_REMOVE)} slugs")
+
+
+def remove_from_rankings():
+    """Remove rows from the ranked conferences table."""
+    path = RANKINGS_MD
+    text = path.read_text()
+
+    for name in VENUES_TO_REMOVE.values():
+        # Remove table rows containing this venue's abbreviation
+        # Match any row that starts with | and contains the venue name
+        pattern = rf"\| {re.escape(name)} .*\|.*\n"
+        text = re.sub(pattern, "", text)
+
+    path.write_text(text)
+    print(f"  academic-rankings.md: cleaned {len(VENUES_TO_REMOVE)} venues")
+
+
+def main():
+    print("=== Removing venues ===\n")
+    for slug, name in sorted(VENUES_TO_REMOVE.items(), key=lambda x: x[1]):
+        print(f"  {name:20s} ({slug})")
+
+    print("\n--- Manifest ---")
+    remove_from_manifest()
+
+    print("\n--- populate_cache.py ---")
+    remove_from_populate_cache()
+
+    print("\n--- write_manifest.py ---")
+    remove_from_write_manifest()
+
+    print("\n--- academic-rankings.md ---")
+    remove_from_rankings()
+
+    print("\n=== Done ===")
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,5 @@
+[project]
+name = "speaker-coach-scripts"
+version = "1.0.0"
+description = "Slide-deck ingestion utilities for the speaker-coach skill."
+requires-python = ">=3.11"

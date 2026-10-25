@@ -1,0 +1,131 @@
+name: ci
+
+on:
+  pull_request:
+  merge_group:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+jobs:
+  skills-spec:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - name: Validate every skill against the Agent Skills spec
+        run: |
+          set -euo pipefail
+          for dir in plugins/*/skills/*/; do
+            uvx --from skills-ref==0.1.1 agentskills validate "$dir"
+          done
+
+  repo-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - run: uv run scripts/check_repo.py
+
+  version-gate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - name: Require a version bump and CHANGELOG entry for changed plugins
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: uv run scripts/check_versions.py --base "origin/${BASE_REF}"
+
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - run: uvx ruff@0.17.2 check plugins scripts tests
+      - run: uvx ruff@0.17.2 format --check plugins scripts tests
+      - run: uv run --with pytest==9.1.1 pytest -q tests
+      - name: Smoke-test the bundled skill script
+        run: uv run --script plugins/speaker-coach/skills/ph-speaker-coach/scripts/extract_deck.py --help
+
+  discovery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - name: Compare npx skills discovery with plugins/*/skills/*/
+        run: |
+          set -euo pipefail
+          npx -y skills@1.7.4 add . --list | uv run scripts/check_discovery.py
+
+  workflows:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@07a047e608db84b3d8c06cd9a7c7dcc9c355c18e # v10.3.2
+        with:
+          version: "0.13.5"
+      - run: uvx --from actionlint-py==1.7.12.25 actionlint
+      - run: uvx zizmor@1.31.1 .github/workflows
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: lycheeverse/lychee-action@e7477775783ea5526144ba13e8db5eec57747ce8 # v2.9.0
+        with:
+          lycheeVersion: v0.24.2
+          args: --offline --include-fragments --no-progress '**/*.md'
+          fail: true
+
+  ci:
+    if: always()
+    needs: [skills-spec, repo-lint, version-gate, python, discovery, workflows, links]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail unless every required job passed or was skipped
+        env:
+          NEEDS: ${{ toJSON(needs) }}
+        run: |
+          python3 - <<'PY'
+          import json, os, sys
+
+          bad = {k: v["result"] for k, v in json.loads(os.environ["NEEDS"]).items()
+                 if v["result"] not in ("success", "skipped")}
+          print(bad or "all required jobs passed")
+          sys.exit(1 if bad else 0)
+          PY
