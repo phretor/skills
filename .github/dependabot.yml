@@ -1,0 +1,26 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      actions:
+        patterns: ["*"]
+  - package-ecosystem: uv
+    directory: /plugins/seccon/maintainer
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7
+    groups:
+      seccon-maintainer:
+        patterns: ["*"]
+  - package-ecosystem: uv
+    directory: /plugins/speaker-coach/skills/ph-speaker-coach/scripts
+    schedule:
+      interval: weekly
+    cooldown:
+      default-days: 7

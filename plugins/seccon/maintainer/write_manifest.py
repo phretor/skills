@@ -3,6 +3,7 @@
 # dependencies = []
 # ///
 """Generate manifest.json from current cache state."""
+
 import json
 from datetime import date
 from pathlib import Path
@@ -60,11 +61,26 @@ for slug in sorted(VENUE_NAMES):
             cached.append(year)
     gaps = sorted(set(YEARS) - set(cached))
     note = "DBLP unreachable from this environment" if not cached else ""
-    manifest["coverage"]["academic"]["venues"][slug] = {"cached": sorted(cached), "gaps": gaps, "note": note}
+    manifest["coverage"]["academic"]["venues"][slug] = {
+        "cached": sorted(cached),
+        "gaps": gaps,
+        "note": note,
+    }
 
 # Industry venues — scan filesystem for what's cached
-INDUSTRY_SLUGS = ["defcon", "offensivecon", "recon", "blackhat-usa", "blackhat-eu", "blackhat-asia",
-                  "hardwear", "hitcon", "hitb", "vb", "poc"]
+INDUSTRY_SLUGS = [
+    "defcon",
+    "offensivecon",
+    "recon",
+    "blackhat-usa",
+    "blackhat-eu",
+    "blackhat-asia",
+    "hardwear",
+    "hitcon",
+    "hitb",
+    "vb",
+    "poc",
+]
 for slug in INDUSTRY_SLUGS:
     cached = []
     for year in YEARS:
@@ -78,7 +94,11 @@ for slug in INDUSTRY_SLUGS:
             note = "Cloudflare blocked"
         else:
             note = "Not yet crawled"
-    manifest["coverage"]["industry"]["venues"][slug] = {"cached": sorted(cached), "gaps": gaps, "note": note}
+    manifest["coverage"]["industry"]["venues"][slug] = {
+        "cached": sorted(cached),
+        "gaps": gaps,
+        "note": note,
+    }
 
 MANIFEST.write_text(json.dumps(manifest, indent=2))
 

@@ -202,7 +202,7 @@ When asked about a specific paper or talk, always produce this block before any 
 
 | Dimension | Finding |
 |---|---|
-| Tools / artifacts | ✓ [name](url) — or — ✗ Not released |
+| Tools / artifacts | ✓ name + URL — or — ✗ Not released |
 | Reproducibility | High / Medium / Low — reason |
 | Vulns found or patched | CVE-YYYY-NNNNN … — or — None |
 | Industry impact | e.g., "Patched in iOS 17.4", "Adopted by vendor X", "No known deployment" |
@@ -260,7 +260,7 @@ Note: the `rank` field is the CORE rank (A\*, A, B, C) — use it directly.
 
 | Conference | CORE | Dates | Location | Submission deadline | Website |
 |---|---|---|---|---|---|
-| CCS 2026 | A\* | Nov 15–19 2026 | The Hague, NL | Jan 14 / Apr 29 2026 | [link](…) |
+| CCS 2026 | A\* | Nov 15–19 2026 | The Hague, NL | Jan 14 / Apr 29 2026 | website URL |
 
 Add a section for **open CFPs** and **upcoming conferences** within 90 days.
 
@@ -289,7 +289,7 @@ GET https://api.cfptime.org/rss
 
 | Conference | Dates | Location | CFP deadline | Website |
 |---|---|---|---|---|
-| DEF CON 34 | Aug 2026 | Las Vegas, US | TBD | [link](…) |
+| DEF CON 34 | Aug 2026 | Las Vegas, US | TBD | website URL |
 
 Show CFP deadline relative to today. Highlight open CFPs. Omit conferences more than 12 months out unless explicitly asked.
 

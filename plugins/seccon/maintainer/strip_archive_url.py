@@ -3,6 +3,7 @@
 # dependencies = []
 # ///
 """Remove archive_url from all index.json files and update related code."""
+
 import json
 from pathlib import Path
 

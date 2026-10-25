@@ -16,6 +16,9 @@ Entries are per plugin and version, headed `## <plugin> <version> - <date>`. The
 - `AGENTS.md` as the contributor guide; `CLAUDE.md` imports it.
 - Root `README.md` carries the install and invocation matrix for Claude Code, Codex, Pi, OMP, Hermes, and `npx skills`, and a 1.x upgrade section.
 - `agents/openai.yaml` (Codex UI metadata) for every skill.
+- CI (`.github/workflows/ci.yml`): Agent Skills spec validation, `scripts/check_repo.py` structure checks, a pull-request version gate (`scripts/check_versions.py`), ruff and pytest, `npx skills` discovery check, actionlint and zizmor, offline link check, and a single `ci` job to require.
+- Release workflow (`.github/workflows/release.yml`, `scripts/release.py`): tags `<plugin>@v<version>` and creates a GitHub Release from the plugin's CHANGELOG section when a version has no tag.
+- Dependabot for GitHub Actions and the `uv` projects, a pull request template, `.editorconfig`, and a root `ruff.toml`.
 
 ### Changed
 - Skill bodies use harness-neutral wording: no `/skill:`, `/ph:` or `/<plugin>:<skill>` invocation strings, no harness tool names.

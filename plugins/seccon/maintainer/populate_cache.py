@@ -21,41 +21,41 @@ MAX_WORKERS = 3  # keep low for rate limiting
 
 # DBLP XML URLs (primary source, sometimes flaky)
 DBLP_XML_URLS = {
-    "ieee-sp":        "https://dblp.org/db/conf/sp/sp{year}.xml",
-    "ccs":            "https://dblp.org/db/conf/ccs/ccs{year}.xml",
+    "ieee-sp": "https://dblp.org/db/conf/sp/sp{year}.xml",
+    "ccs": "https://dblp.org/db/conf/ccs/ccs{year}.xml",
     "usenix-security": "https://dblp.org/db/conf/uss/uss{year}.xml",
-    "ndss":           "https://dblp.org/db/conf/ndss/ndss{year}.xml",
-    "crypto":         "https://dblp.org/db/conf/crypto/crypto{year}.xml",
-    "eurocrypt":      "https://dblp.org/db/conf/eurocrypt/eurocrypt{year}.xml",
-    "esorics":        "https://dblp.org/db/conf/esorics/esorics{year}.xml",
-    "acsac":          "https://dblp.org/db/conf/acsac/acsac{year}.xml",
-    "asiaccs":        "https://dblp.org/db/conf/asiaccs/asiaccs{year}.xml",
-    "eurosp":         "https://dblp.org/db/conf/eurosp/eurosp{year}.xml",
-    "fc":             "https://dblp.org/db/conf/fc/fc{year}.xml",
-    "raid":           "https://dblp.org/db/conf/raid/raid{year}.xml",
-    "imc":            "https://dblp.org/db/conf/imc/imc{year}.xml",
-    "ches":           "https://dblp.org/db/conf/ches/ches{year}.xml",
-    "acisp":          "https://dblp.org/db/conf/acisp/acisp{year}.xml",
-    "dimva":          "https://dblp.org/db/conf/dimva/dimva{year}.xml",
+    "ndss": "https://dblp.org/db/conf/ndss/ndss{year}.xml",
+    "crypto": "https://dblp.org/db/conf/crypto/crypto{year}.xml",
+    "eurocrypt": "https://dblp.org/db/conf/eurocrypt/eurocrypt{year}.xml",
+    "esorics": "https://dblp.org/db/conf/esorics/esorics{year}.xml",
+    "acsac": "https://dblp.org/db/conf/acsac/acsac{year}.xml",
+    "asiaccs": "https://dblp.org/db/conf/asiaccs/asiaccs{year}.xml",
+    "eurosp": "https://dblp.org/db/conf/eurosp/eurosp{year}.xml",
+    "fc": "https://dblp.org/db/conf/fc/fc{year}.xml",
+    "raid": "https://dblp.org/db/conf/raid/raid{year}.xml",
+    "imc": "https://dblp.org/db/conf/imc/imc{year}.xml",
+    "ches": "https://dblp.org/db/conf/ches/ches{year}.xml",
+    "acisp": "https://dblp.org/db/conf/acisp/acisp{year}.xml",
+    "dimva": "https://dblp.org/db/conf/dimva/dimva{year}.xml",
 }
 
 VENUE_NAMES = {
-    "ieee-sp":        ("IEEE Symposium on Security and Privacy", "IEEE S&P"),
-    "ccs":            ("ACM Conference on Computer and Communications Security", "CCS"),
+    "ieee-sp": ("IEEE Symposium on Security and Privacy", "IEEE S&P"),
+    "ccs": ("ACM Conference on Computer and Communications Security", "CCS"),
     "usenix-security": ("USENIX Security Symposium", "USENIX Security"),
-    "ndss":           ("Network and Distributed System Security Symposium", "NDSS"),
-    "crypto":         ("International Cryptology Conference", "Crypto"),
-    "eurocrypt":      ("European Cryptology Conference", "Eurocrypt"),
-    "esorics":        ("European Symposium on Research in Computer Security", "ESORICS"),
-    "acsac":          ("Annual Computer Security Applications Conference", "ACSAC"),
-    "asiaccs":        ("ACM Asia Conference on Computer and Communications Security", "AsiaCCS"),
-    "eurosp":         ("IEEE European Symposium on Security and Privacy", "EuroS&P"),
-    "fc":             ("Financial Cryptography and Data Security", "FC"),
-    "raid":           ("Recent Advances in Intrusion Detection", "RAID"),
-    "imc":            ("Internet Measurement Conference", "IMC"),
-    "ches":           ("Cryptographic Hardware and Embedded Systems", "CHES"),
-    "acisp":          ("Australasian Conference on Information Security and Privacy", "ACISP"),
-    "dimva":          ("Detection of Intrusions and Malware and Vulnerability Assessment", "DIMVA"),
+    "ndss": ("Network and Distributed System Security Symposium", "NDSS"),
+    "crypto": ("International Cryptology Conference", "Crypto"),
+    "eurocrypt": ("European Cryptology Conference", "Eurocrypt"),
+    "esorics": ("European Symposium on Research in Computer Security", "ESORICS"),
+    "acsac": ("Annual Computer Security Applications Conference", "ACSAC"),
+    "asiaccs": ("ACM Asia Conference on Computer and Communications Security", "AsiaCCS"),
+    "eurosp": ("IEEE European Symposium on Security and Privacy", "EuroS&P"),
+    "fc": ("Financial Cryptography and Data Security", "FC"),
+    "raid": ("Recent Advances in Intrusion Detection", "RAID"),
+    "imc": ("Internet Measurement Conference", "IMC"),
+    "ches": ("Cryptographic Hardware and Embedded Systems", "CHES"),
+    "acisp": ("Australasian Conference on Information Security and Privacy", "ACISP"),
+    "dimva": ("Detection of Intrusions and Malware and Vulnerability Assessment", "DIMVA"),
 }
 
 
@@ -65,7 +65,9 @@ def _curl(url: str, timeout: int = 15) -> str | None:
         try:
             r = subprocess.run(
                 ["curl", "-sL", "--max-time", str(timeout), url],
-                capture_output=True, text=True, timeout=timeout + 5,
+                capture_output=True,
+                text=True,
+                timeout=timeout + 5,
             )
             if r.returncode == 0 and r.stdout and len(r.stdout) > 100:
                 return r.stdout
@@ -82,17 +84,22 @@ def _defcon_edition(year: int) -> int:
 
 def parse_dblp_xml(xml: str) -> list[dict]:
     papers = []
-    for entry in re.finditer(r'<inproceedings[^>]*>(.*?)</inproceedings>', xml, re.DOTALL):
+    for entry in re.finditer(r"<inproceedings[^>]*>(.*?)</inproceedings>", xml, re.DOTALL):
         content = entry.group(1)
-        title_match = re.search(r'<title>(.*?)</title>', content, re.DOTALL)
+        title_match = re.search(r"<title>(.*?)</title>", content, re.DOTALL)
         if not title_match:
             continue
         title = title_match.group(1).strip()
-        title = title.replace("&amp;", "&").replace("&lt;", "<").replace("&gt;", ">").replace("&#38;", "&")
-        authors = re.findall(r'<author[^>]*>(.*?)</author>', content)
-        doi_match = re.search(r'<ee>(https?://doi\.org/[^\s<]+)</ee>', content)
+        title = (
+            title.replace("&amp;", "&")
+            .replace("&lt;", "<")
+            .replace("&gt;", ">")
+            .replace("&#38;", "&")
+        )
+        authors = re.findall(r"<author[^>]*>(.*?)</author>", content)
+        doi_match = re.search(r"<ee>(https?://doi\.org/[^\s<]+)</ee>", content)
         doi = doi_match.group(1) if doi_match else ""
-        url_match = re.search(r'<url>([^<]+)</url>', content)
+        url_match = re.search(r"<url>([^<]+)</url>", content)
         dblp_url = f"https://dblp.org/{url_match.group(1)}" if url_match else ""
         papers.append({"title": title, "authors": authors, "doi": doi, "dblp_url": dblp_url})
     return papers
@@ -104,7 +111,7 @@ def fetch_dblp_year(slug: str, year: int) -> tuple[str, int, list[dict] | None]:
         return slug, year, None
     url = url_tmpl.replace("{year}", str(year))
     xml = _curl(url, timeout=15)
-    if not xml or '<inproceedings' not in xml:
+    if not xml or "<inproceedings" not in xml:
         return slug, year, None
     papers = parse_dblp_xml(xml)
     return slug, year, papers if papers else None
@@ -116,10 +123,19 @@ def write_academic_index(slug: str, year: int, papers: list[dict]):
     out_dir.mkdir(parents=True, exist_ok=True)
     index = {
         "conference": {"name": full_name, "acronym": acronym, "year": year, "venue_slug": slug},
-        "coverage": {"papers_count": len(papers), "has_abstracts": False, "last_crawled": "2026-04-24"},
+        "coverage": {
+            "papers_count": len(papers),
+            "has_abstracts": False,
+            "last_crawled": "2026-04-24",
+        },
         "papers": [
-            {"id": f"{slug}-{year}-{j+1:03d}", "title": p["title"], "authors": p["authors"],
-             "doi": p.get("doi", ""), "dblp_url": p.get("dblp_url", "")}
+            {
+                "id": f"{slug}-{year}-{j + 1:03d}",
+                "title": p["title"],
+                "authors": p["authors"],
+                "doi": p.get("doi", ""),
+                "dblp_url": p.get("dblp_url", ""),
+            }
             for j, p in enumerate(papers)
         ],
     }
@@ -139,16 +155,29 @@ def crawl_defcon_year(year: int) -> int:
         parts = name_no_ext.split(" - ", 1)
         sp = parts[0].strip() if parts else ""
         title = parts[1].strip() if len(parts) > 1 else name_no_ext
-        speakers = [s.strip() for s in re.split(r'\s+(?:and|&)\s+', sp) if s.strip()] or [sp]
+        speakers = [s.strip() for s in re.split(r"\s+(?:and|&)\s+", sp) if s.strip()] or [sp]
         tid = f"dc{edition}-{len(talks) + 1:03d}"
-        talks.append({"id": tid, "title": title, "speakers": speakers, "slides_url": url + match.group(1)})
+        talks.append(
+            {"id": tid, "title": title, "speakers": speakers, "slides_url": url + match.group(1)}
+        )
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "defcon"
     out_dir.mkdir(parents=True, exist_ok=True)
     idx = {
-        "conference": {"name": f"DEF CON {edition}", "acronym": "DEF CON", "year": year, "edition": edition, "url": url},
-        "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": True, "last_crawled": "2026-04-24"},
+        "conference": {
+            "name": f"DEF CON {edition}",
+            "acronym": "DEF CON",
+            "year": year,
+            "edition": edition,
+            "url": url,
+        },
+        "coverage": {
+            "talks_count": len(talks),
+            "has_abstracts": False,
+            "has_slides": True,
+            "last_crawled": "2026-04-24",
+        },
         "talks": talks,
     }
     (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
@@ -166,14 +195,30 @@ def crawl_offensivecon_year(year: int) -> int:
         parts = c.split(" by ")
         title = parts[0].strip() if parts else c
         speaker = parts[1].strip() if len(parts) > 1 else ""
-        talks.append({"id": f"oc{year}-{len(talks)+1:03d}", "title": title, "speakers": [speaker] if speaker else []})
+        talks.append(
+            {
+                "id": f"oc{year}-{len(talks) + 1:03d}",
+                "title": title,
+                "speakers": [speaker] if speaker else [],
+            }
+        )
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "offensivecon"
     out_dir.mkdir(parents=True, exist_ok=True)
     idx = {
-        "conference": {"name": f"OffensiveCon {year}", "acronym": "OffensiveCon", "year": year, "url": url},
-        "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": False, "last_crawled": "2026-04-24"},
+        "conference": {
+            "name": f"OffensiveCon {year}",
+            "acronym": "OffensiveCon",
+            "year": year,
+            "url": url,
+        },
+        "coverage": {
+            "talks_count": len(talks),
+            "has_abstracts": False,
+            "has_slides": False,
+            "last_crawled": "2026-04-24",
+        },
         "talks": talks,
     }
     (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
@@ -187,22 +232,37 @@ def crawl_recon_year(year: int) -> int:
         return 0
     talks = []
     for m in re.finditer(r'<ul class="training-list">(.*?)</ul>', html, re.DOTALL):
-        items = re.findall(r'<li>(.*?)</li>', m.group(1), re.DOTALL)
+        items = re.findall(r"<li>(.*?)</li>", m.group(1), re.DOTALL)
         for item in items:
-            text = re.sub(r'<[^>]+>', ' ', item).strip()
-            text = re.sub(r'\s+', ' ', text)
+            text = re.sub(r"<[^>]+>", " ", item).strip()
+            text = re.sub(r"\s+", " ", text)
             if not text or len(text) < 10:
                 continue
-            parts = text.split(' - ', 1)
+            parts = text.split(" - ", 1)
             title = parts[0].strip() if parts else text
             speaker = parts[1].strip() if len(parts) > 1 else ""
-            speakers = [s.strip() for s in re.split(r'[,&]', speaker) if s.strip()]
-            talks.append({"id": f"rc{year}-{len(talks)+1:03d}", "title": title, "speakers": speakers or [speaker]})
+            speakers = [s.strip() for s in re.split(r"[,&]", speaker) if s.strip()]
+            talks.append(
+                {
+                    "id": f"rc{year}-{len(talks) + 1:03d}",
+                    "title": title,
+                    "speakers": speakers or [speaker],
+                }
+            )
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "recon"
     out_dir.mkdir(parents=True, exist_ok=True)
-    idx = {"conference": {"name": f"REcon {year}", "acronym": "REcon", "year": year, "url": url}, "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": False, "last_crawled": "2026-04-24"}, "talks": talks}
+    idx = {
+        "conference": {"name": f"REcon {year}", "acronym": "REcon", "year": year, "url": url},
+        "coverage": {
+            "talks_count": len(talks),
+            "has_abstracts": False,
+            "has_slides": False,
+            "last_crawled": "2026-04-24",
+        },
+        "talks": talks,
+    }
     (out_dir / "index.json").write_text(json.dumps(idx, indent=2))
     return len(talks)
 
@@ -218,9 +278,9 @@ def crawl_hardwear_year(year: int) -> int:
     if not xml:
         return 0
     talks = []
-    for entry in re.finditer(r'<entry>(.*?)</entry>', xml, re.DOTALL):
+    for entry in re.finditer(r"<entry>(.*?)</entry>", xml, re.DOTALL):
         content = entry.group(1)
-        title_match = re.search(r'<title>(.*?)</title>', content, re.DOTALL)
+        title_match = re.search(r"<title>(.*?)</title>", content, re.DOTALL)
         if not title_match:
             continue
         full_title = title_match.group(1).strip()
@@ -230,7 +290,7 @@ def crawl_hardwear_year(year: int) -> int:
             continue
         # Extract talk title and speakers
         title = full_title
-        # Remove prefix like "Hardwear.io NL 2025: " or "Hardwear.io NL2025: " or "Hardwear.io NL 2025 | "
+        # Remove prefix like "Hardwear.io NL 2025: " or "Hardwear.io NL 2025 | "
         for sep in [": ", " | ", ":"]:
             parts = title.split(sep, 1)
             if len(parts) > 1 and "hardwear" in parts[0].lower():
@@ -242,18 +302,29 @@ def crawl_hardwear_year(year: int) -> int:
             parts = title.rsplit(" by ", 1)
             title = parts[0].strip()
             speaker_part = parts[1].strip()
-            speakers = [s.strip() for s in re.split(r'[,&]', speaker_part) if s.strip()]
-        video_id = re.search(r'<yt:videoId>(.*?)</yt:videoId>', content)
+            speakers = [s.strip() for s in re.split(r"[,&]", speaker_part) if s.strip()]
+        video_id = re.search(r"<yt:videoId>(.*?)</yt:videoId>", content)
         video_url = f"https://www.youtube.com/watch?v={video_id.group(1)}" if video_id else ""
-        talk_id = f"hw{year}-{len(talks)+1:03d}"
+        talk_id = f"hw{year}-{len(talks) + 1:03d}"
         talks.append({"id": talk_id, "title": title, "speakers": speakers, "video_url": video_url})
     if not talks:
         return 0
     out_dir = RESOURCES / "industry" / str(year) / "hardwear"
     out_dir.mkdir(parents=True, exist_ok=True)
     idx = {
-        "conference": {"name": "hardwear.io", "acronym": "hardwear.io", "year": year, "url": f"https://hardwear.io/netherlands-{year}/talks/"},
-        "coverage": {"talks_count": len(talks), "has_abstracts": False, "has_slides": False, "source": "YouTube RSS (limited)", "last_crawled": "2026-04-24"},
+        "conference": {
+            "name": "hardwear.io",
+            "acronym": "hardwear.io",
+            "year": year,
+            "url": f"https://hardwear.io/netherlands-{year}/talks/",
+        },
+        "coverage": {
+            "talks_count": len(talks),
+            "has_abstracts": False,
+            "has_slides": False,
+            "source": "YouTube RSS (limited)",
+            "last_crawled": "2026-04-24",
+        },
         "talks": talks,
     }
     (out_dir / "index.json").write_text(json.dumps(idx, indent=2))

@@ -2,7 +2,7 @@
 # requires-python = ">=3.12"
 # dependencies = []
 # ///
-"""Remove specified venues from all seccon files.
+"""Remove specified venues from the seccon manifest, scripts, and rankings table.
 
 Usage: uv run maintainer/remove_venues.py
 """
@@ -13,7 +13,7 @@ from pathlib import Path
 
 MAINTAINER_DIR = Path(__file__).parent
 SKILL_DIR = MAINTAINER_DIR.parent / "skills" / "ph-seccon"
-SKILL_MD = SKILL_DIR / "SKILL.md"
+RANKINGS_MD = SKILL_DIR / "references" / "academic-rankings.md"
 MANIFEST = SKILL_DIR / "resources" / "manifest.json"
 POPULATE = MAINTAINER_DIR / "populate_cache.py"
 WRITEMAN = MAINTAINER_DIR / "write_manifest.py"
@@ -75,19 +75,19 @@ def remove_from_write_manifest():
     print(f"  write_manifest.py: cleaned {len(VENUES_TO_REMOVE)} slugs")
 
 
-def remove_from_skill_md():
+def remove_from_rankings():
     """Remove rows from the ranked conferences table."""
-    path = SKILL_MD
+    path = RANKINGS_MD
     text = path.read_text()
 
-    for slug, name in VENUES_TO_REMOVE.items():
+    for name in VENUES_TO_REMOVE.values():
         # Remove table rows containing this venue's abbreviation
         # Match any row that starts with | and contains the venue name
-        pattern = rf'\| {re.escape(name)} .*\|.*\n'
+        pattern = rf"\| {re.escape(name)} .*\|.*\n"
         text = re.sub(pattern, "", text)
 
     path.write_text(text)
-    print(f"  SKILL.md: cleaned {len(VENUES_TO_REMOVE)} venues")
+    print(f"  academic-rankings.md: cleaned {len(VENUES_TO_REMOVE)} venues")
 
 
 def main():
@@ -104,8 +104,8 @@ def main():
     print("\n--- write_manifest.py ---")
     remove_from_write_manifest()
 
-    print("\n--- SKILL.md ---")
-    remove_from_skill_md()
+    print("\n--- academic-rankings.md ---")
+    remove_from_rankings()
 
     print("\n=== Done ===")
 

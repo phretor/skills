@@ -149,6 +149,22 @@ Add a new entry for each plugin. The `source` must point to `./plugins/<plugin-n
 - **README kept in sync**: every addition or change to a plugin/skill must also update the root `README.md` — the Skills table, Requirements table, badges (Skills count), and any other relevant sections must reflect the new or changed plugin
 - **No `:` in file names**: tracked paths must be valid on Windows checkouts
 
+## Checks
+
+CI (`.github/workflows/ci.yml`) runs on every pull request and on pushes to `main`; run the same commands locally before opening a PR:
+
+| Check | Command |
+|---|---|
+| Agent Skills spec | `uvx --from skills-ref==0.1.1 agentskills validate plugins/<plugin>/skills/<skill>` |
+| Repo structure, naming, README/marketplace/CHANGELOG sync, seccon cache ⇄ manifest | `uv run scripts/check_repo.py` |
+| Version bump (PRs only) | `uv run scripts/check_versions.py --base origin/main` |
+| Python lint, format, tests | `uvx ruff@0.17.2 check plugins scripts tests`, `uvx ruff@0.17.2 format --check plugins scripts tests`, `uv run --with pytest==9.1.1 pytest -q tests` |
+| `npx skills` discovery | `npx -y skills@1.7.4 add . --list \| uv run scripts/check_discovery.py` |
+| Workflows | `actionlint`, `zizmor .github/workflows` |
+| Links | `lychee --offline --include-fragments '**/*.md'` |
+
+Pushing a new plugin version to `main` runs `.github/workflows/release.yml`, which tags `<plugin>@v<version>` and creates a GitHub Release from the plugin's `CHANGELOG.md` section.
+
 ## YAML Frontmatter Steering
 
 YAML parse failures are easy to introduce in skill frontmatter. Before committing, sanity-check these rules:

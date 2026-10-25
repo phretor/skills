@@ -55,7 +55,9 @@ class Conf:
     bh_slug: str = ""  # non-empty → BH sessions.json probe via curl_cffi
     resolver: object = None  # callable(year: int) -> str | None
     sequential: bool = False  # run resolver one year at a time with delay
-    content_urls: object = None  # callable(year: int) -> list[str], tried before resolver for crawling
+    content_urls: object = (
+        None  # callable(year: int) -> list[str], tried before resolver for crawling
+    )
 
 
 # --- Academic URL generators ---
@@ -101,9 +103,10 @@ def _dblp_acm_resolve(dblp_url: str, conf_abbrev: str, year: int) -> str | None:
         session = cf.Session(impersonate="chrome124")
         session.get("https://dl.acm.org/", timeout=10)
         pdf_resp = session.get(fm_url, timeout=20)
-        if pdf_resp.status_code == 200 and "pdf" in pdf_resp.headers.get(
-            "content-type", ""
-        ).lower():
+        if (
+            pdf_resp.status_code == 200
+            and "pdf" in pdf_resp.headers.get("content-type", "").lower()
+        ):
             with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
                 f.write(pdf_resp.content)
                 pdf_path = f.name
@@ -228,7 +231,14 @@ def _offensivecon(year: int) -> str:
 ACADEMIC_CONFS: list[Conf] = [
     Conf("USENIX Security", "usenix-security", _usenix),
     Conf("NDSS", "ndss", _ndss),
-    Conf("CCS", "ccs", _ccs_resolve, resolver=_ccs_resolve, sequential=True, content_urls=_ccs_content_urls),
+    Conf(
+        "CCS",
+        "ccs",
+        _ccs_resolve,
+        resolver=_ccs_resolve,
+        sequential=True,
+        content_urls=_ccs_content_urls,
+    ),
     Conf("ASIACCS", "asiaccs", _asiaccs_resolve, resolver=_asiaccs_resolve, sequential=True),
     Conf("ACSAC", "acsac", _acsac),
     Conf("IACR Crypto", "iacr-crypto", _iacr_crypto),
@@ -301,9 +311,7 @@ def _slug(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value).strip("-")
 
 
-def select_confs(
-    confs: list[Conf], conference: str | None, *, strict: bool = True
-) -> list[Conf]:
+def select_confs(confs: list[Conf], conference: str | None, *, strict: bool = True) -> list[Conf]:
     if not conference:
         return confs
     wanted = ALIASES.get(_slug(conference), _slug(conference))
@@ -348,21 +356,21 @@ async def discover(confs: list[Conf], start: int, end: int) -> dict[str, list[tu
                 resolved: list[str | None] = await asyncio.gather(
                     *[_run_resolver(conf.resolver, y) for y in years]
                 )
-                results[conf.abbrev] = [(y, url) for y, url in zip(years, resolved) if url]
+                results[conf.abbrev] = [
+                    (y, url) for y, url in zip(years, resolved, strict=True) if url
+                ]
             elif conf.bh_slug:
                 bh_live: list[bool] = []
                 for y in years:
                     bh_live.append(await asyncio.to_thread(_is_live_bh, conf.bh_slug, y))
                     await asyncio.sleep(0.5)
                 results[conf.abbrev] = [
-                    (y, conf.url_fn(y)) for y, ok in zip(years, bh_live) if ok
+                    (y, conf.url_fn(y)) for y, ok in zip(years, bh_live, strict=True) if ok
                 ]
             else:
-                checks = await asyncio.gather(
-                    *[_is_live(client, conf.url_fn(y)) for y in years]
-                )
+                checks = await asyncio.gather(*[_is_live(client, conf.url_fn(y)) for y in years])
                 results[conf.abbrev] = [
-                    (y, conf.url_fn(y)) for y, ok in zip(years, checks) if ok
+                    (y, conf.url_fn(y)) for y, ok in zip(years, checks, strict=True) if ok
                 ]
 
             found = len(results[conf.abbrev])
@@ -489,7 +497,9 @@ def print_raw_page(conf: Conf, year: int, url: str, raw_page: str, output_format
     print(raw_page)
 
 
-def print_raw_url(label: str, year: int | None, url: str, raw_page: str, output_format: str) -> None:
+def print_raw_url(
+    label: str, year: int | None, url: str, raw_page: str, output_format: str
+) -> None:
     if output_format == "json":
         print(
             json.dumps(
@@ -545,7 +555,9 @@ async def run(args: argparse.Namespace) -> None:
 
     if args.academic:
         print("Checking academic conference URLs...")
-        r = await discover(select_confs(ACADEMIC_CONFS, args.conference), args.start_year, args.end_year)
+        r = await discover(
+            select_confs(ACADEMIC_CONFS, args.conference), args.start_year, args.end_year
+        )
         if args.conference:
             print_discovered(r)
         else:
@@ -553,7 +565,9 @@ async def run(args: argparse.Namespace) -> None:
 
     if args.industry:
         print("Checking industry conference URLs...")
-        r = await discover(select_confs(INDUSTRY_CONFS, args.conference), args.start_year, args.end_year)
+        r = await discover(
+            select_confs(INDUSTRY_CONFS, args.conference), args.start_year, args.end_year
+        )
         if args.conference:
             print_discovered(r)
         else:
@@ -570,12 +584,20 @@ def main() -> None:
     )
     parser.add_argument("--academic", action="store_true", help="Use academic conferences")
     parser.add_argument("--industry", action="store_true", help="Use industry conferences")
-    parser.add_argument("--conference", help="Limit to one conference acronym/slug, e.g. ccs, usenix, defcon")
+    parser.add_argument(
+        "--conference", help="Limit to one conference acronym/slug, e.g. ccs, usenix, defcon"
+    )
     parser.add_argument("--url", help="Explicit page URL to fetch with --crawl-content")
     parser.add_argument("--start-year", type=int, default=2020, metavar="YYYY")
     parser.add_argument("--end-year", type=int, default=CURRENT_YEAR, metavar="YYYY")
-    parser.add_argument("--crawl-content", action="store_true", help="Fetch one resolved conference page and print the raw page")
-    parser.add_argument("--year", type=int, metavar="YYYY", help="Conference year for --crawl-content")
+    parser.add_argument(
+        "--crawl-content",
+        action="store_true",
+        help="Fetch one resolved conference page and print the raw page",
+    )
+    parser.add_argument(
+        "--year", type=int, metavar="YYYY", help="Conference year for --crawl-content"
+    )
     parser.add_argument("--format", choices=["raw", "json"], default="raw")
     args = parser.parse_args()
 
