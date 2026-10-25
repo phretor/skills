@@ -136,22 +136,41 @@ Read this first on every query. It tells you which venues/years are cached and w
 ```json
 {
   "version": "1.5.0",
-  "generated": "2026-10-24",
+  "generated": "2026-10-25",
   "cached_range": { "earliest": 2021, "latest": 2026 },
   "coverage": {
     "academic": {
       "venues": {
-        "ccs": { "cached": [2022, 2023, 2024], "gaps": [2021, 2025, 2026], "note": "" }
+        "ccs": {
+          "cached": [2022, 2023, 2024],
+          "gaps": [2021, 2025, 2026],
+          "note": "",
+          "quality": {
+            "2024": {
+              "outcome": "cached",
+              "records_count": 316,
+              "has_abstracts": true,
+              "last_crawled": "2026-10-25",
+              "source": "sigsac.org",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {
+            "2024": { "outcome": "cached", "status": 200, "effective_url": "..." }
+          }
+        }
       }
     },
     "industry": {
       "venues": {
-        "hitb": { "cached": [], "gaps": [2021, 2022, 2023, 2024, 2025, 2026], "note": "Not yet crawled" }
+        "hitb": { "cached": [], "gaps": [2021, 2022, 2023, 2024, 2025, 2026], "note": "Not yet crawled", "quality": {}, "refresh": {} }
       }
     }
   }
 }
 ```
+
+Each edition's `quality` block derives from stored records (count, abstract/slide availability, acquisition age, source, completeness `unverified`/`needs-review`). `refresh` records the latest refresh outcome per edition. `cached` only reports file presence — rely on `quality.outcome` and `refresh.outcome` to decide whether an edition is usable.
 
 ### `index.json` (per venue-year)
 
