@@ -1,0 +1,64 @@
+{
+  "firstCycle": [
+    {
+      "title": "(#18) Split Unlearning",
+      "authors": [
+        {
+          "name": "Yanna Jiang",
+          "affiliation": "University of Technology Sydney"
+        },
+        {
+          "name": "Guangsheng Yu",
+          "affiliation": "University of Technology Sydney"
+        },
+        {
+          "name": "QIN WANG",
+          "affiliation": "CSIRO Data61"
+        },
+        {
+          "name": "Xu Wang",
+          "affiliation": "University of Technology Sydney"
+        },
+        {
+          "name": "Baihe Ma",
+          "affiliation": "University of Technology Sydney"
+        },
+        {
+          "name": "Caijun Sun",
+          "affiliation": "Zhejiang Lab"
+        },
+        {
+          "name": "Wei Ni",
+          "affiliation": "University of Technology Sydney"
+        },
+        {
+          "name": "Ren Ping Liu",
+          "affiliation": "University of Technology Sydney"
+        }
+      ],
+      "full": "Yanna Jiang (University of Technology Sydney), Guangsheng Yu (University of Technology Sydney), QIN WANG (CSIRO Data61), Xu Wang (University of Technology Sydney), Baihe Ma (University of Technology Sydney), Caijun Sun (Zhejiang Lab), Wei Ni (University of Technology Sydney), Ren Ping Liu (University of Technology Sydney)",
+      "url": "https://dl.acm.org/doi/10.1145/3719027.3744787"
+    }
+  ],
+  "secondCycle": [
+    {
+      "title": "(#12) CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation",
+      "authors": [
+        {
+          "name": "Ali Hajiabadi",
+          "affiliation": "ETH Zurich"
+        },
+        {
+          "name": "Michele Marazzi",
+          "affiliation": "ABB Research"
+        },
+        {
+          "name": "Kaveh Razavi",
+          "affiliation": "ETH Zurich"
+        }
+      ],
+      "full": "Ali Hajiabadi (ETH Zurich), Michele Marazzi (ABB Research), Kaveh Razavi (ETH Zurich)",
+      "url": "https://dl.acm.org/doi/10.1145/3719027.3765021"
+    }
+  ]
+}

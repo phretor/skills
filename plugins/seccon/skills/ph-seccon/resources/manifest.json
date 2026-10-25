@@ -1,6 +1,6 @@
 {
-  "version": "1.4.0",
-  "generated": "2026-10-24",
+  "version": "1.5.0",
+  "generated": "2026-10-25",
   "cached_range": {
     "earliest": 2021,
     "latest": 2026
@@ -19,7 +19,37 @@
             2025,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 35,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 25,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 27,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "acsac": {
           "cached": [
@@ -32,7 +62,46 @@
             2024,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 80,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 73,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 59,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 84,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "asiaccs": {
           "cached": [],
@@ -44,7 +113,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "ccs": {
           "cached": [
@@ -57,7 +128,37 @@
             2025,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2022": {
+              "outcome": "cached",
+              "records_count": 287,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 292,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 418,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "ches": {
           "cached": [],
@@ -69,7 +170,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "crypto": {
           "cached": [],
@@ -81,7 +184,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "dimva": {
           "cached": [],
@@ -93,7 +198,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "esorics": {
           "cached": [],
@@ -105,7 +212,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "eurocrypt": {
           "cached": [],
@@ -117,7 +226,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "eurosp": {
           "cached": [],
@@ -129,7 +240,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "fc": {
           "cached": [],
@@ -141,7 +254,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "ieee-sp": {
           "cached": [
@@ -154,7 +269,46 @@
             2025,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 114,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 148,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 200,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 261,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "imc": {
           "cached": [],
@@ -166,7 +320,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "ndss": {
           "cached": [
@@ -179,7 +335,19 @@
             2025,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 87,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "pets": {
           "cached": [],
@@ -191,7 +359,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "raid": {
           "cached": [],
@@ -203,7 +373,9 @@
             2025,
             2026
           ],
-          "note": "DBLP unreachable from this environment"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
         "usenix-security": {
           "cached": [
@@ -216,13 +388,34 @@
             2023,
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2024": {
+              "outcome": "cached",
+              "records_count": 418,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 439,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         }
       }
     },
     "industry": {
       "venues": {
-        "defcon": {
+        "blackhat-asia": {
           "cached": [
             2021,
             2022,
@@ -233,45 +426,55 @@
           "gaps": [
             2026
           ],
-          "note": ""
-        },
-        "offensivecon": {
-          "cached": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "gaps": [
-            2021,
-            2026
-          ],
-          "note": ""
-        },
-        "recon": {
-          "cached": [
-            2022,
-            2023,
-            2024,
-            2025
-          ],
-          "gaps": [
-            2021,
-            2026
-          ],
-          "note": ""
-        },
-        "blackhat-usa": {
-          "cached": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025,
-            2026
-          ],
-          "gaps": [],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 40,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 34,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 44,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 43,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 48,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "blackhat-eu": {
           "cached": [
@@ -284,9 +487,126 @@
           "gaps": [
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 72,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 44,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 44,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 47,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 50,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
-        "blackhat-asia": {
+        "blackhat-usa": {
+          "cached": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "gaps": [],
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 131,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 101,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 109,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 121,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 110,
+              "has_slides": true,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2026": {
+              "outcome": "cached",
+              "records_count": 8,
+              "has_slides": false,
+              "has_abstracts": true,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
+        },
+        "defcon": {
           "cached": [
             2021,
             2022,
@@ -297,7 +617,55 @@
           "gaps": [
             2026
           ],
-          "note": ""
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2021": {
+              "outcome": "cached",
+              "records_count": 62,
+              "has_slides": true,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2022": {
+              "outcome": "cached",
+              "records_count": 82,
+              "has_slides": true,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 95,
+              "has_slides": true,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 87,
+              "has_slides": true,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 102,
+              "has_slides": true,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "hardwear": {
           "cached": [
@@ -310,19 +678,19 @@
             2024,
             2026
           ],
-          "note": ""
-        },
-        "hitcon": {
-          "cached": [],
-          "gaps": [
-            2021,
-            2022,
-            2023,
-            2024,
-            2025,
-            2026
-          ],
-          "note": "Not yet crawled"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2025": {
+              "outcome": "cached",
+              "records_count": 14,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
         },
         "hitb": {
           "cached": [],
@@ -334,9 +702,11 @@
             2025,
             2026
           ],
-          "note": "Not yet crawled"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         },
-        "vb": {
+        "hitcon": {
           "cached": [],
           "gaps": [
             2021,
@@ -346,7 +716,45 @@
             2025,
             2026
           ],
-          "note": "Not yet crawled"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
+        },
+        "offensivecon": {
+          "cached": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021,
+            2026
+          ],
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2022": {
+              "outcome": "needs-review",
+              "reason": "No complete set of meaningful records; review cached content",
+              "last_crawled": "2026-04-24"
+            },
+            "2023": {
+              "outcome": "needs-review",
+              "reason": "No complete set of meaningful records; review cached content",
+              "last_crawled": "2026-04-24"
+            },
+            "2024": {
+              "outcome": "needs-review",
+              "reason": "No complete set of meaningful records; review cached content",
+              "last_crawled": "2026-04-24"
+            },
+            "2025": {
+              "outcome": "needs-review",
+              "reason": "No complete set of meaningful records; review cached content",
+              "last_crawled": "2026-04-24"
+            }
+          },
+          "refresh": {}
         },
         "poc": {
           "cached": [],
@@ -358,7 +766,75 @@
             2025,
             2026
           ],
-          "note": "Not yet crawled"
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
+        },
+        "recon": {
+          "cached": [
+            2022,
+            2023,
+            2024,
+            2025
+          ],
+          "gaps": [
+            2021,
+            2026
+          ],
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {
+            "2022": {
+              "outcome": "cached",
+              "records_count": 21,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2023": {
+              "outcome": "cached",
+              "records_count": 9,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2024": {
+              "outcome": "cached",
+              "records_count": 9,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            },
+            "2025": {
+              "outcome": "cached",
+              "records_count": 26,
+              "has_slides": false,
+              "has_abstracts": false,
+              "last_crawled": "2026-04-24",
+              "source": "unrecorded",
+              "completeness": "unverified"
+            }
+          },
+          "refresh": {}
+        },
+        "vb": {
+          "cached": [],
+          "gaps": [
+            2021,
+            2022,
+            2023,
+            2024,
+            2025,
+            2026
+          ],
+          "note": "Availability does not establish completeness or permission to refresh",
+          "quality": {},
+          "refresh": {}
         }
       }
     }

@@ -42,27 +42,32 @@ Live data: [confsearch.ethz.ch](https://confsearch.ethz.ch) (academic) · [cfpti
 `ph-seccon` primarily operates from a **curated cache** (`resources/`) of paper
 and talk metadata collected from public-facing conference websites. Cache
 updates are done in batch by the maintainer; the agent only fetches live
-content in two cases:
+content for these operations:
 - **Calendar queries** (`now`, `deadlines`) via dedicated APIs (CFPTime,
   ConfSearch) that expect programmatic access.
 - **On-demand PDF fetching** when the user drills into a specific paper or
   talk — a single targeted request per paper.
-- **Author search and enrichment** through `uvx paperhub-cli` (DBLP, Semantic Scholar, arXiv) when the cache cannot answer.
+- **Author search and enrichment** through `uvx paperhub-cli` only when the selected provider's current policy permits the operation; Crossref is an available metadata option.
 
-This design minimizes traffic to upstream sites. If a venue is unreachable
-(Cloudflare, paywall, JS-rendered), it is marked as a gap in the manifest
-rather than retried on every query. Use responsibly.
+Every live operation checks robots/AI restrictions and terms before access. Denials, challenges and rate limits are explicit unavailable results; browser impersonation and automatic denial retries are removed. DBLP XML/search, DEF CON media and YouTube RSS were policy-limited in the 2026-10-25 investigation. Calendar and enrichment coverage also depends on current source permission and availability.
+
+The manifest separates file availability from content quality, acquisition age and the latest refresh result. Cached records are not a completeness claim. Unknown acquisition times stay unknown; imports preserve source provenance and derive abstract/slide availability from records. Topic matching includes both `abstract` and `description`.
+
+Maintainer crawling shares an explicit/registry pipeline with bounded same-origin linked data, per-origin pacing/budgets, redirect checks, deferred publisher resolution, and IEEE S&P discovery. The populator accepts selected venues and years, defaults through the current calendar year, preserves earlier indexes on failure, and records unsupported adapters. Black Hat imports require authorized local exports; hardwear.io RSS is partial and has no Data API implementation. Existing indexes remain available, with suspect content marked for review.
+
+See [maintenance limits and outcomes](skills/ph-seccon/references/maintenance.md). No automatic refresh is promised for a denied or unsupported source.
 
 ## Requirements
 
-- **pdftotext** (poppler) — for extracting text from downloaded papers and ACM DL frontmatter PDFs:
+- **pdftotext** (poppler) — for extracting text from permitted, downloaded papers:
   ```bash
   brew install poppler        # macOS
   apt-get install poppler-utils  # Debian/Ubuntu
   ```
 
 - **uv** — runs `paperhub-cli` on demand via `uvx paperhub-cli` (multi-source academic paper search, read, and download: arXiv, DBLP, Semantic Scholar, IACR, and more). No separate install step.
-- **Internet access** — live calendar queries (ConfSearch, CFPTime) and on-demand paper fetching.
+- **Internet access** — permitted live calendar queries (ConfSearch, CFPTime) and on-demand paper fetching.
+- **Python 3.12+** — repository maintainer scripts use the standard library; no HTTP/browser-impersonation dependency is required.
 
 ## Examples
 

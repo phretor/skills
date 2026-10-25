@@ -1,0 +1,67 @@
+Sitemap: https://dblp.org/sitemap.xml
+
+
+User-agent: *
+
+Crawl-delay: 4
+
+Disallow: //
+
+Disallow: /cgi-bin
+Disallow: /maps
+
+Allow:	  /db
+Disallow: /db/indices
+
+Allow:    /pers
+Disallow: /pers/hb
+Disallow: /pers/hg
+Disallow: /pers/hj
+Disallow: /pers/hk
+Disallow: /pers/hx
+Disallow: /pers/tb
+Disallow: /pers/te
+Disallow: /pers/tr
+Disallow: /pers/xr
+Disallow: /pers/xx
+Disallow: /pers/xs
+Disallow: /pers/xc
+Disallow: /pers/xk
+
+Allow:	  /pid
+
+Allow:    /rec
+Disallow: /rec/bib
+Disallow: /rec/ris
+Disallow: /rec/nt
+Disallow: /rec/rdf
+Disallow: /rec/xml
+
+Disallow: /search
+Disallow: /search/publ
+Disallow: /search/author
+Disallow: /search/venue
+Disallow: /search/inst
+Disallow: /search/yt
+Allow:    /search/$
+
+Disallow: /lookup
+Allow:    /lookup/$
+
+Disallow: /doi
+Disallow: /isbn
+Disallow: /issn
+Disallow: /orcid
+
+Disallow: /*.bib
+Disallow: /*.ris
+Disallow: /*.nt
+Disallow: /*.ttl
+Disallow: /*.rdf
+Disallow: /*.xml
+Disallow: /*.json
+
+Disallow: /*view=bibtex
+Disallow: /*view=keys
+Disallow: /*view=group
+Disallow: /*view=joint
